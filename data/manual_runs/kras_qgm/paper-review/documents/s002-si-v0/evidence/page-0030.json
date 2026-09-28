@@ -1,0 +1,267 @@
+{
+  "page": 30,
+  "lines": [
+    {
+      "text": "Step 4: Preparation of ISM061-21",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        232.954345703125,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 21-3 (10 mg, 0.04 mmol) in DCM (1 mL) were added 5-methyl-1H-",
+      "bbox": [
+        56.6399040222168,
+        87.94796752929688,
+        538.53955078125,
+        101.23197174072266
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "indazol-4-amine (7.2 mg, 0.05 mmol), Titanium tetraisopropanolate (37 mg, 0.13 mmol). The",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        541.5235595703125,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reaction mixture was stirred at 25 ℃ for 12 h. After the addition of NaBH3CN (5.5 mg, 0.09 mmol),",
+      "bbox": [
+        56.6399040222168,
+        129.4679718017578,
+        541.5383911132812,
+        142.8306884765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the mixture was further stirred at 25 ℃ for 2 hr. The reaction mixture was filtered and concentrated",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        541.5283813476562,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "under reduced pressure to give a residue, which was purified by Prep-HPLC to afford the title",
+      "bbox": [
+        56.6399040222168,
+        170.7479705810547,
+        541.5372314453125,
+        184.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compound (1.14 mg, 7.2% yield). LCMS (ESI+): 358.3 [M+H]+; 1H NMR (400 MHz, DMSO-d6) δ",
+      "bbox": [
+        56.6399040222168,
+        190.94325256347656,
+        541.5396118164062,
+        204.7506866455078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "12.64 (s, 1H), 8.60 (s, 1H), 7.86 (s, 1H), 7.27 – 7.17 (m, 1H), 7.13 – 7.08 (m, 2H), 7.05 (d, J = 8.3",
+      "bbox": [
+        56.6399040222168,
+        212.26795959472656,
+        541.540283203125,
+        225.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Hz, 1H), 6.74 (d, J = 8.2 Hz, 1H), 5.65 (t, J = 6.3 Hz, 1H), 4.85 (d, J = 6.1 Hz, 2H), 2.61 (s, 3H), 2.26",
+      "bbox": [
+        56.6399040222168,
+        232.907958984375,
+        541.5420532226562,
+        246.19195556640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(s, 3H), 1.95 (s, 6H).",
+      "bbox": [
+        56.6399040222168,
+        253.54795837402344,
+        159.29612731933594,
+        266.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "S1.9. Preparation of ISM061-22",
+      "bbox": [
+        56.6399040222168,
+        617.14794921875,
+        221.96214294433594,
+        630.4319458007812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S8 Preparation of ISM061-22",
+      "bbox": [
+        205.26951599121094,
+        735.7079467773438,
+        392.91021728515625,
+        748.991943359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 30
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          56,
+          59,
+          233,
+          71
+        ],
+        "pos": [
+          0,
+          41
+        ]
+      },
+      {
+        "index": 1,
+        "class": "text",
+        "bbox": [
+          56,
+          90,
+          542,
+          267
+        ],
+        "pos": [
+          41,
+          881
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          56,
+          283,
+          445,
+          538
+        ],
+        "pos": [
+          881,
+          883
+        ]
+      },
+      {
+        "index": 3,
+        "class": "caption",
+        "bbox": [
+          56,
+          619,
+          222,
+          631
+        ],
+        "pos": [
+          883,
+          920
+        ]
+      },
+      {
+        "index": 4,
+        "class": "picture",
+        "bbox": [
+          128,
+          639,
+          471,
+          717
+        ],
+        "pos": [
+          920,
+          922
+        ]
+      },
+      {
+        "index": 5,
+        "class": "caption",
+        "bbox": [
+          205,
+          738,
+          393,
+          749
+        ],
+        "pos": [
+          922,
+          963
+        ]
+      }
+    ],
+    "text": "# **Step 4: Preparation of ISM061-21** \n\nTo a solution of **compound 21-3** (10 mg, 0.04 mmol) in DCM (1 mL) were added 5-methyl-1Hindazol-4-amine (7.2 mg, 0.05 mmol), Titanium tetraisopropanolate (37 mg, 0.13 mmol). The reaction mixture was stirred at 25 ℃ for 12 h. After the addition of NaBH3CN (5.5 mg, 0.09 mmol), the mixture was further stirred at 25 ℃ for 2 hr. The reaction mixture was filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-HPLC to afford the title compound (1.14 mg, 7.2% yield). LCMS (ESI<sup>+</sup> ): 358.3 [M+H]<sup>+</sup> ;<sup>1</sup> H NMR (400 MHz, DMSO- _d_ 6) δ 12.64 (s, 1H), 8.60 (s, 1H), 7.86 (s, 1H), 7.27 – 7.17 (m, 1H), 7.13 – 7.08 (m, 2H), 7.05 (d, _J_ = 8.3 Hz, 1H), 6.74 (d, _J_ = 8.2 Hz, 1H), 5.65 (t, _J_ = 6.3 Hz, 1H), 4.85 (d, _J_ = 6.1 Hz, 2H), 2.61 (s, 3H), 2.26 (s, 3H), 1.95 (s, 6H). \n\n\n\n**S1.9. Preparation of ISM061-22** \n\n\n\n**Scheme S8** Preparation of ISM061-22 \n\n"
+  }
+}

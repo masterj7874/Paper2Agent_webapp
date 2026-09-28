@@ -1,0 +1,196 @@
+{
+ "id": "40164629a8bf",
+ "agent": "MedKG",
+ "tool": "medkg_related_work",
+ "arguments": {
+  "topic": "automated brain extraction skull stripping MRI deep learning",
+  "k": 10,
+  "summarise": true,
+  "modality": "MRI",
+  "task": "segmentation"
+ },
+ "status": "done",
+ "created_at": 1790063350.4075744,
+ "started_at": 1790063350.4086554,
+ "finished_at": 1790063471.504027,
+ "result": {
+  "message": "10 related-work rows; LLM=codex; status=ok.",
+  "summary": {
+   "n_rows": 10,
+   "n_q1": 10,
+   "llm": {
+    "provider": "codex",
+    "model": "gpt-6-astra",
+    "elapsed_s": 57.2,
+    "fallback_used": false,
+    "error": null
+   },
+   "timing": {
+    "total_ms": 57811.1,
+    "retrieval_ms": 510.4,
+    "embed_ms": null,
+    "dense_ms": 49.9,
+    "lexical_ms": 100.3,
+    "rerank_ms": 223.1,
+    "graph_ms": 100.6,
+    "llm_ms": 57197.2
+   },
+   "status": "ok"
+  },
+  "artifacts": [
+   {
+    "description": "related_work — full JSON response",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165111-2ccdab.json"
+   },
+   {
+    "description": "related_work — markdown",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165111-2ccdab.md"
+   }
+  ],
+  "reference": "http://127.0.0.1:8790/docs",
+  "rows": [
+   {
+    "work_id": "PMC10894871",
+    "title": "Automated neonatal nnU-Net brain MRI extractor trained on a large multi-institutional dataset.",
+    "year": 2024,
+    "journal": "Scientific reports",
+    "is_q1": true,
+    "doi": "10.1038/s41598-024-54436-8",
+    "method": "ANUBEX: nnU-Net-based neonatal brain segmentation",
+    "modality": "Neonatal brain MRI",
+    "dataset": "HEAL study (433 training participants); NIH and dHCP evaluation datasets",
+    "metric_values": "not stated",
+    "summary": "ANUBEX enables automatic neonatal brain extraction across high- and low-resolution MRI, achieving significantly higher aggregate Dice scores than five comparator methods.",
+    "score": 0.9979007244110107
+   },
+   {
+    "work_id": "PMC7597856",
+    "title": "Brain extraction on MRI scans in presence of diffuse glioma: Multi-institutional performance evaluation of deep learning methods and robust modality-agnostic training.",
+    "year": 2020,
+    "journal": "NeuroImage",
+    "is_q1": true,
+    "doi": "10.1016/j.neuroimage.2020.117081",
+    "method": "Deep learning brain extraction with modality-agnostic training",
+    "modality": "Multiparametric brain MRI with brain tumors",
+    "dataset": "Private institutional cohorts and TCIA collections (3,340 scans)",
+    "metric_values": "not stated",
+    "summary": "Evaluates deep learning architectures and introduces modality-agnostic training for multi-institutional brain extraction in tumor-affected MRI without retraining for available modalities.",
+    "score": 0.9917163252830505
+   },
+   {
+    "work_id": "DOI:10.1016/j.bspc.2022.104514",
+    "title": "Towards fully automated deep-learning-based brain tumor segmentation: is brain extraction still necessary?",
+    "year": 2022,
+    "journal": "Biomedical Signal Processing and Control",
+    "is_q1": true,
+    "doi": "10.1016/j.bspc.2022.104514",
+    "method": "Deep learning tumor segmentation pipeline trained and tested without skull stripping",
+    "modality": "Multimodal brain MRI",
+    "dataset": "not stated",
+    "metric_values": "Brain extraction method choice can compromise tumor segmentation performance by up to 15.7% (metric not specified)",
+    "summary": "Shows that brain extraction choices can impair tumor segmentation and that training on non-skull-stripped images provides competitive performance with reduced processing time.",
+    "score": 0.9902915358543396
+   },
+   {
+    "work_id": "PMC9237075",
+    "title": "A general skull stripping of multiparametric brain MRIs using 3D convolutional neural network.",
+    "year": 2022,
+    "journal": "Scientific reports",
+    "is_q1": true,
+    "doi": "10.1038/s41598-022-14983-4",
+    "method": "EnNet: ensemble neural network based on 3D convolutional neural networks",
+    "modality": "Multiparametric brain MRI",
+    "dataset": "UPMC private cohort and TCIA (815 cases with or without GBM)",
+    "metric_values": "not stated",
+    "summary": "Introduces an automatic multicenter skull-stripping method for healthy and pre-/post-operative GBM scans, comparing 15 modality combinations and finding the best performance with all modalities.",
+    "score": 0.9888418912887573
+   },
+   {
+    "work_id": "PMC9580949",
+    "title": "An End-To-End Pipeline for Fully Automatic Morphological Quantification of Mouse Brain Structures From MRI Imagery.",
+    "year": 2022,
+    "journal": "Frontiers in bioinformatics",
+    "is_q1": true,
+    "doi": "10.3389/fbinf.2022.865443",
+    "method": "DeepBrainIPP: deep learning skull stripping with data augmentation, atlas registration, and dedicated direct segmentation of small structures",
+    "modality": "In vivo and ex vivo mouse brain T2-weighted MRI",
+    "dataset": "Private cohort (172 images augmented to 4,040 samples)",
+    "metric_values": "Skull stripping: mean Dice 0.96, residual volume 2.18%; atlas registration: mean cross-correlation 0.98; small-structure segmentation: mean Dice 0.89, residual volume error 5.32%",
+    "summary": "Provides an automated, web-accessible mouse brain processing pipeline combining skull stripping and atlas registration with direct segmentation for small brain structures.",
+    "score": 0.9860442876815796
+   },
+   {
+    "work_id": "DOI:10.48550/arxiv.2205.09706",
+    "title": "k-strip: A novel segmentation algorithm in k-space for the application of skull stripping",
+    "year": 2022,
+    "journal": "Computer methods and programs in biomedicine",
+    "is_q1": true,
+    "doi": "10.48550/arxiv.2205.09706",
+    "method": "k-strip: deep learning skull stripping directly in complex-valued k-space",
+    "modality": "Raw MRI k-space data",
+    "dataset": "not stated (four institutional datasets totaling approximately 200,000 MRI slices)",
+    "metric_values": "Dice 92%–99%; Hausdorff distance <5.5 pixels; Dice up to 99% for slices above the eye region",
+    "summary": "Demonstrates skull stripping directly in MRI k-space while preserving phase information and enabling anonymization before image reconstruction.",
+    "score": 0.9816303849220276
+   },
+   {
+    "work_id": "PMC11664259",
+    "title": "Automated pediatric brain tumor imaging assessment tool from CBTN: Enhancing suprasellar region inclusion and managing limited data with deep learning.",
+    "year": 2024,
+    "journal": "Neuro-oncology advances",
+    "is_q1": true,
+    "doi": "10.1093/noajnl/vdae190",
+    "method": "Separate nnU-Net models for skull stripping, whole-tumor segmentation, and enhancing-tumor segmentation",
+    "modality": "Pediatric brain multiparametric MRI using T2, FLAIR, and T1-Gd sequences",
+    "dataset": "Private multi-institutional cohort (527 patients; 336 for skull stripping and 489 for tumor segmentation)",
+    "metric_values": "Skull stripping: Dice 0.98 ± 0.01 (median 0.98) for single- and multi-parametric models; single-/multi-parametric Dice correlation r > 0.80, P < .05; whole tumor: T2 Dice 0.84 ± 0.17 (median 0.90), FLAIR Dice 0.82 ± 0.19 (median 0.89); enhancing tumor: T1-Gd+FLAIR Dice 0.65 ± 0.35 (median 0.79), T1-Gd+T2 Dice 0.64 ± 0.36 (median 0.79)",
+    "summary": "Develops pediatric skull-stripping models that include sellar/suprasellar regions and tumor segmentation models that accommodate missing MRI sequences in limited-data settings.",
+    "score": 0.9814534187316895
+   },
+   {
+    "work_id": "PMC10045128",
+    "title": "RU-Net: skull stripping in rat brain MR images after ischemic stroke with rat U-Net.",
+    "year": 2023,
+    "journal": "BMC medical imaging",
+    "is_q1": true,
+    "doi": "10.1186/s12880-023-00994-8",
+    "method": "RU-Net: U-shaped deep network with residual connections, batch normalization, and pooling-index transmission",
+    "modality": "Rat brain diffusion-weighted imaging and T2-weighted MRI after ischemic stroke",
+    "dataset": "Private cohorts (two in-house datasets, each containing 55 subjects)",
+    "metric_values": "Mean Dice: DWI 98.04% (p < 0.001); T2WI 97.67% (p < 0.001)",
+    "summary": "Introduces an end-to-end skull-stripping network for rat brain MRI after ischemic stroke that outperforms several existing methods on DWI and T2WI datasets.",
+    "score": 0.9808392524719238
+   },
+   {
+    "work_id": "PMC9465771",
+    "title": "SynthStrip: skull-stripping for any brain image.",
+    "year": 2022,
+    "journal": "NeuroImage",
+    "is_q1": true,
+    "doi": "10.1016/j.neuroimage.2022.119474",
+    "method": "SynthStrip: learning-based brain extraction trained on synthetic images generated from anatomical segmentations",
+    "modality": "Brain MRI across varied contrasts, acquisition protocols, and resolutions",
+    "dataset": "not stated (synthetic training dataset and unnamed evaluation datasets spanning newborns to adults)",
+    "metric_values": "not stated",
+    "summary": "Uses highly varied synthetic training data to enable a single brain-extraction model to generalize across imaging protocols and populations without target-contrast training data.",
+    "score": 0.957277774810791
+   },
+   {
+    "work_id": "DOI:10.1016/j.ins.2022.01.011",
+    "title": "ASMCNN: An efficient brain extraction using active shape model and convolutional neural networks",
+    "year": 2018,
+    "journal": "Information Sciences",
+    "is_q1": true,
+    "doi": "10.1016/j.ins.2022.01.011",
+    "method": "ASMCNN: modified active shape model and CNN with CRF, Gaussian-process, and rule-based contour refinement",
+    "modality": "Brain MRI processed as 2D sagittal image sequences",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Combines group-specific shape priors with CNN-based contour refinement to improve skull stripping across variations in brain morphology and image intensity.",
+    "score": 0.9315870404243469
+   }
+  ]
+ },
+ "error": null,
+ "duration_s": 121.1
+}

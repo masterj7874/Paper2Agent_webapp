@@ -1,0 +1,2072 @@
+{
+  "page": 8,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dilutions from 200 μM to 0.39 μM in 1× HBS-EP+, 2 mM TCEP and 2%",
+      "bbox": [
+        39.685001373291016,
+        47.59562683105469,
+        296.2462158203125,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "DMSO. Samples were injected for 60 s at a flow rate of 30 μl min−1 and",
+      "bbox": [
+        39.685001373291016,
+        58.00740051269531,
+        296.253173828125,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dissociation time of 180 s. A Biacore 8K machine was used to carry out",
+      "bbox": [
+        39.685001373291016,
+        69.09562683105469,
+        296.0557861328125,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the SPR experiments and subsequent data analysis.",
+      "bbox": [
+        39.685001373291016,
+        79.84562683105469,
+        229.40115356445312,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "MaMTH-DS dose–response assays",
+      "bbox": [
+        39.685001373291016,
+        100.83062744140625,
+        178.1712646484375,
+        111.47937774658203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "MaMTH-DS FLP HEK293 reporter cell lines28 stably expressing KRAS",
+      "bbox": [
+        39.685001373291016,
+        111.75740051269531,
+        296.2808532714844,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(WT or mutant), HRAS, NRAS or artificial membrane-anchored ALFA",
+      "bbox": [
+        39.685001373291016,
+        122.84562683105469,
+        296.2682800292969,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tag bait alongside Raf1 (for Ras baits) or nanobody ALFA (for artificial",
+      "bbox": [
+        39.685001373291016,
+        133.5953826904297,
+        296.2839050292969,
+        143.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "bait) preys were seeded into 384-well white-walled, flat-bottomed,",
+      "bbox": [
+        39.685001373291016,
+        144.3456268310547,
+        296.1736755371094,
+        154.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tissue-culture-treated microplates (Greiner, 781098) at a concentra-",
+      "bbox": [
+        39.685001373291016,
+        155.0956268310547,
+        294.8031005859375,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion of 100,000 cells per ml (50 μl total volume per well) in DMEM, 10%",
+      "bbox": [
+        39.685001373291016,
+        165.8456268310547,
+        296.3656005859375,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "FBS and 1% penicillin–streptomycin. Seeding was performed using a",
+      "bbox": [
+        39.685001373291016,
+        176.5957489013672,
+        296.0895080566406,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "MultiFlo-FX multimode liquid dispenser (BioTek). Plates were left at",
+      "bbox": [
+        39.685001373291016,
+        187.3457489013672,
+        296.28460693359375,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "room temperature for 30–60 min following seeding before transfer",
+      "bbox": [
+        39.685001373291016,
+        198.0957489013672,
+        296.2555847167969,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to a Heracell 150i incubator (Thermo Fisher Scientific) and growth at",
+      "bbox": [
+        39.685001373291016,
+        208.8457489013672,
+        296.2674255371094,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "37 °C in 5% CO2 for 3 h. After growth, 10 μl of DMEM, 10% FBS and 1%",
+      "bbox": [
+        39.685001373291016,
+        219.5957489013672,
+        296.2353820800781,
+        230.52200317382812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "penicillin–streptomycin supplemented with 3 μg ml−1 tetracycline",
+      "bbox": [
+        39.685001373291016,
+        230.0074005126953,
+        296.26483154296875,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(to induce bait and prey expression; BioShop, TET701) and 60 ng ml−1",
+      "bbox": [
+        39.685001373291016,
+        240.7574005126953,
+        296.25518798828125,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "epidermal growth factor (to stimulate Ras signaling; Sigma, E9644) was",
+      "bbox": [
+        39.68510055541992,
+        251.8457489013672,
+        296.2947692871094,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "added to each well using a multichannel pipette. As appropriate, a 6×",
+      "bbox": [
+        39.68510055541992,
+        262.5957336425781,
+        296.268310546875,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentration of drug (or DMSO only) was also included in the medium,",
+      "bbox": [
+        39.68510055541992,
+        273.3456115722656,
+        296.16961669921875,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with all lower concentrations produced by serial dilution starting from",
+      "bbox": [
+        39.68510055541992,
+        284.0956115722656,
+        296.2276611328125,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the highest concentration solution. Plates were then grown overnight",
+      "bbox": [
+        39.68510055541992,
+        294.8456115722656,
+        296.1595764160156,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(18–20 h) at 37 °C in 5% CO2. A luciferase assay was performed the next",
+      "bbox": [
+        39.68510055541992,
+        305.5956115722656,
+        296.15887451171875,
+        316.52191162109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "day using 10 μl of 20 μM native coelenterazine substrate (Nanolight,",
+      "bbox": [
+        39.68510055541992,
+        316.3456115722656,
+        296.2584228515625,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "303) per well. Luminescence was measured using a Clariostar plate",
+      "bbox": [
+        39.68510055541992,
+        327.0956115722656,
+        296.35015869140625,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reader (BMG Labtech) with a gain of 3,200–3,800 and a 1-s integration",
+      "bbox": [
+        39.68510055541992,
+        337.8456115722656,
+        296.3445129394531,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "time. All data analysis was performed using Microsoft Excel and Graph-",
+      "bbox": [
+        39.68510055541992,
+        348.5956115722656,
+        294.8031311035156,
+        358.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Pad Prism. Curve fits were performed in Prism (nonlinear regression)",
+      "bbox": [
+        39.68510055541992,
+        359.3456115722656,
+        296.2766418457031,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "using log(inhibitor) versus response curves, with a variable slope (four",
+      "bbox": [
+        39.68510055541992,
+        370.0956115722656,
+        296.1651916503906,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "parameters) bottom-constrained to zero.",
+      "bbox": [
+        39.68510055541992,
+        380.8456115722656,
+        193.42799377441406,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Cell viability assay",
+      "bbox": [
+        39.68510055541992,
+        401.83062744140625,
+        114.24821472167969,
+        412.4793701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "MaMTH-DS FLP HEK293 reporter cell lines28 stably expressing KRAS",
+      "bbox": [
+        39.68510055541992,
+        412.7574157714844,
+        296.2808532714844,
+        423.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(WT or G12V mutant) bait alongside Raf1 prey were seeded into 96-well",
+      "bbox": [
+        39.68510055541992,
+        423.8456115722656,
+        296.2134094238281,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "white-walled, μCLEAR flat-bottomed, tissue-culture-treated plates",
+      "bbox": [
+        39.68510055541992,
+        434.5956115722656,
+        296.1783447265625,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(Greiner, 655098) at 40,000 cells per well in DMEM, 10% FBS and 1%",
+      "bbox": [
+        39.68510055541992,
+        445.3456115722656,
+        296.1654052734375,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "penicillin–streptomycin (60 μl total volume per well). Seeding was",
+      "bbox": [
+        39.68510055541992,
+        456.0956115722656,
+        296.44195556640625,
+        466.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "performed using a MultiFlo-FX multimode liquid dispenser (BioTek).",
+      "bbox": [
+        39.68510055541992,
+        466.8456115722656,
+        296.2757873535156,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Plates were left at room temperature for 30–60 min following seeding",
+      "bbox": [
+        39.68510055541992,
+        477.5956115722656,
+        296.0877685546875,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "before transfer to a Heracell 150i incubator (Thermo Fisher Scientific)",
+      "bbox": [
+        39.68510055541992,
+        488.3456115722656,
+        296.2889099121094,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and growth at 37 °C in 5% CO2 for 3 h. After growth, 30 μl of a 3× con-",
+      "bbox": [
+        39.68510055541992,
+        499.0956115722656,
+        294.7838134765625,
+        510.02191162109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "centration of the drug (or DMSO only) in DMEM, 10% FBS and 1% peni-",
+      "bbox": [
+        39.68510055541992,
+        509.8456115722656,
+        294.8419189453125,
+        520.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cillin–streptomycin was added to wells, with all lower concentrations",
+      "bbox": [
+        39.68510055541992,
+        520.5953979492188,
+        296.26837158203125,
+        530.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "produced by serial dilution starting from the highest concentration",
+      "bbox": [
+        39.68510055541992,
+        531.3456420898438,
+        296.23822021484375,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solution (final drug concentration: 30 μM to 123 nM). Plates were then",
+      "bbox": [
+        39.68510055541992,
+        542.0956420898438,
+        296.0727233886719,
+        552.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "grown overnight (18–20 h) at 37 °C in 5% CO2. The effect of the drug on",
+      "bbox": [
+        39.68510055541992,
+        552.8456420898438,
+        296.1990051269531,
+        563.77197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cell viability was assessed by the CellTiter-Glo luminescent cell viability",
+      "bbox": [
+        39.68510055541992,
+        563.5956420898438,
+        296.325439453125,
+        573.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "assay from Promega (G7570). Briefly, 90 μl of the CellTiter-Glo reagent",
+      "bbox": [
+        39.68510055541992,
+        574.3456420898438,
+        296.2180480957031,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was added directly into each well following 30-min equilibration of the",
+      "bbox": [
+        39.68510055541992,
+        585.0956420898438,
+        296.21258544921875,
+        595.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "plate at room temperature. Contents of the wells were mixed on an",
+      "bbox": [
+        39.68510055541992,
+        595.8456420898438,
+        296.4217529296875,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "orbital shaker for 2 min and plates were then incubated at room tem-",
+      "bbox": [
+        39.68510055541992,
+        606.5956420898438,
+        294.8204040527344,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "perature for 10 min to stabilize the luminescence signal. Luminescence",
+      "bbox": [
+        39.68510055541992,
+        617.3456420898438,
+        296.2807922363281,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was measured using a Clariostar plate reader (BMG Labtech) with a gain",
+      "bbox": [
+        39.68510055541992,
+        628.0956420898438,
+        296.15472412109375,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of 3,600 and a 1-s integration time. Values represent the mean ± s.d. of",
+      "bbox": [
+        39.68510055541992,
+        638.8456420898438,
+        296.16253662109375,
+        649.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "three replicates for each tested drug concentration. All data analysis",
+      "bbox": [
+        39.68510055541992,
+        649.5956420898438,
+        296.2682800292969,
+        659.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was performed using Microsoft Excel and GraphPad Prism.",
+      "bbox": [
+        39.68510055541992,
+        660.3453979492188,
+        257.19635009765625,
+        670.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Protein purification and NMR: sample preparation",
+      "bbox": [
+        39.68510055541992,
+        681.3306274414062,
+        244.63198852539062,
+        691.9793701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A construct encoding N-His–TEV (tobacco etch virus)–KRAS-G12D",
+      "bbox": [
+        39.68510055541992,
+        692.5956420898438,
+        296.1751708984375,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was transformed into BL21(DE3) cells. The cells were grown in minimal",
+      "bbox": [
+        39.68510055541992,
+        703.3456420898438,
+        296.34375,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "medium containing 1 g l−1 [15N]H4Cl and 4 g l−1 glucose to an optical",
+      "bbox": [
+        39.68510055541992,
+        713.75732421875,
+        296.2860412597656,
+        725.02197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "density at 600 nm of ~0.7–1.0 and induced with 1 mM IPTG for 16 h",
+      "bbox": [
+        39.68510055541992,
+        724.8456420898438,
+        296.24041748046875,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "at 16 °C. Cells were pelleted and resuspended in lysis buffer (20 mM",
+      "bbox": [
+        39.68510055541992,
+        735.5956420898438,
+        296.4053955078125,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sodium phosphate pH 8.0, 500 mM NaCl, 10 mM imidazole, 1 mM",
+      "bbox": [
+        306.1416931152344,
+        47.59562683105469,
+        562.748046875,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2-mercaptoethanol and 5% (v/v) glycerol) containing PMSF and benza-",
+      "bbox": [
+        306.1416931152344,
+        58.34562683105469,
+        561.2599487304688,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "midine. Protein was purified over a His trap column (Cytiva) following",
+      "bbox": [
+        306.1416931152344,
+        69.09562683105469,
+        562.6088256835938,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "standard Ni-affinity protocols (wash with 10 mM and 20 mM imidazole",
+      "bbox": [
+        306.1416931152344,
+        79.84562683105469,
+        562.6304931640625,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and then elute with 300 mM imidazole) and the His-tag was removed",
+      "bbox": [
+        306.1416931152344,
+        90.59562683105469,
+        562.7333374023438,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "by TEV cleavage. KRAS-G12D was further purified by size-exclusion",
+      "bbox": [
+        306.1416931152344,
+        101.34562683105469,
+        562.8223266601562,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chromatography using a Superdex 75 Increase column (10/300 GL)",
+      "bbox": [
+        306.1416931152344,
+        112.09562683105469,
+        562.6109619140625,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with PBS buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4 and 2 mM",
+      "bbox": [
+        306.1416931152344,
+        122.84562683105469,
+        562.7163696289062,
+        133.77194213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "KH2PO4, pH 7.4) containing 10 mM EDTA. The samples were prepared",
+      "bbox": [
+        306.1413879394531,
+        133.5953826904297,
+        562.7345581054688,
+        144.52194213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "by mixing 30 μM of protein with 200 μM ISM018-2 in the presence of",
+      "bbox": [
+        306.1431884765625,
+        144.3453826904297,
+        562.7107543945312,
+        154.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2% DMSO-d6, 5 mM GDP and 15 mM MgCl2 in the buffer. The purifica-",
+      "bbox": [
+        306.1416931152344,
+        155.0626220703125,
+        561.2599487304688,
+        166.02194213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion protocols were adapted from previously published protocols for",
+      "bbox": [
+        306.1416931152344,
+        165.8456268310547,
+        562.7135009765625,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "KRAS-G12C (ref. 53) and KRAS-G12D (ref. 54).",
+      "bbox": [
+        306.1416931152344,
+        176.5953826904297,
+        471.2242126464844,
+        186.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "NMR experiments and analysis",
+      "bbox": [
+        306.1416931152344,
+        197.58074951171875,
+        431.2493591308594,
+        208.2294921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1H–15N TROSY HSQC experiments were recorded at 298 K on an",
+      "bbox": [
+        306.1416931152344,
+        208.5074005126953,
+        562.69873046875,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "800-MHz Bruker spectrometer equipped with an AVANCE III console",
+      "bbox": [
+        306.1416931152344,
+        219.5957489013672,
+        562.716796875,
+        229.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and a cryogenically cooled probe. The acquired spectra were processed",
+      "bbox": [
+        306.1416931152344,
+        230.3457489013672,
+        562.78564453125,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "using NMRPipe55 and were analyzed using ccpnmr 2.0 (ref. 56). The",
+      "bbox": [
+        306.1416931152344,
+        240.7574005126953,
+        562.8063354492188,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chemical shifts were transferred from Biological Magnetic Resonance",
+      "bbox": [
+        306.1416931152344,
+        251.8457489013672,
+        562.8173217773438,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Bank 27719 (ref. 54). The CSPs on both 1H and 15N dimensions were used",
+      "bbox": [
+        306.1416931152344,
+        262.25738525390625,
+        562.6903076171875,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to calculate the weighted CSP57 and these values were then plotted",
+      "bbox": [
+        306.1416931152344,
+        273.00738525390625,
+        562.7260131835938,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "onto the PDB structure using PyMol to map the regions that took part",
+      "bbox": [
+        306.1416931152344,
+        284.0956115722656,
+        562.6911010742188,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in ligand binding or underwent conformational changes upon ligand",
+      "bbox": [
+        306.1416931152344,
+        294.8453674316406,
+        562.7251586914062,
+        305.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "binding.",
+      "bbox": [
+        306.1416931152344,
+        305.5951232910156,
+        337.8217468261719,
+        315.775634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Experimental validation methods",
+      "bbox": [
+        306.1416931152344,
+        326.58062744140625,
+        442.91748046875,
+        337.2293701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Chemistry42 methods: after screening and selection of promising",
+      "bbox": [
+        306.1416931152344,
+        336.4596252441406,
+        563.142578125,
+        347.8446350097656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "candidate structures for synthesis. Our selection process relied on a",
+      "bbox": [
+        306.1416931152344,
+        347.2096252441406,
+        562.7794189453125,
+        358.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tiered system of the following criteria:",
+      "bbox": [
+        306.1416931152344,
+        359.3456115722656,
+        447.6134948730469,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t \u0007Structural and compositional parameter filters, such as hydro-",
+      "bbox": [
+        320.1419372558594,
+        376.0931091308594,
+        560.4314575195312,
+        386.27362060546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "gen bond donor count and aromatic atom fraction.",
+      "bbox": [
+        328.1444396972656,
+        386.8428649902344,
+        518.5543823242188,
+        397.02337646484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t \u0007Property evaluation for molecular weight, lipophilicity and",
+      "bbox": [
+        320.1419372558594,
+        397.5926208496094,
+        549.8631591796875,
+        407.77313232421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "other physicochemical traits.",
+      "bbox": [
+        328.1444396972656,
+        408.3423767089844,
+        437.98492431640625,
+        418.52288818359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t \u0007Medicinal chemistry filters to exclude problematic structural",
+      "bbox": [
+        320.1419372558594,
+        419.0921325683594,
+        557.501953125,
+        429.27264404296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "motifs.",
+      "bbox": [
+        328.1444396972656,
+        429.8418884277344,
+        355.0641784667969,
+        440.02239990234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t \u0007A synthetic accessibility assessment based on the ReRSA",
+      "bbox": [
+        320.1419372558594,
+        440.5916442871094,
+        539.7405395507812,
+        450.77215576171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "model58.",
+      "bbox": [
+        328.1444396972656,
+        451.0074157714844,
+        360.01611328125,
+        461.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t \u0007Three-dimensional pharmacophoric analysis in reference to an",
+      "bbox": [
+        320.14385986328125,
+        462.0953674316406,
+        556.8694458007812,
+        472.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "X-ray cocrystal structure (PDB 7EW9) (Extended Data Fig. 4).",
+      "bbox": [
+        328.1463623046875,
+        472.8451232910156,
+        546.1774291992188,
+        483.025634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t PLI scoring to estimate binding efficiency.",
+      "bbox": [
+        320.152099609375,
+        483.5948791503906,
+        484.03839111328125,
+        493.775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t An overall reward calculation integrating the above scores",
+      "bbox": [
+        320.152099609375,
+        494.3446350097656,
+        544.8986206054688,
+        504.525146484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "For synthesis candidacy, we applied more demanding conditions,",
+      "bbox": [
+        320.1416931152344,
+        509.8456115722656,
+        562.5223999023438,
+        520.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ensuring compounds met the following enhanced benchmarks:",
+      "bbox": [
+        306.1416931152344,
+        520.5956420898438,
+        541.9556274414062,
+        530.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t Clearance of all Chemistry42 filters.",
+      "bbox": [
+        320.1419372558594,
+        534.1834106445312,
+        461.35638427734375,
+        544.3638916015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t An aggregate reward value exceeding 0.7.",
+      "bbox": [
+        320.1419372558594,
+        544.9331665039062,
+        482.72479248046875,
+        555.1136474609375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t A PLI score indicative of strong KRAS binding (<−8 kcal mol−1).",
+      "bbox": [
+        320.1419372558594,
+        555.3419799804688,
+        555.9489135742188,
+        565.8634033203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t A pharmacophore match score above 0.7.",
+      "bbox": [
+        320.13916015625,
+        566.4301147460938,
+        482.8959045410156,
+        576.610595703125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "•\t Favorable synthetic accessibility with a ReRSA score under 5.",
+      "bbox": [
+        320.13916015625,
+        577.1798706054688,
+        553.7618408203125,
+        587.3603515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "After screening, molecules were clustered and ranked within clusters",
+      "bbox": [
+        306.138916015625,
+        595.8413696289062,
+        562.6973876953125,
+        606.0218505859375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "by chemical similarity, allowing for expert analysis to further prioritize",
+      "bbox": [
+        306.1416931152344,
+        606.5956420898438,
+        562.7522583007812,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "on the basis of novelty and structural intricacy, culminating in a selec-",
+      "bbox": [
+        306.1416931152344,
+        617.3456420898438,
+        561.2598876953125,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion of 100–150 molecules for potential synthesis and subsequent",
+      "bbox": [
+        306.1416931152344,
+        628.0956420898438,
+        562.718994140625,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "examination.",
+      "bbox": [
+        306.1416931152344,
+        638.8456420898438,
+        355.8727111816406,
+        649.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Experimental evaluation methods of generated compounds. From",
+      "bbox": [
+        306.1416931152344,
+        658.9595947265625,
+        562.6961059570312,
+        670.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the pool of identified structures, we synthesized and characterized 15",
+      "bbox": [
+        306.1418151855469,
+        671.0956420898438,
+        562.7819213867188,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compounds. Detailed methodologies of this process are elaborated in",
+      "bbox": [
+        306.1418151855469,
+        681.8456420898438,
+        562.5970458984375,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the Supplementary Information. The molecular structures of the two",
+      "bbox": [
+        306.1418151855469,
+        692.5956420898438,
+        562.7366333007812,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "most promising compounds (ISM061-018-2 and ISM061-022) are show-",
+      "bbox": [
+        306.1418151855469,
+        703.3456420898438,
+        561.2599487304688,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cased in Fig. 2a,e. Each synthesized compound underwent a rigorous",
+      "bbox": [
+        306.1418151855469,
+        714.0956420898438,
+        562.6996459960938,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "two-phase evaluation; their binding affinities were determined using",
+      "bbox": [
+        306.1418151855469,
+        724.8453979492188,
+        562.7409057617188,
+        735.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "SPR and their biological efficacies were gauged through cell-based",
+      "bbox": [
+        306.1418151855469,
+        735.5956420898438,
+        562.7318725585938,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 8
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          39,
+          49,
+          297,
+          90
+        ],
+        "pos": [
+          71,
+          341
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          39,
+          102,
+          179,
+          112
+        ],
+        "pos": [
+          341,
+          379
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          39,
+          112,
+          297,
+          391
+        ],
+        "pos": [
+          379,
+          2175
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          39,
+          403,
+          115,
+          413
+        ],
+        "pos": [
+          2175,
+          2204
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          39,
+          413,
+          297,
+          671
+        ],
+        "pos": [
+          2204,
+          3872
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          39,
+          682,
+          245,
+          692
+        ],
+        "pos": [
+          3872,
+          3929
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          39,
+          694,
+          297,
+          746
+        ],
+        "pos": [
+          3929,
+          4302
+        ]
+      },
+      {
+        "index": 9,
+        "class": "text",
+        "bbox": [
+          306,
+          49,
+          563,
+          186
+        ],
+        "pos": [
+          4302,
+          5142
+        ]
+      },
+      {
+        "index": 10,
+        "class": "section-header",
+        "bbox": [
+          306,
+          199,
+          432,
+          208
+        ],
+        "pos": [
+          5142,
+          5179
+        ]
+      },
+      {
+        "index": 11,
+        "class": "text",
+        "bbox": [
+          306,
+          209,
+          563,
+          316
+        ],
+        "pos": [
+          5179,
+          5834
+        ]
+      },
+      {
+        "index": 12,
+        "class": "section-header",
+        "bbox": [
+          306,
+          328,
+          443,
+          337
+        ],
+        "pos": [
+          5834,
+          5874
+        ]
+      },
+      {
+        "index": 13,
+        "class": "text",
+        "bbox": [
+          306,
+          339,
+          564,
+          370
+        ],
+        "pos": [
+          5874,
+          6055
+        ]
+      },
+      {
+        "index": 14,
+        "class": "list-item",
+        "bbox": [
+          320,
+          376,
+          561,
+          397
+        ],
+        "pos": [
+          6055,
+          6169
+        ]
+      },
+      {
+        "index": 15,
+        "class": "list-item",
+        "bbox": [
+          320,
+          399,
+          550,
+          419
+        ],
+        "pos": [
+          6169,
+          6263
+        ]
+      },
+      {
+        "index": 16,
+        "class": "list-item",
+        "bbox": [
+          320,
+          419,
+          558,
+          438
+        ],
+        "pos": [
+          6263,
+          6337
+        ]
+      },
+      {
+        "index": 17,
+        "class": "list-item",
+        "bbox": [
+          320,
+          442,
+          540,
+          460
+        ],
+        "pos": [
+          6337,
+          6418
+        ]
+      },
+      {
+        "index": 18,
+        "class": "list-item",
+        "bbox": [
+          320,
+          463,
+          557,
+          483
+        ],
+        "pos": [
+          6418,
+          6544
+        ]
+      },
+      {
+        "index": 19,
+        "class": "list-item",
+        "bbox": [
+          320,
+          483,
+          485,
+          494
+        ],
+        "pos": [
+          6544,
+          6592
+        ]
+      },
+      {
+        "index": 20,
+        "class": "list-item",
+        "bbox": [
+          320,
+          495,
+          545,
+          505
+        ],
+        "pos": [
+          6592,
+          6655
+        ]
+      },
+      {
+        "index": 21,
+        "class": "text",
+        "bbox": [
+          306,
+          511,
+          563,
+          531
+        ],
+        "pos": [
+          6655,
+          6778
+        ]
+      },
+      {
+        "index": 22,
+        "class": "list-item",
+        "bbox": [
+          320,
+          534,
+          462,
+          545
+        ],
+        "pos": [
+          6778,
+          6820
+        ]
+      },
+      {
+        "index": 23,
+        "class": "list-item",
+        "bbox": [
+          320,
+          546,
+          483,
+          555
+        ],
+        "pos": [
+          6820,
+          6865
+        ]
+      },
+      {
+        "index": 24,
+        "class": "list-item",
+        "bbox": [
+          320,
+          556,
+          556,
+          566
+        ],
+        "pos": [
+          6865,
+          6945
+        ]
+      },
+      {
+        "index": 25,
+        "class": "list-item",
+        "bbox": [
+          320,
+          567,
+          483,
+          577
+        ],
+        "pos": [
+          6945,
+          6988
+        ]
+      },
+      {
+        "index": 26,
+        "class": "list-item",
+        "bbox": [
+          320,
+          578,
+          554,
+          587
+        ],
+        "pos": [
+          6988,
+          7054
+        ]
+      },
+      {
+        "index": 27,
+        "class": "text",
+        "bbox": [
+          306,
+          597,
+          563,
+          647
+        ],
+        "pos": [
+          7054,
+          7350
+        ]
+      },
+      {
+        "index": 28,
+        "class": "text",
+        "bbox": [
+          306,
+          661,
+          563,
+          746
+        ],
+        "pos": [
+          7350,
+          7889
+        ]
+      },
+      {
+        "index": 29,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          7889,
+          7912
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\ndilutions from 200 μM to 0.39 μM in 1× HBS-EP+, 2 mM TCEP and 2% DMSO. Samples were injected for 60 s at a flow rate of 30 μl min<sup>−1</sup> and dissociation time of 180 s. A Biacore 8K machine was used to carry out the SPR experiments and subsequent data analysis. \n\n# **MaMTH-DS dose–response assays** \n\nMaMTH-DS FLP HEK293 reporter cell lines<sup>28</sup> stably expressing KRAS (WT or mutant), HRAS, NRAS or artificial membrane-anchored ALFA tag bait alongside Raf1 (for Ras baits) or nanobody ALFA (for artificial bait) preys were seeded into 384-well white-walled, flat-bottomed, tissue-culture-treated microplates (Greiner, 781098) at a concentration of 100,000 cells per ml (50 μl total volume per well) in DMEM, 10% FBS and 1% penicillin–streptomycin. Seeding was performed using a MultiFlo-FX multimode liquid dispenser (BioTek). Plates were left at room temperature for 30–60 min following seeding before transfer to a Heracell 150i incubator (Thermo Fisher Scientific) and growth at 37 °C in 5% CO2 for 3 h. After growth, 10 μl of DMEM, 10% FBS and 1% penicillin–streptomycin supplemented with 3 μg ml<sup>−1</sup> tetracycline (to induce bait and prey expression; BioShop, TET701) and 60 ng ml<sup>−1</sup> epidermal growth factor (to stimulate Ras signaling; Sigma, E9644) was added to each well using a multichannel pipette. As appropriate, a 6× concentration of drug (or DMSO only) was also included in the medium, with all lower concentrations produced by serial dilution starting from the highest concentration solution. Plates were then grown overnight (18–20 h) at 37 °C in 5% CO2. A luciferase assay was performed the next day using 10 μl of 20 μM native coelenterazine substrate (Nanolight, 303) per well. Luminescence was measured using a Clariostar plate reader (BMG Labtech) with a gain of 3,200–3,800 and a 1-s integration time. All data analysis was performed using Microsoft Excel and GraphPad Prism. Curve fits were performed in Prism (nonlinear regression) using log(inhibitor) versus response curves, with a variable slope (four parameters) bottom-constrained to zero. \n\n# **Cell viability assay** \n\nMaMTH-DS FLP HEK293 reporter cell lines<sup>28</sup> stably expressing KRAS (WT or G12V mutant) bait alongside Raf1 prey were seeded into 96-well white-walled, μCLEAR flat-bottomed, tissue-culture-treated plates (Greiner, 655098) at 40,000 cells per well in DMEM, 10% FBS and 1% penicillin–streptomycin (60 μl total volume per well). Seeding was performed using a MultiFlo-FX multimode liquid dispenser (BioTek). Plates were left at room temperature for 30–60 min following seeding before transfer to a Heracell 150i incubator (Thermo Fisher Scientific) and growth at 37 °C in 5% CO2 for 3 h. After growth, 30 μl of a 3× concentration of the drug (or DMSO only) in DMEM, 10% FBS and 1% penicillin–streptomycin was added to wells, with all lower concentrations produced by serial dilution starting from the highest concentration solution (final drug concentration: 30 μM to 123 nM). Plates were then grown overnight (18–20 h) at 37 °C in 5% CO2. The effect of the drug on cell viability was assessed by the CellTiter-Glo luminescent cell viability assay from Promega (G7570). Briefly, 90 μl of the CellTiter-Glo reagent was added directly into each well following 30-min equilibration of the plate at room temperature. Contents of the wells were mixed on an orbital shaker for 2 min and plates were then incubated at room temperature for 10 min to stabilize the luminescence signal. Luminescence was measured using a Clariostar plate reader (BMG Labtech) with a gain of 3,600 and a 1-s integration time. Values represent the mean ± s.d. of three replicates for each tested drug concentration. All data analysis was performed using Microsoft Excel and GraphPad Prism. \n\n# **Protein purification and NMR: sample preparation** \n\nA construct encoding N-His–TEV (tobacco etch virus)–KRAS-G12D was transformed into BL21(DE3) cells. The cells were grown in minimal medium containing 1 g l<sup>−1</sup> [<sup>15</sup> N]H4Cl and 4 g l<sup>−1</sup> glucose to an optical density at 600 nm of ~0.7–1.0 and induced with 1 mM IPTG for 16 h at 16 °C. Cells were pelleted and resuspended in lysis buffer (20 mM \n\nsodium phosphate pH 8.0, 500 mM NaCl, 10 mM imidazole, 1 mM 2-mercaptoethanol and 5% (v/v) glycerol) containing PMSF and benzamidine. Protein was purified over a His trap column (Cytiva) following standard Ni-affinity protocols (wash with 10 mM and 20 mM imidazole and then elute with 300 mM imidazole) and the His-tag was removed by TEV cleavage. KRAS-G12D was further purified by size-exclusion chromatography using a Superdex 75 Increase column (10/300 GL) with PBS buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4 and 2 mM KH2PO4, pH 7.4) containing 10 mM EDTA. The samples were prepared by mixing 30 μM of protein with 200 μM ISM018-2 in the presence of 2% DMSO- _d_ 6, 5 mM GDP and 15 mM MgCl2 in the buffer. The purification protocols were adapted from previously published protocols for KRAS-G12C (ref. 53) and KRAS-G12D (ref. 54). \n\n# **NMR experiments and analysis** \n\n1H–15N TROSY HSQC experiments were recorded at 298 K on an 800-MHz Bruker spectrometer equipped with an AVANCE III console and a cryogenically cooled probe. The acquired spectra were processed using NMRPipe<sup>55</sup> and were analyzed using ccpnmr 2.0 (ref. 56). The chemical shifts were transferred from Biological Magnetic Resonance Bank 27719 (ref. 54). The CSPs on both<sup>1</sup> H and<sup>15</sup> N dimensions were used to calculate the weighted CSP<sup>57</sup> and these values were then plotted onto the PDB structure using PyMol to map the regions that took part in ligand binding or underwent conformational changes upon ligand binding. \n\n# **Experimental validation methods** \n\n**Chemistry42 methods: after screening and selection of promising candidate structures for synthesis.** Our selection process relied on a tiered system of the following criteria: \n\n- Structural and compositional parameter filters, such as hydrogen bond donor count and aromatic atom fraction. \n\n- Property evaluation for molecular weight, lipophilicity and other physicochemical traits. \n\n- Medicinal chemistry filters to exclude problematic structural motifs. \n\n- A synthetic accessibility assessment based on the ReRSA model<sup>58</sup> . \n\n- Three-dimensional pharmacophoric analysis in reference to an X-ray cocrystal structure (PDB 7EW9) (Extended Data Fig. 4). \n\n- PLI scoring to estimate binding efficiency. \n\n- An overall reward calculation integrating the above scores \n\nFor synthesis candidacy, we applied more demanding conditions, ensuring compounds met the following enhanced benchmarks: \n\n- Clearance of all Chemistry42 filters. \n\n- An aggregate reward value exceeding 0.7. \n\n- A PLI score indicative of strong KRAS binding (<−8 kcal mol<sup>−1</sup> ). \n\n- A pharmacophore match score above 0.7. \n\n- Favorable synthetic accessibility with a ReRSA score under 5. \n\nAfter screening, molecules were clustered and ranked within clusters by chemical similarity, allowing for expert analysis to further prioritize on the basis of novelty and structural intricacy, culminating in a selection of 100–150 molecules for potential synthesis and subsequent examination. \n\n**Experimental evaluation methods of generated compounds.** From the pool of identified structures, we synthesized and characterized 15 compounds. Detailed methodologies of this process are elaborated in the Supplementary Information. The molecular structures of the two most promising compounds (ISM061-018-2 and ISM061-022) are showcased in Fig. 2a,e. Each synthesized compound underwent a rigorous two-phase evaluation; their binding affinities were determined using SPR and their biological efficacies were gauged through cell-based \n\nNature Biotechnology \n\n"
+  }
+}

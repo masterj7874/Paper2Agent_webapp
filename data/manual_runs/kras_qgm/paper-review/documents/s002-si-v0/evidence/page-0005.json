@@ -1,0 +1,528 @@
+{
+  "page": 5,
+  "lines": [
+    {
+      "text": "by column chromatography (SiO2, ethyl acetate: petroleum ether = 1: 100) to afford Compound 3-1",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        541.5398559570312,
+        70.59069061279297
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(10.00 g, 78% yield) as yellow oil. LCMS (ESI+): 155.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        77.42324829101562,
+        373.0696716308594,
+        91.15196990966797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 3-2",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        252.64173889160156,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloro-5-methyl-4-vinylpyrimidine (10.00 g, 64.70 mmol) in THF (200 ml) and",
+      "bbox": [
+        56.6399040222168,
+        139.30796813964844,
+        541.5321044921875,
+        152.5919647216797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "water (200 mL) were added potassium osmate dihydrate (2.38 g, 6.47 mmol) and sodium periodate",
+      "bbox": [
+        56.6399040222168,
+        160.18797302246094,
+        541.5238037109375,
+        173.4719696044922
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(41.50 g, 194.00 mmol). And then the mixture was stirred at 25 ℃ for 2 hrs. The reaction mixture",
+      "bbox": [
+        56.6399040222168,
+        180.8279571533203,
+        541.53564453125,
+        194.11195373535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was quenched by the addition of ice-water (200 mL) at 0 °C and extracted with EtOAc (200 mL × 3).",
+      "bbox": [
+        56.6399040222168,
+        201.4679718017578,
+        541.527099609375,
+        214.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The combined organic layers were washed with brine (250 mL × 2), dried over Na2SO4, filtered and",
+      "bbox": [
+        56.6399040222168,
+        222.1079559326172,
+        541.536376953125,
+        235.47068786621094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to give a residue. The residue was purified by column",
+      "bbox": [
+        56.6399040222168,
+        242.9879608154297,
+        541.5286254882812,
+        256.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chromatography (SiO2, ethyl acetate: petroleum ether = 1: 100) to afford the Compound 3-2 (2.50",
+      "bbox": [
+        56.6399040222168,
+        263.6279602050781,
+        541.53955078125,
+        276.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "g, 22% yield) as a gray solid. 1H NMR (400 MHz, Chloroform-d) δ 10.06 (s, 1H), 8.63 (s, 1H), 2.60",
+      "bbox": [
+        56.6399040222168,
+        283.8232421875,
+        541.5391235351562,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(s, 3H).",
+      "bbox": [
+        56.6399040222168,
+        304.9079895019531,
+        95.96802520751953,
+        318.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3: Preparation of Compound 3-3",
+      "bbox": [
+        56.6399040222168,
+        335.6279602050781,
+        252.64173889160156,
+        348.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloro-5-methylpyrimidine-4-carbaldehyde (500.0 mg, 3.19 mmol) in MeOH (10",
+      "bbox": [
+        56.6399040222168,
+        366.3479919433594,
+        541.5352783203125,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL) were added 2-methoxy-6-(trifluoromethyl)aniline (1.00 g, 5.23 mmol) and AcOH (0.03 mL, 0.52",
+      "bbox": [
+        56.6399040222168,
+        386.98797607421875,
+        541.532958984375,
+        400.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol). After addition, the mixture was stirred at 25 ℃ for 12 hrs under N2. Then, sodium",
+      "bbox": [
+        56.6399040222168,
+        407.86798095703125,
+        541.537841796875,
+        421.2306823730469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cyanoborohydride (973.0 mg, 15.69 mmol) was added at 0 ℃. The resulting mixture was stirred at",
+      "bbox": [
+        56.6399040222168,
+        428.5079650878906,
+        541.521240234375,
+        441.7919616699219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "25 ℃ for 4 hrs. The reaction solution was poured into water (20 mL) and extracted with DCM (20",
+      "bbox": [
+        56.6399040222168,
+        449.1479797363281,
+        541.5366821289062,
+        462.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL × 3). The combined organic layers were washed with brine (10 mL × 2), dried over Na2SO4,",
+      "bbox": [
+        56.6399040222168,
+        469.7879638671875,
+        541.5398559570312,
+        483.15069580078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "filtered and concentrated under reduced pressure to give a residue. The residue was purified by prep-",
+      "bbox": [
+        56.6399040222168,
+        490.66796875,
+        538.53955078125,
+        503.95196533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "TLC (SiO2, ethyl acetate: petroleum ether = 1: 5) to afford Compound 3-3 (220.0 mg, 8% yield) as",
+      "bbox": [
+        56.6399040222168,
+        511.3080139160156,
+        541.5380859375,
+        524.670654296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a white solid. LCMS (ESI+): 332.0 [M+H]+. 1H NMR (400 MHz, Chloroform-d) δ 8.33 (s, 1H), 7.19",
+      "bbox": [
+        56.6399040222168,
+        531.5032348632812,
+        541.5410766601562,
+        545.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "- 7.16 (m, 1H), 7.03 - 7.01 (m, 1H), 6.96 - 6.92 (m, 1H), 4.50 - 4.49 (d, J = 4.0 Hz, 2H), 3.91 (s, 3H),",
+      "bbox": [
+        56.6399040222168,
+        552.5879516601562,
+        541.53955078125,
+        565.8719482421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2.23 (s, 3H).",
+      "bbox": [
+        56.6399040222168,
+        573.2279052734375,
+        119.96802520751953,
+        586.5119018554688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 4: Preparation of Compound 3-4",
+      "bbox": [
+        56.6399040222168,
+        603.9479370117188,
+        252.64173889160156,
+        617.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of Compound 3-3 (220.0 mg, 0.66 mmol) in 1,4-dioxane (5 mL) were added tert-butyl",
+      "bbox": [
+        56.6399040222168,
+        634.66796875,
+        541.5390625,
+        647.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(3-hydroxycyclobutyl)carbamate (124.0 mg, 0.66 mmol), Cs2CO3 (648.0 mg, 1.99 mmol), RuPhos",
+      "bbox": [
+        56.6399040222168,
+        655.5479736328125,
+        541.5382080078125,
+        668.91064453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(46.4 mg, 0.10 mmol) and Pd2(dba)3 (60.7 mg, 0.066 mmol). After addition, the mixture was stirred",
+      "bbox": [
+        56.6399040222168,
+        676.1879272460938,
+        541.5281982421875,
+        689.5506591796875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "at 100 ℃ for 12 hrs under N2. After cooling to 20 ℃, the reaction solution was poured into water (20",
+      "bbox": [
+        56.6399040222168,
+        696.8279418945312,
+        541.53955078125,
+        710.190673828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL) and extracted with EtOAc (20 mL × 3). The combined organic layers were washed with brine",
+      "bbox": [
+        56.6399040222168,
+        717.4679565429688,
+        541.53076171875,
+        730.751953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue.",
+      "bbox": [
+        56.6399040222168,
+        738.3479614257812,
+        541.5292358398438,
+        751.7106323242188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 5
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          539,
+          92
+        ],
+        "pos": [
+          0,
+          189
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          111,
+          253,
+          122
+        ],
+        "pos": [
+          189,
+          233
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          141,
+          542,
+          319
+        ],
+        "pos": [
+          233,
+          1024
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          338,
+          253,
+          349
+        ],
+        "pos": [
+          1024,
+          1068
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          368,
+          542,
+          587
+        ],
+        "pos": [
+          1068,
+          2080
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          606,
+          253,
+          618
+        ],
+        "pos": [
+          2080,
+          2124
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          637,
+          542,
+          752
+        ],
+        "pos": [
+          2124,
+          2712
+        ]
+      }
+    ],
+    "text": "by column chromatography (SiO2, ethyl acetate: petroleum ether = 1: 100) to afford **Compound 3-1** (10.00 g, 78% yield) as yellow oil. LCMS (ESI<sup>+</sup> ): 155.2 [M+H]<sup>+</sup> . \n\n# **Step 2: Preparation of Compound 3-2** \n\nTo a solution of 2-chloro-5-methyl-4-vinylpyrimidine (10.00 g, 64.70 mmol) in THF (200 ml) and water (200 mL) were added potassium osmate dihydrate (2.38 g, 6.47 mmol) and sodium periodate (41.50 g, 194.00 mmol). And then the mixture was stirred at 25 ℃ for 2 hrs. The reaction mixture was quenched by the addition of ice-water (200 mL) at 0 °C and extracted with EtOAc (200 mL × 3). The combined organic layers were washed with brine (250 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by column chromatography (SiO2, ethyl acetate: petroleum ether = 1: 100) to afford the **Compound 3-2** (2.50 g, 22% yield) as a gray solid.<sup>1</sup> H NMR (400 MHz, Chloroform-d) δ 10.06 (s, 1H), 8.63 (s, 1H), 2.60 (s, 3H). \n\n# **Step 3: Preparation of Compound 3-3** \n\nTo a solution of 2-chloro-5-methylpyrimidine-4-carbaldehyde (500.0 mg, 3.19 mmol) in MeOH (10 mL) were added 2-methoxy-6-(trifluoromethyl)aniline (1.00 g, 5.23 mmol) and AcOH (0.03 mL, 0.52 mmol). After addition, the mixture was stirred at 25 ℃ for 12 hrs under N2. Then, sodium cyanoborohydride (973.0 mg, 15.69 mmol) was added at 0 ℃. The resulting mixture was stirred at 25 ℃ for 4 hrs. The reaction solution was poured into water (20 mL) and extracted with DCM (20 mL × 3). The combined organic layers were washed with brine (10 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by prepTLC (SiO2, ethyl acetate: petroleum ether = 1: 5) to afford **Compound 3-3** (220.0 mg, 8% yield) as a white solid. LCMS (ESI<sup>+</sup> ): 332.0 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, Chloroform-d) δ 8.33 (s, 1H), 7.19 - 7.16 (m, 1H), 7.03 - 7.01 (m, 1H), 6.96 - 6.92 (m, 1H), 4.50 - 4.49 (d, J = 4.0 Hz, 2H), 3.91 (s, 3H), 2.23 (s, 3H). \n\n# **Step 4: Preparation of Compound 3-4** \n\nTo a solution of **Compound 3-3** (220.0 mg, 0.66 mmol) in 1,4-dioxane (5 mL) were added _tert_ -butyl (3-hydroxycyclobutyl)carbamate (124.0 mg, 0.66 mmol), Cs2CO3 (648.0 mg, 1.99 mmol), RuPhos (46.4 mg, 0.10 mmol) and Pd2(dba)3 (60.7 mg, 0.066 mmol). After addition, the mixture was stirred at 100 ℃ for 12 hrs under N2. After cooling to 20 ℃, the reaction solution was poured into water (20 mL) and extracted with EtOAc (20 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. \n\n"
+  }
+}

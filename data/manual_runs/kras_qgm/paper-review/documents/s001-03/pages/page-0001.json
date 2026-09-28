@@ -1,0 +1,173 @@
+{
+  "page": 1,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0001.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0001.png and compared every item with evidence/page-0001.json. Changes: (1) the 'nature biotechnology' masthead (p0001-b000) was extracted as an H2 heading; it is the journal logo, so it is now 'omit' with a reason. (2) The article title heading lost its bold markup so it matches the generated package title for dedup. (3) p0001-b004 was misclassified as a table: it is the publication-history sidebar plus the author byline, so the table/rows were dropped and it was split into two text items - p0001-b004 (author byline, superscript affiliation markers rebuilt from the fragmented evidence lines: 1,2 / 3,4 / 5 / 6 / 7 / 8 / 7 / 9 / 10,11 / 11 / 5 / 5,12 / 5 / 5,13 / 5,14 / 14,15 / 7 / 7 / 7 / 7 / 7 / 16 / 5,12,14,17 / 1,2,18,19,20,21 / 7) and p0001-b004a (Received/Accepted/Published online/Check for updates). The byline is placed directly after the title, ahead of the dates sidebar, because that is the logical reading order of the banner block. ORCID and envelope glyphs are graphics with no native text and are not transcribed; the corresponding-author addresses are preserved in p0001-b008a. (4) Removed the spurious space before the sentence period after every superscript citation marker in p0001-b006 and p0001-b007 (risks1-3, design4-7, design8-10, efficiently11, strategies12, entanglement13,14, data15). (5) Verified en dashes in citation ranges (1-3, 4-7, 8-10) and in 'quantum-classical' / 'classical-quantum' are true en dashes, and that '~10^60' kept its exponent. (6) Affiliation block p0001-b008: superscript markers 1 and 2 were plain text and 3-21 had a stray space after the closing </sup>; all 21 are now uniform <sup>N</sup> immediately before the department name. The correspondence e-mail line was split out as p0001-b008a. (7) Footer p0001-b009 confirmed as running furniture (left as text for the compact builder); bare page number 1954 kept as 'omit'. (8) Reading order: the title heading is placed first so the emitted document opens with an H1 that matches the generated package title (otherwise the builder prepends a second identical H1); the affiliation footnote block and the correspondence e-mail were moved up to sit directly under the author byline they annotate, which also lets page 1 end on the body prose 'and overcome' so that p0002-b005 can join it. Coordinator: the page-1 running footer was still emitted as prose and had wedged itself between the sentence ending on this page and its continuation on page 2; set to explicit omit to match pages 2-18.",
+  "warnings": [
+    "Review possible header/footer: p0001-b009"
+  ],
+  "items": [
+    {
+      "id": "p0001-b003",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        113.0,
+        542.0,
+        168.0
+      ],
+      "markdown": "# Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0001-b001",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        95.0,
+        141.0,
+        103.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b002",
+      "kind": "text",
+      "bbox": [
+        392.0,
+        96.0,
+        562.0,
+        105.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b004",
+      "kind": "text",
+      "bbox": [
+        217.0,
+        203.0,
+        553.0,
+        296.0
+      ],
+      "markdown": "**Mohammad Ghazi Vakili**<sup>1,2</sup>**, Christoph Gorgulla**<sup>3,4</sup>**, Jamie Snider**<sup>5</sup>**, AkshatKumar Nigam**<sup>6</sup>**, Dmitry Bezrukov**<sup>7</sup>**, Daniel Varoli**<sup>8</sup>**, Alex Aliper**<sup>7</sup>**, Daniil Polykovsky**<sup>9</sup>**, Krishna M. Padmanabha Das**<sup>10,11</sup>**, Huel Cox III**<sup>11</sup>**, Anna Lyakisheva**<sup>5</sup>**, Ardalan Hosseini Mansob**<sup>5,12</sup>**, Zhong Yao**<sup>5</sup>**, Lela Bitar**<sup>5,13</sup>**, Danielle Tahoulas**<sup>5,14</sup>**, Dora Čerina**<sup>14,15</sup>**, Eugene Radchenko**<sup>7</sup>**, Xiao Ding**<sup>7</sup>**, Jinxin Liu**<sup>7</sup>**, Fanye Meng**<sup>7</sup>**, Feng Ren**<sup>7</sup>**, Yudong Cao**<sup>16</sup>**, Igor Stagljar**<sup>5,12,14,17</sup>**, Alán Aspuru-Guzik**<sup>1,2,18,19,20,21</sup> **& Alex Zhavoronkov**<sup>7</sup>",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b004a",
+      "kind": "text",
+      "bbox": [
+        34.0,
+        203.0,
+        160.0,
+        280.0
+      ],
+      "markdown": "Received: 7 May 2024\n\nAccepted: 6 December 2024\n\nPublished online: 22 January 2025\n\nCheck for updates",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b008",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        606.0,
+        560.0,
+        735.0
+      ],
+      "markdown": "<sup>1</sup>Department of Computer Science, University of Toronto, Toronto, Ontario, Canada. <sup>2</sup>Department of Chemistry, University of Toronto, Toronto, Ontario, Canada. <sup>3</sup>Department of Structural Biology, St. Jude Children’s Research Hospital, Memphis, TN, USA. <sup>4</sup>Department of Physics, Harvard University, Cambridge, MA, USA. <sup>5</sup>Donnelly Centre, Temerty Faculty of Medicine, University of Toronto, Toronto, Ontario, Canada. <sup>6</sup>Department of Computer Science, Stanford University, Stanford, CA, USA. <sup>7</sup>Insilico Medicine AI Limited, Abu Dhabi, UAE. <sup>8</sup>Zapata AI, Boston, MA, USA. <sup>9</sup>Insilico Medicine Canada, Inc., Montreal, Québec, Canada. <sup>10</sup>Department of Cancer Biology, Dana-Farber Cancer Institute, Boston, MA, USA. <sup>11</sup>Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Harvard University, Boston, MA, USA. <sup>12</sup>Department of Molecular Genetics, University of Toronto, Toronto, Ontario, Canada. <sup>13</sup>Department for Lung Diseases Jordanovac, Clinical Hospital Centre Zagreb, University of Zagreb, Zagreb, Croatia. <sup>14</sup>Donnelly Centre, Department of Biochemistry, Temerty Faculty of Medicine, University of Toronto, Toronto, Ontario, Canada. <sup>15</sup>Department of Oncology, University Hospital Center Split, School of Medicine, University of Split, Split, Croatia. <sup>16</sup>AQI, Inc., Boston, MA, USA. <sup>17</sup>Mediterranean Institute for Life Sciences (MedILS), School of Medicine, University of Split, Split, Croatia. <sup>18</sup>Department of Chemical Engineering and Applied Chemistry, University of Toronto, Toronto, Ontario, Canada. <sup>19</sup>Department of Materials Science and Engineering, University of Toronto, Toronto, Ontario, Canada. <sup>20</sup>Vector Institute for Artificial Intelligence, Toronto, Ontario, Canada. <sup>21</sup>Fellow, Canadian Institute for Advanced Research (CIFAR), Toronto, Ontario, Canada.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b008a",
+      "kind": "text",
+      "bbox": [
+        48.0,
+        735.0,
+        528.0,
+        746.0
+      ],
+      "markdown": "e-mail: christoph.gorgulla@stjude.org; akshat98@stanford.edu; igor.stagljar@utoronto.ca; aspuru@utoronto.ca; alex@insilicomedicine.com",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b005",
+      "kind": "text",
+      "bbox": [
+        217.0,
+        322.0,
+        556.0,
+        417.0
+      ],
+      "markdown": "We introduce a quantum–classical generative model for small-molecule design, specifically targeting KRAS inhibitors for cancer therapy. We apply the method to design, select and synthesize 15 proposed molecules that could notably engage with KRAS for cancer therapy, with two holding promise for future development as inhibitors. This work showcases the potential of quantum computing to generate experimentally validated hits that compare favorably against classical models.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b006",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        436.0,
+        297.0,
+        585.0
+      ],
+      "markdown": "Drug discovery is a multifaceted and resource-intensive process encompassing the discovery, development and comprehensive testing of new molecules. Typically extending over a decade and incurring substantial costs, the pharmaceutical industry faces substantial financial risks<sup>1–3</sup>. The pressing need for efficiency and innovation in drug discovery has led to integrating advanced computational tools into traditional pharmaceutical research methodologies. Concurrently, generative modeling has emerged as a transformative technology in molecule design<sup>4–7</sup>. Generative models use machine learning techniques to understand the underlying distribution of atoms and bonds in a specified dataset, which are then used to construct molecules with predefined properties, a process known as inverse molecular design<sup>8–10</sup>. These models excel at exploring the vast drug-like chemical space (~10<sup>60</sup> molecules), identifying potential molecules efficiently<sup>11</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b007",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        436.0,
+        563.0,
+        585.0
+      ],
+      "markdown": "By merging the advancements in quantum machine learning with traditional drug discovery, the industry is shifting toward innovative computational strategies<sup>12</sup>. While purely classical algorithms have made notable strides in drug discovery, hybrid classical–quantum approaches offer unique advantages because of the ability of quantum circuit Born machines (QCBMs) to leverage quantum effects such as superposition and entanglement<sup>13,14</sup>. The introduction of QCBMs illustrates this advancement, offering a generative model that can outperform classical ones in certain aspects. QCBMs are quantum generative models that leverage quantum circuits to learn complex probability distributions, enabling them to generate new samples that resemble the training data<sup>15</sup>. Hibat-Allah et al.<sup>16</sup> demonstrated the superior generalization capabilities of QCBMs, which can produce cardinality distributions beyond the training set and overcome",
+      "source_class": "text"
+    },
+    {
+      "id": "p0001-b009",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        762.0,
+        278.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0001-b010",
+      "kind": "omit",
+      "bbox": [
+        542.0,
+        763.0,
+        563.0,
+        770.0
+      ],
+      "markdown": "**1954**",
+      "source_class": "page-footer",
+      "reason": "Bare page number 1954 in the running foot; verified against previews/page-0001.png."
+    },
+    {
+      "id": "p0001-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        41.0,
+        202.0,
+        60.0
+      ],
+      "markdown": "## **nature biotechnology**",
+      "source_class": "section-header",
+      "reason": "Journal masthead logo at the top of the first page; branding furniture, not a section heading or article content."
+    }
+  ]
+}

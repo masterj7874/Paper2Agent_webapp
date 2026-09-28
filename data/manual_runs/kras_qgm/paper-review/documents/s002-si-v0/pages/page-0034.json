@@ -1,0 +1,125 @@
+{
+  "page": 34,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0034.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0034.png and checked all nine items against evidence/page-0034.json and 200-dpi renders. Bbox defect fixed: the ISM061-24 1H NMR spectrum (p0034-b003) was cropped at [51,423,450,541] but the measured vector band is [56.7,284.9,474.6,572.6] - the old crop started roughly 140 pt too low (losing the entire peak-label strip and the upper half of the plot) and was clipped on the right and bottom. New bbox [52,281,479,577], border verified ink-free at 300 dpi; asset renamed from the placeholder 'figure-p0034-003' to 'si-nmr-ism061-24'. p0034-b002 was a spurious 15x15 pt 'figure' built from a 4x4 pt embedded bitmap sitting inside that spectrum; converted to kind 'omit' with a reason rather than emitting a second crop. Scheme S13 (p0034-b005) checked against the band [57.8,639.0,470.3,683.1] and set to [53,635,475,688]; placeholder asset name replaced with 'scheme-s13'. p0034-b006 ('**Scheme S13** Preparation of ISM061-24-2') was kind 'text' -> 'caption'; p0034-b007 ('Step 1: Preparation of Compound 24-5') was kind 'caption' -> level-3 heading. Section heading S1.13 set to level 3. Items reordered so the NMR figure sits with the Step 5 text it belongs to and the scheme sits with its caption. Text repairs: removed <mark> artifacts around '4,4,5,5-tetramethyl-2-vinyl-1,3,2-dioxaborolane'; 'LCMS(ESI<sup>+</sup> )' / '[M+H]<sup>+</sup> .' spacing; '.<sup>1</sup> H NMR' -> '. <sup>1</sup>H NMR'; 'DMSO- _d_ 6)' -> 'DMSO-*d*6)'. Preserved '1,4-dioxane-H2O (24 mL,5:1)' with its missing space after the comma, as printed. The last paragraph is cut mid-sentence at the page foot and continues on page 35. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*. Italic isotope marker set as 'DMSO-*d*6' to match the form the pages 1-13 reviewer established (pages 6, 7, 10); '_d_6' was rejected because CommonMark underscore emphasis does not close before an alphanumeric, so it would have leaked literal underscores into the output. '_J_' and '_o_' keep their underscore form, which does render, exactly as pages 6/7/10/14/17/20/23 have them. DETACHED-BAND PROOF: after re-measuring, the page was rendered at 200 dpi with every native text line AND every declared figure/omit region masked out; ZERO non-white pixels remain. So no separate vector band was left outside the crop - in particular the right-hand intensity axis and the bottom f1 (ppm) axis with its integration row are inside the figure bbox, not stranded below or beside it.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0034-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        233.0,
+        71.0
+      ],
+      "markdown": "#### Step 5: Preparation of ISM061-24",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0034-b001",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        90.0,
+        542.0,
+        267.0
+      ],
+      "markdown": "To a solution of 2-(2-(3-fluoro-2-(o-tolyl)pyridin-4-yl)ethyl)benzoic acid (70.0 mg, 0.21 mmol) in DMF (2 mL) were added ammonium chloride (11.2 mg, 0.21 mmol), HATU (87.3 mg, 0.23 mmol) and DIEA (0.1 mL, 0.42 mmol) and then the reaction mixture was stirred at 25 ℃ for 2 hrs. The reaction solution was poured into water (50 mL) and extracted with EtOAc (25 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 1: 1) to afford **ISM061-24** (30 mg, 43% yield) as a white solid. LCMS(ESI<sup>+</sup>): 335.3 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, DMSO-*d*6) δ 8.37 (d, _J_ = 4.9 Hz, 1H), 7.80 (s, 1H), 7.41 – 7.20 (m, 10H), 3.14 – 3.06 (m, 2H), 3.04 – 2.97 (m, 2H), 2.13 (s, 3H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0034-b003",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        281.0,
+        479.0,
+        577.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-24",
+      "asset_name": "si-nmr-ism061-24"
+    },
+    {
+      "id": "p0034-b002",
+      "kind": "omit",
+      "bbox": [
+        110.0,
+        379.0,
+        125.0,
+        394.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "reason": "Stray 4x4 pt embedded bitmap at [110,379,125,394] that the extractor promoted to a figure; it is a blank artefact lying inside the ISM061-24 NMR spectrum region, which is already captured by the nmr-ism061-24 crop."
+    },
+    {
+      "id": "p0034-b004",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        619.0,
+        238.0,
+        631.0
+      ],
+      "markdown": "### S1.13. Preparation of ISM061-24-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0034-b005",
+      "kind": "figure",
+      "bbox": [
+        53.0,
+        635.0,
+        475.0,
+        688.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S13",
+      "asset_name": "scheme-s13"
+    },
+    {
+      "id": "p0034-b006",
+      "kind": "caption",
+      "bbox": [
+        197.0,
+        695.0,
+        401.0,
+        707.0
+      ],
+      "markdown": "**Scheme S13** Preparation of ISM061-24-2",
+      "source_class": "text"
+    },
+    {
+      "id": "p0034-b007",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        715.0,
+        259.0,
+        727.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 24-5",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0034-b008",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        746.0,
+        542.0,
+        779.0
+      ],
+      "markdown": "To a solution of 2-bromobenzonitrile (2 g, 10.99 mmol) in 1,4-dioxane-H2O (24 mL,5:1) was added 4,4,5,5-tetramethyl-2-vinyl-1,3,2-dioxaborolane (2.5 g, 16.48 mmol), K2CO3 (3 g, 21.98 mmol) and",
+      "source_class": "text"
+    }
+  ]
+}

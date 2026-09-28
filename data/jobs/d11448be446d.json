@@ -1,0 +1,89 @@
+{
+ "id": "d11448be446d",
+ "agent": "MedKG",
+ "tool": "medkg_search",
+ "arguments": {
+  "query": "federated learning histopathology",
+  "k": 3,
+  "is_q1": true
+ },
+ "status": "done",
+ "created_at": 1790055946.3510346,
+ "started_at": 1790055946.3515315,
+ "finished_at": 1790055946.616328,
+ "result": {
+  "message": "3 hits (hybrid, abstracts) in 188 ms; status=degraded. Notes: lexical search failed: attempt to write a readonly database",
+  "summary": {
+   "n_hits": 3,
+   "status": "degraded",
+   "timing": {
+    "total_ms": 188.2,
+    "embed_ms": null,
+    "dense_ms": 41.6,
+    "lexical_ms": 0.4,
+    "rerank_ms": 29.2,
+    "graph_ms": null,
+    "llm_ms": null
+   },
+   "top_work_ids": [
+    "DOI:10.1109/tcyb.2024.3403927",
+    "PMC13407862",
+    "PMC9931322"
+   ]
+  },
+  "artifacts": [
+   {
+    "description": "search — full JSON response",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/search_20260922-144546-cbf452.json"
+   },
+   {
+    "description": "search — markdown",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/search_20260922-144546-cbf452.md"
+   }
+  ],
+  "reference": "http://127.0.0.1:8790/docs",
+  "hits": [
+   {
+    "work_id": "DOI:10.1109/tcyb.2024.3403927",
+    "chunk_id": null,
+    "score": 0.01639344262295082,
+    "title": "FedDBL: Communication and Data Efficient Federated Deep-Broad Learning for Histopathological Tissue Classification",
+    "year": 2023,
+    "journal": "IEEE Transactions on Cybernetics",
+    "is_q1": true,
+    "doi": "10.1109/tcyb.2024.3403927",
+    "snippet": "Histopathological tissue classification is a fundamental task in computational pathology. Deep learning (DL)-based models have achieved superior performance but centralized training suffers from the privacy leakage problem. Federated learning (FL) can safeguard privacy by keeping training samples locally, while…",
+    "section": null,
+    "source": "dense"
+   },
+   {
+    "work_id": "PMC13407862",
+    "chunk_id": null,
+    "score": 0.016129032258064516,
+    "title": "Nationwide federated learning for histopathology: secure deployment across Germany behind firewalls.",
+    "year": 2026,
+    "journal": "NPJ digital medicine",
+    "is_q1": true,
+    "doi": "10.1038/s41746-026-02958-y",
+    "snippet": "Federated Learning (FL) enables collaborative training across institutions without sharing sensitive data, a solution for privacy-preserving AI in medical imaging. However, hospital deployment remains challenging due to strict data protection regulations, heterogeneous infrastructures, and limited network…",
+    "section": null,
+    "source": "dense"
+   },
+   {
+    "work_id": "PMC9931322",
+    "chunk_id": null,
+    "score": 0.015873015873015872,
+    "title": "A systematic review of federated learning applications for biomedical data.",
+    "year": 2022,
+    "journal": "PLOS digital health",
+    "is_q1": true,
+    "doi": "10.1371/journal.pdig.0000033",
+    "snippet": "<h4>Objectives</h4>Federated learning (FL) allows multiple institutions to collaboratively develop a machine learning algorithm without sharing their data. Organizations instead share model parameters only, allowing them to benefit from a model built with a larger dataset while maintaining the privacy of their own…",
+    "section": null,
+    "source": "dense"
+   }
+  ]
+ },
+ "error": null,
+ "duration_s": 0.26
+}

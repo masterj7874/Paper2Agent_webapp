@@ -1,0 +1,304 @@
+{
+  "page": 14,
+  "lines": [
+    {
+      "text": "To a solution of compound 12-9 (410 mg,1.4 mmol) in dichloromethane (10 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        541.5341186523438,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "triethylamine (486 mg,4.8 mmol), 4-dimethylaminopyridine (37 mg,0.3 mmol) and p-toluenesulfonyl",
+      "bbox": [
+        56.6399040222168,
+        77.86796569824219,
+        541.5372924804688,
+        91.15196990966797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chloride (664 mg,3 µmol). The mixture was stirred at 20 °C under N2 for 2 hours. After the addition",
+      "bbox": [
+        56.6399040222168,
+        98.74796295166016,
+        541.5377807617188,
+        112.11068725585938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of ice water (10 mL), the mixture was extracted with dichloromethane (20 mL × 3). The combined",
+      "bbox": [
+        56.6399040222168,
+        119.38795471191406,
+        541.5165405273438,
+        132.6719512939453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and",
+      "bbox": [
+        56.6399040222168,
+        140.02796936035156,
+        541.5333862304688,
+        153.3119659423828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to give a residue, which was further purified by silica gel column",
+      "bbox": [
+        56.6399040222168,
+        160.66796875,
+        541.5289306640625,
+        173.95196533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chromatography to afford the title compound (120 mg, Y:14.5%).",
+      "bbox": [
+        56.6399040222168,
+        181.54795837402344,
+        375.2315979003906,
+        194.8319549560547
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 11: Preparation of ISM061-12",
+      "bbox": [
+        56.6399040222168,
+        202.18795776367188,
+        238.954345703125,
+        215.47195434570312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A solution of compound 12-10 (120 mg,0.2 mmol) in ethylamine (5 mL, 1M in THF) was stirred at",
+      "bbox": [
+        56.6399040222168,
+        232.907958984375,
+        541.530517578125,
+        246.19195556640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "25 °C for 16 hours. The mixture was concentrated to give crude produce, which was dissolved in",
+      "bbox": [
+        56.6399040222168,
+        253.54795837402344,
+        541.536376953125,
+        266.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ethanol (2 mL) and water (0.3 mL), and then NaOH (12 mg, 0.3 mmol) was added. The reaction was",
+      "bbox": [
+        56.6399040222168,
+        274.18798828125,
+        541.528564453125,
+        287.47198486328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "stirred at 25 °C for 4 hours. The pH is adjusted to 6-7 with 1N hydrochloric acid. The solution is",
+      "bbox": [
+        56.6399040222168,
+        295.0679626464844,
+        541.5355834960938,
+        308.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "directly purified by HPLC to afford the title compound as a white solid (5.7 mg, Y: 8.9%). LCMS",
+      "bbox": [
+        56.6399040222168,
+        315.7079772949219,
+        541.5285034179688,
+        328.9919738769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(ESI): 326.2 [M+H]+. 1H NMR (400 MHz, Methanol-d4) δ 7.93 (s, 1H), 6.49 (s, 1H), 5.74 (s, 1H),",
+      "bbox": [
+        56.6399040222168,
+        335.9032287597656,
+        541.541748046875,
+        349.710693359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3.21 – 3.07 (m, 4H), 2.93 – 2.84 (m, 2H), 2.75 (td, J = 14.5, 7.0 Hz, 2H), 2.66 (t, J = 6.0 Hz, 2H),",
+      "bbox": [
+        56.6399040222168,
+        356.98797607421875,
+        541.5400390625,
+        370.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2.59 – 2.38 (m, 3H), 2.19 – 2.08 (m, 1H), 1.93 – 1.84 (m, 1H), 1.83 – 1.71 (m, 1H), 1.69 – 1.60 (m,",
+      "bbox": [
+        56.6399040222168,
+        377.86798095703125,
+        541.53955078125,
+        391.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2H), 1.34 (t, J = 7.3 Hz, 3H).",
+      "bbox": [
+        56.6399040222168,
+        398.5079650878906,
+        199.38011169433594,
+        411.7919616699219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 14
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          542,
+          195
+        ],
+        "pos": [
+          0,
+          646
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          204,
+          239,
+          216
+        ],
+        "pos": [
+          646,
+          688
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          235,
+          542,
+          412
+        ],
+        "pos": [
+          688,
+          1533
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          56,
+          418,
+          445,
+          671
+        ],
+        "pos": [
+          1533,
+          1535
+        ]
+      }
+    ],
+    "text": "To a solution of **compound 12-9** (410 mg,1.4 mmol) in dichloromethane (10 mL) was added triethylamine (486 mg,4.8 mmol), 4-dimethylaminopyridine (37 mg,0.3 mmol) and p-toluenesulfonyl chloride (664 mg,3 µmol). The mixture was stirred at 20 °C under N2 for 2 hours. After the addition of ice water (10 mL), the mixture was extracted with dichloromethane (20 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound (120 mg, Y:14.5%). \n\n# **Step 11: Preparation of ISM061-12** \n\nA solution of **compound 12-10** (120 mg,0.2 mmol) in ethylamine (5 mL, 1M in THF) was stirred at 25 °C for 16 hours. The mixture was concentrated to give crude produce, which was dissolved in ethanol (2 mL) and water (0.3 mL), and then NaOH (12 mg, 0.3 mmol) was added. The reaction was stirred at 25 °C for 4 hours. The pH is adjusted to 6-7 with 1N hydrochloric acid. The solution is directly purified by HPLC to afford the title compound as a white solid (5.7 mg, Y: 8.9%). LCMS (ESI): 326.2 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, Methanol- _d_ 4) δ 7.93 (s, 1H), 6.49 (s, 1H), 5.74 (s, 1H), 3.21 – 3.07 (m, 4H), 2.93 – 2.84 (m, 2H), 2.75 (td, _J_ = 14.5, 7.0 Hz, 2H), 2.66 (t, _J_ = 6.0 Hz, 2H), 2.59 – 2.38 (m, 3H), 2.19 – 2.08 (m, 1H), 1.93 – 1.84 (m, 1H), 1.83 – 1.71 (m, 1H), 1.69 – 1.60 (m, 2H), 1.34 (t, _J_ = 7.3 Hz, 3H). \n\n\n\n"
+  }
+}

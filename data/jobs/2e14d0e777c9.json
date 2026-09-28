@@ -1,0 +1,196 @@
+{
+ "id": "2e14d0e777c9",
+ "agent": "MedKG",
+ "tool": "medkg_related_work",
+ "arguments": {
+  "topic": "automated brain extraction skull stripping MRI deep learning",
+  "k": 10,
+  "summarise": true,
+  "modality": "MRI",
+  "task": "segmentation"
+ },
+ "status": "done",
+ "created_at": 1790063051.9285076,
+ "started_at": 1790063051.9295554,
+ "finished_at": 1790063097.2032814,
+ "result": {
+  "message": "10 related-work rows; LLM=codex; status=ok.",
+  "summary": {
+   "n_rows": 10,
+   "n_q1": 10,
+   "llm": {
+    "provider": "codex",
+    "model": "gpt-6-astra",
+    "elapsed_s": 44.54,
+    "fallback_used": false,
+    "error": null
+   },
+   "timing": {
+    "total_ms": 45230.8,
+    "retrieval_ms": 523.5,
+    "embed_ms": null,
+    "dense_ms": 42.6,
+    "lexical_ms": 108.0,
+    "rerank_ms": 221.6,
+    "graph_ms": 161.7,
+    "llm_ms": 44542.6
+   },
+   "status": "ok"
+  },
+  "artifacts": [
+   {
+    "description": "related_work — full JSON response",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164457-4cdc20.json"
+   },
+   {
+    "description": "related_work — markdown",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164457-4cdc20.md"
+   }
+  ],
+  "reference": "http://127.0.0.1:8790/docs",
+  "rows": [
+   {
+    "work_id": "PMC10894871",
+    "title": "Automated neonatal nnU-Net brain MRI extractor trained on a large multi-institutional dataset.",
+    "year": 2024,
+    "journal": "Scientific reports",
+    "is_q1": true,
+    "doi": "10.1038/s41598-024-54436-8",
+    "method": "ANUBEX: nnU-Net-based brain segmentation",
+    "modality": "Neonatal brain MRI, including high- and low-resolution and motion-degraded images",
+    "dataset": "HEAL study (433 training participants); NIH and dHCP evaluation datasets",
+    "metric_values": "not stated",
+    "summary": "ANUBEX enables automatic neonatal brain extraction across acquisition settings and achieves higher aggregate Dice scores than five publicly available methods.",
+    "score": 0.9979007244110107
+   },
+   {
+    "work_id": "PMC7597856",
+    "title": "Brain extraction on MRI scans in presence of diffuse glioma: Multi-institutional performance evaluation of deep learning methods and robust modality-agnostic training.",
+    "year": 2020,
+    "journal": "NeuroImage",
+    "is_q1": true,
+    "doi": "10.1016/j.neuroimage.2020.117081",
+    "method": "Deep learning architectures with modality-agnostic training",
+    "modality": "Multiparametric brain MRI with brain tumors",
+    "dataset": "Private institutional cohorts and TCIA collections (3,340 scans)",
+    "metric_values": "not stated",
+    "summary": "Evaluates deep learning brain extraction across institutions and introduces modality-agnostic training to support available MRI modalities without retraining.",
+    "score": 0.9917163252830505
+   },
+   {
+    "work_id": "DOI:10.1016/j.bspc.2022.104514",
+    "title": "Towards fully automated deep-learning-based brain tumor segmentation: is brain extraction still necessary?",
+    "year": 2022,
+    "journal": "Biomedical Signal Processing and Control",
+    "is_q1": true,
+    "doi": "10.1016/j.bspc.2022.104514",
+    "method": "Deep learning tumor segmentation pipeline trained and tested without skull stripping",
+    "modality": "Multimodal brain MRI",
+    "dataset": "not stated",
+    "metric_values": "Brain extraction method choice can compromise tumor segmentation performance by up to 15.7%",
+    "summary": "Shows that omitting brain extraction can provide competitive tumor segmentation performance while reducing processing time and avoiding skull-stripping errors.",
+    "score": 0.9902915358543396
+   },
+   {
+    "work_id": "PMC9237075",
+    "title": "A general skull stripping of multiparametric brain MRIs using 3D convolutional neural network.",
+    "year": 2022,
+    "journal": "Scientific reports",
+    "is_q1": true,
+    "doi": "10.1038/s41598-022-14983-4",
+    "method": "EnNet: ensemble neural network based on 3D convolutional neural networks",
+    "modality": "Multiparametric brain MRI, including healthy and pre-/post-operative GBM scans",
+    "dataset": "UPMC and TCIA retrospective dataset (815 cases with/without GBM)",
+    "metric_values": "not stated",
+    "summary": "Introduces automatic multicenter brain extraction for healthy and GBM scans and evaluates 15 MRI modality combinations, finding the best performance with all modalities.",
+    "score": 0.9888418912887573
+   },
+   {
+    "work_id": "PMC9580949",
+    "title": "An End-To-End Pipeline for Fully Automatic Morphological Quantification of Mouse Brain Structures From MRI Imagery.",
+    "year": 2022,
+    "journal": "Frontiers in bioinformatics",
+    "is_q1": true,
+    "doi": "10.3389/fbinf.2022.865443",
+    "method": "DeepBrainIPP: deep learning skull stripping with data augmentation, atlas registration, and a dedicated small-structure segmentation model",
+    "modality": "In vivo and ex vivo mouse brain T2-weighted MRI",
+    "dataset": "private cohort (172 in-house images augmented to 4,040 samples)",
+    "metric_values": "Skull stripping: average Dice 0.96, residual volume 2.18%; atlas registration: average cross-correlation 0.98; small-structure segmentation: average Dice 0.89, residual volume error 5.32%",
+    "summary": "Provides an automated mouse brain processing pipeline combining skull stripping and atlas registration with direct segmentation of small structures through a web interface.",
+    "score": 0.9860442876815796
+   },
+   {
+    "work_id": "DOI:10.48550/arxiv.2205.09706",
+    "title": "k-strip: A novel segmentation algorithm in k-space for the application of skull stripping",
+    "year": 2022,
+    "journal": "Computer methods and programs in biomedicine",
+    "is_q1": true,
+    "doi": "10.48550/arxiv.2205.09706",
+    "method": "k-strip: deep learning skull stripping directly in complex-valued k-space",
+    "modality": "Raw MRI k-space data",
+    "dataset": "not stated (four datasets from different institutions, approximately 200,000 MRI slices)",
+    "metric_values": "Dice 92%–99%; Hausdorff distance <5.5 pixels; Dice up to 99% above the eye region",
+    "summary": "Demonstrates skull stripping directly in MRI k-space while preserving phase information and enabling anonymization before image reconstruction.",
+    "score": 0.9816303849220276
+   },
+   {
+    "work_id": "PMC11664259",
+    "title": "Automated pediatric brain tumor imaging assessment tool from CBTN: Enhancing suprasellar region inclusion and managing limited data with deep learning.",
+    "year": 2024,
+    "journal": "Neuro-oncology advances",
+    "is_q1": true,
+    "doi": "10.1093/noajnl/vdae190",
+    "method": "Separate nnU-Net-based models for skull stripping, whole-tumor segmentation, and enhancing-tumor segmentation",
+    "modality": "Pediatric brain MRI with single T2/FLAIR or multiple T1-Gd and T2/FLAIR sequences",
+    "dataset": "not stated (multi-institutional cohort of 527 pediatric patients; 336 for skull stripping and 489 for tumor segmentation)",
+    "metric_values": "Skull-stripping Dice 0.98 ± 0.01 (median 0.98) for both single- and multi-parametric models; single-/multi-parametric Dice correlation r >0.80 (P <.05); whole-tumor Dice: T2 0.84 ± 0.17 (median 0.90), FLAIR 0.82 ± 0.19 (median 0.89); enhancing-tumor Dice: T1-Gd+FLAIR 0.65 ± 0.35 (median 0.79), T1-Gd+T2 0.64 ± 0.36 (median 0.79)",
+    "summary": "Develops pediatric skull-stripping models that include sellar/suprasellar regions and tumor segmentation models accommodating limited data and missing MRI sequences.",
+    "score": 0.9814534187316895
+   },
+   {
+    "work_id": "PMC10045128",
+    "title": "RU-Net: skull stripping in rat brain MR images after ischemic stroke with rat U-Net.",
+    "year": 2023,
+    "journal": "BMC medical imaging",
+    "is_q1": true,
+    "doi": "10.1186/s12880-023-00994-8",
+    "method": "RU-Net: U-shaped deep network integrating residual connections, batch normalization, and pooling-index transmission",
+    "modality": "Rat brain diffusion-weighted imaging and T2-weighted MRI after ischemic stroke",
+    "dataset": "private cohort (two in-house datasets, each containing 55 subjects)",
+    "metric_values": "Average Dice: DWI 98.04% (p <0.001); T2WI 97.67% (p <0.001)",
+    "summary": "Introduces an end-to-end skull-stripping network for rat brain MRI after stroke that outperforms several existing methods on two imaging modalities.",
+    "score": 0.9808392524719238
+   },
+   {
+    "work_id": "PMC9465771",
+    "title": "SynthStrip: skull-stripping for any brain image.",
+    "year": 2022,
+    "journal": "NeuroImage",
+    "is_q1": true,
+    "doi": "10.1016/j.neuroimage.2022.119474",
+    "method": "SynthStrip: learning-based brain extraction trained on synthetic images generated from anatomical segmentations",
+    "modality": "Brain MRI across acquisition protocols, contrasts, resolutions, and age groups",
+    "dataset": "not stated (entirely synthetic training dataset; diverse acquired images for evaluation)",
+    "metric_values": "not stated",
+    "summary": "Uses broadly varied synthetic training images to enable a single skull-stripping model to generalize across real brain imaging protocols without target-contrast training data.",
+    "score": 0.957277774810791
+   },
+   {
+    "work_id": "DOI:10.1016/j.ins.2022.01.011",
+    "title": "ASMCNN: An efficient brain extraction using active shape model and convolutional neural networks",
+    "year": 2018,
+    "journal": "Information Sciences",
+    "is_q1": true,
+    "doi": "10.1016/j.ins.2022.01.011",
+    "method": "ASMCNN: modified active shape model and CNN with CRF, Gaussian-process, and rule-based post-processing",
+    "modality": "Brain MRI processed as 2D sagittal image sequences",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Combines grouped shape priors with CNN-based contour refinement to improve brain extraction across variable MRI appearances.",
+    "score": 0.9315870404243469
+   }
+  ]
+ },
+ "error": null,
+ "duration_s": 45.27
+}

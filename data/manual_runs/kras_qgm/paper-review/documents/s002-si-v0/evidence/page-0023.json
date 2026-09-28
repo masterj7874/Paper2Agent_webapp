@@ -1,0 +1,331 @@
+{
+  "page": 23,
+  "lines": [
+    {
+      "text": "Step 5: Preparation of Compound 15-5",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        258.6417236328125,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-(2-((5-((8-chloroisoquinolin-1-yl)ethynyl)pyrimidin-2-yl)oxy)ethyl)isoindoline-",
+      "bbox": [
+        56.6399040222168,
+        87.94796752929688,
+        538.53955078125,
+        101.23197174072266
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1,3-dione (400 mg, 0.83 mmol) in MeOH (5 mL) were added Hydrazinium hydroxide solution (2 mL,",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        541.5359497070312,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1.76 mmol). Then the mixture was heated and stirred at 80 ℃ for 30 min. After cooling to 25 ℃, the",
+      "bbox": [
+        56.6399040222168,
+        129.4679718017578,
+        541.5261840820312,
+        142.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (30 mL × 3), the",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        541.5383911132812,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "combined organic layers were washed with brine (30 mL), dried over Na2SO4, filtered and",
+      "bbox": [
+        56.6399040222168,
+        170.7479705810547,
+        541.536376953125,
+        184.11068725585938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to afford Compound 15-5 (260 mg, 91.0% yield) as a yellow",
+      "bbox": [
+        56.6399040222168,
+        191.38796997070312,
+        541.537841796875,
+        204.67196655273438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solid. LCMS (ESI+): 325.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        211.8232421875,
+        233.100830078125,
+        225.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 6: Preparation of ISM061-15",
+      "bbox": [
+        56.6399040222168,
+        242.9879608154297,
+        232.954345703125,
+        256.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-((5-((8-chloroisoquinolin-1-yl)ethynyl)pyrimidin-2-yl)oxy)ethan-1-amine (150",
+      "bbox": [
+        56.6399040222168,
+        273.4679870605469,
+        541.53955078125,
+        286.7519836425781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mg, 0.46 mmol) in MeOH (5 mL) was added Platinum dioxide (21 mg, 0.1 mmol). The reaction",
+      "bbox": [
+        56.6399040222168,
+        294.3479919433594,
+        541.5355224609375,
+        307.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mixture was stirred at H2 at 25 ℃ for 4 h, the mixture was filtered and the filtrate was concentrated",
+      "bbox": [
+        56.6399040222168,
+        314.98797607421875,
+        541.5203857421875,
+        328.3506774902344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to give the crude product, which was further purified by Prep-HPLC (column: YMC, C18 (250 ×",
+      "bbox": [
+        56.6399040222168,
+        335.1832275390625,
+        541.540283203125,
+        348.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "20mm, 5 μm); mobile phase: [water (0.1%NH4OH) - ACN]; B%: 20ACN% - 50ACN%, 20 min) to",
+      "bbox": [
+        56.6399040222168,
+        356.2679748535156,
+        541.53857421875,
+        369.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "afford the title compound (11 mg, 7.2% yield). LCMS (ESI+): 329.0 [M+H]+; 1H NMR (400 MHz,",
+      "bbox": [
+        56.6399040222168,
+        376.7032165527344,
+        541.541259765625,
+        390.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "DMSO-d6) δ 8.47 (d, J = 5.5 Hz, 1H), 8.18 (s, 2H), 7.98 (dd, J = 8.1, 1.3 Hz, 1H), 7.86 – 7.77 (m,",
+      "bbox": [
+        56.6399040222168,
+        397.7879943847656,
+        541.538818359375,
+        411.1506652832031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2H), 7.70 (t, J = 7.8 Hz, 1H), 6.78 (t, J = 5.8 Hz, 1H), 4.66 (t, J = 5.6 Hz, 1H), 3.96 – 3.78 (m, 2H),",
+      "bbox": [
+        56.6399040222168,
+        418.427978515625,
+        541.5404663085938,
+        431.71197509765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3.51 – 3.47 (m, 2H), 3.31 – 3.29 (m, 2H), 3.00 – 2.84 (m, 2H).",
+      "bbox": [
+        56.6399040222168,
+        439.0679626464844,
+        359.616455078125,
+        452.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 23
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          56,
+          59,
+          259,
+          71
+        ],
+        "pos": [
+          0,
+          45
+        ]
+      },
+      {
+        "index": 1,
+        "class": "text",
+        "bbox": [
+          56,
+          90,
+          542,
+          226
+        ],
+        "pos": [
+          45,
+          674
+        ]
+      },
+      {
+        "index": 2,
+        "class": "section-header",
+        "bbox": [
+          56,
+          245,
+          233,
+          257
+        ],
+        "pos": [
+          674,
+          715
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          56,
+          275,
+          542,
+          453
+        ],
+        "pos": [
+          715,
+          1599
+        ]
+      },
+      {
+        "index": 4,
+        "class": "picture",
+        "bbox": [
+          56,
+          469,
+          445,
+          722
+        ],
+        "pos": [
+          1599,
+          1601
+        ]
+      }
+    ],
+    "text": "# **Step 5: Preparation of Compound 15-5** \n\nTo a solution of 2-(2-((5-((8-chloroisoquinolin-1-yl)ethynyl)pyrimidin-2-yl)oxy)ethyl)isoindoline1,3-dione (400 mg, 0.83 mmol) in MeOH (5 mL) were added Hydrazinium hydroxide solution (2 mL, 1.76 mmol). Then the mixture was heated and stirred at 80 ℃ for 30 min. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (30 mL × 3), the combined organic layers were washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to afford **Compound 15-5** (260 mg, 91.0% yield) as a yellow solid. LCMS (ESI<sup>+</sup> ): 325.2 [M+H]<sup>+</sup> . \n\n# **Step 6: Preparation of ISM061-15** \n\nTo a solution of 2-((5-((8-chloroisoquinolin-1-yl)ethynyl)pyrimidin-2-yl)oxy)ethan-1-amine (150 mg, 0.46 mmol) in MeOH (5 mL) was added Platinum dioxide (21 mg, 0.1 mmol). The reaction mixture was stirred at H2 at 25 ℃ for 4 h, the mixture was filtered and the filtrate was concentrated to give the crude product, which was further purified by Prep-HPLC (column: YMC, C<sup>18</sup> (250 × 20mm, 5 μm); mobile phase: [water (0.1%NH4OH) - ACN]; B%: 20ACN% - 50ACN%, 20 min) to afford the title compound (11 mg, 7.2% yield). LCMS (ESI<sup>+</sup> ): 329.0 [M+H]<sup>+</sup> ;<sup>1</sup> H NMR (400 MHz, DMSO- _d_ 6) δ 8.47 (d, _J_ = 5.5 Hz, 1H), 8.18 (s, 2H), 7.98 (dd, _J_ = 8.1, 1.3 Hz, 1H), 7.86 – 7.77 (m, 2H), 7.70 (t, _J_ = 7.8 Hz, 1H), 6.78 (t, _J_ = 5.8 Hz, 1H), 4.66 (t, _J_ = 5.6 Hz, 1H), 3.96 – 3.78 (m, 2H), 3.51 – 3.47 (m, 2H), 3.31 – 3.29 (m, 2H), 3.00 – 2.84 (m, 2H). \n\n\n\n"
+  }
+}

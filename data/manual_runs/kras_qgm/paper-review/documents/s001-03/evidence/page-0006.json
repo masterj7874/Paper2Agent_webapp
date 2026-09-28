@@ -1,0 +1,1378 @@
+{
+  "page": 6,
+  "lines": [
+    {
+      "text": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        277.029052734375,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1959",
+      "bbox": [
+        543.6292114257812,
+        760.6864013671875,
+        562.67724609375,
+        771.7984008789062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "19.\t Rudolph, M. S. et al. Generation of high-resolution handwritten",
+      "bbox": [
+        39.685001373291016,
+        46.61162567138672,
+        284.95782470703125,
+        57.53162384033203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "digits with an ion-trap quantum computer. Phys. Rev. X 12, 031010",
+      "bbox": [
+        56.69300079345703,
+        57.24363708496094,
+        294.96820068359375,
+        68.28363800048828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2022).",
+      "bbox": [
+        56.6929931640625,
+        68.11565399169922,
+        82.26659393310547,
+        79.03565216064453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "20.\t Zeng, Q., Ge, H.-Y., Chen, G. & Zhou, N. Conditional quantum",
+      "bbox": [
+        39.684993743896484,
+        78.86766815185547,
+        276.59063720703125,
+        89.78766632080078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "circuit born machine based on a hybrid quantum-classical",
+      "bbox": [
+        56.6929931640625,
+        89.61968231201172,
+        268.61865234375,
+        100.53968048095703
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "framework. Physica A Stat. Mech. Appl. 608, 128693 (2023).",
+      "bbox": [
+        56.6929931640625,
+        100.25169372558594,
+        270.8937683105469,
+        111.29169464111328
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "21.\t Wang, X. et al. Identification of MRTX1133, a noncovalent, potent,",
+      "bbox": [
+        39.68498229980469,
+        111.12371063232422,
+        284.96417236328125,
+        122.04370880126953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and selective KRasG12D inhibitor. J. Med. Chem. 65, 3123–3133 (2022).",
+      "bbox": [
+        56.6929817199707,
+        121.74162292480469,
+        293.8843078613281,
+        132.7957305908203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "22.\t Mao, Z. et al. KRas(G12D) can be targeted by potent inhibitors via",
+      "bbox": [
+        39.684295654296875,
+        132.61363220214844,
+        291.03472900390625,
+        143.5336456298828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "formation of salt bridge. Cell Discov. 8, 5 (2022).",
+      "bbox": [
+        56.69229507446289,
+        143.2456512451172,
+        229.3778839111328,
+        154.28565979003906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "23.\t Gorgulla, C. et al. Virtualflow 2.0—the next generation drug",
+      "bbox": [
+        39.68428039550781,
+        154.11766052246094,
+        272.4459533691406,
+        165.0376739501953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "discovery platform enabling adaptive screens of 69 billion",
+      "bbox": [
+        56.69227981567383,
+        164.8696746826172,
+        268.8011779785156,
+        175.78968811035156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules. Preprint at bioRxiv https://doi.org/10.1101/",
+      "bbox": [
+        56.69227981567383,
+        175.62168884277344,
+        250.29226684570312,
+        186.5417022705078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2023.04.25.537981 (2023).",
+      "bbox": [
+        56.69227600097656,
+        186.3737030029297,
+        153.14907836914062,
+        197.29371643066406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "24.\t Nigam, A. K., Pollice, R., Krenn, M., Gomes, G. & Guzik, A. A.",
+      "bbox": [
+        39.68427658081055,
+        197.12571716308594,
+        271.5074768066406,
+        208.0457305908203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Beyond generative models: superfast traversal, optimization,",
+      "bbox": [
+        56.69227600097656,
+        207.8777313232422,
+        278.2979431152344,
+        218.79774475097656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "novelty, exploration and discovery (STONED) algorithm for",
+      "bbox": [
+        56.69227600097656,
+        218.62974548339844,
+        269.4803161621094,
+        229.5497589111328
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules using SELFIES. Chem. Sci. 12, 7079–7090 (2021).",
+      "bbox": [
+        56.69227600097656,
+        229.2617645263672,
+        270.1474914550781,
+        240.30177307128906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "25.\t Ivanenkov, Y. A. et al. Chemistry42: an AI-driven platform for",
+      "bbox": [
+        39.68428039550781,
+        240.13377380371094,
+        273.98431396484375,
+        251.0537872314453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecular design and optimization. J. Chem. Inf. Model. 63,",
+      "bbox": [
+        56.69227981567383,
+        250.7657928466797,
+        272.3562927246094,
+        261.8057861328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "695–701 (2023).",
+      "bbox": [
+        56.69227600097656,
+        261.6378173828125,
+        114.54588317871094,
+        272.55780029296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "26.\t Nigam, A. et al. Tartarus: A benchmarking platform for realistic",
+      "bbox": [
+        39.68427658081055,
+        272.38983154296875,
+        283.44915771484375,
+        283.309814453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and practical inverse molecular design. In Advances in Neural",
+      "bbox": [
+        56.69227600097656,
+        283.141845703125,
+        280.0499572753906,
+        294.06182861328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Information Processing Systems 36, 3263–3306 (2023).",
+      "bbox": [
+        56.69227600097656,
+        293.77386474609375,
+        255.921875,
+        304.8138427734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "27.\t Schuld, M., Sinayskiy, I. & Petruccione, F. An introduction to",
+      "bbox": [
+        39.68426513671875,
+        304.6458740234375,
+        272.18023681640625,
+        315.56585693359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum machine learning. Quantum Mach. Intell. 3, 28 (2021).",
+      "bbox": [
+        56.692264556884766,
+        315.27789306640625,
+        283.2130432128906,
+        326.31787109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "28.\t Saraon, P. et al. A drug discovery platform to identify compounds",
+      "bbox": [
+        39.68424987792969,
+        326.14990234375,
+        285.8218688964844,
+        337.06988525390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "that inhibit EGFR triple mutants. Nat. Chem. Biol. 16, 577–586 (2020).",
+      "bbox": [
+        56.6922492980957,
+        336.78192138671875,
+        294.7857971191406,
+        347.8218994140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "29.\t Stagljar, I., Korostensky, C., Johnsson, N. & te Heesen, S. A genetic",
+      "bbox": [
+        39.68424987792969,
+        347.6539306640625,
+        295.7265930175781,
+        358.57391357421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "system based on split-ubiquitin for the analysis of interactions",
+      "bbox": [
+        56.6922492980957,
+        358.40594482421875,
+        281.89947509765625,
+        369.325927734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "between membrane proteins in vivo. Proc. Natl Acad. Sci. USA 95,",
+      "bbox": [
+        56.6922492980957,
+        369.0379638671875,
+        294.7962646484375,
+        380.07794189453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "5187–5192 (1998).",
+      "bbox": [
+        56.6922607421875,
+        379.90997314453125,
+        119.70426940917969,
+        390.8299560546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "30.\t Petschnigg, J. et al. The mammalian-membrane two-hybrid assay",
+      "bbox": [
+        39.684261322021484,
+        390.6619873046875,
+        293.3498229980469,
+        401.58197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(MAMTH) for probing membrane–protein interactions in human",
+      "bbox": [
+        56.6922607421875,
+        401.41400146484375,
+        287.337890625,
+        412.333984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cells. Nat. Methods 11, 585–592 (2014).",
+      "bbox": [
+        56.6922607421875,
+        412.0460205078125,
+        195.3058624267578,
+        423.08599853515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "31.\t Saraon, P. et al. Chemical genetics screen identifies COPB2",
+      "bbox": [
+        39.6922607421875,
+        422.91802978515625,
+        271.8875732421875,
+        433.8380126953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tool compounds that alters ER stress response and induces RTK",
+      "bbox": [
+        56.700260162353516,
+        433.6700439453125,
+        287.9995422363281,
+        444.59002685546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dysregulation in lung cancer cells. J. Mol. Biol. 433, 167294 (2021).",
+      "bbox": [
+        56.700260162353516,
+        444.30206298828125,
+        294.7834167480469,
+        455.342041015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "32.\t Scheper, W., Thaminy, S., Kais, S., Stagljar, I. & Römisch, K.",
+      "bbox": [
+        306.14825439453125,
+        46.67003631591797,
+        533.40478515625,
+        57.59003448486328
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Coordination of N-glycosylation and protein translocation across",
+      "bbox": [
+        323.15625,
+        57.42205047607422,
+        559.3544311523438,
+        68.34204864501953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the endoplasmic reticulum membrane by Sss1 protein.",
+      "bbox": [
+        323.15625,
+        68.17406463623047,
+        524.3642578125,
+        79.09406280517578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "J. Biol. Chem. 278, 37998–38003 (2003).",
+      "bbox": [
+        323.15625,
+        78.80607604980469,
+        470.5953674316406,
+        89.84607696533203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "33.\t Benleulmi-Chaachoua, A. et al. Protein interactome mining",
+      "bbox": [
+        306.14825439453125,
+        89.67809295654297,
+        537.4591674804688,
+        100.59809112548828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "defines melatonin MT1 receptors as integral component of",
+      "bbox": [
+        323.15625,
+        100.43010711669922,
+        536.0968017578125,
+        111.35010528564453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "presynaptic protein complexes of neurons. J. Pineal Res. 60,",
+      "bbox": [
+        323.15625,
+        111.06211853027344,
+        541.7802734375,
+        122.10211944580078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "95–108 (2016).",
+      "bbox": [
+        323.164306640625,
+        121.93413543701172,
+        376.2227478027344,
+        132.85414123535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "34.\t Lopes, J. P. et al. The role of Parkinson’s disease-associated",
+      "bbox": [
+        306.15631103515625,
+        132.68614196777344,
+        536.045654296875,
+        143.6061553955078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "receptor GPR37 in the hippocampus: functional interplay",
+      "bbox": [
+        323.164306640625,
+        143.4381561279297,
+        532.9163208007812,
+        154.35816955566406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with the adenosinergic system. J. Neurochem. 134, 135–146",
+      "bbox": [
+        323.164306640625,
+        154.07017517089844,
+        538.3939208984375,
+        165.1101837158203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2015).",
+      "bbox": [
+        323.164306640625,
+        164.9421844482422,
+        347.7619323730469,
+        175.86219787597656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "35.\t Grozavu, I. et al. D154Q mutation does not alter KRas dimerization.",
+      "bbox": [
+        306.15631103515625,
+        175.69419860839844,
+        563.2619018554688,
+        186.6142120361328
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "J. Mol. Biol. 434, 167543 (2022).",
+      "bbox": [
+        323.164306640625,
+        186.3262176513672,
+        436.7266540527344,
+        197.36622619628906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "36.\t Götzke, H. et al. The ALFA-tag is a highly versatile tool for",
+      "bbox": [
+        306.15631103515625,
+        197.19822692871094,
+        529.5440063476562,
+        208.1182403564453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "nanobody-based bioscience applications. Nat. Commun. 10,",
+      "bbox": [
+        323.164306640625,
+        207.8302459716797,
+        543.3402709960938,
+        218.87025451660156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "4403 (2019).",
+      "bbox": [
+        323.164306640625,
+        218.70225524902344,
+        369.3522644042969,
+        229.6222686767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Publisher’s note Springer Nature remains neutral with regard to",
+      "bbox": [
+        306.15631103515625,
+        240.08628845214844,
+        537.6800537109375,
+        251.1262969970703
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "jurisdictional claims in published maps and institutional affiliations.",
+      "bbox": [
+        306.15631103515625,
+        250.9582977294922,
+        548.1319580078125,
+        261.8782958984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Open Access This article is licensed under a Creative Commons",
+      "bbox": [
+        306.15631103515625,
+        272.3343200683594,
+        539.2785034179688,
+        283.3742980957031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Attribution-NonCommercial-NoDerivatives 4.0 International License,",
+      "bbox": [
+        306.15631103515625,
+        283.2063293457031,
+        556.3624267578125,
+        294.1263122558594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which permits any non-commercial use, sharing, distribution and",
+      "bbox": [
+        306.15631103515625,
+        293.9583435058594,
+        543.0847778320312,
+        304.8783264160156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reproduction in any medium or format, as long as you give appropriate",
+      "bbox": [
+        306.15631103515625,
+        304.7103576660156,
+        562.5750732421875,
+        315.6303405761719
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "credit to the original author(s) and the source, provide a link to the",
+      "bbox": [
+        306.15631103515625,
+        315.4623718261719,
+        546.237548828125,
+        326.3823547363281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Creative Commons licence, and indicate if you modified the licensed",
+      "bbox": [
+        306.15631103515625,
+        326.2143859863281,
+        557.208740234375,
+        337.1343688964844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "material. You do not have permission under this licence to share",
+      "bbox": [
+        306.15631103515625,
+        336.9664001464844,
+        538.8103637695312,
+        347.8863830566406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "adapted material derived from this article or parts of it. The images",
+      "bbox": [
+        306.15631103515625,
+        347.7184143066406,
+        548.6927490234375,
+        358.6383972167969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "or other third party material in this article are included in the article’s",
+      "bbox": [
+        306.15631103515625,
+        358.4704284667969,
+        554.3822631835938,
+        369.3904113769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Creative Commons licence, unless indicated otherwise in a credit",
+      "bbox": [
+        306.15631103515625,
+        369.2224426269531,
+        544.85595703125,
+        380.1424255371094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "line to the material. If material is not included in the article’s Creative",
+      "bbox": [
+        306.15631103515625,
+        379.9744567871094,
+        554.7631225585938,
+        390.8944396972656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Commons licence and your intended use is not permitted by statutory",
+      "bbox": [
+        306.15631103515625,
+        390.7264709472656,
+        561.311279296875,
+        401.6464538574219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "regulation or exceeds the permitted use, you will need to obtain",
+      "bbox": [
+        306.15631103515625,
+        401.4784851074219,
+        538.8279418945312,
+        412.3984680175781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "permission directly from the copyright holder. To view a copy of this",
+      "bbox": [
+        306.15631103515625,
+        412.2304992675781,
+        553.1599731445312,
+        423.1504821777344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.",
+      "bbox": [
+        306.15631103515625,
+        422.9825134277344,
+        543.0383911132812,
+        433.9024963378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "© The Author(s) 2025",
+      "bbox": [
+        306.15631103515625,
+        444.48651123046875,
+        383.5481872558594,
+        455.406494140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 6
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "list-item",
+        "bbox": [
+          39,
+          49,
+          295,
+          79
+        ],
+        "pos": [
+          71,
+          222
+        ]
+      },
+      {
+        "index": 3,
+        "class": "list-item",
+        "bbox": [
+          39,
+          81,
+          277,
+          111
+        ],
+        "pos": [
+          222,
+          412
+        ]
+      },
+      {
+        "index": 4,
+        "class": "list-item",
+        "bbox": [
+          39,
+          113,
+          294,
+          132
+        ],
+        "pos": [
+          412,
+          573
+        ]
+      },
+      {
+        "index": 5,
+        "class": "list-item",
+        "bbox": [
+          39,
+          135,
+          292,
+          154
+        ],
+        "pos": [
+          573,
+          705
+        ]
+      },
+      {
+        "index": 6,
+        "class": "list-item",
+        "bbox": [
+          39,
+          156,
+          273,
+          197
+        ],
+        "pos": [
+          705,
+          915
+        ]
+      },
+      {
+        "index": 7,
+        "class": "list-item",
+        "bbox": [
+          39,
+          199,
+          279,
+          240
+        ],
+        "pos": [
+          915,
+          1168
+        ]
+      },
+      {
+        "index": 8,
+        "class": "list-item",
+        "bbox": [
+          39,
+          242,
+          274,
+          272
+        ],
+        "pos": [
+          1168,
+          1320
+        ]
+      },
+      {
+        "index": 9,
+        "class": "list-item",
+        "bbox": [
+          39,
+          275,
+          284,
+          305
+        ],
+        "pos": [
+          1320,
+          1513
+        ]
+      },
+      {
+        "index": 10,
+        "class": "list-item",
+        "bbox": [
+          39,
+          307,
+          284,
+          326
+        ],
+        "pos": [
+          1513,
+          1651
+        ]
+      },
+      {
+        "index": 11,
+        "class": "list-item",
+        "bbox": [
+          39,
+          328,
+          295,
+          348
+        ],
+        "pos": [
+          1651,
+          1801
+        ]
+      },
+      {
+        "index": 12,
+        "class": "list-item",
+        "bbox": [
+          39,
+          350,
+          296,
+          390
+        ],
+        "pos": [
+          1801,
+          2032
+        ]
+      },
+      {
+        "index": 13,
+        "class": "list-item",
+        "bbox": [
+          39,
+          393,
+          294,
+          423
+        ],
+        "pos": [
+          2032,
+          2206
+        ]
+      },
+      {
+        "index": 14,
+        "class": "list-item",
+        "bbox": [
+          39,
+          425,
+          295,
+          455
+        ],
+        "pos": [
+          2206,
+          2411
+        ]
+      },
+      {
+        "index": 15,
+        "class": "list-item",
+        "bbox": [
+          306,
+          49,
+          560,
+          90
+        ],
+        "pos": [
+          2411,
+          2647
+        ]
+      },
+      {
+        "index": 16,
+        "class": "list-item",
+        "bbox": [
+          306,
+          92,
+          542,
+          133
+        ],
+        "pos": [
+          2647,
+          2851
+        ]
+      },
+      {
+        "index": 17,
+        "class": "list-item",
+        "bbox": [
+          306,
+          135,
+          539,
+          176
+        ],
+        "pos": [
+          2851,
+          3049
+        ]
+      },
+      {
+        "index": 18,
+        "class": "list-item",
+        "bbox": [
+          306,
+          178,
+          564,
+          197
+        ],
+        "pos": [
+          3049,
+          3164
+        ]
+      },
+      {
+        "index": 19,
+        "class": "list-item",
+        "bbox": [
+          306,
+          199,
+          544,
+          229
+        ],
+        "pos": [
+          3164,
+          3309
+        ]
+      },
+      {
+        "index": 20,
+        "class": "text",
+        "bbox": [
+          306,
+          242,
+          549,
+          262
+        ],
+        "pos": [
+          3309,
+          3451
+        ]
+      },
+      {
+        "index": 21,
+        "class": "text",
+        "bbox": [
+          306,
+          275,
+          563,
+          434
+        ],
+        "pos": [
+          3451,
+          4480
+        ]
+      },
+      {
+        "index": 22,
+        "class": "text",
+        "bbox": [
+          306,
+          447,
+          384,
+          455
+        ],
+        "pos": [
+          4480,
+          4503
+        ]
+      },
+      {
+        "index": 23,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          762,
+          278,
+          771
+        ],
+        "pos": [
+          4503,
+          4566
+        ]
+      },
+      {
+        "index": 24,
+        "class": "page-footer",
+        "bbox": [
+          543,
+          763,
+          563,
+          770
+        ],
+        "pos": [
+          4566,
+          4577
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n19. Rudolph, M. S. et al. Generation of high-resolution handwritten digits with an ion-trap quantum computer. _Phys. Rev. X_ **12** , 031010 (2022). \n\n20. Zeng, Q., Ge, H.-Y., Chen, G. & Zhou, N. Conditional quantum circuit born machine based on a hybrid quantum-classical framework. _Physica A Stat. Mech. Appl._ **608** , 128693 (2023). \n\n21. Wang, X. et al. Identification of MRTX1133, a noncovalent, potent, and selective KRas<sup>G12D</sup> inhibitor. _J. Med. Chem._ **65** , 3123–3133 (2022). \n\n22. Mao, Z. et al. KRas(G12D) can be targeted by potent inhibitors via formation of salt bridge. _Cell Discov._ **8** , 5 (2022). \n\n23. Gorgulla, C. et al. Virtualflow 2.0—the next generation drug discovery platform enabling adaptive screens of 69 billion molecules. Preprint at _bioRxiv_ https://doi.org/10.1101/ 2023.04.25.537981 (2023). \n\n24. Nigam, A. K., Pollice, R., Krenn, M., Gomes, G. & Guzik, A. A. Beyond generative models: superfast traversal, optimization, novelty, exploration and discovery (STONED) algorithm for molecules using SELFIES. _Chem. Sci._ **12** , 7079–7090 (2021). \n\n25. Ivanenkov, Y. A. et al. Chemistry42: an AI-driven platform for molecular design and optimization. _J. Chem. Inf. Model._ **63** , 695–701 (2023). \n\n26. Nigam, A. et al. Tartarus: A benchmarking platform for realistic and practical inverse molecular design. In _Advances in Neural Information Processing Systems_ **36** , 3263–3306 (2023). \n\n27. Schuld, M., Sinayskiy, I. & Petruccione, F. An introduction to quantum machine learning. _Quantum Mach. Intell._ **3** , 28 (2021). \n\n28. Saraon, P. et al. A drug discovery platform to identify compounds that inhibit EGFR triple mutants. _Nat. Chem. Biol._ **16** , 577–586 (2020). \n\n29. Stagljar, I., Korostensky, C., Johnsson, N. & te Heesen, S. A genetic system based on split-ubiquitin for the analysis of interactions between membrane proteins in vivo. _Proc. Natl Acad. Sci. USA_ **95** , 5187–5192 (1998). \n\n30. Petschnigg, J. et al. The mammalian-membrane two-hybrid assay (MAMTH) for probing membrane–protein interactions in human cells. _Nat. Methods_ **11** , 585–592 (2014). \n\n31. Saraon, P. et al. Chemical genetics screen identifies COPB2 tool compounds that alters ER stress response and induces RTK dysregulation in lung cancer cells. _J. Mol. Biol._ **433** , 167294 (2021). \n\n32. Scheper, W., Thaminy, S., Kais, S., Stagljar, I. & Römisch, K. Coordination of _N_ -glycosylation and protein translocation across the endoplasmic reticulum membrane by Sss1 protein. _J. Biol. Chem._ **278** , 37998–38003 (2003). \n\n33. Benleulmi-Chaachoua, A. et al. Protein interactome mining defines melatonin MT1 receptors as integral component of presynaptic protein complexes of neurons. _J. Pineal Res._ **60** , 95–108 (2016). \n\n34. Lopes, J. P. et al. The role of Parkinson’s disease-associated receptor GPR37 in the hippocampus: functional interplay with the adenosinergic system. _J. Neurochem._ **134** , 135–146 (2015). \n\n35. Grozavu, I. et al. D154Q mutation does not alter KRas dimerization. _J. Mol. Biol._ **434** , 167543 (2022). \n\n36. Götzke, H. et al. The ALFA-tag is a highly versatile tool for nanobody-based bioscience applications. _Nat. Commun._ **10** , 4403 (2019). \n\n**Publisher’s note** Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. \n\n**Open Access** This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/. \n\n© The Author(s) 2025 \n\nNature Biotechnology | Volume 43 | December 2025 | 1954–1959 \n\n**1959** \n\n"
+  }
+}

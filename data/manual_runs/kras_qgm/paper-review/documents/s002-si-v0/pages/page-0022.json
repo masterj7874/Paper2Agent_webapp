@@ -1,0 +1,97 @@
+{
+  "page": 22,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0022.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0022.png; all-text page, Steps 2-4 of the ISM061-15 route. CROSS-PAGE JOIN: set join_previous='space' on p0022-b000. Page 21 ends '...on silica gel eluting with ethyl acetate (from' and this page opens '0% to 50%) in petroleum ether to afford Compound 15-1'; the split falls between '(from' and '0%', i.e. mid-sentence at a normal word space, so 'space' is correct. Removed the spurious spaces the extractor left after the superscripts in '(ESI<sup>+</sup> ):' and '[M+H]<sup>+</sup> .' in all four prose items b000, b002, b004 and b006. Checked every item against the page image and made no other changes: '63.9 % yield' and '80 % yield' really carry a space before the percent sign; 'Pd(pph3)2Cl2' is printed with a lowercase pph in the source (not corrected); 'Pd(pph3)2Cl2 (292 mg, 0.42 mmol) , Cesium fluoride' really has a space before that comma; '20.202 mmol' is as printed. No figures, tables, formulas or code on this page. Page 22 ends a complete paragraph and page 23 opens with the bold heading 'Step 5', so page 23 must NOT carry a join. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. ARTWORK AUDIT (re-checked, do not re-flag): this page has NO figure item because it genuinely contains no artwork. Verified three ways rather than trusting the extractor - the page content stream has 0 vector drawing operations, 0 embedded images, 0 form XObjects and 0 inline-image (BI) operators, and a 100 dpi render with every native text block masked out leaves zero non-white pixels. The page is text-only, so no figure item was added. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0022-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        92.0
+      ],
+      "markdown": "0% to 50%) in petroleum ether to afford **Compound 15-1** (4 g, 63.9 % yield) as a white solid. LCMS (ESI<sup>+</sup>): 192.3 [M+H]<sup>+</sup>.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0022-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        111.0,
+        259.0,
+        122.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 15-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0022-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        141.0,
+        542.0,
+        318.0
+      ],
+      "markdown": "To a solution of 1,8-dichloroisoquinoline (1000 mg, 5.05 mmol) in DMF (8 mL) were added TEA (2044 mg, 20.202 mmol), CuI (192 mg, 1.01 mmol), Pd(pph3)2Cl2 (709 mg, 1.01 mmol) and ethynyltrimethylsilane (2480 mg, 25.25 mmol) at N2 atmosphere. Then the mixture was heated and stirred at 60 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (60 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (50 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel, eluting with ethyl acetate (from 0% to 30%) in petroleum ether, to afford **Compound 15-2** (1050 mg, 80 % yield) as a yellow oil. LCMS (ESI<sup>+</sup>): 260.3 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0022-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        338.0,
+        259.0,
+        349.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 15-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0022-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        368.0,
+        542.0,
+        546.0
+      ],
+      "markdown": "To a solution of 2-chloro-5-iodopyrimidine (500 mg,2.08 mmol) in DMF (8 mL) were added TEA (1050 mg, 10.40 mmol), CuI (119 mg, 0.62 mmol), Pd(pph3)2Cl2 (292 mg, 0.42 mmol) , Cesium fluoride (632 mg, 4.16 mmol) and 8-chloro-1-((trimethylsilyl)ethynyl)isoquinoline (476 mg, 1.83 mmol) at N2 atmosphere. Then the mixture was heated and stirred at 60 ℃ for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (30 mL × 3), the combined organic layers were washed with brine (30 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel, eluting with ethyl acetate (from 0% to 100%) in petroleum ether, to afford **Compound 15-3** (400 mg, 64.1% yield) as a yellow solid. LCMS (ESI<sup>+</sup>): 300.1 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0022-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        565.0,
+        259.0,
+        576.0
+      ],
+      "markdown": "#### Step 4: Preparation of Compound 15-4",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0022-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        595.0,
+        542.0,
+        773.0
+      ],
+      "markdown": "To a solution of 8-chloro-1-((2-chloropyrimidin-5-yl)ethynyl)isoquinoline (400 mg, 1.33 mmol) in dioxane (5 mL) were added Cs2CO3 (869 mg, 2.66 mmol), BINAP (166 mg, 0.27 mmol), Pd(dba)3 (108 mg, 0.13 mmol) and 2-(2-hydroxyethyl)isoindoline-1,3-dione (306 mg, 1.60 mmol) at N2 atmosphere. Then the mixture was heated and stirred at 100 ℃ for 2 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (30 mL × 3), the combined organic layers were washed with brine (50 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel, eluting with ethyl acetate (from 0% to 100%) in petroleum ether, to afford **Compound 15-4** (400 mg, 66.0% yield) as a yellow solid. LCMS (ESI<sup>+</sup>): 455.0 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    }
+  ]
+}

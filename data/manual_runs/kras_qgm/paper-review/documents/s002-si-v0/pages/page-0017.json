@@ -1,0 +1,72 @@
+{
+  "page": 17,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0017.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0017.png; all-text page carrying Steps 9-11 of the ISM061-13 route and the final ISM061-13 characterisation. NO join_previous on p0017-b000: page 16 ends with the bold heading 'Step 9: Preparation of Compound 13-9', so this paragraph is the body of that heading, not a continued sentence. Text repairs in p0017-b002: (1) the extractor emitted 'To a solution of c **ompound 13-9**' - the PDF really does start the bold run one letter late, but the markdown as extracted would render as 'c ompound 13-9' with an inserted space, so the emphasis boundary was moved to the word boundary giving '**compound 13-9**'; the visible characters are unchanged and the phrase is now searchable. (2) restored the real hyphen in '2-(7-azo-biphenyltriazole)-N,N,N',N'-tetramethylurea hexafluorophosphate' - the PDF breaks the line after '2-(7-' and that hyphen is part of the reagent name (HATU), not a wrap artifact. Also removed the spurious space in '[M+H]<sup>+</sup> .' here and normalised '[M+H]<sup>+</sup> ;<sup>1</sup> H NMR ... DMSO- _d_ 6)' to '[M+H]<sup>+</sup>; <sup>1</sup>H NMR ... DMSO-d6)' in p0017-b004. PRESERVED source oddities after checking them on the page image: the fullwidth comma in 'NaOH (10 mg，0.26 mmol)' (U+FF0C, really printed), and the implausible '1.20 (s, 0H)' in the ISM061-13 NMR list - both are what the PDF shows and were not silently corrected. The 1H NMR spectrum for this compound is not on this page; it is the figure at the top of page 18 (nmr-ism061-13). HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. ARTWORK AUDIT (re-checked, do not re-flag): this page has NO figure item because it genuinely contains no artwork. Verified three ways rather than trusting the extractor - the page content stream has 0 vector drawing operations, 0 embedded images, 0 form XObjects and 0 inline-image (BI) operators, and a 100 dpi render with every native text block masked out leaves zero non-white pixels. The page is text-only, so no figure item was added. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0017-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        60.0,
+        542.0,
+        177.0
+      ],
+      "markdown": "A mixture of **compound 13-8** (50 mg, 0.13 mmol) and NaOH (10 mg，0.26 mmol) in MeOH (1 mL) and water (2 ml) was stirred at room temperature for 16 hrs. Upon completion, the reaction mixture was poured into ice water (10 mL), the pH was adjusted to 6 with 2 M HCl. The mixture was then extracted with EA (10 mL × 3). The combined organic phases was washed with brine (20 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to afford the crude title compound as a white solid (48.2 mg, Y: 99.2%).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0017-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        186.0,
+        271.0,
+        198.0
+      ],
+      "markdown": "#### Step 10: Preparation of Compound 13-10",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0017-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        207.0,
+        542.0,
+        364.0
+      ],
+      "markdown": "To a solution of **compound 13-9** (41 mg, 0.11 mmol) in N,N-dimethylformamide (2 mL) was added ammonium chloride (9 mg, 0.16 mmol), N,N-diisopropylethylamine (43 mg, 0.33 mmol) and 2-(7-azo-biphenyltriazole)-N,N,N’,N’-tetramethylurea hexafluorophosphate (61 mg, 0.16 mmol). The resulting mixture was stirred at 25 °C for 16 hours. After the addition of ice water (10 mL), the mixture was extracted with ethyl acetate (10 mL × 3). The combined organic phases was washed with brine (20 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound (31.0 mg, Y: 75.2%). LCMS (ESI): 379.2 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0017-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        372.0,
+        239.0,
+        384.0
+      ],
+      "markdown": "#### Step 11: Preparation of ISM061-13",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0017-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        393.0,
+        542.0,
+        591.0
+      ],
+      "markdown": "A solution of **compound 13-10** (31 mg, 0.08 mmol) in hydrobromic acid aqueous solution (3 mL) was stirred at 100 °C for 4 hours. After the addition of ice water (10 mL), the mixture was extracted with ethyl acetate (10 mL × 3). The combined organic phases was washed with brine (20 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was purified by pre-HPLC to afford the title compound as a white solid (12.4 mg, Y: 41.7%). LC-MS (ESI): 365 [M+H]<sup>+</sup>; <sup>1</sup>H NMR (400 MHz, DMSO-d6) δ 9.28 (s, 1H), 8.28 – 8.23 (m, 1H), 7.79 (s, 1H), 7.58 (dd, _J_ = 10.7, 1.7 Hz, 1H), 7.41 – 7.32 (m, 2H), 7.28 (td, _J_ = 7.4, 1.6 Hz, 1H), 7.25 – 7.15 (m, 2H), 7.09 (d, _J_ = 8.4 Hz, 1H), 6.75 (dd, _J_ = 8.3, 2.7 Hz, 1H), 6.59 (dd, _J_ = 2.7, 0.9 Hz, 1H), 3.06 (dd, _J_ = 9.7, 5.9 Hz, 2H), 2.94 (dd, _J_ = 9.7, 6.0 Hz, 2H), 2.31 (q, _J_ = 7.5 Hz, 2H), 1.20 (s, 0H), 0.89 (t, _J_ = 7.5 Hz, 3H).",
+      "source_class": "text"
+    }
+  ]
+}

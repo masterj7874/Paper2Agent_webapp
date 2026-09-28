@@ -1,0 +1,138 @@
+{
+ "id": "18222bdb86a6",
+ "agent": "nnUNet",
+ "tool": "nnunet_find_best_configuration",
+ "arguments": {
+  "dataset": "Dataset004_Hippocampus",
+  "trainers": [
+   "nnUNetTrainer_5epochs"
+  ],
+  "configurations": [
+   "2d"
+  ],
+  "folds": [
+   0
+  ],
+  "allow_ensembling": false,
+  "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+  "nnunet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+  "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063274.9984434,
+ "started_at": 1790063275.0025306,
+ "finished_at": 1790063284.172076,
+ "result": {
+  "message": "find_best_configuration on Dataset004_Hippocampus (folds [0], 1 models, ensembling off): best = nnUNetTrainer_5epochs__nnUNetPlans__2d (nnUNetTrainer_5epochs__nnUNetPlans__2d) with cross-validation foreground Dice 0.860836 -> 0.861012 after postprocessing ['remove_all_but_largest_component_from_segmentation', 'remove_all_but_largest_component_from_segmentation']. All results: {'nnUNetTrainer_5epochs__nnUNetPlans__2d': 0.860836}. Instructions: /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_instructions.txt",
+  "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/468cf803df9b267150ae2b6c0c59b8ac84f16227/nnunetv2/evaluation/find_best_configuration.py",
+  "artifacts": [
+   {
+    "description": "inference_information.json (upstream return dict: all_results, best_model_or_ensemble, ...)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_information.json"
+   },
+   {
+    "description": "inference_instructions.txt (nnUNetv2_predict / ensemble / apply_postprocessing commands)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_instructions.txt"
+   },
+   {
+    "description": "postprocessing.pkl of the winner (input of nnunet_apply_postprocessing)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.pkl"
+   },
+   {
+    "description": "plans.json to use with the postprocessing file",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/plans.json"
+   },
+   {
+    "description": "postprocessing.json of the winner (Dice before/after, kept steps)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.json"
+   },
+   {
+    "description": "accumulated cross-validation predictions + summary.json of nnUNetTrainer_5epochs__nnUNetPlans__2d",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0"
+   },
+   {
+    "description": "child process stdout log (upstream console output)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_find_best_configuration_20260922-164755_a5e3e061/child_stdout.log"
+   }
+  ],
+  "dataset_name": "Dataset004_Hippocampus",
+  "folds": [
+   0
+  ],
+  "considered_models": [
+   {
+    "plans": "nnUNetPlans",
+    "configuration": "2d",
+    "trainer": "nnUNetTrainer_5epochs"
+   }
+  ],
+  "skipped_models": [],
+  "ensembling_allowed": false,
+  "all_results": {
+   "nnUNetTrainer_5epochs__nnUNetPlans__2d": 0.8608356357016642
+  },
+  "ranking": [
+   [
+    "nnUNetTrainer_5epochs__nnUNetPlans__2d",
+    0.8608356357016642
+   ]
+  ],
+  "best_key": "nnUNetTrainer_5epochs__nnUNetPlans__2d",
+  "best_is_ensemble": false,
+  "selected_model_or_models": [
+   {
+    "configuration": "2d",
+    "trainer": "nnUNetTrainer_5epochs",
+    "plans_identifier": "nnUNetPlans"
+   }
+  ],
+  "result_on_crossval_pre_pp": 0.8608356357016642,
+  "result_on_crossval_post_pp": 0.8610115149169687,
+  "postprocessing_functions": [
+   "remove_all_but_largest_component_from_segmentation",
+   "remove_all_but_largest_component_from_segmentation"
+  ],
+  "postprocessing_kwargs": [
+   {
+    "labels_or_regions": [
+     1,
+     2
+    ]
+   },
+   {
+    "labels_or_regions": 2
+   }
+  ],
+  "postprocessing_per_label_dice_before": {
+   "1": 0.8688778525489318,
+   "2": 0.8527934188543966
+  },
+  "postprocessing_per_label_dice_after": {
+   "1": 0.8692082975400548,
+   "2": 0.8528147322938826
+  },
+  "postprocessing_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.pkl",
+  "postprocessing_json": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.json",
+  "some_plans_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/plans.json",
+  "best_source_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0",
+  "crossval_folders": {
+   "nnUNetTrainer_5epochs__nnUNetPlans__2d": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0"
+  },
+  "ensemble_folders": {},
+  "inference_information_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_information.json",
+  "inference_instructions_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_instructions.txt",
+  "inference_instructions": "***Run inference like this:***\n\nnnUNetv2_predict -d Dataset004_Hippocampus -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 -tr nnUNetTrainer_5epochs -c 2d -p nnUNetPlans\n\n***Once inference is completed, run postprocessing like this:***\n\nnnUNetv2_apply_postprocessing -i OUTPUT_FOLDER -o OUTPUT_FOLDER_PP -pp_pkl_file /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.pkl -np 8 -plans_json /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/plans.json\n",
+  "nnunet_paths": {
+   "nnUNet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+   "nnUNet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+   "nnUNet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results"
+  },
+  "num_processes": 8,
+  "overwrite": true,
+  "strict": false,
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_find_best_configuration_20260922-164755_a5e3e061"
+ },
+ "error": null,
+ "duration_s": 9.17
+}

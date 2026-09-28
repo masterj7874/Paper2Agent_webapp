@@ -1,0 +1,154 @@
+{
+  "page": 3,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0003.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0003.png and 400 dpi crops of two ambiguous spots, and compared every item with evidence/page-0003.json. Two-column text-only page; reading order (left column p0003-b002/b003/b004, then right column p0003-b005..b008) was already correct and was left as is. Changes: (1) removed the spurious space before the sentence period or comma that followed every superscript citation marker: efforts21,22 / scores23 / set24 / workflow25 / discovery26 / models27 / models17 / interactions28-35 / (ALFA prey)36. (2) p0003-b002 'approxi mately' came from a soft hyphen (U+00AD) in 'approxi\\u00admately' that the extractor turned into a space; restored to 'approximately'. Checked the other soft-hyphen wraps on this page ('mole\\u00adcular' -> 'molecular') and they were already joined correctly. (3) p0003-b002: the reward-value expression was extracted as '_P_ ( _x_ ) = softmax( _R_ ( _x_ ))' with emphasis-induced spaces; retranscribed as '_P_(_x_) = softmax(_R_(_x_))' to match the printed P(x) = softmax(R(x)). (4) p0003-b003: 'QCBM/multibase (M)QCBM- LSTM)' had a line-wrap space after the en dash; joined to '(M)QCBM-LSTM)' as printed (the en dash here is a real compound dash, matching 'QCBM-LSTM' elsewhere in the paragraph). (5) IC50 is printed with a subscript 50 (confirmed on a 400 dpi crop of the 'inhibitory concentration (IC50) values' line); marked as IC<sub>50</sub> in p0003-b007 and p0003-b008. (6) Cross-page/column joins: p0003-b002 gets join_previous 'space' (page 2 ends '...targeting the KRAS protein,'), and p0003-b005 gets join_previous 'space' (left column ends '...explore and represent', right column opens 'complex, high-dimensional probability distributions'). p0003-b003, b004, b006, b007 and b008 all start indented new paragraphs in the source, so they take no join. (7) Verified characters against the source: mu is U+03BC in '1.4 μM' and '30 μM'; the dashes in 'quantum–classical', 'classical–quantum', 'QCBM–LSTM', 'protein–ligand', 'bait–prey', '18–20 h' and '28–35' are en dashes; 'optimization—a common challenge' is an em dash. Mutation names KRAS-G12D/G12V/G12R/Q61H are printed on the baseline (no subscript) and were left as plain text. (8) NOT changed, deliberately: the source's own typography 'Raf1 \\u2018prey\\u2018' uses a LEFT single quotation mark at both ends (confirmed in the native text and on a 400 dpi crop); it is reproduced verbatim rather than silently corrected. Thin spaces (U+2009) between numbers and units in the source are rendered as ordinary spaces by the extractor; left that way so the text stays searchable. (9) Header items p0003-b000/b001 and footer p0003-b009 confirmed as running furniture (left as text); bare page number 1956 kept as 'omit'. Coordinator: running header/footer furniture set to explicit omit, matching the treatment reviewers applied on pages 8-18, so both verification parsers exclude the same regions.",
+  "warnings": [
+    "Review possible header/footer: p0003-b000",
+    "Review possible header/footer: p0003-b001",
+    "Review possible header/footer: p0003-b009"
+  ],
+  "items": [
+    {
+      "id": "p0003-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0003-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0003-b002",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        49.0,
+        297.0,
+        455.0
+      ],
+      "markdown": "which is known for its intricate complexity and historical resistance to drug discovery efforts<sup>21,22</sup>. As illustrated in Fig. 1, our workflow was structured into three pivotal stages. The first stage was the generation of training data, beginning with creating a dataset comprising approximately 650 known KRAS inhibitors from the literature. To enhance this dataset, we used VirtualFlow 2.0 to screen 100 million molecules from the Enamine REAL library, selecting the top 250,000 with the best docking scores<sup>23</sup>. Additionally, we used the STONED (superfast traversal, optimization, novelty, exploration and discovery) algorithm on the SELFIES (self-referencing embedded strings) molecular representation of known inhibitors, generating structurally similar compounds. After applying synthesizability filtering, this process added 850,000 molecules to our training set<sup>24</sup>. Furthermore, we used Chemistry42 to validate the molecules generated in this workflow<sup>25</sup>. We merged data from various sources to compile a single dataset containing 1.1 million data points, all used for training our generative model. The next stage was the generation of new molecules, which combined (1) the QCBM<sup>16</sup> using a 16-qubit processor to generate a prior distribution; (2) a long short-term memory (LSTM) network as the classical model; and (3) Chemistry42 for validation (Fig. 1). The quantum component, depicted in Extended Data Fig. 3c, was a QCBM that generated samples from quantum hardware in every training epoch and was trained with a reward value, _P_(_x_) = softmax(_R_(_x_)) calculated using Chemistry42 or a local filter. We note that, in practice, the reward function can be tailored to a user’s specific criteria, including accounting for off-target effects by evaluating multiple docking scenarios. This recurrent sampling, training and validation process formed a cycle that continuously improved the generated molecular structures targeting the KRAS protein. The final step was experimental validation. From our trained models, we sampled 1 million compounds using three different models (selection workflow in Fig. 1). We used Chemistry42 to screen these samples for pharmacological viability and ranked them on the basis of their docking scores (protein–ligand interaction (PLI) score). The top 15 candidates were synthesized and tested using surface plasmon resonance (SPR) and cell-based assays. This study highlights the promising intersection of quantum computing and drug discovery, marking a quantum computer’s first experimental hit.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0003-b003",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        457.0,
+        297.0,
+        714.0
+      ],
+      "markdown": "Before initiating our campaign to design additional KRAS inhibitors, we aimed to compare our hybrid quantum–classical approach to established classical algorithms. We benchmarked our model, targeting three different proteins, against the state of the art using the Tartarus benchmarking suite for drug discovery<sup>26</sup>. The results indicate that, while few classical models achieved high success rates and docking scores, QCBM–LSTM excelled by generating numerous high-quality samples. It achieved a high success rate and a docking score comparable to the best, as demonstrated in Supplementary Table 1. As illustrated in Extended Data Fig. 1a and Supplementary Table 2, we evaluated the impact of incorporating a quantum prior (QCBM/multibase (M)QCBM–LSTM) versus a fully classical model (vanilla LSTM). We observed that a quantum prior enhanced the success rate, as measured by the proportion of molecules meeting the criteria set by the same filters. Our observations revealed that the use of QCBM–LSTM (Supplementary Table 1) offered a 21.5% improvement in passing filters that assessed the synthesizability and stability of the generated molecules, indicating a higher quality of generated structures. Additionally, we analyzed how the size of the prior (number of qubits) affected sample quality. We found that more qubits improved the success rates for molecule generation, suggesting that larger quantum models could enhance molecular design. Our findings suggest that the success rate correlates approximately linearly with the number of qubits, as illustrated in Extended Data Fig. 1c.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0003-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        715.0,
+        297.0,
+        746.0
+      ],
+      "markdown": "We believe that the improvement in our hybrid classical–quantum approach stemmed from the quantum effects, such as superposition and entanglement, which allow QCBMs to explore and represent",
+      "source_class": "text"
+    },
+    {
+      "id": "p0003-b005",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        563.0,
+        176.0
+      ],
+      "markdown": "complex, high-dimensional probability distributions more efficiently than classical models<sup>27</sup>. Entanglement enables the creation of correlations between qubits, capturing intricate dependencies within the prior distribution. This capability is particularly advantageous in generative models, as it allows for a more accurate representation of the underlying distributions in complex datasets, leading to the improved generation of molecular structures. Additionally, these quantum properties help to escape barren plateaus more effectively during optimization—a common challenge in machine learning models<sup>17</sup>. Consequently, this resulted in a more comprehensive exploration of the solution space, potentially uncovering molecular structures that our naive LSTM could not generate within the same time frame.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0003-b006",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        178.0,
+        563.0,
+        400.0
+      ],
+      "markdown": "Furthermore, our KRAS inhibitor campaign validated compounds derived from both the hybrid quantum–classical and vanilla approaches using the Chemistry42 platform’s structure-based drug design workflow. Within our study, 15 compounds were selected after filtering generated compounds (Fig. 1) using Chemistry42 and synthesized for experimental analysis. The two compounds demonstrating the greatest promise, ISM061-018-2 and ISM061-022, were characterized (structures in Fig. 2a,e, respectively). Their assessment involved a two-stage process; the SPR determined their binding affinities and cell-based assays were subsequently used to gauge biological efficacy. The compound ISM061-018-2, engineered through our hybrid quantum model (Fig. 2b and Supplementary Table 6), demonstrated substantial binding affinity to KRAS-G12D, registered at 1.4 μM. To delve deeper into this molecule’s effectiveness across a spectrum of KRAS mutants, we commenced an extensive series of tests using a cell-based assay. Specifically, we evaluated the molecule’s performance in a biological context using a commercial cell viability assay (CellTiter-Glo, Promega) in conjunction with MaMTH-DS (mammalian membrane two-hybrid drug screening), an advanced split-ubiquitin-based platform for the real-time detection of small molecules targeting specific cellular interactions<sup>28–35</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0003-b007",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        403.0,
+        563.0,
+        626.0
+      ],
+      "markdown": "The biological activity of ISM061-018-2 was rigorously tested. Importantly, it demonstrated no detrimental impact on the viability of HEK293 cells, even when expressing KRAS wild type (WT) or KRAS-G12V bait in MaMTH-DS format and being subjected to concentrations as high as 30 μM for 18–20 h, showing that the compound did not possess any general, nonspecific toxicity (Fig. 2d). Subsequent testing using MaMTH-DS across a spectrum of cell lines expressing various KRAS baits (WT and five clinically important oncogenic mutants) in combination with Raf1 ‘prey‘ (a recognized KRAS effector) revealed a dose-responsive inhibition of interactions, with half-maximal inhibitory concentration (IC<sub>50</sub>) values in the micromolar range (Fig. 2c and Supplementary Table 3). The compound’s activity was not specific to mutants, as it targeted both WT and mutant interactions with similar efficacy. It also showed comparable effectiveness in disrupting the interactions of WT NRAS and HRAS baits with Raf1 prey (Fig. 2c). However, it had no effect on the interaction of a completely unrelated artificial bait–prey control pair (consisting of membrane-anchored ALFA tag bait and nanobody ALFA prey)<sup>36</sup>, supporting the biological specificity of the interaction (Fig. 2c). Collectively, these results support a potential pan-Ras activity of ISM061-018-2.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0003-b008",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        629.0,
+        563.0,
+        746.0
+      ],
+      "markdown": "ISM061-022, as illustrated in Fig. 2e, also stood out as a compound of promise, particularly because of its selectivity toward certain KRAS mutants. Within our in vitro examination, ISM061-022 demonstrated a concentration-dependent inhibition of KRAS interactions with IC<sub>50</sub> values in the micromolar range (Fig. 2f and Supplementary Table 4), while manifesting only a mild, general impact on cell viability at higher concentrations over an 18–20-h exposure (Fig. 2g). The observed inhibition mirrored that of ISM061-018-2 yet displayed enhanced selectivity toward certain KRAS mutants, particularly KRAS-G12R and KRAS-Q61H, which were most receptive to the compound’s action (Fig. 2f). Diverging from ISM061-018-2, ISM061-022 did not show binding to KRAS-G12D",
+      "source_class": "text"
+    },
+    {
+      "id": "p0003-b009",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        762.0,
+        278.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0003-b010",
+      "kind": "omit",
+      "bbox": [
+        543.0,
+        763.0,
+        563.0,
+        770.0
+      ],
+      "markdown": "**1956**",
+      "source_class": "page-footer",
+      "reason": "Bare page number 1956 in the running foot; verified against previews/page-0003.png."
+    }
+  ]
+}

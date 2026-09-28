@@ -1,0 +1,117 @@
+{
+ "id": "3892ae06d03a",
+ "agent": "Cellpose",
+ "tool": "cellpose_segment_image",
+ "arguments": {
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+  "model_type": "cyto2",
+  "channels": [
+   0,
+   0
+  ],
+  "diameter": 27.80029502818709,
+  "device": "auto",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063335.9733584,
+ "started_at": 1790063335.9741473,
+ "finished_at": 1790063336.7935982,
+ "result": {
+  "message": "Cellpose cyto2 segmented img02.png (349x467x3): 99 masks, diameter 27.80 px (user), device cuda:0, eval 0.20s.",
+  "reference": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/notebooks/run_cellpose.ipynb",
+  "artifacts": [
+   {
+    "description": "label masks (uint16 PNG, 0=background)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_cp_masks.png"
+   },
+   {
+    "description": "label masks (TIF)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_cp_masks.tif"
+   },
+   {
+    "description": "label masks as returned by model.eval (npy)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_masks.npy"
+   },
+   {
+    "description": "GUI-loadable segmentation (masks, outlines, flows, est_diam, chan_choose)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_seg.npy"
+   },
+   {
+    "description": "ImageJ outline coordinates (one mask per line)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_cp_outlines.txt"
+   },
+   {
+    "description": "image with red mask outlines",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_outlines.png"
+   },
+   {
+    "description": "raw flows: flow_rgb, dP (dy,dx), cellprob, p (final pixel positions)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_flows.npz"
+   },
+   {
+    "description": "256-d style vector",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_styles.npy"
+   },
+   {
+    "description": "4-panel figure: image | outlines | masks | flows (plot.show_segmentation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f/img02_segmentation.png"
+   }
+  ],
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164855_b6e4c4/outputs/cellpose_segment_image_20260922-164856_bd006a5f",
+  "image": {
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+   "shape": [
+    349,
+    467,
+    3
+   ],
+   "dtype": "uint8"
+  },
+  "n_masks": 99,
+  "diameter_used": 27.80029502818709,
+  "diameter_source": "user",
+  "masks": {
+   "n_masks": 99,
+   "n_unique_labels": 99,
+   "masks_shape": [
+    349,
+    467
+   ],
+   "masks_dtype": "uint16",
+   "foreground_pixels": 72159,
+   "mask_area_px_min": 105,
+   "mask_area_px_max": 5021,
+   "mask_area_px_mean": 728.8787878787879,
+   "median_mask_diameter_px": 27.63953195770684
+  },
+  "settings": {
+   "model_type": "cyto2",
+   "pretrained_model_path": null,
+   "pretrained_model_files": [
+    "cyto2torch_0"
+   ],
+   "size_model": "size_cyto2torch_0.npy",
+   "diam_mean": 30.0,
+   "channels": [
+    0,
+    0
+   ],
+   "diameter": 27.80029502818709,
+   "flow_threshold": 0.4,
+   "cellprob_threshold": 0.0,
+   "net_avg": false,
+   "net_avg_used": false,
+   "resample": true,
+   "rescale": 1.0791252384042183
+  },
+  "device": "cuda:0",
+  "timings_s": {
+   "model_init": 0.106,
+   "eval": 0.202,
+   "save": 0.498
+  }
+ },
+ "error": null,
+ "duration_s": 0.82
+}

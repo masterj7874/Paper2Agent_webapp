@@ -1,0 +1,280 @@
+{
+  "page": 18,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended Data Fig. 5 | Quantum Circuit Born Machine (QCBM) Model.",
+      "bbox": [
+        39.685001373291016,
+        296.11572265625,
+        265.3860168457031,
+        304.86572265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Schematic representation of the Quantum Circuit Born Machine (QCBM)",
+      "bbox": [
+        39.68501281738281,
+        306.230712890625,
+        268.98895263671875,
+        314.86871337890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "implemented in our numerical experiments, illustrating a variational quantum",
+      "bbox": [
+        39.68501281738281,
+        316.23370361328125,
+        287.0398254394531,
+        324.8717041015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "circuit with a configuration of three layers and four qubits. In practice, our",
+      "bbox": [
+        39.68501281738281,
+        326.2366943359375,
+        272.58624267578125,
+        334.87469482421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "numerical experiments utilized a system with 16 qubits. The depicted quantum",
+      "bbox": [
+        39.68501281738281,
+        336.23968505859375,
+        288.01141357421875,
+        344.877685546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "gates, including parameterized rotations (Rx, Rz) and entangling CNOT gates, are",
+      "bbox": [
+        306.468994140625,
+        296.2416687011719,
+        562.4085083007812,
+        304.8796691894531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "orchestrated to evolve the initial state |0⟩ into a complex quantum state ||Ψ(0)⟩.",
+      "bbox": [
+        306.468994140625,
+        305.44183349609375,
+        554.5662841796875,
+        316.7812194824219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The outcome is measured, and the resulting data are used by the classical",
+      "bbox": [
+        306.4722900390625,
+        316.230712890625,
+        535.7533569335938,
+        324.86871337890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "optimizer to iteratively refine the parameters θ, thus leading the circuit towards",
+      "bbox": [
+        306.4722900390625,
+        326.2057189941406,
+        556.9545288085938,
+        334.8717041015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "an optimal solution for ligand generation.",
+      "bbox": [
+        306.4722900390625,
+        336.2366943359375,
+        437.6368103027344,
+        344.87469482421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 18
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          97,
+          52,
+          504,
+          289
+        ],
+        "pos": [
+          71,
+          73
+        ]
+      },
+      {
+        "index": 3,
+        "class": "caption",
+        "bbox": [
+          39,
+          297,
+          289,
+          345
+        ],
+        "pos": [
+          73,
+          446
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          306,
+          297,
+          563,
+          345
+        ],
+        "pos": [
+          446,
+          815
+        ]
+      },
+      {
+        "index": 5,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          815,
+          838
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n\n\n**Extended Data Fig. 5 | Quantum Circuit Born Machine (QCBM) Model.** Schematic representation of the Quantum Circuit Born Machine (QCBM) implemented in our numerical experiments, illustrating a variational quantum circuit with a configuration of three layers and four qubits. In practice, our numerical experiments utilized a system with 16 qubits. The depicted quantum \n\ngates, including parameterized rotations (Rx, Rz) and entangling CNOT gates, are orchestrated to evolve the initial state |0⟩ into a complex quantum state ||Ψ(0)⟩. The outcome is measured, and the resulting data are used by the classical optimizer to iteratively refine the parameters _θ_ , thus leading the circuit towards an optimal solution for ligand generation. \n\nNature Biotechnology \n\n"
+  }
+}

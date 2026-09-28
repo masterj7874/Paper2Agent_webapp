@@ -1,0 +1,122 @@
+{
+  "page": 24,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0024.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0024.png. Section S1.9 opens here with Scheme S9 and Steps 1-3 of the ISM061-16 route. Reading order verified top-to-bottom and unchanged (section heading, scheme, scheme caption, then the step headings with their paragraphs). KIND FIXES: p0024-b000 'S1.9. Preparation of ISM061-16' was kind=caption although it is the section heading - changed to heading with '# ', matching S1.6/S1.7/S1.8; p0024-b002 '**Scheme S9** Preparation of ISM061-16' was kind=text - changed to caption, and it already sits immediately after its figure. FIGURE: p0024-b001 bbox [55,106,476,244] -> [52,105,478,246], a small widening that comfortably clears the vector union [57.9,109.6,470.4,238.4]; checked on the image that the crop holds both reaction rows and every label 16-1, 16-2, 16-3, THP and ISM061-16. Labelled 'Scheme S9' / scheme-s9 (printed number), replacing placeholder figure-p0024-001. Text repair: restored the real compound hyphen in '1,4-dioxane' in p0024-b008 (PDF wraps after '1,4-'); removed the spurious spaces after superscripts in b004 and b006. PRESERVED A SOURCE NUMBERING ERROR: the third heading on this page prints 'Step 3: Preparation of Compound 15-3' but the step actually makes compound 16-3 (its body is the coupling that gives the 16-3 intermediate, and page 25 Step 4 then consumes 'Compound 16-3'). The heading is left exactly as printed and flagged in my report rather than silently renumbered. PRESERVED SOURCE DEFECT (numbering): this page's printed section number 'S1.9' is reused on page 30, which prints 'S1.9. Preparation of ISM061-22'. Both headings are left exactly as printed; only asset filenames are disambiguated. 'Scheme S9' itself is NOT duplicated, so it keeps the plain asset name scheme-s9. Page ends on 'poured into ice-water (30 mL) and' - continues on page 25. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0024-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        90.0,
+        222.0,
+        102.0
+      ],
+      "markdown": "### S1.9. Preparation of ISM061-16",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0024-b001",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        105.0,
+        478.0,
+        246.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S9",
+      "asset_name": "scheme-s9"
+    },
+    {
+      "id": "p0024-b002",
+      "kind": "caption",
+      "bbox": [
+        205.0,
+        259.0,
+        393.0,
+        271.0
+      ],
+      "markdown": "**Scheme S9** Preparation of ISM061-16",
+      "source_class": "text"
+    },
+    {
+      "id": "p0024-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        290.0,
+        259.0,
+        302.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 16-1",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0024-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        321.0,
+        542.0,
+        457.0
+      ],
+      "markdown": "To a solution of 2,4-dichloro-3-methylpyridine (958 mg, 5.91 mmol) in DMF (10 mL) were added Cs2CO3 (3210 mg, 9.85 mmol) and 2-fluoro-5-methoxyphenol (700 mg, 4.93 mmol). The resulting mixture was stirred at 100 ℃ under N2 atmosphere for 2 hrs. After the addition of water (50 mL), the mixture was extracted with EtOAc (30 mL × 3), the combined organic layers was washed with brine (50 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel to afford the title compound (680 mg, 51.9% yield) as a yellow oil. LCMS (ESI<sup>+</sup>): 267.9 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0024-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        476.0,
+        259.0,
+        488.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 16-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0024-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        506.0,
+        542.0,
+        642.0
+      ],
+      "markdown": "To a solution of 2-chloro-4-[(2-fluoro-5-methoxyphenyl)oxy]-3-methylpyridine (300 mg, 1.12 mmol) in DCM (3 mL) were added BBr3 (280 mg, 1.12 mmol) at 0 ℃ in N2 atmosphere. The reaction was stirred at 25 ℃ for 1 h. The reaction was quenched with ice water. The aqueous layer was extracted with DCM (30 mL × 3). The combined organic layers was washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel to afford the title compound (100 mg, 35.2%) as a yellow oil. LCMS (ESI<sup>+</sup>): 254.1 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0024-b007",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        661.0,
+        259.0,
+        673.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 15-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0024-b008",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        692.0,
+        542.0,
+        766.0
+      ],
+      "markdown": "To a solution of 3-[(2-chloro-3-methylpyridin-4-yl)oxy]-4-fluorophenol (90 mg, 0.35 mmol) in 1,4-dioxane (1 mL) were added 1-(3,4,5,6-tetrahydro-2H-pyran-2-yl)indazol-4-amine (115.6 mg, 0.53 mmol), Cs2CO3 (231 mg, 0.71 mmol), and XantPhosPdG4 (34 mg, 0.04 mmol). The reaction was stirred at 120 ℃ for 10 h in sealed tube. The reaction mixture was poured into ice-water (30 mL) and",
+      "source_class": "text"
+    }
+  ]
+}

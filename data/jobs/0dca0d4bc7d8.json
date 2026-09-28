@@ -1,0 +1,494 @@
+{
+ "id": "0dca0d4bc7d8",
+ "agent": "nnUNet",
+ "tool": "nnunet_plan_and_preprocess",
+ "arguments": {
+  "dataset": "Dataset004_Hippocampus",
+  "configurations": [
+   "2d",
+   "3d_fullres"
+  ],
+  "check_dataset_integrity": false,
+  "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+  "nnunet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+  "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063114.9094036,
+ "started_at": 1790063114.9102569,
+ "finished_at": 1790063130.340633,
+ "result": {
+  "message": "Dataset004_Hippocampus: fingerprint of 260 cases (median spacing [1.0, 1.0, 1.0], median cropped shape [36.0, 50.0, 35.0]); planner ExperimentPlanner wrote nnUNetPlans.json with configurations ['2d', '3d_fullres'] (2d: patch [56, 40] batch 366, 3d_fullres: patch [40, 56, 40] batch 9); preprocessed ['2d', '3d_fullres'].",
+  "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/468cf803df9b267150ae2b6c0c59b8ac84f16227/nnunetv2/experiment_planning/plan_and_preprocess_api.py",
+  "artifacts": [
+   {
+    "description": "nnU-Net plans file (nnUNetPlans.json) written by the planner",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans.json"
+   },
+   {
+    "description": "dataset fingerprint (spacings, cropped shapes, intensity statistics)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/dataset_fingerprint.json"
+   },
+   {
+    "description": "PlansManager/fingerprint summary of this run (JSON)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/plans_summary.json"
+   },
+   {
+    "description": "child process stdout log (upstream nnunetv2 output)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/child.stdout.log"
+   },
+   {
+    "description": "preprocessed data folder for configuration 2d",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans_2d"
+   },
+   {
+    "description": "preprocessed data folder for configuration 3d_fullres",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans_3d_fullres"
+   },
+   {
+    "description": "ground-truth segmentations copied for validation",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/gt_segmentations"
+   }
+  ],
+  "dataset_id": 4,
+  "dataset_name": "Dataset004_Hippocampus",
+  "raw_dataset_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus",
+  "file_ending": ".nii.gz",
+  "labels": {
+   "background": 0,
+   "Anterior": 1,
+   "Posterior": 2
+  },
+  "plans_identifier": "nnUNetPlans",
+  "plans_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans.json",
+  "fingerprint_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/dataset_fingerprint.json",
+  "planner": "ExperimentPlanner",
+  "experiment_planner_name": "ExperimentPlanner",
+  "available_configurations": [
+   "2d",
+   "3d_fullres"
+  ],
+  "configurations_requested": [
+   "2d",
+   "3d_fullres"
+  ],
+  "configurations_preprocessed": [
+   "2d",
+   "3d_fullres"
+  ],
+  "configurations_skipped": [],
+  "run_preprocessing": true,
+  "check_dataset_integrity": false,
+  "num_processes_per_configuration": {
+   "2d": 8,
+   "3d_fullres": 4
+  },
+  "fingerprint": {
+   "fingerprint_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/dataset_fingerprint.json",
+   "keys": [
+    "foreground_intensity_properties_per_channel",
+    "median_relative_size_after_cropping",
+    "shapes_after_crop",
+    "spacings"
+   ],
+   "n_cases": 260,
+   "median_spacing": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "median_shape_after_crop": [
+    36.0,
+    50.0,
+    35.0
+   ],
+   "min_shape_after_crop": [
+    24.0,
+    40.0,
+    31.0
+   ],
+   "max_shape_after_crop": [
+    47.0,
+    59.0,
+    43.0
+   ],
+   "median_relative_size_after_cropping": 1.0,
+   "foreground_intensity_properties_per_channel": {
+    "0": {
+     "max": 486420.21875,
+     "mean": 22360.326171875,
+     "median": 362.88250732421875,
+     "min": 0.0,
+     "percentile_00_5": 28.0,
+     "percentile_99_5": 277682.03125,
+     "std": 60656.1328125
+    }
+   },
+   "n_channels": 1
+  },
+  "plans": {
+   "plans_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans.json",
+   "dataset_name": "Dataset004_Hippocampus",
+   "plans_name": "nnUNetPlans",
+   "experiment_planner_name": "ExperimentPlanner",
+   "image_reader_writer": "SimpleITKIO",
+   "label_manager": "LabelManager",
+   "transpose_forward": [
+    0,
+    1,
+    2
+   ],
+   "transpose_backward": [
+    0,
+    1,
+    2
+   ],
+   "original_median_spacing_after_transp": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "original_median_shape_after_transp": [
+    36,
+    50,
+    35
+   ],
+   "available_configurations": [
+    "2d",
+    "3d_fullres"
+   ],
+   "foreground_intensity_properties_per_channel": {
+    "0": {
+     "max": 486420.21875,
+     "mean": 22360.326171875,
+     "median": 362.88250732421875,
+     "min": 0.0,
+     "percentile_00_5": 28.0,
+     "percentile_99_5": 277682.03125,
+     "std": 60656.1328125
+    }
+   },
+   "configurations": {
+    "2d": {
+     "data_identifier": "nnUNetPlans_2d",
+     "preprocessor_name": "DefaultPreprocessor",
+     "batch_size": 366,
+     "patch_size": [
+      56,
+      40
+     ],
+     "spacing": [
+      1.0,
+      1.0
+     ],
+     "median_image_size_in_voxels": [
+      50.0,
+      35.0
+     ],
+     "normalization_schemes": [
+      "ZScoreNormalization"
+     ],
+     "use_mask_for_norm": [
+      false
+     ],
+     "resampling_fn_data": "resample_data_or_seg_to_shape",
+     "resampling_fn_seg": "resample_data_or_seg_to_shape",
+     "resampling_fn_probabilities": "resample_data_or_seg_to_shape",
+     "architecture": {
+      "network_class_name": "dynamic_network_architectures.architectures.unet.PlainConvUNet",
+      "n_stages": 4,
+      "features_per_stage": [
+       32,
+       64,
+       128,
+       256
+      ],
+      "conv_op": "torch.nn.modules.conv.Conv2d",
+      "kernel_sizes": [
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "strides": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "n_conv_per_stage_decoder": [
+       2,
+       2,
+       2
+      ],
+      "conv_bias": true,
+      "norm_op": "torch.nn.modules.instancenorm.InstanceNorm2d",
+      "norm_op_kwargs": {
+       "eps": 1e-05,
+       "affine": true
+      },
+      "dropout_op": null,
+      "nonlin": "torch.nn.LeakyReLU",
+      "nonlin_kwargs": {
+       "inplace": true
+      },
+      "_kw_requires_import": [
+       "conv_op",
+       "norm_op",
+       "dropout_op",
+       "nonlin"
+      ],
+      "n_conv_per_stage": [
+       2,
+       2,
+       2,
+       2
+      ]
+     },
+     "pool_op_kernel_sizes": [
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ]
+     ],
+     "batch_dice": true,
+     "previous_stage_name": null,
+     "next_stage_names": null,
+     "inherits_from": null,
+     "patch_voxels": 2240,
+     "n_downsamplings_per_axis": [
+      3,
+      3
+     ]
+    },
+    "3d_fullres": {
+     "data_identifier": "nnUNetPlans_3d_fullres",
+     "preprocessor_name": "DefaultPreprocessor",
+     "batch_size": 9,
+     "patch_size": [
+      40,
+      56,
+      40
+     ],
+     "spacing": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "median_image_size_in_voxels": [
+      36.0,
+      50.0,
+      35.0
+     ],
+     "normalization_schemes": [
+      "ZScoreNormalization"
+     ],
+     "use_mask_for_norm": [
+      false
+     ],
+     "resampling_fn_data": "resample_data_or_seg_to_shape",
+     "resampling_fn_seg": "resample_data_or_seg_to_shape",
+     "resampling_fn_probabilities": "resample_data_or_seg_to_shape",
+     "architecture": {
+      "network_class_name": "dynamic_network_architectures.architectures.unet.PlainConvUNet",
+      "n_stages": 4,
+      "features_per_stage": [
+       32,
+       64,
+       128,
+       256
+      ],
+      "conv_op": "torch.nn.modules.conv.Conv3d",
+      "kernel_sizes": [
+       [
+        3,
+        3,
+        3
+       ],
+       [
+        3,
+        3,
+        3
+       ],
+       [
+        3,
+        3,
+        3
+       ],
+       [
+        3,
+        3,
+        3
+       ]
+      ],
+      "strides": [
+       [
+        1,
+        1,
+        1
+       ],
+       [
+        2,
+        2,
+        2
+       ],
+       [
+        2,
+        2,
+        2
+       ],
+       [
+        2,
+        2,
+        2
+       ]
+      ],
+      "n_conv_per_stage_decoder": [
+       2,
+       2,
+       2
+      ],
+      "conv_bias": true,
+      "norm_op": "torch.nn.modules.instancenorm.InstanceNorm3d",
+      "norm_op_kwargs": {
+       "eps": 1e-05,
+       "affine": true
+      },
+      "dropout_op": null,
+      "nonlin": "torch.nn.LeakyReLU",
+      "nonlin_kwargs": {
+       "inplace": true
+      },
+      "_kw_requires_import": [
+       "conv_op",
+       "norm_op",
+       "dropout_op",
+       "nonlin"
+      ],
+      "n_conv_per_stage": [
+       2,
+       2,
+       2,
+       2
+      ]
+     },
+     "pool_op_kernel_sizes": [
+      [
+       1,
+       1,
+       1
+      ],
+      [
+       2,
+       2,
+       2
+      ],
+      [
+       2,
+       2,
+       2
+      ],
+      [
+       2,
+       2,
+       2
+      ]
+     ],
+     "batch_dice": false,
+     "previous_stage_name": null,
+     "next_stage_names": null,
+     "inherits_from": null,
+     "patch_voxels": 89600,
+     "n_downsamplings_per_axis": [
+      3,
+      3,
+      3
+     ]
+    }
+   }
+  },
+  "preprocessed_folders": {
+   "2d": {
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans_2d",
+    "exists": true,
+    "n_files": 780,
+    "n_cases": 260,
+    "n_seg_files": 260,
+    "n_properties_pkl": 260,
+    "total_bytes": 71192916
+   },
+   "3d_fullres": {
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans_3d_fullres",
+    "exists": true,
+    "n_files": 780,
+    "n_cases": 260,
+    "n_seg_files": 260,
+    "n_properties_pkl": 260,
+    "total_bytes": 60126615
+   }
+  },
+  "gt_segmentations": {
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/gt_segmentations",
+   "exists": true,
+   "n_files": 260
+  },
+  "splits_final_json_present": false,
+  "timings_seconds": {
+   "extract_fingerprints": 7.238,
+   "plan_experiments": 0.253,
+   "preprocess": 5.858
+  },
+  "nnunet_paths": {
+   "nnUNet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+   "nnUNet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+   "nnUNet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results"
+  },
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c",
+  "logs": {
+   "stdout": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/child.stdout.log",
+   "stderr": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/child.stderr.log",
+   "result": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/result.json",
+   "driver": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/nnunet_planning_driver.py",
+   "request": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/request.json"
+  }
+ },
+ "error": null,
+ "duration_s": 15.43
+}

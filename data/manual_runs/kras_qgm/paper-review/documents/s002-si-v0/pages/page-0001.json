@@ -1,0 +1,60 @@
+{
+  "page": 1,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0001.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview and compared every line with evidence/page-0001.json. Confirmed page is the SI title page: two-line title block plus section heads 'S1. Chemistry' and 'S1.1. General Synthetic Procedures' and one prose paragraph; no figures, tables or page furniture on this page. Set heading hierarchy (title h1, S1 h2, S1.1 h3) in place of the extractor's flat '#'. Repaired superscript spacing '(<sup>1</sup> H NMR)' -> '(<sup>1</sup>H NMR)'. Verified against the render: 'SunFire-C18, 5 µm, 50 × 4.6 mm', '2 ml /minute', '40 °C', 'DAICEL CHIRALPAK OJ (3.0 mm × 100 mm, 3 μm)', 'B%: 5%-40%, 2.7; 4.8min' and the source's mixed µ/μ usage, which is kept as printed. Chemical subscripts (H2O, Na2SO4) are left as inline digits, matching the extractor convention used throughout this document; superscripts the extractor already tagged (C<sup>18</sup>) are kept. No prose runs onto page 2 (the paragraph ends with a full stop), so no join_previous is set.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0001-b000",
+      "kind": "heading",
+      "bbox": [
+        62.0,
+        60.0,
+        537.0,
+        101.0
+      ],
+      "markdown": "# Quantum Computing-Enhanced Algorithm Unveils Novel Inhibitors for KRAS Supplementary Materials",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0001-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        115.0,
+        133.0,
+        127.0
+      ],
+      "markdown": "## S1. Chemistry",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0001-b002",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        141.0,
+        241.0,
+        153.0
+      ],
+      "markdown": "### S1.1. General Synthetic Procedures",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0001-b003",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        161.0,
+        542.0,
+        587.0
+      ],
+      "markdown": "Unless otherwise noted, solvents and reagents were obtained from commercial suppliers and were used without further purification. Structures of the target compounds in this work were assigned by use of NMR and MS spectroscopy. Proton nuclear magnetic resonance (<sup>1</sup>H NMR) spectra were recorded on a Bruker AVANCE III HD 400 MHz spectrometer and were referenced in parts per million (ppm, δ) relative to the residual solvent peak in the indicated solvent. In the spectral data reported, the format (δ) chemical shift (multiplicity, coupling constants (J) values in Hz, integration) was used with the following abbreviations of splitting patterns: s= singlet, brs= broad singlet, d= doublet, t= triplet, q= quartet, and m= multiplet. The LC separation was done on a SunFire-C18, 5 µm, 50 × 4.6 mm column at a flow rate of 2 ml /minute. Mobile phase A was water with 0.1% FA and mobile phase B was acetonitrile with 0.1% FA. The gradient started at 10% mobile phase B increase to 30% B for 0.40 min, increase to 95% B within 1.60 min, 95% B for 0.90 min, back to 10% B within 0.01 min. LC column temperature was 40 °C. Mass spectrometric (MS) analyses were performed on a Shimadzu LCMS2020 mass spectrometer using electrospray ionization (ESI), a Sun Fire C<sup>18</sup> 4.6× 50 mm column, eluting with a gradient (2.5 min) of acetonitrile (10% to 95%) in water (both containing 0.1% formic acid). High resolution mass spectrometry was performed on Thermo Scientific Q Exactive HF Orbitrap-FTMS. Prep-HPLC was carried out on a C<sup>18</sup> reversed-phase preparative high-performance liquid chromatography column using a Waters system with a LC-20AP solvent pump, SPD-20A detector and a X bridge C<sup>18</sup> 250 × 19 mm I.D. 10 µm column using MeCN/H2O gradients). Preparative SFC separation was carried out on chiral SFC (column: DAICEL CHIRALPAK OJ (3.0 mm × 100 mm, 3 μm); mobile phase: [MeOH-DEA]; B%: 5%-40%, 2.7; 4.8min). The purity of all the final compounds was greater than 95% by Agilent 1260 HPLC analysis.",
+      "source_class": "text"
+    }
+  ]
+}

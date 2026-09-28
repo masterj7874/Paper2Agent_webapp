@@ -1,0 +1,88 @@
+{
+  "page": 8,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0008.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. No cross-page join: page 8 opens with a figure, not prose. FIXED A BADLY CROPPED FIGURE: p0008-b000 (1H NMR spectrum of ISM061-6) had bbox [51, 169, 450, 317], which cut off the dense peak-shift annotation band at the top, the right-hand intensity axis (1.2x10^12 .. -1.0x10^11) and the integral row and f1 (ppm) axis at the bottom. Measured ink 56.2-472.2 x 59.5-348.7 pt and set [51, 55, 477, 354]; asset si-nmr-ism061-6. p0008-b002 named Scheme S4 (asset scheme-s4) and its bbox opened slightly to [52, 386, 477, 566] to hold all three reaction rows (ink 58.2-470.3 x 392.5-560.0 pt) with labels 11-1 .. 11-8 and ISM061-11. Changed 'S1.4. Preparation of ISM061-11' and 'Step 1: Preparation of Compound 11-1' from kind caption to heading (h3 and h4); the genuine caption 'Scheme S4 Preparation of ISM061-11' stays a caption immediately after its figure. Restored the real hyphen dropped at a line wrap in p0008-b005: 'N,Ndimethylformamide' -> 'N,N-dimethylformamide' (evidence line ends 'in N,N-', next begins 'dimethylformamide'); the same compound is printed 'N,N-dimethylformamide' on page 9, confirming it. Page ends mid-phrase at '(13.8 g, crude'.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0008-b000",
+      "kind": "figure",
+      "bbox": [
+        51.0,
+        55.0,
+        477.0,
+        354.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-6",
+      "asset_name": "si-nmr-ism061-6"
+    },
+    {
+      "id": "p0008-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        372.0,
+        221.0,
+        384.0
+      ],
+      "markdown": "### S1.4. Preparation of ISM061-11",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0008-b002",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        386.0,
+        477.0,
+        566.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S4",
+      "asset_name": "scheme-s4"
+    },
+    {
+      "id": "p0008-b003",
+      "kind": "caption",
+      "bbox": [
+        205.0,
+        577.0,
+        393.0,
+        589.0
+      ],
+      "markdown": "**Scheme S4** Preparation of ISM061-11",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0008-b004",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        603.0,
+        259.0,
+        615.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 11-1",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0008-b005",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        634.0,
+        542.0,
+        770.0
+      ],
+      "markdown": "To a solution of 5-fluoro-2-trifluoromethylbenzoic acid (10.0 g, 48.1 mmol) in N,N-dimethylformamide (100 mL) was added sodium hydride (2.1 g, 53.0 mmol) in four batches under nitrogen protection at 0 °C. The mixture was stirred at 0 °C for 0.5 hr. After the addition of benzyl alcohol (5.7 g, 53.0 mmol) the reaction was stirred at 25 °C for 16 hours. The reaction was quenched with ice water (300 mL). The mixture was extracted with ethyl acetate (100 mL × 3), the combined the organic phases was washed with saturated brine (100 mL × 3), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to afford the title compound (13.8 g, crude",
+      "source_class": "text"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "page": 32,
+  "lines": [
+    {
+      "text": "S1.12. Preparation of ISM061-24",
+      "bbox": [
+        56.6399040222168,
+        390.10797119140625,
+        227.96214294433594,
+        403.3919677734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S12 Preparation of ISM061-24",
+      "bbox": [
+        202.26951599121094,
+        547.7879638671875,
+        395.91021728515625,
+        561.0719604492188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 24-1",
+      "bbox": [
+        56.6399040222168,
+        578.5079345703125,
+        258.6417236328125,
+        591.7919311523438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of methyl 2-ethynylbenzoate (600.0 mg, 3.79 mmol), 2-chloro-3-fluoro-4-iodopyridine",
+      "bbox": [
+        56.6399040222168,
+        609.2279052734375,
+        541.537841796875,
+        622.5119018554688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(1171.5 mg, 4.55 mmol) in MeCN (3 mL) were added TEA (1.6 mL, 11.38 mmol), CuI (144.5 mg,",
+      "bbox": [
+        56.6399040222168,
+        629.867919921875,
+        541.5274658203125,
+        643.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "0.76 mmol) and Pd(PPh3)2Cl2 (266.2 mg, 0.38 mmol). After addition, the mixture was degassed and",
+      "bbox": [
+        56.6399040222168,
+        650.5079345703125,
+        541.5366821289062,
+        663.87060546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "purged with N2 for 2 mins and then stirred at 85 ℃ for 2 hrs. After cooling to 20 ℃, the reaction",
+      "bbox": [
+        56.6399040222168,
+        671.14794921875,
+        541.5372924804688,
+        684.5106201171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solution was poured into water (50 mL) and extracted with EtOAc (25 mL × 3). The combined organic",
+      "bbox": [
+        56.6399040222168,
+        692.0279541015625,
+        541.5338134765625,
+        705.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under",
+      "bbox": [
+        56.6399040222168,
+        712.6679077148438,
+        541.5331420898438,
+        726.0306396484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reduced pressure to give a residue. The residue was purified by flash silica gel chromatography (SiO2,",
+      "bbox": [
+        56.6399040222168,
+        733.3079223632812,
+        541.5398559570312,
+        746.670654296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 32
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "picture",
+        "bbox": [
+          56,
+          67,
+          445,
+          309
+        ],
+        "pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          392,
+          228,
+          404
+        ],
+        "pos": [
+          2,
+          42
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          57,
+          412,
+          469,
+          461
+        ],
+        "pos": [
+          42,
+          44
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          60,
+          484,
+          309,
+          528
+        ],
+        "pos": [
+          44,
+          46
+        ]
+      },
+      {
+        "index": 4,
+        "class": "caption",
+        "bbox": [
+          202,
+          550,
+          396,
+          562
+        ],
+        "pos": [
+          46,
+          88
+        ]
+      },
+      {
+        "index": 5,
+        "class": "caption",
+        "bbox": [
+          56,
+          581,
+          259,
+          592
+        ],
+        "pos": [
+          88,
+          131
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          611,
+          542,
+          747
+        ],
+        "pos": [
+          131,
+          810
+        ]
+      }
+    ],
+    "text": "\n\n# **S1.12. Preparation of ISM061-24** \n\n\n\n\n\n**Scheme S12** Preparation of ISM061-24 \n\n**Step 1: Preparation of Compound 24-1** \n\nTo a solution of methyl 2-ethynylbenzoate (600.0 mg, 3.79 mmol), 2-chloro-3-fluoro-4-iodopyridine (1171.5 mg, 4.55 mmol) in MeCN (3 mL) were added TEA (1.6 mL, 11.38 mmol), CuI (144.5 mg, 0.76 mmol) and Pd(PPh3)2Cl2 (266.2 mg, 0.38 mmol). After addition, the mixture was degassed and purged with N2 for 2 mins and then stirred at 85 ℃ for 2 hrs. After cooling to 20 ℃, the reaction solution was poured into water (50 mL) and extracted with EtOAc (25 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by flash silica gel chromatography (SiO2, \n\n"
+  }
+}

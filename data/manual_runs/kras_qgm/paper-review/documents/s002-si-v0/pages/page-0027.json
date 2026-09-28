@@ -1,0 +1,97 @@
+{
+  "page": 27,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0027.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0027.png and compared all seven items with evidence/page-0027.json. Reading order was already correct; no figures or tables on this page. Set join_previous='space' on p0027-b000: page 26 ends '...purified by column chromatography' and this page opens 'on silica gel eluting with ethyl acetate (from 0% to 22.3%)...', a continuing sentence with a word boundary at the break. Step headings demoted to level 4. Text repairs: removed <mark> artifacts; restored the line-wrap hyphen in '4-bromo-5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazole' (extractor had '1Hindazole'); rejoined 'Prep-TLC (SiO 2 , PE:EA=3: 1)' -> 'Prep-TLC (SiO2, PE:EA=3: 1)' (and the PE:EA=1: 1 instance); fixed '(ESI<sup>+</sup> )', '[M+H]<sup>+</sup> .' / ' ;' spacing and '.<sup>1</sup> H NMR' -> '. <sup>1</sup>H NMR'; rendered the solvent as 'DMSO-_d_6' to match the source's italic d with subscript 6 (confirmed from the PDF font/size spans). PRESERVED SOURCE TYPOS, not corrected: Step 4 yields 'ISM023-18' and Step 5 says 'ISM023-18-2' although the section is ISM061-18 / ISM061-18-2 - both read that way in the printed page. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*. Audited every line-ending hyphen on this page: the only one is '...-1H-' / 'indazole', already repaired. Every [M+H] bracket and every ISM/Compound identifier matches the source token for token.  COORDINATOR ARTWORK RE-CHECK: this page was flagged as possibly missing a figure item. It is not. PyMuPDF reports no images, and the only vector objects are white-filled (1,1,1) rectangles exactly one text line tall sitting on text baselines - they are the invisible highlight boxes that the extractor turned into the <mark> spans I removed, not artwork. The render confirms a text-only page. No figure item was added. Italic isotope marker set as 'DMSO-*d*6' to match the form the pages 1-13 reviewer established (pages 6, 7, 10); '_d_6' was rejected because CommonMark underscore emphasis does not close before an alphanumeric, so it would have leaked literal underscores into the output. '_J_' and '_o_' keep their underscore form, which does render, exactly as pages 6/7/10/14/17/20/23 have them. THREE-WAY ARTWORK PROOF (coordinator method): content stream checked for drawing ops, embedded images, form XObjects and inline images -> images=0, xobjects=0, forms=0, inline BI=0, and every vector op present is a white-fill (1,1,1) rectangle one text line tall on a text baseline (the invisible highlight boxes behind the spans the extractor had wrapped in <mark>). Then the page was rendered at 200 dpi with every native text line masked: ZERO non-white pixels remain. This page is genuinely text-only; no figure item was added.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0027-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        113.0
+      ],
+      "markdown": "on silica gel eluting with ethyl acetate (from 0% to 22.3%) in petroleum ether to afford **Compound 18-2** (151 mg, 8.6% yield) as a yellow solid; LCMS (ESI<sup>+</sup>): 217.3 [M+H]<sup>+</sup>; **Compound 18-3** (400 mg, 22.8%) was obtained as a byproduct of this reaction. LCMS (ESI<sup>+</sup>): 217.3 [M+H]<sup>+</sup>;",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0027-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        132.0,
+        259.0,
+        143.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 18-4",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0027-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        162.0,
+        542.0,
+        339.0
+      ],
+      "markdown": "To a solution of **Compound 18-2** (240 mg, 1.11 mmol) in DMF (6 mL) was added KOAc (436 mg, 4.40 mmol), PPh3 (117 mg, 0.45 mmol), 4-bromo-5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazole (653 mg, 2.20 mmol) and Pd(OAc)2 (101 mg, 0.45 mmol) at 25 ℃ under N2 atmosphere. After addition, the reaction mixture was heated and stirred at 100 ℃ under nitrogen atmosphere for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (80 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (60 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, PE:EA=3: 1) to give the title compound (150 mg, 15.7% yield) as a yellow solid. LCMS (ESI<sup>+</sup>): 431.1 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0027-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        358.0,
+        233.0,
+        370.0
+      ],
+      "markdown": "#### Step 4: Preparation of ISM061-18",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0027-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        389.0,
+        542.0,
+        546.0
+      ],
+      "markdown": "To a solution of **Compound 18-4** (75 mg, 0.15 mmol) in THF (2 mL) were added HCl (1 mL, 4.00 mmol, 4.0 M in dioxane). After the addition, the reaction mixture was poured into ice water (40 mL) and extracted with DCM (20 mL × 3), the combined organic layers were washed with brine (40 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, PE:EA=1: 1) to give ISM023-18 (28.6 mg, 47.4% yield) as a yellow solid. LCMS (ESI<sup>+</sup>): 347.1 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, DMSO-*d*6) δ 9.30 (s, 2H), 8.47 (s, 1H), 7.91 (d, _J_ = 16.8 Hz, 1H), 7.46 (d, _J_ = 8.4 Hz, 1H), 7.42 – 7.33 (m, 2H), 7.27 (d, _J_ = 8.6 Hz, 1H), 6.83 (d, _J_ = 8.4 Hz, 1H), 6.79 (ddd, _J_ = 10.9, 8.2, 1.1 Hz, 1H), 2.53 (s, 3H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0027-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        565.0,
+        243.0,
+        576.0
+      ],
+      "markdown": "#### Step 5: Preparation of ISM061-18-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0027-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        595.0,
+        542.0,
+        669.0
+      ],
+      "markdown": "According to a similar procedure of **ISM061-18**, **ISM023-18-2** was synthesized with ISM061-18-3 as the substrate. LCMS (ESI<sup>+</sup>): 347.1 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, DMSO-*d*6) δ 9.01 (s, 2H), 8.41 (s, 1H), 7.72 (d, _J_ = 16.7 Hz, 1H), 7.53 – 7.47 (m, 1H), 7.42 (d, _J_ = 8.4 Hz, 1H), 7.29 (d, _J_ = 16.7 Hz, 1H), 7.24 (d, _J_ = 8.5 Hz, 1H), 7.18 (dt, _J_ = 10.1, 2.4 Hz, 1H), 7.16 – 7.08 (m, 2H), 2.49 (s, 3H).",
+      "source_class": "text"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+ "input": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+ "output": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+ "device": "cuda",
+ "use_tta": true,
+ "save_mask": true,
+ "save_brain_image": true,
+ "params_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/hd-bet_params/release_2.0.0",
+ "params_dir_source": "HDBET_PARAMS_DIR",
+ "cases": [
+  {
+   "case": "tpl-MNI152NLin2009cAsym_res-02_T1w",
+   "input": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+   "brain_image": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+   "mask": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+   "overlay": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_overlay.png"
+  }
+ ],
+ "result_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/logs/child_result.json"
+}

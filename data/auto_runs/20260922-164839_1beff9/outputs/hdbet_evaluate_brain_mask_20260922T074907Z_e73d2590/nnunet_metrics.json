@@ -1,0 +1,16 @@
+{
+  "metrics": {
+    "1": {
+      "Dice": 0.978350696315835,
+      "FN": 4395,
+      "FP": 5848,
+      "IoU": 0.9576189136407269,
+      "TN": 840347,
+      "TP": 231445,
+      "n_pred": 237293,
+      "n_ref": 235840
+    }
+  },
+  "prediction_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590/binarised/prediction/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+  "reference_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590/binarised/reference/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz"
+}

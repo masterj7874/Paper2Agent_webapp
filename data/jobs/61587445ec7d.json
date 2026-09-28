@@ -1,0 +1,196 @@
+{
+ "id": "61587445ec7d",
+ "agent": "MedKG",
+ "tool": "medkg_related_work",
+ "arguments": {
+  "topic": "abdominal organ segmentation CT deep learning foundation model",
+  "k": 10,
+  "summarise": true,
+  "modality": "CT",
+  "task": "segmentation"
+ },
+ "status": "done",
+ "created_at": 1790063633.5267525,
+ "started_at": 1790063633.5275722,
+ "finished_at": 1790063697.890966,
+ "result": {
+  "message": "10 related-work rows; LLM=codex; status=ok.",
+  "summary": {
+   "n_rows": 10,
+   "n_q1": 10,
+   "llm": {
+    "provider": "codex",
+    "model": "gpt-6-astra",
+    "elapsed_s": 63.69,
+    "fallback_used": false,
+    "error": null
+   },
+   "timing": {
+    "total_ms": 64343.8,
+    "retrieval_ms": 545.4,
+    "embed_ms": null,
+    "dense_ms": 57.9,
+    "lexical_ms": 140.9,
+    "rerank_ms": 246.4,
+    "graph_ms": 106.6,
+    "llm_ms": 63689.3
+   },
+   "status": "ok"
+  },
+  "artifacts": [
+   {
+    "description": "related_work — full JSON response",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165457-352ae8.json"
+   },
+   {
+    "description": "related_work — markdown",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165457-352ae8.md"
+   }
+  ],
+  "reference": "http://127.0.0.1:8790/docs",
+  "rows": [
+   {
+    "work_id": "PMC7803471",
+    "title": "Deep learning method for localization and segmentation of abdominal CT",
+    "year": 2020,
+    "journal": "Computerized Medical Imaging and Graphics",
+    "is_q1": true,
+    "doi": "10.1016/j.compmedimag.2020.101776",
+    "method": "Deep Learning, Artificial Intelligence, Computer Vision",
+    "modality": "Computed Tomography",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "No abstract was supplied, so the contribution cannot be extracted.",
+    "score": 0.9967396855354309
+   },
+   {
+    "work_id": "PMC12476582",
+    "title": "Deep Learning with Domain Randomization in Image and Feature Spaces for Abdominal Multi-organ Segmentation on CT and MRI Scans",
+    "year": 2025,
+    "journal": "Radiology: Artificial Intelligence",
+    "is_q1": true,
+    "doi": "10.1148/ryai.240586",
+    "method": "Extended nnU-Net with domain randomization in image and feature spaces",
+    "modality": "CT and MRI",
+    "dataset": "AMOS; unnamed public multi-institutional prostate MRI and abdominal CT/MRI datasets",
+    "metric_values": "Average DSC on unseen test domains: 88.22 versus TotalSegmentator 79.01 and MRSegmentator 75.84; both P<0.001",
+    "summary": "Combining image-space and feature-space domain randomization improves abdominal multi-organ segmentation accuracy and generalization across sites and modalities.",
+    "score": 0.9916841983795166
+   },
+   {
+    "work_id": "PMC11071191",
+    "title": "The application of deep learning in abdominal trauma diagnosis by CT imaging.",
+    "year": 2024,
+    "journal": "World journal of emergency surgery : WJES",
+    "is_q1": true,
+    "doi": "10.1186/s13017-024-00546-7",
+    "method": "2D semantic segmentation followed by 2.5D organ-injury classification",
+    "modality": "CT",
+    "dataset": "Unnamed Kaggle competition dataset: 3,147 patients, including 855 with abdominal trauma",
+    "metric_values": "Renal injury: accuracy 0.932, PPV 0.888, NPV 0.943, sensitivity 0.887, specificity 0.944; liver injury: accuracy 0.873, PPV 0.789, NPV 0.895, sensitivity 0.789, specificity 0.895; spleen injury: accuracy 0.771, PPV 0.630, NPV 0.814, sensitivity 0.626, specificity 0.816",
+    "summary": "A segmentation-and-classification pipeline detects multiple abdominal organ injuries on CT for preliminary trauma screening.",
+    "score": 0.9839708209037781
+   },
+   {
+    "work_id": "PMC11663761",
+    "title": "Annotation-free multi-organ anomaly detection in abdominal CT using free-text radiology reports: a multi-centre retrospective study.",
+    "year": 2024,
+    "journal": "EBioMedicine",
+    "is_q1": true,
+    "doi": "10.1016/j.ebiom.2024.105463",
+    "method": "Multiple-instance learning using organ images from multi-organ segmentation and disease labels extracted from free-text radiology reports",
+    "modality": "CT and free-text radiology reports",
+    "dataset": "Private cohort: 66,684 training exams; 300 internal and 600 external validation exams, with data from three institutions for training/internal testing and six for external testing",
+    "metric_values": "External overall organ-abnormality detection AUC 0.886",
+    "summary": "Report-derived disease labels enable training of multi-organ abdominal CT anomaly detection models without manual disease annotations.",
+    "score": 0.9675332307815552
+   },
+   {
+    "work_id": "PMC10600339",
+    "title": "Abdominal organ segmentation via deep diffeomorphic mesh deformations.",
+    "year": 2023,
+    "journal": "Scientific reports",
+    "is_q1": true,
+    "doi": "10.1038/s41598-023-45435-2",
+    "method": "UNetFlow: deep diffeomorphic template-mesh deformation with improved training and registration-based voxel–mesh alignment",
+    "modality": "CT and MRI",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "UNetFlow reconstructs meshes for liver, kidney, pancreas, and spleen segmentation, improving generalization across organ geometries and supporting fine-tuning on new data.",
+    "score": 0.9619649052619934
+   },
+   {
+    "work_id": "PMC10883917",
+    "title": "Fully-automated multi-organ segmentation tool applicable to both non-contrast and post-contrast abdominal CT: deep learning algorithm developed using dual-energy CT images.",
+    "year": 2024,
+    "journal": "Scientific reports",
+    "is_q1": true,
+    "doi": "10.1038/s41598-024-55137-y",
+    "method": "3D nnU-Net trained on paired dual-energy CT portal venous phase and virtual non-contrast images",
+    "modality": "Dual-energy and single-energy CT, including non-contrast and post-contrast images",
+    "dataset": "not stated",
+    "metric_values": "Mean DSC: liver, spleen, and each kidney >0.94; pancreas around 0.8; volume ICC: liver, spleen, and each kidney >0.95; pancreas 0.792 on SE-PVP and 0.840 on true non-contrast CT; volume error within 10% in >90% of cases for liver, spleen, and each kidney",
+    "summary": "Training on matched dual-energy CT images enables automated abdominal organ segmentation and volumetry across contrast conditions, with lower performance for the pancreas.",
+    "score": 0.9567152261734009
+   },
+   {
+    "work_id": "PMC6960305",
+    "title": "Development and Validation of a Deep Learning System for Segmentation of Abdominal Muscle and Fat on Computed Tomography.",
+    "year": 2020,
+    "journal": "Korean journal of radiology",
+    "is_q1": true,
+    "doi": "10.3348/kjr.2019.0470",
+    "method": "Fully convolutional network for automated muscle and fat segmentation",
+    "modality": "Axial CT at the inferior endplate of L3",
+    "dataset": "Private cohort: 883 training scans from 467 subjects; 426 internal validation scans from 308 subjects; 171 external validation scans from 171 subjects at two outside hospitals",
+    "metric_values": "Internal mean Dice: muscle 0.96, subcutaneous fat 0.97, visceral fat 0.97; external mean Dice: 0.97 for all three; internal mean area error: muscle 2.1%, subcutaneous fat 3.8%, visceral fat 1.8%; external mean area error: muscle 2.7%, subcutaneous fat 4.6%, visceral fat 2.3%",
+    "summary": "A fully convolutional network automatically segments abdominal muscle and fat on L3 CT images with high agreement against manual annotations in internal and external validation.",
+    "score": 0.948441743850708
+   },
+   {
+    "work_id": "PMC11573127",
+    "title": "External validation of a deep learning model for automatic segmentation of skeletal muscle and adipose tissue on abdominal CT images.",
+    "year": 2024,
+    "journal": "The British journal of radiology",
+    "is_q1": true,
+    "doi": "10.1093/bjr/tqae191",
+    "method": "Deep learning neural network for skeletal muscle and adipose tissue segmentation",
+    "modality": "CT at L3",
+    "dataset": "Private cohort: 3,187 abdominal surgery patients for training and 2,535 abdominal cancer patients for external validation",
+    "metric_values": "Median Dice: skeletal muscle 0.97 (IQR 0.95–0.98), visceral adipose tissue 0.98 (0.95–0.98), subcutaneous adipose tissue 0.95 (0.92–0.97); Lin's concordance: 0.964 (0.959–0.968), 0.998 (0.998–0.998), and 0.992 (0.991–0.993), respectively; Bland–Altman offsets: muscle radiodensity 0.23 HU (0.5%), muscle 1.26 cm²/m² (2.8%), visceral adipose tissue −1.02 cm²/m² (1.7%), subcutaneous adipose tissue 3.24 cm²/m² (4.6%)",
+    "summary": "An externally validated neural network automates L3 CT body composition analysis with strong agreement against expert muscle and adipose tissue segmentations.",
+    "score": 0.9429286122322083
+   },
+   {
+    "work_id": "PMC9849751",
+    "title": "Deep-learning method for fully automatic segmentation of the abdominal aortic aneurysm from computed tomography imaging.",
+    "year": 2022,
+    "journal": "Frontiers in cardiovascular medicine",
+    "is_q1": true,
+    "doi": "10.3389/fcvm.2022.1040053",
+    "method": "Three-step deep learning pipeline extracting the aorta and iliac arteries followed by lumen and other aneurysm tissue segmentation",
+    "modality": "CT",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "A fully automated deep learning pipeline segments abdominal aortic aneurysm tissues with qualitatively reported agreement against expert manual segmentation.",
+    "score": 0.9403530955314636
+   },
+   {
+    "work_id": "PMC12873139",
+    "title": "A MultiRater MultiOrgan Abdominal CT Dataset for Calibration Analysis and Uncertainty Modeling in Segmentation.",
+    "year": 2026,
+    "journal": "Scientific data",
+    "is_q1": true,
+    "doi": "10.1038/s41597-025-06473-9",
+    "method": "Dataset and benchmark for segmentation uncertainty and calibration; no specific AI architecture stated",
+    "modality": "Contrast-enhanced CT",
+    "dataset": "CURVAS: 90 scans from University Hospital Erlangen with pancreas, liver, and kidney segmentations annotated by three experts",
+    "metric_values": "not stated",
+    "summary": "CURVAS provides a multi-rater abdominal CT dataset for evaluating segmentation quality, uncertainty, calibration, and organ volumes while accounting for annotation variability.",
+    "score": 0.9375547766685486
+   }
+  ]
+ },
+ "error": null,
+ "duration_s": 64.36
+}

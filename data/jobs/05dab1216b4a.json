@@ -1,0 +1,52 @@
+{
+ "id": "05dab1216b4a",
+ "agent": "Cellpose",
+ "tool": "cellpose_estimate_diameter",
+ "arguments": {
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+  "channels": [
+   0,
+   0
+  ]
+ },
+ "status": "done",
+ "created_at": 1790025784.296741,
+ "started_at": 1790025784.2971835,
+ "finished_at": 1790025790.449587,
+ "result": {
+  "message": "Size model cyto2 on img02.png: estimated diameter 27.8003 px (style-regression estimate 26.3194 px, model mean 30 px), device cuda:1.",
+  "reference": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/notebooks/run_cellpose.ipynb",
+  "artifacts": [],
+  "image": {
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+   "shape": [
+    349,
+    467,
+    3
+   ],
+   "dtype": "uint8"
+  },
+  "estimated_diameter": 27.80029502818709,
+  "diameter_from_style": 26.31943035282652,
+  "diam_mean": 30.0,
+  "rescale": 1.0791252384042183,
+  "settings": {
+   "model_type": "cyto2",
+   "channels": [
+    0,
+    0
+   ],
+   "size_model": "size_cyto2torch_0.npy",
+   "pretrained_model_files": [
+    "cyto2torch_0"
+   ]
+  },
+  "device": "cuda:1",
+  "timings_s": {
+   "model_init": 0.078,
+   "eval": 0.974
+  }
+ },
+ "error": null,
+ "duration_s": 6.15
+}

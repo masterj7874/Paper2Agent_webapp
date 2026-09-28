@@ -1,0 +1,503 @@
+{
+  "page": 2,
+  "lines": [
+    {
+      "text": "S1.1 Preparation of ISM061-1",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        212.96214294433594,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S1 Preparation of ISM061-1",
+      "bbox": [
+        208.26951599121094,
+        170.9879608154297,
+        389.91021728515625,
+        184.27195739746094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 1-1",
+      "bbox": [
+        56.6399040222168,
+        196.66796875,
+        252.64173889160156,
+        209.95196533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2,4-dichloro-5-ethylpyrimidine (5.00 g, 28.20 mmol) in DMF (50 mL) were added",
+      "bbox": [
+        56.6399040222168,
+        227.38795471191406,
+        541.530517578125,
+        240.6719512939453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tributyl(1-ethoxyvinyl)stannane (11.22 g, 31.1 mmol) and bis (triphenylphosphine) palladium(II)",
+      "bbox": [
+        56.6399040222168,
+        248.26795959472656,
+        541.5342407226562,
+        261.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chloride (0.99 g, 1.41 mmol). After the addition, the mixture was degassed and purged with N2 for 3",
+      "bbox": [
+        56.6399040222168,
+        268.9079895019531,
+        541.5250854492188,
+        282.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mins and then stirred at 85 ℃ for 4 hrs. After cooling to 20 ℃, The reaction solution was poured into",
+      "bbox": [
+        56.6399040222168,
+        289.5479736328125,
+        541.5375366210938,
+        302.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "water (50 mL) and extracted with EtOAc (50 mL × 3). The combined organic layers were washed",
+      "bbox": [
+        56.6399040222168,
+        310.18798828125,
+        541.526123046875,
+        323.47198486328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with brine (50 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give",
+      "bbox": [
+        56.6399040222168,
+        330.8279724121094,
+        541.5308837890625,
+        344.1119689941406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a residue, which was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether",
+      "bbox": [
+        56.6399040222168,
+        351.7079772949219,
+        541.52978515625,
+        364.9919738769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "= 0% - 10%) to afford the title compound (5.00 g, 83% yield) as colorless oil. LCMS(ESI): m/z 213.2",
+      "bbox": [
+        56.6399040222168,
+        372.3479919433594,
+        541.5307006835938,
+        385.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "[M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        392.98797607421875,
+        103.50316619873047,
+        406.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 1-2",
+      "bbox": [
+        56.6399040222168,
+        423.7079772949219,
+        252.64173889160156,
+        436.9919738769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloro-4-(1-ethoxyvinyl)-5-ethylpyrimidine (5.00 g, 23.51 mmol) in THF (50 mL)",
+      "bbox": [
+        56.6399040222168,
+        454.427978515625,
+        541.5322875976562,
+        467.71197509765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was added HCl (20 mL, 6 M) dropwise. After addition, the mixture was stirred at 25 ℃ for 2 hrs. The",
+      "bbox": [
+        56.6399040222168,
+        475.0679626464844,
+        541.5203857421875,
+        488.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "residue was adjusted pH = 9 ~ 10 with saturated Na2CO3 at 0 ℃ and extracted with EtOAc (25 mL",
+      "bbox": [
+        56.6399040222168,
+        495.9479675292969,
+        541.534423828125,
+        509.2319641113281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "× 3). The combined organic layers were washed with brine (40 mL × 2), dried over Na2SO4, filtered",
+      "bbox": [
+        56.6399040222168,
+        516.5879516601562,
+        541.5344848632812,
+        529.8719482421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and concentrated under reduced pressure to give a residue, which was purified by flash silica gel",
+      "bbox": [
+        56.6399040222168,
+        537.2279052734375,
+        541.5223999023438,
+        550.5119018554688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 10%) to afford the title compound (2.50",
+      "bbox": [
+        56.6399040222168,
+        557.867919921875,
+        541.5345458984375,
+        571.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "g, 58% yield) as colorless oil. LCMS (ESI): m/z 185.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        578.5079345703125,
+        367.8078918457031,
+        591.7919311523438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3: Preparation of Compound 1-3",
+      "bbox": [
+        56.6399040222168,
+        609.2279052734375,
+        252.64173889160156,
+        622.5119018554688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 1-(2-chloro-5-ethylpyrimidin-4-yl)ethan-1-one (2.50 g, 13.54 mmol) in MeOH (50",
+      "bbox": [
+        56.6399040222168,
+        639.9479370117188,
+        541.5377197265625,
+        653.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL) were added 2,6-difluoroaniline (2.10 g, 16.25 mmol) and AcOH (0.78 mL, 13.54 mmol). After",
+      "bbox": [
+        56.6399040222168,
+        660.8279418945312,
+        541.5335083007812,
+        674.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "addition, the mixture was stirred at 25 ℃ for 30 min. And then sodium cyanoborohydride (2.13 g,",
+      "bbox": [
+        56.6399040222168,
+        681.4678955078125,
+        541.53564453125,
+        694.7518920898438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "33.9 mmol) was added at 0 ℃. The resulting mixture was stirred at 25 ℃ for 7 hrs. The reaction",
+      "bbox": [
+        56.6399040222168,
+        702.10791015625,
+        541.5321655273438,
+        715.3919067382812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solution was poured into water (30 mL) and extracted with DCM (30 mL × 3). The combined organic",
+      "bbox": [
+        56.6399040222168,
+        722.7479248046875,
+        541.5286254882812,
+        736.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under",
+      "bbox": [
+        56.6399040222168,
+        743.6279296875,
+        541.5355834960938,
+        756.9119262695312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2,",
+      "bbox": [
+        56.6399040222168,
+        764.2679443359375,
+        541.5238647460938,
+        777.5519409179688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 2
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          56,
+          59,
+          213,
+          71
+        ],
+        "pos": [
+          0,
+          37
+        ]
+      },
+      {
+        "index": 1,
+        "class": "text",
+        "bbox": [
+          208,
+          173,
+          387,
+          185
+        ],
+        "pos": [
+          37,
+          77
+        ]
+      },
+      {
+        "index": 2,
+        "class": "caption",
+        "bbox": [
+          56,
+          199,
+          253,
+          210
+        ],
+        "pos": [
+          77,
+          119
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          56,
+          229,
+          542,
+          407
+        ],
+        "pos": [
+          119,
+          917
+        ]
+      },
+      {
+        "index": 4,
+        "class": "section-header",
+        "bbox": [
+          56,
+          426,
+          253,
+          437
+        ],
+        "pos": [
+          917,
+          961
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          56,
+          456,
+          542,
+          592
+        ],
+        "pos": [
+          961,
+          1613
+        ]
+      },
+      {
+        "index": 6,
+        "class": "section-header",
+        "bbox": [
+          56,
+          611,
+          253,
+          623
+        ],
+        "pos": [
+          1613,
+          1657
+        ]
+      },
+      {
+        "index": 7,
+        "class": "text",
+        "bbox": [
+          56,
+          642,
+          542,
+          778
+        ],
+        "pos": [
+          1657,
+          2327
+        ]
+      }
+    ],
+    "text": "# **S1.1 Preparation of ISM061-1** \n\n**Scheme S1** Preparation of ISM061-1 \n\n**Step 1: Preparation of Compound 1-1** \n\nTo a solution of 2,4-dichloro-5-ethylpyrimidine (5.00 g, 28.20 mmol) in DMF (50 mL) were added tributyl(1-ethoxyvinyl)stannane (11.22 g, 31.1 mmol) and bis (triphenylphosphine) palladium(II) chloride (0.99 g, 1.41 mmol). After the addition, the mixture was degassed and purged with N2 for 3 mins and then stirred at 85 ℃ for 4 hrs. After cooling to 20 ℃, The reaction solution was poured into water (50 mL) and extracted with EtOAc (50 mL × 3). The combined organic layers were washed with brine (50 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 10%) to afford the title compound (5.00 g, 83% yield) as colorless oil. LCMS(ESI): m/z 213.2 [M+H]+. \n\n# **Step 2: Preparation of Compound 1-2** \n\nTo a solution of 2-chloro-4-(1-ethoxyvinyl)-5-ethylpyrimidine (5.00 g, 23.51 mmol) in THF (50 mL) was added HCl (20 mL, 6 M) dropwise. After addition, the mixture was stirred at 25 ℃ for 2 hrs. The residue was adjusted pH = 9 ~ 10 with saturated Na2CO3 at 0 ℃ and extracted with EtOAc (25 mL × 3). The combined organic layers were washed with brine (40 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 10%) to afford the title compound (2.50 g, 58% yield) as colorless oil. LCMS (ESI): m/z 185.3 [M+H]+. \n\n# **Step 3: Preparation of Compound 1-3** \n\nTo a solution of 1-(2-chloro-5-ethylpyrimidin-4-yl)ethan-1-one (2.50 g, 13.54 mmol) in MeOH (50 mL) were added 2,6-difluoroaniline (2.10 g, 16.25 mmol) and AcOH (0.78 mL, 13.54 mmol). After addition, the mixture was stirred at 25 ℃ for 30 min. And then sodium cyanoborohydride (2.13 g, 33.9 mmol) was added at 0 ℃. The resulting mixture was stirred at 25 ℃ for 7 hrs. The reaction solution was poured into water (30 mL) and extracted with DCM (30 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2, \n\n"
+  }
+}

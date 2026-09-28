@@ -1,0 +1,27 @@
+{
+  "page": 20,
+  "width": 612.0,
+  "height": 792.0,
+  "mode": "image",
+  "preview": "previews/page-0020.png",
+  "reviewed": true,
+  "review_notes": "IMAGE-ONLY PAGE (limitation). Viewed previews/page-0020.png at full size and confirmed by eye what is printed, but the page CANNOT be faithfully transcribed: MuPDF returns 4 (two stray 'mu' glyphs only) extractable characters for this page and the extractor already recorded 'OCR unavailable or failed: FzErrorLibrary'. There is therefore no reliable native text layer, and the page is a Nature Portfolio Reporting Summary form whose meaning depends on checkbox state (crossed vs empty boxes) that a text transcription would lose. Per the review plan I KEPT THE WHOLE PAGE AS A SINGLE IMAGE and preserved mode=\"image\"; I did NOT hand-transcribe it and I make no searchable-text claim for this page. What I changed: bbox confirmed to be the exact full MediaBox [0, 0, 612, 792] pt (note this page is US Letter, 612x792 pt, unlike the 595.276x790.866 pt article pages), and the extractor placeholder asset name 'page-0020' / label 'PDF page 20' was replaced with 'reporting-summary-page-2' / 'Reporting Summary (page 2 of 3)' so the three form pages are identifiable in the asset directory instead of being named after PDF page order. Page 2 of 3 of the Reporting Summary. Visible content: the continuation of the data availability box (PDB protein PDB:7EW9; enamine REAL database https://enamine.net), 'Research involving human participants, their data, or biological material' (all N/A), 'Field-specific reporting' (Life sciences selected) and 'Life sciences study design' (sample size, data exclusions, replication, randomization, blinding), then the header of 'Reporting for specific materials, systems and methods'.",
+  "warnings": [
+    "OCR unavailable or failed: FzErrorLibrary. Page image retained for review."
+  ],
+  "items": [
+    {
+      "id": "p0020-image",
+      "kind": "figure",
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "markdown": "",
+      "label": "Reporting Summary (page 2 of 3)",
+      "asset_name": "reporting-summary-page-2"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "page": 9,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0009.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0009.png and 350-dpi crops of the STONED-SELFIES paragraph and the X_i passage, and checked every item against evidence/page-0009.json. Reading order was already correct (left column b002-b008, then right column b009-b017); no reordering needed. Set the three flagged margin items to omit: b000 'Brief Communication' running header, b001 running DOI header, b018 'Nature Biotechnology' running footer. Demoted the three Methods subsection headings b007 'Data acquisition and preprocessing', b012 'Quantum-assisted algorithm' and b015 'Quantum-computing-enhanced workflow' from '#' to '##' to sit under '# Methods' (p0007-b002), matching page 7. Text repairs verified against the rendered page: b010 the URL had been broken by the line wrap as 'https:// github.com/aspuru-guzik-group/stoned-selfies' and is rejoined to 'https://github.com/aspuru-guzik-group/stoned-selfies'; b014 'designated as _Xi_ .' and 'for each _Xi_ , where _i_ ∈ [1, _N_ ].' lost the subscript on the indexed variable and gained spaces before punctuation, now '_X_<sub>i</sub>.' and 'for each _X_<sub>i</sub>, where _i_ ∈ [1, _N_].' (the 350-dpi crop shows italic X with an italic subscript i); b002 'interactions<sup>28–34</sup> .', b003 'prey)<sup>36</sup> ,', b011 'Å<sup>3</sup> .' and b017 'review<sup>60–63</sup> .' all had a spurious space between the superscript and the following punctuation. Checked the remaining citation superscripts (24, 36, 48, 59, 64) and the en dashes in 28–34, 60–63, 18–20 h, 250–500 nM, STONED–SELFIES and bait–prey against the source; all correct. Confirmed 'IC50', 'KRAS-G12D/G12V/G12R/Q61H', 'ISM061-018-2', 'ISM061-022', 'PDB 5US4', '14 × 14 × 20 Å3' and the 1.4 μM / 30 μM micro signs are faithful. Set join_previous='space' on b002 because page 8 ends '...gauged through cell-based' and this page opens 'assays.'. No figures, tables or displayed equations on this page; 'STONED-SELFIES.', 'Virtual screening process.' are run-in bold paragraph leads and correctly remain text rather than headings. LINKS (added on a second pass): the PDF carries four external link annotations on this page. The two halves of the split STONED-SELFIES URL in b010 both point at https://github.com/aspuru-guzik-group/stoned-selfies, and the '5US4' run in b011 points at https://doi.org/10.2210/pdb5US4/pdb; both are now Markdown links. The remaining annotation is on the omitted running footer. SUBSCRIPTS (third pass): 'with IC50 values' -> 'with IC<sub>50</sub> values' in b003; a 400-dpi crop confirms the 50 is a true subscript. Mutation names (G12D, G12R, G12V, Q61H) and compound codes (ISM061-018-2, ISM061-022) are on the baseline and stay plain; re-checked that none of the ISM identifiers lost a hyphen at a line wrap.",
+  "warnings": [
+    "Review possible header/footer: p0009-b000",
+    "Review possible header/footer: p0009-b001",
+    "Review possible header/footer: p0009-b018"
+  ],
+  "items": [
+    {
+      "id": "p0009-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0009-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0009-b002",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        49.0,
+        297.0,
+        155.0
+      ],
+      "markdown": "assays. Notably, compound ISM061-018-2, engineered through our hybrid quantum model (Supplementary Table 3), demonstrated a substantial binding affinity to KRAS-G12D, registered at 1.4 μM. To delve deeper into this molecule’s effectiveness across a spectrum of KRAS mutants, we commenced an extensive series of tests using a cell-based assay. Specifically, we evaluated the molecule’s performance in a biological context using a commercial cell viability assay (CellTiter-Glo, Promega) in conjunction with MaMTH-DS, an advanced split-ubiquitin-based platform for the real-time detection of small molecules targeting specific cellular interactions<sup>28–34</sup>.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0009-b003",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        156.0,
+        297.0,
+        359.0
+      ],
+      "markdown": "Furthermore, the biological activity of ISM061-018-2 was rigorously tested. Importantly, it demonstrated no detrimental impact on the viability of HEK293 cells, even when expressing either KRAS WT or KRAS-G12V bait in MaMTH-DS format and being subjected to concentrations as high as 30 μM for 18–20 h, showing that the compound did not possess any general, nonspecific toxicity (Fig. 2d). Subsequent testing using MaMTH-DS across a spectrum of cell lines expressing various KRAS baits (WT and five clinically important oncogenic mutants) in combination with Raf1 prey (a recognized KRAS effector) revealed a dose-responsive inhibition of interactions, with IC<sub>50</sub> values in the micromolar range (Supplementary Table 3). The compound’s activity was not specific to mutants, as it targeted both WT and mutant interactions with similar efficacy. It also showed comparable effectiveness in disrupting the interactions of WT NRAS and HRAS baits with Raf1 prey (Fig. 2c). However, it had no effect on the interaction of a completely unrelated artificial bait–prey control pair (consisting of membrane-anchored ALFA tag bait and nanobody ALFA prey)<sup>36</sup>, supporting the biological specificity of the interaction (Fig. 2c). Collectively, these results support a potential pan-Ras activity of ISM061-018-2.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        360.0,
+        297.0,
+        595.0
+      ],
+      "markdown": "ISM061-022 (Fig. 2e) also stood out as a compound of promise, particularly because of its selectivity toward certain KRAS mutants. Within our in vitro examination, ISM061-022 demonstrated a concentration-dependent inhibition of KRAS interactions (Fig. 2f), while manifesting only a mild, general impact on cell viability at higher concentrations over an 18–20-h exposure (Fig. 2g). The observed inhibition mirrored that of ISM061-018-2 yet displayed enhanced selectivity toward certain KRAS mutants, particularly KRAS-G12R and KRAS-Q61H, which were most receptive to the compound’s action (Fig. 2f and Supplementary Table 4). Diverging from ISM061-018-2, ISM061-022 did not show binding to KRAS-G12D. The compound also demonstrated activity against WT HRAS and NRAS, although it was less potent against HRAS. Notably, the compound had an unusual effect on our artificial control interaction pair, leading to a distinct dip to approximately 50% residual activity at concentrations of 250–500 nM, before climbing again and ultimately leading to mild enhancement of the interaction at higher micromolar concentrations (Fig. 2f). This distinct pattern suggests an alternative mode of action for ISM061-022, revealing at least some degree of nonspecific activity, although partial specificity for mutant KRAS protein does still appear to be in evidence. Further investigation into the mechanism of action of this molecule will be the focus of future study.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b005",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        597.0,
+        297.0,
+        649.0
+      ],
+      "markdown": "In essence, these live-cell experimental observations underscore the robustness of our approach, effectively identifying small-molecule candidates with biological activity. This underlines the potential of our methodology to address and surmount the complexities inherent in targeting clinically challenging biomolecules.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b006",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        651.0,
+        297.0,
+        692.0
+      ],
+      "markdown": "This section explains the methods and workflow incorporated in our proposed approach, offering a comprehensive understanding of the mechanisms used in our study. Figure 1 illustrates the workflow we used in our study.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b007",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        704.0,
+        185.0,
+        714.0
+      ],
+      "markdown": "## Data acquisition and preprocessing",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0009-b008",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        715.0,
+        297.0,
+        746.0
+      ],
+      "markdown": "Our preliminary dataset, sourced from Insilico Medicine, included approximately 650 data points. These were selectively collated from existing literature, specifically targeting the KRAS-G12D mutant (Fig. 1).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b009",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        563.0,
+        69.0
+      ],
+      "markdown": "Given the dataset’s limited size, we opted to expand it to improve the robustness of our model during training.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b010",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        80.0,
+        563.0,
+        176.0
+      ],
+      "markdown": "**STONED–SELFIES.** We used the STONED–SELFIES<sup>24</sup> algorithm ([https://github.com/aspuru-guzik-group/stoned-selfies](https://github.com/aspuru-guzik-group/stoned-selfies)) to mine our initial set of 650 molecules. For a given molecule in SMILES format, we first randomized the string using RDKit. These randomized strings were then converted into SELFIES. Each SELFIES string underwent mutations (in the form of character deletions, replacements and additions) up to 500 times. Subsequently, the synthesizability and stability of the mutated strings were assessed using Chemistry42. We generated 850,000 molecules, which served as the training set for our generative models.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b011",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        188.0,
+        563.0,
+        337.0
+      ],
+      "markdown": "**Virtual screening process.** VirtualFlow 2.0 (ref. 23) was used to identify additional molecules predicted to bind to KRAS-G12D. The adaptive target-guided (ATG) method performed the virtual screening in two stages. In the first stage, the ATG prescreen was performed, in which a spare version of the 69 billion REAL space from Enamine (version 2022q12) was screened. In the second stage, the most potent tranches of ligands were screened in full, amounting to 100 million ligands. The docking program used was QuickVina 2 (ref. 48), with exhaustiveness set to 1 in both stages of the screen. The screen was carried out in the Amazon Web Services cloud computing platform. The protein structure used in the screen was PDB [5US4](https://doi.org/10.2210/pdb5US4/pdb) (ref. 59), which was prepared before the virtual screen with Schrödinger’s protein preparation wizard (addition of hydrogens and protonation state prediction). The size of the docking box was 14 × 14 × 20 Å<sup>3</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b012",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        349.0,
+        425.0,
+        359.0
+      ],
+      "markdown": "## Quantum-assisted algorithm",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0009-b013",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        360.0,
+        563.0,
+        413.0
+      ],
+      "markdown": "As shown in Fig. 1, our quantum-assisted model was a hybrid algorithm composed of both quantum and classical generative components. The quantum generative model used a QCBM model while the classical component used an LSTM model. Extended Data Fig. 3 illustrates the flowchart of our proposed generative model.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b014",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        414.0,
+        563.0,
+        563.0
+      ],
+      "markdown": "Within this model, we used Chemistry42 and a local filter to validate sample generation at each step, which was then used to train the QCBM model. The QCBM model, a quantum circuit model, was executed on a quantum processing unit. Subsequently, samples from the trained QCBM were fed into the LSTM model, which generated sequences on the basis of these samples. The reward value for each sample was computed at every step using the local filter until epoch 20, after which we selected Chemistry42. This reward value was then used to train our quantum generative model. During the first epoch, no rewards were available; hence, the algorithm sampled from the untrained QCBM model, designated as _X_<sub>i</sub>. From the second epoch onward, rewards were computed, allowing us to calculate the softmax of the rewards for each _X_<sub>i</sub>, where _i_ ∈ [1, _N_]. The corresponding pseudocode can be found in Algorithm 1.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b015",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        575.0,
+        478.0,
+        585.0
+      ],
+      "markdown": "## Quantum-computing-enhanced workflow",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0009-b016",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        586.0,
+        563.0,
+        617.0
+      ],
+      "markdown": "Our methodology encompassed a comprehensive workflow, extending from data preparation to experimental validation, as delineated in Fig. 1. This workflow was structured into three pivotal stages:",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b017",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        618.0,
+        563.0,
+        746.0
+      ],
+      "markdown": "(1) Generation of training data. We initiated the process by constructing a robust dataset for training our generative model to target the KRAS protein. The foundation of this dataset was approximately 650 experimentally confirmed KRAS inhibitors, compiled through an extensive literature review<sup>60–63</sup>. Acknowledging the necessity of a more expansive dataset to develop a model for ligand design effectively, we adopted a two-pronged approach: virtual screening and local chemical space exploration. In the virtual screening phase, we used VirtualFlow 2.0 (ref. 23) to screen 100 million molecules, applying Enamine’s REAL library<sup>64</sup> in conjunction with molecular docking techniques. The top 250,000 compounds from this screen, exhibiting the lowest docking scores, were subsequently integrated into our dataset. Complementing",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b018",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+    }
+  ]
+}

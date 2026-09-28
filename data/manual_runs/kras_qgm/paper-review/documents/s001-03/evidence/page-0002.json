@@ -1,0 +1,1428 @@
+{
+  "page": 2,
+  "lines": [
+    {
+      "text": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        277.029052734375,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1955",
+      "bbox": [
+        543.9411010742188,
+        760.6864013671875,
+        562.6770629882812,
+        771.7984008789062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "classical systems and quantum prior size. Additionally, Zeng et al.20",
+      "bbox": [
+        306.1416931152344,
+        670.75732421875,
+        562.7118530273438,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "presented a quantum–classical hybrid for image generation, high-",
+      "bbox": [
+        306.14508056640625,
+        681.8453979492188,
+        561.2515258789062,
+        692.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "lighting the ability to encode conditions into quantum circuits with",
+      "bbox": [
+        306.1416931152344,
+        692.5956420898438,
+        562.4974365234375,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "extra qubits.",
+      "bbox": [
+        306.1416931152344,
+        703.3456420898438,
+        354.8414306640625,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Here, we propose a hybrid quantum–classical model that",
+      "bbox": [
+        323.14959716796875,
+        714.0956420898438,
+        562.80615234375,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "addresses qubit limitations and combines quantum and classical",
+      "bbox": [
+        306.1416931152344,
+        724.8456420898438,
+        562.586181640625,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "approaches to generate compounds targeting the KRAS protein,",
+      "bbox": [
+        306.1416931152344,
+        735.5956420898438,
+        562.72412109375,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "learning challenges such as barren plateaus. The integration of tensor",
+      "bbox": [
+        39.685001373291016,
+        671.0956420898438,
+        296.34173583984375,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "networks furthers their effectiveness17,18. However, the challenges",
+      "bbox": [
+        39.685001373291016,
+        681.50732421875,
+        296.2844543457031,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in quantum data processing and circuit trainability have led to the",
+      "bbox": [
+        39.685001373291016,
+        692.5956420898438,
+        296.28466796875,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "development of hybrid algorithms that harness the strengths of",
+      "bbox": [
+        39.685001373291016,
+        703.3456420898438,
+        296.249267578125,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "both quantum and classical machine learning. Manuel et al.19 show-",
+      "bbox": [
+        39.685001373291016,
+        713.75732421875,
+        294.8033752441406,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cased how a hybrid quantum circuit generative adversarial network",
+      "bbox": [
+        39.685001373291016,
+        724.8456420898438,
+        296.1593933105469,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "can enhance target space exploration, overcoming limitations of",
+      "bbox": [
+        39.685001373291016,
+        735.5956420898438,
+        296.3492126464844,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Molecular docking",
+      "bbox": [
+        183.8271942138672,
+        518.77734375,
+        223.22921752929688,
+        524.9197998046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "via Chemistry42",
+      "bbox": [
+        185.90618896484375,
+        524.1773071289062,
+        221.1457061767578,
+        530.3197631835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Filtering based on",
+      "bbox": [
+        226.97769165039062,
+        518.77734375,
+        264.98919677734375,
+        524.9197998046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "pharmacophores",
+      "bbox": [
+        227.9451904296875,
+        524.1773071289062,
+        264.0261535644531,
+        530.3197631835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Sorting based",
+      "bbox": [
+        273.4851989746094,
+        518.77734375,
+        302.9556884765625,
+        524.9197998046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "on PLI score",
+      "bbox": [
+        275.34368896484375,
+        524.1773071289062,
+        301.09716796875,
+        530.3197631835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Structural",
+      "bbox": [
+        318.2016906738281,
+        518.77734375,
+        339.2616882324219,
+        524.9197998046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "novelty",
+      "bbox": [
+        320.9017028808594,
+        524.1773071289062,
+        336.56622314453125,
+        530.3197631835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Synthetic",
+      "bbox": [
+        360.0606994628906,
+        518.77734375,
+        380.10821533203125,
+        524.9197998046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "complexity",
+      "bbox": [
+        358.29669189453125,
+        524.1773071289062,
+        381.8721923828125,
+        530.3197631835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "KRAS structure",
+      "bbox": [
+        370.6368103027344,
+        152.77880859375,
+        416.52679443359375,
+        161.65130615234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Virtual screening with",
+      "bbox": [
+        397.15679931640625,
+        74.42779541015625,
+        463.34625244140625,
+        83.30029296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Mutation sites",
+      "bbox": [
+        164.59329223632812,
+        171.7847900390625,
+        207.23326110839844,
+        180.65728759765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Hit expansion",
+      "bbox": [
+        216.65179443359375,
+        74.42779541015625,
+        258.2712707519531,
+        83.30029296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Ligand library",
+      "bbox": [
+        443.1962890625,
+        152.707275390625,
+        485.0758361816406,
+        161.57977294921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Training set",
+      "bbox": [
+        283.9468078613281,
+        239.97613525390625,
+        319.248291015625,
+        248.8486328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "850K molecules",
+      "bbox": [
+        276.6094055175781,
+        208.39111328125,
+        326.2433776855469,
+        217.26361083984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "650 molecules",
+      "bbox": [
+        194.47999572753906,
+        209.03765869140625,
+        240.18798828125,
+        217.91015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Top 250K molecules",
+      "bbox": [
+        362.21978759765625,
+        208.62060546875,
+        424.3727722167969,
+        217.49310302734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Generative model",
+      "bbox": [
+        269.99859619140625,
+        276.908935546875,
+        328.7706298828125,
+        286.46392822265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Similarity > 0.6",
+      "bbox": [
+        217.9604949951172,
+        171.78570556640625,
+        263.5320129394531,
+        180.658203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Compound selection",
+      "bbox": [
+        143.8852996826172,
+        431.6665344238281,
+        207.91026306152344,
+        440.5390319824219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Synthesis of hits",
+      "bbox": [
+        276.7090148925781,
+        431.6665344238281,
+        326.4859619140625,
+        440.5390319824219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Experimental validation",
+      "bbox": [
+        391.74810791015625,
+        431.6665344238281,
+        462.8256530761719,
+        440.5390319824219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "c    KRAS inhibitor design campaign",
+      "bbox": [
+        105.76319885253906,
+        401.6642150878906,
+        216.0254669189453,
+        414.62841796875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "d    Identiﬁcation of inhibitor candidates",
+      "bbox": [
+        105.76319885253906,
+        455.3332214355469,
+        229.19729614257812,
+        468.29742431640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Similarity > 0.4",
+      "bbox": [
+        280.4634094238281,
+        171.78570556640625,
+        326.02197265625,
+        180.658203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Increasing structural diversity",
+      "bbox": [
+        259.68975830078125,
+        71.07267761230469,
+        336.44439697265625,
+        91.8484115600586
+      ],
+      "direction": [
+        0.984626829624176,
+        -0.1746710240840912
+      ]
+    },
+    {
+      "text": "Virtual screening hits",
+      "bbox": [
+        398.5332946777344,
+        190.05621337890625,
+        462.9287414550781,
+        198.9287109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "STONED SELFIES",
+      "bbox": [
+        275.00079345703125,
+        190.05621337890625,
+        326.84478759765625,
+        198.9287109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Experimental ligands",
+      "bbox": [
+        135.07530212402344,
+        190.05621337890625,
+        199.22377014160156,
+        198.9287109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a    Training data generation",
+      "bbox": [
+        105.76319885253906,
+        50.90540313720703,
+        192.4276580810547,
+        63.86960220336914
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "b    Generation of new molecules",
+      "bbox": [
+        105.76319885253906,
+        244.579345703125,
+        208.4520721435547,
+        257.5435485839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Data",
+      "bbox": [
+        124.88159942626953,
+        71.84796142578125,
+        140.45558166503906,
+        80.720458984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mining",
+      "bbox": [
+        122.1321029663086,
+        79.64794921875,
+        143.2115936279297,
+        88.52044677734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "100 M",
+      "bbox": [
+        422.18951416015625,
+        115.9299545288086,
+        438.04052734375,
+        123.43745422363281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules",
+      "bbox": [
+        416.69500732421875,
+        122.5299301147461,
+        443.5350341796875,
+        130.0374298095703
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "screened",
+      "bbox": [
+        418.1360168457031,
+        129.12989807128906,
+        442.0885009765625,
+        136.6374053955078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Quantum computer (IBM)",
+      "bbox": [
+        136.47030639648438,
+        381.3814392089844,
+        214.0478057861328,
+        390.2539367675781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Classical computer/cloud",
+      "bbox": [
+        262.1477966308594,
+        381.58294677734375,
+        341.06427001953125,
+        390.4554443359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Remote API",
+      "bbox": [
+        410.94580078125,
+        381.63494873046875,
+        446.24078369140625,
+        390.5074462890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "QCBM",
+      "bbox": [
+        165.95428466796875,
+        301.470458984375,
+        185.57777404785156,
+        310.34295654296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generator",
+      "bbox": [
+        160.78028869628906,
+        309.27044677734375,
+        190.75827026367188,
+        318.1429443359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LSTM",
+      "bbox": [
+        293.0747985839844,
+        301.470458984375,
+        309.83831787109375,
+        310.34295654296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generator",
+      "bbox": [
+        286.4707946777344,
+        309.27044677734375,
+        316.4487609863281,
+        318.1429443359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Filter",
+      "bbox": [
+        420.20831298828125,
+        301.470458984375,
+        435.7628173828125,
+        310.34295654296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "discriminator",
+      "bbox": [
+        407.8323059082031,
+        309.27044677734375,
+        448.1387939453125,
+        318.1429443359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Classical samples",
+      "bbox": [
+        107.74469757080078,
+        479.9387512207031,
+        153.63668823242188,
+        487.44622802734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Qunatum samples",
+      "bbox": [
+        107.13420104980469,
+        497.84124755859375,
+        154.24169921875,
+        505.3487243652344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Simulated samples",
+      "bbox": [
+        106.12770080566406,
+        514.720703125,
+        155.25369262695312,
+        522.2282104492188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1M compounds",
+      "bbox": [
+        111.07220458984375,
+        521.9312133789062,
+        150.30921936035156,
+        529.438720703125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1M compounds",
+      "bbox": [
+        111.07220458984375,
+        505.49725341796875,
+        150.30921936035156,
+        513.0047607421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1M compounds",
+      "bbox": [
+        111.07220458984375,
+        486.9622497558594,
+        150.30921936035156,
+        494.4697265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Classical",
+      "bbox": [
+        228.095703125,
+        539.9932250976562,
+        251.0911865234375,
+        547.500732421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Quantum (SIM)",
+      "bbox": [
+        352.48919677734375,
+        539.9932250976562,
+        391.37969970703125,
+        547.500732421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Selected 3 compounds",
+      "bbox": [
+        441.1798095703125,
+        491.908203125,
+        490.33782958984375,
+        498.05072021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Selected 8 compounds",
+      "bbox": [
+        441.1798095703125,
+        499.7876892089844,
+        490.3513488769531,
+        505.9302062988281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Selected 4 compounds",
+      "bbox": [
+        441.1798095703125,
+        507.4106750488281,
+        490.3963317871094,
+        513.5531616210938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Quantum (HW)",
+      "bbox": [
+        282.46490478515625,
+        539.9913940429688,
+        320.79443359375,
+        547.4989013671875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Fig. 1 | Schematic representation of the hybrid quantum–classical framework",
+      "bbox": [
+        39.685001373291016,
+        552.5829467773438,
+        291.66607666015625,
+        561.1788940429688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "for KRAS ligand development. a, The initial phase involved assembling a",
+      "bbox": [
+        39.685001373291016,
+        562.5859985351562,
+        269.92059326171875,
+        571.3359985351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "training dataset, starting with 650 experimentally verified KRAS inhibitors",
+      "bbox": [
+        39.68499755859375,
+        572.7009887695312,
+        274.0926513671875,
+        581.3389892578125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sourced from the literature. Using the STONED–SELFIES algorithm, analogs",
+      "bbox": [
+        39.68499755859375,
+        582.7039794921875,
+        277.0830383300781,
+        591.3419799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of these inhibitors were generated, expanding the dataset to approximately",
+      "bbox": [
+        39.68499755859375,
+        592.7069702148438,
+        277.3671569824219,
+        601.344970703125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "850,000 compounds. This was further augmented by adding 250,000 top",
+      "bbox": [
+        39.68499755859375,
+        602.7099609375,
+        272.5638122558594,
+        611.3479614257812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "candidates from a virtual screening of the REAL ligand library against KRAS,",
+      "bbox": [
+        39.68499755859375,
+        612.7130126953125,
+        277.28466796875,
+        621.3510131835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "creating a total dataset of over 1 million molecules. b, In the generation phase,",
+      "bbox": [
+        39.68499755859375,
+        622.60400390625,
+        283.54193115234375,
+        631.35400390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the dataset was used to train our generative model, consisting of both a classical",
+      "bbox": [
+        39.68499755859375,
+        632.718994140625,
+        290.7945861816406,
+        641.3569946289062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LSTM network and a QCBM. The LSTM network processed sequential data of",
+      "bbox": [
+        39.68499755859375,
+        642.7220458984375,
+        279.5119934082031,
+        651.3600463867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chemical structures, while the QCBM, trained on the output from the LSTM,",
+      "bbox": [
+        306.472412109375,
+        552.6949462890625,
+        544.1536865234375,
+        561.3329467773438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generated complex, high-dimensional probability distributions. This workflow",
+      "bbox": [
+        306.472412109375,
+        562.697998046875,
+        554.8680419921875,
+        571.3359985351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "incorporated Chemistry42 as a reward function to encourage the production",
+      "bbox": [
+        306.472412109375,
+        572.7009887695312,
+        548.5867309570312,
+        581.3389892578125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of structurally diverse and synthesizable molecules. c, Workflow for KRAS",
+      "bbox": [
+        306.472412109375,
+        582.5919799804688,
+        538.555908203125,
+        591.3419799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "inhibitor design, detailing the process from computational compound selection",
+      "bbox": [
+        306.472412109375,
+        592.7069702148438,
+        559.10302734375,
+        601.344970703125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to laboratory synthesis and experimental validation. d, A total of 1 million",
+      "bbox": [
+        306.472412109375,
+        602.5979614257812,
+        537.0914916992188,
+        611.3479614257812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compounds (classical samples from the LSTM, quantum samples from QCBM on",
+      "bbox": [
+        306.472412109375,
+        612.7130126953125,
+        558.9085083007812,
+        621.3510131835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum hardware and simulated quantum samples on classical hardware) were",
+      "bbox": [
+        306.472412109375,
+        622.7160034179688,
+        559.2444458007812,
+        631.35400390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "evaluated by Chemistry42 to filter out unsuitable candidates and rank the rest by",
+      "bbox": [
+        306.472412109375,
+        632.718994140625,
+        560.059814453125,
+        641.3569946289062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "their PLI scores. Finally, 15 promising compounds were selected for synthesis.",
+      "bbox": [
+        306.472412109375,
+        642.7220458984375,
+        548.8339233398438,
+        651.3600463867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 2
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          101,
+          51,
+          499,
+          547
+        ],
+        "pos": [
+          71,
+          1186
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          39,
+          553,
+          292,
+          651
+        ],
+        "pos": [
+          1186,
+          1951
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          306,
+          553,
+          561,
+          651
+        ],
+        "pos": [
+          1951,
+          2726
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          39,
+          672,
+          297,
+          746
+        ],
+        "pos": [
+          2726,
+          3216
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          306,
+          671,
+          563,
+          713
+        ],
+        "pos": [
+          3216,
+          3445
+        ]
+      },
+      {
+        "index": 7,
+        "class": "text",
+        "bbox": [
+          306,
+          715,
+          563,
+          746
+        ],
+        "pos": [
+          3445,
+          3626
+        ]
+      },
+      {
+        "index": 8,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          762,
+          278,
+          771
+        ],
+        "pos": [
+          3626,
+          3689
+        ]
+      },
+      {
+        "index": 9,
+        "class": "page-footer",
+        "bbox": [
+          543,
+          763,
+          563,
+          770
+        ],
+        "pos": [
+          3689,
+          3700
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n\n\n<!-- Start of picture text -->\na     Training data generation<br>Data  Hit expansion Virtual screening with<br>mining<br>100 M<br>molecules<br>screened<br>KRAS structure Ligand library<br>Mutation sites Similarity > 0.6 Similarity > 0.4<br>Experimental ligands STONED SELFIES Virtual screening hits<br>650 molecules 850K molecules Top 250K molecules<br>Training set<br>b     Generation of new molecules<br>Generative model<br>QCBM LSTM Filter<br>generator generator discriminator<br>Quantum computer (IBM) Classical computer/cloud Remote API<br>c     KRAS inhibitor design campaign<br>Compound selection Synthesis of hits Experimental validation<br>d     Identification of inhibitor candidates<br>Classical samples<br>1M compounds<br>Selected 3 compounds<br>Qunatum samples Selected 8 compounds<br>1M compounds Selected 4 compounds<br>Simulated samples Molecular docking Filtering based on Sorting based Structural Synthetic<br>1M compounds via Chemistry42  pharmacophores on PLI score novelty complexity<br>Classical Quantum (HW) Quantum (SIM)<br>Increasing structural diversity<br><!-- End of picture text -->\n\n**Fig. 1 | Schematic representation of the hybrid quantum–classical framework for KRAS ligand development. a** , The initial phase involved assembling a training dataset, starting with 650 experimentally verified KRAS inhibitors sourced from the literature. Using the STONED–SELFIES algorithm, analogs of these inhibitors were generated, expanding the dataset to approximately 850,000 compounds. This was further augmented by adding 250,000 top candidates from a virtual screening of the REAL ligand library against KRAS, creating a total dataset of over 1 million molecules. **b** , In the generation phase, the dataset was used to train our generative model, consisting of both a classical LSTM network and a QCBM. The LSTM network processed sequential data of \n\nchemical structures, while the QCBM, trained on the output from the LSTM, generated complex, high-dimensional probability distributions. This workflow incorporated Chemistry42 as a reward function to encourage the production of structurally diverse and synthesizable molecules. **c** , Workflow for KRAS inhibitor design, detailing the process from computational compound selection to laboratory synthesis and experimental validation. **d** , A total of 1 million compounds (classical samples from the LSTM, quantum samples from QCBM on quantum hardware and simulated quantum samples on classical hardware) were evaluated by Chemistry42 to filter out unsuitable candidates and rank the rest by their PLI scores. Finally, 15 promising compounds were selected for synthesis. \n\nlearning challenges such as barren plateaus. The integration of tensor networks furthers their effectiveness<sup>17,18</sup> . However, the challenges in quantum data processing and circuit trainability have led to the development of hybrid algorithms that harness the strengths of both quantum and classical machine learning. Manuel et al.<sup>19</sup> showcased how a hybrid quantum circuit generative adversarial network can enhance target space exploration, overcoming limitations of \n\nclassical systems and quantum prior size. Additionally, Zeng et al.<sup>20</sup> presented a quantum–classical hybrid for image generation, highlighting the ability to encode conditions into quantum circuits with extra qubits. \n\nHere, we propose a hybrid quantum–classical model that addresses qubit limitations and combines quantum and classical approaches to generate compounds targeting the KRAS protein, \n\nNature Biotechnology | Volume 43 | December 2025 | 1954–1959 \n\n**1955** \n\n"
+  }
+}

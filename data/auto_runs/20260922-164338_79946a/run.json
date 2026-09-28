@@ -1,0 +1,900 @@
+{
+ "id": "20260922-164338_79946a",
+ "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+ "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+ "project": null,
+ "kind": "mri_volume",
+ "modality_guess": "MRI",
+ "detection": {
+  "details": {
+   "size_xyz": [
+    97,
+    115,
+    97
+   ],
+   "spacing_xyz": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "dimension": 3,
+   "pixel_type": "16-bit signed integer",
+   "n_components": 1,
+   "dtype": "int16",
+   "min": 0.0,
+   "max": 9882.0,
+   "mean": 2943.111,
+   "p1": 43.0,
+   "p50": 1229.0,
+   "p99": 8977.0,
+   "frac_below_-500": 0.0,
+   "frac_zero": 0.0,
+   "fov_mm": [
+    194.0,
+    230.0,
+    194.0
+   ],
+   "confidence": 0.85,
+   "reference_mask": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz"
+  },
+  "notes": [
+   "3-D volume [97, 115, 97] @ [2.0, 2.0, 2.0] mm, int16, intensity [0, 9882]",
+   "no Hounsfield air (< -500) -> MRI-like volume; HD-BET brain extraction (skull-stripping) is applied",
+   "reference brain mask found next to the input (tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz): Dice/IoU/Hausdorff are computed"
+  ]
+ },
+ "recipe": {
+  "id": "mri_brain_extraction",
+  "title": "MRI volume -> HD-BET skull-stripping -> mask QC -> evaluation",
+  "notes": [
+   "HD-BET v2 (nnU-Net) brain mask + skull-stripped image, QC overlays, mask statistics"
+  ]
+ },
+ "status": "done",
+ "created_at": 1790063018.4062054,
+ "started_at": 1790063018.4071505,
+ "finished_at": 1790063097.4427655,
+ "duration_s": 79.04,
+ "run_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a",
+ "steps": [
+  {
+   "index": 0,
+   "label": "HD-BET brain extraction",
+   "agent": "HDBET",
+   "tool": "hdbet_extract_brain",
+   "arguments": {
+    "input_path": "${input}",
+    "device": "auto",
+    "use_tta": true,
+    "save_mask": true,
+    "save_brain_image": true,
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "2f132d1fc2b0",
+   "started_at": 1790063018.4075842,
+   "finished_at": 1790063046.4141793,
+   "duration_s": 28.01,
+   "error": null,
+   "hint": null,
+   "message": "HD-BET brain extraction of 1 volume(s) (file mode) on cuda (NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition), TTA on: tpl-MNI152NLin2009cAsym_res-02_T1w: 237292 brain voxels = 1898.336 mL",
+   "artifacts": [
+    {
+     "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: binary brain mask (uint8 0/1, input grid)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz"
+    },
+    {
+     "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: skull-stripped image (input voxels inside the mask)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz"
+    },
+    {
+     "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: orthogonal QC overlay of the mask contour on the input (PNG)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_overlay.png"
+    },
+    {
+     "description": "summary JSON of this call (cases, device, model, timing)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/hdbet_extract_brain_result.json"
+    }
+   ],
+   "key_numbers": {
+    "n_cases": 1,
+    "input_mode": "file",
+    "save_mask": true,
+    "save_brain_image": true,
+    "timing_s.import_s": 2.469,
+    "timing_s.maybe_download_parameters_s": 0.0,
+    "timing_s.get_hdbet_predictor_s": 1.747,
+    "timing_s.hdbet_predict_s": 18.665,
+    "timing_s.summary_and_overlays_s": 0.153,
+    "timing_s.child_total_s": 23.185,
+    "timing_s.child_process_wall_s": 25.3,
+    "timing_s.tool_total_s": 27.882
+   },
+   "resolved_arguments": {
+    "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+    "device": "auto",
+    "use_tta": true,
+    "save_mask": true,
+    "save_brain_image": true,
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs"
+   },
+   "result": {
+    "message": "HD-BET brain extraction of 1 volume(s) (file mode) on cuda (NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition), TTA on: tpl-MNI152NLin2009cAsym_res-02_T1w: 237292 brain voxels = 1898.336 mL",
+    "reference": "https://github.com/MIC-DKFZ/HD-BET/blob/678e44d546a84de0f2a7fc245f176b82b7d912fd/HD_BET/hd_bet_prediction.py",
+    "reference_cli": "https://github.com/MIC-DKFZ/HD-BET/blob/678e44d546a84de0f2a7fc245f176b82b7d912fd/HD_BET/entry_point.py",
+    "artifacts": [
+     {
+      "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: binary brain mask (uint8 0/1, input grid)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz"
+     },
+     {
+      "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: skull-stripped image (input voxels inside the mask)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz"
+     },
+     {
+      "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: orthogonal QC overlay of the mask contour on the input (PNG)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_overlay.png"
+     },
+     {
+      "description": "summary JSON of this call (cases, device, model, timing)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/hdbet_extract_brain_result.json"
+     }
+    ],
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a",
+    "input_mode": "file",
+    "n_cases": 1,
+    "cases": [
+     {
+      "case": "tpl-MNI152NLin2009cAsym_res-02_T1w",
+      "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+      "input_shape": [
+       97,
+       115,
+       97
+      ],
+      "input_spacing_mm": [
+       2.0,
+       2.0,
+       2.0
+      ],
+      "input_axcodes": "RAS",
+      "orientation_accepted": true,
+      "orientation_warning": null,
+      "mask_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+      "brain_image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+      "overlay_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_overlay.png",
+      "mask_shape": [
+       97,
+       115,
+       97
+      ],
+      "mask_spacing_mm": [
+       2.0,
+       2.0,
+       2.0
+      ],
+      "mask_values": [
+       0,
+       1
+      ],
+      "mask_dtype": "uint8",
+      "foreground_voxels": 237292,
+      "voxel_volume_mm3": 8.0,
+      "brain_volume_ml": 1898.336,
+      "overlay_slices": [
+       48,
+       55,
+       44
+      ]
+     }
+    ],
+    "device": {
+     "requested": "auto",
+     "resolved": "cuda",
+     "physical_cuda_index": "0",
+     "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+     "free_gib": 91.7,
+     "total_gib": 94.95,
+     "reason": "auto: selected CUDA device 0 (NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition) with 91.70 GiB free",
+     "policy": "auto: CUDA device with the most free memory if >= 8.0 GiB free, else CPU with test-time augmentation disabled; cuda: most-free CUDA device; cpu: CPU"
+    },
+    "use_tta": {
+     "requested": true,
+     "effective": true
+    },
+    "save_mask": true,
+    "save_brain_image": true,
+    "model": {
+     "parameter_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/hd-bet_params/release_2.0.0",
+     "parameter_folder_source": "HDBET_PARAMS_DIR",
+     "checkpoint_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/hd-bet_params/release_2.0.0/fold_all/checkpoint_final.pth",
+     "checkpoint_sha256": "d31dc59b4c5fe0028070901870c44c0b526f48c507ce50804941344356df7b52",
+     "checkpoint_size_bytes": 123562058,
+     "downloaded_now": false,
+     "fold": "all",
+     "trainer": "nnUNetTrainerDA5",
+     "configuration": "3d_fullres_1x1x1_ps96x192x192_bs8",
+     "current_epoch": 1000,
+     "inference_allowed_mirroring_axes": [
+      0,
+      1,
+      2
+     ],
+     "dataset_name": "Dataset013_HDBETv2",
+     "labels": {
+      "background": 0,
+      "brain": 1
+     },
+     "spacing_mm": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "patch_size": [
+      96,
+      192,
+      192
+     ],
+     "network": "dynamic_network_architectures.architectures.unet.PlainConvUNet",
+     "predictor": {
+      "use_mirroring": true,
+      "tile_step_size": 0.5,
+      "use_gaussian": true,
+      "perform_everything_on_device": true,
+      "device": "cuda",
+      "cudnn_benchmark": true,
+      "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+      "torch_cuda_max_memory_allocated_bytes": 3808207360
+     },
+     "versions": {
+      "HD_BET": "2.0.1",
+      "nnunetv2": "2.8.1",
+      "torch": "2.11.0+cu128",
+      "SimpleITK": "2.5.6"
+     }
+    },
+    "timing_s": {
+     "import_s": 2.469,
+     "maybe_download_parameters_s": 0.0,
+     "get_hdbet_predictor_s": 1.747,
+     "hdbet_predict_s": 18.665,
+     "summary_and_overlays_s": 0.153,
+     "child_total_s": 23.185,
+     "child_process_wall_s": 25.3,
+     "tool_total_s": 27.882
+    },
+    "warnings": [],
+    "logs": {
+     "upstream_stdout": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/logs/hdbet_stdout.log",
+     "upstream_stderr": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/logs/hdbet_stderr.log",
+     "child_stdout_bytes": 491,
+     "child_stderr_bytes": 1282
+    },
+    "determinism_note": "Upstream nnunetv2 sets torch.backends.cudnn.benchmark=True and runs CUDA inference under fp16 autocast, so GPU masks may differ by a few boundary voxels between separate processes (observed <= 3 of ~1.9M voxels, Dice >= 0.99999); CPU results are bit-exact. Compare masks with a small tolerance, not byte equality. Test-time augmentation on/off changes the mask (observed Dice 0.997 between the two settings)."
+   }
+  },
+  {
+   "index": 1,
+   "label": "mask QC (volume, components, overlays)",
+   "agent": "HDBET",
+   "tool": "hdbet_inspect_brain_mask",
+   "arguments": {
+    "mask_path": "${step[0].artifacts[_bet\\.nii(\\.gz)?$]}",
+    "image_path": "${input}",
+    "three_views": true,
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "d3240f0ef63c",
+   "started_at": 1790063046.4149964,
+   "finished_at": 1790063048.919457,
+   "duration_s": 2.5,
+   "error": null,
+   "hint": null,
+   "message": "tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz: 237292 foreground voxels (mask != 0) = 1898336.0 mm^3 = 1898.336 mL at 8 mm^3/voxel; bounding box [73, 91, 78] voxels; overlay PNG of axis-0 slice 40: /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+   "artifacts": [
+    {
+     "description": "mask statistics JSON (voxel count, volume, bounding box, value set, components, grid/orientation checks)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/mask_statistics.json"
+    },
+    {
+     "description": "overlay PNG of the slice with the most foreground along array axis 0 (exact nnunetv2 plot_overlay output)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png"
+    },
+    {
+     "description": "overlay PNG along array axis 1 (adaptation: upstream select_slice_to_plot2 + generate_overlay on the moved axis)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis1.png"
+    },
+    {
+     "description": "overlay PNG along array axis 2 (adaptation: upstream select_slice_to_plot2 + generate_overlay on the moved axis)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis2.png"
+    },
+    {
+     "description": "child-process stdout log of the upstream call (captured fd 1; expected 0 bytes)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/plot_overlay_child.stdout.log"
+    }
+   ],
+   "key_numbers": {
+    "foreground_voxels": 237292,
+    "volume_mm3": 1898336.0,
+    "foreground_rule": "mask != 0",
+    "threshold": 0.5,
+    "mask_is_binary_01": true,
+    "mask_n_unique": 2,
+    "voxel_volume_mm3": 8.0,
+    "volume_mL": 1898.336,
+    "foreground_fraction": 0.2193,
+    "overlay_selected_slice_axis0": 40,
+    "child_stdout_bytes": 0,
+    "wall_time_s": 2.475
+   },
+   "resolved_arguments": {
+    "mask_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+    "three_views": true,
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs"
+   },
+   "result": {
+    "message": "tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz: 237292 foreground voxels (mask != 0) = 1898336.0 mm^3 = 1898.336 mL at 8 mm^3/voxel; bounding box [73, 91, 78] voxels; overlay PNG of axis-0 slice 40: /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+    "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/v2.8.1/nnunetv2/utilities/overlay_plots.py",
+    "artifacts": [
+     {
+      "description": "mask statistics JSON (voxel count, volume, bounding box, value set, components, grid/orientation checks)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/mask_statistics.json"
+     },
+     {
+      "description": "overlay PNG of the slice with the most foreground along array axis 0 (exact nnunetv2 plot_overlay output)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png"
+     },
+     {
+      "description": "overlay PNG along array axis 1 (adaptation: upstream select_slice_to_plot2 + generate_overlay on the moved axis)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis1.png"
+     },
+     {
+      "description": "overlay PNG along array axis 2 (adaptation: upstream select_slice_to_plot2 + generate_overlay on the moved axis)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis2.png"
+     },
+     {
+      "description": "child-process stdout log of the upstream call (captured fd 1; expected 0 bytes)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/plot_overlay_child.stdout.log"
+     }
+    ],
+    "mask_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+    "shape_xyz": [
+     97,
+     115,
+     97
+    ],
+    "spacing_mm": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "foreground_rule": "mask != 0",
+    "threshold": 0.5,
+    "mask_is_binary_01": true,
+    "mask_values_if_few": [
+     0,
+     1
+    ],
+    "mask_n_unique": 2,
+    "foreground_voxels": 237292,
+    "voxel_volume_mm3": 8.0,
+    "volume_mm3": 1898336.0,
+    "volume_mL": 1898.336,
+    "foreground_fraction": 0.21930159375620936,
+    "bounding_box_voxel_xyz": {
+     "min": [
+      12,
+      13,
+      3
+     ],
+     "max": [
+      84,
+      103,
+      80
+     ],
+     "size_voxels": [
+      73,
+      91,
+      78
+     ],
+     "size_mm": [
+      146.0,
+      182.0,
+      156.0
+     ]
+    },
+    "centroid_voxel_xyz": [
+     48.26428198169344,
+     55.36557490349443,
+     44.020413667548844
+    ],
+    "centroid_world_ras_mm": [
+     0.028563963386886826,
+     -21.768850193011147,
+     9.540827335097688
+    ],
+    "connected_components": {
+     "n_components": 1,
+     "largest_component_voxels": 237292,
+     "largest_component_fraction": 1.0,
+     "connectivity": 26
+    },
+    "grid_check": {
+     "same_shape": true,
+     "same_spacing": true,
+     "same_origin": true,
+     "same_direction": true,
+     "max_abs_diff": {
+      "spacing_mm": 0.0,
+      "origin_mm": 0.0,
+      "direction": 0.0
+     }
+    },
+    "orientation": {
+     "mask": "RAS",
+     "image": "RAS"
+    },
+    "overlay_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+    "overlay_selected_slice_axis0": 40,
+    "overlay_views": {
+     "axis0": {
+      "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+      "selected_slice": 40
+     },
+     "axis1": {
+      "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis1.png",
+      "selected_slice": 44
+     },
+     "axis2": {
+      "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis2.png",
+      "selected_slice": 43
+     }
+    },
+    "warnings": [],
+    "child_stdout_bytes": 0,
+    "wall_time_s": 2.475
+   }
+  },
+  {
+   "index": 2,
+   "label": "Dice/IoU/Hausdorff vs reference mask",
+   "agent": "HDBET",
+   "tool": "hdbet_evaluate_brain_mask",
+   "arguments": {
+    "prediction_path": "${step[0].artifacts[_bet\\.nii(\\.gz)?$]}",
+    "reference_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "3768c617b81c",
+   "started_at": 1790063048.9206393,
+   "finished_at": 1790063051.9236693,
+   "duration_s": 3.0,
+   "error": null,
+   "hint": null,
+   "message": "Evaluated 1 prediction/reference mask pair (file mode, threshold 0.5) with nnunetv2 compute_metrics (Dice/IoU/TP/FP/FN/TN, label 1, SimpleITKIO) and SimpleITK HausdorffDistanceImageFilter (maximum + average Hausdorff distance, mm). Mean Dice 0.97835, median Dice 0.97835, mean maximum Hausdorff 8.000 mm. NOTE: the paper's HD95 is NOT computed (no implementation in HD-BET/nnunetv2/SimpleITK).",
+   "artifacts": [
+    {
+     "description": "per-case metrics CSV (Dice, IoU, TP/FP/FN/TN, n_pred, n_ref, Hausdorff max/avg mm, volumes)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/metrics_per_case.csv"
+    },
+    {
+     "description": "summary JSON (settings, per-case metrics, mean metrics, notes, warnings, case details)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/summary.json"
+    },
+    {
+     "description": "native nnunetv2 output (compute_metrics result)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/nnunet_metrics.json"
+    },
+    {
+     "description": "binarised uint8 reference masks used for evaluation",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/reference"
+    },
+    {
+     "description": "binarised uint8 prediction masks used for evaluation",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/prediction"
+    },
+    {
+     "description": "captured stdout of the nnunetv2/SimpleITK child process",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/logs/child_stdout.log"
+    }
+   ],
+   "key_numbers": {
+    "n_cases": 1,
+    "mean_metrics.Dice": 0.97835,
+    "mean_metrics.IoU": 0.95761,
+    "mode": "file",
+    "hd95_computed": false,
+    "mean_metrics.TP": 231444,
+    "mean_metrics.FP": 5848,
+    "mean_metrics.FN": 4396,
+    "mean_metrics.TN": 840347,
+    "mean_metrics.n_pred": 237292,
+    "mean_metrics.n_ref": 235840,
+    "timings_s.nnunetv2_compute_metrics_s": 0.009,
+    "timings_s.simpleitk_hausdorff_s": 0.087,
+    "timings_s.total_s": 2.507
+   },
+   "resolved_arguments": {
+    "prediction_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+    "reference_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs"
+   },
+   "result": {
+    "message": "Evaluated 1 prediction/reference mask pair (file mode, threshold 0.5) with nnunetv2 compute_metrics (Dice/IoU/TP/FP/FN/TN, label 1, SimpleITKIO) and SimpleITK HausdorffDistanceImageFilter (maximum + average Hausdorff distance, mm). Mean Dice 0.97835, median Dice 0.97835, mean maximum Hausdorff 8.000 mm. NOTE: the paper's HD95 is NOT computed (no implementation in HD-BET/nnunetv2/SimpleITK).",
+    "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/v2.8.1/nnunetv2/evaluation/evaluate_predictions.py",
+    "artifacts": [
+     {
+      "description": "per-case metrics CSV (Dice, IoU, TP/FP/FN/TN, n_pred, n_ref, Hausdorff max/avg mm, volumes)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/metrics_per_case.csv"
+     },
+     {
+      "description": "summary JSON (settings, per-case metrics, mean metrics, notes, warnings, case details)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/summary.json"
+     },
+     {
+      "description": "native nnunetv2 output (compute_metrics result)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/nnunet_metrics.json"
+     },
+     {
+      "description": "binarised uint8 reference masks used for evaluation",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/reference"
+     },
+     {
+      "description": "binarised uint8 prediction masks used for evaluation",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/prediction"
+     },
+     {
+      "description": "captured stdout of the nnunetv2/SimpleITK child process",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/logs/child_stdout.log"
+     }
+    ],
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85",
+    "mode": "file",
+    "n_cases": 1,
+    "settings": {
+     "mode": "file",
+     "threshold": 0.5,
+     "prediction_suffix": "",
+     "labels": [
+      1
+     ],
+     "reader": "SimpleITKIO",
+     "file_ending": ".nii.gz",
+     "upstream_binding": "nnunetv2.evaluation.evaluate_predictions.compute_metrics",
+     "num_processes": 1,
+     "child_python": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/dist/hdbet-agent/mcp/HD-BET-mcp/.venv/bin/python",
+     "shared_common_helper": true,
+     "child_process": {
+      "returncode": 0,
+      "wall_seconds": 2.491,
+      "stdout_bytes": 0,
+      "stderr_bytes": 0
+     }
+    },
+    "hd95_computed": false,
+    "hd95_note": "HD95 (the 95th-percentile Hausdorff distance reported in the HD-BET paper) is NOT computed: no implementation exists in HD-BET, nnunetv2 2.8.1 or SimpleITK 2.5.6. The maximum Hausdorff distance reported here is by construction >= HD95 and must not be compared with the paper's HD95 values.",
+    "hausdorff_note": "SimpleITK.HausdorffDistanceImageFilter: maximum symmetric surface distance (hausdorff_max_mm) and average Hausdorff distance (hausdorff_avg_mm) in mm, physical space, computed on the binarised masks.",
+    "binarisation_note": "I/O adaptation: both masks are binarised as uint8(value > threshold) into fresh copies before evaluation, because compute_metrics compares labels by exact equality (== 1) and the Hausdorff filter needs a common integer pixel type; binary {0,1} masks are unchanged by the default threshold 0.5.",
+    "mean_metrics": {
+     "Dice": 0.9783485369833366,
+     "IoU": 0.9576147760749396,
+     "TP": 231444,
+     "FP": 5848,
+     "FN": 4396,
+     "TN": 840347,
+     "n_pred": 237292,
+     "n_ref": 235840
+    },
+    "summary_stats": {
+     "n_cases": 1,
+     "dice": {
+      "mean": 0.9783485369833366,
+      "median": 0.9783485369833366,
+      "min": 0.9783485369833366,
+      "max": 0.9783485369833366
+     },
+     "hausdorff_max_mm": {
+      "mean": 8.0,
+      "median": 8.0,
+      "max": 8.0
+     },
+     "hausdorff_avg_mm": {
+      "mean": 0.045250601805780374
+     }
+    },
+    "per_case": [
+     {
+      "case_id": "tpl-MNI152NLin2009cAsym_res-02_T1w_bet",
+      "Dice": 0.9783485369833366,
+      "IoU": 0.9576147760749396,
+      "TP": 231444,
+      "FP": 5848,
+      "FN": 4396,
+      "TN": 840347,
+      "n_pred": 237292,
+      "n_ref": 235840,
+      "hausdorff_max_mm": 8.0,
+      "hausdorff_avg_mm": 0.045250601805780374,
+      "pred_volume_mL": 1898.336,
+      "ref_volume_mL": 1886.72,
+      "n_non_binary_voxels_pred": 0,
+      "n_non_binary_voxels_ref": 0,
+      "axcodes_pred": "RAS",
+      "axcodes_ref": "RAS"
+     }
+    ],
+    "unmatched_reference_files": [],
+    "warnings": [],
+    "versions": {
+     "nnunetv2": "2.8.1",
+     "SimpleITK": "2.5.6",
+     "python": "3.10.18"
+    },
+    "timings_s": {
+     "nnunetv2_compute_metrics_s": 0.009,
+     "simpleitk_hausdorff_s": 0.087,
+     "total_s": 2.507
+    }
+   }
+  },
+  {
+   "index": 3,
+   "label": "literature context (MedKG related work)",
+   "agent": "MedKG",
+   "tool": "medkg_related_work",
+   "arguments": {
+    "topic": "automated brain extraction skull stripping MRI deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "MRI",
+    "task": "segmentation"
+   },
+   "optional": true,
+   "status": "done",
+   "job_id": "2e14d0e777c9",
+   "started_at": 1790063051.9248097,
+   "finished_at": 1790063097.4407465,
+   "duration_s": 45.52,
+   "error": null,
+   "hint": null,
+   "message": "10 related-work rows; LLM=codex; status=ok.",
+   "artifacts": [
+    {
+     "description": "related_work — full JSON response",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164457-4cdc20.json"
+    },
+    {
+     "description": "related_work — markdown",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164457-4cdc20.md"
+    }
+   ],
+   "key_numbers": {
+    "summary.n_rows": 10,
+    "summary.n_q1": 10,
+    "summary.status": "ok",
+    "summary.llm.provider": "codex",
+    "summary.llm.model": "gpt-6-astra",
+    "summary.llm.elapsed_s": 44.54,
+    "summary.llm.fallback_used": false,
+    "summary.timing.total_ms": 45230.8,
+    "summary.timing.retrieval_ms": 523.5,
+    "summary.timing.dense_ms": 42.6,
+    "summary.timing.lexical_ms": 108.0,
+    "summary.timing.rerank_ms": 221.6,
+    "summary.timing.graph_ms": 161.7,
+    "summary.timing.llm_ms": 44542.6
+   },
+   "resolved_arguments": {
+    "topic": "automated brain extraction skull stripping MRI deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "MRI",
+    "task": "segmentation"
+   },
+   "result": {
+    "message": "10 related-work rows; LLM=codex; status=ok.",
+    "summary": {
+     "n_rows": 10,
+     "n_q1": 10,
+     "llm": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "elapsed_s": 44.54,
+      "fallback_used": false,
+      "error": null
+     },
+     "timing": {
+      "total_ms": 45230.8,
+      "retrieval_ms": 523.5,
+      "embed_ms": null,
+      "dense_ms": 42.6,
+      "lexical_ms": 108.0,
+      "rerank_ms": 221.6,
+      "graph_ms": 161.7,
+      "llm_ms": 44542.6
+     },
+     "status": "ok"
+    },
+    "artifacts": [
+     {
+      "description": "related_work — full JSON response",
+      "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164457-4cdc20.json"
+     },
+     {
+      "description": "related_work — markdown",
+      "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164457-4cdc20.md"
+     }
+    ],
+    "reference": "http://127.0.0.1:8790/docs",
+    "rows": [
+     {
+      "work_id": "PMC10894871",
+      "title": "Automated neonatal nnU-Net brain MRI extractor trained on a large multi-institutional dataset.",
+      "year": 2024,
+      "journal": "Scientific reports",
+      "is_q1": true,
+      "doi": "10.1038/s41598-024-54436-8",
+      "method": "ANUBEX: nnU-Net-based brain segmentation",
+      "modality": "Neonatal brain MRI, including high- and low-resolution and motion-degraded images",
+      "dataset": "HEAL study (433 training participants); NIH and dHCP evaluation datasets",
+      "metric_values": "not stated",
+      "summary": "ANUBEX enables automatic neonatal brain extraction across acquisition settings and achieves higher aggregate Dice scores than five publicly available methods.",
+      "score": 0.9979007244110107
+     },
+     {
+      "work_id": "PMC7597856",
+      "title": "Brain extraction on MRI scans in presence of diffuse glioma: Multi-institutional performance evaluation of deep learning methods and robust modality-agnostic training.",
+      "year": 2020,
+      "journal": "NeuroImage",
+      "is_q1": true,
+      "doi": "10.1016/j.neuroimage.2020.117081",
+      "method": "Deep learning architectures with modality-agnostic training",
+      "modality": "Multiparametric brain MRI with brain tumors",
+      "dataset": "Private institutional cohorts and TCIA collections (3,340 scans)",
+      "metric_values": "not stated",
+      "summary": "Evaluates deep learning brain extraction across institutions and introduces modality-agnostic training to support available MRI modalities without retraining.",
+      "score": 0.9917163252830505
+     },
+     {
+      "work_id": "DOI:10.1016/j.bspc.2022.104514",
+      "title": "Towards fully automated deep-learning-based brain tumor segmentation: is brain extraction still necessary?",
+      "year": 2022,
+      "journal": "Biomedical Signal Processing and Control",
+      "is_q1": true,
+      "doi": "10.1016/j.bspc.2022.104514",
+      "method": "Deep learning tumor segmentation pipeline trained and tested without skull stripping",
+      "modality": "Multimodal brain MRI",
+      "dataset": "not stated",
+      "metric_values": "Brain extraction method choice can compromise tumor segmentation performance by up to 15.7%",
+      "summary": "Shows that omitting brain extraction can provide competitive tumor segmentation performance while reducing processing time and avoiding skull-stripping errors.",
+      "score": 0.9902915358543396
+     },
+     {
+      "work_id": "PMC9237075",
+      "title": "A general skull stripping of multiparametric brain MRIs using 3D convolutional neural network.",
+      "year": 2022,
+      "journal": "Scientific reports",
+      "is_q1": true,
+      "doi": "10.1038/s41598-022-14983-4",
+      "method": "EnNet: ensemble neural network based on 3D convolutional neural networks",
+      "modality": "Multiparametric brain MRI, including healthy and pre-/post-operative GBM scans",
+      "dataset": "UPMC and TCIA retrospective dataset (815 cases with/without GBM)",
+      "metric_values": "not stated",
+      "summary": "Introduces automatic multicenter brain extraction for healthy and GBM scans and evaluates 15 MRI modality combinations, finding the best performance with all modalities.",
+      "score": 0.9888418912887573
+     },
+     {
+      "work_id": "PMC9580949",
+      "title": "An End-To-End Pipeline for Fully Automatic Morphological Quantification of Mouse Brain Structures From MRI Imagery.",
+      "year": 2022,
+      "journal": "Frontiers in bioinformatics",
+      "is_q1": true,
+      "doi": "10.3389/fbinf.2022.865443",
+      "method": "DeepBrainIPP: deep learning skull stripping with data augmentation, atlas registration, and a dedicated small-structure segmentation model",
+      "modality": "In vivo and ex vivo mouse brain T2-weighted MRI",
+      "dataset": "private cohort (172 in-house images augmented to 4,040 samples)",
+      "metric_values": "Skull stripping: average Dice 0.96, residual volume 2.18%; atlas registration: average cross-correlation 0.98; small-structure segmentation: average Dice 0.89, residual volume error 5.32%",
+      "summary": "Provides an automated mouse brain processing pipeline combining skull stripping and atlas registration with direct segmentation of small structures through a web interface.",
+      "score": 0.9860442876815796
+     },
+     {
+      "work_id": "DOI:10.48550/arxiv.2205.09706",
+      "title": "k-strip: A novel segmentation algorithm in k-space for the application of skull stripping",
+      "year": 2022,
+      "journal": "Computer methods and programs in biomedicine",
+      "is_q1": true,
+      "doi": "10.48550/arxiv.2205.09706",
+      "method": "k-strip: deep learning skull stripping directly in complex-valued k-space",
+      "modality": "Raw MRI k-space data",
+      "dataset": "not stated (four datasets from different institutions, approximately 200,000 MRI slices)",
+      "metric_values": "Dice 92%–99%; Hausdorff distance <5.5 pixels; Dice up to 99% above the eye region",
+      "summary": "Demonstrates skull stripping directly in MRI k-space while preserving phase information and enabling anonymization before image reconstruction.",
+      "score": 0.9816303849220276
+     },
+     {
+      "work_id": "PMC11664259",
+      "title": "Automated pediatric brain tumor imaging assessment tool from CBTN: Enhancing suprasellar region inclusion and managing limited data with deep learning.",
+      "year": 2024,
+      "journal": "Neuro-oncology advances",
+      "is_q1": true,
+      "doi": "10.1093/noajnl/vdae190",
+      "method": "Separate nnU-Net-based models for skull stripping, whole-tumor segmentation, and enhancing-tumor segmentation",
+      "modality": "Pediatric brain MRI with single T2/FLAIR or multiple T1-Gd and T2/FLAIR sequences",
+      "dataset": "not stated (multi-institutional cohort of 527 pediatric patients; 336 for skull stripping and 489 for tumor segmentation)",
+      "metric_values": "Skull-stripping Dice 0.98 ± 0.01 (median 0.98) for both single- and multi-parametric models; single-/multi-parametric Dice correlation r >0.80 (P <.05); whole-tumor Dice: T2 0.84 ± 0.17 (median 0.90), FLAIR 0.82 ± 0.19 (median 0.89); enhancing-tumor Dice: T1-Gd+FLAIR 0.65 ± 0.35 (median 0.79), T1-Gd+T2 0.64 ± 0.36 (median 0.79)",
+      "summary": "Develops pediatric skull-stripping models that include sellar/suprasellar regions and tumor segmentation models accommodating limited data and missing MRI sequences.",
+      "score": 0.9814534187316895
+     },
+     {
+      "work_id": "PMC10045128",
+      "title": "RU-Net: skull stripping in rat brain MR images after ischemic stroke with rat U-Net.",
+      "year": 2023,
+      "journal": "BMC medical imaging",
+      "is_q1": true,
+      "doi": "10.1186/s12880-023-00994-8",
+      "method": "RU-Net: U-shaped deep network integrating residual connections, batch normalization, and pooling-index transmission",
+      "modality": "Rat brain diffusion-weighted imaging and T2-weighted MRI after ischemic stroke",
+      "dataset": "private cohort (two in-house datasets, each containing 55 subjects)",
+      "metric_values": "Average Dice: DWI 98.04% (p <0.001); T2WI 97.67% (p <0.001)",
+      "summary": "Introduces an end-to-end skull-stripping network for rat brain MRI after stroke that outperforms several existing methods on two imaging modalities.",
+      "score": 0.9808392524719238
+     },
+     {
+      "work_id": "PMC9465771",
+      "title": "SynthStrip: skull-stripping for any brain image.",
+      "year": 2022,
+      "journal": "NeuroImage",
+      "is_q1": true,
+      "doi": "10.1016/j.neuroimage.2022.119474",
+      "method": "SynthStrip: learning-based brain extraction trained on synthetic images generated from anatomical segmentations",
+      "modality": "Brain MRI across acquisition protocols, contrasts, resolutions, and age groups",
+      "dataset": "not stated (entirely synthetic training dataset; diverse acquired images for evaluation)",
+      "metric_values": "not stated",
+      "summary": "Uses broadly varied synthetic training images to enable a single skull-stripping model to generalize across real brain imaging protocols without target-contrast training data.",
+      "score": 0.957277774810791
+     },
+     {
+      "work_id": "DOI:10.1016/j.ins.2022.01.011",
+      "title": "ASMCNN: An efficient brain extraction using active shape model and convolutional neural networks",
+      "year": 2018,
+      "journal": "Information Sciences",
+      "is_q1": true,
+      "doi": "10.1016/j.ins.2022.01.011",
+      "method": "ASMCNN: modified active shape model and CNN with CRF, Gaussian-process, and rule-based post-processing",
+      "modality": "Brain MRI processed as 2D sagittal image sequences",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "Combines grouped shape priors with CNN-based contour refinement to improve brain extraction across variable MRI appearances.",
+      "score": 0.9315870404243469
+     }
+    ]
+   }
+  }
+ ],
+ "jobs": [
+  "2f132d1fc2b0",
+  "d3240f0ef63c",
+  "3768c617b81c",
+  "2e14d0e777c9"
+ ],
+ "artifacts": [
+  {
+   "description": "run summary (JSON)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/summary.json"
+  },
+  {
+   "description": "run report (markdown)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/report.md"
+  }
+ ],
+ "warnings": [],
+ "summary_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/summary.json",
+ "report_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/report.md"
+}

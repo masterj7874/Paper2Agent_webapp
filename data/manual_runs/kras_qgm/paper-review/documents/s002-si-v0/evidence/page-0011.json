@@ -1,0 +1,255 @@
+{
+  "page": 11,
+  "lines": [
+    {
+      "text": "S1.5. Preparation of ISM061-12",
+      "bbox": [
+        56.6399040222168,
+        379.8232116699219,
+        220.96217346191406,
+        393.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S5 Preparation of ISM061-12",
+      "bbox": [
+        205.26951599121094,
+        583.0679321289062,
+        392.91021728515625,
+        596.3519287109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 12-1",
+      "bbox": [
+        56.6399040222168,
+        608.9879150390625,
+        258.6417236328125,
+        622.2719116210938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 1-(5,6,7,8-tetrahydronaphthalen-2-yl)ethan-1-one (10.0 g, 57.5 mmol) in ethyl",
+      "bbox": [
+        56.6399040222168,
+        639.7079467773438,
+        541.5339965820312,
+        652.991943359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "acetate (100 mL) was added aluminum chloride (19.1 g, 143.8 mmol) and bromine (11.0 g, 69.0",
+      "bbox": [
+        56.6399040222168,
+        660.347900390625,
+        541.5215454101562,
+        673.6318969726562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol). The resulting mixture was stirred at 85 °C for 16 hours. The reaction was quenched with ice",
+      "bbox": [
+        56.6399040222168,
+        680.9879150390625,
+        541.5326538085938,
+        694.2719116210938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "water (100 mL). The resulting mixture was extracted with ethyl acetate (100 mL × 3). The combined",
+      "bbox": [
+        56.6399040222168,
+        701.6279296875,
+        541.523681640625,
+        714.9119262695312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "organic phases was washed with saturated brine (50 mL × 3), dried over anhydrous sodium sulfate,",
+      "bbox": [
+        56.6399040222168,
+        722.2679443359375,
+        541.5237426757812,
+        735.5519409179688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "filtered, and concentrated under reduced pressure to give the title compound as a yellow oil (5.1 g,",
+      "bbox": [
+        56.6399040222168,
+        743.14794921875,
+        541.53466796875,
+        756.4319458007812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Y: 35.2%). LCMS (ESI): 253.0 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        763.34326171875,
+        255.2433624267578,
+        777.0719604492188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 11
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "picture",
+        "bbox": [
+          56,
+          56,
+          445,
+          309
+        ],
+        "pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "index": 1,
+        "class": "caption",
+        "bbox": [
+          56,
+          382,
+          221,
+          394
+        ],
+        "pos": [
+          2,
+          39
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          57,
+          407,
+          427,
+          492
+        ],
+        "pos": [
+          39,
+          41
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          65,
+          512,
+          472,
+          569
+        ],
+        "pos": [
+          41,
+          43
+        ]
+      },
+      {
+        "index": 4,
+        "class": "caption",
+        "bbox": [
+          205,
+          585,
+          393,
+          597
+        ],
+        "pos": [
+          43,
+          84
+        ]
+      },
+      {
+        "index": 5,
+        "class": "caption",
+        "bbox": [
+          56,
+          611,
+          259,
+          623
+        ],
+        "pos": [
+          84,
+          127
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          642,
+          542,
+          778
+        ],
+        "pos": [
+          127,
+          760
+        ]
+      }
+    ],
+    "text": "\n\n**S1.5. Preparation of ISM061-12** \n\n\n\n\n\n**Scheme S5** Preparation of ISM061-12 \n\n**Step 1: Preparation of Compound 12-1** \n\nTo a solution of 1-(5,6,7,8-tetrahydronaphthalen-2-yl)ethan-1-one (10.0 g, 57.5 mmol) in ethyl acetate (100 mL) was added aluminum chloride (19.1 g, 143.8 mmol) and bromine (11.0 g, 69.0 mmol). The resulting mixture was stirred at 85 °C for 16 hours. The reaction was quenched with ice water (100 mL). The resulting mixture was extracted with ethyl acetate (100 mL × 3). The combined organic phases was washed with saturated brine (50 mL × 3), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give the title compound as a yellow oil (5.1 g, Y: 35.2%). LCMS (ESI): 253.0 [M+H]<sup>+</sup> . \n\n"
+  }
+}

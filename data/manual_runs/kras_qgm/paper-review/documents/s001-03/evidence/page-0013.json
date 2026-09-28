@@ -1,0 +1,705 @@
+{
+  "page": 13,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Genomics Institute, Cystic Fibrosis Canada and Toronto Innovation",
+      "bbox": [
+        39.685001373291016,
+        46.61162567138672,
+        282.1315002441406,
+        57.53162384033203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Acceleration Partners. This research was undertaken thanks partly to",
+      "bbox": [
+        39.685001373291016,
+        57.36363983154297,
+        288.91461181640625,
+        68.28363800048828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "funding provided to the Acceleration Consortium of the University of",
+      "bbox": [
+        39.685001373291016,
+        68.11565399169922,
+        289.6665954589844,
+        79.03565216064453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Toronto from the Canada First Research Excellence Fund.",
+      "bbox": [
+        39.685001373291016,
+        78.86766815185547,
+        246.54269409179688,
+        89.78766632080078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Author contributions",
+      "bbox": [
+        39.685001373291016,
+        98.77362060546875,
+        149.48550415039062,
+        111.97462463378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "M.G.V. led the project, developed the quantum machine learning",
+      "bbox": [
+        39.685001373291016,
+        111.11162567138672,
+        274.3322448730469,
+        122.03162384033203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "algorithm, benchmarked the model and contributed substantially",
+      "bbox": [
+        39.685001373291016,
+        121.86363983154297,
+        278.94586181640625,
+        132.7836456298828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to writing the manuscript. C.G. led the virtual screening and NMR",
+      "bbox": [
+        39.685001373291016,
+        132.6156463623047,
+        275.69866943359375,
+        143.53565979003906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "experiments. A.K.N. worked on the genetic algorithm and generated",
+      "bbox": [
+        39.685001373291016,
+        143.36766052246094,
+        288.3002624511719,
+        154.2876739501953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the initial data. The Insilico team focused on synthesizing the",
+      "bbox": [
+        39.685001373291016,
+        154.1196746826172,
+        260.9722900390625,
+        165.03968811035156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compounds and performing the SPR assays. J.S. led the cell-based",
+      "bbox": [
+        39.685001373291016,
+        164.87168884277344,
+        281.65386962890625,
+        175.7917022705078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "assays conducted in the I.S. lab. The remaining authors worked in",
+      "bbox": [
+        39.685001373291016,
+        175.6237030029297,
+        276.8522644042969,
+        186.54371643066406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "parallel to validate the findings, discuss the results and contribute to",
+      "bbox": [
+        39.685001373291016,
+        186.37571716308594,
+        288.7793884277344,
+        197.2957305908203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the preparation and analysis of the final results.",
+      "bbox": [
+        39.685001373291016,
+        197.1277313232422,
+        210.0786590576172,
+        208.04774475097656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Competing interests",
+      "bbox": [
+        39.685001373291016,
+        217.02374267578125,
+        144.21800231933594,
+        230.22474670410156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A.A.G. serves as the chief visionary officer and is a board member of",
+      "bbox": [
+        39.685001373291016,
+        229.3617401123047,
+        285.6435241699219,
+        240.28175354003906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Kebotix. A.Z., A.A., D.B., D.P., X.D., J.L., E.R., F.R. and F.M. are affiliated",
+      "bbox": [
+        39.685001373291016,
+        240.11375427246094,
+        287.466552734375,
+        251.0337677001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with Insilico Medicine. Y.C. and D.V. are affiliated with Zapata AI. C.G.",
+      "bbox": [
+        39.685001373291016,
+        250.8657684326172,
+        285.208251953125,
+        261.7857666015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "is a cofounder and consultant of Virtual Discovery and Quantum",
+      "bbox": [
+        306.1409912109375,
+        46.61779022216797,
+        539.4878540039062,
+        57.53778839111328
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Therapeutics. The remaining authors declare no competing interests.",
+      "bbox": [
+        306.1409912109375,
+        57.36980438232422,
+        555.9503784179688,
+        68.28980255126953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Additional information",
+      "bbox": [
+        306.1416931152344,
+        77.27362060546875,
+        425.197998046875,
+        90.47462463378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended data is available for this paper at",
+      "bbox": [
+        306.1416931152344,
+        89.49162292480469,
+        463.6217041015625,
+        100.53162384033203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3.",
+      "bbox": [
+        306.1417236328125,
+        100.36363983154297,
+        467.6297302246094,
+        111.28363800048828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Supplementary information The online version contains supplementary",
+      "bbox": [
+        306.1417236328125,
+        121.74766540527344,
+        563.3329467773438,
+        132.7876739501953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "material available at https://doi.org/10.1038/s41587-024-02526-3.",
+      "bbox": [
+        306.1417236328125,
+        132.6196746826172,
+        542.021728515625,
+        143.53968811035156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Correspondence and requests for materials should be addressed",
+      "bbox": [
+        306.1417541503906,
+        154.0037078857422,
+        548.2057495117188,
+        165.04371643066406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to Christoph Gorgulla, AkshatKumar Nigam, Igor Stagljar,",
+      "bbox": [
+        306.1417541503906,
+        164.87571716308594,
+        516.4537353515625,
+        175.7957305908203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Alán Aspuru-Guzik or Alex Zhavoronkov.",
+      "bbox": [
+        306.1417236328125,
+        175.6277313232422,
+        450.8423767089844,
+        186.54774475097656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Peer review information Nature Biotechnology thanks Su-Yang Xu and",
+      "bbox": [
+        306.1417236328125,
+        197.0117645263672,
+        560.2384033203125,
+        208.05177307128906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the other, anonymous, reviewer(s) for their contribution to the peer",
+      "bbox": [
+        306.1417236328125,
+        207.88377380371094,
+        549.1805419921875,
+        218.8037872314453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "review of this work.",
+      "bbox": [
+        306.1417236328125,
+        218.6357879638672,
+        375.7607727050781,
+        229.55580139160156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Reprints and permissions information is available at",
+      "bbox": [
+        306.1417236328125,
+        240.0198211669922,
+        498.4537048339844,
+        251.05982971191406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "www.nature.com/reprints.",
+      "bbox": [
+        306.13372802734375,
+        250.89183044433594,
+        401.3720397949219,
+        261.81182861328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 13
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          39,
+          49,
+          290,
+          88
+        ],
+        "pos": [
+          71,
+          333
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          39,
+          100,
+          150,
+          110
+        ],
+        "pos": [
+          333,
+          362
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          39,
+          113,
+          289,
+          208
+        ],
+        "pos": [
+          362,
+          941
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          39,
+          219,
+          145,
+          230
+        ],
+        "pos": [
+          941,
+          969
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          39,
+          229,
+          288,
+          262
+        ],
+        "pos": [
+          969,
+          1195
+        ]
+      },
+      {
+        "index": 7,
+        "class": "text",
+        "bbox": [
+          306,
+          49,
+          556,
+          68
+        ],
+        "pos": [
+          1195,
+          1328
+        ]
+      },
+      {
+        "index": 8,
+        "class": "section-header",
+        "bbox": [
+          306,
+          79,
+          426,
+          88
+        ],
+        "pos": [
+          1328,
+          1359
+        ]
+      },
+      {
+        "index": 9,
+        "class": "text",
+        "bbox": [
+          306,
+          92,
+          468,
+          111
+        ],
+        "pos": [
+          1359,
+          1454
+        ]
+      },
+      {
+        "index": 10,
+        "class": "text",
+        "bbox": [
+          306,
+          124,
+          562,
+          144
+        ],
+        "pos": [
+          1454,
+          1594
+        ]
+      },
+      {
+        "index": 11,
+        "class": "text",
+        "bbox": [
+          306,
+          156,
+          549,
+          186
+        ],
+        "pos": [
+          1594,
+          1758
+        ]
+      },
+      {
+        "index": 12,
+        "class": "text",
+        "bbox": [
+          306,
+          199,
+          561,
+          228
+        ],
+        "pos": [
+          1758,
+          1923
+        ]
+      },
+      {
+        "index": 13,
+        "class": "text",
+        "bbox": [
+          306,
+          242,
+          499,
+          262
+        ],
+        "pos": [
+          1923,
+          2007
+        ]
+      },
+      {
+        "index": 14,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          2007,
+          2030
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\nGenomics Institute, Cystic Fibrosis Canada and Toronto Innovation Acceleration Partners. This research was undertaken thanks partly to funding provided to the Acceleration Consortium of the University of Toronto from the Canada First Research Excellence Fund. \n\n# **Author contributions** \n\nM.G.V. led the project, developed the quantum machine learning algorithm, benchmarked the model and contributed substantially to writing the manuscript. C.G. led the virtual screening and NMR experiments. A.K.N. worked on the genetic algorithm and generated the initial data. The Insilico team focused on synthesizing the compounds and performing the SPR assays. J.S. led the cell-based assays conducted in the I.S. lab. The remaining authors worked in parallel to validate the findings, discuss the results and contribute to the preparation and analysis of the final results. \n\n# **Competing interests** \n\nA.A.G. serves as the chief visionary officer and is a board member of Kebotix. A.Z., A.A., D.B., D.P., X.D., J.L., E.R., F.R. and F.M. are affiliated with Insilico Medicine. Y.C. and D.V. are affiliated with Zapata AI. C.G. \n\nis a cofounder and consultant of Virtual Discovery and Quantum Therapeutics. The remaining authors declare no competing interests. \n\n# **Additional information** \n\n**Extended data** is available for this paper at https://doi.org/10.1038/s41587-024-02526-3. \n\n**Supplementary information** The online version contains supplementary material available at https://doi.org/10.1038/s41587-024-02526-3. \n\n**Correspondence and requests for materials** should be addressed to Christoph Gorgulla, AkshatKumar Nigam, Igor Stagljar, Alán Aspuru-Guzik or Alex Zhavoronkov. \n\n**Peer review information** _Nature Biotechnology_ thanks Su-Yang Xu and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. \n\n**Reprints and permissions information** is available at www.nature.com/reprints. \n\nNature Biotechnology \n\n"
+  }
+}

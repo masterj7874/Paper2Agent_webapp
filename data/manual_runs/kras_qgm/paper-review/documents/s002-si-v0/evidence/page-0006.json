@@ -1,0 +1,307 @@
+{
+  "page": 6,
+  "lines": [
+    {
+      "text": "The residue was purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 1: 3) to afford",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        541.5274047851562,
+        70.59069061279297
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Compound 3-4 (40.0 mg, 7% yield) as yellow oil. LCMS (ESI+): 497.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        77.42324829101562,
+        450.7572021484375,
+        91.23068237304688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 5: Preparation of ISM061-3-2",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        236.950439453125,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of Compound 3-4 (35.0 mg, 0.07 mmol) in DCM (2 mL) was added TFA (0.1 mL,",
+      "bbox": [
+        56.6399040222168,
+        139.30796813964844,
+        541.5402221679688,
+        152.5919647216797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1.30 mmol) dropwise at 0 ℃. After addition, the mixture was stirred at 25 ℃ for 30 min. The reaction",
+      "bbox": [
+        56.6399040222168,
+        160.18797302246094,
+        541.5263061523438,
+        173.4719696044922
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mixture was concentrated under reduced pressure to give a residue, which was purified by pre-HPLC",
+      "bbox": [
+        56.6399040222168,
+        180.8279571533203,
+        541.5398559570312,
+        194.11195373535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(SHIMADZU, LC-20AP, Column: YMC Triart C18, 20 × 250 mm, 5 μm; Mobile phase: from 25 %",
+      "bbox": [
+        56.6399040222168,
+        201.02325439453125,
+        541.5335693359375,
+        214.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to 55 % ACN [0.1% NH3HCO3]; Flow rate: 15 mL/min; Retention Time: 25 min of 35 min) to afford",
+      "bbox": [
+        56.6399040222168,
+        222.1079559326172,
+        541.5330200195312,
+        235.47068786621094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ISM061-3-2 (4.0 mg, 14% yield) as a white solid. LCMS(ESI+): 397.3 [M+H]+. 1H NMR (400 MHz,",
+      "bbox": [
+        56.6399040222168,
+        242.54324340820312,
+        541.539794921875,
+        256.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Chloroform-d) δ 8.22 (s, 1H), 7.17 (d, J = 8.1 Hz, 1H), 7.02 (d, J = 8.0 Hz, 1H), 6.90 (t, J = 8.0 Hz,",
+      "bbox": [
+        56.6399040222168,
+        263.6279602050781,
+        541.5400390625,
+        276.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1H), 6.03 – 5.77 (m, 1H), 4.49 (s, 2H), 4.40 – 4.33 (m, 2H), 3.90 (s, 3H), 3.53 – 3.43 (m, 1H), 2.56 –",
+      "bbox": [
+        56.6399040222168,
+        284.2679748535156,
+        541.5398559570312,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2.44 (m, 3H), 2.15 (s, 3H), 1.84 – 1.80 (m, 2H).",
+      "bbox": [
+        56.6399040222168,
+        304.9079895019531,
+        288.95233154296875,
+        318.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "S1.3. Preparation of ISM061-6",
+      "bbox": [
+        56.6399040222168,
+        673.3079833984375,
+        215.96214294433594,
+        686.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S3 Preparation of ISM061-6",
+      "bbox": [
+        208.26951599121094,
+        749.14794921875,
+        389.91021728515625,
+        762.4319458007812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 6
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          542,
+          92
+        ],
+        "pos": [
+          0,
+          198
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          111,
+          237,
+          122
+        ],
+        "pos": [
+          198,
+          240
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          141,
+          542,
+          319
+        ],
+        "pos": [
+          240,
+          1122
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          56,
+          395,
+          445,
+          587
+        ],
+        "pos": [
+          1122,
+          1124
+        ]
+      },
+      {
+        "index": 4,
+        "class": "section-header",
+        "bbox": [
+          56,
+          675,
+          216,
+          687
+        ],
+        "pos": [
+          1124,
+          1162
+        ]
+      },
+      {
+        "index": 5,
+        "class": "picture",
+        "bbox": [
+          57,
+          694,
+          473,
+          731
+        ],
+        "pos": [
+          1162,
+          1164
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          208,
+          751,
+          390,
+          763
+        ],
+        "pos": [
+          1164,
+          1204
+        ]
+      }
+    ],
+    "text": "The residue was purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 1: 3) to afford **Compound 3-4** (40.0 mg, 7% yield) as yellow oil. LCMS (ESI<sup>+</sup> ): 497.2 [M+H]<sup>+</sup> . \n\n# **Step 5: Preparation of ISM061-3-2** \n\nTo a solution of **Compound 3-4** (35.0 mg, 0.07 mmol) in DCM (2 mL) was added TFA (0.1 mL, 1.30 mmol) dropwise at 0 ℃. After addition, the mixture was stirred at 25 ℃ for 30 min. The reaction mixture was concentrated under reduced pressure to give a residue, which was purified by pre-HPLC (SHIMADZU, LC-20AP, Column: YMC Triart C<sup>18</sup> , 20 × 250 mm, 5 μm; Mobile phase: from 25 % to 55 % ACN [0.1% NH3HCO3]; Flow rate: 15 mL/min; Retention Time: 25 min of 35 min) to afford **ISM061-3-2** (4.0 mg, 14% yield) as a white solid. LCMS(ESI<sup>+</sup> ): 397.3 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, Chloroform- _d_ ) δ 8.22 (s, 1H), 7.17 (d, _J_ = 8.1 Hz, 1H), 7.02 (d, _J_ = 8.0 Hz, 1H), 6.90 (t, _J_ = 8.0 Hz, 1H), 6.03 – 5.77 (m, 1H), 4.49 (s, 2H), 4.40 – 4.33 (m, 2H), 3.90 (s, 3H), 3.53 – 3.43 (m, 1H), 2.56 – 2.44 (m, 3H), 2.15 (s, 3H), 1.84 – 1.80 (m, 2H). \n\n\n\n# **S1.3. Preparation of ISM061-6** \n\n\n\n**Scheme S3** Preparation of ISM061-6 \n\n"
+  }
+}

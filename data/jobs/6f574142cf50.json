@@ -1,0 +1,119 @@
+{
+ "id": "6f574142cf50",
+ "agent": "Cellpose",
+ "tool": "cellpose_segment_image",
+ "arguments": {
+  "image_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_Agent/data/samples/img00.png",
+  "model_type": "cyto2",
+  "channels": [
+   0,
+   0
+  ],
+  "flow_threshold": 0.4,
+  "cellprob_threshold": 0,
+  "net_avg": false,
+  "resample": true,
+  "device": "auto"
+ },
+ "status": "done",
+ "created_at": 1790117312.8691783,
+ "started_at": 1790117312.8697662,
+ "finished_at": 1790117320.5428257,
+ "result": {
+  "message": "Cellpose cyto2 segmented img00.png (512x512x3): 199 masks, diameter 35.13 px (size model estimate), device cuda:1, eval 1.02s.",
+  "reference": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/notebooks/run_cellpose.ipynb",
+  "artifacts": [
+   {
+    "description": "label masks (uint16 PNG, 0=background)",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_cp_masks.png"
+   },
+   {
+    "description": "label masks (TIF)",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_cp_masks.tif"
+   },
+   {
+    "description": "label masks as returned by model.eval (npy)",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_masks.npy"
+   },
+   {
+    "description": "GUI-loadable segmentation (masks, outlines, flows, est_diam, chan_choose)",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_seg.npy"
+   },
+   {
+    "description": "ImageJ outline coordinates (one mask per line)",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_cp_outlines.txt"
+   },
+   {
+    "description": "image with red mask outlines",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_outlines.png"
+   },
+   {
+    "description": "raw flows: flow_rgb, dP (dy,dx), cellprob, p (final pixel positions)",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_flows.npz"
+   },
+   {
+    "description": "256-d style vector",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_styles.npy"
+   },
+   {
+    "description": "4-panel figure: image | outlines | masks | flows (plot.show_segmentation)",
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19/img00_segmentation.png"
+   }
+  ],
+  "output_dir": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_outputs/cellpose_segment_image_20260923-074838_4e51cd19",
+  "image": {
+   "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/Cellpose_Agent/data/samples/img00.png",
+   "shape": [
+    512,
+    512,
+    3
+   ],
+   "dtype": "uint8"
+  },
+  "n_masks": 199,
+  "diameter_used": 35.1250497344612,
+  "diameter_source": "size model estimate",
+  "masks": {
+   "n_masks": 199,
+   "n_unique_labels": 199,
+   "masks_shape": [
+    512,
+    512
+   ],
+   "masks_dtype": "uint16",
+   "foreground_pixels": 204976,
+   "mask_area_px_min": 137,
+   "mask_area_px_max": 5231,
+   "mask_area_px_mean": 1030.0301507537688,
+   "median_mask_diameter_px": 34.595450164018
+  },
+  "settings": {
+   "model_type": "cyto2",
+   "pretrained_model_path": null,
+   "pretrained_model_files": [
+    "cyto2torch_0"
+   ],
+   "size_model": "size_cyto2torch_0.npy",
+   "diam_mean": 30.0,
+   "channels": [
+    0,
+    0
+   ],
+   "diameter": null,
+   "flow_threshold": 0.4,
+   "cellprob_threshold": 0.0,
+   "net_avg": false,
+   "net_avg_used": false,
+   "resample": true,
+   "rescale": 0.8540913173588189
+  },
+  "device": "cuda:1",
+  "timings_s": {
+   "model_init": 0.129,
+   "eval": 1.017,
+   "save": 0.824
+  }
+ },
+ "error": null,
+ "duration_s": 7.67
+}

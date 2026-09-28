@@ -1,0 +1,82 @@
+{
+  "page": 17,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0017.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0017.png and re-rendered the crop from source.pdf. Single-figure page: Extended Data Fig. 4 plate plus a two-column caption. Widened the crop slightly to [88, 42, 512, 318] pt and confirmed by render that all four dotted plate borders are inside the crop, together with the 2D structure of TH-Z816 (N-CH3, H3C, CH3 and NH labels), the left-hand pharmacophore/interaction map with its residue tags, the right-hand grey KRAS ribbon with the bound green ligand, and the 'Switch 2 Binding Site' box and its dashed leader lines. The embedded PDF image is only x 95.0-506.0, y 49.0-315.2 pt, so the dotted frame drawn outside it would have been clipped by the extractor bbox. Renamed placeholder figure-p0017-002 -> extended-data-figure-4 with asset_category=supp_figs. Merged the two caption column fragments (b003 ends 'critical ring system that', b004 begins 'supports structural integrity') into one caption item and re-kinded b004 from text to caption; the caption stays outside the crop so it remains searchable. Restored the live PDB hyperlink that the extractor dropped: '7EW9' is a link annotation to https://doi.org/10.2210/pdb7EW9/pdb and is now a Markdown link. Verified TH-Z816, KRAS G12D and Chemistry42 against the native text layer. Header/DOI/footer set to omit.",
+  "warnings": [
+    "Review possible header/footer: p0017-b000",
+    "Review possible header/footer: p0017-b001",
+    "Review possible header/footer: p0017-b005"
+  ],
+  "items": [
+    {
+      "id": "p0017-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Repeated running header of the journal article ('Brief Communication'); not substantive content."
+    },
+    {
+      "id": "p0017-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Repeated running header DOI link (https://doi.org/10.1038/s41587-024-02526-3); already recorded on the title page."
+    },
+    {
+      "id": "p0017-b002",
+      "kind": "figure",
+      "bbox": [
+        88.0,
+        42.0,
+        512.0,
+        318.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Extended Data Fig. 4",
+      "asset_name": "extended-data-figure-4",
+      "asset_category": "supp_figs"
+    },
+    {
+      "id": "p0017-b003",
+      "kind": "caption",
+      "bbox": [
+        39.0,
+        319.0,
+        561.0,
+        368.0
+      ],
+      "markdown": "**Extended Data Fig. 4 | Pharmacophore Model Depiction.** Pharmacophore Model Depiction for KRAS Inhibitor TH-Z816 Based on the Co-crystallized Ligand Structure Analyzed with Chemistry42 (PDB: [7EW9](https://doi.org/10.2210/pdb7EW9/pdb)). This figure illustrates the key pharmacophoric features identified from the ligand structure of TH-Z816 bound to KRAS G12D. A blue sphere represents a critical ring system that supports structural integrity, a green sphere highlights a hydrophobic moiety essential for binding affinity, and a cyan sphere indicates a hydrogen bond donor that contributes to interaction specificity with the KRAS protein. The protein structure is shown on the right, while the pharmacophore interactions within the KRAS Switch-II binding pocket are detailed on the left.",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0017-b005",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Repeated page footer / journal branding link ('Nature Biotechnology'); not substantive content."
+    }
+  ]
+}

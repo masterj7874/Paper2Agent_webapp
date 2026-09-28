@@ -1,0 +1,530 @@
+{
+  "page": 29,
+  "lines": [
+    {
+      "text": "S1.11. Preparation of ISM061-21",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        227.96214294433594,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S11 Preparation of ISM061-21",
+      "bbox": [
+        202.26951599121094,
+        149.14796447753906,
+        395.91021728515625,
+        162.4319610595703
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 21-1",
+      "bbox": [
+        56.6399040222168,
+        179.8679656982422,
+        258.6417236328125,
+        193.15196228027344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 5-bromo-2-chloro-4-methylpyrimidine (1.00 g, 4.82 mmol) in dioxane (10 mL) and",
+      "bbox": [
+        56.6399040222168,
+        210.5879669189453,
+        541.5311279296875,
+        223.87196350097656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "water (2 mL) were added LiCl (600 mg, 14.46 mmol) and tributyl(vinyl)stannane (1.50 g, 4.82 mmol)",
+      "bbox": [
+        56.6399040222168,
+        231.22796630859375,
+        541.5310668945312,
+        244.511962890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and Pd(pph3)2Cl2 (300 mg, 0.48 mmol) under N2 atmosphere. Then the mixture was heated and stirred",
+      "bbox": [
+        56.6399040222168,
+        251.8679656982422,
+        541.5309448242188,
+        265.2306823730469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "at 100 ℃ for 2 h. After cooling to 25 ℃, the mixture was filtered through a Celite pad. The filtrate",
+      "bbox": [
+        56.6399040222168,
+        272.5079650878906,
+        541.5140380859375,
+        285.7919616699219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was poured into ice water (50 mL) and extracted with EtOAc (40 mL × 3), the combined organic",
+      "bbox": [
+        56.6399040222168,
+        293.3879699707031,
+        541.5321044921875,
+        306.6719665527344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "layers were washed with brine (60 mL × 3), dried over Na2SO4, filtered and concentrated under",
+      "bbox": [
+        56.6399040222168,
+        314.0279846191406,
+        541.5331420898438,
+        327.39068603515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reduced pressure to give a residue, which was purified by column chromatography on silica gel",
+      "bbox": [
+        56.6399040222168,
+        334.6679992675781,
+        541.5260620117188,
+        347.9519958496094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "eluting with ethyl acetate (from 0% to 18%) in petroleum ether to afford the title compound (291 mg,",
+      "bbox": [
+        56.6399040222168,
+        355.3079833984375,
+        541.517822265625,
+        368.59197998046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "39.1 % yield) as a yellow oil. LCMS (ESI+): 155.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        375.74322509765625,
+        347.3997497558594,
+        389.4719543457031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 21-2",
+      "bbox": [
+        56.6399040222168,
+        406.9079895019531,
+        258.6417236328125,
+        420.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of Compound 21-1 (270 mg, 1.75 mmol), (2,6-dimethylphenyl)boronic acid (265 mg,",
+      "bbox": [
+        56.6399040222168,
+        437.6279602050781,
+        541.5340576171875,
+        450.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1.75 mmol) and Cs2CO3 (1.42 g, 4.37 mmol) in dioxane (10 mL) and Water (2 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        458.2679748535156,
+        541.5357666015625,
+        471.63067626953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Pd(dppf)Cl2 (128 mg, 0.17 mmol) at 25 ℃. After addition, the mixture was heated and stirred at 100",
+      "bbox": [
+        56.6399040222168,
+        478.907958984375,
+        541.5185546875,
+        492.27069091796875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "℃ under a nitrogen atmosphere for 2 h. After cooling to 25 ℃, the reaction mixture was poured into",
+      "bbox": [
+        56.6399040222168,
+        499.5479736328125,
+        541.528564453125,
+        512.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "water (100 mL) and extracted with EtOAc (50 mL × 3). The combined organic layers was washed",
+      "bbox": [
+        56.6399040222168,
+        520.1879272460938,
+        541.5390625,
+        533.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with brine (60 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a",
+      "bbox": [
+        56.6399040222168,
+        541.0679321289062,
+        541.5260620117188,
+        554.4306640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "residue, which was purified by Prep-TLC (SiO2, PE : EA=3: 1) to afford the title compound (150 mg,",
+      "bbox": [
+        56.6399040222168,
+        561.7079467773438,
+        541.533203125,
+        575.0706787109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "38.3% yield) as a yellow oil. LCMS (ESI+): 225.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        581.9032592773438,
+        344.3997497558594,
+        595.6318969726562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3: Preparation of Compound 21-3",
+      "bbox": [
+        56.6399040222168,
+        613.0679321289062,
+        258.6417236328125,
+        626.3519287109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-(2,6-dimethylphenyl)-4-methyl-5-vinylpyrimidine (130 mg, 0.58 mmol) and",
+      "bbox": [
+        56.6399040222168,
+        643.7879638671875,
+        541.5332641601562,
+        657.0719604492188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "NaIO4 (372 mg, 1.74 mmol) in THF (2.5 mL) and H2O (2.5 mL) were added KOsO4 (26.7 mg, 0.058",
+      "bbox": [
+        56.6399040222168,
+        664.427978515625,
+        541.5393676757812,
+        677.7906494140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol) at 0 ℃. Then the mixture was heated and stirred at 25 ℃ for 0.5 h. The reaction mixture was",
+      "bbox": [
+        56.6399040222168,
+        685.3079833984375,
+        541.5189208984375,
+        698.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "poured into ice water (30 mL) and extracted with EtOAc (15 mL × 3), the combined organic layers",
+      "bbox": [
+        56.6399040222168,
+        705.9479370117188,
+        541.5249633789062,
+        719.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "were washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure",
+      "bbox": [
+        56.6399040222168,
+        726.5879516601562,
+        541.5286254882812,
+        739.9506225585938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to give a residue, which was purified by Prep-TLC (SiO2, PE:EA=5: 1) to afford the title compound",
+      "bbox": [
+        56.6399040222168,
+        747.2279663085938,
+        541.5331420898438,
+        760.5906372070312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(123 mg, 93.8% yield) as a yellow oil. LC-MS (ESI+): 227.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        767.6632690429688,
+        394.725830078125,
+        781.3919067382812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 29
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          56,
+          59,
+          228,
+          71
+        ],
+        "pos": [
+          0,
+          40
+        ]
+      },
+      {
+        "index": 1,
+        "class": "picture",
+        "bbox": [
+          57,
+          79,
+          471,
+          131
+        ],
+        "pos": [
+          40,
+          42
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          202,
+          151,
+          396,
+          163
+        ],
+        "pos": [
+          42,
+          84
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          182,
+          259,
+          194
+        ],
+        "pos": [
+          84,
+          129
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          212,
+          542,
+          390
+        ],
+        "pos": [
+          129,
+          988
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          409,
+          259,
+          421
+        ],
+        "pos": [
+          988,
+          1033
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          439,
+          542,
+          596
+        ],
+        "pos": [
+          1033,
+          1785
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          56,
+          615,
+          259,
+          627
+        ],
+        "pos": [
+          1785,
+          1830
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          56,
+          646,
+          542,
+          782
+        ],
+        "pos": [
+          1830,
+          2498
+        ]
+      }
+    ],
+    "text": "# **S1.11. Preparation of ISM061-21** \n\n\n\n**Scheme S11** Preparation of ISM061-21 \n\n# **Step 1: Preparation of Compound 21-1** \n\nTo a solution of 5-bromo-2-chloro-4-methylpyrimidine (1.00 g, 4.82 mmol) in dioxane (10 mL) and water (2 mL) were added LiCl (600 mg, 14.46 mmol) and tributyl(vinyl)stannane (1.50 g, 4.82 mmol) and Pd(pph3)2Cl2 (300 mg, 0.48 mmol) under N2 atmosphere. Then the mixture was heated and stirred at 100 ℃ for 2 h. After cooling to 25 ℃, the mixture was filtered through a Celite pad. The filtrate was poured into ice water (50 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (60 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 18%) in petroleum ether to afford the title compound (291 mg, 39.1 % yield) as a yellow oil. LCMS (ESI<sup>+</sup> ): 155.3 [M+H]<sup>+</sup> . \n\n# **Step 2: Preparation of Compound 21-2** \n\nTo a solution of Compound 21-1 (270 mg, 1.75 mmol), (2,6-dimethylphenyl)boronic acid (265 mg, 1.75 mmol) and Cs2CO3 (1.42 g, 4.37 mmol) in dioxane (10 mL) and Water (2 mL) was added Pd(dppf)Cl2 (128 mg, 0.17 mmol) at 25 ℃. After addition, the mixture was heated and stirred at 100 ℃ under a nitrogen atmosphere for 2 h. After cooling to 25 ℃, the reaction mixture was poured into water (100 mL) and extracted with EtOAc (50 mL × 3). The combined organic layers was washed with brine (60 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, PE : EA=3: 1) to afford the title compound (150 mg, 38.3% yield) as a yellow oil. LCMS (ESI<sup>+</sup> ): 225.3 [M+H]<sup>+</sup> . \n\n# **Step 3: Preparation of Compound 21-3** \n\nTo a solution of 2-(2,6-dimethylphenyl)-4-methyl-5-vinylpyrimidine (130 mg, 0.58 mmol) and NaIO4 (372 mg, 1.74 mmol) in THF (2.5 mL) and H2O (2.5 mL) were added KOsO4 (26.7 mg, 0.058 mmol) at 0 ℃. Then the mixture was heated and stirred at 25 ℃ for 0.5 h. The reaction mixture was poured into ice water (30 mL) and extracted with EtOAc (15 mL × 3), the combined organic layers were washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, PE:EA=5: 1) to afford the title compound (123 mg, 93.8% yield) as a yellow oil. LC-MS (ESI<sup>+</sup> ): 227.3 [M+H]<sup>+</sup> . \n\n"
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "page": 15,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended Data Fig. 2 | Protein-detected NMR experiments. Protein-detected",
+      "bbox": [
+        39.68510055541992,
+        322.4359130859375,
+        286.0171813964844,
+        331.1859130859375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "NMR experiments elucidate the binding mode of Compound 18-2 to KRAS-G12D.",
+      "bbox": [
+        39.68510055541992,
+        332.5509033203125,
+        291.8831787109375,
+        341.18890380859375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(A) Significant chemical shift perturbations (CSPs) and intensity changes due",
+      "bbox": [
+        39.68510055541992,
+        342.44189453125,
+        282.6508483886719,
+        351.19189453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to chemical exchange are observed upon binding to the compound. Residues",
+      "bbox": [
+        39.6781005859375,
+        352.556884765625,
+        282.28131103515625,
+        361.19488525390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "lining the Switch-II pocket that show significant CSPs are highlighted in the inset,",
+      "bbox": [
+        39.6781005859375,
+        362.55987548828125,
+        293.2593688964844,
+        371.1978759765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "including Gly10 (from the P-loop), Phe78 and Gly77 (from the α-2 helix adjacent",
+      "bbox": [
+        39.6781005859375,
+        372.5348815917969,
+        287.8245849609375,
+        381.20086669921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to the Switch-II region), Ser89, and Asp92 (from the β-4 sheet). (B) The CSP values",
+      "bbox": [
+        39.6781005859375,
+        382.453857421875,
+        294.2491455078125,
+        391.203857421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "are mapped onto the G12D structure and displayed in a color gradient. Residues",
+      "bbox": [
+        306.46209716796875,
+        322.56884765625,
+        556.3842163085938,
+        331.20684814453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "that could not be assigned are shown in grey. The majority of significant CSPs are",
+      "bbox": [
+        306.46209716796875,
+        332.57183837890625,
+        559.7169799804688,
+        341.2098388671875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "observed near the Switch-II pocket; however, CSPs are also noted in the α-1 helix,",
+      "bbox": [
+        306.46209716796875,
+        342.5468444824219,
+        558.26611328125,
+        351.21282958984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Switch-I, and α-4 regions, possibly indicating conformational changes upon",
+      "bbox": [
+        306.4620666503906,
+        352.5498352050781,
+        544.4782104492188,
+        361.2158203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "binding to the compound. (C) Zoomed-in region of the protein, highlighting",
+      "bbox": [
+        306.4620666503906,
+        362.46881103515625,
+        545.9053344726562,
+        371.21881103515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "residues from the Switch-II pocket that exhibit CSPs.",
+      "bbox": [
+        306.4620666503906,
+        372.58380126953125,
+        470.3074035644531,
+        381.2218017578125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 15
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          424,
+          65,
+          554,
+          148
+        ],
+        "pos": [
+          71,
+          73
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          105,
+          94,
+          379,
+          317
+        ],
+        "pos": [
+          73,
+          75
+        ]
+      },
+      {
+        "index": 4,
+        "class": "picture",
+        "bbox": [
+          423,
+          163,
+          551,
+          302
+        ],
+        "pos": [
+          75,
+          77
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          39,
+          323,
+          295,
+          391
+        ],
+        "pos": [
+          77,
+          649
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          306,
+          323,
+          560,
+          381
+        ],
+        "pos": [
+          649,
+          1112
+        ]
+      },
+      {
+        "index": 7,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          1112,
+          1135
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n\n\n\n\n\n\n**Extended Data Fig. 2 | Protein-detected NMR experiments.** Protein-detected NMR experiments elucidate the binding mode of Compound 18-2 to KRAS-G12D. ( **A** ) Significant chemical shift perturbations (CSPs) and intensity changes due to chemical exchange are observed upon binding to the compound. Residues lining the Switch-II pocket that show significant CSPs are highlighted in the inset, including Gly10 (from the P-loop), Phe78 and Gly77 (from the _α_ -2 helix adjacent to the Switch-II region), Ser89, and Asp92 (from the _β_ -4 sheet). ( **B** ) The CSP values \n\nare mapped onto the G12D structure and displayed in a color gradient. Residues that could not be assigned are shown in grey. The majority of significant CSPs are observed near the Switch-II pocket; however, CSPs are also noted in the _α_ -1 helix, Switch-I, and _α_ -4 regions, possibly indicating conformational changes upon binding to the compound. ( **C** ) Zoomed-in region of the protein, highlighting residues from the Switch-II pocket that exhibit CSPs. \n\nNature Biotechnology \n\n"
+  }
+}

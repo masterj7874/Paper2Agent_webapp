@@ -1,0 +1,88 @@
+{
+  "page": 30,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0030.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0030.png and cross-checked every item with evidence/page-0030.json and 200-dpi renders. TWO BBOX DEFECTS FIXED. (1) The 1H NMR spectrum (p0030-b002) was cropped at [51,278,450,543] but the measured vector band is [53.5,281.7,470.6,572.6]; the old crop cut off the right-hand intensity axis and the f1 (ppm) axis labels. New bbox [49,277,475,577]; border verified ink-free at 300 dpi. (2) Scheme S8 (p0030-b004) was cropped at [123,634,476,722], which amputated the whole left-hand starting material (2-chloropyrimidin-4-amine); the band is [58.3,639.8,470.1,716.0], so the new bbox is [53,635,475,720] and the full 3-structure scheme including '22-1' and 'ISM061-22' labels is now inside the crop. p0030-b003 was kind 'caption' but is the SI section heading 'S1.9. Preparation of ISM061-22'; changed to a level-4 heading. Text repair in p0030-b001: restored the line-wrap hyphen in '5-methyl-1H-indazol-4-amine' (extractor had '1Hindazol-4-amine'), fixed '(ESI<sup>+</sup> )' / '[M+H]<sup>+</sup> ;' spacing, ';<sup>1</sup> H NMR' -> '; <sup>1</sup>H NMR', and 'DMSO- _d_ 6)' -> 'DMSO-*d*6)'. TWO SOURCE NUMBERING CLASHES PRESERVED AS PRINTED, both must be handled at bundle level: the heading here is printed 'S1.9.' although SI page 24 also prints 'S1.9. Preparation of ISM061-16', and the scheme here is printed 'Scheme S8' although SI page 21 also prints 'Scheme S8 Preparation of ISM061-15'. Because asset names must be unique I named this one 'scheme-s8-ism061-22' rather than 'scheme-s8'. The NMR spectrum has no printed caption; the asset name 'si-nmr-ism061-21' follows from its position directly under the ISM061-21 shift list in section S1.11. No tables on this page. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*. Audited the one line-ending hyphen on this page ('...5-methyl-1H-' / 'indazol-4-amine'), already repaired; all [M+H] brackets and compound identifiers match the source. Italic isotope marker set as 'DMSO-*d*6' to match the form the pages 1-13 reviewer established (pages 6, 7, 10); '_d_6' was rejected because CommonMark underscore emphasis does not close before an alphanumeric, so it would have leaked literal underscores into the output. '_J_' and '_o_' keep their underscore form, which does render, exactly as pages 6/7/10/14/17/20/23 have them. DETACHED-BAND PROOF: after re-measuring, the page was rendered at 200 dpi with every native text line AND every declared figure/omit region masked out; ZERO non-white pixels remain. So no separate vector band was left outside the crop - in particular the right-hand intensity axis and the bottom f1 (ppm) axis with its integration row are inside the figure bbox, not stranded below or beside it.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0030-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        233.0,
+        71.0
+      ],
+      "markdown": "#### Step 4: Preparation of ISM061-21",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0030-b001",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        90.0,
+        542.0,
+        267.0
+      ],
+      "markdown": "To a solution of **compound 21-3** (10 mg, 0.04 mmol) in DCM (1 mL) were added 5-methyl-1H-indazol-4-amine (7.2 mg, 0.05 mmol), Titanium tetraisopropanolate (37 mg, 0.13 mmol). The reaction mixture was stirred at 25 ℃ for 12 h. After the addition of NaBH3CN (5.5 mg, 0.09 mmol), the mixture was further stirred at 25 ℃ for 2 hr. The reaction mixture was filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-HPLC to afford the title compound (1.14 mg, 7.2% yield). LCMS (ESI<sup>+</sup>): 358.3 [M+H]<sup>+</sup>; <sup>1</sup>H NMR (400 MHz, DMSO-*d*6) δ 12.64 (s, 1H), 8.60 (s, 1H), 7.86 (s, 1H), 7.27 – 7.17 (m, 1H), 7.13 – 7.08 (m, 2H), 7.05 (d, _J_ = 8.3 Hz, 1H), 6.74 (d, _J_ = 8.2 Hz, 1H), 5.65 (t, _J_ = 6.3 Hz, 1H), 4.85 (d, _J_ = 6.1 Hz, 2H), 2.61 (s, 3H), 2.26 (s, 3H), 1.95 (s, 6H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0030-b002",
+      "kind": "figure",
+      "bbox": [
+        49.0,
+        277.0,
+        475.0,
+        577.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-21",
+      "asset_name": "si-nmr-ism061-21"
+    },
+    {
+      "id": "p0030-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        619.0,
+        222.0,
+        631.0
+      ],
+      "markdown": "### S1.9. Preparation of ISM061-22",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0030-b004",
+      "kind": "figure",
+      "bbox": [
+        53.0,
+        635.0,
+        475.0,
+        720.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S8",
+      "asset_name": "scheme-s8-ism061-22"
+    },
+    {
+      "id": "p0030-b005",
+      "kind": "caption",
+      "bbox": [
+        205.0,
+        738.0,
+        393.0,
+        749.0
+      ],
+      "markdown": "**Scheme S8** Preparation of ISM061-22",
+      "source_class": "caption"
+    }
+  ]
+}

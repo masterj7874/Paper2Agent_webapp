@@ -1,0 +1,632 @@
+{
+  "page": 14,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended Data Fig. 1 | Comparative Benchmarking of Quantum and Classical",
+      "bbox": [
+        39.685001373291016,
+        410.4330139160156,
+        288.39227294921875,
+        419.0290222167969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Ligand Design Methods. (A, B) Comparative analysis of our hybrid approaches",
+      "bbox": [
+        39.685001373291016,
+        420.4360046386719,
+        288.8290100097656,
+        429.1860046386719
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with varied priors. The performance of the Quantum Circuit Born Machine",
+      "bbox": [
+        39.678001403808594,
+        430.5509948730469,
+        273.7929992675781,
+        439.1889953613281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(QCBM) was assessed using both a quantum simulator (Sim) and a hardware",
+      "bbox": [
+        39.678001403808594,
+        440.5539855957031,
+        277.8354187011719,
+        449.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "backend (HW), and contrasted with a Multi-bases QCBM (MQCBM) operating",
+      "bbox": [
+        39.678001403808594,
+        450.5569763183594,
+        282.1117858886719,
+        459.1949768066406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solely on a quantum simulator (Sim), as well as an LSTM model devoid of",
+      "bbox": [
+        39.678001403808594,
+        460.5599670410156,
+        266.2434997558594,
+        469.1979675292969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum priors (representing a fully classical architecture). We calculated",
+      "bbox": [
+        39.678001403808594,
+        470.5629577636719,
+        273.0972595214844,
+        479.2009582519531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the number of generated molecules that met a series of synthesizability and",
+      "bbox": [
+        39.678001403808594,
+        480.5659484863281,
+        277.4931945800781,
+        489.2039489746094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "stability criteria as stipulated by the Tartarus benchmarking platform (referred",
+      "bbox": [
+        39.678001403808594,
+        490.5689392089844,
+        288.0631408691406,
+        499.2069396972656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to as Local Filters)26 and by Chemistry42 (referred to as Chemistry42 Filters). To",
+      "bbox": [
+        39.678001403808594,
+        500.2580261230469,
+        288.74554443359375,
+        509.2099304199219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generate Figure A, we repeated the experiments five times, sampling n=1,000",
+      "bbox": [
+        39.68340301513672,
+        510.4360046386719,
+        283.40948486328125,
+        519.18603515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compounds in each repetition and applying the filter. The reported values",
+      "bbox": [
+        39.68339920043945,
+        520.551025390625,
+        272.33538818359375,
+        529.1890258789062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "represent the mean for each data point, with error bars indicating the standard",
+      "bbox": [
+        39.68339920043945,
+        530.5540161132812,
+        286.78692626953125,
+        539.1920166015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "deviation across the repetitions (Mean ± Std.). more detailed is reported in",
+      "bbox": [
+        39.68339920043945,
+        540.5570068359375,
+        273.53448486328125,
+        549.1950073242188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Supplementary Information Table S3.2. (C) Success rate of generating molecules",
+      "bbox": [
+        39.68339920043945,
+        550.4480590820312,
+        293.2583923339844,
+        559.1980590820312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "that meet Tartarus’s filter criteria as a function of the number of qubits used in",
+      "bbox": [
+        39.68339538574219,
+        560.5630493164062,
+        284.67919921875,
+        569.2010498046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "modeling priors for the QCBM. We Comparative Benchmarking of Quantum",
+      "bbox": [
+        39.68339538574219,
+        570.5660400390625,
+        278.7144775390625,
+        579.2040405273438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and Classical Ligand Design Methods. (A, B) Comparative analysis of our hybrid",
+      "bbox": [
+        39.68339538574219,
+        580.4570922851562,
+        289.1604919433594,
+        589.2070922851562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "approaches with varied priors. The performance of the Quantum Circuit Born",
+      "bbox": [
+        306.4674072265625,
+        410.5670471191406,
+        550.510986328125,
+        419.2050476074219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Machine (QCBM) was assessed using both a quantum simulator (Sim) and a",
+      "bbox": [
+        306.4674072265625,
+        420.5700378417969,
+        541.9375,
+        429.2080383300781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "hardware backend (HW), and contrasted with a Multi-bases QCBM (MQCBM)",
+      "bbox": [
+        306.4674072265625,
+        430.5730285644531,
+        547.5326538085938,
+        439.2110290527344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "operating solely on a quantum simulator (Sim), as well as an LSTM model devoid",
+      "bbox": [
+        306.4674072265625,
+        440.5760192871094,
+        557.8898315429688,
+        449.2140197753906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of quantum priors (representing a fully classical architecture). We calculated the",
+      "bbox": [
+        306.4674072265625,
+        450.5790100097656,
+        559.205810546875,
+        459.2170104980469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "number of generated molecules that met a series of synthesizability and stability",
+      "bbox": [
+        306.4674072265625,
+        460.5820007324219,
+        559.6634521484375,
+        469.2200012207031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "criteria as stipulated by the Tartarus benchmarking platform (referred to as Local",
+      "bbox": [
+        306.4674072265625,
+        470.5849914550781,
+        561.7138061523438,
+        479.2229919433594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Filters)26 and by Chemistry42 (referred to as Chemistry42 Filters). To generate",
+      "bbox": [
+        306.4674072265625,
+        480.2580261230469,
+        550.982666015625,
+        489.2259826660156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Figure A, we repeated the experiments five times, sampling n=1,000 compounds",
+      "bbox": [
+        306.4735107421875,
+        490.4360046386719,
+        560.34375,
+        499.1860046386719
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in each repetition and applying the filter. The reported values represent the",
+      "bbox": [
+        306.46649169921875,
+        500.5509948730469,
+        543.2384643554688,
+        509.1889953613281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mean for each data point, with error bars indicating the standard deviation",
+      "bbox": [
+        306.46649169921875,
+        510.5539855957031,
+        541.3245849609375,
+        519.1920166015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "across the repetitions (Mean ± Std.). more detailed is reported in Supplementary",
+      "bbox": [
+        306.46649169921875,
+        520.5570068359375,
+        559.5814819335938,
+        529.1950073242188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Information Table S3.2. (C) Success rate of generating molecules that meet",
+      "bbox": [
+        306.46649169921875,
+        530.447998046875,
+        541.0433349609375,
+        539.197998046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Tartarus’s filter criteria as a function of the number of qubits used in modeling",
+      "bbox": [
+        306.46649169921875,
+        540.56298828125,
+        551.6376953125,
+        549.2009887695312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "priors for the QCBM. We repeated the experiments five times, sampling n=5,000",
+      "bbox": [
+        306.46649169921875,
+        550.5660400390625,
+        559.3076171875,
+        559.2040405273438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compounds in each repetition and applying the filter. The reported values",
+      "bbox": [
+        306.46649169921875,
+        560.5690307617188,
+        539.118408203125,
+        569.20703125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "represent the mean for each data point, with error bars indicating the standard",
+      "bbox": [
+        306.46649169921875,
+        570.572021484375,
+        553.5697631835938,
+        579.2100219726562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "deviation across the repetitions.",
+      "bbox": [
+        306.46649169921875,
+        580.5750732421875,
+        408.0658874511719,
+        589.2130737304688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 14
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          40,
+          48,
+          212,
+          67
+        ],
+        "pos": [
+          71,
+          73
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          75,
+          69,
+          560,
+          407
+        ],
+        "pos": [
+          73,
+          75
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          39,
+          411,
+          294,
+          589
+        ],
+        "pos": [
+          75,
+          1494
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          306,
+          411,
+          562,
+          589
+        ],
+        "pos": [
+          1494,
+          2876
+        ]
+      },
+      {
+        "index": 6,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          2876,
+          2899
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n\n\n\n\n**Extended Data Fig. 1 | Comparative Benchmarking of Quantum and Classical Ligand Design Methods.** ( **A** , **B** ) Comparative analysis of our hybrid approaches with varied priors. The performance of the Quantum Circuit Born Machine (QCBM) was assessed using both a quantum simulator (Sim) and a hardware backend (HW), and contrasted with a Multi-bases QCBM (MQCBM) operating solely on a quantum simulator (Sim), as well as an LSTM model devoid of quantum priors (representing a fully classical architecture). We calculated the number of generated molecules that met a series of synthesizability and stability criteria as stipulated by the Tartarus benchmarking platform (referred to as Local Filters)<sup>26</sup> and by Chemistry42 (referred to as Chemistry42 Filters). To generate Figure **A** , we repeated the experiments five times, sampling n=1,000 compounds in each repetition and applying the filter. The reported values represent the mean for each data point, with error bars indicating the standard deviation across the repetitions (Mean ± Std.). more detailed is reported in Supplementary Information Table S3.2. ( **C** ) Success rate of generating molecules that meet Tartarus’s filter criteria as a function of the number of qubits used in modeling priors for the QCBM. We Comparative Benchmarking of Quantum and Classical Ligand Design Methods. ( **A** , **B** ) Comparative analysis of our hybrid \n\napproaches with varied priors. The performance of the Quantum Circuit Born Machine (QCBM) was assessed using both a quantum simulator (Sim) and a hardware backend (HW), and contrasted with a Multi-bases QCBM (MQCBM) operating solely on a quantum simulator (Sim), as well as an LSTM model devoid of quantum priors (representing a fully classical architecture). We calculated the number of generated molecules that met a series of synthesizability and stability criteria as stipulated by the Tartarus benchmarking platform (referred to as Local Filters)<sup>26</sup> and by Chemistry42 (referred to as Chemistry42 Filters). To generate Figure **A** , we repeated the experiments five times, sampling n=1,000 compounds in each repetition and applying the filter. The reported values represent the mean for each data point, with error bars indicating the standard deviation across the repetitions (Mean ± Std.). more detailed is reported in Supplementary Information Table S3.2. ( **C** ) Success rate of generating molecules that meet Tartarus’s filter criteria as a function of the number of qubits used in modeling priors for the QCBM. We repeated the experiments five times, sampling n=5,000 compounds in each repetition and applying the filter. The reported values represent the mean for each data point, with error bars indicating the standard deviation across the repetitions. \n\nNature Biotechnology \n\n"
+  }
+}

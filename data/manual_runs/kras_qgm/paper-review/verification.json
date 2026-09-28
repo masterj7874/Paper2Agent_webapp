@@ -1,0 +1,246 @@
+{
+  "status": "reviewed_with_limitations",
+  "mechanical_ok": true,
+  "all_sources_agent_reviewed": true,
+  "issues": [],
+  "documents": {
+    "s001-03": {
+      "status": "reviewed_with_limitations",
+      "mechanical_ok": true,
+      "all_pages_agent_reviewed": true,
+      "applied_adjudications": 3,
+      "stale_adjudications": 0
+    },
+    "s002-si-v0": {
+      "status": "reviewed_with_limitations",
+      "mechanical_ok": true,
+      "all_pages_agent_reviewed": true,
+      "applied_adjudications": 7,
+      "stale_adjudications": 0
+    }
+  },
+  "artifact_checks": [
+    {
+      "file": "assets/figure/figure-1.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/figure-2.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-1.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-2.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-3.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-4.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-5.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-6.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-7.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-8.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-9.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-10.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-11.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-12.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-13.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-14.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/formula-15.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/extended-data-figure-1.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/extended-data-figure-2.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/extended-data-figure-3.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/extended-data-figure-4.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/extended-data-figure-5.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/reporting-summary-page-1.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/reporting-summary-page-2.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/figure/reporting-summary-page-3.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s1.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-1.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s2.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-3-2.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s3.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-6.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s4.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-11.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s5.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-12.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s6.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-13.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s7.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-14.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s8-ism061-15.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-15.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s9.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-16.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s10.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-18-and-ism061-18-2.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s11.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-21.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s8-ism061-22.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-22.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s12.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-24.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/scheme-s13.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/si-nmr-ism061-24-2.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/figure-s1.jpg",
+      "matches_source_conversion": true
+    },
+    {
+      "file": "assets/supp_figs/figure-s2.jpg",
+      "matches_source_conversion": true
+    }
+  ],
+  "workbook_checks": [],
+  "scope": "Compact template and file integrity; reviewed PDF text/crops checked in external evidence. JPEGs checked against deterministic source conversion, not lossless pixels. Review flags and normalized coverage do not certify scientific accuracy."
+}

@@ -1,0 +1,79 @@
+{
+  "id": "369cffcc9748",
+  "filename": "서영상_모델페이퍼03.pdf",
+  "title": "서영상_모델페이퍼03.pdf",
+  "status": "needs_input",
+  "stage": "analyze",
+  "created_at": 1790125084.3540335,
+  "updated_at": 1790125088.76076,
+  "attempt": 1,
+  "repository_url": null,
+  "goal": "",
+  "agent_name": null,
+  "agent_kind": null,
+  "analysis": null,
+  "error": "Claude 작업이 완료되지 않았습니다. 로그인·사용량·자동 실행 권한을 확인한 뒤 재시도해 주세요.",
+  "events": [
+    {
+      "at": 1790125084.3540473,
+      "message": "논문 업로드 완료 · 자동 생성을 기다리고 있습니다."
+    },
+    {
+      "at": 1790125084.3542614,
+      "message": "PDF에서 본문과 코드 저장소 링크를 추출하고 있습니다."
+    },
+    {
+      "at": 1790125084.7695463,
+      "message": "21쪽 · 121,650자 추출 완료"
+    },
+    {
+      "at": 1790125084.7698162,
+      "message": "연구 목적, 방법, 근거를 분석하고 논문의 코드 저장소를 확인합니다."
+    },
+    {
+      "at": 1790125088.7607586,
+      "message": "Claude 작업이 완료되지 않았습니다. 로그인·사용량·자동 실행 권한을 확인한 뒤 재시도해 주세요."
+    }
+  ],
+  "stages": [
+    {
+      "id": "extract",
+      "label": "논문 읽기",
+      "status": "done",
+      "detail": "21쪽 · 121,650자 추출 완료",
+      "started_at": 1790125084.3542607,
+      "finished_at": 1790125084.7695444
+    },
+    {
+      "id": "analyze",
+      "label": "내용 분석",
+      "status": "failed",
+      "detail": "Claude 작업이 완료되지 않았습니다. 로그인·사용량·자동 실행 권한을 확인한 뒤 재시도해 주세요.",
+      "started_at": 1790125084.7698154
+    },
+    {
+      "id": "build",
+      "label": "에이전트 생성",
+      "status": "pending",
+      "detail": ""
+    },
+    {
+      "id": "verify",
+      "label": "실행 검증",
+      "status": "pending",
+      "detail": ""
+    },
+    {
+      "id": "register",
+      "label": "자동 등록",
+      "status": "pending",
+      "detail": ""
+    }
+  ],
+  "artifacts": [],
+  "page_count": 21,
+  "source_sha256": "789d953cb9a224d1164131577cacb527072e9ed1723d83a53405b4b4fd9bd73e",
+  "repository_candidates": [
+    "https://github.com/aspuru-guzik-group/stoned-selfies"
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "page": 29,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0029.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0029.png and checked all nine items against evidence/page-0029.json. Reading order was already correct. p0029-b002 ('**Scheme S11** Preparation of ISM061-21') was kind 'text'; changed to 'caption' and it sits immediately after its scheme. Scheme S11 figure: bbox widened from [52,74,476,136] to [53,75,475,135] to match the measured vector band [57.9,79.1,470.3,130.4]; placeholder asset name 'figure-p0029-001' replaced with 'scheme-s11' and label 'Scheme S11'. Crop border verified ink-free at 300 dpi, so the '21-1 / 21-2 / 21-3 / ISM061-21' structure labels and all reagent captions are inside the image. Section heading set to level 3, Step headings to level 4. Text repairs: '(ESI<sup>+</sup> )' and '[M+H]<sup>+</sup> .' spacing on all three procedures. Checked the reagent formulas Pd(pph3)2Cl2, Cs2CO3, NaIO4, KOsO4, Na2SO4 and the '0.058 mmol' / '93.8% yield' figures against the render; 'LC-MS' in Step 3 (hyphenated, unlike 'LCMS' elsewhere) is as printed and was left alone. No tables on this page. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0029-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        228.0,
+        71.0
+      ],
+      "markdown": "### S1.11. Preparation of ISM061-21",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0029-b001",
+      "kind": "figure",
+      "bbox": [
+        53.0,
+        75.0,
+        475.0,
+        135.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S11",
+      "asset_name": "scheme-s11"
+    },
+    {
+      "id": "p0029-b002",
+      "kind": "caption",
+      "bbox": [
+        202.0,
+        151.0,
+        396.0,
+        163.0
+      ],
+      "markdown": "**Scheme S11** Preparation of ISM061-21",
+      "source_class": "text"
+    },
+    {
+      "id": "p0029-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        182.0,
+        259.0,
+        194.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 21-1",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0029-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        212.0,
+        542.0,
+        390.0
+      ],
+      "markdown": "To a solution of 5-bromo-2-chloro-4-methylpyrimidine (1.00 g, 4.82 mmol) in dioxane (10 mL) and water (2 mL) were added LiCl (600 mg, 14.46 mmol) and tributyl(vinyl)stannane (1.50 g, 4.82 mmol) and Pd(pph3)2Cl2 (300 mg, 0.48 mmol) under N2 atmosphere. Then the mixture was heated and stirred at 100 ℃ for 2 h. After cooling to 25 ℃, the mixture was filtered through a Celite pad. The filtrate was poured into ice water (50 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (60 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 18%) in petroleum ether to afford the title compound (291 mg, 39.1 % yield) as a yellow oil. LCMS (ESI<sup>+</sup>): 155.3 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0029-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        409.0,
+        259.0,
+        421.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 21-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0029-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        439.0,
+        542.0,
+        596.0
+      ],
+      "markdown": "To a solution of Compound 21-1 (270 mg, 1.75 mmol), (2,6-dimethylphenyl)boronic acid (265 mg, 1.75 mmol) and Cs2CO3 (1.42 g, 4.37 mmol) in dioxane (10 mL) and Water (2 mL) was added Pd(dppf)Cl2 (128 mg, 0.17 mmol) at 25 ℃. After addition, the mixture was heated and stirred at 100 ℃ under a nitrogen atmosphere for 2 h. After cooling to 25 ℃, the reaction mixture was poured into water (100 mL) and extracted with EtOAc (50 mL × 3). The combined organic layers was washed with brine (60 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, PE : EA=3: 1) to afford the title compound (150 mg, 38.3% yield) as a yellow oil. LCMS (ESI<sup>+</sup>): 225.3 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0029-b007",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        615.0,
+        259.0,
+        627.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 21-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0029-b008",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        646.0,
+        542.0,
+        782.0
+      ],
+      "markdown": "To a solution of 2-(2,6-dimethylphenyl)-4-methyl-5-vinylpyrimidine (130 mg, 0.58 mmol) and NaIO4 (372 mg, 1.74 mmol) in THF (2.5 mL) and H2O (2.5 mL) were added KOsO4 (26.7 mg, 0.058 mmol) at 0 ℃. Then the mixture was heated and stirred at 25 ℃ for 0.5 h. The reaction mixture was poured into ice water (30 mL) and extracted with EtOAc (15 mL × 3), the combined organic layers were washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, PE:EA=5: 1) to afford the title compound (123 mg, 93.8% yield) as a yellow oil. LC-MS (ESI<sup>+</sup>): 227.3 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    }
+  ]
+}

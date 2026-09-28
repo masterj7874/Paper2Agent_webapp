@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "sources": [
+    {
+      "id": "s001-03",
+      "filename": "서영상_모델페이퍼03.pdf",
+      "original_path": "/home/jerisuh/Downloads/서영상_모델페이퍼03.pdf",
+      "snapshot": "originals/s001-03.pdf",
+      "sha256": "789d953cb9a224d1164131577cacb527072e9ed1723d83a53405b4b4fd9bd73e",
+      "kind": "pdf",
+      "artifacts": [],
+      "warnings": []
+    },
+    {
+      "id": "s002-si-v0",
+      "filename": "SI_v0.pdf",
+      "original_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/repo/docs/si/SI_v0.pdf",
+      "snapshot": "originals/s002-si-v0.pdf",
+      "sha256": "af5d72df4d40d25067ea6345e9ea3162459875912967c7c6e080bde05a4f00bc",
+      "kind": "pdf",
+      "artifacts": [],
+      "warnings": []
+    }
+  ]
+}

@@ -1,0 +1,1923 @@
+{
+  "page": 3,
+  "lines": [
+    {
+      "text": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        277.029052734375,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1956",
+      "bbox": [
+        543.0130004882812,
+        760.4367065429688,
+        562.0530395507812,
+        771.5487060546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which is known for its intricate complexity and historical resistance",
+      "bbox": [
+        39.685001373291016,
+        47.59562683105469,
+        296.2682800292969,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to drug discovery efforts21,22. As illustrated in Fig. 1, our workflow was",
+      "bbox": [
+        39.685001373291016,
+        58.00740051269531,
+        296.236083984375,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "structured into three pivotal stages. The first stage was the genera-",
+      "bbox": [
+        39.685001373291016,
+        69.09562683105469,
+        294.77496337890625,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion of training data, beginning with creating a dataset comprising",
+      "bbox": [
+        39.685001373291016,
+        79.84562683105469,
+        296.2550354003906,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "approxi­mately 650 known KRAS inhibitors from the literature. To",
+      "bbox": [
+        39.685001373291016,
+        90.59562683105469,
+        296.2900695800781,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "enhance this dataset, we used VirtualFlow 2.0 to screen 100 million",
+      "bbox": [
+        39.685001373291016,
+        101.34562683105469,
+        296.2434387207031,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules from the Enamine REAL library, selecting the top 250,000",
+      "bbox": [
+        39.685001373291016,
+        112.09562683105469,
+        296.1247253417969,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with the best docking scores23. Additionally, we used the STONED",
+      "bbox": [
+        39.685001373291016,
+        122.50740051269531,
+        296.2714538574219,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(superfast traversal, optimization, novelty, exploration and discovery)",
+      "bbox": [
+        39.685001373291016,
+        133.5956268310547,
+        296.23419189453125,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "algorithm on the SELFIES (self-referencing embedded strings) mole­",
+      "bbox": [
+        39.685001373291016,
+        144.3456268310547,
+        294.931640625,
+        154.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cular representation of known inhibitors, generating structurally",
+      "bbox": [
+        39.685001373291016,
+        155.0956268310547,
+        296.3428955078125,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "similar compounds. After applying synthesizability filtering, this",
+      "bbox": [
+        39.685001373291016,
+        165.8456268310547,
+        296.2579040527344,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "process added 850,000 molecules to our training set24. Furthermore,",
+      "bbox": [
+        39.685001373291016,
+        176.2574005126953,
+        296.2053527832031,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "we used Chemistry42 to validate the molecules generated in this",
+      "bbox": [
+        39.685001373291016,
+        187.3457489013672,
+        296.22393798828125,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "workflow25. We merged data from various sources to compile a single",
+      "bbox": [
+        39.685001373291016,
+        197.7574005126953,
+        296.3258056640625,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dataset containing 1.1 million data points, all used for training our gen-",
+      "bbox": [
+        39.685001373291016,
+        208.8457489013672,
+        294.8030700683594,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "erative model. The next stage was the generation of new molecules,",
+      "bbox": [
+        39.685001373291016,
+        219.5957489013672,
+        296.2848205566406,
+        229.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which combined (1) the QCBM16 using a 16-qubit processor to generate",
+      "bbox": [
+        39.685001373291016,
+        230.0074005126953,
+        296.1995544433594,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a prior distribution; (2) a long short-term memory (LSTM) network as",
+      "bbox": [
+        39.685001373291016,
+        241.0957489013672,
+        296.355224609375,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the classical model; and (3) Chemistry42 for validation (Fig. 1). The",
+      "bbox": [
+        39.685001373291016,
+        251.8457489013672,
+        296.2538757324219,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum component, depicted in Extended Data Fig. 3c, was a QCBM",
+      "bbox": [
+        39.685001373291016,
+        262.5957336425781,
+        296.3006591796875,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "that generated samples from quantum hardware in every training",
+      "bbox": [
+        39.685001373291016,
+        273.3456115722656,
+        296.1469421386719,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "epoch and was trained with a reward value, P(x) = softmax(R(x)) cal-",
+      "bbox": [
+        39.685001373291016,
+        284.0626220703125,
+        294.8079528808594,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "culated using Chemistry42 or a local filter. We note that, in practice,",
+      "bbox": [
+        39.685028076171875,
+        294.8453674316406,
+        296.2929382324219,
+        305.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the reward function can be tailored to a user’s specific criteria, includ-",
+      "bbox": [
+        39.685001373291016,
+        305.5956115722656,
+        294.93231201171875,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ing accounting for off-target effects by evaluating multiple docking",
+      "bbox": [
+        39.685001373291016,
+        316.3456115722656,
+        296.2864074707031,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "scenarios. This recurrent sampling, training and validation process",
+      "bbox": [
+        39.685001373291016,
+        327.0953674316406,
+        296.2691345214844,
+        337.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "formed a cycle that continuously improved the generated molecular",
+      "bbox": [
+        39.685001373291016,
+        337.8456115722656,
+        296.0765075683594,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "structures targeting the KRAS protein. The final step was experi-",
+      "bbox": [
+        39.685001373291016,
+        348.5956115722656,
+        294.8031921386719,
+        358.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mental validation. From our trained models, we sampled 1 million",
+      "bbox": [
+        39.685001373291016,
+        359.3456115722656,
+        296.29693603515625,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compounds using three different models (selection workflow in",
+      "bbox": [
+        39.685001373291016,
+        370.0956115722656,
+        296.1725158691406,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Fig. 1). We used Chemistry42 to screen these samples for pharmaco-",
+      "bbox": [
+        39.685001373291016,
+        380.8456115722656,
+        294.79974365234375,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "logical viability and ranked them on the basis of their docking scores",
+      "bbox": [
+        39.685001373291016,
+        391.5956115722656,
+        296.3298645019531,
+        401.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(protein–ligand interaction (PLI) score). The top 15 candidates were",
+      "bbox": [
+        39.685001373291016,
+        402.3456115722656,
+        296.2518005371094,
+        412.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "synthesized and tested using surface plasmon resonance (SPR) and",
+      "bbox": [
+        39.685001373291016,
+        413.0953674316406,
+        296.2848205566406,
+        423.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cell-based assays. This study highlights the promising intersection",
+      "bbox": [
+        39.685001373291016,
+        423.8456115722656,
+        296.2809143066406,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of quantum computing and drug discovery, marking a quantum",
+      "bbox": [
+        39.685001373291016,
+        434.5956115722656,
+        296.18096923828125,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "computer’s first experimental hit.",
+      "bbox": [
+        39.685001373291016,
+        445.3456115722656,
+        167.98898315429688,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Before initiating our campaign to design additional KRAS inhibi-",
+      "bbox": [
+        56.696502685546875,
+        456.0953674316406,
+        294.80877685546875,
+        466.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tors, we aimed to compare our hybrid quantum–classical approach to",
+      "bbox": [
+        39.685001373291016,
+        466.8456115722656,
+        296.3182373046875,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "established classical algorithms. We benchmarked our model, targeting",
+      "bbox": [
+        39.685001373291016,
+        477.5956115722656,
+        296.03759765625,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "three different proteins, against the state of the art using the Tartarus",
+      "bbox": [
+        39.685001373291016,
+        488.3456115722656,
+        296.2929382324219,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "benchmarking suite for drug discovery26. The results indicate that,",
+      "bbox": [
+        39.685001373291016,
+        498.7574157714844,
+        296.28826904296875,
+        509.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "while few classical models achieved high success rates and docking",
+      "bbox": [
+        39.685001373291016,
+        509.8456115722656,
+        296.3956298828125,
+        520.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "scores, QCBM–LSTM excelled by generating numerous high-quality",
+      "bbox": [
+        39.685001373291016,
+        520.5956420898438,
+        296.3543395996094,
+        530.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "samples. It achieved a high success rate and a docking score comparable",
+      "bbox": [
+        39.685001373291016,
+        531.3456420898438,
+        296.302978515625,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to the best, as demonstrated in Supplementary Table 1. As illustrated",
+      "bbox": [
+        39.685001373291016,
+        542.0956420898438,
+        296.2764892578125,
+        552.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in Extended Data Fig. 1a and Supplementary Table 2, we evaluated the",
+      "bbox": [
+        39.685001373291016,
+        552.8453979492188,
+        296.2187805175781,
+        563.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "impact of incorporating a quantum prior (QCBM/multibase (M)QCBM–",
+      "bbox": [
+        39.685001373291016,
+        563.5956420898438,
+        294.8824462890625,
+        573.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LSTM) versus a fully classical model (vanilla LSTM). We observed that",
+      "bbox": [
+        39.685001373291016,
+        574.3456420898438,
+        296.2584228515625,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a quantum prior enhanced the success rate, as measured by the pro-",
+      "bbox": [
+        39.685001373291016,
+        585.0956420898438,
+        294.8031005859375,
+        595.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "portion of molecules meeting the criteria set by the same filters. Our",
+      "bbox": [
+        39.685001373291016,
+        595.8456420898438,
+        296.2673034667969,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "observations revealed that the use of QCBM–LSTM (Supplementary",
+      "bbox": [
+        39.685001373291016,
+        606.5956420898438,
+        296.29278564453125,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Table 1) offered a 21.5% improvement in passing filters that assessed",
+      "bbox": [
+        39.685001373291016,
+        617.3456420898438,
+        296.1564636230469,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the synthesizability and stability of the generated molecules, indicat-",
+      "bbox": [
+        39.685001373291016,
+        628.0956420898438,
+        294.8079833984375,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ing a higher quality of generated structures. Additionally, we analyzed",
+      "bbox": [
+        39.685001373291016,
+        638.8456420898438,
+        296.1479187011719,
+        649.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "how the size of the prior (number of qubits) affected sample quality.",
+      "bbox": [
+        39.685001373291016,
+        649.5956420898438,
+        296.2608337402344,
+        659.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "We found that more qubits improved the success rates for molecule",
+      "bbox": [
+        39.685001373291016,
+        660.3456420898438,
+        296.2213134765625,
+        670.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generation, suggesting that larger quantum models could enhance",
+      "bbox": [
+        39.685001373291016,
+        671.0956420898438,
+        296.1494445800781,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecular design. Our findings suggest that the success rate correlates",
+      "bbox": [
+        39.685001373291016,
+        681.8456420898438,
+        296.14129638671875,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "approximately linearly with the number of qubits, as illustrated in",
+      "bbox": [
+        39.685001373291016,
+        692.5956420898438,
+        296.3036193847656,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended Data Fig. 1c.",
+      "bbox": [
+        39.685001373291016,
+        703.3456420898438,
+        120.75363159179688,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "We believe that the improvement in our hybrid classical–quantum",
+      "bbox": [
+        56.692901611328125,
+        714.0956420898438,
+        296.2445373535156,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "approach stemmed from the quantum effects, such as superposi-",
+      "bbox": [
+        39.685001373291016,
+        724.8456420898438,
+        294.8031311035156,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion and entanglement, which allow QCBMs to explore and represent",
+      "bbox": [
+        39.685001373291016,
+        735.5956420898438,
+        296.2361145019531,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "complex, high-dimensional probability distributions more efficiently",
+      "bbox": [
+        306.1416931152344,
+        47.59562683105469,
+        562.8369140625,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "than classical models27. Entanglement enables the creation of correla-",
+      "bbox": [
+        306.1416931152344,
+        58.00740051269531,
+        561.2598266601562,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tions between qubits, capturing intricate dependencies within the prior",
+      "bbox": [
+        306.1416931152344,
+        69.09562683105469,
+        562.7620849609375,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "distribution. This capability is particularly advantageous in generative",
+      "bbox": [
+        306.1416931152344,
+        79.84562683105469,
+        562.6100463867188,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "models, as it allows for a more accurate representation of the underly-",
+      "bbox": [
+        306.1416931152344,
+        90.59562683105469,
+        561.259765625,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ing distributions in complex datasets, leading to the improved genera-",
+      "bbox": [
+        306.1416931152344,
+        101.34562683105469,
+        561.2598266601562,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion of molecular structures. Additionally, these quantum properties",
+      "bbox": [
+        306.1416931152344,
+        112.09562683105469,
+        562.715087890625,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "help to escape barren plateaus more effectively during optimization—a",
+      "bbox": [
+        306.1416931152344,
+        122.84562683105469,
+        562.7960815429688,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "common challenge in machine learning models17. Consequently, this",
+      "bbox": [
+        306.1416931152344,
+        133.2574005126953,
+        562.7113037109375,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "resulted in a more comprehensive exploration of the solution space,",
+      "bbox": [
+        306.1446533203125,
+        144.3453826904297,
+        562.703857421875,
+        154.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "potentially uncovering molecular structures that our naive LSTM could",
+      "bbox": [
+        306.1416931152344,
+        155.0956268310547,
+        562.6241455078125,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "not generate within the same time frame.",
+      "bbox": [
+        306.1416931152344,
+        165.8456268310547,
+        458.4029235839844,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Furthermore, our KRAS inhibitor campaign validated com-",
+      "bbox": [
+        323.14959716796875,
+        176.5955047607422,
+        561.2598266601562,
+        186.7760009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "pounds derived from both the hybrid quantum–classical and vanilla",
+      "bbox": [
+        306.1416931152344,
+        187.3455047607422,
+        562.67529296875,
+        197.5260009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "approaches using the Chemistry42 platform’s structure-based drug",
+      "bbox": [
+        306.1416931152344,
+        198.0955047607422,
+        562.7982788085938,
+        208.2760009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "design workflow. Within our study, 15 compounds were selected after",
+      "bbox": [
+        306.1416931152344,
+        208.8455047607422,
+        562.7470703125,
+        219.0260009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "filtering generated compounds (Fig. 1) using Chemistry42 and synthe-",
+      "bbox": [
+        306.1416931152344,
+        219.5955047607422,
+        561.2598876953125,
+        229.7760009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sized for experimental analysis. The two compounds demonstrating",
+      "bbox": [
+        306.1416931152344,
+        230.3455047607422,
+        562.7083740234375,
+        240.5260009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the greatest promise, ISM061-018-2 and ISM061-022, were character-",
+      "bbox": [
+        306.1416931152344,
+        241.0952606201172,
+        561.2811279296875,
+        251.2757568359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ized (structures in Fig. 2a,e, respectively). Their assessment involved",
+      "bbox": [
+        306.1416931152344,
+        251.8450164794922,
+        562.7249755859375,
+        262.0255126953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a two-stage process; the SPR determined their binding affinities and",
+      "bbox": [
+        306.1416931152344,
+        262.5954895019531,
+        562.5687255859375,
+        272.7760009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cell-based assays were subsequently used to gauge biological efficacy.",
+      "bbox": [
+        306.1416931152344,
+        273.3456115722656,
+        562.7646484375,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The compound ISM061-018-2, engineered through our hybrid quantum",
+      "bbox": [
+        306.1416931152344,
+        284.0956115722656,
+        562.7297973632812,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "model (Fig. 2b and Supplementary Table 6), demonstrated substantial",
+      "bbox": [
+        306.1416931152344,
+        294.8456115722656,
+        562.7026977539062,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "binding affinity to KRAS-G12D, registered at 1.4 μM. To delve deeper",
+      "bbox": [
+        306.1416931152344,
+        305.5956115722656,
+        562.7363891601562,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "into this molecule’s effectiveness across a spectrum of KRAS mutants,",
+      "bbox": [
+        306.1416931152344,
+        316.3456115722656,
+        562.8151245117188,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "we commenced an extensive series of tests using a cell-based assay.",
+      "bbox": [
+        306.1416931152344,
+        327.0956115722656,
+        562.7134399414062,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Specifically, we evaluated the molecule’s performance in a biological",
+      "bbox": [
+        306.1416931152344,
+        337.8456115722656,
+        562.7333984375,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "context using a commercial cell viability assay (CellTiter-Glo, Promega)",
+      "bbox": [
+        306.1416931152344,
+        348.5956115722656,
+        562.6878662109375,
+        358.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in conjunction with MaMTH-DS (mammalian membrane two-hybrid",
+      "bbox": [
+        306.1416931152344,
+        359.3456115722656,
+        562.7310791015625,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "drug screening), an advanced split-ubiquitin-based platform for the",
+      "bbox": [
+        306.1416931152344,
+        370.0956115722656,
+        562.757568359375,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "real-time detection of small molecules targeting specific cellular",
+      "bbox": [
+        306.1416931152344,
+        380.8456115722656,
+        562.6527709960938,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "interactions28–35.",
+      "bbox": [
+        306.1416931152344,
+        391.25732421875,
+        367.6858215332031,
+        401.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The biological activity of ISM061-018-2 was rigorously tested.",
+      "bbox": [
+        323.14959716796875,
+        402.3456115722656,
+        562.7705688476562,
+        412.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Importantly, it demonstrated no detrimental impact on the viability of",
+      "bbox": [
+        306.1416931152344,
+        413.0956115722656,
+        562.5516967773438,
+        423.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "HEK293 cells, even when expressing KRAS wild type (WT) or KRAS-G12V",
+      "bbox": [
+        306.1416931152344,
+        423.8456115722656,
+        562.729736328125,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "bait in MaMTH-DS format and being subjected to concentrations",
+      "bbox": [
+        306.1416931152344,
+        434.5956115722656,
+        562.757080078125,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "as high as 30 μM for 18–20 h, showing that the compound did not",
+      "bbox": [
+        306.1416931152344,
+        445.3453674316406,
+        562.7826538085938,
+        455.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "possess any general, nonspecific toxicity (Fig. 2d). Subsequent testing",
+      "bbox": [
+        306.1416931152344,
+        456.0956115722656,
+        562.7326049804688,
+        466.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "using MaMTH-DS across a spectrum of cell lines expressing various",
+      "bbox": [
+        306.1416931152344,
+        466.8456115722656,
+        562.6237182617188,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "KRAS baits (WT and five clinically important oncogenic mutants)",
+      "bbox": [
+        306.1416931152344,
+        477.5956115722656,
+        562.5704345703125,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in combination with Raf1 ‘prey‘ (a recognized KRAS effector) revealed",
+      "bbox": [
+        306.1416931152344,
+        488.3456115722656,
+        562.8097534179688,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a dose-responsive inhibition of interactions, with half-maximal",
+      "bbox": [
+        306.1416931152344,
+        499.0956115722656,
+        562.6463012695312,
+        509.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "inhibitory concentration (IC50) values in the micromolar range",
+      "bbox": [
+        306.1416931152344,
+        509.8456115722656,
+        562.757080078125,
+        520.77197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(Fig. 2c and Supplementary Table 3). The compound’s activity was",
+      "bbox": [
+        306.1416931152344,
+        520.5956420898438,
+        562.6475219726562,
+        530.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "not specific to mutants, as it targeted both WT and mutant inter-",
+      "bbox": [
+        306.1416931152344,
+        531.3456420898438,
+        561.2598266601562,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "actions with similar efficacy. It also showed comparable effective-",
+      "bbox": [
+        306.1416931152344,
+        542.0956420898438,
+        561.2598876953125,
+        552.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ness in disrupting the interactions of WT NRAS and HRAS baits with",
+      "bbox": [
+        306.1416931152344,
+        552.8456420898438,
+        562.7189331054688,
+        563.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Raf1 prey (Fig. 2c). However, it had no effect on the interaction of a",
+      "bbox": [
+        306.1416931152344,
+        563.5956420898438,
+        562.77783203125,
+        573.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "completely unrelated artificial bait–prey control pair (consisting",
+      "bbox": [
+        306.1416931152344,
+        574.3456420898438,
+        562.7788696289062,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of membrane-anchored ALFA tag bait and nanobody ALFA prey)36,",
+      "bbox": [
+        306.1416931152344,
+        584.75732421875,
+        562.7376098632812,
+        595.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "supporting the biological specificity of the interaction (Fig. 2c).",
+      "bbox": [
+        306.1416931152344,
+        595.8456420898438,
+        562.7402954101562,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Collectively, these results support a potential pan-Ras activity of",
+      "bbox": [
+        306.1417236328125,
+        606.5953979492188,
+        562.5745849609375,
+        616.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ISM061-018-2.",
+      "bbox": [
+        306.1416931152344,
+        617.3456420898438,
+        359.4861145019531,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ISM061-022, as illustrated in Fig. 2e, also stood out as a compound",
+      "bbox": [
+        323.14959716796875,
+        628.0956420898438,
+        562.7554321289062,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of promise, particularly because of its selectivity toward certain KRAS",
+      "bbox": [
+        306.1416931152344,
+        638.8456420898438,
+        562.7627563476562,
+        649.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mutants. Within our in vitro examination, ISM061-022 demonstrated",
+      "bbox": [
+        306.1416931152344,
+        649.5956420898438,
+        562.7330322265625,
+        659.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a concentration-dependent inhibition of KRAS interactions with IC50",
+      "bbox": [
+        306.1416931152344,
+        660.3453979492188,
+        562.7118530273438,
+        671.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "values in the micromolar range (Fig. 2f and Supplementary Table 4),",
+      "bbox": [
+        306.1416931152344,
+        671.0956420898438,
+        562.7505493164062,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "while manifesting only a mild, general impact on cell viability at higher",
+      "bbox": [
+        306.1416931152344,
+        681.8456420898438,
+        562.8519287109375,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrations over an 18–20-h exposure (Fig. 2g). The observed inhibi-",
+      "bbox": [
+        306.1416931152344,
+        692.5956420898438,
+        561.2598876953125,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion mirrored that of ISM061-018-2 yet displayed enhanced selectivity",
+      "bbox": [
+        306.1416931152344,
+        703.3456420898438,
+        562.8577880859375,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "toward certain KRAS mutants, particularly KRAS-G12R and KRAS-Q61H,",
+      "bbox": [
+        306.1416931152344,
+        714.0956420898438,
+        562.6083374023438,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which were most receptive to the compound’s action (Fig. 2f). Diverging",
+      "bbox": [
+        306.1416931152344,
+        724.8453979492188,
+        562.6600952148438,
+        735.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "from ISM061-018-2, ISM061-022 did not show binding to KRAS-G12D",
+      "bbox": [
+        306.1416931152344,
+        735.5956420898438,
+        562.7322387695312,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 3
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          39,
+          49,
+          297,
+          455
+        ],
+        "pos": [
+          71,
+          2677
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          39,
+          457,
+          297,
+          714
+        ],
+        "pos": [
+          2677,
+          4283
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          39,
+          715,
+          297,
+          746
+        ],
+        "pos": [
+          4283,
+          4475
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          306,
+          49,
+          563,
+          176
+        ],
+        "pos": [
+          4475,
+          5307
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          306,
+          178,
+          563,
+          400
+        ],
+        "pos": [
+          5307,
+          6680
+        ]
+      },
+      {
+        "index": 7,
+        "class": "text",
+        "bbox": [
+          306,
+          403,
+          563,
+          626
+        ],
+        "pos": [
+          6680,
+          8033
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          306,
+          629,
+          563,
+          746
+        ],
+        "pos": [
+          8033,
+          8794
+        ]
+      },
+      {
+        "index": 9,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          762,
+          278,
+          771
+        ],
+        "pos": [
+          8794,
+          8857
+        ]
+      },
+      {
+        "index": 10,
+        "class": "page-footer",
+        "bbox": [
+          543,
+          763,
+          563,
+          770
+        ],
+        "pos": [
+          8857,
+          8868
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\nwhich is known for its intricate complexity and historical resistance to drug discovery efforts<sup>21,22</sup> . As illustrated in Fig. 1, our workflow was structured into three pivotal stages. The first stage was the generation of training data, beginning with creating a dataset comprising approxi mately 650 known KRAS inhibitors from the literature. To enhance this dataset, we used VirtualFlow 2.0 to screen 100 million molecules from the Enamine REAL library, selecting the top 250,000 with the best docking scores<sup>23</sup> . Additionally, we used the STONED (superfast traversal, optimization, novelty, exploration and discovery) algorithm on the SELFIES (self-referencing embedded strings) molecular representation of known inhibitors, generating structurally similar compounds. After applying synthesizability filtering, this process added 850,000 molecules to our training set<sup>24</sup> . Furthermore, we used Chemistry42 to validate the molecules generated in this workflow<sup>25</sup> . We merged data from various sources to compile a single dataset containing 1.1 million data points, all used for training our generative model. The next stage was the generation of new molecules, which combined (1) the QCBM<sup>16</sup> using a 16-qubit processor to generate a prior distribution; (2) a long short-term memory (LSTM) network as the classical model; and (3) Chemistry42 for validation (Fig. 1). The quantum component, depicted in Extended Data Fig. 3c, was a QCBM that generated samples from quantum hardware in every training epoch and was trained with a reward value, _P_ ( _x_ ) = softmax( _R_ ( _x_ )) calculated using Chemistry42 or a local filter. We note that, in practice, the reward function can be tailored to a user’s specific criteria, including accounting for off-target effects by evaluating multiple docking scenarios. This recurrent sampling, training and validation process formed a cycle that continuously improved the generated molecular structures targeting the KRAS protein. The final step was experimental validation. From our trained models, we sampled 1 million compounds using three different models (selection workflow in Fig. 1). We used Chemistry42 to screen these samples for pharmacological viability and ranked them on the basis of their docking scores (protein–ligand interaction (PLI) score). The top 15 candidates were synthesized and tested using surface plasmon resonance (SPR) and cell-based assays. This study highlights the promising intersection of quantum computing and drug discovery, marking a quantum computer’s first experimental hit. \n\nBefore initiating our campaign to design additional KRAS inhibitors, we aimed to compare our hybrid quantum–classical approach to established classical algorithms. We benchmarked our model, targeting three different proteins, against the state of the art using the Tartarus benchmarking suite for drug discovery<sup>26</sup> . The results indicate that, while few classical models achieved high success rates and docking scores, QCBM–LSTM excelled by generating numerous high-quality samples. It achieved a high success rate and a docking score comparable to the best, as demonstrated in Supplementary Table 1. As illustrated in Extended Data Fig. 1a and Supplementary Table 2, we evaluated the impact of incorporating a quantum prior (QCBM/multibase (M)QCBM– LSTM) versus a fully classical model (vanilla LSTM). We observed that a quantum prior enhanced the success rate, as measured by the proportion of molecules meeting the criteria set by the same filters. Our observations revealed that the use of QCBM–LSTM (Supplementary Table 1) offered a 21.5% improvement in passing filters that assessed the synthesizability and stability of the generated molecules, indicating a higher quality of generated structures. Additionally, we analyzed how the size of the prior (number of qubits) affected sample quality. We found that more qubits improved the success rates for molecule generation, suggesting that larger quantum models could enhance molecular design. Our findings suggest that the success rate correlates approximately linearly with the number of qubits, as illustrated in Extended Data Fig. 1c. \n\nWe believe that the improvement in our hybrid classical–quantum approach stemmed from the quantum effects, such as superposition and entanglement, which allow QCBMs to explore and represent \n\ncomplex, high-dimensional probability distributions more efficiently than classical models<sup>27</sup> . Entanglement enables the creation of correlations between qubits, capturing intricate dependencies within the prior distribution. This capability is particularly advantageous in generative models, as it allows for a more accurate representation of the underlying distributions in complex datasets, leading to the improved generation of molecular structures. Additionally, these quantum properties help to escape barren plateaus more effectively during optimization—a common challenge in machine learning models<sup>17</sup> . Consequently, this resulted in a more comprehensive exploration of the solution space, potentially uncovering molecular structures that our naive LSTM could not generate within the same time frame. \n\nFurthermore, our KRAS inhibitor campaign validated compounds derived from both the hybrid quantum–classical and vanilla approaches using the Chemistry42 platform’s structure-based drug design workflow. Within our study, 15 compounds were selected after filtering generated compounds (Fig. 1) using Chemistry42 and synthesized for experimental analysis. The two compounds demonstrating the greatest promise, ISM061-018-2 and ISM061-022, were characterized (structures in Fig. 2a,e, respectively). Their assessment involved a two-stage process; the SPR determined their binding affinities and cell-based assays were subsequently used to gauge biological efficacy. The compound ISM061-018-2, engineered through our hybrid quantum model (Fig. 2b and Supplementary Table 6), demonstrated substantial binding affinity to KRAS-G12D, registered at 1.4 μM. To delve deeper into this molecule’s effectiveness across a spectrum of KRAS mutants, we commenced an extensive series of tests using a cell-based assay. Specifically, we evaluated the molecule’s performance in a biological context using a commercial cell viability assay (CellTiter-Glo, Promega) in conjunction with MaMTH-DS (mammalian membrane two-hybrid drug screening), an advanced split-ubiquitin-based platform for the real-time detection of small molecules targeting specific cellular interactions<sup>28–35</sup> . \n\nThe biological activity of ISM061-018-2 was rigorously tested. Importantly, it demonstrated no detrimental impact on the viability of HEK293 cells, even when expressing KRAS wild type (WT) or KRAS-G12V bait in MaMTH-DS format and being subjected to concentrations as high as 30 μM for 18–20 h, showing that the compound did not possess any general, nonspecific toxicity (Fig. 2d). Subsequent testing using MaMTH-DS across a spectrum of cell lines expressing various KRAS baits (WT and five clinically important oncogenic mutants) in combination with Raf1 ‘prey‘ (a recognized KRAS effector) revealed a dose-responsive inhibition of interactions, with half-maximal inhibitory concentration (IC50) values in the micromolar range (Fig. 2c and Supplementary Table 3). The compound’s activity was not specific to mutants, as it targeted both WT and mutant interactions with similar efficacy. It also showed comparable effectiveness in disrupting the interactions of WT NRAS and HRAS baits with Raf1 prey (Fig. 2c). However, it had no effect on the interaction of a completely unrelated artificial bait–prey control pair (consisting of membrane-anchored ALFA tag bait and nanobody ALFA prey)<sup>36</sup> , supporting the biological specificity of the interaction (Fig. 2c). Collectively, these results support a potential pan-Ras activity of ISM061-018-2. \n\nISM061-022, as illustrated in Fig. 2e, also stood out as a compound of promise, particularly because of its selectivity toward certain KRAS mutants. Within our in vitro examination, ISM061-022 demonstrated a concentration-dependent inhibition of KRAS interactions with IC50 values in the micromolar range (Fig. 2f and Supplementary Table 4), while manifesting only a mild, general impact on cell viability at higher concentrations over an 18–20-h exposure (Fig. 2g). The observed inhibition mirrored that of ISM061-018-2 yet displayed enhanced selectivity toward certain KRAS mutants, particularly KRAS-G12R and KRAS-Q61H, which were most receptive to the compound’s action (Fig. 2f). Diverging from ISM061-018-2, ISM061-022 did not show binding to KRAS-G12D \n\nNature Biotechnology | Volume 43 | December 2025 | 1954–1959 \n\n**1956** \n\n"
+  }
+}

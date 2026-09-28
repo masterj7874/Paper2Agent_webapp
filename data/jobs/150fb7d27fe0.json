@@ -1,0 +1,326 @@
+{
+ "id": "150fb7d27fe0",
+ "agent": "MedKG",
+ "tool": "medkg_graph_neighbors",
+ "arguments": {
+  "label": "Dataset",
+  "key": "BraTS",
+  "limit": 5
+ },
+ "status": "done",
+ "created_at": 1790059235.4645984,
+ "started_at": 1790059235.4649985,
+ "finished_at": 1790059235.5296876,
+ "result": {
+  "message": "6 nodes / 5 edges around Dataset:BraTS (hops=1); status=ok.",
+  "summary": {
+   "n_nodes": 6,
+   "n_edges": 5,
+   "nodes_by_label": {
+    "Dataset": 1,
+    "Paper": 5
+   },
+   "status": "ok"
+  },
+  "artifacts": [
+   {
+    "description": "neighbors — full JSON response",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/neighbors_20260922-154035-91ab03.json"
+   },
+   {
+    "description": "neighbors — markdown",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/neighbors_20260922-154035-91ab03.md"
+   }
+  ],
+  "reference": "http://127.0.0.1:8790/docs",
+  "nodes": [
+   {
+    "id": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:57410",
+    "label": "Dataset",
+    "key": "BraTS",
+    "name": "BraTS",
+    "props": {
+     "iri": "https://medkg.local/resource/dataset/brats",
+     "synonyms": [
+      "Brain Tumor Segmentation challenge",
+      "Brain Tumour Segmentation challenge",
+      "Multimodal Brain Tumor Segmentation",
+      "Multimodal Brain Tumor Image Segmentation",
+      "Multimodal Brain Tumour Segmentation",
+      "Brain Tumor Segmentation dataset",
+      "BraTS 2015",
+      "BraTS 2017",
+      "BraTS 2018",
+      "BraTS 2019",
+      "BraTS 2020",
+      "BraTS 2021",
+      "BraTS 2022",
+      "BraTS 2023",
+      "BraTS 2024",
+      "BraTS2015",
+      "BraTS2017",
+      "BraTS2018",
+      "BraTS2019",
+      "BraTS2020",
+      "BraTS2021",
+      "BraTS2023",
+      "BraTS2024",
+      "BraTS challenge",
+      "BraTS dataset",
+      "BraTS database",
+      "BRATS",
+      "BRATS dataset",
+      "BRATS 2018",
+      "BRATS 2019",
+      "BRATS 2020",
+      "BRATS 2021",
+      "BraTS-GLI",
+      "BraTS-PED",
+      "BraTS-MET",
+      "BraTS-MEN",
+      "BraTS-Africa",
+      "BraTS-SSA"
+     ],
+     "kind": "image",
+     "name": "BraTS",
+     "url": "https://www.synapse.org/brats",
+     "abbreviations": [
+      "BraTS"
+     ]
+    }
+   },
+   {
+    "id": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:635064",
+    "label": "Paper",
+    "key": "DOI:10.1016/j.media.2016.05.004",
+    "name": "Brain tumor segmentation with Deep Neural Networks",
+    "props": {
+     "iri": "https://doi.org/10.1016/j.media.2016.05.004",
+     "work_id": "DOI:10.1016/j.media.2016.05.004",
+     "journalName": "Medical Image Analysis",
+     "s2CorpusId": "247457",
+     "year": 2015,
+     "nAuthors": 9,
+     "abstract": "&NA; In this paper, we present a fully automatic brain tumor segmentation method based on Deep Neural Networks (DNNs). The proposed networks are tailored to glioblastomas (both low and high grade) pictured in MR images. By their very nature, these tumors can appear anywhere in the brain and have almost any kind of shape, size, and contrast. These reasons motivate our exploration of a machine learning solution that exploits a flexible, high capacity DNN while being extremely efficient. Here, we give a description of different model choices that we've found to be necessary for obtaining competitive performance. We explore in particular different architectures based on Convolutional Neural Networks (CNN), i.e. DNNs specifically adapted to image data. We present a novel CNN architecture which differs from those traditionally used in computer vision. Our CNN exploits both local features as well as more global contextual features simultaneously. Also, different from most traditional uses of CNNs, our networks use a final layer that is a convolutional implementation of a fully connected layer which allows a 40 fold speed up. We also describe a 2‐phase training procedure that allows us to tackle difficulties related to the imbalance of tumor labels. Finally, we explore a cascade architecture in which the output of a basic CNN is treated as an additional source of information for a subsequent CNN. Results reported on the 2013 BRATS test data‐set reveal that our architecture improves over the currently published state‐of‐the‐art while being over 30 times faster. HighlightsA fast and accurate fully automatic method for brain tumor segmentation which is competitive both in terms of accuracy and speed compared to the state of the art.The method is based on deep neural networks (DNN) and learns features that are specific to brain tumor segmentation.We present a new DNN architecture which exploits both local features as well as more global contextual features simultaneously.Using a GPU implementation and a convolutional output layer, the model is an order of magnitude faster than other state of the art methods.Introduces a novel cascaded architecture that allows the system to more accurately model local label dependencies. Graphical abstract Figure. No caption available.",
+     "source": "corpus",
+     "selectionRank": 67,
+     "pmid": "27310171",
+     "title": "Brain tumor segmentation with Deep Neural Networks",
+     "pubTypes": [
+      "JournalArticle"
+     ],
+     "inPmcOa": false,
+     "hasFulltext": false,
+     "inQ1Corpus": false,
+     "q1Sjr": 3.43,
+     "q1Categories": [
+      "Computer Graphics and Computer-Aided Design (Q1)",
+      "Computer Vision and Pattern Recognition (Q1)",
+      "Health Informatics (Q1)",
+      "Radiological and Ultrasound Technology (Q1)",
+      "Radiology, Nuclear Medicine and Imaging (Q1)"
+     ],
+     "oaStatus": "green",
+     "isQ1": true,
+     "hasPdf": true,
+     "publicationDate": "2015-05-13",
+     "citedByCount": 3168,
+     "doi": "10.1016/j.media.2016.05.004"
+    }
+   },
+   {
+    "id": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:716483",
+    "label": "Paper",
+    "key": "PMC6029627",
+    "name": "A deep learning model integrating FCNNs and CRFs for brain tumor segmentation",
+    "props": {
+     "iri": "https://doi.org/10.1016/j.media.2017.10.002",
+     "work_id": "PMC6029627",
+     "journalName": "Medical image analysis",
+     "s2CorpusId": "11675522",
+     "year": 2017,
+     "nAuthors": 6,
+     "abstract": "HighlightsA deep learning model integrating FCNNs and CRFs for brain tumor segmentation.The integration of FCNNs and CRF‐RNN improves the segmentation robustness.A segmentation model with Flair, T1c, and T2 scans achieves competitive performance. Abstract Accurate and reliable brain tumor segmentation is a critical component in cancer diagnosis, treatment planning, and treatment outcome evaluation. Build upon successful deep learning techniques, a novel brain tumor segmentation method is developed by integrating fully convolutional neural networks (FCNNs) and Conditional Random Fields (CRFs) in a unified framework to obtain segmentation results with appearance and spatial consistency. We train a deep learning based segmentation model using 2D image patches and image slices in following steps: 1) training FCNNs using image patches; 2) training CRFs as Recurrent Neural Networks (CRF‐RNN) using image slices with parameters of FCNNs fixed; and 3) fine‐tuning the FCNNs and the CRF‐RNN using image slices. Particularly, we train 3 segmentation models using 2D image patches and slices obtained in axial, coronal and sagittal views respectively, and combine them to segment brain tumors using a voting based fusion strategy. Our method could segment brain images slice‐by‐slice, much faster than those based on image patches. We have evaluated our method based on imaging data provided by the Multimodal Brain Tumor Image Segmentation Challenge (BRATS) 2013, BRATS 2015 and BRATS 2016. The experimental results have demonstrated that our method could build a segmentation model with Flair, T1c, and T2 scans and achieve competitive performance as those built with Flair, T1, T1c, and T2 scans. Graphical abstract Figure. No Caption available.",
+     "source": "corpus",
+     "selectionRank": 678,
+     "pmid": "29040911",
+     "title": "A deep learning model integrating FCNNs and CRFs for brain tumor segmentation",
+     "pubTypes": [
+      "JournalArticle",
+      "Study"
+     ],
+     "inPmcOa": false,
+     "hasFulltext": true,
+     "inQ1Corpus": false,
+     "q1Sjr": 3.43,
+     "q1Categories": [
+      "Computer Graphics and Computer-Aided Design (Q1)",
+      "Computer Vision and Pattern Recognition (Q1)",
+      "Health Informatics (Q1)",
+      "Radiological and Ultrasound Technology (Q1)",
+      "Radiology, Nuclear Medicine and Imaging (Q1)"
+     ],
+     "oaStatus": "green",
+     "isQ1": true,
+     "pmcid": "PMC6029627",
+     "hasPdf": true,
+     "publicationDate": "2017-02-15",
+     "citedByCount": 732,
+     "doi": "10.1016/j.media.2017.10.002"
+    }
+   },
+   {
+    "id": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:716705",
+    "label": "Paper",
+    "key": "PMC13344194",
+    "name": "SegAN: Adversarial Network with Multi-scale L1 Loss for Medical Image Segmentation",
+    "props": {
+     "iri": "https://doi.org/10.1007/s12021-018-9377-x",
+     "work_id": "PMC13344194",
+     "journalName": "Neuroinformatics",
+     "s2CorpusId": "13688414",
+     "year": 2017,
+     "nAuthors": 5,
+     "abstract": "Inspired by classic Generative Adversarial Networks (GANs), we propose a novel end-to-end adversarial neural network, called SegAN, for the task of medical image segmentation. Since image segmentation requires dense, pixel-level labeling, the single scalar real/fake output of a classic GAN’s discriminator may be ineffective in producing stable and sufficient gradient feedback to the networks. Instead, we use a fully convolutional neural network as the segmentor to generate segmentation label maps, and propose a novel adversarial critic network with a multi-scale L1 loss function to force the critic and segmentor to learn both global and local features that capture long- and short-range spatial relationships between pixels. In our SegAN framework, the segmentor and critic networks are trained in an alternating fashion in a min-max game: The critic is trained by maximizing a multi-scale loss function, while the segmentor is trained with only gradients passed along by the critic, with the aim to minimize the multi-scale loss function. We show that such a SegAN framework is more effective and stable for the segmentation task, and it leads to better performance than the state-of-the-art U-net segmentation method. We tested our SegAN method using datasets from the MICCAI BRATS brain tumor segmentation challenge. Extensive experimental results demonstrate the effectiveness of the proposed SegAN with multi-scale loss: on BRATS 2013 SegAN gives performance comparable to the state-of-the-art for whole tumor and tumor core segmentation while achieves better precision and sensitivity for Gd-enhance tumor core segmentation; on BRATS 2015 SegAN achieves better performance than the state-of-the-art in both dice score and precision.",
+     "source": "corpus",
+     "selectionRank": 900,
+     "pmid": "29725916",
+     "title": "SegAN: Adversarial Network with Multi-scale L1 Loss for Medical Image Segmentation",
+     "pubTypes": [
+      "JournalArticle"
+     ],
+     "inPmcOa": false,
+     "hasFulltext": true,
+     "inQ1Corpus": false,
+     "q1Sjr": 0.901,
+     "q1Categories": [
+      "Information Systems (Q1)",
+      "Software (Q1)",
+      "Neuroscience (miscellaneous) (Q2)"
+     ],
+     "oaStatus": "green",
+     "isQ1": true,
+     "pmcid": "PMC13344194",
+     "hasPdf": true,
+     "publicationDate": "2017-06-06",
+     "citedByCount": 603,
+     "doi": "10.1007/s12021-018-9377-x"
+    }
+   },
+   {
+    "id": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:716818",
+    "label": "Paper",
+    "key": "PMC8149837",
+    "name": "Brain tumor segmentation based on deep learning and an attention mechanism using MRI multi-modalities brain images.",
+    "props": {
+     "journalName": "Scientific reports",
+     "s2CorpusId": "235198255",
+     "year": 2021,
+     "language": "eng",
+     "nAuthors": 6,
+     "source": "corpus",
+     "title": "Brain tumor segmentation based on deep learning and an attention mechanism using MRI multi-modalities brain images.",
+     "hasFulltext": true,
+     "q1Categories": [
+      "Multidisciplinary (Q1)"
+     ],
+     "isQ1": true,
+     "publicationDate": "2021-05-25",
+     "iri": "https://doi.org/10.1038/s41598-021-90428-8",
+     "work_id": "PMC8149837",
+     "abstract": "Brain tumor localization and segmentation from magnetic resonance imaging (MRI) are hard and important tasks for several applications in the field of medical analysis. As each brain imaging modality gives unique and key details related to each part of the tumor, many recent approaches used four modalities T1, T1c, T2, and FLAIR. Although many of them obtained a promising segmentation result on the BRATS 2018 dataset, they suffer from a complex structure that needs more time to train and test. So, in this paper, to obtain a flexible and effective brain tumor segmentation system, first, we propose a preprocessing approach to work only on a small part of the image rather than the whole part of the image. This method leads to a decrease in computing time and overcomes the overfitting problems in a Cascade Deep Learning model. In the second step, as we are dealing with a smaller part of brain images in each slice, a simple and efficient Cascade Convolutional Neural Network (C-ConvNet/C-CNN) is proposed. This C-CNN model mines both local and global features in two different routes. Also, to improve the brain tumor segmentation accuracy compared with the state-of-the-art models, a novel Distance-Wise Attention (DWA) mechanism is introduced. The DWA mechanism considers the effect of the center location of the tumor and the brain inside the model. Comprehensive experiments are conducted on the BRATS 2018 dataset and show that the proposed model obtains competitive results: the proposed method achieves a mean whole tumor, enhancing tumor, and tumor core dice scores of 0.9203, 0.9113 and 0.8726 respectively. Other quantitative and qualitative assessments are presented and discussed.",
+     "selectionRank": 1013,
+     "pmid": "34035406",
+     "pubTypes": [
+      "Research Support, Non-U.S. Gov't",
+      "research-article",
+      "Journal Article"
+     ],
+     "inPmcOa": true,
+     "license": "cc by",
+     "inQ1Corpus": false,
+     "q1Sjr": 0.893,
+     "oaStatus": "pmc_oa",
+     "pmcid": "PMC8149837",
+     "hasPdf": true,
+     "citedByCount": 554,
+     "doi": "10.1038/s41598-021-90428-8"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "source": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:635064",
+    "target": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:57410",
+    "type": "USES_DATASET",
+    "props": {
+     "evidence": "…ormation for a subsequent CNN. Results reported on the 2013 BRATS test data‐set reveal that our architecture improves over th…",
+     "confidence": 0.8,
+     "count": 1,
+     "extractedBy": "lexicon",
+     "fields": [
+      "abstract"
+     ]
+    }
+   },
+   {
+    "source": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:716483",
+    "target": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:57410",
+    "type": "USES_DATASET",
+    "props": {
+     "evidence": "… evaluated our method based on imaging data provided by the Multimodal Brain Tumor Image Segmentation Challenge (BRATS) 2013, BRATS 2015 and BRATS 2016. The expe…",
+     "confidence": 0.92,
+     "count": 4,
+     "extractedBy": "lexicon",
+     "fields": [
+      "abstract"
+     ]
+    }
+   },
+   {
+    "source": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:716705",
+    "target": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:57410",
+    "type": "USES_DATASET",
+    "props": {
+     "evidence": "…. We tested our SegAN method using datasets from the MICCAI BRATS brain tumor segmentation challenge. Extensive experimental …",
+     "confidence": 0.92,
+     "count": 4,
+     "extractedBy": "lexicon",
+     "fields": [
+      "abstract"
+     ]
+    }
+   },
+   {
+    "source": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:716818",
+    "target": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:57410",
+    "type": "USES_DATASET",
+    "props": {
+     "evidence": "…any of them obtained a promising segmentation result on the BRATS 2018 dataset, they suffer from a complex structure that needs mo…",
+     "confidence": 0.84,
+     "count": 2,
+     "extractedBy": "lexicon",
+     "fields": [
+      "abstract"
+     ]
+    }
+   },
+   {
+    "source": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:1284409",
+    "target": "4:3ce2cb3d-75d3-47c4-bbb9-d480b660ab65:57410",
+    "type": "USES_DATASET",
+    "props": {
+     "evidence": "…et (single-center, GE Discovery MR750, 3 T; 2015-2021) with BraTS 2021 segmentation masks were analyzed. One thousand two hundred …",
+     "confidence": 0.8,
+     "count": 1,
+     "extractedBy": "lexicon",
+     "fields": [
+      "abstract"
+     ]
+    }
+   }
+  ]
+ },
+ "error": null,
+ "duration_s": 0.06
+}

@@ -1,0 +1,541 @@
+{
+  "page": 19,
+  "lines": [
+    {
+      "text": "ether = 0% - 10%) to afford Compound 14-1 (1.20 g, 83% yield) as a white solid. LCMS (ESI+):",
+      "bbox": [
+        56.6399040222168,
+        56.78324508666992,
+        541.539306640625,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "291.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        77.42324829101562,
+        130.227294921875,
+        91.15196990966797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 14-2",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        258.6417236328125,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 4-(benzyloxy)-2-bromobenzaldehyde (100.0 mg, 0.34 mmol) in DCM (5 mL) was",
+      "bbox": [
+        56.6399040222168,
+        139.30796813964844,
+        541.5366821289062,
+        152.5919647216797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "added DAST (0.2 mL, 1.72 mmol) dropwise at 0 ℃ and then the mixture was stirred at 25 ℃ for 4",
+      "bbox": [
+        56.6399040222168,
+        160.18797302246094,
+        541.5237426757812,
+        173.4719696044922
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "hrs. After cooling to 0 ℃, the reaction mixture was quenched by ice-water (20 mL) and extracted",
+      "bbox": [
+        56.6399040222168,
+        180.8279571533203,
+        541.5358276367188,
+        194.11195373535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with EtOAc (25 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried",
+      "bbox": [
+        56.6399040222168,
+        201.4679718017578,
+        541.5331420898438,
+        214.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was",
+      "bbox": [
+        56.6399040222168,
+        222.1079559326172,
+        541.5221557617188,
+        235.47068786621094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 5: 1) to afford Compound 14-2 (90.0",
+      "bbox": [
+        56.6399040222168,
+        242.9879608154297,
+        541.53955078125,
+        256.3506774902344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mg, 84% yield) as colorless oil. 1H NMR (400 MHz, Methanol-d4) δ 7.55 - 7.53 (d, J = 8.0 Hz, 1H),",
+      "bbox": [
+        56.6399040222168,
+        263.1832275390625,
+        541.5398559570312,
+        276.9906921386719
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "7.43 - 7.29 (m, 5H), 7.27 (s, 1H), 7.09 - 7.06 (m, 1H), 7.03 - 6.75 (t, J = 56 Hz, 1H), 5.09 (s, 2H).",
+      "bbox": [
+        56.6399040222168,
+        284.2679748535156,
+        526.6905517578125,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3 & 4: Preparation of Compound 14-4",
+      "bbox": [
+        56.6399040222168,
+        314.98797607421875,
+        280.6379699707031,
+        328.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 4-(benzyloxy)-2-bromo-1-(difluoromethyl)benzene (200.0 mg, 0.64 mmol) in 1,4-",
+      "bbox": [
+        56.6399040222168,
+        345.7079772949219,
+        538.53955078125,
+        358.9919738769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dioxane (5 mL) were added bis(pinacolato)diboron (194.6 mg, 0.77 mmol), potassium acetate (188.0",
+      "bbox": [
+        56.6399040222168,
+        366.3479919433594,
+        541.528564453125,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mg, 1.92 mmol) and Pd(dppf)Cl2 (46.7 mg, 0.06 mmol). After addition, the mixture was purged with",
+      "bbox": [
+        56.6399040222168,
+        386.98797607421875,
+        541.5332641601562,
+        400.3506774902344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "N2 for 2 mins and then stirred at 100 ℃ for 12 hrs under N2. After cooling to 25 ℃, water (1 mL)",
+      "bbox": [
+        56.6399040222168,
+        407.86798095703125,
+        541.5387573242188,
+        421.2306823730469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was added followed by K2CO3 (230.2 mg, 1.67 mmol), 2,4-dichloropyrimidine (95.3 mg, 0.64 mmol)",
+      "bbox": [
+        56.6399040222168,
+        428.5079650878906,
+        541.5340576171875,
+        441.8706970214844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and Pd(dppf)Cl2 (40.6 mg, 0.06 mmol). The mixture was stirred at 100 ℃ under N2 for 2 hrs. After",
+      "bbox": [
+        56.6399040222168,
+        449.1479797363281,
+        541.5390625,
+        462.51068115234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cooling to 20 ℃, the reaction solution was poured into water (40 mL) and extracted with EtOAc (20",
+      "bbox": [
+        56.6399040222168,
+        469.7879638671875,
+        541.5352172851562,
+        483.07196044921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4,",
+      "bbox": [
+        56.6399040222168,
+        490.66796875,
+        541.5398559570312,
+        504.0306701660156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "filtered and concentrated under reduced pressure to give a residue. The residue was purified by flash",
+      "bbox": [
+        56.6399040222168,
+        511.3080139160156,
+        541.5177612304688,
+        524.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 10%) to afford Compound",
+      "bbox": [
+        56.6399040222168,
+        531.9479370117188,
+        541.5425415039062,
+        545.3106689453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "14-4 (150.0 mg, 78% yield) as colorless oil. LCMS (ESI+): 347.2 [M+H]+. 1H NMR (400 MHz,",
+      "bbox": [
+        56.6399040222168,
+        552.1432495117188,
+        541.541748046875,
+        565.8719482421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Methanol-d4) δ 8.77 - 8.76 (d, J = 4.0 Hz, 1H), 7.76 - 7.73 (m, 1H), 7.69 - 7.67 (d, J = 4.0 Hz, 1H),",
+      "bbox": [
+        56.6399040222168,
+        573.2279052734375,
+        541.5416870117188,
+        586.5906372070312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "7.48 - 7.45 (m, 2H), 7.40 - 7.29 (m, 6H), 5.20 (s, 2H).",
+      "bbox": [
+        56.6399040222168,
+        594.10791015625,
+        317.9445495605469,
+        607.3919067382812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 5: Preparation of Compound 14-5",
+      "bbox": [
+        56.6399040222168,
+        624.8279418945312,
+        258.6417236328125,
+        638.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 4-(5-(benzyloxy)-2-(difluoromethyl)phenyl)-2-chloropyrimidine (150.0 mg, 0.43",
+      "bbox": [
+        56.6399040222168,
+        655.5479736328125,
+        541.5376586914062,
+        668.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol) in MeCN (3 ml) were added tert-butyl pent-4-yn-1-ylcarbamate (95.0 mg, 0.52 mmol),",
+      "bbox": [
+        56.6399040222168,
+        676.1879272460938,
+        541.5343627929688,
+        689.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "copper(I) iodide (16.48 mg, 0.09 mmol), TEA (0.18 ml, 1.30 mmol) and Pd(PPh)3Cl2 (30.4 mg, 0.043",
+      "bbox": [
+        56.6399040222168,
+        696.8279418945312,
+        541.5393676757812,
+        710.190673828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol). After addition, the mixture was purged with N2 for 2 mins and then stirred at 85 ℃ for 12 hrs",
+      "bbox": [
+        56.6399040222168,
+        717.4679565429688,
+        541.5394897460938,
+        730.8306274414062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "under N2. After cooling to 20 ℃, the reaction solution was poured into water (20 mL) and extracted",
+      "bbox": [
+        56.6399040222168,
+        738.3479614257812,
+        541.5354614257812,
+        751.7106323242188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with EtOAc (20 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried",
+      "bbox": [
+        56.6399040222168,
+        758.9879150390625,
+        541.5336303710938,
+        772.2719116210938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 19
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          542,
+          91
+        ],
+        "pos": [
+          0,
+          137
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          111,
+          259,
+          122
+        ],
+        "pos": [
+          137,
+          182
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          141,
+          542,
+          298
+        ],
+        "pos": [
+          182,
+          968
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          317,
+          281,
+          329
+        ],
+        "pos": [
+          968,
+          1017
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          348,
+          542,
+          608
+        ],
+        "pos": [
+          1017,
+          2268
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          627,
+          259,
+          639
+        ],
+        "pos": [
+          2268,
+          2313
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          657,
+          542,
+          773
+        ],
+        "pos": [
+          2313,
+          2893
+        ]
+      }
+    ],
+    "text": "ether = 0% - 10%) to afford **Compound 14-1** (1.20 g, 83% yield) as a white solid. LCMS (ESI<sup>+</sup> ): 291.2 [M+H]<sup>+</sup> . \n\n# **Step 2: Preparation of Compound 14-2** \n\nTo a solution of 4-(benzyloxy)-2-bromobenzaldehyde (100.0 mg, 0.34 mmol) in DCM (5 mL) was added DAST (0.2 mL, 1.72 mmol) dropwise at 0 ℃ and then the mixture was stirred at 25 ℃ for 4 hrs. After cooling to 0 ℃, the reaction mixture was quenched by ice-water (20 mL) and extracted with EtOAc (25 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 5: 1) to afford **Compound 14-2** (90.0 mg, 84% yield) as colorless oil.<sup>1</sup> H NMR (400 MHz, Methanol-d4) δ 7.55 - 7.53 (d, J = 8.0 Hz, 1H), 7.43 - 7.29 (m, 5H), 7.27 (s, 1H), 7.09 - 7.06 (m, 1H), 7.03 - 6.75 (t, J = 56 Hz, 1H), 5.09 (s, 2H). \n\n# **Step 3 & 4: Preparation of Compound 14-4** \n\nTo a solution of 4-(benzyloxy)-2-bromo-1-(difluoromethyl)benzene (200.0 mg, 0.64 mmol) in 1,4dioxane (5 mL) were added bis(pinacolato)diboron (194.6 mg, 0.77 mmol), potassium acetate (188.0 mg, 1.92 mmol) and Pd(dppf)Cl2 (46.7 mg, 0.06 mmol). After addition, the mixture was purged with N2 for 2 mins and then stirred at 100 ℃ for 12 hrs under N2. After cooling to 25 ℃, water (1 mL) was added followed by K2CO3 (230.2 mg, 1.67 mmol), 2,4-dichloropyrimidine (95.3 mg, 0.64 mmol) and Pd(dppf)Cl2 (40.6 mg, 0.06 mmol). The mixture was stirred at 100 ℃ under N2 for 2 hrs. After cooling to 20 ℃, the reaction solution was poured into water (40 mL) and extracted with EtOAc (20 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 10%) to afford **Compound 14-4** (150.0 mg, 78% yield) as colorless oil. LCMS (ESI<sup>+</sup> ): 347.2 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, Methanol-d4) δ 8.77 - 8.76 (d, J = 4.0 Hz, 1H), 7.76 - 7.73 (m, 1H), 7.69 - 7.67 (d, J = 4.0 Hz, 1H), 7.48 - 7.45 (m, 2H), 7.40 - 7.29 (m, 6H), 5.20 (s, 2H). \n\n# **Step 5: Preparation of Compound 14-5** \n\nTo a solution of 4-(5-(benzyloxy)-2-(difluoromethyl)phenyl)-2-chloropyrimidine (150.0 mg, 0.43 mmol) in MeCN (3 ml) were added _tert_ -butyl pent-4-yn-1-ylcarbamate (95.0 mg, 0.52 mmol), copper(I) iodide (16.48 mg, 0.09 mmol), TEA (0.18 ml, 1.30 mmol) and Pd(PPh)3Cl2 (30.4 mg, 0.043 mmol). After addition, the mixture was purged with N2 for 2 mins and then stirred at 85 ℃ for 12 hrs under N2. After cooling to 20 ℃, the reaction solution was poured into water (20 mL) and extracted with EtOAc (20 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried \n\n"
+  }
+}

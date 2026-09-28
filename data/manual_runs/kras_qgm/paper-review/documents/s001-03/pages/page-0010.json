@@ -1,0 +1,334 @@
+{
+  "page": 10,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0010.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0010.png plus 350-dpi crops of the Algorithm 1 pseudocode, the equation block, the |psi(theta)> ket and equation (7), and compared everything with evidence/page-0010.json. READING ORDER: the extractor interleaved the two columns (b002-b008 left, b009-b015 right, b016-b026 left, b027-b030 right). Rebuilt as full left column (b002, b003, b004, b005, Algorithm 1 code block, b026) followed by full right column (b009, b010, b011, b012, b013, b014, equations 1-6, b027, b028, b029, b030). This matters: left-column b026 ends 'To optimize these parameters _theta_, the model is' and right-column b009 continues 'initially configured with randomly assigned parameters |psi(theta)>', so b009 now carries join_previous='space'. ALGORITHM 1: the 13 pseudocode lines had been split into 13 separate list items (b006, b007, b008 and b016-b025, with b025 inconsistently not even marked as a list item) with '- ' bullets and bold markup. Merged them into the single code item p0010-b006 (bbox 39,518-292,660 covering all 13 lines), dropped the bullet and ** markup, and restored the two indentation levels visible in the crop (lines 4-7 and 12 at one level, lines 8-11 at the deeper level); X_i and P(X_i) are written with plain underscores because code is emitted verbatim in a fence. The source pseudocode is transcribed as printed and not corrected. EQUATIONS: p0010-b015 was misclassified as a table and its cell strings were corrupted (a stray combining tilde in 'Candidate values:~ _Ct_' and 'it ⋅~_Ct_', and all spaces around operators lost). Removed that table and replaced it with six formula items p0010-b015a-f (asset names formula-1 ... formula-6) whose bboxes were taken from the evidence line boxes for the six displayed LSTM equations and widened to x 350-565 so the label, the equation and the right-hand equation number are all inside each crop. Renamed p0010-b029 from the extractor placeholder 'Formula on PDF page 10 (30)' / 'formula-p0010-029' to 'Equation (7)' / 'formula-7', matching the printed number; its bbox already covers L(y, y-hat) = -log(y-hat_y) and the '(7)'. TEXT REPAIRS verified against the rendered page: b003 'artificialintelligence-driven' had lost a REAL compound hyphen at the line wrap ('artificial-' / 'intelligence-driven') and is restored to 'artificial-intelligence-driven'; b003 '_X_<sup>'</sup> ( _t_ )' -> '_X_′(_t_)' and '_P_ ( _x_ ) = softmax( _R_ ( _x_ ))' -> '_P_(_x_) = softmax(_R_(_x_))'; b009 and b026 '|| _psi_ ( _theta_ )⟩' -> '|_psi_(_theta_)⟩' (the native text layer duplicates the ket bar, but a 900-dpi zoom shows a single vertical bar); b026 '_thetan_' -> '_theta_<sub>n</sub>' twice; b027 '_xt_' -> '_x_<sub>t</sub>'; b030 'and ̂ _yy_' -> '_ŷ_<sub>y</sub>' (the combining circumflex had been detached from the y and the subscript y merged into the italic run). Removed the spurious space before punctuation after superscripts 24, 67, 68, 69, 70, 71, 72 and after '_theta_' and '_y_'. Removed the stray space before the colon in the three bold gate labels ('**Forget gate** :' -> '**Forget gate**:', same for Input gate and Output gate). Set the three flagged margin items to omit (b000, b001 running headers; b031 running footer). No section headings on this page: 'Algorithm 1.', 'Classical model: LSTM model.' and 'QCBM model.' are run-in bold paragraph leads and stay as text.",
+  "warnings": [
+    "Review possible header/footer: p0010-b000",
+    "Review possible header/footer: p0010-b001",
+    "Review possible header/footer: p0010-b031"
+  ],
+  "items": [
+    {
+      "id": "p0010-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0010-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0010-b002",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        49.0,
+        297.0,
+        133.0
+      ],
+      "markdown": "this, the local chemical space exploration was conducted using the STONED–SELFIES algorithm<sup>24</sup>, which was applied to the 650 experimentally derived hits. This algorithm distinctively introduces random point substitutions into the SELFIES representations<sup>39,65,66</sup> of the molecules, thereby generating novel compounds that maintain a structural resemblance to the starting point. The resulting derivatives were filtered on the basis of synthesizability, culminating in the addition of 850,000 molecules to our training set.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b003",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        135.0,
+        297.0,
+        305.0
+      ],
+      "markdown": "(2) Generation of new molecules. Our approach was structured around the integration of three primary components: (1) the QCBM; (2) the classical LSTM model; and (3) Chemistry42 for artificial-intelligence-driven validation, as shown in Extended Data Fig. 3. The QCBM generator<sup>16</sup> used a 16-qubit IBM quantum processor with quantum circuits to model complex data distributions. The integration method of quantum priors into the LSTM architecture (Supplementary Fig. 4) involved merging molecular information encoded in SELFIES and quantum data by addition or concatenation to form samples, _X_′(_t_), which were then input into the LSTM cell. The quantum component (Supplementary Fig. 4) was a QCBM that generated samples from quantum hardware each training epoch and was trained with a reward value, _P_(_x_) = softmax(_R_(_x_)), calculated using Chemistry42 or a local filter. This cyclical sampling, training and validation process formed a loop aimed at continually improving the generated molecular structures for targeting KRAS.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        307.0,
+        297.0,
+        402.0
+      ],
+      "markdown": "(3) Experimental validation. The process of selecting experimental sample candidates is illustrated at the bottom of Fig. 1. After training our model, we sampled 1 million compounds from each prior model listed at the bottom of Fig. 1. These samples underwent evaluation by Chemistry42, filtering out unsuitable compounds for pharmacological purposes and ranking the remaining compounds by their docking score (PLI score). Subsequently, 15 novel compounds were selected for synthesis and underwent SPR and cell-based assay experiments.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b005",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        414.0,
+        297.0,
+        509.0
+      ],
+      "markdown": "**Algorithm 1.** Algorithm 1 provides an overview of quantum-assisted drug discovery using an LSTM framework. This pseudocode details the iterative process, starting with the initialization of the LSTM and QCBM models, followed by the generation and validation of new compounds. Valid compounds are subjected to a reward calculation and probability assessment, which in turn inform the subsequent training of the QCBM (Algorithm 2). This cycle continues until convergence, illustrating the dynamic interplay between quantum predictions and LSTM-generated compounds underpinned by the Chemistry42 evaluation.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b006",
+      "kind": "code",
+      "bbox": [
+        39.0,
+        518.0,
+        292.0,
+        660.0
+      ],
+      "markdown": "1:  Initialize: LSTM, QCBM, filter (Chemistry42)\n2:  Generate initial samples X_i from QCBM\n3:  while not converged do\n4:      Train LSTM with X_i\n5:      LSTM generates a new compound from the current samples X_i\n6:      Validate the new compound with the filter\n7:      if new compound is valid then\n8:          Compute rewards for the new compound\n9:          Compute probabilities P(X_i) for each new compound\n10:         Train QCBM with X_i and P(X_i)\n11:         Generate new X_i from QCBM\n12:     end if\n13: end while",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0010-b026",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        672.0,
+        297.0,
+        746.0
+      ],
+      "markdown": "**QCBM model.** The QCBM model represents a quantum variational generative model, necessitating a classical optimizer to train its parameters. The total count of these parameters was computed with the number of qubits and layers defined in the model (Extended Data Fig. 5). Upon specifying the parameters, denoted as _θ_<sub>n</sub>, we obtain a quantum state |_ψ_(_θ_)⟩. Here, each _θ_<sub>n</sub> exerts an impact on the wave function, expressed as _ψ_(_θ_). To optimize these parameters _θ_, the model is",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b009",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        563.0,
+        90.0
+      ],
+      "markdown": "initially configured with randomly assigned parameters |_ψ_(_θ_)⟩. These parameters are subsequently calculated throughout the training process. The training of the QCBM model involves minimizing the exact negative log-likelihood (exact NLL) loss function.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0010-b010",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        102.0,
+        563.0,
+        217.0
+      ],
+      "markdown": "**Classical model: LSTM model.** LSTM networks (Fig. 1) were used for the classical part of this architecture. LSTM is simple and has a good record of learning the string pattern in natural language processing for a long time. LSTM networks are specialized recurrent neural networks capable of learning long-term dependencies in sequence data<sup>67</sup>. They are particularly useful in applications where the context from earlier parts of the sequence is needed to interpret later parts, such as in natural language processing and time-series forecasting<sup>68</sup>. The LSTM architecture consists of a chain of repeating modules called cells. Each cell contains three gates that control the flow of information:",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b011",
+      "kind": "text",
+      "bbox": [
+        317.0,
+        225.0,
+        559.0,
+        288.0
+      ],
+      "markdown": "1. **Forget gate**: This gate decides what information from the cell state should be thrown away or kept. It takes the output of the previous LSTM cell and the current input and passes them through a sigmoid function, outputting a number between 0 and 1 for each number in the cell state, where 0 means ‘completely forget this’ and 1 means ‘completely keep this’.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0010-b012",
+      "kind": "text",
+      "bbox": [
+        317.0,
+        289.0,
+        562.0,
+        340.0
+      ],
+      "markdown": "2. **Input gate**: This gate updates the cell state with new information. It has two parts: a sigmoid layer called the input gate layer and a hyperbolic tangent layer. The sigmoid layer decides what values to update and the hyperbolic tangent layer creates a vector of new candidate values that could be added to the state.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0010-b013",
+      "kind": "text",
+      "bbox": [
+        317.0,
+        343.0,
+        563.0,
+        383.0
+      ],
+      "markdown": "3. **Output gate**: This gate decides the next hidden state. The hidden state contains information on previous inputs. The hidden state is used to calculate the output of the LSTM and the next hidden state.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0010-b014",
+      "kind": "text",
+      "bbox": [
+        326.0,
+        393.0,
+        552.0,
+        402.0
+      ],
+      "markdown": "The following equations can describe the LSTM’s operations:",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b015a",
+      "kind": "formula",
+      "bbox": [
+        350.0,
+        405.5,
+        565.0,
+        424.5
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (1)",
+      "asset_name": "formula-1"
+    },
+    {
+      "id": "p0010-b015b",
+      "kind": "formula",
+      "bbox": [
+        350.0,
+        431.5,
+        565.0,
+        450.5
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (2)",
+      "asset_name": "formula-2"
+    },
+    {
+      "id": "p0010-b015c",
+      "kind": "formula",
+      "bbox": [
+        350.0,
+        457.5,
+        565.0,
+        477.0
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (3)",
+      "asset_name": "formula-3"
+    },
+    {
+      "id": "p0010-b015d",
+      "kind": "formula",
+      "bbox": [
+        350.0,
+        484.0,
+        565.0,
+        503.5
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (4)",
+      "asset_name": "formula-4"
+    },
+    {
+      "id": "p0010-b015e",
+      "kind": "formula",
+      "bbox": [
+        350.0,
+        509.5,
+        565.0,
+        529.0
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (5)",
+      "asset_name": "formula-5"
+    },
+    {
+      "id": "p0010-b015f",
+      "kind": "formula",
+      "bbox": [
+        350.0,
+        535.0,
+        565.0,
+        554.5
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (6)",
+      "asset_name": "formula-6"
+    },
+    {
+      "id": "p0010-b027",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        565.0,
+        563.0,
+        585.0
+      ],
+      "markdown": "Here, _σ_ is the sigmoid activation function, _W_ and **b** are the weight matrices and bias vectors for each gate and _x_<sub>t</sub> is the input at time _t_<sup>69</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b028",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        586.0,
+        563.0,
+        692.0
+      ],
+      "markdown": "Training an LSTM involves optimizing the network’s weights and biases to minimize a specific loss function. This is typically accomplished using gradient-based optimization algorithms such as stochastic gradient descent or Adam<sup>70</sup>. The backpropagation through time algorithm was used to compute the gradients relative to the loss function, considering the sequential nature of the data<sup>71</sup>. The networks were trained using the Adam optimizer with the NLL loss function; to mitigate overfitting, regularization techniques such as dropout were implemented<sup>72</sup>. The NLL loss for a single data point is given by",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b029",
+      "kind": "formula",
+      "bbox": [
+        399.0,
+        696.0,
+        565.0,
+        716.0
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (7)",
+      "asset_name": "formula-7"
+    },
+    {
+      "id": "p0010-b030",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        726.0,
+        563.0,
+        746.0
+      ],
+      "markdown": "where _y_ is the true class label and _ŷ_<sub>y</sub> is the predicted probability for the true class label _y_.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b031",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+    }
+  ]
+}

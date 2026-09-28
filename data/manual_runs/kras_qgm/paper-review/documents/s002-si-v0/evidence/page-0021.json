@@ -1,0 +1,242 @@
+{
+  "page": 21,
+  "lines": [
+    {
+      "text": "S1.8. Preparation of ISM061-15",
+      "bbox": [
+        56.6399040222168,
+        394.9079895019531,
+        221.96214294433594,
+        408.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S8 Preparation of ISM061-15",
+      "bbox": [
+        205.26951599121094,
+        593.14794921875,
+        392.91021728515625,
+        606.4319458007812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 15-1",
+      "bbox": [
+        56.6399040222168,
+        623.867919921875,
+        258.6417236328125,
+        637.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-aminoethan-1-ol (2 g, 32.73 mmol) in PhMe (20 mL) were added DIEA (12.7 g,",
+      "bbox": [
+        56.6399040222168,
+        654.5879516601562,
+        541.534912109375,
+        667.8719482421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "98.2 mmol) and isobenzofuran-1,3-dione (4.8 g, 32.73 mmol) at N2 atmosphere. Then the mixture",
+      "bbox": [
+        56.6399040222168,
+        675.2279052734375,
+        541.5322265625,
+        688.5906372070312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was heated and stirred at 120 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into",
+      "bbox": [
+        56.6399040222168,
+        695.867919921875,
+        541.5188598632812,
+        709.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ice water (60 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed",
+      "bbox": [
+        56.6399040222168,
+        716.5079345703125,
+        541.5308227539062,
+        729.7919311523438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with brine (50 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give",
+      "bbox": [
+        56.6399040222168,
+        737.387939453125,
+        541.5293579101562,
+        750.7506713867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from",
+      "bbox": [
+        56.6399040222168,
+        758.0279541015625,
+        541.5331420898438,
+        771.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 21
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "picture",
+        "bbox": [
+          56,
+          69,
+          445,
+          309
+        ],
+        "pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          397,
+          222,
+          409
+        ],
+        "pos": [
+          2,
+          41
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          93,
+          420,
+          505,
+          511
+        ],
+        "pos": [
+          41,
+          43
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          91,
+          535,
+          333,
+          581
+        ],
+        "pos": [
+          43,
+          45
+        ]
+      },
+      {
+        "index": 4,
+        "class": "caption",
+        "bbox": [
+          205,
+          595,
+          393,
+          607
+        ],
+        "pos": [
+          45,
+          86
+        ]
+      },
+      {
+        "index": 5,
+        "class": "caption",
+        "bbox": [
+          56,
+          626,
+          259,
+          638
+        ],
+        "pos": [
+          86,
+          129
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          656,
+          542,
+          772
+        ],
+        "pos": [
+          129,
+          718
+        ]
+      }
+    ],
+    "text": "\n\n# **S1.8. Preparation of ISM061-15** \n\n\n\n\n\n**Scheme S8** Preparation of ISM061-15 \n\n**Step 1: Preparation of Compound 15-1** \n\nTo a solution of 2-aminoethan-1-ol (2 g, 32.73 mmol) in PhMe (20 mL) were added DIEA (12.7 g, 98.2 mmol) and isobenzofuran-1,3-dione (4.8 g, 32.73 mmol) at N2 atmosphere. Then the mixture was heated and stirred at 120 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (60 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (50 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from \n\n"
+  }
+}

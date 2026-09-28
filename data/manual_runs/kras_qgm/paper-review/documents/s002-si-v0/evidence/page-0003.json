@@ -1,0 +1,528 @@
+{
+  "page": 3,
+  "lines": [
+    {
+      "text": "ethyl acetate: petroleum ether = 0% - 7%) to afford the title compound (1.00 g, 25% yield) as yellow",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        541.5311279296875,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "oil. LCMS (ESI): m/z 298.1 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        77.86796569824219,
+        241.16917419433594,
+        91.15196990966797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 4: Preparation of Compound 1-4",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        252.64173889160156,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of N-(1-(2-chloro-5-ethylpyrimidin-4-yl)ethyl)-2,6-difluoroaniline (300.0 mg, 1.01",
+      "bbox": [
+        56.6399040222168,
+        139.30796813964844,
+        541.5367431640625,
+        152.5919647216797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol) in 1,4-dioxane (4 mL) were added tert-butyl 3-(hydroxymethyl)azetidine-1-carboxylate (226.0",
+      "bbox": [
+        56.6399040222168,
+        160.18797302246094,
+        541.5369262695312,
+        173.4719696044922
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mg, 1.21 mmol), Cs2CO3 (985.0 mg, 3.02 mmol), CyPF-tBu (84.0 mg, 0.15 mmol) and Pd2(dba)3",
+      "bbox": [
+        56.6399040222168,
+        180.8279571533203,
+        541.5372924804688,
+        194.11195373535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(92.0 mg, 0.10 mmol). After addition, the mixture was degassed and purged with N2 for 2 mins and",
+      "bbox": [
+        56.6399040222168,
+        201.4679718017578,
+        541.5261840820312,
+        214.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "then stirred at 105 ℃ for 5 hrs under N2. After cooling to 20 ℃, the reaction solution was poured",
+      "bbox": [
+        56.6399040222168,
+        222.1079559326172,
+        541.5297241210938,
+        235.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "into water (50 mL) and extracted with EtOAc (40 mL × 3). The combined organic layers were washed",
+      "bbox": [
+        56.6399040222168,
+        242.9879608154297,
+        541.5300903320312,
+        256.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give",
+      "bbox": [
+        56.6399040222168,
+        263.6279602050781,
+        541.5308837890625,
+        276.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a residue, which was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether",
+      "bbox": [
+        56.6399040222168,
+        284.2679748535156,
+        541.5370483398438,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "= 0% - 22%) to afford the title compound (400 mg, 89.0% yield) as yellow oil. LCMS(ESI): m/z",
+      "bbox": [
+        56.6399040222168,
+        304.9079895019531,
+        541.5223388671875,
+        318.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "449.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        325.5479736328125,
+        133.50315856933594,
+        338.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 5: Preparation of Compound 1-5",
+      "bbox": [
+        56.6399040222168,
+        356.2679748535156,
+        252.64173889160156,
+        369.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of tert-butyl 3-(((4-(1-((2,6-difluorophenyl)amino)ethyl)-5-ethylpyrim idin-2-",
+      "bbox": [
+        56.6399040222168,
+        386.98797607421875,
+        538.53955078125,
+        400.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "yl)oxy)methyl)azetidine-1-carboxylate (250.0 mg, 0.56 mmol) in DCM (2 mL) was added TFA (0.5",
+      "bbox": [
+        56.6399040222168,
+        407.86798095703125,
+        541.5299072265625,
+        421.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL, 6.49 mmol) at 0 ℃. After addition, the mixture was stirred at 25 ℃ for 2 hrs. The reaction",
+      "bbox": [
+        56.6399040222168,
+        428.5079650878906,
+        541.5390014648438,
+        441.7919616699219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solution was concentrated under reduced pressure to afford the tittle compound (180.0 mg, 0.52",
+      "bbox": [
+        56.6399040222168,
+        449.1479797363281,
+        541.52978515625,
+        462.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol), which was used in next step directly without further purification. LCMS(ESI): m/z 349.2",
+      "bbox": [
+        56.6399040222168,
+        469.7879638671875,
+        541.5250854492188,
+        483.07196044921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "[M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        490.66796875,
+        103.50316619873047,
+        503.95196533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 6: Preparation of ISM061-1",
+      "bbox": [
+        56.6399040222168,
+        521.14794921875,
+        226.954345703125,
+        534.4319458007812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of N-(1-(2-(azetidin-3-ylmethoxy)-5-ethylpyrimidin-4-yl)ethyl)-2,6-difluoroaniline",
+      "bbox": [
+        56.6399040222168,
+        551.867919921875,
+        541.536376953125,
+        565.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(130.0 mg, 0.37 mmol) in MeOH (2 mL) were added formaldehyde (0.01 mL, 0.45 mmol) and sodium",
+      "bbox": [
+        56.6399040222168,
+        572.7479248046875,
+        541.5285034179688,
+        586.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cyanoborohydride (46.9 mg, 0.75 mmol). After addition, the mixture was stirred at 25 ℃ for 1 hr.",
+      "bbox": [
+        56.6399040222168,
+        593.387939453125,
+        541.5379028320312,
+        606.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The reaction solution was poured into water (20 mL) and extracted with DCM (25 mL × 3). The",
+      "bbox": [
+        56.6399040222168,
+        614.0279541015625,
+        541.53466796875,
+        627.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and",
+      "bbox": [
+        56.6399040222168,
+        634.66796875,
+        541.5311279296875,
+        647.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to give a residue, which was purified by pre-HPLC",
+      "bbox": [
+        56.6399040222168,
+        655.5479736328125,
+        541.5403442382812,
+        668.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(SHIMADZU, LC-20AP, Column: YMC Triart C18, 20 × 250 mm, 5 μm; Mobile phase: from 20 %",
+      "bbox": [
+        56.6399040222168,
+        676.1879272460938,
+        541.5375366210938,
+        689.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to 31 % ACN [0.1% FA]; Flow rate: 15 mL/min; Retention Time: 15 min of 20 min) to afford the",
+      "bbox": [
+        56.6399040222168,
+        696.8279418945312,
+        541.5311279296875,
+        710.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "title compound (35.0 mg, 26% yield) as yellow oil. LCMS (ESI): m/z 363.3 [M+H]+; 1H NMR (400",
+      "bbox": [
+        56.6399040222168,
+        717.4679565429688,
+        541.5344848632812,
+        730.751953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "MHz, DMSO-d6) δ 8.44 – 8.41 (m, 2H), 7.18 – 7.12 (m, 1H), 7.05 –7.01 (m, 2H), 4.63 – 4.58 (m,",
+      "bbox": [
+        56.6399040222168,
+        738.3479614257812,
+        541.53955078125,
+        751.6319580078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 3
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          542,
+          92
+        ],
+        "pos": [
+          0,
+          138
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          111,
+          253,
+          122
+        ],
+        "pos": [
+          138,
+          182
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          141,
+          542,
+          339
+        ],
+        "pos": [
+          182,
+          1071
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          358,
+          253,
+          370
+        ],
+        "pos": [
+          1071,
+          1115
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          389,
+          542,
+          504
+        ],
+        "pos": [
+          1115,
+          1594
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          523,
+          227,
+          535
+        ],
+        "pos": [
+          1594,
+          1634
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          554,
+          542,
+          752
+        ],
+        "pos": [
+          1634,
+          2560
+        ]
+      }
+    ],
+    "text": "ethyl acetate: petroleum ether = 0% - 7%) to afford the title compound (1.00 g, 25% yield) as yellow oil. LCMS (ESI): m/z 298.1 [M+H]+. \n\n# **Step 4: Preparation of Compound 1-4** \n\nTo a solution of N-(1-(2-chloro-5-ethylpyrimidin-4-yl)ethyl)-2,6-difluoroaniline (300.0 mg, 1.01 mmol) in 1,4-dioxane (4 mL) were added tert-butyl 3-(hydroxymethyl)azetidine-1-carboxylate (226.0 mg, 1.21 mmol), Cs2CO3 (985.0 mg, 3.02 mmol), CyPF-tBu (84.0 mg, 0.15 mmol) and Pd2(dba)3 (92.0 mg, 0.10 mmol). After addition, the mixture was degassed and purged with N2 for 2 mins and then stirred at 105 ℃ for 5 hrs under N2. After cooling to 20 ℃, the reaction solution was poured into water (50 mL) and extracted with EtOAc (40 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 22%) to afford the title compound (400 mg, 89.0% yield) as yellow oil. LCMS(ESI): m/z 449.3 [M+H]+. \n\n# **Step 5: Preparation of Compound 1-5** \n\nTo a solution of tert-butyl 3-(((4-(1-((2,6-difluorophenyl)amino)ethyl)-5-ethylpyrim idin-2yl)oxy)methyl)azetidine-1-carboxylate (250.0 mg, 0.56 mmol) in DCM (2 mL) was added TFA (0.5 mL, 6.49 mmol) at 0 ℃. After addition, the mixture was stirred at 25 ℃ for 2 hrs. The reaction solution was concentrated under reduced pressure to afford the tittle compound (180.0 mg, 0.52 mmol), which was used in next step directly without further purification. LCMS(ESI): m/z 349.2 [M+H]+. \n\n# **Step 6: Preparation of ISM061-1** \n\nTo a solution of N-(1-(2-(azetidin-3-ylmethoxy)-5-ethylpyrimidin-4-yl)ethyl)-2,6-difluoroaniline (130.0 mg, 0.37 mmol) in MeOH (2 mL) were added formaldehyde (0.01 mL, 0.45 mmol) and sodium cyanoborohydride (46.9 mg, 0.75 mmol). After addition, the mixture was stirred at 25 ℃ for 1 hr. The reaction solution was poured into water (20 mL) and extracted with DCM (25 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by pre-HPLC (SHIMADZU, LC-20AP, Column: YMC Triart C18, 20 × 250 mm, 5 μm; Mobile phase: from 20 % to 31 % ACN [0.1% FA]; Flow rate: 15 mL/min; Retention Time: 15 min of 20 min) to afford the title compound (35.0 mg, 26% yield) as yellow oil. LCMS (ESI): m/z 363.3 [M+H]+; 1H NMR (400 MHz, DMSO-d6) δ 8.44 – 8.41 (m, 2H), 7.18 – 7.12 (m, 1H), 7.05 –7.01 (m, 2H), 4.63 – 4.58 (m, \n\n"
+  }
+}

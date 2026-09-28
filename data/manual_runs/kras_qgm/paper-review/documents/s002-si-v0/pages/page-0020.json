@@ -1,0 +1,73 @@
+{
+  "page": 20,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0020.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0020.png; all-text page, Steps 6-7 of the ISM061-14 route ending with the ISM061-14 characterisation. CROSS-PAGE JOIN: set join_previous='space' on p0020-b000. Page 19 ends 'The combined organic layers were washed with brine (20 mL x 2), dried' and this page opens 'over Na2SO4, filtered and concentrated...'; confirmed on the page images that it is one running sentence, no word split, so 'space'. Text repairs - two real compound hyphens lost at line wraps and restored after checking the printed lines: p0020-b002 'pyrimidin-2-yl)pent-4-yn-1-yl)carbamate' (PDF wraps after 'pent-4-yn-') and p0020-b004 'pyrimidin-2-yl)pentyl)carbamate' (PDF wraps after 'pyrimidin-2-'). Closed up '_tert_ -butyl' to '_tert_-butyl' in b002. Removed the spurious space in 'Triart C<sup>18</sup> , 20 x 250 mm' (the 18 is a genuine superscript in the printed column name C18, kept as <sup>) and the spurious spaces after the superscripts in '(ESI<sup>+</sup> ):' / '[M+H]<sup>+</sup> .' in b000, b002 and b004; normalised '.<sup>1</sup> H NMR ... DMSO- _d_ 6)' to '. <sup>1</sup>H NMR ... DMSO-d6)'. Verified against the image and left as printed: '9.40 µmol' for the Pd/C charge, 'Retention Time:17 min of 30 min' with no space after the colon, '(15Psi)', and 'Mobile phase: from 5% to 35% ACN [0.1% HCl]'. The mu in '5 μm' is the Greek mu U+03BC as extracted and matches the page. Page ends a complete paragraph - page 21 starts a new section and must NOT carry a join. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. ARTWORK AUDIT (re-checked, do not re-flag): this page has NO figure item because it genuinely contains no artwork. Verified three ways rather than trusting the extractor - the page content stream has 0 vector drawing operations, 0 embedded images, 0 form XObjects and 0 inline-image (BI) operators, and a 100 dpi render with every native text block masked out leaves zero non-white pixels. The page is text-only, so no figure item was added. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0020-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        133.0
+      ],
+      "markdown": "over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 30%) to afford **Compound 14-5** (100 mg, 47% yield) as yellow oil. LCMS (ESI<sup>+</sup>): Rt=2.092 min; m/z 494.3 [M+H]<sup>+</sup>.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0020-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        152.0,
+        259.0,
+        164.0
+      ],
+      "markdown": "#### Step 6: Preparation of Compound 14-6",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0020-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        183.0,
+        542.0,
+        319.0
+      ],
+      "markdown": "To a solution of _tert_-butyl (5-(4-(5-(benzyloxy)-2-(difluoromethyl)phenyl)pyrimidin-2-yl)pent-4-yn-1-yl)carbamate (100.0 mg, 0.20 mmol) and Pd/C (10.0 mg, 9.40 µmol) in MeOH (5 ml) was degassed and purged with H2 for 3 times and the reaction was stirred at 25 ℃ for 1 hr under H2 atmosphere (15Psi). The reaction mixture was filtered through a celite and the filter cake was rinsed with a small amount of MeOH (20 mL). The combined organic layers were concentrated under reduced pressure to afford **Compound 14-6** (80.0 mg), which was used in next step directly without further purification. LCMS (ESI<sup>+</sup>): 408.3 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0020-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        338.0,
+        233.0,
+        349.0
+      ],
+      "markdown": "#### Step 7: Preparation of ISM061-14",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0020-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        368.0,
+        542.0,
+        566.0
+      ],
+      "markdown": "To a solution of tert-butyl (5-(4-(2-(difluoromethyl)-5-hydroxyphenyl)pyrimidin-2-yl)pentyl)carbamate (100.0 mg, 0.25 mmol) in DCM (5 mL) was added HCl-dioxane (1 mL, 4 M) at 0 ℃, and then the mixture was stirred at 25 ℃ for 30 min. The mixture was concentrated under reduced pressure to give a residue, which was purified by pre-HPLC (SHIMADZU, LC-20AP, Column: YMC Triart C<sup>18</sup>, 20 × 250 mm, 5 μm; Mobile phase: from 5% to 35% ACN [0.1% HCl]; Flow rate: 15 mL/min; Retention Time:17 min of 30 min) to afford the title compound (35.0 mg, 0.10 mmol, 42% yield) as a gray solid. LCMS(ESI<sup>+</sup>): 308.1 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, DMSO-d6) δ 11.17 – 9.67 (m, 1H), 8.86 (d, _J_ = 5.2 Hz, 1H), 7.91 (s, 2H), 7.64 (d, _J_ = 9.2 Hz, 1H), 7.61 (d, _J_ = 5.2 Hz, 1H), 7.29 (t, _J_ = 55.7 Hz, 1H), 7.11 – 7.05 (m, 2H), 2.96 (t, _J_ = 7.6 Hz, 2H), 2.78 (dq, _J_ = 11.7, 6.0 Hz, 2H), 1.83 (p, _J_ = 7.6 Hz, 2H), 1.63 (q, _J_ = 7.6 Hz, 2H), 1.44 – 1.36 (m, 2H).",
+      "source_class": "text"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "page": 16,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended Data Fig. 3 | Quantum-Enhanced Generative Model for Drug",
+      "bbox": [
+        39.685001373291016,
+        377.2130126953125,
+        266.52349853515625,
+        385.80902099609375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Discovery Applications. (B) Hybrid model combining a Quantum Circuit Born",
+      "bbox": [
+        39.685001373291016,
+        387.21600341796875,
+        286.89349365234375,
+        395.96600341796875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Machine (QCBM) with Long Short-Term Memory (LSTM). This model iteratively",
+      "bbox": [
+        39.678001403808594,
+        397.33099365234375,
+        288.9507751464844,
+        405.968994140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "trains using prior samples from quantum hardware. (A) Integration method of",
+      "bbox": [
+        39.678001403808594,
+        407.22198486328125,
+        285.4186096191406,
+        415.97198486328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "prior samples into the LSTM architecture. Molecular information (in SELFIES",
+      "bbox": [
+        39.678009033203125,
+        417.33697509765625,
+        280.9443054199219,
+        425.9749755859375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "encoding) and quantum data are merged by addition or concatenation. The",
+      "bbox": [
+        306.98699951171875,
+        377.3389587402344,
+        544.3330078125,
+        385.9769592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "resultant samples, X’(t), are then input to the LSTM cell. (C) Quantum prior",
+      "bbox": [
+        306.98699951171875,
+        387.2299499511719,
+        540.9479370117188,
+        395.9799499511719
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "component described as a QCBM, generating samples from quantum hardware",
+      "bbox": [
+        306.98699951171875,
+        397.3449401855469,
+        556.2275390625,
+        405.9829406738281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "each training epoch and trains with a reward value, P (x)=Softmax(R(x)),",
+      "bbox": [
+        306.98699951171875,
+        407.3479309082031,
+        533.0581665039062,
+        415.9859313964844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "calculated using Chemistry42 or a local filter.",
+      "bbox": [
+        306.98699951171875,
+        417.3509216308594,
+        448.510009765625,
+        425.9889221191406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 16
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          42,
+          51,
+          342,
+          67
+        ],
+        "pos": [
+          71,
+          73
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          63,
+          74,
+          563,
+          374
+        ],
+        "pos": [
+          73,
+          75
+        ]
+      },
+      {
+        "index": 4,
+        "class": "caption",
+        "bbox": [
+          39,
+          378,
+          289,
+          426
+        ],
+        "pos": [
+          75,
+          459
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          306,
+          378,
+          557,
+          426
+        ],
+        "pos": [
+          459,
+          809
+        ]
+      },
+      {
+        "index": 6,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          809,
+          832
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n\n\n\n\n**Extended Data Fig. 3 | Quantum-Enhanced Generative Model for Drug Discovery Applications.** ( **B** ) Hybrid model combining a Quantum Circuit Born Machine (QCBM) with Long Short-Term Memory (LSTM). This model iteratively trains using prior samples from quantum hardware. ( **A** ) Integration method of prior samples into the LSTM architecture. Molecular information (in SELFIES \n\nencoding) and quantum data are merged by addition or concatenation. The resultant samples, X’(t), are then input to the LSTM cell. ( **C** ) Quantum prior component described as a QCBM, generating samples from quantum hardware each training epoch and trains with a reward value, P (x)=Softmax(R(x)), calculated using Chemistry42 or a local filter. \n\nNature Biotechnology \n\n"
+  }
+}

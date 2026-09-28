@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "name": "quantum-kras-paper",
+  "title": "Supplementary Information",
+  "source": {
+    "path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/originals/s002-si-v0.pdf",
+    "sha256": "af5d72df4d40d25067ea6345e9ea3162459875912967c7c6e080bde05a4f00bc",
+    "normalized_sha256": "5e2192caedef15dda1fe5c04ab42e42d11864ac01e72b3bcca37d5653a9ab5fe",
+    "pages": 37
+  },
+  "notes": [
+    "Provenance: this file is SI_v0.pdf as distributed inside the authors' code archive (Zenodo doi:10.5281/zenodo.11137638; GitHub aspuru-guzik-group/quantum-generative-models, tag 1.0.0-beta.1). It was NOT obtained from the publisher. The Zenodo record describes the deposit as \"the first beta version for the initial submission\", and the document's contents are consistent with an early draft.",
+    "Incomplete source: section S2 is absent entirely - the top-level numbering runs S1 then S3. The document also carries no reference list and stops after the second figure of S3, on a clean page with no continuation marker. Verified by scanning the text layer of all 37 pages for section headings. Treat a search that finds no S2 material as a property of this file, not as evidence that the work lacks it.",
+    "Scope: this supplement documents only wet-lab synthetic chemistry (S1.1-S1.13) and surface plasmon resonance measurements (S3). It contains NO supplementary material for the paper's computational contribution: a keyword scan of all 37 pages for quantum, qubit, circuit, ansatz, VQE, QAOA, generative, neural, latent, hyperparameter, pseudocode, algorithm, STONED, SELFIES, QCBM, docking, Tanimoto, Lipinski, PAINS and SYBA matched only the SI's own title line on page 1. Questions about the quantum-classical model must be answered from the main paper.",
+    "The source's own numbering is not unique and has been transcribed as printed rather than corrected. Section S1.9 is printed twice, for ISM061-16 (page 24) and again for ISM061-22 (page 30); the ISM061-22 section also appears out of sequence, between S1.11 and S1.12. Scheme S8 is likewise printed twice, for ISM061-15 (page 21) and ISM061-22 (page 30). Section S1.1 is printed twice on page 1-2. Only asset filenames were disambiguated; headings and captions retain the printed numbers.",
+    "Image-only content: page 28 has no text layer and OCR failed on it, so the NMR peak labels, integrals and axis values on that page are preserved as an image and are not machine-readable. Identity of the two spectra was confirmed by rendering their peak labels at 900 dpi and matching them against the shift lists printed on page 27.",
+    "Vector artwork limitation: the interiors of all reaction schemes and NMR spectra are drawn outlines rather than text. Reagents and conditions written along scheme arrows, and every axis, peak and integral label on the spectra, exist only as vector paths. They are retained inside the figure images but are not searchable text. The surrounding prose restates the reagents and shift lists.",
+    "Typography: chemical subscripts are kept as inline digits (Na2SO4, H2O) while superscripts are <sup>-tagged ([M+H]<sup>+</sup>, <sup>1</sup>H NMR). This asymmetry comes from the extractor and was preserved consistently across all 37 pages rather than normalised on some pages only, so the characters are faithful even though the source's subscript typography is not.",
+    "Apparent errors in the source have been preserved verbatim, not silently repaired. Examples: 'ISM023-18' and 'ISM023-18-2' written for ISM061-18 and ISM061-18-2 (page 27); 'Step 3: Preparation of Compound 15-3' where the compound is 16-3 (page 24); '3 umol' where the parallel step reads 3 mmol (page 14); '1.20 (s, 0H)' and a fullwidth comma in '10 mg,0.26 mmol' (page 17); 'under reduce pressure' (page 16); 'yellow soild' (page 35); 'BI-2852 where synthesized' (page 37); lowercase 'Pd(pph3)2Cl2' (page 22).",
+    "Editorial normalisation applied by the conversion, recorded for transparency: line-wrap hyphens that the extractor had swallowed were restored after checking the source (for example 1H-indazole, N-terminal, pyrimidin-2-yl, 1,4-dioxane); a superscripted degree sign in 'stirred at 100 <sup>degC</sup>' was corrected to an ordinary '100 degC' because the source prints a normal degree sign that merely sits high in the font; and redundant bold emphasis wrapping inside Markdown headings was removed.",
+    "No supplementary tables exist in this package and assets/table/ and assets/supp_table/ are empty. The main text cites Supplementary Tables 1, 2, 3, 4 and 6 and Supplementary Fig. 4, and the supplement's SPR section cites its own Table 2 and Table 3, but none of them are present in either converted source: the publisher's supplementary tables were never part of the material converted here. This matters for the wet-lab numbers in particular. Supplementary Tables 3, 4 and 6 hold the per-compound IC50 values and SPR binding affinities, so those underlying per-compound data cannot be retrieved from this package. The headline values quoted in the main text, such as the 1.4 micromolar KRAS-G12D affinity of ISM061-018-2, are present in the prose. Ignore the generic instruction in SKILL.md and the navigation index about reading table CSVs; there are none."
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "file": "pages/page-0001.json"
+    },
+    {
+      "page": 2,
+      "file": "pages/page-0002.json"
+    },
+    {
+      "page": 3,
+      "file": "pages/page-0003.json"
+    },
+    {
+      "page": 4,
+      "file": "pages/page-0004.json"
+    },
+    {
+      "page": 5,
+      "file": "pages/page-0005.json"
+    },
+    {
+      "page": 6,
+      "file": "pages/page-0006.json"
+    },
+    {
+      "page": 7,
+      "file": "pages/page-0007.json"
+    },
+    {
+      "page": 8,
+      "file": "pages/page-0008.json"
+    },
+    {
+      "page": 9,
+      "file": "pages/page-0009.json"
+    },
+    {
+      "page": 10,
+      "file": "pages/page-0010.json"
+    },
+    {
+      "page": 11,
+      "file": "pages/page-0011.json"
+    },
+    {
+      "page": 12,
+      "file": "pages/page-0012.json"
+    },
+    {
+      "page": 13,
+      "file": "pages/page-0013.json"
+    },
+    {
+      "page": 14,
+      "file": "pages/page-0014.json"
+    },
+    {
+      "page": 15,
+      "file": "pages/page-0015.json"
+    },
+    {
+      "page": 16,
+      "file": "pages/page-0016.json"
+    },
+    {
+      "page": 17,
+      "file": "pages/page-0017.json"
+    },
+    {
+      "page": 18,
+      "file": "pages/page-0018.json"
+    },
+    {
+      "page": 19,
+      "file": "pages/page-0019.json"
+    },
+    {
+      "page": 20,
+      "file": "pages/page-0020.json"
+    },
+    {
+      "page": 21,
+      "file": "pages/page-0021.json"
+    },
+    {
+      "page": 22,
+      "file": "pages/page-0022.json"
+    },
+    {
+      "page": 23,
+      "file": "pages/page-0023.json"
+    },
+    {
+      "page": 24,
+      "file": "pages/page-0024.json"
+    },
+    {
+      "page": 25,
+      "file": "pages/page-0025.json"
+    },
+    {
+      "page": 26,
+      "file": "pages/page-0026.json"
+    },
+    {
+      "page": 27,
+      "file": "pages/page-0027.json"
+    },
+    {
+      "page": 28,
+      "file": "pages/page-0028.json"
+    },
+    {
+      "page": 29,
+      "file": "pages/page-0029.json"
+    },
+    {
+      "page": 30,
+      "file": "pages/page-0030.json"
+    },
+    {
+      "page": 31,
+      "file": "pages/page-0031.json"
+    },
+    {
+      "page": 32,
+      "file": "pages/page-0032.json"
+    },
+    {
+      "page": 33,
+      "file": "pages/page-0033.json"
+    },
+    {
+      "page": 34,
+      "file": "pages/page-0034.json"
+    },
+    {
+      "page": 35,
+      "file": "pages/page-0035.json"
+    },
+    {
+      "page": 36,
+      "file": "pages/page-0036.json"
+    },
+    {
+      "page": 37,
+      "file": "pages/page-0037.json"
+    }
+  ]
+}

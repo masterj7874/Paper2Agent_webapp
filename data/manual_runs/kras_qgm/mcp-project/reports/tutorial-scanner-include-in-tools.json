@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "scan_metadata": {
+    "repository_name": "quantum-generative-models",
+    "paper_name": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors (Nature Biotechnology, doi:10.1038/s41587-024-02526-3)",
+    "repository_url": "https://github.com/aspuru-guzik-group/quantum-generative-models",
+    "pinned_tag": "1.0.0-beta.1",
+    "pinned_commit": "20cb407b228735dc479737cf765448e9c7d5a9cc",
+    "license": "MIT",
+    "local_source_path": "repo/quantum-generative-models",
+    "scan_date": "2026-09-23",
+    "route": "python",
+    "requested_filter": null,
+    "n_source_files_evaluated": 71,
+    "n_source_files_included": 4,
+    "n_tools_proposed": 8,
+    "success": true,
+    "explanation": "Filtered inventory: the four source modules that own at least one selected tool. Selection was confined to the repository's orquestra-free subset because orquestra-qml-core is unavailable on PyPI (HTTP 404), which makes 31 of 71 Python files un-importable, including every training driver and the entire LSTM+QCBM pipeline. The full candidate review, all deferrals, the verification analysis and the implementation constraints are in reports/tutorial-scanner.json.",
+    "n_candidates_reviewed": 21,
+    "n_candidates_deferred": 5,
+    "n_candidates_omitted": 4,
+    "n_candidates_internal_or_merged": 4,
+    "candidate_accounting": "21 candidates reviewed = 8 exposed + 5 deferred (blocked by a missing dependency or external requirement) + 4 omitted (out of scope or defective) + 4 kept internal or merged into a selected tool."
+  },
+  "global_prerequisites": {
+    "working_directory": "The process CWD must be the repository root (repo/quantum-generative-models). utils/filter.py loads its alert catalogues at module import from the CWD-relative paths ./database/mcf.csv, ./database/wehi_pains.csv and ./database/pains.txt.",
+    "import_mechanism": "utils/__init__.py imports orquestra-dependent submodules, so `import utils.filter` fails. Register a synthetic `utils` package module whose __path__ points at the utils directory WITHOUT executing the real __init__.py, then import utils.filter, utils.stoned_utils and utils.lipinski_utils through it. utils/lipinski_utils.py uses relative imports and therefore requires this package context; loading it as a bare top-level module will not work.",
+    "required_precondition_check": "utils/filter.py swallows a missing-catalogue error into a logging warning, leaving the module globals `dic` and `_filters` unbound. pains_filt and passes_wehi_mcf then raise NameError at call time, which the paper's combine_filter silently absorbs into an empty result set. Every tool touching those functions MUST assert the catalogues loaded before running.",
+    "python_dependencies": [
+      "rdkit",
+      "selfies",
+      "syba",
+      "pandas",
+      "numpy",
+      "torch (only for kras_qgm_score_molecules_reward)"
+    ],
+    "not_required": "qiskit is NOT needed by any selected tool. No qiskit version pin should be forced on the environment on their behalf.",
+    "performance": "syba.SybaClassifier() followed by fitDefaultScore() is slow to initialise. Build it once at module scope, never per call.",
+    "preserve_upstream_quirks": "database/pains.txt carries a UTF-8 BOM, so the first SMARTS fails to parse and pains_filt silently skips one of 481 patterns. This is upstream behaviour: preserve it, document it, do not fix it."
+  },
+  "tutorials": [
+    {
+      "path": "utils/filter.py",
+      "source_id": "utils_filter",
+      "title": "utils.filter",
+      "description": "The canonical medicinal-chemistry and structural-alert filter module, and the one the paper's production driver imports (qDrug_generator_benchmark_parallel_v10.py:59-68). Supersedes the four near-duplicate copies elsewhere in the tree. Orquestra-free and modern-pandas safe.",
+      "type": "script",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Include. Owns three distinct user tasks and is the most reused code in the repository.",
+      "suggested_tools": [
+        {
+          "tool_name": "kras_qgm_filter_molecules_medchem",
+          "source_section": "apply_filters (line 189) and legacy_apply_filters (line 146)",
+          "description": "Apply the paper's medicinal-chemistry admissibility filter to a list of molecules and report which criterion rejected each failure. The 'hard' mode (apply_filters) requires at least one aromatic ring, caps maximum ring size at 6 and requires nitrogen or oxygen; the 'soft' mode (legacy_apply_filters) drops those three requirements and caps ring size at 8. Both reject non-zero formal charge, radical electrons, more than two bridgehead atoms, improper phosphorus, 26 forbidden substructure patterns, 10 or more rotatable bonds, and molecules outside the Lipinski bounds (logP <= 5, HBA <= 10, HBD <= 5, 300 Da <= MW <= max_mol_weight). The paper's own settings use 'soft'.",
+          "primary_input": "smiles: list of SMILES strings",
+          "parameters": [
+            "filter_constraint: 'hard' | 'soft' (default 'soft', matching the paper's settings JSON)",
+            "max_mol_weight: float (default 800.0, the driver's value)"
+          ],
+          "outputs": [
+            "per-molecule boolean pass/fail",
+            "first violated criterion for each rejected molecule",
+            "the surviving SMILES list",
+            "pass count and pass fraction"
+          ],
+          "applicable_to_new_data": true,
+          "verification_plan": "No repository-authored expected value exists. Import utils/filter.py directly and record the actual boolean vectors for both modes over the 644 SMILES in data/KRAS_G12D/KRAS_G12D_inhibitors_update202209_updated.csv (read with encoding='utf-8-sig', column 'smiles') and the first 2000 rows of data/KRAS_G12D/1Mstoned_vsc_initial_dataset_insilico_chemistry42_filtered.csv. Compare exact per-molecule agreement, and assert hard mode is strictly more restrictive than soft on identical input. Deterministic.",
+          "notes": "Do not silently repair the upstream N/O test at line 200, which reads ('N' not in smi or 'n' not in smi) and is a substring check on raw SMILES text rather than an atom-level query. Preserve it. Merged in from cand_lipinski_list_filters: utils/lipinski_utils.py:lipinski_filter and lipinski_hard_filter cover the same task with a 500 Da default; expose that via max_mol_weight instead of a second tool."
+        },
+        {
+          "tool_name": "kras_qgm_screen_structural_alerts",
+          "source_section": "pains_filt (line 239) and passes_wehi_mcf (line 249)",
+          "description": "Screen molecules against the bundled PAINS and WEHI/MCF structural-alert catalogues and report which named alerts fire. PAINS matching returns the specific alert names (for example 'azo_A(324)'); the WEHI/MCF check returns a single boolean after adding explicit hydrogens. Catalogues: database/pains.txt (481 patterns, 480 active), database/wehi_pains.csv (479), database/mcf.csv (22).",
+          "primary_input": "smiles: list of SMILES strings",
+          "parameters": [],
+          "outputs": [
+            "per-molecule list of matched PAINS alert names",
+            "per-molecule WEHI/MCF boolean",
+            "combined clean/flagged verdict",
+            "count of flagged molecules"
+          ],
+          "applicable_to_new_data": true,
+          "verification_plan": "STRONG, repository-authored. stoned_algorithm/PAINS_TEST.py lines 13-19 assert that azobenzene, Chem.MolFromSmiles('c1ccccc1N=Nc1ccccc1'), matches alert 'azo_A(324)'. Independently corroborated: database/pains.txt line 6 is `[#7;!R]=[#7] azo_A(324)` and azobenzene's N=N is acyclic. Assert 'azo_A(324)' is in the returned alert list. The MCF branch has no authored expectation, so record direct upstream results over the 644 KRAS inhibitors. Deterministic.",
+          "notes": "Merged from two functions serving one user task. The owning utils/filter.py:pains_filt returns the property-name list directly, whereas the PAINS_TEST.py version returns the mutated Mol; adapt the doctest assertion accordingly. pains_filt mutates the input Mol via SetProp, so pass a freshly parsed Mol per call to avoid cross-contamination between molecules."
+        },
+        {
+          "tool_name": "kras_qgm_compute_library_diversity",
+          "source_section": "get_diversity (line 258)",
+          "description": "Measure the internal chemical diversity of a compound library as 100 * (1 - mean pairwise Tanimoto similarity), using Morgan fingerprints of radius 3 folded to 2048 bits. Invalid SMILES are dropped before the pairwise sum. This is the component of the paper's batch-reporting statistics that survives the orquestra blocker.",
+          "primary_input": "smiles: list of SMILES strings (at least two valid molecules)",
+          "parameters": [],
+          "outputs": [
+            "diversity percentage (float)",
+            "number of valid molecules used",
+            "number of invalid SMILES dropped"
+          ],
+          "applicable_to_new_data": true,
+          "verification_plan": "No authored expected value. Fully deterministic, so record the exact value from direct upstream execution over the 644 KRAS inhibitors and over fixed-size slices of the STONED corpus. Additional property checks that invent nothing: a library of N identical SMILES scores 0.0, and appending duplicates must not increase diversity.",
+          "notes": "Required precondition: n_pairs is n*(n-1)/2, so fewer than two valid molecules raises ZeroDivisionError. The wrapper must reject such input with a clear message. This is a source-backed guard, not an added restriction."
+        }
+      ]
+    },
+    {
+      "path": "utils/stoned_utils.py",
+      "source_id": "utils_stoned_utils",
+      "title": "utils.stoned_utils",
+      "description": "The clean, importable library form of the STONED-SELFIES algorithm. Assigned as owner over the three stoned_algorithm copies because it is the only one that imports cleanly: it is __main__-guarded, does no module-level file I/O, has no syba import, and draws its mutation alphabet from selfies.get_semantic_robust_alphabet() rather than a CWD-relative ./alphabet.txt.",
+      "type": "script",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Include. Owns the paper's chemical-space expansion step, and its __main__ block is a genuine runnable verification source.",
+      "suggested_tools": [
+        {
+          "tool_name": "kras_qgm_expand_chemical_space_stoned",
+          "source_section": "randomize_smiles (18) + selfies.encoder + get_mutated_SELFIES (233) -> mutate_selfie (136) + selfies.decoder + sanitize_smiles (36); composition order documented by the module's own __main__ block at lines 283-330",
+          "description": "Expand a seed molecule into a diverse set of structurally related candidates using STONED-SELFIES. Generates N randomized (dearomatized, non-canonical) SMILES orderings of the seed, converts each to SELFIES, applies the requested numbers of random insert/replace/delete mutations, decodes back to SMILES, and returns the deduplicated canonical set. This is the paper's training-set construction step.",
+          "primary_input": "seed_smiles: a single SMILES string",
+          "parameters": [
+            "num_random_samples: int (default 1000, the __main__ block's value; the paper's stoned.py script used 700)",
+            "num_mutations: list of int (default [1,2,3,4,5], the value used by every in-repo script)",
+            "seed: optional int for the mutation stage only"
+          ],
+          "outputs": [
+            "deduplicated canonical SMILES of the generated molecules",
+            "count generated before and after deduplication",
+            "the seed's canonical SMILES"
+          ],
+          "applicable_to_new_data": true,
+          "verification_plan": "utils/stoned_utils.py:283-363 is a runnable STONED 'EXPERIMENT B' on Aripiprazole ('C1CC(=O)NC2=C1C=CC(=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl', fp_type ECFP4, num_random_samples=1000, num_mutation_ls=[1,2,3,4,5]). It is __name__-guarded, so `python utils/stoned_utils.py` from the repository root executes it unmodified. Because randomize_smiles is NOT seedable, compare invariants and distributional properties, never a fixed output list: every returned SMILES round-trips through RDKit canonicalisation; outputs are unique; output count grows with num_random_samples; and under a fixed np.random.seed the mutation stage alone (get_mutated_SELFIES over a FIXED SELFIES list) is exactly reproducible.",
+          "notes": "STOCHASTIC. Two different RNGs are involved. mutate_selfie and get_mutated_SELFIES use numpy's global RNG and ARE reproducible under np.random.seed. randomize_smiles uses RDKit's internal RNG via MolToSmiles(doRandom=True) and is NOT affected by np.random.seed, so the tool as a whole cannot be made fully deterministic. Expose the seed parameter only with that caveat documented, and note it sets process-global numpy state. mutate_selfie loops until it produces a valid molecule and has no iteration cap, so a pathological seed molecule could spin; consider a bounded attempt count only if observed, and document any such guard as an addition. Merged in from cand_stoned_primitives: the individual primitives stay internal."
+        },
+        {
+          "tool_name": "kras_qgm_score_fingerprint_similarity",
+          "source_section": "get_fp_scores (line 257), via get_fingerprint (121) and _FingerprintCalculator (75)",
+          "description": "Score how similar each of a set of molecules is to a reference structure, as Tanimoto similarity over a chosen fingerprint. Supports the nine fingerprint types the repository implements: AP (atom pair), PHCO (Gobbi 2D pharmacophore), BPF, BTF, PATH, ECFP4, ECFP6, FCFP4, FCFP6. This is how the paper enforced its novelty criterion - stoned_algorithm/stoned.py:390 keeps a mutant only when ECFP4 similarity to its seed is below 0.3.",
+          "primary_input": "smiles: list of SMILES strings",
+          "parameters": [
+            "target_smiles: the reference SMILES",
+            "fp_type: one of AP|PHCO|BPF|BTF|PATH|ECFP4|ECFP6|FCFP4|FCFP6 (default ECFP4, the value used throughout the repository)"
+          ],
+          "outputs": [
+            "one Tanimoto similarity per input molecule",
+            "the fingerprint type used"
+          ],
+          "applicable_to_new_data": true,
+          "verification_plan": "Fully deterministic, so exact references are available and this is the inventory's strongest anchor. Checks needing no invented data: get_fp_scores([smi], smi, fp) == [1.0] for every one of the nine fingerprint types (self-similarity), plus recorded upstream values for pairs drawn from the 644 KRAS inhibitors. The same call with ECFP4 appears in the module's __main__ block at line 345, and the reporting bands 0.75 / 0.6 / 0.4 at lines 350-353 are traceable in source.",
+          "notes": "PATH is the real method name; the docstrings in both this module and stoned_algorithm/stoned.py misspell it 'PAT'. Validate fp_type against the nine real method names, since an unknown value reaches getattr and produces an AttributeError rather than the module's intended Exception. Upstream raises on unparseable SMILES rather than skipping them; preserve that."
+        }
+      ]
+    },
+    {
+      "path": "utils/lipinski_utils.py",
+      "source_id": "utils_lipinski_utils",
+      "title": "utils.lipinski_utils",
+      "description": "Per-molecule drug-likeness profiling. Imports utils.mol_methods.verify_sequence and utils.filter.apply_filters via relative imports, so it requires the synthetic-package import mechanism described in global_prerequisites.",
+      "type": "script",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Include, for compute_lipinski/compute_qed/compute_logp only. Their reason lists and property dict are a genuinely different output from the boolean filters. The list-based lipinski_filter and lipinski_hard_filter are merged into kras_qgm_filter_molecules_medchem, and draw_compounds is excluded as a plotting helper that writes files to disk.",
+      "suggested_tools": [
+        {
+          "tool_name": "kras_qgm_profile_molecule_properties",
+          "source_section": "compute_lipinski (line 118), compute_qed (223), compute_logp (215)",
+          "description": "Produce a drug-likeness profile for a single molecule with explicit pass/fail reasons: which of Lipinski's rules it satisfies and which it breaks, a binary rule-compliance array, the underlying physicochemical properties, and the QED and logP scores the paper's driver computes alongside them. Answers 'why did this molecule fail?', which the boolean filter tools cannot.",
+          "primary_input": "smiles: a single SMILES string",
+          "parameters": [
+            "num_hdonors_ref: int (default 5)",
+            "num_hacceptors_ref: int (default 10)",
+            "mol_weight_ref: int (default 500)",
+            "mol_logp_ref: int (default 5)"
+          ],
+          "outputs": [
+            "passed: list of satisfied-rule descriptions",
+            "failed: list of violated-rule descriptions",
+            "binary rule-compliance array (5 elements: donors, acceptors, weight, logP, rotatable bonds)",
+            "property dict (n_hdonors, n_hacceptors, mol_weight, mol_logp, ring_count, heavy_atom)",
+            "qed",
+            "logp"
+          ],
+          "applicable_to_new_data": true,
+          "verification_plan": "No authored expected value. Fully deterministic. Record the exact per-molecule outputs from direct upstream execution over the 644 KRAS inhibitors; the underlying RDKit descriptors are stable, so compare to floating-point tolerance.",
+          "notes": "Merged compute_qed and compute_logp in, since they are one-line RDKit calls the driver computes together with compute_lipinski. Preserve two upstream quirks rather than fixing them: the binary array has 5 elements while the property dict has 7 keys, so they are not index-aligned; and the rotatable-bond branch at lines 187-192 formats mol_logp into its message where it clearly means the rotatable-bond count. Upstream raises on an invalid SMILES (line 138), so surface that as a clear error. Do not bind by the bare name lipinski_filter: utils/filter.py defines a different function with the same name that takes a Mol, and utils/__init__.py shadows this module's version with it."
+        }
+      ]
+    },
+    {
+      "path": "qDrug_generator_benchmark_parallel_v10.py",
+      "source_id": "qdrug_generator_v10_extracted",
+      "title": "qDrug_generator_benchmark_parallel_v10 (combine_filter and reward_fc only)",
+      "description": "The paper's full generation driver. The file imports orquestra at module level and CANNOT be imported or executed. Only two self-contained functions are in scope - combine_filter (225-253) and reward_fc (255-277) - both of which depend solely on orquestra-free symbols and encode the paper's actual acceptance and reward logic. v10 is the assigned extraction source over v11 and v13 because it is the only revision whose QCBM wiring is fully visible; the two functions are equivalent across all three.",
+      "type": "script",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Include ONLY as an extracted-code source for two tools. Implementation order step 3 applies: extract those functions verbatim with source attribution, and have the extraction call the upstream utils/filter.py symbols and syba rather than reimplement any filter. Everything else in the file - the training loop, optuna sweep, wandb logging, Chemistry42 calls and SLURM plumbing - is out of scope.",
+      "suggested_tools": [
+        {
+          "tool_name": "kras_qgm_apply_generation_acceptance_filter",
+          "source_section": "combine_filter (lines 225-253), with the constraint mapping resolved at lines 594-604",
+          "description": "Apply the paper's complete generation-acceptance filter to a batch of candidate molecules. The cascade is: the medicinal-chemistry filter, AND not already accepted (batch deduplication), AND syba.predict(smiles) > 0, AND passes_wehi_mcf, AND no PAINS alerts. filter_constraint 'hard' binds apply_filters; 'soft' binds legacy_apply_filters. This is the exact composition and ordering that produced the paper's compound set.",
+          "primary_input": "smiles: list of candidate SMILES strings",
+          "parameters": [
+            "filter_constraint: 'hard' | 'soft' (default 'soft', matching the paper's settings JSON)",
+            "max_mol_weight: float (default 800.0)"
+          ],
+          "outputs": [
+            "accepted SMILES list",
+            "per-stage attrition counts (medchem, duplicate, syba, wehi_mcf, pains)",
+            "overall pass fraction"
+          ],
+          "applicable_to_new_data": true,
+          "verification_plan": "No authored expected value. Replicate the extracted cascade against the directly-imported upstream functions over the first 2000 rows of the STONED corpus and over the 644 KRAS inhibitors, and record the accepted sets and per-stage counts. Compare exact set equality of accepted SMILES plus per-stage counts. Deterministic once SybaClassifier.fitDefaultScore() has been called.",
+          "notes": "REQUIRED GUARD: the upstream bare `except Exception` swallows the NameError raised when utils/filter.py failed to load its catalogues, silently returning an empty accepted set instead of failing. Assert the catalogues are loaded before running. This is a necessary check against misleading results, not defensive padding. Not redundant with the individual filter tools: it adds the SYBA gate and batch deduplication. The upstream O(n^2) `smile_ not in pass_all` membership test may be implemented with a set for the same semantics, since deduplication is order-preserving and exact."
+        },
+        {
+          "tool_name": "kras_qgm_score_molecules_reward",
+          "source_section": "reward_fc (lines 255-277)",
+          "description": "Score candidate molecules with the paper's graded reward function, the objective used to steer generation. Nested cumulative scoring: base 1; +15 if the medicinal-chemistry filter passes; then +5 if the WEHI/MCF check passes; then +5 if no PAINS alerts fire; then +30 if the SYBA synthetic-accessibility score exceeds 0. Range 1 to 56, and 0 on any exception. Gives a graded preference ordering rather than an accept/reject verdict.",
+          "primary_input": "smiles: list of candidate SMILES strings",
+          "parameters": [
+            "filter_constraint: 'hard' | 'soft' (default 'soft'; upstream default filter_fc is legacy_apply_filters)",
+            "max_mol_weight: float (default 800.0)"
+          ],
+          "outputs": [
+            "one numeric reward per molecule",
+            "per-molecule component breakdown of which stages contributed"
+          ],
+          "applicable_to_new_data": true,
+          "verification_plan": "No authored expected value. Record the exact reward vector from direct upstream execution over the same fixed slices used for the acceptance filter. Deterministic. Strong structural cross-checks that invent nothing: because the scoring is a nested step function, the reward can only take the values {0, 1, 16, 21, 26, 56}; and every molecule accepted by kras_qgm_apply_generation_acceptance_filter in the same mode must score exactly 56. That composition check also exercises artifact exchange between the two tools.",
+          "notes": "Upstream returns a torch.Tensor; serialise to a plain list of numbers while preserving values exactly. torch is required only by this tool. Preserve the nesting: the stages are cumulative and short-circuit, so a molecule failing the medchem filter scores 1 regardless of its other properties. Do not flatten it into independent additive terms."
+        }
+      ]
+    }
+  ]
+}

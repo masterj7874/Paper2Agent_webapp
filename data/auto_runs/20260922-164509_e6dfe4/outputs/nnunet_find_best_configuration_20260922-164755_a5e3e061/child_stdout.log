@@ -1,0 +1,19 @@
+
+***All results:***
+nnUNetTrainer_5epochs__nnUNetPlans__2d: 0.8608356357016642
+
+*Best*: nnUNetTrainer_5epochs__nnUNetPlans__2d: 0.8608356357016642
+
+***Determining postprocessing for best model/ensemble***
+WARNING: Not all files in folder_ref were found in folder_predictions. Determining postprocessing should always be done on the entire dataset!
+Results were improved by removing all but the largest foreground region. Mean dice before: 0.86084 after: 0.861
+Removing all but the largest component for 1 did not improve results! Dice before: 0.86921 after: 0.86921
+Results were improved by removing all but the largest component for 2. Dice before: 0.85279 after: 0.85281
+
+***Run inference like this:***
+
+nnUNetv2_predict -d Dataset004_Hippocampus -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 -tr nnUNetTrainer_5epochs -c 2d -p nnUNetPlans
+
+***Once inference is completed, run postprocessing like this:***
+
+nnUNetv2_apply_postprocessing -i OUTPUT_FOLDER -o OUTPUT_FOLDER_PP -pp_pkl_file /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.pkl -np 8 -plans_json /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/plans.json

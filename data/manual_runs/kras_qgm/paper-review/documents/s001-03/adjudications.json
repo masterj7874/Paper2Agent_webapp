@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "page": 1,
+      "check": "number_differences",
+      "fingerprint": "a73f2cf328c84d5dd3fc46e2d99511abb06e758d7fc08c629798b7c3389cd0fa",
+      "reason": "Visible source prints the chemical-space estimate as 10 with a superscript 60 (~10^60 molecules); the text layer flattens the superscript and emits the single token 1060. The output restores it as 10<sup>60</sup>, so the source's 1060 is absent and 10 and 60 appear instead. Checked on previews/page-0001.png."
+    },
+    {
+      "page": 4,
+      "check": "number_differences",
+      "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+      "reason": "The Fig. 2 caption prints the compound identifier ISM061-018-2, but the line wraps after ISM061 and the extractor swallowed the real hyphen, yielding ISM061018-2 with 018 as a bare token. The hyphen was restored after checking the visible source, so the output carries -018 where the source parser saw 018. Checked on previews/page-0004.png."
+    },
+    {
+      "page": 4,
+      "check": "independent_parser_number_differences",
+      "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+      "reason": "Same cause as the primary number_differences entry for this page: the restored line-wrap hyphen in ISM061-018-2 turns the source's bare 018 into -018 in the output. Checked on previews/page-0004.png."
+    }
+  ]
+}

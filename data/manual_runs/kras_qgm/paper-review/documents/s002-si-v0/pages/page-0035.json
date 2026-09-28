@@ -1,0 +1,97 @@
+{
+  "page": 35,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0035.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0035.png and compared all seven items with evidence/page-0035.json. The page has only a handful of vector ops, all of them highlight rectangles behind text - no figures or tables - so the text-only item list is correct. Set join_previous='space' on p0035-b000: page 34 ends '...K2CO3 (3 g, 21.98 mmol) and' and this page opens 'Pd(dppf)Cl2 (804 mg, 1.10 mmol) at 25 C under N2 atmosphere...', a continuing sentence broken at a word boundary. Step headings demoted to level 4. Text repairs: removed <mark> artifacts around 'KOAc' and around 'purified by Prep-TLC (SiO 2 , PE:EA=4: 1)' / '(SiO 2 , PE:EA=3: 1)', rejoining them to 'Prep-TLC (SiO2, PE:EA=4: 1)' and 'Prep-TLC (SiO2, PE:EA=3: 1)'; fixed '(ESI<sup>+</sup> )' and '[M+H]<sup>+</sup> .' spacing. PRESERVED SOURCE DEFECTS, verified in the PDF text spans and the render and NOT corrected: Step 2 prints 'LCMS (ESI+): .259.0 [M+H]+.' with a leading full stop before 259.0, and Steps 3 and 4 both print 'as a yellow soild' for 'solid'. The final paragraph is cut after 'LCMS (ESI<sup>+</sup>):' and continues on page 36. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*.  COORDINATOR ARTWORK RE-CHECK: this page was flagged as possibly missing a figure item. It is not. PyMuPDF reports no images, and the only vector objects are white-filled (1,1,1) rectangles exactly one text line tall sitting on text baselines - they are the invisible highlight boxes that the extractor turned into the <mark> spans I removed, not artwork. The render confirms a text-only page. No figure item was added. THREE-WAY ARTWORK PROOF (coordinator method): content stream checked for drawing ops, embedded images, form XObjects and inline images -> images=0, xobjects=0, forms=0, inline BI=0, and every vector op present is a white-fill (1,1,1) rectangle one text line tall on a text baseline (the invisible highlight boxes behind the spans the extractor had wrapped in <mark>). Then the page was rendered at 200 dpi with every native text line masked: ZERO non-white pixels remain. This page is genuinely text-only; no figure item was added.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0035-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        195.0
+      ],
+      "markdown": "Pd(dppf)Cl2 (804 mg, 1.10 mmol) at 25 ℃ under N2 atmosphere. After addition, the reaction mixture was heated and stirred at 100 ℃ under a nitrogen atmosphere for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (200 mL) and extracted with EtOAc (100 mL × 3), the combined organic layers were washed with brine (150 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 6.8%) in petroleum ether to give the title compound (1.2 g, 84.5% yield) as a yellow liquid.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0035-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        204.0,
+        259.0,
+        216.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 24-6",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0035-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        235.0,
+        542.0,
+        412.0
+      ],
+      "markdown": "To a solution of 2-vinylbenzonitrile (500 mg, 3.87 mmol) in DMF (5 mL) was added KOAc (759 mg, 7.74 mmol), PPh3 (203 mg, 0.77 mmol), 4-bromo-2-chloro-3-fluoropyridine (896 mg, 4.26 mmol) and Pd(OAc)2 (175 mg, 0.77 mmol) at 25 ℃ under N2 atmosphere. After addition, the reaction mixture was heated and stirred at 100 ℃ under a nitrogen atmosphere for 4 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (80 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (80 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, PE:EA=4: 1) to give the title compound (320 mg, 32.0% yield) as a white solid. LCMS (ESI<sup>+</sup>): .259.0 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0035-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        421.0,
+        259.0,
+        433.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 24-7",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0035-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        452.0,
+        542.0,
+        609.0
+      ],
+      "markdown": "To a solution of **Compound 24-6** (250 mg, 0.97 mmol), o-tolylboronic acid (197 mg, 1.75 mmol) and K2CO3 (266 mg, 1.92 mmol) in dioxane (5 mL) and water (1 mL) was added Pd(dppf)Cl2 (70 mg, 0.09 mmol) at 25 ℃. After addition, the mixture was heated and stirred at 100 ℃ under a nitrogen atmosphere for 1 h. After cooling to 25 ℃, the reaction mixture was poured into water (100 mL) and extracted with EtOAc (50 mL × 3), washed with brine (60 mL). The organic layer was dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, PE:EA=3: 1) to afford the title compound (300 mg, 98.7% yield) as a yellow soild. LCMS (ESI<sup>+</sup>): 315.2 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0035-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        618.0,
+        243.0,
+        629.0
+      ],
+      "markdown": "#### Step 4: Preparation of ISM061-24-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0035-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        648.0,
+        542.0,
+        784.0
+      ],
+      "markdown": "To a solution of **Compound 24-7** (250 mg, 0.79 mmol) and K2CO3 (330 mg, 2.38 mmol) in DMSO (5 mL) and Water (3 mL) was added H2O2 (5 mL, 30%wt in water) dropwise at 0 ℃. After addition, the mixture was heated and stirred at 25 ℃ for 2 h. The reaction mixture was poured into water (50 mL) and extracted with EtOAc (30 mL × 3). The combined organic layers was washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 100%) in petroleum ether to give the title compound (240 mg, 90.8% yield) as a yellow soild. LCMS (ESI<sup>+</sup>):",
+      "source_class": "text"
+    }
+  ]
+}

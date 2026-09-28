@@ -1,0 +1,173 @@
+{
+ "id": "1ddf7a2a5f66",
+ "agent": "HDBET",
+ "tool": "hdbet_extract_brain",
+ "arguments": {
+  "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+  "device": "auto",
+  "use_tta": true,
+  "save_mask": true,
+  "save_brain_image": true,
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063319.383064,
+ "started_at": 1790063319.383519,
+ "finished_at": 1790063345.048502,
+ "result": {
+  "message": "HD-BET brain extraction of 1 volume(s) (file mode) on cuda (NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition), TTA on: tpl-MNI152NLin2009cAsym_res-02_T1w: 237293 brain voxels = 1898.344 mL",
+  "reference": "https://github.com/MIC-DKFZ/HD-BET/blob/678e44d546a84de0f2a7fc245f176b82b7d912fd/HD_BET/hd_bet_prediction.py",
+  "reference_cli": "https://github.com/MIC-DKFZ/HD-BET/blob/678e44d546a84de0f2a7fc245f176b82b7d912fd/HD_BET/entry_point.py",
+  "artifacts": [
+   {
+    "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: binary brain mask (uint8 0/1, input grid)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz"
+   },
+   {
+    "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: skull-stripped image (input voxels inside the mask)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz"
+   },
+   {
+    "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: orthogonal QC overlay of the mask contour on the input (PNG)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/tpl-MNI152NLin2009cAsym_res-02_T1w_overlay.png"
+   },
+   {
+    "description": "summary JSON of this call (cases, device, model, timing)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/hdbet_extract_brain_result.json"
+   }
+  ],
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1",
+  "input_mode": "file",
+  "n_cases": 1,
+  "cases": [
+   {
+    "case": "tpl-MNI152NLin2009cAsym_res-02_T1w",
+    "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+    "input_shape": [
+     97,
+     115,
+     97
+    ],
+    "input_spacing_mm": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "input_axcodes": "RAS",
+    "orientation_accepted": true,
+    "orientation_warning": null,
+    "mask_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+    "brain_image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+    "overlay_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/tpl-MNI152NLin2009cAsym_res-02_T1w_overlay.png",
+    "mask_shape": [
+     97,
+     115,
+     97
+    ],
+    "mask_spacing_mm": [
+     2.0,
+     2.0,
+     2.0
+    ],
+    "mask_values": [
+     0,
+     1
+    ],
+    "mask_dtype": "uint8",
+    "foreground_voxels": 237293,
+    "voxel_volume_mm3": 8.0,
+    "brain_volume_ml": 1898.344,
+    "overlay_slices": [
+     48,
+     55,
+     44
+    ]
+   }
+  ],
+  "device": {
+   "requested": "auto",
+   "resolved": "cuda",
+   "physical_cuda_index": "0",
+   "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+   "free_gib": 89.02,
+   "total_gib": 94.95,
+   "reason": "auto: selected CUDA device 0 (NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition) with 89.02 GiB free",
+   "policy": "auto: CUDA device with the most free memory if >= 8.0 GiB free, else CPU with test-time augmentation disabled; cuda: most-free CUDA device; cpu: CPU"
+  },
+  "use_tta": {
+   "requested": true,
+   "effective": true
+  },
+  "save_mask": true,
+  "save_brain_image": true,
+  "model": {
+   "parameter_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/hd-bet_params/release_2.0.0",
+   "parameter_folder_source": "HDBET_PARAMS_DIR",
+   "checkpoint_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/hd-bet_params/release_2.0.0/fold_all/checkpoint_final.pth",
+   "checkpoint_sha256": "d31dc59b4c5fe0028070901870c44c0b526f48c507ce50804941344356df7b52",
+   "checkpoint_size_bytes": 123562058,
+   "downloaded_now": false,
+   "fold": "all",
+   "trainer": "nnUNetTrainerDA5",
+   "configuration": "3d_fullres_1x1x1_ps96x192x192_bs8",
+   "current_epoch": 1000,
+   "inference_allowed_mirroring_axes": [
+    0,
+    1,
+    2
+   ],
+   "dataset_name": "Dataset013_HDBETv2",
+   "labels": {
+    "background": 0,
+    "brain": 1
+   },
+   "spacing_mm": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "patch_size": [
+    96,
+    192,
+    192
+   ],
+   "network": "dynamic_network_architectures.architectures.unet.PlainConvUNet",
+   "predictor": {
+    "use_mirroring": true,
+    "tile_step_size": 0.5,
+    "use_gaussian": true,
+    "perform_everything_on_device": true,
+    "device": "cuda",
+    "cudnn_benchmark": true,
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "torch_cuda_max_memory_allocated_bytes": 3808207360
+   },
+   "versions": {
+    "HD_BET": "2.0.1",
+    "nnunetv2": "2.8.1",
+    "torch": "2.11.0+cu128",
+    "SimpleITK": "2.5.6"
+   }
+  },
+  "timing_s": {
+   "import_s": 2.184,
+   "maybe_download_parameters_s": 0.0,
+   "get_hdbet_predictor_s": 1.421,
+   "hdbet_predict_s": 17.503,
+   "summary_and_overlays_s": 0.162,
+   "child_total_s": 21.433,
+   "child_process_wall_s": 23.514,
+   "tool_total_s": 25.66
+  },
+  "warnings": [],
+  "logs": {
+   "upstream_stdout": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/logs/hdbet_stdout.log",
+   "upstream_stderr": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/logs/hdbet_stderr.log",
+   "child_stdout_bytes": 491,
+   "child_stderr_bytes": 1282
+  },
+  "determinism_note": "Upstream nnunetv2 sets torch.backends.cudnn.benchmark=True and runs CUDA inference under fp16 autocast, so GPU masks may differ by a few boundary voxels between separate processes (observed <= 3 of ~1.9M voxels, Dice >= 0.99999); CPU results are bit-exact. Compare masks with a small tolerance, not byte equality. Test-time augmentation on/off changes the mask (observed Dice 0.997 between the two settings)."
+ },
+ "error": null,
+ "duration_s": 25.66
+}

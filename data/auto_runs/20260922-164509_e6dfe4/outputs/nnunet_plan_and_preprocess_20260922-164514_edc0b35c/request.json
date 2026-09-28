@@ -1,0 +1,25 @@
+{
+ "mode": "plan_and_preprocess",
+ "dataset_id": 4,
+ "fingerprint_extractor": "DatasetFingerprintExtractor",
+ "num_processes_fingerprint": 8,
+ "num_processes": null,
+ "check_dataset_integrity": false,
+ "clean": true,
+ "verbose": false,
+ "planner": "ExperimentPlanner",
+ "gpu_memory_target_in_gb": null,
+ "preprocessor_name": "DefaultPreprocessor",
+ "overwrite_target_spacing": null,
+ "overwrite_plans_name": null,
+ "configurations": [
+  "2d",
+  "3d_fullres"
+ ],
+ "run_preprocessing": true,
+ "paths": {
+  "nnUNet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+  "nnUNet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+  "nnUNet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results"
+ }
+}

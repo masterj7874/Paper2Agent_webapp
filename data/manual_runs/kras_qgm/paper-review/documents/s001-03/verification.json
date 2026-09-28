@@ -1,0 +1,1136 @@
+{
+  "status": "reviewed_with_limitations",
+  "mechanical_ok": true,
+  "all_pages_agent_reviewed": true,
+  "image_only_pages": [
+    19,
+    20,
+    21
+  ],
+  "issues": [],
+  "images": [
+    {
+      "file": "assets/s001-03/figure-1.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/figure-2.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-1.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-2.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-3.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-4.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-5.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-6.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-7.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-8.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-9.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-10.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-11.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-12.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-13.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-14.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/formula-15.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/extended-data-figure-1.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/extended-data-figure-2.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/extended-data-figure-3.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/extended-data-figure-4.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/extended-data-figure-5.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/reporting-summary-page-1.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/reporting-summary-page-2.png",
+      "pixels_match_source_region": true
+    },
+    {
+      "file": "assets/s001-03/reporting-summary-page-3.png",
+      "pixels_match_source_region": true
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 74,
+      "source_text_lines_found": 74,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {
+          "1060": 1
+        },
+        "extra": {
+          "10": 1,
+          "60": 1
+        }
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [
+        {
+          "check": "number_differences",
+          "fingerprint": "a73f2cf328c84d5dd3fc46e2d99511abb06e758d7fc08c629798b7c3389cd0fa",
+          "reason": "Visible source prints the chemical-space estimate as 10 with a superscript 60 (~10^60 molecules); the text layer flattens the superscript and emits the single token 1060. The output restores it as 10<sup>60</sup>, so the source's 1060 is absent and 10 and 60 appear instead. Checked on previews/page-0001.png."
+        }
+      ],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            762.0,
+            278.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            542.0,
+            763.0,
+            563.0,
+            770.0
+          ],
+          "reason": "Bare page number 1954 in the running foot; verified against previews/page-0001.png."
+        },
+        {
+          "bbox": [
+            39.0,
+            41.0,
+            202.0,
+            60.0
+          ],
+          "reason": "Journal masthead logo at the top of the first page; branding furniture, not a section heading or article content."
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 34,
+      "source_text_lines_found": 34,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            762.0,
+            278.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            543.0,
+            763.0,
+            563.0,
+            770.0
+          ],
+          "reason": "Bare page number 1955 in the running foot; verified against previews/page-0002.png."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 130,
+      "source_text_lines_found": 130,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            762.0,
+            278.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            543.0,
+            763.0,
+            563.0,
+            770.0
+          ],
+          "reason": "Bare page number 1956 in the running foot; verified against previews/page-0003.png."
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 16,
+      "source_text_lines_found": 16,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {
+          "018": 1
+        },
+        "extra": {
+          "-018": 1
+        }
+      },
+      "independent_parser_number_differences": {
+        "missing": {
+          "018": 1
+        },
+        "extra": {
+          "-018": 1
+        }
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [
+        {
+          "check": "number_differences",
+          "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+          "reason": "The Fig. 2 caption prints the compound identifier ISM061-018-2, but the line wraps after ISM061 and the extractor swallowed the real hyphen, yielding ISM061018-2 with 018 as a bare token. The hyphen was restored after checking the visible source, so the output carries -018 where the source parser saw 018. Checked on previews/page-0004.png."
+        },
+        {
+          "check": "independent_parser_number_differences",
+          "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+          "reason": "Same cause as the primary number_differences entry for this page: the restored line-wrap hyphen in ISM061-018-2 turns the source's bare 018 into -018 in the output. Checked on previews/page-0004.png."
+        }
+      ],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            762.0,
+            278.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            544.0,
+            763.0,
+            563.0,
+            770.0
+          ],
+          "reason": "Bare page number 1957 in the running foot; verified against previews/page-0004.png."
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 128,
+      "source_text_lines_found": 128,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            762.0,
+            278.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            543.0,
+            763.0,
+            563.0,
+            770.0
+          ],
+          "reason": "Bare page number 1958 in the running foot; verified against previews/page-0005.png."
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 73,
+      "source_text_lines_found": 73,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            762.0,
+            278.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            543.0,
+            763.0,
+            563.0,
+            770.0
+          ],
+          "reason": "Bare page number 1959 in the running foot; verified against previews/page-0006.png."
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 127,
+      "source_text_lines_found": 127,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 122,
+      "source_text_lines_found": 122,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 125,
+      "source_text_lines_found": 125,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 107,
+      "source_text_lines_found": 107,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 103,
+      "source_text_lines_found": 103,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 129,
+      "source_text_lines_found": 129,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 33,
+      "source_text_lines_found": 33,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+        }
+      ]
+    },
+    {
+      "page": 14,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 36,
+      "source_text_lines_found": 36,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Running header DOI link repeated on every page of the article; not body content."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+        }
+      ]
+    },
+    {
+      "page": 15,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 13,
+      "source_text_lines_found": 13,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Repeated running header of the journal article ('Brief Communication'); not substantive content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Repeated running header DOI link (https://doi.org/10.1038/s41587-024-02526-3); already recorded on the title page."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Repeated page footer / journal branding link ('Nature Biotechnology'); not substantive content."
+        }
+      ]
+    },
+    {
+      "page": 16,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 10,
+      "source_text_lines_found": 10,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Repeated running header of the journal article ('Brief Communication'); not substantive content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Repeated running header DOI link (https://doi.org/10.1038/s41587-024-02526-3); already recorded on the title page."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Repeated page footer / journal branding link ('Nature Biotechnology'); not substantive content."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 10,
+      "source_text_lines_found": 10,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Repeated running header of the journal article ('Brief Communication'); not substantive content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Repeated running header DOI link (https://doi.org/10.1038/s41587-024-02526-3); already recorded on the title page."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Repeated page footer / journal branding link ('Nature Biotechnology'); not substantive content."
+        }
+      ]
+    },
+    {
+      "page": 18,
+      "mode": "native",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 10,
+      "source_text_lines_found": 10,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": [
+        {
+          "bbox": [
+            39.0,
+            23.0,
+            141.0,
+            32.0
+          ],
+          "reason": "Repeated running header of the journal article ('Brief Communication'); not substantive content."
+        },
+        {
+          "bbox": [
+            392.0,
+            25.0,
+            562.0,
+            34.0
+          ],
+          "reason": "Repeated running header DOI link (https://doi.org/10.1038/s41587-024-02526-3); already recorded on the title page."
+        },
+        {
+          "bbox": [
+            39.0,
+            763.0,
+            122.0,
+            771.0
+          ],
+          "reason": "Repeated page footer / journal branding link ('Nature Biotechnology'); not substantive content."
+        }
+      ]
+    },
+    {
+      "page": 19,
+      "mode": "image",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 0,
+      "source_text_lines_found": 0,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": []
+    },
+    {
+      "page": 20,
+      "mode": "image",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 0,
+      "source_text_lines_found": 0,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": []
+    },
+    {
+      "page": 21,
+      "mode": "image",
+      "agent_reviewed": true,
+      "source_text_lines_checked": 0,
+      "source_text_lines_found": 0,
+      "missing_lines": [],
+      "number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "independent_parser_number_differences": {
+        "missing": {},
+        "extra": {}
+      },
+      "unresolved_checks": [],
+      "applied_adjudications": [],
+      "independent_parser_outside_page_text": [],
+      "omitted_regions": []
+    }
+  ],
+  "applied_adjudications": [
+    {
+      "page": 1,
+      "check": "number_differences",
+      "fingerprint": "a73f2cf328c84d5dd3fc46e2d99511abb06e758d7fc08c629798b7c3389cd0fa",
+      "reason": "Visible source prints the chemical-space estimate as 10 with a superscript 60 (~10^60 molecules); the text layer flattens the superscript and emits the single token 1060. The output restores it as 10<sup>60</sup>, so the source's 1060 is absent and 10 and 60 appear instead. Checked on previews/page-0001.png."
+    },
+    {
+      "page": 4,
+      "check": "number_differences",
+      "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+      "reason": "The Fig. 2 caption prints the compound identifier ISM061-018-2, but the line wraps after ISM061 and the extractor swallowed the real hyphen, yielding ISM061018-2 with 018 as a bare token. The hyphen was restored after checking the visible source, so the output carries -018 where the source parser saw 018. Checked on previews/page-0004.png."
+    },
+    {
+      "page": 4,
+      "check": "independent_parser_number_differences",
+      "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+      "reason": "Same cause as the primary number_differences entry for this page: the restored line-wrap hyphen in ISM061-018-2 turns the source's bare 018 into -018 in the output. Checked on previews/page-0004.png."
+    }
+  ],
+  "stale_adjudications": [],
+  "metric_scope": "Line checks normalize alphanumeric text and ignore whitespace/formatting. Number checks retain printed numeric strings. Pixel checks validate chosen crops, not crop completeness. Review flags record agent review; none of these is a universal accuracy score."
+}

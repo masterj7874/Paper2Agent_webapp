@@ -1,0 +1,372 @@
+{
+  "page": 11,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0011.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0011.png plus 350-900 dpi crops of equation (8), the equation (9)-(15) block, the 'Quantum generative model: QCBM model' paragraph, the Algorithm 2 pseudocode and the Data/Code availability block; cross-checked every item against evidence/page-0011.json and against the PDF's link annotations. READING ORDER: the extractor interleaved the columns (b002-b007 left, b008-b023 right, b024-b025 left, b026-b032 right). Rebuilt as the full left column (b002, equation 8, b004, b005, equations 9-15, b007, b024, b025) followed by the full right column (b008, b009, b010, b011, Algorithm 2 code, b027-b032). Left-column b025 ends '...between the generated and target' and right-column b008 opens 'distributions.', so b008 now carries join_previous='space'. FORMULAS: renamed p0011-b003 from the placeholder 'Formula on PDF page 11 (4)'/'formula-p0011-003' to 'Equation (8)'/'formula-8'. The extractor had lumped the seven displayed equations (9)-(15) into ONE formula region p0011-b006 (82,277-299,454); replaced it with seven items p0011-b006a-g (formula-9 ... formula-15) whose bboxes come from the evidence line boxes, kept at x 82-299 so the leftmost label ('Candidate values:' starts at x=87.6) and the right-hand equation numbers (right edge 293.4) are inside every crop; each crop was re-rendered from source.pdf and checked on all four edges. PSEUDOCODE: Algorithm 2's 13 lines were 13 separate items (b012 and b013 as plain text, b014-b023 and b026 as bulleted list items, with b026 'end while' stranded after the left-column paragraphs). Merged them into the single code item p0011-b012 (bbox 306,464-560,607), stripped the '- ' bullets and bold markup, and restored the two indentation levels visible in the crop (lines 4-8 and 12 one level in, lines 9-11 deeper). Line 12 is transcribed as printed, 'end If' with a capital I, which is a typo in the published pseudocode and is deliberately NOT corrected. The ket in line 2 is written with a single bar. TEXT REPAIRS: b005 held the worst extraction failure on the page - the inline expression had been shattered into stacked superscript runs, '_xt_<sup>'=</sup><sup>_X_(</sup><sup>_i_) ++</sup><sup>_xt_in the LSTM cell. This combina-</sup> tion constituted', which also swallowed the line-wrap hyphen of 'combina-/tion'. Rewritten from the 350-dpi crop as '_x_'<sub>t</sub> = _X_(_i_) ++ _x_<sub>t</sub> in the LSTM cell. This combination constituted'. The '++' is the double-plus concatenation operator the page prints and the native text layer encodes; equation (9) shows it contrasted with a plain '+'. b004 '_yi_' -> '_y_<sub>i</sub>' and the detached combining circumflex 'and [U+0302] _yyi_' -> '_y-hat_<sub>y<sub>i</sub></sub>'. b009 'NLL ( _theta_ ) = -SUM _x_ IN _D_ log _p-theta_ ( _x_ )' -> 'NLL (_theta_) = -SUM<sub>_x_IN_D_</sub> log _p_<sub>_theta_</sub>(_x_)' and the second '_p-theta_ ( _x_ )' likewise. b010 '_P_ ( _X_ ( _i_ ))' -> '_P_(_X_(_i_))' and 'softmax' is now a code span because the page sets it in a monospace face. b011 '**Algorithm 2** .' -> '**Algorithm 2**.' (the printed period is not bold). b024 the ket bar was doubled twice by the native text layer: 'state || _psi_ ( _theta_ )>' -> 'state |_psi_(_theta_)>' and 'outcome | _x_ > is expressed as |< _x_ | _psi_ ( _theta_ )>|<sup>2</sup> .' -> 'outcome |_x_> is expressed as |<_x_|_psi_(_theta_)>|<sup>2</sup>.' using the proper angle-bracket ket glyphs; a 900-dpi zoom of the same construct confirms a single vertical bar. b025 dropped the space before the comma after '_theta_'. LINKS: b030's Zenodo DOI had been split by the line wrap into 'https://doi.org/ 10.5281/zenodo.11137638'; rejoined and, together with b032, restored as a Markdown link to https://doi.org/10.5281/zenodo.11137638, which is exactly what the PDF's link annotations over those runs point to. HEADINGS: confirmed from the crop that 'Data availability' (b029) and 'Code availability' (b031) are set in a larger face than 'Reporting summary' (b027), so they correctly stay at '#' while 'Reporting summary' stays at '##' under '# Methods'. Set the three flagged margin items to omit (b000, b001 running headers; b033 running footer). FOURTH PASS: b004 printed 'ith data point' as a single word with an italic i, but the extractor had written '_i_ th data point' (twice), which renders with a visible space; changed to '*i*th data point' using asterisk emphasis, because underscore emphasis cannot close inside a word in CommonMark. Swept the rest of the range for the same broken-intraword-italic pattern and found no other instance.",
+  "warnings": [
+    "Review possible header/footer: p0011-b000",
+    "Review possible header/footer: p0011-b001",
+    "Review possible header/footer: p0011-b033"
+  ],
+  "items": [
+    {
+      "id": "p0011-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0011-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0011-b002",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        49.0,
+        297.0,
+        68.0
+      ],
+      "markdown": "The loss for a batch of data is the mean of the individual losses for each data point in the batch:",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b003",
+      "kind": "formula",
+      "bbox": [
+        130.0,
+        72.0,
+        299.0,
+        104.0
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (8)",
+      "asset_name": "formula-8"
+    },
+    {
+      "id": "p0011-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        113.0,
+        297.0,
+        144.0
+      ],
+      "markdown": "where _N_ is the number of data points in the batch, _y_<sub>i</sub> is the true class label for the *i*th data point and _ŷ_<sub>y<sub>i</sub></sub> is the predicted probability for the true class label of the *i*th data point.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b005",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        145.0,
+        297.0,
+        273.0
+      ],
+      "markdown": "In the hyperparameter tuning process, we used Optuna, an optimization framework, to adjust parameters such as the number of hidden dimensions, embedding dimensions and layers within the model. The model presented in this research integrated a deep learning architecture. This architecture was designed to incorporate prior information (samples) into the generative process. Additionally, the model used Chemistry42 feedback in conjunction with QCBMs, aimed at enhancing its generative accuracy. Supplementary Figure 4 illustrates the proposed architecture at a cell level. The prior samples were combined with input samples _x_′<sub>t</sub> = _X_(_i_) ++ _x_<sub>t</sub> in the LSTM cell. This combination constituted two methods: adding and concatenating samples. The LSTM’s operations were updated with the following operations:",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b006a",
+      "kind": "formula",
+      "bbox": [
+        82.0,
+        276.5,
+        299.0,
+        297.0
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (9)",
+      "asset_name": "formula-9"
+    },
+    {
+      "id": "p0011-b006b",
+      "kind": "formula",
+      "bbox": [
+        82.0,
+        303.0,
+        299.0,
+        323.0
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (10)",
+      "asset_name": "formula-10"
+    },
+    {
+      "id": "p0011-b006c",
+      "kind": "formula",
+      "bbox": [
+        82.0,
+        329.5,
+        299.0,
+        349.5
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (11)",
+      "asset_name": "formula-11"
+    },
+    {
+      "id": "p0011-b006d",
+      "kind": "formula",
+      "bbox": [
+        82.0,
+        356.5,
+        299.0,
+        376.5
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (12)",
+      "asset_name": "formula-12"
+    },
+    {
+      "id": "p0011-b006e",
+      "kind": "formula",
+      "bbox": [
+        82.0,
+        384.0,
+        299.0,
+        404.0
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (13)",
+      "asset_name": "formula-13"
+    },
+    {
+      "id": "p0011-b006f",
+      "kind": "formula",
+      "bbox": [
+        82.0,
+        409.5,
+        299.0,
+        429.5
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (14)",
+      "asset_name": "formula-14"
+    },
+    {
+      "id": "p0011-b006g",
+      "kind": "formula",
+      "bbox": [
+        82.0,
+        435.5,
+        299.0,
+        455.5
+      ],
+      "markdown": "",
+      "source_class": "formula",
+      "label": "Equation (15)",
+      "asset_name": "formula-15"
+    },
+    {
+      "id": "p0011-b007",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        468.0,
+        297.0,
+        585.0
+      ],
+      "markdown": "To generate samples, the process began with sampling from the prior, followed by the LSTM network processing these prior samples to generate compounds representations. The compounds were validated through the Chemistry42 platform, specifically tailored to assess ligand quality for the KRAS-G12D mutant. This methodology allows designing ligands targeted at specific proteins. Moreover, the LSTM model is a classical approach for learning ligand structures and constructing a latent ligand space. The QCBM functions as a prior, guiding the LSTM in the generation of novel ligand samples. The procedure was subjected to an iterative process to enhance the quality of ligands, which was evaluated using the Chemistry42 platform.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b024",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        597.0,
+        297.0,
+        681.0
+      ],
+      "markdown": "**Quantum generative model: QCBM model.** The QCBM is a variational quantum algorithm that uses the foundational principles of quantum mechanics, particularly the Born rule, to generate complex and diverse data samples. The core of our QCBM model is a parameterized quantum state |_ψ_(_θ_)⟩, where _θ_ denotes the parameters or ansatz of our quantum circuit. As per the Born rule, given a measurement basis, which is commonly the computational basis in our case, the probability of observing a specific outcome |_x_⟩ is expressed as |⟨_x_|_ψ_(_θ_)⟩|<sup>2</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b025",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        683.0,
+        297.0,
+        746.0
+      ],
+      "markdown": "Training a QCBM involves optimizing the parameters of the quantum circuit to produce a probability distribution that closely approximates the target distribution (probability computed by Chemistry42 reward values). This process is fundamentally iterative, where the quantum circuit parameters, denoted as _θ_, are adjusted in each step to reduce the discrepancy between the generated and target",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b008",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        563.0,
+        144.0
+      ],
+      "markdown": "distributions. A classical optimization algorithm recommends adjusting parameters, which operates on the basis of the feedback received from the evaluation of the circuit’s output. At each iteration, the quantum circuit is sampled to produce a set of states. These states are then compared against the target distribution and the difference between them informs the direction and magnitude of parameter adjustments in the quantum circuit. This iterative process continues until the distribution generated by the QCBM closely aligns with the target distribution or until a predefined convergence criterion is met.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0011-b009",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        145.0,
+        563.0,
+        305.0
+      ],
+      "markdown": "In the context of QCBM training, the exact NLL functions as the primary loss function, providing a quantitative measure of the difference between the distributions. The exact NLL for a QCBM is the negative sum of the logarithms of the probabilities that the quantum circuit assigns to the states in the training dataset. Mathematically, this is represented as NLL (_θ_) = −∑<sub>_x_∈_D_</sub> log _p_<sub>_θ_</sub>(_x_), where _D_ is the set of data points and _p_<sub>_θ_</sub>(_x_) is the probability of observing state _x_ under the current parameters _θ_ of the quantum circuit. Minimizing the NLL involves adjusting _θ_ such that the quantum circuit’s output distribution increasingly resembles the empirical distribution of the data. This optimization is typically carried out using gradient-based methods or other heuristic techniques suited to the quantum computing context. In our project, we used COBYLA for our optimizer. As the NLL decreases, the fidelity of the QCBM in modeling the target distribution correspondingly increases, indicating successful training of the quantum model.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b010",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        307.0,
+        563.0,
+        413.0
+      ],
+      "markdown": "Extended Data Fig. 5 shows the QCBM architecture and illustrates its associated ansatz. We used linear topology for our project. Our QCBM model was built with 16 qubits and four layers and we had 96 parameters to optimize in total. The initial probability of the samples, _P_(_X_(_i_)), was computed on the basis of the rewards returned by the Chemistry42 model. These reward-based probabilities were then passed through a `softmax` function to ensure that they were normalized and fell within the range of 0–1. The resulting values served as the ‘true’ probabilities of the samples and were used as the target values during the model’s training process.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b011",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        425.0,
+        563.0,
+        455.0
+      ],
+      "markdown": "**Algorithm 2**. Algorithm 2 provides the pseudocode outlining the training regimen for the QCBM model. This process delineates the iterative optimization of the QCBM parameters.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b012",
+      "kind": "code",
+      "bbox": [
+        306.0,
+        464.0,
+        560.0,
+        607.0
+      ],
+      "markdown": "1:  Initialize: QCBM model with a certain number of qubits and layers\n2:  Set: Parameterized quantum state |ψ(θ)⟩\n3:  while not converged do\n4:      Compute exact NLL loss function\n5:      Compute gradient of exact NLL with respect to θ\n6:      Adjust parameters using an optimizer\n7:      Validate the sample and compute its reward value\n8:      if sample is valid then\n9:          Compute rewards for the sample\n10:         Adjust probabilities P(X_i) on the basis of the rewards\n11:         Train QCBM model with adjusted probabilities\n12:     end If\n13: end while",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0011-b027",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        618.0,
+        389.0,
+        628.0
+      ],
+      "markdown": "## Reporting summary",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0011-b028",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        629.0,
+        563.0,
+        649.0
+      ],
+      "markdown": "Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b029",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        659.0,
+        390.0,
+        671.0
+      ],
+      "markdown": "# Data availability",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0011-b030",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        672.0,
+        563.0,
+        702.0
+      ],
+      "markdown": "The datasets generated and analyzed during the current study, along with the generative model, are available via Zenodo at [https://doi.org/10.5281/zenodo.11137638](https://doi.org/10.5281/zenodo.11137638) (ref. 73).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b031",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        713.0,
+        392.0,
+        725.0
+      ],
+      "markdown": "# Code availability",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0011-b032",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        726.0,
+        563.0,
+        746.0
+      ],
+      "markdown": "The full code for running our generative model is available via Zenodo at [https://doi.org/10.5281/zenodo.11137638](https://doi.org/10.5281/zenodo.11137638) (ref. 73).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0011-b033",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+    }
+  ]
+}

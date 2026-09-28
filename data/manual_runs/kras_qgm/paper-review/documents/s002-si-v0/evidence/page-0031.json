@@ -1,0 +1,395 @@
+{
+  "page": 31,
+  "lines": [
+    {
+      "text": "Step 1: Preparation of Compound 22-1",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        258.6417236328125,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloropyrimidin-4-amine (130 mg, 1.00 mmol) in dioxane (3 mL) were added H2O",
+      "bbox": [
+        56.6399040222168,
+        87.94796752929688,
+        541.5403442382812,
+        101.31068420410156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(0.2 mL), (2-methoxy-3-methylphenyl)boronic acid (183 mg, 1.10 mmol), Pd(dppf)Cl2 (73 mg, 0.10",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        541.540283203125,
+        121.95068359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol) and K2CO3 (347 mg, 2.50 mmol) under N2 atmosphere. Then the mixture was heated and",
+      "bbox": [
+        56.6399040222168,
+        129.4679718017578,
+        541.5301513671875,
+        142.8306884765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "stirred at 100 ℃ for 1 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        541.528564453125,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (30",
+      "bbox": [
+        56.6399040222168,
+        170.7479705810547,
+        541.526123046875,
+        184.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which",
+      "bbox": [
+        56.6399040222168,
+        191.38796997070312,
+        541.5242919921875,
+        204.7506866455078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 50%) in",
+      "bbox": [
+        56.6399040222168,
+        212.26795959472656,
+        541.5234985351562,
+        225.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "petroleum ether to give the title compound (200 mg, 64.8% yield, purity: 70%) as a yellow oil. LCMS",
+      "bbox": [
+        56.6399040222168,
+        232.907958984375,
+        541.52978515625,
+        246.19195556640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(ESI+): 216.1 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        253.10325622558594,
+        168.08518981933594,
+        266.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of ISM061-22",
+      "bbox": [
+        56.6399040222168,
+        284.2679748535156,
+        232.954345703125,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-(2-methoxy-3-methylphenyl)pyrimidin-4-amine (161 mg, 0.52 mmol, purity: 70%)",
+      "bbox": [
+        56.6399040222168,
+        314.98797607421875,
+        541.5358276367188,
+        328.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in dioxane (4 mL) were added 4-bromo-1-methyl-1H-indole (100 mg, 0.47 mmol), XantphosPdG4",
+      "bbox": [
+        56.6399040222168,
+        335.6279602050781,
+        540.5200805664062,
+        348.9906921386719
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(77 mg, 0.05 mmol) and Cs2CO3 (310 mg, 0.95 mmol) under N2 atmosphere. Then the mixture was",
+      "bbox": [
+        56.6399040222168,
+        356.2679748535156,
+        541.534423828125,
+        369.6307067871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "heated and stirred at 110 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into ice",
+      "bbox": [
+        56.6399040222168,
+        377.1479797363281,
+        541.5213623046875,
+        390.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "water (40 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with",
+      "bbox": [
+        56.6399040222168,
+        397.7879943847656,
+        541.51904296875,
+        411.0719909667969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "brine (30 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a",
+      "bbox": [
+        56.6399040222168,
+        418.427978515625,
+        541.5338134765625,
+        431.7906799316406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from",
+      "bbox": [
+        56.6399040222168,
+        439.0679626464844,
+        541.523681640625,
+        452.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "0% to 60%) in petroleum ether and Prep-HPLC (column: YMC, C18 (250 × 20mm, 5μm); mobile",
+      "bbox": [
+        56.6399040222168,
+        459.50323486328125,
+        541.5360717773438,
+        473.2319641113281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "phase: [water (0.1%NH4HCO3)- ACN]; B%: 30ACN%-60ACN%, 17 min of 25 min) to afford the",
+      "bbox": [
+        56.6399040222168,
+        480.5879821777344,
+        541.5355834960938,
+        493.95068359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "title compound (70 mg, 42.7% yield) as a white solid. LCMS (ESI+): 345.1 [M+H]+. 1H NMR (400",
+      "bbox": [
+        56.6399040222168,
+        500.7832336425781,
+        541.541259765625,
+        514.511962890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "MHz, DMSO-d6) δ 9.36 (s, 1H), 8.34 (d, J = 5.9 Hz, 1H), 7.65 (d, J = 7.6 Hz, 1H), 7.44 (d, J = 5.9",
+      "bbox": [
+        56.6399040222168,
+        521.867919921875,
+        541.540283203125,
+        535.2306518554688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Hz, 1H), 7.35 – 7.25 (m, 2H), 7.19 (d, J = 8.1 Hz, 1H), 7.09 (dt, J = 11.3, 7.7 Hz, 2H), 6.81 (d, J =",
+      "bbox": [
+        56.6399040222168,
+        542.7479248046875,
+        541.540283203125,
+        556.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "5.9 Hz, 1H), 6.61 (d, J = 3.1 Hz, 1H), 3.79 (s, 3H), 3.60 (s, 3H), 2.28 (s, 3H).",
+      "bbox": [
+        56.6399040222168,
+        563.387939453125,
+        430.0226135253906,
+        576.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 31
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          56,
+          59,
+          259,
+          71
+        ],
+        "pos": [
+          0,
+          45
+        ]
+      },
+      {
+        "index": 1,
+        "class": "text",
+        "bbox": [
+          56,
+          90,
+          542,
+          267
+        ],
+        "pos": [
+          45,
+          871
+        ]
+      },
+      {
+        "index": 2,
+        "class": "section-header",
+        "bbox": [
+          56,
+          286,
+          233,
+          298
+        ],
+        "pos": [
+          871,
+          912
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          56,
+          317,
+          542,
+          577
+        ],
+        "pos": [
+          912,
+          2200
+        ]
+      }
+    ],
+    "text": "# **Step 1: Preparation of Compound 22-1** \n\nTo a solution of 2-chloropyrimidin-4-amine (130 mg, 1.00 mmol) in dioxane (3 mL) were added H2O (0.2 mL), (2-methoxy-3-methylphenyl)boronic acid (183 mg, 1.10 mmol), Pd(dppf)Cl2 (73 mg, 0.10 mmol) and K2CO3 (347 mg, 2.50 mmol) under N2 atmosphere. Then the mixture was heated and stirred at 100 ℃ for 1 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (30 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 50%) in petroleum ether to give the title compound (200 mg, 64.8% yield, purity: 70%) as a yellow oil. LCMS (ESI<sup>+</sup> ): 216.1 [M+H]<sup>+</sup> . \n\n# **Step 2: Preparation of ISM061-22** \n\nTo a solution of 2-(2-methoxy-3-methylphenyl)pyrimidin-4-amine (161 mg, 0.52 mmol, purity: 70%) in dioxane (4 mL) were added 4-bromo-1-methyl-1H-indole (100 mg, 0.47 mmol), XantphosPdG4 (77 mg, 0.05 mmol) and Cs2CO3 (310 mg, 0.95 mmol) under N2 atmosphere. Then the mixture was heated and stirred at 110 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (30 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 60%) in petroleum ether and Prep-HPLC (column: YMC, C<sup>18</sup> (250 × 20mm, 5μm); mobile phase: [water (0.1%NH4HCO3)- ACN]; B%: 30ACN%-60ACN%, 17 min of 25 min) to afford the title compound (70 mg, 42.7% yield) as a white solid. LCMS (ESI<sup>+</sup> ): 345.1 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, DMSO- _d_ 6) δ 9.36 (s, 1H), 8.34 (d, _J_ = 5.9 Hz, 1H), 7.65 (d, _J_ = 7.6 Hz, 1H), 7.44 (d, _J_ = 5.9 Hz, 1H), 7.35 – 7.25 (m, 2H), 7.19 (d, _J_ = 8.1 Hz, 1H), 7.09 (dt, _J_ = 11.3, 7.7 Hz, 2H), 6.81 (d, _J_ = 5.9 Hz, 1H), 6.61 (d, _J_ = 3.1 Hz, 1H), 3.79 (s, 3H), 3.60 (s, 3H), 2.28 (s, 3H). \n\n"
+  }
+}

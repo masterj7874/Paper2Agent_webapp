@@ -1,0 +1,461 @@
+{
+  "page": 20,
+  "lines": [
+    {
+      "text": "over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        541.5221557617188,
+        70.59069061279297
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 30%) to",
+      "bbox": [
+        56.6399040222168,
+        77.86796569824219,
+        541.5385131835938,
+        91.23068237304688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "afford Compound 14-5 (100 mg, 47% yield) as yellow oil. LCMS (ESI+): Rt=2.092 min; m/z 494.3",
+      "bbox": [
+        56.6399040222168,
+        98.30325317382812,
+        541.5364379882812,
+        112.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "[M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        118.94325256347656,
+        100.22731018066406,
+        132.6719512939453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 6: Preparation of Compound 14-6",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        258.6417236328125,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of tert-butyl (5-(4-(5-(benzyloxy)-2-(difluoromethyl)phenyl)pyrimidin-2-yl)pent-4-yn-",
+      "bbox": [
+        56.6399040222168,
+        180.8279571533203,
+        538.53955078125,
+        194.11195373535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1-yl)carbamate (100.0 mg, 0.20 mmol) and Pd/C (10.0 mg, 9.40 µmol) in MeOH (5 ml) was degassed",
+      "bbox": [
+        56.6399040222168,
+        201.4679718017578,
+        541.5264282226562,
+        214.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and purged with H2 for 3 times and the reaction was stirred at 25 ℃ for 1 hr under H2 atmosphere",
+      "bbox": [
+        56.6399040222168,
+        222.1079559326172,
+        541.5375366210938,
+        235.47068786621094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(15Psi). The reaction mixture was filtered through a celite and the filter cake was rinsed with a small",
+      "bbox": [
+        56.6399040222168,
+        242.9879608154297,
+        541.5250854492188,
+        256.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "amount of MeOH (20 mL). The combined organic layers were concentrated under reduced pressure",
+      "bbox": [
+        56.6399040222168,
+        263.6279602050781,
+        541.5271606445312,
+        276.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to afford Compound 14-6 (80.0 mg), which was used in next step directly without further",
+      "bbox": [
+        56.6399040222168,
+        284.2679748535156,
+        541.5285034179688,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "purification. LCMS (ESI+): 408.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        304.4632263183594,
+        266.7235412597656,
+        318.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 7: Preparation of ISM061-14",
+      "bbox": [
+        56.6399040222168,
+        335.6279602050781,
+        232.954345703125,
+        348.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To",
+      "bbox": [
+        56.6399040222168,
+        366.3479919433594,
+        72.96949768066406,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a",
+      "bbox": [
+        89.16829681396484,
+        366.3479919433594,
+        97.493896484375,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solution",
+      "bbox": [
+        113.69269561767578,
+        366.3479919433594,
+        155.36390686035156,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of",
+      "bbox": [
+        171.5626983642578,
+        366.3479919433594,
+        184.55870056152344,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tert-butyl",
+      "bbox": [
+        200.75750732421875,
+        366.3479919433594,
+        248.4140167236328,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(5-(4-(2-(difluoromethyl)-5-hydroxyphenyl)pyrimidin-2-",
+      "bbox": [
+        264.61279296875,
+        366.3479919433594,
+        538.53955078125,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "yl)pentyl)carbamate (100.0 mg, 0.25 mmol) in DCM (5 mL) was added HCl-dioxane (1 mL, 4 M) at",
+      "bbox": [
+        56.6399040222168,
+        386.98797607421875,
+        541.5380859375,
+        400.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "0 ℃, and then the mixture was stirred at 25 ℃ for 30 min. The mixture was concentrated under",
+      "bbox": [
+        56.6399040222168,
+        407.86798095703125,
+        541.5263061523438,
+        421.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reduced pressure to give a residue, which was purified by pre-HPLC (SHIMADZU, LC-20AP,",
+      "bbox": [
+        56.6399040222168,
+        428.5079650878906,
+        541.5408325195312,
+        441.7919616699219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Column: YMC Triart C18, 20 × 250 mm, 5 μm; Mobile phase: from 5% to 35% ACN [0.1% HCl];",
+      "bbox": [
+        56.6399040222168,
+        448.7032165527344,
+        541.5330810546875,
+        462.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Flow rate: 15 mL/min; Retention Time:17 min of 30 min) to afford the title compound (35.0 mg, 0.10",
+      "bbox": [
+        56.6399040222168,
+        469.7879638671875,
+        541.5286865234375,
+        483.07196044921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol, 42% yield) as a gray solid. LCMS(ESI+): 308.1 [M+H]+. 1H NMR (400 MHz, DMSO-d6) δ",
+      "bbox": [
+        56.6399040222168,
+        490.2232360839844,
+        541.540283203125,
+        504.0306701660156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "11.17 – 9.67 (m, 1H), 8.86 (d, J = 5.2 Hz, 1H), 7.91 (s, 2H), 7.64 (d, J = 9.2 Hz, 1H), 7.61 (d, J = 5.2",
+      "bbox": [
+        56.6399040222168,
+        511.3080139160156,
+        541.54052734375,
+        524.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Hz, 1H), 7.29 (t, J = 55.7 Hz, 1H), 7.11 – 7.05 (m, 2H), 2.96 (t, J = 7.6 Hz, 2H), 2.78 (dq, J = 11.7,",
+      "bbox": [
+        56.6399040222168,
+        531.9479370117188,
+        541.5398559570312,
+        545.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "6.0 Hz, 2H), 1.83 (p, J = 7.6 Hz, 2H), 1.63 (q, J = 7.6 Hz, 2H), 1.44 – 1.36 (m, 2H).",
+      "bbox": [
+        56.6399040222168,
+        552.1432495117188,
+        460.754638671875,
+        565.8719482421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 20
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          542,
+          133
+        ],
+        "pos": [
+          0,
+          325
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          152,
+          259,
+          164
+        ],
+        "pos": [
+          325,
+          370
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          183,
+          542,
+          319
+        ],
+        "pos": [
+          370,
+          1019
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          338,
+          233,
+          349
+        ],
+        "pos": [
+          1019,
+          1060
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          368,
+          542,
+          566
+        ],
+        "pos": [
+          1060,
+          2052
+        ]
+      }
+    ],
+    "text": "over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 30%) to afford **Compound 14-5** (100 mg, 47% yield) as yellow oil. LCMS (ESI<sup>+</sup> ): Rt=2.092 min; m/z 494.3 [M+H]<sup>+</sup> . \n\n# **Step 6: Preparation of Compound 14-6** \n\nTo a solution of _tert_ -butyl (5-(4-(5-(benzyloxy)-2-(difluoromethyl)phenyl)pyrimidin-2-yl)pent-4-yn1-yl)carbamate (100.0 mg, 0.20 mmol) and Pd/C (10.0 mg, 9.40 µmol) in MeOH (5 ml) was degassed and purged with H2 for 3 times and the reaction was stirred at 25 ℃ for 1 hr under H2 atmosphere (15Psi). The reaction mixture was filtered through a celite and the filter cake was rinsed with a small amount of MeOH (20 mL). The combined organic layers were concentrated under reduced pressure to afford **Compound 14-6** (80.0 mg), which was used in next step directly without further purification. LCMS (ESI<sup>+</sup> ): 408.3 [M+H]<sup>+</sup> . \n\n# **Step 7: Preparation of ISM061-14** \n\nTo a solution of tert-butyl (5-(4-(2-(difluoromethyl)-5-hydroxyphenyl)pyrimidin-2yl)pentyl)carbamate (100.0 mg, 0.25 mmol) in DCM (5 mL) was added HCl-dioxane (1 mL, 4 M) at 0 ℃, and then the mixture was stirred at 25 ℃ for 30 min. The mixture was concentrated under reduced pressure to give a residue, which was purified by pre-HPLC (SHIMADZU, LC-20AP, Column: YMC Triart C<sup>18</sup> , 20 × 250 mm, 5 μm; Mobile phase: from 5% to 35% ACN [0.1% HCl]; Flow rate: 15 mL/min; Retention Time:17 min of 30 min) to afford the title compound (35.0 mg, 0.10 mmol, 42% yield) as a gray solid. LCMS(ESI<sup>+</sup> ): 308.1 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, DMSO- _d_ 6) δ 11.17 – 9.67 (m, 1H), 8.86 (d, _J_ = 5.2 Hz, 1H), 7.91 (s, 2H), 7.64 (d, _J_ = 9.2 Hz, 1H), 7.61 (d, _J_ = 5.2 Hz, 1H), 7.29 (t, _J_ = 55.7 Hz, 1H), 7.11 – 7.05 (m, 2H), 2.96 (t, _J_ = 7.6 Hz, 2H), 2.78 (dq, _J_ = 11.7, 6.0 Hz, 2H), 1.83 (p, _J_ = 7.6 Hz, 2H), 1.63 (q, _J_ = 7.6 Hz, 2H), 1.44 – 1.36 (m, 2H). \n\n"
+  }
+}

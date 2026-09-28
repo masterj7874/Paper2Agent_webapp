@@ -1,0 +1,320 @@
+{
+  "page": 6,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0006.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0006.png and compared every item with evidence/page-0006.json. Text-only end-matter page: references 19-31 in the left column, 32-36 plus Publisher's note, Open Access and the copyright line in the right column; the bottom half of the page is blank. Reading order (p0006-b002..b014 then p0006-b015..b022) was already correct. Changes: (1) removed the space before the comma after every bold volume number in refs 19-36 ('**12** , 031010' -> '**12**, 031010'). (2) p0006-b006 (ref. 23): the preprint DOI was broken across a line as 'https://doi.org/10.1101/' + '2023.04.25.537981' and the extractor left a space inside the URL; rejoined to https://doi.org/10.1101/2023.04.25.537981. (3) p0006-b015 (ref. 32): '_N_ -glycosylation' had a stray space after the italic N; corrected to '_N_-glycosylation'. (4) Checked and deliberately left as printed: ref. 20's title reads 'hybrid quantum-classical framework' with a plain HYPHEN in the source, unlike the en dash used in the body text - verified in the native text and not normalized. Ref. 21's 'KRas<sup>G12D</sup>' superscript is correct against the preview, and ref. 22's 'KRas(G12D)' is genuinely parenthesised in the source. 'Virtualflow 2.0—the next generation' is an em dash; 'membrane–protein' (ref. 30) and all page ranges are en dashes; 'Römisch' and 'Götzke' keep their umlauts and '© The Author(s) 2025' keeps U+00A9. (5) No cross-page joins are needed at either boundary: page 5 ends with reference 18 and this page opens with reference 19 (separate list items), and this page ends with the copyright line while page 7 opens with the 'Methods' heading. (6) Header items p0006-b000/b001 and footer p0006-b023 confirmed as running furniture (left as text); bare page number 1959 kept as 'omit'. Coordinator: running header/footer furniture set to explicit omit, matching the treatment reviewers applied on pages 8-18, so both verification parsers exclude the same regions.",
+  "warnings": [
+    "Review possible header/footer: p0006-b000",
+    "Review possible header/footer: p0006-b001",
+    "Review possible header/footer: p0006-b023"
+  ],
+  "items": [
+    {
+      "id": "p0006-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0006-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0006-b002",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        49.0,
+        295.0,
+        79.0
+      ],
+      "markdown": "19. Rudolph, M. S. et al. Generation of high-resolution handwritten digits with an ion-trap quantum computer. _Phys. Rev. X_ **12**, 031010 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b003",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        81.0,
+        277.0,
+        111.0
+      ],
+      "markdown": "20. Zeng, Q., Ge, H.-Y., Chen, G. & Zhou, N. Conditional quantum circuit born machine based on a hybrid quantum-classical framework. _Physica A Stat. Mech. Appl._ **608**, 128693 (2023).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        113.0,
+        294.0,
+        132.0
+      ],
+      "markdown": "21. Wang, X. et al. Identification of MRTX1133, a noncovalent, potent, and selective KRas<sup>G12D</sup> inhibitor. _J. Med. Chem._ **65**, 3123–3133 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b005",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        135.0,
+        292.0,
+        154.0
+      ],
+      "markdown": "22. Mao, Z. et al. KRas(G12D) can be targeted by potent inhibitors via formation of salt bridge. _Cell Discov._ **8**, 5 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b006",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        156.0,
+        273.0,
+        197.0
+      ],
+      "markdown": "23. Gorgulla, C. et al. Virtualflow 2.0—the next generation drug discovery platform enabling adaptive screens of 69 billion molecules. Preprint at _bioRxiv_ https://doi.org/10.1101/2023.04.25.537981 (2023).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b007",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        199.0,
+        279.0,
+        240.0
+      ],
+      "markdown": "24. Nigam, A. K., Pollice, R., Krenn, M., Gomes, G. & Guzik, A. A. Beyond generative models: superfast traversal, optimization, novelty, exploration and discovery (STONED) algorithm for molecules using SELFIES. _Chem. Sci._ **12**, 7079–7090 (2021).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b008",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        242.0,
+        274.0,
+        272.0
+      ],
+      "markdown": "25. Ivanenkov, Y. A. et al. Chemistry42: an AI-driven platform for molecular design and optimization. _J. Chem. Inf. Model._ **63**, 695–701 (2023).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b009",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        275.0,
+        284.0,
+        305.0
+      ],
+      "markdown": "26. Nigam, A. et al. Tartarus: A benchmarking platform for realistic and practical inverse molecular design. In _Advances in Neural Information Processing Systems_ **36**, 3263–3306 (2023).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b010",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        307.0,
+        284.0,
+        326.0
+      ],
+      "markdown": "27. Schuld, M., Sinayskiy, I. & Petruccione, F. An introduction to quantum machine learning. _Quantum Mach. Intell._ **3**, 28 (2021).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b011",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        328.0,
+        295.0,
+        348.0
+      ],
+      "markdown": "28. Saraon, P. et al. A drug discovery platform to identify compounds that inhibit EGFR triple mutants. _Nat. Chem. Biol._ **16**, 577–586 (2020).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b012",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        350.0,
+        296.0,
+        390.0
+      ],
+      "markdown": "29. Stagljar, I., Korostensky, C., Johnsson, N. & te Heesen, S. A genetic system based on split-ubiquitin for the analysis of interactions between membrane proteins in vivo. _Proc. Natl Acad. Sci. USA_ **95**, 5187–5192 (1998).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b013",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        393.0,
+        294.0,
+        423.0
+      ],
+      "markdown": "30. Petschnigg, J. et al. The mammalian-membrane two-hybrid assay (MAMTH) for probing membrane–protein interactions in human cells. _Nat. Methods_ **11**, 585–592 (2014).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b014",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        425.0,
+        295.0,
+        455.0
+      ],
+      "markdown": "31. Saraon, P. et al. Chemical genetics screen identifies COPB2 tool compounds that alters ER stress response and induces RTK dysregulation in lung cancer cells. _J. Mol. Biol._ **433**, 167294 (2021).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b015",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        560.0,
+        90.0
+      ],
+      "markdown": "32. Scheper, W., Thaminy, S., Kais, S., Stagljar, I. & Römisch, K. Coordination of _N_-glycosylation and protein translocation across the endoplasmic reticulum membrane by Sss1 protein. _J. Biol. Chem._ **278**, 37998–38003 (2003).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b016",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        92.0,
+        542.0,
+        133.0
+      ],
+      "markdown": "33. Benleulmi-Chaachoua, A. et al. Protein interactome mining defines melatonin MT1 receptors as integral component of presynaptic protein complexes of neurons. _J. Pineal Res._ **60**, 95–108 (2016).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b017",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        135.0,
+        539.0,
+        176.0
+      ],
+      "markdown": "34. Lopes, J. P. et al. The role of Parkinson’s disease-associated receptor GPR37 in the hippocampus: functional interplay with the adenosinergic system. _J. Neurochem._ **134**, 135–146 (2015).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b018",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        178.0,
+        564.0,
+        197.0
+      ],
+      "markdown": "35. Grozavu, I. et al. D154Q mutation does not alter KRas dimerization. _J. Mol. Biol._ **434**, 167543 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b019",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        199.0,
+        544.0,
+        229.0
+      ],
+      "markdown": "36. Götzke, H. et al. The ALFA-tag is a highly versatile tool for nanobody-based bioscience applications. _Nat. Commun._ **10**, 4403 (2019).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0006-b020",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        242.0,
+        549.0,
+        262.0
+      ],
+      "markdown": "**Publisher’s note** Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0006-b021",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        275.0,
+        563.0,
+        434.0
+      ],
+      "markdown": "**Open Access** This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0006-b022",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        447.0,
+        384.0,
+        455.0
+      ],
+      "markdown": "© The Author(s) 2025",
+      "source_class": "text"
+    },
+    {
+      "id": "p0006-b023",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        762.0,
+        278.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0006-b024",
+      "kind": "omit",
+      "bbox": [
+        543.0,
+        763.0,
+        563.0,
+        770.0
+      ],
+      "markdown": "**1959**",
+      "source_class": "page-footer",
+      "reason": "Bare page number 1959 in the running foot; verified against previews/page-0006.png."
+    }
+  ]
+}

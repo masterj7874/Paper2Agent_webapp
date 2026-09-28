@@ -1,0 +1,224 @@
+{
+ "run_id": "20260922-164415_61dd51",
+ "status": "done",
+ "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+ "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+ "project": null,
+ "kind": "microscopy_2d",
+ "modality_guess": "microscopy",
+ "detection_notes": [
+  "2-D image 467x349 (RGB), 92 bright objects, largest component 7% of the foreground",
+  "many small bright objects -> microscopy (Cellpose)"
+ ],
+ "recipe": {
+  "id": "microscopy_cellpose",
+  "title": "2-D microscopy -> Cellpose diameter -> segmentation -> ROIs"
+ },
+ "created_at": 1790063055.8838112,
+ "finished_at": 1790063153.4633057,
+ "duration_s": 97.58,
+ "steps": [
+  {
+   "index": 0,
+   "label": "diameter estimate (size model)",
+   "agent": "Cellpose",
+   "tool": "cellpose_estimate_diameter",
+   "status": "done",
+   "job_id": "6f5b14234627",
+   "duration_s": 8.0,
+   "error": null,
+   "key_numbers": {
+    "estimated_diameter": 27.8003,
+    "device": "cuda:0",
+    "diameter_from_style": 26.31943,
+    "diam_mean": 30.0,
+    "rescale": 1.07913,
+    "timings_s.model_init": 0.122,
+    "timings_s.eval": 0.979
+   },
+   "artifacts": [
+    {
+     "description": "diameter estimate (JSON)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_estimate_diameter_20260922-164423_d44f2d89/img02_diameter.json"
+    }
+   ],
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+    "model_type": "cyto2",
+    "channels": [
+     0,
+     0
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs"
+   }
+  },
+  {
+   "index": 1,
+   "label": "Cellpose cyto2 segmentation",
+   "agent": "Cellpose",
+   "tool": "cellpose_segment_image",
+   "status": "done",
+   "job_id": "36915fb4b5a5",
+   "duration_s": 1.0,
+   "error": null,
+   "key_numbers": {
+    "n_masks": 99,
+    "diameter_used": 27.8003,
+    "device": "cuda:0",
+    "diameter_source": "user",
+    "timings_s.model_init": 0.078,
+    "timings_s.eval": 0.174,
+    "timings_s.save": 0.5
+   },
+   "artifacts": [
+    {
+     "description": "label masks (uint16 PNG, 0=background)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_masks.png"
+    },
+    {
+     "description": "label masks (TIF)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_masks.tif"
+    },
+    {
+     "description": "label masks as returned by model.eval (npy)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_masks.npy"
+    },
+    {
+     "description": "GUI-loadable segmentation (masks, outlines, flows, est_diam, chan_choose)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_seg.npy"
+    },
+    {
+     "description": "ImageJ outline coordinates (one mask per line)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_outlines.txt"
+    },
+    {
+     "description": "image with red mask outlines",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_outlines.png"
+    },
+    {
+     "description": "raw flows: flow_rgb, dP (dy,dx), cellprob, p (final pixel positions)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_flows.npz"
+    },
+    {
+     "description": "256-d style vector",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_styles.npy"
+    },
+    {
+     "description": "4-panel figure: image | outlines | masks | flows (plot.show_segmentation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_segmentation.png"
+    }
+   ],
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+    "model_type": "cyto2",
+    "channels": [
+     0,
+     0
+    ],
+    "diameter": 27.80029502818709,
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs"
+   }
+  },
+  {
+   "index": 2,
+   "label": "ImageJ ROIs + per-object stats",
+   "agent": "Cellpose",
+   "tool": "cellpose_masks_to_rois",
+   "status": "done",
+   "job_id": "f910d1e28383",
+   "duration_s": 0.51,
+   "error": null,
+   "key_numbers": {
+    "n_masks": 99,
+    "median_diameter_px": 27.63953,
+    "masks_dtype": "uint16",
+    "max_label": 99,
+    "labels_contiguous_1_to_n": true,
+    "n_outlines": 99,
+    "n_empty_outlines": 0,
+    "n_roi_files": 99,
+    "foreground_pixels": 72159,
+    "outlines_multiprocessing": false
+   },
+   "artifacts": [
+    {
+     "description": "ImageJ/Fiji ROI archive (99 FREEHAND .roi members; open with File > Open in ImageJ)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_rois.zip"
+    },
+    {
+     "description": "legacy ImageJ outline list (99 lines; load with imagej_roi_converter.py)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_cp_outlines.txt"
+    },
+    {
+     "description": "label image PNG written by cellpose.io.save_masks (re-read gives the input labels)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_cp_masks.png"
+    },
+    {
+     "description": "per-object table: area (pixel count), sqrt(area) and equivalent diameter (cellpose.utils.diameters), outline vertex count, centroid, ROI name",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_object_stats.csv"
+    }
+   ],
+   "arguments": {
+    "masks_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_seg.npy",
+    "imagej_rois": true,
+    "per_object_csv": true,
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs"
+   }
+  },
+  {
+   "index": 3,
+   "label": "literature context (MedKG related work)",
+   "agent": "MedKG",
+   "tool": "medkg_related_work",
+   "status": "done",
+   "job_id": "2c7fc6c6c3bd",
+   "duration_s": 88.06,
+   "error": null,
+   "key_numbers": {
+    "summary.n_rows": 10,
+    "summary.n_q1": 10,
+    "summary.status": "degraded",
+    "summary.llm.provider": "claude-code",
+    "summary.llm.elapsed_s": 55.38,
+    "summary.llm.fallback_used": true,
+    "summary.timing.total_ms": 56055.0,
+    "summary.timing.retrieval_ms": 556.5,
+    "summary.timing.dense_ms": 42.2,
+    "summary.timing.lexical_ms": 147.4,
+    "summary.timing.rerank_ms": 228.1,
+    "summary.timing.graph_ms": 120.9,
+    "summary.timing.llm_ms": 55375.3
+   },
+   "artifacts": [
+    {
+     "description": "related_work — full JSON response",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164553-e972ee.json"
+    },
+    {
+     "description": "related_work — markdown",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164553-e972ee.md"
+    }
+   ],
+   "arguments": {
+    "topic": "generalist cell segmentation microscopy deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "microscopy",
+    "task": "segmentation"
+   }
+  }
+ ],
+ "artifacts": [
+  {
+   "description": "run summary (JSON)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/summary.json"
+  },
+  {
+   "description": "run report (markdown)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/report.md"
+  }
+ ],
+ "warnings": []
+}

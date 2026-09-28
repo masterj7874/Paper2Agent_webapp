@@ -1,0 +1,122 @@
+{
+  "page": 2,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0002.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. The layout extractor MISSED the reaction scheme drawing entirely - no picture item existed. Added figure p0002-b000a for the two-row Scheme S1 artwork, bbox [54, 75, 476, 161] pt measured from the page render (ink extent 57.6-470.9 x 78.5-156.3 pt), covering both reaction rows and all intermediate labels 1-1 .. 1-3, 1-4, 1-5, ISM061-1; asset_name scheme-s1. Reordered so the figure sits between the S1.1 heading and its caption. Changed '**Scheme S1** Preparation of ISM061-1' from kind text to caption, and 'Step 1: Preparation of Compound 1-1' from kind caption to heading so all six Step headings in this synthesis are consistent. Set heading levels (S1.1 h3, Step N h4). Note the source itself numbers this section 'S1.1', duplicating the 'S1.1. General Synthetic Procedures' number on page 1 - kept as printed. Prose in p0002-b007 breaks mid-sentence after 'chromatography (SiO2,' and continues on page 3.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0002-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        213.0,
+        71.0
+      ],
+      "markdown": "### S1.1 Preparation of ISM061-1",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0002-b000a",
+      "kind": "figure",
+      "bbox": [
+        54.0,
+        75.0,
+        476.0,
+        161.0
+      ],
+      "markdown": "",
+      "label": "Scheme S1",
+      "asset_name": "scheme-s1",
+      "source_class": "picture"
+    },
+    {
+      "id": "p0002-b001",
+      "kind": "caption",
+      "bbox": [
+        208.0,
+        173.0,
+        387.0,
+        185.0
+      ],
+      "markdown": "**Scheme S1** Preparation of ISM061-1",
+      "source_class": "text"
+    },
+    {
+      "id": "p0002-b002",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        199.0,
+        253.0,
+        210.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 1-1",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0002-b003",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        229.0,
+        542.0,
+        407.0
+      ],
+      "markdown": "To a solution of 2,4-dichloro-5-ethylpyrimidine (5.00 g, 28.20 mmol) in DMF (50 mL) were added tributyl(1-ethoxyvinyl)stannane (11.22 g, 31.1 mmol) and bis (triphenylphosphine) palladium(II) chloride (0.99 g, 1.41 mmol). After the addition, the mixture was degassed and purged with N2 for 3 mins and then stirred at 85 ℃ for 4 hrs. After cooling to 20 ℃, The reaction solution was poured into water (50 mL) and extracted with EtOAc (50 mL × 3). The combined organic layers were washed with brine (50 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 10%) to afford the title compound (5.00 g, 83% yield) as colorless oil. LCMS(ESI): m/z 213.2 [M+H]+.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0002-b004",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        426.0,
+        253.0,
+        437.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 1-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0002-b005",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        456.0,
+        542.0,
+        592.0
+      ],
+      "markdown": "To a solution of 2-chloro-4-(1-ethoxyvinyl)-5-ethylpyrimidine (5.00 g, 23.51 mmol) in THF (50 mL) was added HCl (20 mL, 6 M) dropwise. After addition, the mixture was stirred at 25 ℃ for 2 hrs. The residue was adjusted pH = 9 ~ 10 with saturated Na2CO3 at 0 ℃ and extracted with EtOAc (25 mL × 3). The combined organic layers were washed with brine (40 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 10%) to afford the title compound (2.50 g, 58% yield) as colorless oil. LCMS (ESI): m/z 185.3 [M+H]+.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0002-b006",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        611.0,
+        253.0,
+        623.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 1-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0002-b007",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        642.0,
+        542.0,
+        778.0
+      ],
+      "markdown": "To a solution of 1-(2-chloro-5-ethylpyrimidin-4-yl)ethan-1-one (2.50 g, 13.54 mmol) in MeOH (50 mL) were added 2,6-difluoroaniline (2.10 g, 16.25 mmol) and AcOH (0.78 mL, 13.54 mmol). After addition, the mixture was stirred at 25 ℃ for 30 min. And then sodium cyanoborohydride (2.13 g, 33.9 mmol) was added at 0 ℃. The resulting mixture was stirred at 25 ℃ for 7 hrs. The reaction solution was poured into water (30 mL) and extracted with DCM (30 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2,",
+      "source_class": "text"
+    }
+  ]
+}

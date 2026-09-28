@@ -1,0 +1,59 @@
+{
+ "id": "f910d1e28383",
+ "agent": "Cellpose",
+ "tool": "cellpose_masks_to_rois",
+ "arguments": {
+  "masks_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_seg.npy",
+  "imagej_rois": true,
+  "per_object_csv": true,
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063064.8994005,
+ "started_at": 1790063064.9007444,
+ "finished_at": 1790063064.9349418,
+ "result": {
+  "message": "99 labelled object(s) in img02_seg.npy (349x467 uint16); 99 outline polygon(s), 99 ImageJ .roi file(s) in img02_rois.zip; median diameter 27.640 px (utils.diameters). Wrote 4 file(s) to /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc: img02_rois.zip, img02_cp_outlines.txt, img02_cp_masks.png, img02_object_stats.csv.",
+  "reference": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/docs/outputs.rst",
+  "artifacts": [
+   {
+    "description": "ImageJ/Fiji ROI archive (99 FREEHAND .roi members; open with File > Open in ImageJ)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_rois.zip"
+   },
+   {
+    "description": "legacy ImageJ outline list (99 lines; load with imagej_roi_converter.py)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_cp_outlines.txt"
+   },
+   {
+    "description": "label image PNG written by cellpose.io.save_masks (re-read gives the input labels)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_cp_masks.png"
+   },
+   {
+    "description": "per-object table: area (pixel count), sqrt(area) and equivalent diameter (cellpose.utils.diameters), outline vertex count, centroid, ROI name",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_object_stats.csv"
+   }
+  ],
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc",
+  "masks_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_seg.npy",
+  "masks_shape": [
+   349,
+   467
+  ],
+  "masks_dtype": "uint16",
+  "n_masks": 99,
+  "max_label": 99,
+  "labels_contiguous_1_to_n": true,
+  "n_outlines": 99,
+  "n_empty_outlines": 0,
+  "n_roi_files": 99,
+  "median_diameter_px": 27.63953195770684,
+  "foreground_pixels": 72159,
+  "outlines_multiprocessing": false,
+  "references": {
+   "io": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/cellpose/io.py",
+   "utils": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/cellpose/utils.py"
+  }
+ },
+ "error": null,
+ "duration_s": 0.03
+}

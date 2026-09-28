@@ -1,0 +1,88 @@
+{
+  "page": 21,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0021.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0021.png. Layout mirrors page 18: the unlabelled 1H NMR spectrum of ISM061-14 (the compound finished on page 20) sits at the top, then section S1.8 begins. Reading order verified and kept top-to-bottom so the spectrum follows the ISM061-14 peak list from page 20 in the continuous markdown. FIGURE FIXES: (1) p0021-b000 bbox [51,64,450,314] -> [50,52,480,350]; the extractor crop lost the right-hand intensity axis (7.5x10^11 down to -5.0x10^10, which reaches x=472.7) and the whole bottom f1 (ppm) axis and integration row (a separate vector band at y 336.1-345.7). Named si-nmr-ism061-14, replacing placeholder figure-p0021-000. Note the small stray 4x4 pt embedded image at [100.8,145.4, 104.9,149.5] inside the plot area is part of the printed spectrum and falls inside the new crop. (2) MERGED p0021-b002 [88,415,510,516] and p0021-b003 [86,530,338,586] into one figure p0021-b002 with bbox [84,412,512,590]: these are the upper and lower halves of the single diagram Scheme S8; the split would have separated the 15-5 / ISM061-15 end of the route from the rest. p0021-b003 deleted. Labelled 'Scheme S8' (the printed number, kept verbatim in the label and in the caption item) with asset_name scheme-s8-ism061-15. PRESERVED SOURCE DEFECT: the supplement prints the scheme number 'Scheme S8' TWICE - here for ISM061-15 and again on page 30 for ISM061-22. That is an authors' numbering error in the PDF, not a transcription error, so the printed caption is left exactly as it reads and only the asset filename is disambiguated by compound (page 30 takes scheme-s8-ism061-22). Note the same duplication affects the section numbers: 'S1.9' is printed here on page 24 for ISM061-16 and again on page 30 for ISM061-22. The printed caption remains the separate item p0021-b004 right after the figure. KIND FIX: p0021-b005 'Step 1: Preparation of Compound 15-1' was kind=caption, changed to heading (p0021-b001 was already a correct heading). No join_previous: the page opens with a figure and then a new section heading. p0021-b006 ends on 'eluting with ethyl acetate (from' - continues on page 22. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0021-b000",
+      "kind": "figure",
+      "bbox": [
+        50.0,
+        52.0,
+        480.0,
+        350.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-14",
+      "asset_name": "si-nmr-ism061-14"
+    },
+    {
+      "id": "p0021-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        397.0,
+        222.0,
+        409.0
+      ],
+      "markdown": "### S1.8. Preparation of ISM061-15",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0021-b002",
+      "kind": "figure",
+      "bbox": [
+        84.0,
+        412.0,
+        512.0,
+        590.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S8",
+      "asset_name": "scheme-s8-ism061-15"
+    },
+    {
+      "id": "p0021-b004",
+      "kind": "caption",
+      "bbox": [
+        205.0,
+        595.0,
+        393.0,
+        607.0
+      ],
+      "markdown": "**Scheme S8** Preparation of ISM061-15",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0021-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        626.0,
+        259.0,
+        638.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 15-1",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0021-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        656.0,
+        542.0,
+        772.0
+      ],
+      "markdown": "To a solution of 2-aminoethan-1-ol (2 g, 32.73 mmol) in PhMe (20 mL) were added DIEA (12.7 g, 98.2 mmol) and isobenzofuran-1,3-dione (4.8 g, 32.73 mmol) at N2 atmosphere. Then the mixture was heated and stirred at 120 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (60 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (50 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from",
+      "source_class": "text"
+    }
+  ]
+}

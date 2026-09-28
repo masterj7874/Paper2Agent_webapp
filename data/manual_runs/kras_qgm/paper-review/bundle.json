@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "name": "quantum-kras-paper",
+  "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+  "notes": [
+    "Main document is the Nature Biotechnology Brief Communication (doi:10.1038/s41587-024-02526-3), Volume 43, December 2025, pages 1954-1959, plus its Methods, Extended Data figures and end matter.",
+    "The supplement is SI_v0.pdf as distributed in the authors' code archive (Zenodo doi:10.5281/zenodo.11137638; GitHub aspuru-guzik-group/quantum-generative-models, tag 1.0.0-beta.1), NOT a file obtained from the publisher. It is an incomplete early draft: section S2 is absent entirely, there is no reference list, and it covers only synthetic chemistry and SPR. It contains no supplementary material for the paper's computational contribution, so questions about the quantum-classical model must be answered from the main paper's Methods.",
+    "Extended Data Figs. 1-5 are printed inside the main PDF (pages 14-18) and are routed to assets/supp_figs/ rather than assets/figure/.",
+    "Three pages of the main PDF (the Nature Portfolio Reporting Summary) and one page of the supplement have no usable text layer and are preserved as images; their content is not searchable. The fifteen displayed equations of the main paper are likewise preserved as images."
+  ],
+  "navigation": [
+    {
+      "file": "references/paper.md",
+      "heading": "Methods",
+      "purpose": "Full protocol section; the computational method, benchmark setup and all wet-lab assay conditions live under it"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "Quantum-assisted algorithm",
+      "purpose": "Under Methods: the quantum component's role and training setup; the displayed equations are in the following section, not here"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "Quantum-computing-enhanced workflow",
+      "purpose": "Under Methods: how the quantum prior is combined with the classical generator end to end, and where all fifteen displayed equations (1)-(15) and the two algorithm listings live"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "Computational benchmarks: classical versus quantum models",
+      "purpose": "Under Methods: how the quantum and classical models were compared, including the qubit-count scaling study"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "Data acquisition and preprocessing",
+      "purpose": "Under Methods: how the training set was assembled by virtual screening and STONED-SELFIES expansion"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "Benchmark setup",
+      "purpose": "Under Methods: hardware, backend and evaluation configuration used for the reported runs"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "Experimental validation methods",
+      "purpose": "Under Methods: the closing heading of the assay block; the individual assay protocols are printed BEFORE it, not after"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "SPR conditions",
+      "purpose": "Under Methods: surface plasmon resonance binding-affinity protocol"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "MaMTH-DS dose–response assays",
+      "purpose": "Under Methods: live-cell target-engagement assay protocol"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "NMR experiments and analysis",
+      "purpose": "Under Methods: protein NMR acquisition and interpretation"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "Code availability",
+      "purpose": "Where the authors deposited the generative-model code"
+    },
+    {
+      "file": "references/paper.md",
+      "heading": "Data availability",
+      "purpose": "Where the authors deposited the datasets and the trained model"
+    },
+    {
+      "file": "references/supplement.md",
+      "heading": "S1. Chemistry",
+      "purpose": "The whole synthetic-chemistry section; per-compound routes S1.1-S1.13 with schemes and 1H NMR spectra sit under it"
+    },
+    {
+      "file": "references/supplement.md",
+      "heading": "S1.1. General Synthetic Procedures",
+      "purpose": "Under S1: shared reagents, workup and analytical conditions applied across the individual syntheses"
+    },
+    {
+      "file": "references/supplement.md",
+      "heading": "S3. Surface Plasmon Resonance Affinity Measurements",
+      "purpose": "The supplement's only non-chemistry section, at its very end; SPR response curves for ISM061-18-2"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s001-03",
+      "role": "main",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "reviewed": true,
+      "review_notes": "All 21 pages inspected against page previews and re-rendered source crops by three reviewers (pages 1-7, 8-14, 15-21) and merged by the coordinator. Two-column reading order rebuilt throughout, including pages 10 and 11 where the extractor interleaved the columns and split a sentence. The extractor's systematic defect on this PDF is that panel letters, axis labels and dashed frames are vector art lying outside the embedded raster, so every Extended Data plate was under-cropped; all five were merged into single figures and re-rendered with all four edges checked. Equations (1)-(6) had been misclassified as a table with corrupted cells and one region covered seven separate equations; these were replaced by fifteen formula images numbered to match the printed equation numbers. Two algorithm listings had been shattered into thirteen bullet items each and were merged into code items with source indentation restored. Six dropped link annotations were restored and one demonstrably wrong link annotation was deliberately left as plain text. Text repairs covered swallowed line-wrap hyphens, a doubled ket bar in four places, restored sub/superscripts and stray spaces before punctuation after citation markers. Reference numbering verified strictly sequential. Pages 19-21 have no usable text layer and are retained as whole-page images without transcription. Remaining limitations are recorded in the document notes.",
+      "asset_name": "main"
+    },
+    {
+      "id": "s002-si-v0",
+      "role": "supplement",
+      "title": "Supplementary Information",
+      "reviewed": true,
+      "review_notes": "All 37 pages inspected against page previews and re-rendered source crops by three reviewers (pages 1-13, 14-25, 26-37) and merged by the coordinator. Document structure was established from the text layer across all pages: S1.6 and S1.7 are printed (pages 15 and 18) contrary to an early reviewer claim that was retracted after two independent verifications; section S2 is genuinely absent, the numbering running S1 then S3; there is no reference list; and page 37 stops cleanly after the final caption with 82 pt of blank margin, so the file is an incomplete early draft rather than a damaged one. Its own numbering is not unique: S1.9 and Scheme S8 are each printed twice for different compounds, and the ISM061-22 section is out of sequence. All headings and captions are transcribed as printed; only asset filenames were disambiguated. Figure handling was the main repair: one scheme had been missed entirely and was added, four split plates were merged, a spurious figure built from a blank 4x4 pt bitmap was omitted, and every NMR spectrum was under-cropped, each having lost its right-hand intensity axis and its bottom f1 (ppm) axis; one scheme had been cropped so far left that the starting material was amputated. Pages flagged as having no figure item were checked three ways (content-stream drawing operators, embedded images and form XObjects, plus a masked-text render) and confirmed genuinely text-only. Swallowed line-wrap hyphens were enumerated per page and restored, and every mass-spectrometry bracket and compound identifier was diffed source against output. Page 28 has no text layer and OCR failed, so it is retained as an image; its two spectra were identified by rendering peak labels at 900 dpi and matching the shift lists printed on page 27. Remaining limitations are recorded in the document notes.",
+      "asset_name": "si"
+    }
+  ]
+}

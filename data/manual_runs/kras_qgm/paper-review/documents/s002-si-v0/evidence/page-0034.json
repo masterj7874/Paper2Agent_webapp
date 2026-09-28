@@ -1,0 +1,348 @@
+{
+  "page": 34,
+  "lines": [
+    {
+      "text": "Step 5: Preparation of ISM061-24",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        232.954345703125,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-(2-(3-fluoro-2-(o-tolyl)pyridin-4-yl)ethyl)benzoic acid (70.0 mg, 0.21 mmol) in",
+      "bbox": [
+        56.6399040222168,
+        87.94796752929688,
+        541.5289306640625,
+        101.23197174072266
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "DMF (2 mL) were added ammonium chloride (11.2 mg, 0.21 mmol), HATU (87.3 mg, 0.23 mmol)",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        541.5369873046875,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and DIEA (0.1 mL, 0.42 mmol) and then the reaction mixture was stirred at 25 ℃ for 2 hrs. The",
+      "bbox": [
+        56.6399040222168,
+        129.4679718017578,
+        541.5393676757812,
+        142.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reaction solution was poured into water (50 mL) and extracted with EtOAc (25 mL × 3). The",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        541.5330810546875,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and",
+      "bbox": [
+        56.6399040222168,
+        170.7479705810547,
+        541.5393676757812,
+        184.11068725585938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to give a residue. The residue was purified by prep-TLC (SiO2,",
+      "bbox": [
+        56.6399040222168,
+        191.38796997070312,
+        541.5398559570312,
+        204.7506866455078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ethyl acetate: petroleum ether = 1: 1) to afford ISM061-24 (30 mg, 43% yield) as a white solid.",
+      "bbox": [
+        56.6399040222168,
+        212.26795959472656,
+        541.533203125,
+        225.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LCMS(ESI+): 335.3 [M+H]+. 1H NMR (400 MHz, DMSO-d6) δ 8.37 (d, J = 4.9 Hz, 1H), 7.80 (s,",
+      "bbox": [
+        56.6399040222168,
+        232.46324157714844,
+        541.541015625,
+        246.27069091796875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1H), 7.41 – 7.20 (m, 10H), 3.14 – 3.06 (m, 2H), 3.04 – 2.97 (m, 2H), 2.13 (s, 3H).",
+      "bbox": [
+        56.6399040222168,
+        253.54795837402344,
+        453.606689453125,
+        266.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "S1.13. Preparation of ISM061-24-2",
+      "bbox": [
+        56.6399040222168,
+        617.14794921875,
+        237.95823669433594,
+        630.4319458007812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S13 Preparation of ISM061-24-2",
+      "bbox": [
+        197.27146911621094,
+        692.7479248046875,
+        400.9082336425781,
+        706.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 24-5",
+      "bbox": [
+        56.6399040222168,
+        713.387939453125,
+        258.6417236328125,
+        726.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-bromobenzonitrile (2 g, 10.99 mmol) in 1,4-dioxane-H2O (24 mL,5:1) was added",
+      "bbox": [
+        56.6399040222168,
+        744.10791015625,
+        541.538818359375,
+        757.4706420898438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "4,4,5,5-tetramethyl-2-vinyl-1,3,2-dioxaborolane (2.5 g, 16.48 mmol), K2CO3 (3 g, 21.98 mmol) and",
+      "bbox": [
+        56.6399040222168,
+        764.7479248046875,
+        541.538330078125,
+        778.1106567382812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 34
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          56,
+          59,
+          233,
+          71
+        ],
+        "pos": [
+          0,
+          41
+        ]
+      },
+      {
+        "index": 1,
+        "class": "text",
+        "bbox": [
+          56,
+          90,
+          542,
+          267
+        ],
+        "pos": [
+          41,
+          918
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          115,
+          384,
+          120,
+          389
+        ],
+        "pos": [
+          918,
+          920
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          56,
+          428,
+          445,
+          536
+        ],
+        "pos": [
+          920,
+          922
+        ]
+      },
+      {
+        "index": 4,
+        "class": "section-header",
+        "bbox": [
+          56,
+          619,
+          238,
+          631
+        ],
+        "pos": [
+          922,
+          964
+        ]
+      },
+      {
+        "index": 5,
+        "class": "picture",
+        "bbox": [
+          57,
+          639,
+          469,
+          684
+        ],
+        "pos": [
+          964,
+          966
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          197,
+          695,
+          401,
+          707
+        ],
+        "pos": [
+          966,
+          1010
+        ]
+      },
+      {
+        "index": 7,
+        "class": "caption",
+        "bbox": [
+          56,
+          715,
+          259,
+          727
+        ],
+        "pos": [
+          1010,
+          1053
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          56,
+          746,
+          542,
+          779
+        ],
+        "pos": [
+          1053,
+          1261
+        ]
+      }
+    ],
+    "text": "# **Step 5: Preparation of ISM061-24** \n\nTo a solution of 2-(2-(3-fluoro-2-(o-tolyl)pyridin-4-yl)ethyl)benzoic acid (70.0 mg, 0.21 mmol) in DMF (2 mL) were added ammonium chloride (11.2 mg, 0.21 mmol), HATU (87.3 mg, 0.23 mmol) and DIEA (0.1 mL, 0.42 mmol) and then the reaction mixture was stirred at 25 ℃ for 2 hrs. The reaction solution was poured into water (50 mL) and extracted with EtOAc (25 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 1: 1) to afford **ISM061-24** (30 mg, 43% yield) as a white solid. LCMS(ESI<sup>+</sup> ): 335.3 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, DMSO- _d_ 6) δ 8.37 (d, _J_ = 4.9 Hz, 1H), 7.80 (s, 1H), 7.41 – 7.20 (m, 10H), 3.14 – 3.06 (m, 2H), 3.04 – 2.97 (m, 2H), 2.13 (s, 3H). \n\n\n\n\n\n# **S1.13. Preparation of ISM061-24-2** \n\n\n\n**Scheme S13** Preparation of ISM061-24-2 \n\n**Step 1: Preparation of Compound 24-5** \n\nTo a solution of 2-bromobenzonitrile (2 g, 10.99 mmol) in 1,4-dioxane-H2O (24 mL,5:1) was added <mark>4,4,5,5-tetramethyl-2-vinyl-1,3,2-dioxaborolane</mark> (2.5 g, 16.48 mmol), K2CO3 (3 g, 21.98 mmol) and \n\n"
+  }
+}

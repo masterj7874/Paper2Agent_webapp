@@ -1,0 +1,108 @@
+{
+  "page": 12,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0012.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. NO cross-page join despite the queue flag for this boundary: page 12 opens with the bold section head 'Step 2: Preparation of Compound 12-2' and page 11 ends with a completed sentence, so join_previous is left unset. Set Step 2-5 headings to h4 and normalised '[M+H]<sup>+</sup> .' spacing in p0012-b003. Checked the minus signs in p0012-b007: the native text uses ASCII hyphen-minus in 'dropwise at -70°C' and 'stirred at -70°C', which matches the glyph in the render, so they were left as hyphen-minus rather than converted to U+2212. Confirmed the source's compressed spacing 'stirred at20°C', '(782 mg,2.4 mmol)', '(2 g,11.6 mmol)', '(17 mL,17 mmol, 1M in THF)', '(1.2 g,Y: 22.2%)' and the present-tense slips 'quench the reaction solution' / 'dilute the reaction solution' - all source wording, left as printed. No figures on this page; the last item breaks after 'silica gel column'.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0012-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        259.0,
+        71.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 12-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0012-b001",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        90.0,
+        542.0,
+        247.0
+      ],
+      "markdown": "To a solution of **compound 12-1** (5.1 g, 20.2 mmol) in dichloromethane (50 mL) was added anhydrous sodium sulfate (2.9 g, 20.2 mmol), m-CPBA (8.7 g, 40.4 mmol) and trifluoromethanesulfonic acid (150.1 mg, 1.0 mmol). The resulting mixture was stirred at 25 °C for 48 hours. After the reaction is complete, quench the reaction solution with saturated sodium sulfite solution (10 mL). The mixture was then extracted with dichloromethane (50 mL × 3). The combined organic phases was washed with saturated brine water (20 mL), dried over anhydrous sodium sulfate, filtered and concentrated under reduced pressure to obtain the title compound as a yellow solid (1.2 g,Y: 22.2%).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0012-b002",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        256.0,
+        259.0,
+        267.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 12-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0012-b003",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        286.0,
+        542.0,
+        443.0
+      ],
+      "markdown": "To a solution of **compound 12-2** (500 mg, 1.9 mmol) in THF (6 mL) was added water (1 mL) and sodium hydroxide (152 mg, 3.8 mmol). The resulting mixture was stirred at20°C for 4 hours. After the reaction was completed, dilute the reaction solution with water (10 mL). The mixture was then extracted with ethyl acetate (200 mL × 3). The combined organic phases was washed with saturated brine water (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography (EA:PE=1:10) to afford the title compound as a yellow solid (310 mg, Y: 73.5%). LCMS (ESI): 227.1 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0012-b004",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        452.0,
+        259.0,
+        464.0
+      ],
+      "markdown": "#### Step 4: Preparation of Compound 12-4",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0012-b005",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        482.0,
+        542.0,
+        577.0
+      ],
+      "markdown": "To a solution of **compound 12-3** (280 mg, 1.2 mmol) in acetone (18 mL) was added cesium carbonate (782 mg,2.4 mmol) and BnBr (205.2 mg, 1.2 mmol). The resulting mixture was stirred at 70°C for 14 hours. Upon completion, the mixture was concentrated under reduced pressure to give a residue, which was purified by silica gel column chromatography (EA:PE=1:10) to afford the title compound as a yellow oil (200 mg, Y: 51%).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0012-b006",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        586.0,
+        259.0,
+        598.0
+      ],
+      "markdown": "#### Step 5: Preparation of Compound 12-5",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0012-b007",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        617.0,
+        542.0,
+        753.0
+      ],
+      "markdown": "To a solution of 5-bromo-4-methylpyrimidine (2 g,11.6 mmol) in tetrahydrofuran (40 mL) was added LiHMDS (17 mL,17 mmol, 1M in THF) dropwise at -70°C under nitrogen. The resulting mixture was stirred at -70°C for 1 hour. Then diethyl carbonate (1 g, 7 mmol) was added. The mixture was stirred at room temperature for 16 hours. Upon completion, pour the reaction solution into ice water (10 mL), the resulting mixture was extracted with ethyl acetate (50 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to afford a residue, which was purified by silica gel column",
+      "source_class": "text"
+    }
+  ]
+}

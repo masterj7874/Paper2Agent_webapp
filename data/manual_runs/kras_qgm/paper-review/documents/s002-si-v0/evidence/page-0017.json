@@ -1,0 +1,435 @@
+{
+  "page": 17,
+  "lines": [
+    {
+      "text": "A mixture of compound 13-8 (50 mg, 0.13 mmol) and NaOH (10 mg，0.26 mmol) in MeOH (1 mL)",
+      "bbox": [
+        56.6399040222168,
+        58.18797302246094,
+        541.5398559570312,
+        71.47197723388672
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and water (2 ml) was stirred at room temperature for 16 hrs. Upon completion, the reaction mixture",
+      "bbox": [
+        56.6399040222168,
+        80.74797058105469,
+        541.5298461914062,
+        94.03197479248047
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was poured into ice water (10 mL), the pH was adjusted to 6 with 2 M HCl. The mixture was then",
+      "bbox": [
+        56.6399040222168,
+        101.38796997070312,
+        541.5302124023438,
+        114.6719741821289
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "extracted with EA (10 mL × 3). The combined organic phases was washed with brine (20 mL), dried",
+      "bbox": [
+        56.6399040222168,
+        122.02796936035156,
+        541.5267944335938,
+        135.3119659423828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to afford the crude",
+      "bbox": [
+        56.6399040222168,
+        142.66796875,
+        541.5189208984375,
+        155.95196533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "title compound as a white solid (48.2 mg, Y: 99.2%).",
+      "bbox": [
+        56.6399040222168,
+        163.30796813964844,
+        314.6047058105469,
+        176.5919647216797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 10: Preparation of Compound 13-10",
+      "bbox": [
+        56.6399040222168,
+        184.18795776367188,
+        270.6417541503906,
+        197.47195434570312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 13-9 (41 mg, 0.11 mmol) in N,N-dimethylformamide (2 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        204.8279571533203,
+        541.5347900390625,
+        218.11195373535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ammonium chloride (9 mg, 0.16 mmol), N,N-diisopropylethylamine (43 mg, 0.33 mmol) and 2-(7-",
+      "bbox": [
+        56.6399040222168,
+        225.4679718017578,
+        538.53955078125,
+        238.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "azo-biphenyltriazole)-N,N,N’,N’-tetramethylurea hexafluorophosphate (61 mg, 0.16 mmol). The",
+      "bbox": [
+        56.6399040222168,
+        246.1079559326172,
+        541.5306396484375,
+        259.3919677734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "resulting mixture was stirred at 25 °C for 16 hours. After the addition of ice water (10 mL), the",
+      "bbox": [
+        56.6399040222168,
+        266.98797607421875,
+        541.5386352539062,
+        280.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mixture was extracted with ethyl acetate (10 mL × 3). The combined organic phases was washed with",
+      "bbox": [
+        56.6399040222168,
+        287.6279602050781,
+        541.51904296875,
+        300.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "brine (20 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure",
+      "bbox": [
+        56.6399040222168,
+        308.2679748535156,
+        541.5391845703125,
+        321.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to give a residue, which was further purified by silica gel column chromatography to afford the title",
+      "bbox": [
+        56.6399040222168,
+        328.9079895019531,
+        541.5188598632812,
+        342.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compound (31.0 mg, Y: 75.2%). LCMS (ESI): 379.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        349.3432312011719,
+        358.23358154296875,
+        363.0719909667969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 11: Preparation of ISM061-13",
+      "bbox": [
+        56.6399040222168,
+        370.427978515625,
+        238.954345703125,
+        383.71197509765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A solution of compound 13-10 (31 mg, 0.08 mmol) in hydrobromic acid aqueous solution (3 mL)",
+      "bbox": [
+        56.6399040222168,
+        391.0679626464844,
+        541.5274047851562,
+        404.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was stirred at 100 °C for 4 hours. After the addition of ice water (10 mL), the mixture was extracted",
+      "bbox": [
+        56.6399040222168,
+        411.7079772949219,
+        541.5308837890625,
+        424.9919738769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with ethyl acetate (10 mL × 3). The combined organic phases was washed with brine (20 mL), dried",
+      "bbox": [
+        56.6399040222168,
+        432.5879821777344,
+        541.533935546875,
+        445.8719787597656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue,",
+      "bbox": [
+        56.6399040222168,
+        453.22796630859375,
+        541.5237426757812,
+        466.511962890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which was purified by pre-HPLC to afford the title compound as a white solid (12.4 mg, Y: 41.7%).",
+      "bbox": [
+        56.6399040222168,
+        473.86798095703125,
+        541.5267944335938,
+        487.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LC-MS (ESI): 365 [M+H]+; 1H NMR (400 MHz, DMSO-d6) δ 9.28 (s, 1H), 8.28 – 8.23 (m, 1H), 7.79",
+      "bbox": [
+        56.6399040222168,
+        494.063232421875,
+        541.5405883789062,
+        507.8706970214844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(s, 1H), 7.58 (dd, J = 10.7, 1.7 Hz, 1H), 7.41 – 7.32 (m, 2H), 7.28 (td, J = 7.4, 1.6 Hz, 1H), 7.25 –",
+      "bbox": [
+        56.6399040222168,
+        515.387939453125,
+        541.5398559570312,
+        528.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "7.15 (m, 2H), 7.09 (d, J = 8.4 Hz, 1H), 6.75 (dd, J = 8.3, 2.7 Hz, 1H), 6.59 (dd, J = 2.7, 0.9 Hz, 1H),",
+      "bbox": [
+        56.6399040222168,
+        536.0279541015625,
+        541.5414428710938,
+        549.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3.06 (dd, J = 9.7, 5.9 Hz, 2H), 2.94 (dd, J = 9.7, 6.0 Hz, 2H), 2.31 (q, J = 7.5 Hz, 2H), 1.20 (s, 0H),",
+      "bbox": [
+        56.6399040222168,
+        556.66796875,
+        541.5409545898438,
+        569.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "0.89 (t, J = 7.5 Hz, 3H).",
+      "bbox": [
+        56.6399040222168,
+        577.3079833984375,
+        174.71803283691406,
+        590.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 17
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          60,
+          542,
+          177
+        ],
+        "pos": [
+          0,
+          538
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          186,
+          271,
+          198
+        ],
+        "pos": [
+          538,
+          585
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          207,
+          542,
+          364
+        ],
+        "pos": [
+          585,
+          1334
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          372,
+          239,
+          384
+        ],
+        "pos": [
+          1334,
+          1376
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          393,
+          542,
+          591
+        ],
+        "pos": [
+          1376,
+          2345
+        ]
+      }
+    ],
+    "text": "A mixture of **compound 13-8** (50 mg, 0.13 mmol) and NaOH (10 mg，0.26 mmol) in MeOH (1 mL) and water (2 ml) was stirred at room temperature for 16 hrs. Upon completion, the reaction mixture was poured into ice water (10 mL), the pH was adjusted to 6 with 2 M HCl. The mixture was then extracted with EA (10 mL × 3). The combined organic phases was washed with brine (20 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to afford the crude title compound as a white solid (48.2 mg, Y: 99.2%). \n\n# **Step 10: Preparation of Compound 13-10** \n\nTo a solution of c **ompound 13-9** (41 mg, 0.11 mmol) in N,N-dimethylformamide (2 mL) was added ammonium chloride (9 mg, 0.16 mmol), N,N-diisopropylethylamine (43 mg, 0.33 mmol) and 2-(7azo-biphenyltriazole)-N,N,N’,N’-tetramethylurea hexafluorophosphate (61 mg, 0.16 mmol). The resulting mixture was stirred at 25 °C for 16 hours. After the addition of ice water (10 mL), the mixture was extracted with ethyl acetate (10 mL × 3). The combined organic phases was washed with brine (20 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound (31.0 mg, Y: 75.2%). LCMS (ESI): 379.2 [M+H]<sup>+</sup> . \n\n# **Step 11: Preparation of ISM061-13** \n\nA solution of **compound 13-10** (31 mg, 0.08 mmol) in hydrobromic acid aqueous solution (3 mL) was stirred at 100 °C for 4 hours. After the addition of ice water (10 mL), the mixture was extracted with ethyl acetate (10 mL × 3). The combined organic phases was washed with brine (20 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was purified by pre-HPLC to afford the title compound as a white solid (12.4 mg, Y: 41.7%). LC-MS (ESI): 365 [M+H]<sup>+</sup> ;<sup>1</sup> H NMR (400 MHz, DMSO- _d_ 6) δ 9.28 (s, 1H), 8.28 – 8.23 (m, 1H), 7.79 (s, 1H), 7.58 (dd, _J_ = 10.7, 1.7 Hz, 1H), 7.41 – 7.32 (m, 2H), 7.28 (td, _J_ = 7.4, 1.6 Hz, 1H), 7.25 – 7.15 (m, 2H), 7.09 (d, _J_ = 8.4 Hz, 1H), 6.75 (dd, _J_ = 8.3, 2.7 Hz, 1H), 6.59 (dd, _J_ = 2.7, 0.9 Hz, 1H), 3.06 (dd, _J_ = 9.7, 5.9 Hz, 2H), 2.94 (dd, _J_ = 9.7, 6.0 Hz, 2H), 2.31 (q, _J_ = 7.5 Hz, 2H), 1.20 (s, 0H), 0.89 (t, _J_ = 7.5 Hz, 3H). \n\n"
+  }
+}

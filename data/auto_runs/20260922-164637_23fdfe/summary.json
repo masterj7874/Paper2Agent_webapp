@@ -1,0 +1,370 @@
+{
+ "run_id": "20260922-164637_23fdfe",
+ "status": "partial",
+ "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames",
+ "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames",
+ "project": null,
+ "kind": "frames_folder",
+ "modality_guess": "video frame",
+ "detection_notes": [
+  "588 video frames: 5 evenly spaced frames are analysed (MedSAM box)"
+ ],
+ "recipe": {
+  "id": "video_frames_medsam",
+  "title": "video -> 5 evenly spaced frames -> MedSAM box -> per-frame CSV + overlays"
+ },
+ "created_at": 1790063197.7615,
+ "finished_at": 1790063258.314318,
+ "duration_s": 60.55,
+ "steps": [
+  {
+   "index": 0,
+   "label": "MedSAM box frame_00001.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "status": "done",
+   "job_id": "091a97fc7437",
+   "duration_s": 2.01,
+   "error": null,
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 179198,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.649,
+    "timing_seconds.image_embedding": 1.025,
+    "timing_seconds.box_decoding": 0.013,
+    "timing_seconds.total": 1.986
+   },
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/overlay.png"
+    }
+   ],
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00001.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs"
+   }
+  },
+  {
+   "index": 1,
+   "label": "MedSAM box frame_00148.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "status": "done",
+   "job_id": "28ffddbf76fb",
+   "duration_s": 2.0,
+   "error": null,
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 94143,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.435,
+    "timing_seconds.image_embedding": 0.97,
+    "timing_seconds.box_decoding": 0.008,
+    "timing_seconds.total": 1.732
+   },
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164639_5f35c573/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164639_5f35c573/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164639_5f35c573/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164639_5f35c573/overlay.png"
+    }
+   ],
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00148.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs"
+   }
+  },
+  {
+   "index": 2,
+   "label": "MedSAM box frame_00295.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "status": "done",
+   "job_id": "087331b40edc",
+   "duration_s": 2.0,
+   "error": null,
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 130629,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.348,
+    "timing_seconds.image_embedding": 0.953,
+    "timing_seconds.box_decoding": 0.01,
+    "timing_seconds.total": 1.613
+   },
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164641_b09475d2/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164641_b09475d2/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164641_b09475d2/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164641_b09475d2/overlay.png"
+    }
+   ],
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00295.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs"
+   }
+  },
+  {
+   "index": 3,
+   "label": "MedSAM box frame_00441.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "status": "done",
+   "job_id": "612bf9e1d688",
+   "duration_s": 2.0,
+   "error": null,
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 165463,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.333,
+    "timing_seconds.image_embedding": 0.912,
+    "timing_seconds.box_decoding": 0.008,
+    "timing_seconds.total": 1.555
+   },
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164643_e8936fb6/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164643_e8936fb6/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164643_e8936fb6/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164643_e8936fb6/overlay.png"
+    }
+   ],
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00441.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs"
+   }
+  },
+  {
+   "index": 4,
+   "label": "MedSAM box frame_00588.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "status": "done",
+   "job_id": "a721c8a822b8",
+   "duration_s": 2.0,
+   "error": null,
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 129299,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.365,
+    "timing_seconds.image_embedding": 0.965,
+    "timing_seconds.box_decoding": 0.008,
+    "timing_seconds.total": 1.653
+   },
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164645_c3e3c809/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164645_c3e3c809/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164645_c3e3c809/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164645_c3e3c809/overlay.png"
+    }
+   ],
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00588.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs"
+   }
+  },
+  {
+   "index": 5,
+   "label": "per-frame CSV + overlay gallery",
+   "agent": "auto",
+   "tool": "auto_frames_table",
+   "status": "done",
+   "job_id": null,
+   "duration_s": 0.01,
+   "error": null,
+   "key_numbers": {
+    "n_frames": 5,
+    "n_done": 5,
+    "mean_per_frame": 139746.4,
+    "metric": "foreground_pixels"
+   },
+   "artifacts": [
+    {
+     "description": "per-frame results (CSV)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/frames.csv"
+    },
+    {
+     "description": "overlay for frame_00001.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/overlays/00_frame_00001_overlay.png"
+    },
+    {
+     "description": "overlay for frame_00148.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/overlays/01_frame_00148_overlay.png"
+    },
+    {
+     "description": "overlay for frame_00295.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/overlays/02_frame_00295_overlay.png"
+    },
+    {
+     "description": "overlay for frame_00441.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/overlays/03_frame_00441_overlay.png"
+    },
+    {
+     "description": "overlay for frame_00588.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/overlays/04_frame_00588_overlay.png"
+    }
+   ],
+   "arguments": {
+    "steps": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "tool": "medsam",
+    "run_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe"
+   }
+  },
+  {
+   "index": 6,
+   "label": "literature context (MedKG related work)",
+   "agent": "MedKG",
+   "tool": "medkg_related_work",
+   "status": "error",
+   "job_id": "8f7545b1a454",
+   "duration_s": 50.52,
+   "error": "Error calling tool 'medkg_related_work': MedKG service unreachable at http://127.0.0.1:8790 (RemoteProtocolError: Server disconnected without sending a response.). Start it with scripts/run_service.sh.",
+   "key_numbers": {},
+   "artifacts": [],
+   "arguments": {
+    "topic": "video frame segmentation endoscopy deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "endoscopy",
+    "task": "segmentation"
+   }
+  }
+ ],
+ "artifacts": [
+  {
+   "description": "run summary (JSON)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/summary.json"
+  },
+  {
+   "description": "run report (markdown)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/report.md"
+  },
+  {
+   "description": "per-frame results (CSV)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/frames.csv"
+  }
+ ],
+ "warnings": [
+  "optional step 6 (MedKG.medkg_related_work) failed: Error calling tool 'medkg_related_work': MedKG service unreachable at http://127.0.0.1:8790 (RemoteProtocolError: Server disconnected without sending a response.). Start it with scripts/run_service.sh."
+ ]
+}

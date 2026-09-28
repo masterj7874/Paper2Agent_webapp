@@ -1,0 +1,19 @@
+{
+ "dataset": "Dataset004_Hippocampus",
+ "trainers": [
+  "nnUNetTrainer_5epochs"
+ ],
+ "configurations": [
+  "2d"
+ ],
+ "plans_identifiers": [
+  "nnUNetPlans"
+ ],
+ "folds": [
+  0
+ ],
+ "allow_ensembling": false,
+ "num_processes": 8,
+ "overwrite": true,
+ "strict": false
+}

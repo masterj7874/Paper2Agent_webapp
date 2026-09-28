@@ -1,0 +1,241 @@
+{
+  "page": 8,
+  "lines": [
+    {
+      "text": "S1.4. Preparation of ISM061-11",
+      "bbox": [
+        56.6399040222168,
+        369.74322509765625,
+        220.96217346191406,
+        383.4719543457031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S4 Preparation of ISM061-11",
+      "bbox": [
+        205.26951599121094,
+        575.6279296875,
+        392.91021728515625,
+        588.9119262695312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 11-1",
+      "bbox": [
+        56.6399040222168,
+        601.3079833984375,
+        258.6417236328125,
+        614.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 5-fluoro-2-trifluoromethylbenzoic acid (10.0 g, 48.1 mmol) in N,N-",
+      "bbox": [
+        56.6399040222168,
+        632.0279541015625,
+        538.53955078125,
+        645.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dimethylformamide (100 mL) was added sodium hydride (2.1 g, 53.0 mmol) in four batches under",
+      "bbox": [
+        56.6399040222168,
+        652.907958984375,
+        541.5311889648438,
+        666.1919555664062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "nitrogen protection at 0 °C. The mixture was stirred at 0 °C for 0.5 hr. After the addition of benzyl",
+      "bbox": [
+        56.6399040222168,
+        673.5479736328125,
+        541.5358276367188,
+        686.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "alcohol (5.7 g, 53.0 mmol) the reaction was stirred at 25 °C for 16 hours. The reaction was quenched",
+      "bbox": [
+        56.6399040222168,
+        694.1879272460938,
+        541.5274047851562,
+        707.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with ice water (300 mL). The mixture was extracted with ethyl acetate (100 mL × 3), the combined",
+      "bbox": [
+        56.6399040222168,
+        714.8279418945312,
+        541.5189208984375,
+        728.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the organic phases was washed with saturated brine (100 mL × 3), dried over anhydrous sodium",
+      "bbox": [
+        56.6399040222168,
+        735.7079467773438,
+        541.5296020507812,
+        748.991943359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sulfate, filtered, and concentrated under reduced pressure to afford the title compound (13.8 g, crude",
+      "bbox": [
+        56.6399040222168,
+        756.3479614257812,
+        541.517822265625,
+        769.6319580078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 8
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "picture",
+        "bbox": [
+          56,
+          174,
+          445,
+          312
+        ],
+        "pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "index": 1,
+        "class": "caption",
+        "bbox": [
+          56,
+          372,
+          221,
+          384
+        ],
+        "pos": [
+          2,
+          39
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          58,
+          393,
+          471,
+          561
+        ],
+        "pos": [
+          39,
+          41
+        ]
+      },
+      {
+        "index": 3,
+        "class": "caption",
+        "bbox": [
+          205,
+          577,
+          393,
+          589
+        ],
+        "pos": [
+          41,
+          82
+        ]
+      },
+      {
+        "index": 4,
+        "class": "caption",
+        "bbox": [
+          56,
+          603,
+          259,
+          615
+        ],
+        "pos": [
+          82,
+          125
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          56,
+          634,
+          542,
+          770
+        ],
+        "pos": [
+          125,
+          798
+        ]
+      }
+    ],
+    "text": "\n\n**S1.4. Preparation of ISM061-11** \n\n\n\n**Scheme S4** Preparation of ISM061-11 \n\n**Step 1: Preparation of Compound 11-1** \n\nTo a solution of 5-fluoro-2-trifluoromethylbenzoic acid (10.0 g, 48.1 mmol) in N,Ndimethylformamide (100 mL) was added sodium hydride (2.1 g, 53.0 mmol) in four batches under nitrogen protection at 0 °C. The mixture was stirred at 0 °C for 0.5 hr. After the addition of benzyl alcohol (5.7 g, 53.0 mmol) the reaction was stirred at 25 °C for 16 hours. The reaction was quenched with ice water (300 mL). The mixture was extracted with ethyl acetate (100 mL × 3), the combined the organic phases was washed with saturated brine (100 mL × 3), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to afford the title compound (13.8 g, crude \n\n"
+  }
+}

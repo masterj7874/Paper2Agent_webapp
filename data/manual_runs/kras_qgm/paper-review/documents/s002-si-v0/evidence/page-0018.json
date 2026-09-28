@@ -1,0 +1,242 @@
+{
+  "page": 18,
+  "lines": [
+    {
+      "text": "S1.7. Preparation of ISM061-14",
+      "bbox": [
+        56.6399040222168,
+        415.7879943847656,
+        221.96214294433594,
+        429.0719909667969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S7 Preparation of ISM061-14",
+      "bbox": [
+        205.26951599121094,
+        603.2279052734375,
+        392.91021728515625,
+        616.5119018554688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 14-1",
+      "bbox": [
+        56.6399040222168,
+        633.9479370117188,
+        258.6417236328125,
+        647.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-bromo-4-hydroxybenzaldehyde (1.00 g, 4.98 mmol) and (bromomethyl)benzene",
+      "bbox": [
+        56.6399040222168,
+        664.66796875,
+        541.5291137695312,
+        677.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(0.7 mL, 5.97 mmol) in MeCN (10 mL) was added K2CO3 (2.06 g, 14.93 mmol). After addition, then",
+      "bbox": [
+        56.6399040222168,
+        685.3079833984375,
+        541.5352172851562,
+        698.670654296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the mixture was stirred at 80 ℃ for 3 hrs. After cooling to 20 ℃, the reaction solution was poured",
+      "bbox": [
+        56.6399040222168,
+        706.1879272460938,
+        541.5361938476562,
+        719.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "into water (50 mL) and extracted with EtOAc (25 mL × 3). The combined organic layers were washed",
+      "bbox": [
+        56.6399040222168,
+        726.8279418945312,
+        541.526123046875,
+        740.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give",
+      "bbox": [
+        56.6399040222168,
+        747.4679565429688,
+        541.5293579101562,
+        760.8306274414062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a residue. The residue was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum",
+      "bbox": [
+        56.6399040222168,
+        768.10791015625,
+        541.5321655273438,
+        781.4706420898438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 18
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "picture",
+        "bbox": [
+          56,
+          56,
+          445,
+          309
+        ],
+        "pos": [
+          0,
+          2
+        ]
+      },
+      {
+        "index": 1,
+        "class": "caption",
+        "bbox": [
+          56,
+          418,
+          222,
+          430
+        ],
+        "pos": [
+          2,
+          39
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          57,
+          443,
+          453,
+          476
+        ],
+        "pos": [
+          39,
+          41
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          59,
+          498,
+          462,
+          584
+        ],
+        "pos": [
+          41,
+          43
+        ]
+      },
+      {
+        "index": 4,
+        "class": "caption",
+        "bbox": [
+          205,
+          605,
+          393,
+          617
+        ],
+        "pos": [
+          43,
+          84
+        ]
+      },
+      {
+        "index": 5,
+        "class": "caption",
+        "bbox": [
+          56,
+          636,
+          259,
+          648
+        ],
+        "pos": [
+          84,
+          127
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          667,
+          542,
+          782
+        ],
+        "pos": [
+          127,
+          715
+        ]
+      }
+    ],
+    "text": "\n\n**S1.7. Preparation of ISM061-14** \n\n\n\n\n\n**Scheme S7** Preparation of ISM061-14 \n\n**Step 1: Preparation of Compound 14-1** \n\nTo a solution of 2-bromo-4-hydroxybenzaldehyde (1.00 g, 4.98 mmol) and (bromomethyl)benzene (0.7 mL, 5.97 mmol) in MeCN (10 mL) was added K2CO3 (2.06 g, 14.93 mmol). After addition, then the mixture was stirred at 80 ℃ for 3 hrs. After cooling to 20 ℃, the reaction solution was poured into water (50 mL) and extracted with EtOAc (25 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum \n\n"
+  }
+}

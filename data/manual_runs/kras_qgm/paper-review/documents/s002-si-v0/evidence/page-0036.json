@@ -1,0 +1,94 @@
+{
+  "page": 36,
+  "lines": [
+    {
+      "text": "333.3 [M+H]+. 1H NMR (400 MHz, DMSO-d6) δ 8.77 (s, 1H), 8.32 (d, J = 4.8 Hz, 1H), 7.62 – 7.52",
+      "bbox": [
+        56.6399040222168,
+        56.78324508666992,
+        541.5398559570312,
+        70.59069061279297
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(m, 3H), 7.45 (ddd, J = 8.0, 5.8, 2.3 Hz, 1H), 7.36 – 7.24 (m, 4H), 7.20 – 7.16 (m, 1H), 5.04 (t, J =",
+      "bbox": [
+        56.6399040222168,
+        77.86796569824219,
+        541.540283203125,
+        91.15196990966797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "5.5 Hz, 1H), 3.26 (d, J = 5.5 Hz, 2H), 1.95 (s, 3H).",
+      "bbox": [
+        56.6399040222168,
+        98.74796295166016,
+        303.366455078125,
+        112.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 36
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          58,
+          542,
+          113
+        ],
+        "pos": [
+          0,
+          286
+        ]
+      },
+      {
+        "index": 1,
+        "class": "picture",
+        "bbox": [
+          56,
+          118,
+          445,
+          371
+        ],
+        "pos": [
+          286,
+          288
+        ]
+      }
+    ],
+    "text": "333.3 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, DMSO- _d_ 6) δ 8.77 (s, 1H), 8.32 (d, _J_ = 4.8 Hz, 1H), 7.62 – 7.52 (m, 3H), 7.45 (ddd, _J_ = 8.0, 5.8, 2.3 Hz, 1H), 7.36 – 7.24 (m, 4H), 7.20 – 7.16 (m, 1H), 5.04 (t, _J_ = 5.5 Hz, 1H), 3.26 (d, _J_ = 5.5 Hz, 2H), 1.95 (s, 3H). \n\n\n\n"
+  }
+}

@@ -1,0 +1,655 @@
+There are 130 cases in the source folder
+I am process 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 130 cases that I would like to predict
+
+Predicting hippocampus_002:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_002
+
+Predicting hippocampus_005:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_005
+
+Predicting hippocampus_009:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_009
+
+Predicting hippocampus_010:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_010
+
+Predicting hippocampus_012:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_012
+
+Predicting hippocampus_013:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_013
+
+Predicting hippocampus_016:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_016
+
+Predicting hippocampus_018:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_018
+
+Predicting hippocampus_021:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_021
+
+Predicting hippocampus_022:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_022
+
+Predicting hippocampus_027:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_027
+
+Predicting hippocampus_028:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_028
+
+Predicting hippocampus_029:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_029
+
+Predicting hippocampus_030:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_030
+
+Predicting hippocampus_043:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_043
+
+Predicting hippocampus_047:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_047
+
+Predicting hippocampus_054:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_054
+
+Predicting hippocampus_055:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_055
+
+Predicting hippocampus_059:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_059
+
+Predicting hippocampus_061:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_061
+
+Predicting hippocampus_062:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_062
+
+Predicting hippocampus_063:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_063
+
+Predicting hippocampus_066:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_066
+
+Predicting hippocampus_069:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_069
+
+Predicting hippocampus_071:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_071
+
+Predicting hippocampus_072:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_072
+
+Predicting hippocampus_073:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_073
+
+Predicting hippocampus_076:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_076
+
+Predicting hippocampus_078:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_078
+
+Predicting hippocampus_079:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_079
+
+Predicting hippocampus_080:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_080
+
+Predicting hippocampus_081:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_081
+
+Predicting hippocampus_082:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_082
+
+Predicting hippocampus_100:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_100
+
+Predicting hippocampus_103:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_103
+
+Predicting hippocampus_110:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_110
+
+Predicting hippocampus_111:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_111
+
+Predicting hippocampus_112:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_112
+
+Predicting hippocampus_113:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_113
+
+Predicting hippocampus_115:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_115
+
+Predicting hippocampus_116:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_116
+
+Predicting hippocampus_117:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_117
+
+Predicting hippocampus_118:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_118
+
+Predicting hippocampus_119:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_119
+
+Predicting hippocampus_120:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_120
+
+Predicting hippocampus_121:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_121
+
+Predicting hippocampus_122:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_122
+
+Predicting hippocampus_128:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_128
+
+Predicting hippocampus_129:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_129
+
+Predicting hippocampus_131:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_131
+
+Predicting hippocampus_134:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_134
+
+Predicting hippocampus_137:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_137
+
+Predicting hippocampus_139:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_139
+
+Predicting hippocampus_140:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_140
+
+Predicting hippocampus_147:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_147
+
+Predicting hippocampus_151:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_151
+
+Predicting hippocampus_153:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_153
+
+Predicting hippocampus_159:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_159
+
+Predicting hippocampus_167:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_167
+
+Predicting hippocampus_168:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_168
+
+Predicting hippocampus_179:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_179
+
+Predicting hippocampus_182:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_182
+
+Predicting hippocampus_183:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_183
+
+Predicting hippocampus_186:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_186
+
+Predicting hippocampus_187:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_187
+
+Predicting hippocampus_191:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_191
+
+Predicting hippocampus_192:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_192
+
+Predicting hippocampus_196:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_196
+
+Predicting hippocampus_198:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_198
+
+Predicting hippocampus_200:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_200
+
+Predicting hippocampus_201:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_201
+
+Predicting hippocampus_202:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_202
+
+Predicting hippocampus_206:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_206
+
+Predicting hippocampus_208:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_208
+
+Predicting hippocampus_209:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_209
+
+Predicting hippocampus_211:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_211
+
+Predicting hippocampus_213:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_213
+
+Predicting hippocampus_214:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_214
+
+Predicting hippocampus_218:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_218
+
+Predicting hippocampus_237:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_237
+
+Predicting hippocampus_239:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_239
+
+Predicting hippocampus_240:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_240
+
+Predicting hippocampus_241:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_241
+
+Predicting hippocampus_246:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_246
+
+Predicting hippocampus_247:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_247
+
+Predicting hippocampus_254:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_254
+
+Predicting hippocampus_255:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_255
+
+Predicting hippocampus_256:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_256
+
+Predicting hippocampus_258:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_258
+
+Predicting hippocampus_262:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_262
+
+Predicting hippocampus_266:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_266
+
+Predicting hippocampus_267:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_267
+
+Predicting hippocampus_270:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_270
+
+Predicting hippocampus_271:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_271
+
+Predicting hippocampus_272:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_272
+
+Predicting hippocampus_273:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_273
+
+Predicting hippocampus_275:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_275
+
+Predicting hippocampus_278:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_278
+
+Predicting hippocampus_281:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_281
+
+Predicting hippocampus_283:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_283
+
+Predicting hippocampus_284:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_284
+
+Predicting hippocampus_285:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_285
+
+Predicting hippocampus_291:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_291
+
+Predicting hippocampus_293:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_293
+
+Predicting hippocampus_306:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_306
+
+Predicting hippocampus_307:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_307
+
+Predicting hippocampus_312:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_312
+
+Predicting hippocampus_313:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_313
+
+Predicting hippocampus_315:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_315
+
+Predicting hippocampus_323:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_323
+
+Predicting hippocampus_324:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_324
+
+Predicting hippocampus_339:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_339
+
+Predicting hippocampus_342:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_342
+
+Predicting hippocampus_344:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_344
+
+Predicting hippocampus_346:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_346
+
+Predicting hippocampus_347:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_347
+
+Predicting hippocampus_348:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_348
+
+Predicting hippocampus_357:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_357
+
+Predicting hippocampus_362:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_362
+
+Predicting hippocampus_364:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_364
+
+Predicting hippocampus_365:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_365
+
+Predicting hippocampus_369:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_369
+
+Predicting hippocampus_371:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_371
+
+Predicting hippocampus_377:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_377
+
+Predicting hippocampus_379:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_379
+
+Predicting hippocampus_382:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_382
+
+Predicting hippocampus_384:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_384
+
+Predicting hippocampus_388:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_388
+
+Predicting hippocampus_391:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_391
+
+Predicting hippocampus_392:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with hippocampus_392
+GPU prediction completed. Waiting for remaining segmentation exports to finish...
+Segmentation export complete.

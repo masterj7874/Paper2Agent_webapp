@@ -1,0 +1,197 @@
+{
+ "id": "55a268c2d1d2",
+ "agent": "MedSAM",
+ "tool": "medsam_segment_with_text",
+ "arguments": {
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz",
+  "prompts": [
+   "liver",
+   "spleen",
+   "left kidney",
+   "right kidney",
+   "pancreas",
+   "aorta",
+   "stomach",
+   "gallbladder"
+  ],
+  "device": "auto",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063630.0226471,
+ "started_at": 1790063630.0237045,
+ "finished_at": 1790063633.4709592,
+ "result": {
+  "message": "Segmented 8 prompt(s) on CT_FLARE22_Tr_0046.npz slice46 with the experimental FLARE22 text-prompt MedSAM on cuda:0: liver=11864 px, spleen=2116 px, left kidney=3524 px, right kidney=3018 px, pancreas=843 px, aorta=677 px, stomach=1471 px, gallbladder=1722 px",
+  "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/extensions/text_prompt/tutorial_text_prompt_seg.ipynb",
+  "artifacts": [
+   {
+    "description": "binary mask for prompt 'liver' (0/255, array orientation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__liver_mask.png"
+   },
+   {
+    "description": "binary mask for prompt 'spleen' (0/255, array orientation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__spleen_mask.png"
+   },
+   {
+    "description": "binary mask for prompt 'left kidney' (0/255, array orientation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__left_kidney_mask.png"
+   },
+   {
+    "description": "binary mask for prompt 'right kidney' (0/255, array orientation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__right_kidney_mask.png"
+   },
+   {
+    "description": "binary mask for prompt 'pancreas' (0/255, array orientation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__pancreas_mask.png"
+   },
+   {
+    "description": "binary mask for prompt 'aorta' (0/255, array orientation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__aorta_mask.png"
+   },
+   {
+    "description": "binary mask for prompt 'stomach' (0/255, array orientation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__stomach_mask.png"
+   },
+   {
+    "description": "binary mask for prompt 'gallbladder' (0/255, array orientation)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__gallbladder_mask.png"
+   },
+   {
+    "description": "masks.npz: 'masks' (N,H,W) uint8 in prompt order, 'prompts', 'label_ids', 'image' (the 2D array fed to the model)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/masks.npz"
+   },
+   {
+    "description": "overlay PNG: image with the notebook's show_mask rendering, one panel per prompt",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/overlay.png"
+   },
+   {
+    "description": "summary.json: this result record",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/summary.json"
+   }
+  ],
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed",
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz",
+  "input_kind": "npz",
+  "slice_index": 46,
+  "image_shape": [
+   512,
+   512
+  ],
+  "window_hu": null,
+  "overlay_rotated_180": false,
+  "prompts_requested": [
+   "liver",
+   "spleen",
+   "left kidney",
+   "right kidney",
+   "pancreas",
+   "aorta",
+   "stomach",
+   "gallbladder"
+  ],
+  "prompts_accepted": [
+   "liver",
+   "spleen",
+   "left kidney",
+   "right kidney",
+   "pancreas",
+   "aorta",
+   "stomach",
+   "gallbladder"
+  ],
+  "label_ids": {
+   "liver": 1,
+   "spleen": 3,
+   "left kidney": 13,
+   "right kidney": 2,
+   "pancreas": 4,
+   "aorta": 5,
+   "stomach": 11,
+   "gallbladder": 9
+  },
+  "pixel_counts": {
+   "liver": 11864,
+   "spleen": 2116,
+   "left kidney": 3524,
+   "right kidney": 3018,
+   "pancreas": 843,
+   "aorta": 677,
+   "stomach": 1471,
+   "gallbladder": 1722
+  },
+  "bbox_xyxy": {
+   "liver": [
+    224,
+    159,
+    429,
+    355
+   ],
+   "spleen": [
+    82,
+    148,
+    164,
+    209
+   ],
+   "left kidney": [
+    148,
+    163,
+    219,
+    225
+   ],
+   "right kidney": [
+    295,
+    166,
+    361,
+    226
+   ],
+   "pancreas": [
+    241,
+    268,
+    289,
+    302
+   ],
+   "aorta": [
+    226,
+    219,
+    257,
+    245
+   ],
+   "stomach": [
+    227,
+    297,
+    286,
+    333
+   ],
+   "gallbladder": [
+    338,
+    279,
+    374,
+    343
+   ]
+  },
+  "device": "cuda:0",
+  "clip_source": "local_cache",
+  "checkpoint_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_text_prompt_flare22.pth",
+  "medsam_checkpoint_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_vit_b.pth",
+  "timings_s": {
+   "load_model_s": 2.513,
+   "set_image_s": 0.085,
+   "infer_per_prompt_s": {
+    "liver": 0.0322,
+    "spleen": 0.0063,
+    "left kidney": 0.0066,
+    "right kidney": 0.0071,
+    "pancreas": 0.0076,
+    "aorta": 0.007,
+    "stomach": 0.0064,
+    "gallbladder": 0.0073
+   },
+   "cuda_max_memory_allocated_gib": 2.941,
+   "total_s": 3.438
+  },
+  "note": "Experimental FLARE22 organ-name model (13 organs); masks are in array orientation and can overlap between prompts."
+ },
+ "error": null,
+ "duration_s": 3.45
+}

@@ -1,0 +1,63 @@
+{
+  "page": 25,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0025.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0025.png; tail of Step 3, then Step 4 (final ISM061-16) and the unlabelled 1H NMR spectrum of ISM061-16. Reading order already correct and unchanged. CROSS-PAGE JOIN: set join_previous='space' on p0025-b000. Page 24 ends 'The reaction mixture was poured into ice-water (30 mL) and' and this page opens 'extracted with DCM (30 mL x 3).'; checked both page images - one running sentence broken at a normal word space, so 'space', not 'none'. (Note the compound hyphen in 'ice-water' sits safely inside page 24 and was not touched.) Text repairs: removed the spurious spaces after the superscripts in '(ESI<sup>+</sup> ):' / '[M+H]<sup>+</sup> .' in b000 and b002 and normalised '.<sup>1</sup> H NMR' to '. <sup>1</sup>H NMR' in b002. Verified and left as printed: 'DMSO-d6' is set plain here (not italic/subscript as on other pages), '(250 x 20mm, 5μm)' with no space before the mu, '20ACN%-50ACN%, 20min', and the duplicated '7.24 (s, 1H), 7.23 (s, 1H)' entries in the peak list. FIGURE FIX: p0025-b003 bbox [51,350,450,613] -> [50,350,478,650]; the extractor crop cut off the right-hand intensity axis (20000000 down to -1000000, reaching x=471.5) and the bottom f1 (ppm) axis and integration row, which run to y=644.7. Named si-nmr-ism061-16, replacing placeholder figure-p0025-003. Page 25 ends a complete paragraph and page 26 opens with the 'S1.10' section heading, so page 26 must NOT carry a join - reported to the coordinator for the 25/26 boundary. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0025-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        133.0
+      ],
+      "markdown": "extracted with DCM (30 mL × 3). The combined organic layers was washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, DCM: MeOH=10: 1) to afford the title compound (100 mg, 64.9%) as a yellow solid. LCMS (ESI<sup>+</sup>): 435.1 [M+H]<sup>+</sup>.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0025-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        152.0,
+        233.0,
+        164.0
+      ],
+      "markdown": "#### Step 4: Preparation of ISM061-16",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0025-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        183.0,
+        542.0,
+        339.0
+      ],
+      "markdown": "To a solution of **Compound 16-3** (90 mg, 0.21 mmol) in DCM (1 ml) were added HCl (1 mL, 4.00 mmol, 4.0 M in dioxane). After the addition, the reaction mixture was stirred at 25 ℃ for 1 h. Then the mixture was concentrated to afford a crude product, which was further purified with prep-HPLC (column: YMC, C<sup>18</sup> (250 × 20mm, 5μm); mobile phase: [water (0.1%NH4OH)- ACN]; B%: 20ACN%-50ACN%, 20min) to afford the title compound (30.28 mg, 41.7%) as a white solid. LCMS (ESI<sup>+</sup>): 351.1 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, DMSO-d6) δ 12.87 (s, 1H), 9.65 (s, 1H), 8.15 (s, 1H), 7.99 (s, 1H), 7.91 (d, J = 5.6 Hz, 1H), 7.24 (s, 1H), 7.23 (s, 1H), 7.23 - 7.18 (m, 1H), 6.66 - 6.60 (m, 1H), 6.57 (dd, J = 6.8, 2.9 Hz, 1H), 6.26 (d, J = 5.6 Hz, 1H), 2.29 (s, 3H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0025-b003",
+      "kind": "figure",
+      "bbox": [
+        50.0,
+        350.0,
+        478.0,
+        650.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-16",
+      "asset_name": "si-nmr-ism061-16"
+    }
+  ]
+}

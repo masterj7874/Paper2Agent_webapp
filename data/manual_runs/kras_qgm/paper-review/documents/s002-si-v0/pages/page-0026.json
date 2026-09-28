@@ -1,0 +1,100 @@
+{
+  "page": 26,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0026.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0026.png and checked every item against evidence/page-0026.json and a 200-dpi render. p0026-b000 (flagged as possible header/footer) is the real SI section heading S1.10, so it was kept and retyped as a level-3 heading; the warning is stale and can be cleared at bundle time. Scheme S10 is drawn as three vertically separated vector rows (18-1/18-2/18-3 row, 18-2 -> 18-4 -> ISM061-18 row, 18-3 -> ISM061-18-2 row); the extractor had split them into three figures (p0026-b001/-b002/-b003), so they were merged into one figure asset 'scheme-s10' with bbox [53,75,474,331] covering the union of all three drawing bands (verified: no ink on any crop border at 300 dpi). Step headings demoted to level 4 under the S1.10 section heading. Text repairs: removed <mark> highlight artifacts; rejoined the split subscripts 'C 2 H 3 BF 3 K' -> 'C2H3BF3K' and 'K 2 CO 3' -> 'K2CO3' (matches how Na2SO4/Pd(dppf)Cl2 are already rendered); '(ESI<sup>+</sup> )' -> '(ESI<sup>+</sup>)' and '[M+H]<sup>+</sup> .' -> '[M+H]<sup>+</sup>.'. Verified the ISM061-18 / ISM061-18-2 identifiers, degree-Celsius characters and 'EtOAc (70 mL x 3)' style multiplication signs against the render. No table on this page. Page carries no printed page number, so nothing was omitted. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*.",
+  "warnings": [
+    "Review possible header/footer: p0026-b000"
+  ],
+  "items": [
+    {
+      "id": "p0026-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        320.0,
+        71.0
+      ],
+      "markdown": "### S1.10. Preparation of ISM061-18 and ISM061-18-2",
+      "source_class": "page-header"
+    },
+    {
+      "id": "p0026-b001",
+      "kind": "figure",
+      "bbox": [
+        53.0,
+        75.0,
+        474.0,
+        331.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S10",
+      "asset_name": "scheme-s10"
+    },
+    {
+      "id": "p0026-b004",
+      "kind": "caption",
+      "bbox": [
+        157.0,
+        349.0,
+        441.0,
+        361.0
+      ],
+      "markdown": "**Scheme S10** Preparation of ISM061-18 and ISM061-18-2",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0026-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        380.0,
+        259.0,
+        391.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 18-1",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0026-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        410.0,
+        542.0,
+        588.0
+      ],
+      "markdown": "To a solution of 2-chloro-5-iodopyrimidine (1.5 g, 6.24 mmol) in 1,4-dioxane (15 mL) was added C2H3BF3K (1.3 g, 9.36 mmol), CsF (1.9 g, 12.48 mmol) and Pd(dppf)Cl2 (0.9 g, 1.25 mmol) at 25 ℃ under N2 atmosphere. After addition, the reaction mixture was heated and stirred at 80 ℃ under a nitrogen atmosphere for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (150 mL) and extracted with EtOAc (70 mL × 3), the combined organic layers were washed with brine (100 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 6.4%) in petroleum ether to give the title compound (560 mg, 63.8% yield) as a yellow liquid. LCMS (ESI<sup>+</sup>): 141.3 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0026-b007",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        607.0,
+        367.0,
+        618.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 18-2 and Compound 18-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0026-b008",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        637.0,
+        542.0,
+        773.0
+      ],
+      "markdown": "To a solution of 2-chloro-5-vinylpyrimidine (540 mg, 3.84 mmol) in 1,4-dioxane-H2O (6 mL, 5:1) was added K2CO3 (1592 mg, 11.52 mmol), (2-fluoro-6-hydroxyphenyl)boronic acid (1198 mg, 7.68 mmol) and Pd(dppf)Cl2 (562 mg, 0.77 mmol) at 25 ℃ under N2 atmosphere. After addition, the reaction mixture was heated and stirred at 80 ℃ under a nitrogen atmosphere for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (80 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (60 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography",
+      "source_class": "text"
+    }
+  ]
+}

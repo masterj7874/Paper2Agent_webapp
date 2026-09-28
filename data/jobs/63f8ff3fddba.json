@@ -1,0 +1,196 @@
+{
+ "id": "63f8ff3fddba",
+ "agent": "MedKG",
+ "tool": "medkg_related_work",
+ "arguments": {
+  "topic": "Hippocampus segmentation MRI nnU-Net self-configuring",
+  "k": 10,
+  "summarise": true,
+  "modality": "MRI",
+  "task": "segmentation"
+ },
+ "status": "done",
+ "created_at": 1790063284.521611,
+ "started_at": 1790063284.525676,
+ "finished_at": 1790063365.9788258,
+ "result": {
+  "message": "10 related-work rows; LLM=codex; status=ok.",
+  "summary": {
+   "n_rows": 10,
+   "n_q1": 10,
+   "llm": {
+    "provider": "codex",
+    "model": "gpt-6-astra",
+    "elapsed_s": 70.76,
+    "fallback_used": false,
+    "error": null
+   },
+   "timing": {
+    "total_ms": 80659.4,
+    "retrieval_ms": 9784.1,
+    "embed_ms": null,
+    "dense_ms": 6769.7,
+    "lexical_ms": 79.0,
+    "rerank_ms": 2656.1,
+    "graph_ms": 113.8,
+    "llm_ms": 70757.8
+   },
+   "status": "ok"
+  },
+  "artifacts": [
+   {
+    "description": "related_work — full JSON response",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164925-1c1dea.json"
+   },
+   {
+    "description": "related_work — markdown",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164925-1c1dea.md"
+   }
+  ],
+  "reference": "http://127.0.0.1:8790/docs",
+  "rows": [
+   {
+    "work_id": "PMC12552280",
+    "title": "Deep Learning Model for Automated Segmentation of Orbital Structures in MRI Images.",
+    "year": 2025,
+    "journal": "Clinical neuroradiology",
+    "is_q1": true,
+    "doi": "10.1007/s00062-025-01535-2",
+    "method": "Self-configuring nnU-Net CNN with five-fold cross-validation",
+    "modality": "Orbital MRI",
+    "dataset": "private cohort (117 patients with orbital pathologies)",
+    "metric_values": "Mean DSC: ocular bulb 0.931; optic nerve 0.820; ocular tumors 0.788; retinal detachment 0.550. Detection ROC AUC: ocular tumors 0.90; retinal detachment 0.78.",
+    "summary": "nnU-Net automated segmentation of four orbital structures, achieving strongest performance for the ocular bulb and optic nerve while tumor and retinal detachment segmentation remained challenging.",
+    "score": 0.9649873375892639
+   },
+   {
+    "work_id": "PMC13364558",
+    "title": "Automated segmentation of pituitary adenomas, pituitary gland, and internal carotid arteries on routine coronal contrast-enhanced T1-weighted MRI: a single-sequence feasibility study.",
+    "year": 2026,
+    "journal": "Frontiers in endocrinology",
+    "is_q1": true,
+    "doi": "10.3389/fendo.2026.1851379",
+    "method": "Swin-Unet transformer and self-configuring nnU-Net CNN, with five-fold cross-validation and ensemble predictions",
+    "modality": "Coronal contrast-enhanced T1-weighted MRI",
+    "dataset": "private cohort (255 patients with surgically confirmed pituitary adenomas)",
+    "metric_values": "Swin-Unet vs nnU-Net: mean DSC 0.70 (95% CI 0.66–0.74) vs 0.69 (0.65–0.73); mean HD95 5.21 mm (95% CI 4.40–6.03) vs 5.30 mm (4.44–6.16); mean slice-level F1 0.89 ± 0.09 vs 0.87 ± 0.08. Mean computation time 78.4 seconds/patient (95% CI 61.5–95.5).",
+    "summary": "Swin-Unet and nnU-Net demonstrated comparable feasibility for segmenting pituitary adenomas, the pituitary gland, and internal carotid arteries using a single routine MRI sequence.",
+    "score": 0.9539660811424255
+   },
+   {
+    "work_id": "DOI:10.1016/j.ejrad.2021.109817",
+    "title": "Self-configuring nnU-net pipeline enables fully automatic infarct segmentation in late enhancement MRI after myocardial infarction.",
+    "year": 2021,
+    "journal": "European Journal of Radiology",
+    "is_q1": true,
+    "doi": "10.1016/j.ejrad.2021.109817",
+    "method": "Self-configuring nnU-Net using phase-sensitive inversion recovery, magnitude reconstruction, or both as inputs",
+    "modality": "Late gadolinium enhancement cardiac MRI",
+    "dataset": "private cohort (170 examinations from 78 patients; evaluation subset of 10 patients)",
+    "metric_values": "PSIR and MAG: mean DSC 0.83 ± 0.03 for myocardium and 0.72 ± 0.08 for scars; infarct-volume Pearson r = 0.96.",
+    "summary": "nnU-Net automatically segmented myocardium and infarct tissue with strong agreement with manual delineation, although infarct volumes were significantly underestimated.",
+    "score": 0.9427180886268616
+   },
+   {
+    "work_id": "PMC11536060",
+    "title": "Automatic segmentation for magnetic resonance imaging guided individual elective lymph node irradiation in head and neck cancer patients.",
+    "year": 2024,
+    "journal": "Physics and imaging in radiation oncology",
+    "is_q1": true,
+    "doi": "10.1016/j.phro.2024.100655",
+    "method": "3D nnU-Net CNN with transfer learning for adaptation to another medical center",
+    "modality": "Head and neck MRI",
+    "dataset": "private cohort (50 UMC-Utrecht HNSCC patients: 40 training and 10 testing; 20 additional patients from another center)",
+    "metric_values": "Median DSC 0.72; recall 0.76; precision 0.78; F1-score 0.78; recall higher than both observers (p = 0.002).",
+    "summary": "nnU-Net segmented individual elective lymph nodes with higher detection recall than manual observers and required retraining for successful transfer to another center.",
+    "score": 0.8323729634284973
+   },
+   {
+    "work_id": "PMC12954098",
+    "title": "Evaluation of deep learning models for segmentation of hippocampus volumes from MRI images in Alzheimer's disease.",
+    "year": 2026,
+    "journal": "Scientific reports",
+    "is_q1": true,
+    "doi": "10.1038/s41598-026-38220-4",
+    "method": "Comparison of U-Net, YOLO-v8, and DeepLab-v3",
+    "modality": "Brain MRI",
+    "dataset": "Alzheimer’s Disease Neuroimaging Initiative (ADNI): 300 subjects, including 100 AD, 100 MCI, and 100 normal controls; 7,859 image slices",
+    "metric_values": "U-Net IoU: AD 0.639; MCI 0.801; normal controls 0.751. YOLO-v8 IoU: AD 0.342; MCI 0.465; normal controls 0.550.",
+    "summary": "The study compared three deep learning models for bilateral hippocampus segmentation on ADNI MRI and found U-Net performed best across diagnostic groups.",
+    "score": 0.8237541317939758
+   },
+   {
+    "work_id": "PMC11225132",
+    "title": "An improved 3D-UNet-based brain hippocampus segmentation model based on MR images.",
+    "year": 2024,
+    "journal": "BMC medical imaging",
+    "is_q1": true,
+    "doi": "10.1186/s12880-024-01346-w",
+    "method": "Improved 3D-UNet incorporating a filling technique and data augmentation, compared with VNet, SegResNet, UNetR, and original networks",
+    "modality": "Non-contrast 3D T1-weighted brain MRI",
+    "dataset": "private cohort (200 images from Hangzhou Cancer Hospital: 145 training, 30 hyperparameter tuning, and 25 testing)",
+    "metric_values": "3D-UNet with filling technique: Dice 0.7989 ± 0.0398; mIoU 0.6669 ± 0.0540; OSR 0.0666 ± 0.0351; ASD 0.5733 ± 0.1018; HD 5.1235 ± 1.4397.",
+    "summary": "Adding a filling technique improved hippocampus segmentation across multiple networks, with the modified 3D-UNet achieving the best reported performance.",
+    "score": 0.8098781704902649
+   },
+   {
+    "work_id": "PMC12790160",
+    "title": "Automated Brain Tissue Segmentation on CT guided by MRI: Advancing AI‐based Neuroimaging for Dementia",
+    "year": 2025,
+    "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+    "is_q1": true,
+    "doi": "10.1002/alz70856_104843",
+    "method": "2D and 3D nnU-Net and 3D MedNeXt trained with MRI-derived labels for CT segmentation",
+    "modality": "Brain CT with paired MRI-derived supervision",
+    "dataset": "Gothenburg H70 Birth Cohort (N = 733); National University Hospital Singapore Memory Clinic Cohort / NUS Dementia Cohort (N = 210)",
+    "metric_values": "Average DSC, axial/coronal/sagittal: 3D nnU-Net 0.82/0.72/0.76; MedNeXt 0.83/0.73/0.78. MedNeXt volumetric similarity 0.842–0.992. Dementia cohorts: MedNeXt average DSC 0.73 and volumetric similarity 0.912; nnU-Net 0.70 and 0.854.",
+    "summary": "MRI-guided training enabled CT segmentation of gray matter, white matter, and cerebrospinal fluid, with MedNeXt achieving higher accuracy and dementia-cohort generalizability than nnU-Net.",
+    "score": 0.8020908832550049
+   },
+   {
+    "work_id": "PMC12110295",
+    "title": "Deep Learning for Automated Ventricle and Periventricular Space Segmentation on CT and T1CE MRI in Neuro-Oncology Patients.",
+    "year": 2025,
+    "journal": "Cancers",
+    "is_q1": true,
+    "doi": "10.3390/cancers17101598",
+    "method": "nnU-Net ventricle segmentation compared with pretrained SynthSeg",
+    "modality": "CT and contrast-enhanced T1-weighted brain MRI",
+    "dataset": "private cohort (78 patients for training; internal and external test sets of 18 patients each)",
+    "metric_values": "Internal test, nnU-Net vs SynthSeg, median [range]: DSC 0.93 [0.86–0.95] vs 0.85 [0.67–0.91]; HD95 0.9 [0.7–2.5] mm vs 2.2 [1.7–4.8] mm; surface DSC 0.97 [0.90–0.98] vs 0.84 [0.70–0.89]; APL 876 [407–1298] mm vs 2809 [2311–3622] mm; all p < 0.001.",
+    "summary": "nnU-Net enabled ventricle and derived periventricular-space delineation, outperforming SynthSeg on internal segmentation metrics and receiving better clinical ratings on both test sets.",
+    "score": 0.7602949142456055
+   },
+   {
+    "work_id": "PMC11947432",
+    "title": "Evaluating Traditional, Deep Learning and Subfield Methods for Automatically Segmenting the Hippocampus From MRI.",
+    "year": 2025,
+    "journal": "Human brain mapping",
+    "is_q1": true,
+    "doi": "10.1002/hbm.70200",
+    "method": "Comparative evaluation of FreeSurfer, SynthSeg, FastSurfer, FIRST, e2dhipseg, Hippmapper, Hippodeep, FreeSurfer-Subfields, HippUnfold, and HSF",
+    "modality": "Brain MRI",
+    "dataset": "not stated (three datasets with manually segmented hippocampus labels)",
+    "metric_values": "not stated",
+    "summary": "An independent comparison of ten hippocampus segmentation methods found greater errors on clinical data and frequent anterior oversegmentation, highlighting the need for more diverse manually labeled datasets.",
+    "score": 0.7459540367126465
+   },
+   {
+    "work_id": "PMC11912691",
+    "title": "LI-RADS-based hepatocellular carcinoma risk mapping using contrast-enhanced MRI and self-configuring deep learning.",
+    "year": 2025,
+    "journal": "Cancer imaging : the official publication of the International Cancer Imaging Society",
+    "is_q1": true,
+    "doi": "10.1186/s40644-025-00844-6",
+    "method": "Ensemble of nnU-Net semantic segmentation models with 14 input channels and post-processing for lesion detection and LI-RADS classification",
+    "modality": "Dynamic gadoxetate disodium-enhanced MRI (EOB-MRI)",
+    "dataset": "private cohort (602 patients: 383 training and 219 internal testing); modified LiverHccSeg dataset (16 external-test patients)",
+    "metric_values": "Training/internal/external cohorts, lesions ≥10 mm: sensitivity 0.41–0.85/0.40–0.90/0.83; PPV 0.70–0.94/0.67–0.88/0.90; classification F1 0.48–0.69/0.47–0.74/0.84; median per-lesion Dice 0.61–0.74/0.52–0.77/0.84. LR-5 specifically: sensitivity 0.85/0.90/0.83; PPV 0.94/0.88/0.90; F1 0.69/0.74/0.84; Dice 0.74/0.77/0.84.",
+    "summary": "An nnU-Net ensemble generated LI-RADS tumor risk maps from contrast-enhanced MRI with strong LR-5 detection, while automatic LI-RADS classification required further improvement.",
+    "score": 0.708716869354248
+   }
+  ]
+ },
+ "error": null,
+ "duration_s": 81.45
+}

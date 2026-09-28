@@ -1,0 +1,102 @@
+{
+ "id": "091a97fc7437",
+ "agent": "MedSAM",
+ "tool": "medsam_segment_with_box",
+ "arguments": {
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00001.png",
+  "boxes": [
+   [
+    72,
+    58,
+    648,
+    518
+   ]
+  ],
+  "device": "auto",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063197.7670267,
+ "started_at": 1790063197.7678347,
+ "finished_at": 1790063199.7599602,
+ "result": {
+  "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 179198 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b",
+  "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+  "artifacts": [
+   {
+    "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/segs.npz"
+   },
+   {
+    "description": "Label map PNG (uint8 label values 0..N)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/segs.png"
+   },
+   {
+    "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/seg_box_01.png"
+   },
+   {
+    "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/overlay.png"
+   }
+  ],
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00001.png",
+  "input_kind": "image",
+  "image_shape_hwc": [
+   576,
+   720,
+   3
+  ],
+  "boxes_source": "argument",
+  "n_boxes": 1,
+  "boxes_xyxy": [
+   [
+    72,
+    58,
+    648,
+    518
+   ]
+  ],
+  "labels": [
+   1
+  ],
+  "per_box": [
+   {
+    "box_index": 0,
+    "label": 1,
+    "box_xyxy": [
+     72,
+     58,
+     648,
+     518
+    ],
+    "foreground_pixels": 179198,
+    "labelmap_pixels": 179198,
+    "mask_bbox_xyxy": [
+     97,
+     63,
+     619,
+     513
+    ],
+    "mask_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b/seg_box_01.png"
+   }
+  ],
+  "total_foreground_pixels": 179198,
+  "device": "cuda:0",
+  "checkpoint": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_vit_b.pth",
+  "timing_seconds": {
+   "model_load": 0.649,
+   "image_embedding": 1.025,
+   "box_decoding": 0.013,
+   "total": 1.986
+  },
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164637_23fdfe/outputs/medsam_segment_with_box_20260922-164637_2222a28b",
+  "sources": {
+   "inference_and_preprocessing": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+   "embed_once_decode_each_box": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/demo.py",
+   "image_channel_and_intensity_rules": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/pre_grey_rgb.py"
+  }
+ },
+ "error": null,
+ "duration_s": 1.99
+}

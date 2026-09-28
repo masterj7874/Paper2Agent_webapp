@@ -1,0 +1,760 @@
+{
+ "id": "20260922-165345_9e2c4f",
+ "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/FLARE22_Tr_0046_0000.nii.gz",
+ "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/FLARE22_Tr_0046_0000.nii.gz",
+ "project": null,
+ "kind": "ct_volume",
+ "modality_guess": "CT",
+ "detection": {
+  "details": {
+   "size_xyz": [
+    512,
+    512,
+    93
+   ],
+   "spacing_xyz": [
+    0.7227,
+    0.7227,
+    2.5
+   ],
+   "dimension": 3,
+   "pixel_type": "32-bit float",
+   "n_components": 1,
+   "dtype": "float32",
+   "min": -1024.0,
+   "max": 1449.0,
+   "mean": -600.213,
+   "p1": -1024.0,
+   "p50": -905.0,
+   "p99": 286.0,
+   "frac_below_-500": 0.6312,
+   "frac_zero": 0.0007,
+   "fov_mm": [
+    370.0,
+    370.0,
+    232.5
+   ],
+   "confidence": 0.95
+  },
+  "notes": [
+   "3-D volume [512, 512, 93] @ [0.7227, 0.7227, 2.5] mm, float32, intensity [-1024, 1449]",
+   "63.1% of voxels below -500 HU: Hounsfield air present -> CT"
+  ]
+ },
+ "recipe": {
+  "id": "ct_abdominal_organs",
+  "title": "CT volume -> MedSAM preprocess (soft-tissue window) -> text-prompt organ segmentation",
+  "notes": [
+   "the FLARE22 text-prompt decoder knows 13 abdominal organs; the middle slice of the windowed volume is segmented"
+  ]
+ },
+ "status": "done",
+ "created_at": 1790063625.0146134,
+ "started_at": 1790063625.015985,
+ "finished_at": 1790063698.0443919,
+ "duration_s": 73.03,
+ "run_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f",
+ "steps": [
+  {
+   "index": 0,
+   "label": "MedSAM CT window + uint8 npz",
+   "agent": "MedSAM",
+   "tool": "medsam_preprocess_ct_mr",
+   "arguments": {
+    "image_path": "${input}",
+    "modality": "CT",
+    "window_level": 40,
+    "window_width": 400,
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "8ed94c5eab95",
+   "started_at": 1790063625.0163844,
+   "finished_at": 1790063630.0211139,
+   "duration_s": 5.0,
+   "error": null,
+   "hint": null,
+   "message": "CT preprocessing of FLARE22_Tr_0046_0000.nii.gz: 93 -> 93 slices, imgs uint8 (93, 512, 512) (mean 42.930), bounds [-160, 240] (WL 40 / WW 400), spacing (x,y,z) (0.7227, 0.7227, 2.5); npz -> /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz",
+   "artifacts": [
+    {
+     "description": "MedSAM npz: 'imgs' uint8 (93, 512, 512) (z,y,x), 'spacing' (x,y,z) as SimpleITK GetSpacing",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz"
+    },
+    {
+     "description": "sanity nii.gz of imgs exactly as the script writes it (GetImageFromArray without CopyInformation: unit spacing, default origin/direction)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046_img.nii.gz"
+    },
+    {
+     "description": "imgs nii.gz with the input spacing/direction and the origin of the first kept slice (wrapper addition, geometry metadata only)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046_img_with_geometry.nii.gz"
+    },
+    {
+     "description": "summary (settings, bounds, stats, kept slice indices, timing)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/summary.json"
+    }
+   ],
+   "key_numbers": {
+    "modality": "CT",
+    "window_level": 40.0,
+    "window_width": 400.0,
+    "imgs_dtype": "uint8",
+    "num_slices_input": 93,
+    "num_slices_output": 93,
+    "kept_z_min": 0,
+    "kept_z_max": 92,
+    "kept_slices_contiguous": true,
+    "timing.load_seconds": 0.465,
+    "timing.normalise_seconds": 0.679,
+    "timing.total_seconds": 2.173
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/FLARE22_Tr_0046_0000.nii.gz",
+    "modality": "CT",
+    "window_level": 40,
+    "window_width": 400,
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs"
+   },
+   "result": {
+    "message": "CT preprocessing of FLARE22_Tr_0046_0000.nii.gz: 93 -> 93 slices, imgs uint8 (93, 512, 512) (mean 42.930), bounds [-160, 240] (WL 40 / WW 400), spacing (x,y,z) (0.7227, 0.7227, 2.5); npz -> /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz",
+    "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/pre_CT_MR.py",
+    "artifacts": [
+     {
+      "description": "MedSAM npz: 'imgs' uint8 (93, 512, 512) (z,y,x), 'spacing' (x,y,z) as SimpleITK GetSpacing",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz"
+     },
+     {
+      "description": "sanity nii.gz of imgs exactly as the script writes it (GetImageFromArray without CopyInformation: unit spacing, default origin/direction)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046_img.nii.gz"
+     },
+     {
+      "description": "imgs nii.gz with the input spacing/direction and the origin of the first kept slice (wrapper addition, geometry metadata only)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046_img_with_geometry.nii.gz"
+     },
+     {
+      "description": "summary (settings, bounds, stats, kept slice indices, timing)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/summary.json"
+     }
+    ],
+    "source_lines": "pre_CT_MR.py lines 94-95, 97-118, 119, 120, 123-132, 134-182",
+    "input": {
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/FLARE22_Tr_0046_0000.nii.gz",
+     "shape_zyx": [
+      93,
+      512,
+      512
+     ],
+     "dtype": "float32",
+     "min": -1024.0,
+     "max": 1449.0,
+     "size_xyz": [
+      512,
+      512,
+      93
+     ],
+     "spacing_xyz": [
+      0.7226560115814209,
+      0.7226560115814209,
+      2.5
+     ],
+     "origin_xyz": [
+      369.2772216796875,
+      369.2772216796875,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "pixel_type": "32-bit float",
+     "components_per_pixel": 1
+    },
+    "modality": "CT",
+    "window_level": 40.0,
+    "window_width": 400.0,
+    "intensity_bounds": {
+     "lower": -160.0,
+     "upper": 240.0,
+     "rule": "clip to window_level -/+ window_width/2, then min-max of the clipped volume to [0,255], uint8 (truncation)"
+    },
+    "npz_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz",
+    "npz_keys": [
+     "imgs",
+     "spacing"
+    ],
+    "imgs_shape": [
+     93,
+     512,
+     512
+    ],
+    "imgs_dtype": "uint8",
+    "imgs_axis_order": "(z, y, x) = (D, H, W) from SimpleITK GetArrayFromImage",
+    "imgs_stats": {
+     "min": 0,
+     "max": 255,
+     "mean": 42.930261960593604,
+     "std": 71.11629314996107
+    },
+    "imgs_sha256": "0ca71f2cc969924f0169da58906eca53c5f1445043eccf74b1b35e22b55f7edc",
+    "spacing_xyz": [
+     0.7226560115814209,
+     0.7226560115814209,
+     2.5
+    ],
+    "spacing_note": "stored exactly as the script does: img_sitk.GetSpacing() = (x, y, z) header order, while imgs is (z, y, x)",
+    "num_slices_input": 93,
+    "num_slices_output": 93,
+    "slice_selection": "all slices (no label_path; the script's label-derived slice selection does not apply)",
+    "kept_z_min": 0,
+    "kept_z_max": 92,
+    "kept_slices_contiguous": true,
+    "label": null,
+    "slices_1024": null,
+    "timing": {
+     "load_seconds": 0.465,
+     "normalise_seconds": 0.679,
+     "total_seconds": 2.173
+    }
+   }
+  },
+  {
+   "index": 1,
+   "label": "text-prompt abdominal organs (middle slice)",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_text",
+   "arguments": {
+    "image_path": "${step[0].artifacts[\\.npz$]}",
+    "prompts": [
+     "liver",
+     "spleen",
+     "left kidney",
+     "right kidney",
+     "pancreas",
+     "aorta",
+     "stomach",
+     "gallbladder"
+    ],
+    "device": "auto",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "55a268c2d1d2",
+   "started_at": 1790063630.0219202,
+   "finished_at": 1790063633.5248706,
+   "duration_s": 3.5,
+   "error": null,
+   "hint": null,
+   "message": "Segmented 8 prompt(s) on CT_FLARE22_Tr_0046.npz slice46 with the experimental FLARE22 text-prompt MedSAM on cuda:0: liver=11864 px, spleen=2116 px, left kidney=3524 px, right kidney=3018 px, pancreas=843 px, aorta=677 px, stomach=1471 px, gallbladder=1722 px",
+   "artifacts": [
+    {
+     "description": "binary mask for prompt 'liver' (0/255, array orientation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__liver_mask.png"
+    },
+    {
+     "description": "binary mask for prompt 'spleen' (0/255, array orientation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__spleen_mask.png"
+    },
+    {
+     "description": "binary mask for prompt 'left kidney' (0/255, array orientation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__left_kidney_mask.png"
+    },
+    {
+     "description": "binary mask for prompt 'right kidney' (0/255, array orientation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__right_kidney_mask.png"
+    },
+    {
+     "description": "binary mask for prompt 'pancreas' (0/255, array orientation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__pancreas_mask.png"
+    },
+    {
+     "description": "binary mask for prompt 'aorta' (0/255, array orientation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__aorta_mask.png"
+    },
+    {
+     "description": "binary mask for prompt 'stomach' (0/255, array orientation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__stomach_mask.png"
+    },
+    {
+     "description": "binary mask for prompt 'gallbladder' (0/255, array orientation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__gallbladder_mask.png"
+    },
+    {
+     "description": "masks.npz: 'masks' (N,H,W) uint8 in prompt order, 'prompts', 'label_ids', 'image' (the 2D array fed to the model)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/masks.npz"
+    },
+    {
+     "description": "overlay PNG: image with the notebook's show_mask rendering, one panel per prompt",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/overlay.png"
+    },
+    {
+     "description": "summary.json: this result record",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/summary.json"
+    }
+   ],
+   "key_numbers": {
+    "device": "cuda:0",
+    "input_kind": "npz",
+    "slice_index": 46,
+    "overlay_rotated_180": false,
+    "clip_source": "local_cache",
+    "timings_s.load_model_s": 2.513,
+    "timings_s.set_image_s": 0.085,
+    "timings_s.infer_per_prompt_s.liver": 0.0322,
+    "timings_s.infer_per_prompt_s.spleen": 0.0063,
+    "timings_s.infer_per_prompt_s.left kidney": 0.0066,
+    "timings_s.infer_per_prompt_s.right kidney": 0.0071,
+    "timings_s.infer_per_prompt_s.pancreas": 0.0076,
+    "timings_s.infer_per_prompt_s.aorta": 0.007,
+    "timings_s.infer_per_prompt_s.stomach": 0.0064,
+    "timings_s.infer_per_prompt_s.gallbladder": 0.0073,
+    "timings_s.cuda_max_memory_allocated_gib": 2.941,
+    "timings_s.total_s": 3.438
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz",
+    "prompts": [
+     "liver",
+     "spleen",
+     "left kidney",
+     "right kidney",
+     "pancreas",
+     "aorta",
+     "stomach",
+     "gallbladder"
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs"
+   },
+   "result": {
+    "message": "Segmented 8 prompt(s) on CT_FLARE22_Tr_0046.npz slice46 with the experimental FLARE22 text-prompt MedSAM on cuda:0: liver=11864 px, spleen=2116 px, left kidney=3524 px, right kidney=3018 px, pancreas=843 px, aorta=677 px, stomach=1471 px, gallbladder=1722 px",
+    "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/extensions/text_prompt/tutorial_text_prompt_seg.ipynb",
+    "artifacts": [
+     {
+      "description": "binary mask for prompt 'liver' (0/255, array orientation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__liver_mask.png"
+     },
+     {
+      "description": "binary mask for prompt 'spleen' (0/255, array orientation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__spleen_mask.png"
+     },
+     {
+      "description": "binary mask for prompt 'left kidney' (0/255, array orientation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__left_kidney_mask.png"
+     },
+     {
+      "description": "binary mask for prompt 'right kidney' (0/255, array orientation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__right_kidney_mask.png"
+     },
+     {
+      "description": "binary mask for prompt 'pancreas' (0/255, array orientation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__pancreas_mask.png"
+     },
+     {
+      "description": "binary mask for prompt 'aorta' (0/255, array orientation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__aorta_mask.png"
+     },
+     {
+      "description": "binary mask for prompt 'stomach' (0/255, array orientation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__stomach_mask.png"
+     },
+     {
+      "description": "binary mask for prompt 'gallbladder' (0/255, array orientation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/CT_FLARE22_Tr_0046_slice46__gallbladder_mask.png"
+     },
+     {
+      "description": "masks.npz: 'masks' (N,H,W) uint8 in prompt order, 'prompts', 'label_ids', 'image' (the 2D array fed to the model)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/masks.npz"
+     },
+     {
+      "description": "overlay PNG: image with the notebook's show_mask rendering, one panel per prompt",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/overlay.png"
+     },
+     {
+      "description": "summary.json: this result record",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed/summary.json"
+     }
+    ],
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_segment_with_text_20260922-165350_dbbe4fed",
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/outputs/medsam_preprocess_ct_mr_20260922-165346_4e6dd1f1/CT_FLARE22_Tr_0046.npz",
+    "input_kind": "npz",
+    "slice_index": 46,
+    "image_shape": [
+     512,
+     512
+    ],
+    "window_hu": null,
+    "overlay_rotated_180": false,
+    "prompts_requested": [
+     "liver",
+     "spleen",
+     "left kidney",
+     "right kidney",
+     "pancreas",
+     "aorta",
+     "stomach",
+     "gallbladder"
+    ],
+    "prompts_accepted": [
+     "liver",
+     "spleen",
+     "left kidney",
+     "right kidney",
+     "pancreas",
+     "aorta",
+     "stomach",
+     "gallbladder"
+    ],
+    "label_ids": {
+     "liver": 1,
+     "spleen": 3,
+     "left kidney": 13,
+     "right kidney": 2,
+     "pancreas": 4,
+     "aorta": 5,
+     "stomach": 11,
+     "gallbladder": 9
+    },
+    "pixel_counts": {
+     "liver": 11864,
+     "spleen": 2116,
+     "left kidney": 3524,
+     "right kidney": 3018,
+     "pancreas": 843,
+     "aorta": 677,
+     "stomach": 1471,
+     "gallbladder": 1722
+    },
+    "bbox_xyxy": {
+     "liver": [
+      224,
+      159,
+      429,
+      355
+     ],
+     "spleen": [
+      82,
+      148,
+      164,
+      209
+     ],
+     "left kidney": [
+      148,
+      163,
+      219,
+      225
+     ],
+     "right kidney": [
+      295,
+      166,
+      361,
+      226
+     ],
+     "pancreas": [
+      241,
+      268,
+      289,
+      302
+     ],
+     "aorta": [
+      226,
+      219,
+      257,
+      245
+     ],
+     "stomach": [
+      227,
+      297,
+      286,
+      333
+     ],
+     "gallbladder": [
+      338,
+      279,
+      374,
+      343
+     ]
+    },
+    "device": "cuda:0",
+    "clip_source": "local_cache",
+    "checkpoint_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_text_prompt_flare22.pth",
+    "medsam_checkpoint_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_vit_b.pth",
+    "timings_s": {
+     "load_model_s": 2.513,
+     "set_image_s": 0.085,
+     "infer_per_prompt_s": {
+      "liver": 0.0322,
+      "spleen": 0.0063,
+      "left kidney": 0.0066,
+      "right kidney": 0.0071,
+      "pancreas": 0.0076,
+      "aorta": 0.007,
+      "stomach": 0.0064,
+      "gallbladder": 0.0073
+     },
+     "cuda_max_memory_allocated_gib": 2.941,
+     "total_s": 3.438
+    },
+    "note": "Experimental FLARE22 organ-name model (13 organs); masks are in array orientation and can overlap between prompts."
+   }
+  },
+  {
+   "index": 2,
+   "label": "literature context (MedKG related work)",
+   "agent": "MedKG",
+   "tool": "medkg_related_work",
+   "arguments": {
+    "topic": "abdominal organ segmentation CT deep learning foundation model",
+    "k": 10,
+    "summarise": true,
+    "modality": "CT",
+    "task": "segmentation"
+   },
+   "optional": true,
+   "status": "done",
+   "job_id": "61587445ec7d",
+   "started_at": 1790063633.5260348,
+   "finished_at": 1790063698.0430331,
+   "duration_s": 64.52,
+   "error": null,
+   "hint": null,
+   "message": "10 related-work rows; LLM=codex; status=ok.",
+   "artifacts": [
+    {
+     "description": "related_work — full JSON response",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165457-352ae8.json"
+    },
+    {
+     "description": "related_work — markdown",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165457-352ae8.md"
+    }
+   ],
+   "key_numbers": {
+    "summary.n_rows": 10,
+    "summary.n_q1": 10,
+    "summary.status": "ok",
+    "summary.llm.provider": "codex",
+    "summary.llm.model": "gpt-6-astra",
+    "summary.llm.elapsed_s": 63.69,
+    "summary.llm.fallback_used": false,
+    "summary.timing.total_ms": 64343.8,
+    "summary.timing.retrieval_ms": 545.4,
+    "summary.timing.dense_ms": 57.9,
+    "summary.timing.lexical_ms": 140.9,
+    "summary.timing.rerank_ms": 246.4,
+    "summary.timing.graph_ms": 106.6,
+    "summary.timing.llm_ms": 63689.3
+   },
+   "resolved_arguments": {
+    "topic": "abdominal organ segmentation CT deep learning foundation model",
+    "k": 10,
+    "summarise": true,
+    "modality": "CT",
+    "task": "segmentation"
+   },
+   "result": {
+    "message": "10 related-work rows; LLM=codex; status=ok.",
+    "summary": {
+     "n_rows": 10,
+     "n_q1": 10,
+     "llm": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "elapsed_s": 63.69,
+      "fallback_used": false,
+      "error": null
+     },
+     "timing": {
+      "total_ms": 64343.8,
+      "retrieval_ms": 545.4,
+      "embed_ms": null,
+      "dense_ms": 57.9,
+      "lexical_ms": 140.9,
+      "rerank_ms": 246.4,
+      "graph_ms": 106.6,
+      "llm_ms": 63689.3
+     },
+     "status": "ok"
+    },
+    "artifacts": [
+     {
+      "description": "related_work — full JSON response",
+      "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165457-352ae8.json"
+     },
+     {
+      "description": "related_work — markdown",
+      "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165457-352ae8.md"
+     }
+    ],
+    "reference": "http://127.0.0.1:8790/docs",
+    "rows": [
+     {
+      "work_id": "PMC7803471",
+      "title": "Deep learning method for localization and segmentation of abdominal CT",
+      "year": 2020,
+      "journal": "Computerized Medical Imaging and Graphics",
+      "is_q1": true,
+      "doi": "10.1016/j.compmedimag.2020.101776",
+      "method": "Deep Learning, Artificial Intelligence, Computer Vision",
+      "modality": "Computed Tomography",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "No abstract was supplied, so the contribution cannot be extracted.",
+      "score": 0.9967396855354309
+     },
+     {
+      "work_id": "PMC12476582",
+      "title": "Deep Learning with Domain Randomization in Image and Feature Spaces for Abdominal Multi-organ Segmentation on CT and MRI Scans",
+      "year": 2025,
+      "journal": "Radiology: Artificial Intelligence",
+      "is_q1": true,
+      "doi": "10.1148/ryai.240586",
+      "method": "Extended nnU-Net with domain randomization in image and feature spaces",
+      "modality": "CT and MRI",
+      "dataset": "AMOS; unnamed public multi-institutional prostate MRI and abdominal CT/MRI datasets",
+      "metric_values": "Average DSC on unseen test domains: 88.22 versus TotalSegmentator 79.01 and MRSegmentator 75.84; both P<0.001",
+      "summary": "Combining image-space and feature-space domain randomization improves abdominal multi-organ segmentation accuracy and generalization across sites and modalities.",
+      "score": 0.9916841983795166
+     },
+     {
+      "work_id": "PMC11071191",
+      "title": "The application of deep learning in abdominal trauma diagnosis by CT imaging.",
+      "year": 2024,
+      "journal": "World journal of emergency surgery : WJES",
+      "is_q1": true,
+      "doi": "10.1186/s13017-024-00546-7",
+      "method": "2D semantic segmentation followed by 2.5D organ-injury classification",
+      "modality": "CT",
+      "dataset": "Unnamed Kaggle competition dataset: 3,147 patients, including 855 with abdominal trauma",
+      "metric_values": "Renal injury: accuracy 0.932, PPV 0.888, NPV 0.943, sensitivity 0.887, specificity 0.944; liver injury: accuracy 0.873, PPV 0.789, NPV 0.895, sensitivity 0.789, specificity 0.895; spleen injury: accuracy 0.771, PPV 0.630, NPV 0.814, sensitivity 0.626, specificity 0.816",
+      "summary": "A segmentation-and-classification pipeline detects multiple abdominal organ injuries on CT for preliminary trauma screening.",
+      "score": 0.9839708209037781
+     },
+     {
+      "work_id": "PMC11663761",
+      "title": "Annotation-free multi-organ anomaly detection in abdominal CT using free-text radiology reports: a multi-centre retrospective study.",
+      "year": 2024,
+      "journal": "EBioMedicine",
+      "is_q1": true,
+      "doi": "10.1016/j.ebiom.2024.105463",
+      "method": "Multiple-instance learning using organ images from multi-organ segmentation and disease labels extracted from free-text radiology reports",
+      "modality": "CT and free-text radiology reports",
+      "dataset": "Private cohort: 66,684 training exams; 300 internal and 600 external validation exams, with data from three institutions for training/internal testing and six for external testing",
+      "metric_values": "External overall organ-abnormality detection AUC 0.886",
+      "summary": "Report-derived disease labels enable training of multi-organ abdominal CT anomaly detection models without manual disease annotations.",
+      "score": 0.9675332307815552
+     },
+     {
+      "work_id": "PMC10600339",
+      "title": "Abdominal organ segmentation via deep diffeomorphic mesh deformations.",
+      "year": 2023,
+      "journal": "Scientific reports",
+      "is_q1": true,
+      "doi": "10.1038/s41598-023-45435-2",
+      "method": "UNetFlow: deep diffeomorphic template-mesh deformation with improved training and registration-based voxel–mesh alignment",
+      "modality": "CT and MRI",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "UNetFlow reconstructs meshes for liver, kidney, pancreas, and spleen segmentation, improving generalization across organ geometries and supporting fine-tuning on new data.",
+      "score": 0.9619649052619934
+     },
+     {
+      "work_id": "PMC10883917",
+      "title": "Fully-automated multi-organ segmentation tool applicable to both non-contrast and post-contrast abdominal CT: deep learning algorithm developed using dual-energy CT images.",
+      "year": 2024,
+      "journal": "Scientific reports",
+      "is_q1": true,
+      "doi": "10.1038/s41598-024-55137-y",
+      "method": "3D nnU-Net trained on paired dual-energy CT portal venous phase and virtual non-contrast images",
+      "modality": "Dual-energy and single-energy CT, including non-contrast and post-contrast images",
+      "dataset": "not stated",
+      "metric_values": "Mean DSC: liver, spleen, and each kidney >0.94; pancreas around 0.8; volume ICC: liver, spleen, and each kidney >0.95; pancreas 0.792 on SE-PVP and 0.840 on true non-contrast CT; volume error within 10% in >90% of cases for liver, spleen, and each kidney",
+      "summary": "Training on matched dual-energy CT images enables automated abdominal organ segmentation and volumetry across contrast conditions, with lower performance for the pancreas.",
+      "score": 0.9567152261734009
+     },
+     {
+      "work_id": "PMC6960305",
+      "title": "Development and Validation of a Deep Learning System for Segmentation of Abdominal Muscle and Fat on Computed Tomography.",
+      "year": 2020,
+      "journal": "Korean journal of radiology",
+      "is_q1": true,
+      "doi": "10.3348/kjr.2019.0470",
+      "method": "Fully convolutional network for automated muscle and fat segmentation",
+      "modality": "Axial CT at the inferior endplate of L3",
+      "dataset": "Private cohort: 883 training scans from 467 subjects; 426 internal validation scans from 308 subjects; 171 external validation scans from 171 subjects at two outside hospitals",
+      "metric_values": "Internal mean Dice: muscle 0.96, subcutaneous fat 0.97, visceral fat 0.97; external mean Dice: 0.97 for all three; internal mean area error: muscle 2.1%, subcutaneous fat 3.8%, visceral fat 1.8%; external mean area error: muscle 2.7%, subcutaneous fat 4.6%, visceral fat 2.3%",
+      "summary": "A fully convolutional network automatically segments abdominal muscle and fat on L3 CT images with high agreement against manual annotations in internal and external validation.",
+      "score": 0.948441743850708
+     },
+     {
+      "work_id": "PMC11573127",
+      "title": "External validation of a deep learning model for automatic segmentation of skeletal muscle and adipose tissue on abdominal CT images.",
+      "year": 2024,
+      "journal": "The British journal of radiology",
+      "is_q1": true,
+      "doi": "10.1093/bjr/tqae191",
+      "method": "Deep learning neural network for skeletal muscle and adipose tissue segmentation",
+      "modality": "CT at L3",
+      "dataset": "Private cohort: 3,187 abdominal surgery patients for training and 2,535 abdominal cancer patients for external validation",
+      "metric_values": "Median Dice: skeletal muscle 0.97 (IQR 0.95–0.98), visceral adipose tissue 0.98 (0.95–0.98), subcutaneous adipose tissue 0.95 (0.92–0.97); Lin's concordance: 0.964 (0.959–0.968), 0.998 (0.998–0.998), and 0.992 (0.991–0.993), respectively; Bland–Altman offsets: muscle radiodensity 0.23 HU (0.5%), muscle 1.26 cm²/m² (2.8%), visceral adipose tissue −1.02 cm²/m² (1.7%), subcutaneous adipose tissue 3.24 cm²/m² (4.6%)",
+      "summary": "An externally validated neural network automates L3 CT body composition analysis with strong agreement against expert muscle and adipose tissue segmentations.",
+      "score": 0.9429286122322083
+     },
+     {
+      "work_id": "PMC9849751",
+      "title": "Deep-learning method for fully automatic segmentation of the abdominal aortic aneurysm from computed tomography imaging.",
+      "year": 2022,
+      "journal": "Frontiers in cardiovascular medicine",
+      "is_q1": true,
+      "doi": "10.3389/fcvm.2022.1040053",
+      "method": "Three-step deep learning pipeline extracting the aorta and iliac arteries followed by lumen and other aneurysm tissue segmentation",
+      "modality": "CT",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "A fully automated deep learning pipeline segments abdominal aortic aneurysm tissues with qualitatively reported agreement against expert manual segmentation.",
+      "score": 0.9403530955314636
+     },
+     {
+      "work_id": "PMC12873139",
+      "title": "A MultiRater MultiOrgan Abdominal CT Dataset for Calibration Analysis and Uncertainty Modeling in Segmentation.",
+      "year": 2026,
+      "journal": "Scientific data",
+      "is_q1": true,
+      "doi": "10.1038/s41597-025-06473-9",
+      "method": "Dataset and benchmark for segmentation uncertainty and calibration; no specific AI architecture stated",
+      "modality": "Contrast-enhanced CT",
+      "dataset": "CURVAS: 90 scans from University Hospital Erlangen with pancreas, liver, and kidney segmentations annotated by three experts",
+      "metric_values": "not stated",
+      "summary": "CURVAS provides a multi-rater abdominal CT dataset for evaluating segmentation quality, uncertainty, calibration, and organ volumes while accounting for annotation variability.",
+      "score": 0.9375547766685486
+     }
+    ]
+   }
+  }
+ ],
+ "jobs": [
+  "8ed94c5eab95",
+  "55a268c2d1d2",
+  "61587445ec7d"
+ ],
+ "artifacts": [
+  {
+   "description": "run summary (JSON)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/summary.json"
+  },
+  {
+   "description": "run report (markdown)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/report.md"
+  }
+ ],
+ "warnings": [],
+ "summary_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/summary.json",
+ "report_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165345_9e2c4f/report.md"
+}

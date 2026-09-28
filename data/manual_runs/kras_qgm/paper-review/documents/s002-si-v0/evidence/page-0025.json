@@ -1,0 +1,252 @@
+{
+  "page": 25,
+  "lines": [
+    {
+      "text": "extracted with DCM (30 mL × 3). The combined organic layers was washed with brine (30 mL),",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        541.5333251953125,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was",
+      "bbox": [
+        56.6399040222168,
+        77.86796569824219,
+        541.525390625,
+        91.23068237304688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "purified by Prep-TLC (SiO2, DCM: MeOH=10: 1) to afford the title compound (100 mg, 64.9%) as",
+      "bbox": [
+        56.6399040222168,
+        98.74796295166016,
+        541.5328369140625,
+        112.11068725585938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a yellow solid. LCMS (ESI+): 435.1 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        118.94325256347656,
+        280.0871887207031,
+        132.6719512939453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 4: Preparation of ISM061-16",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        232.954345703125,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of Compound 16-3 (90 mg, 0.21 mmol) in DCM (1 ml) were added HCl (1 mL, 4.00",
+      "bbox": [
+        56.6399040222168,
+        180.8279571533203,
+        541.5381469726562,
+        194.11195373535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol, 4.0 M in dioxane). After the addition, the reaction mixture was stirred at 25 ℃ for 1 h. Then",
+      "bbox": [
+        56.6399040222168,
+        201.4679718017578,
+        541.5380249023438,
+        214.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the mixture was concentrated to afford a crude product, which was further purified with prep-HPLC",
+      "bbox": [
+        56.6399040222168,
+        222.1079559326172,
+        541.5403442382812,
+        235.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(column: YMC, C18 (250 × 20mm, 5μm); mobile phase: [water (0.1%NH4OH)- ACN]; B%:",
+      "bbox": [
+        56.6399040222168,
+        242.54324340820312,
+        541.539306640625,
+        256.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "20ACN%-50ACN%, 20min) to afford the title compound (30.28 mg, 41.7%) as a white solid. LCMS",
+      "bbox": [
+        56.6399040222168,
+        263.6279602050781,
+        541.5375366210938,
+        276.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(ESI+): 351.1 [M+H]+. 1H NMR (400 MHz, DMSO-d6) δ 12.87 (s, 1H), 9.65 (s, 1H), 8.15 (s, 1H),",
+      "bbox": [
+        56.6399040222168,
+        283.8232421875,
+        541.5428466796875,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "7.99 (s, 1H), 7.91 (d, J = 5.6 Hz, 1H), 7.24 (s, 1H), 7.23 (s, 1H), 7.23 - 7.18 (m, 1H), 6.66 - 6.60 (m,",
+      "bbox": [
+        56.6399040222168,
+        304.9079895019531,
+        541.53955078125,
+        318.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1H), 6.57 (dd, J = 6.8, 2.9 Hz, 1H), 6.26 (d, J = 5.6 Hz, 1H), 2.29 (s, 3H).",
+      "bbox": [
+        56.6399040222168,
+        325.5479736328125,
+        411.805908203125,
+        338.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 25
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          542,
+          133
+        ],
+        "pos": [
+          0,
+          350
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          152,
+          233,
+          164
+        ],
+        "pos": [
+          350,
+          391
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          183,
+          542,
+          339
+        ],
+        "pos": [
+          391,
+          1180
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          56,
+          355,
+          445,
+          608
+        ],
+        "pos": [
+          1180,
+          1182
+        ]
+      }
+    ],
+    "text": "extracted with DCM (30 mL × 3). The combined organic layers was washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by Prep-TLC (SiO2, DCM: MeOH=10: 1) to afford the title compound (100 mg, 64.9%) as a yellow solid. LCMS (ESI<sup>+</sup> ): 435.1 [M+H]<sup>+</sup> . \n\n# **Step 4: Preparation of ISM061-16** \n\nTo a solution of **Compound 16-3** (90 mg, 0.21 mmol) in DCM (1 ml) were added HCl (1 mL, 4.00 mmol, 4.0 M in dioxane). After the addition, the reaction mixture was stirred at 25 ℃ for 1 h. Then the mixture was concentrated to afford a crude product, which was further purified with prep-HPLC (column: YMC, C<sup>18</sup> (250 × 20mm, 5μm); mobile phase: [water (0.1%NH4OH)- ACN]; B%: 20ACN%-50ACN%, 20min) to afford the title compound (30.28 mg, 41.7%) as a white solid. LCMS (ESI<sup>+</sup> ): 351.1 [M+H]<sup>+</sup> .<sup>1</sup> H NMR (400 MHz, DMSO-d6) δ 12.87 (s, 1H), 9.65 (s, 1H), 8.15 (s, 1H), 7.99 (s, 1H), 7.91 (d, J = 5.6 Hz, 1H), 7.24 (s, 1H), 7.23 (s, 1H), 7.23 - 7.18 (m, 1H), 6.66 - 6.60 (m, 1H), 6.57 (dd, J = 6.8, 2.9 Hz, 1H), 6.26 (d, J = 5.6 Hz, 1H), 2.29 (s, 3H). \n\n\n\n"
+  }
+}

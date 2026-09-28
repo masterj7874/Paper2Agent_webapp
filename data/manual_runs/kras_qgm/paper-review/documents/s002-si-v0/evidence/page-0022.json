@@ -1,0 +1,541 @@
+{
+  "page": 22,
+  "lines": [
+    {
+      "text": "0% to 50%) in petroleum ether to afford Compound 15-1 (4 g, 63.9 % yield) as a white solid. LCMS",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        541.5405883789062,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(ESI+): 192.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        77.42324829101562,
+        168.08518981933594,
+        91.15196990966797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 15-2",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        258.6417236328125,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 1,8-dichloroisoquinoline (1000 mg, 5.05 mmol) in DMF (8 mL) were added TEA",
+      "bbox": [
+        56.6399040222168,
+        139.30796813964844,
+        541.5366821289062,
+        152.5919647216797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2044 mg, 20.202 mmol), CuI (192 mg, 1.01 mmol), Pd(pph3)2Cl2 (709 mg, 1.01 mmol) and",
+      "bbox": [
+        56.6399040222168,
+        160.18797302246094,
+        541.537109375,
+        173.55068969726562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ethynyltrimethylsilane (2480 mg, 25.25 mmol) at N2 atmosphere. Then the mixture was heated and",
+      "bbox": [
+        56.6399040222168,
+        180.8279571533203,
+        541.5341796875,
+        194.19068908691406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "stirred at 60 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (60",
+      "bbox": [
+        56.6399040222168,
+        201.4679718017578,
+        541.528564453125,
+        214.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (50",
+      "bbox": [
+        56.6399040222168,
+        222.1079559326172,
+        541.5319213867188,
+        235.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which",
+      "bbox": [
+        56.6399040222168,
+        242.9879608154297,
+        541.5393676757812,
+        256.3506774902344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was purified by column chromatography on silica gel, eluting with ethyl acetate (from 0% to 30%)",
+      "bbox": [
+        56.6399040222168,
+        263.6279602050781,
+        541.5310668945312,
+        276.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in petroleum ether, to afford Compound 15-2 (1050 mg, 80 % yield) as a yellow oil. LCMS (ESI+):",
+      "bbox": [
+        56.6399040222168,
+        283.8232421875,
+        541.539306640625,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "260.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        304.4632263183594,
+        131.24729919433594,
+        318.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3: Preparation of Compound 15-3",
+      "bbox": [
+        56.6399040222168,
+        335.6279602050781,
+        258.6417236328125,
+        348.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloro-5-iodopyrimidine (500 mg,2.08 mmol) in DMF (8 mL) were added TEA",
+      "bbox": [
+        56.6399040222168,
+        366.3479919433594,
+        541.5371704101562,
+        379.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(1050 mg, 10.40 mmol), CuI (119 mg, 0.62 mmol), Pd(pph3)2Cl2 (292 mg, 0.42 mmol) , Cesium",
+      "bbox": [
+        56.6399040222168,
+        386.98797607421875,
+        541.5390625,
+        400.3506774902344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "fluoride (632 mg, 4.16 mmol) and 8-chloro-1-((trimethylsilyl)ethynyl)isoquinoline (476 mg, 1.83",
+      "bbox": [
+        56.6399040222168,
+        407.86798095703125,
+        541.5330810546875,
+        421.2306823730469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol) at N2 atmosphere. Then the mixture was heated and stirred at 60 ℃ for 12 h. After cooling to",
+      "bbox": [
+        56.6399040222168,
+        428.5079650878906,
+        541.5204467773438,
+        441.8706970214844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (30 mL ×",
+      "bbox": [
+        56.6399040222168,
+        449.1479797363281,
+        541.537841796875,
+        462.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3), the combined organic layers were washed with brine (30 mL × 3), dried over Na2SO4, filtered and",
+      "bbox": [
+        56.6399040222168,
+        469.7879638671875,
+        541.53662109375,
+        483.15069580078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to give a residue, which was purified by column chromatography",
+      "bbox": [
+        56.6399040222168,
+        490.66796875,
+        541.5361328125,
+        503.95196533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "on silica gel, eluting with ethyl acetate (from 0% to 100%) in petroleum ether, to afford Compound",
+      "bbox": [
+        56.6399040222168,
+        511.3080139160156,
+        541.5425415039062,
+        524.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "15-3 (400 mg, 64.1% yield) as a yellow solid. LCMS (ESI+): 300.1 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        531.5032348632812,
+        426.395751953125,
+        545.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 4: Preparation of Compound 15-4",
+      "bbox": [
+        56.6399040222168,
+        562.66796875,
+        258.6417236328125,
+        575.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 8-chloro-1-((2-chloropyrimidin-5-yl)ethynyl)isoquinoline (400 mg, 1.33 mmol) in",
+      "bbox": [
+        56.6399040222168,
+        593.387939453125,
+        541.5369262695312,
+        606.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dioxane (5 mL) were added Cs2CO3 (869 mg, 2.66 mmol), BINAP (166 mg, 0.27 mmol), Pd(dba)3",
+      "bbox": [
+        56.6399040222168,
+        614.0279541015625,
+        541.5398559570312,
+        627.390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(108 mg, 0.13 mmol) and 2-(2-hydroxyethyl)isoindoline-1,3-dione (306 mg, 1.60 mmol) at N2",
+      "bbox": [
+        56.6399040222168,
+        634.66796875,
+        541.5398559570312,
+        648.0306396484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "atmosphere. Then the mixture was heated and stirred at 100 ℃ for 2 h. After cooling to 25 ℃, the",
+      "bbox": [
+        56.6399040222168,
+        655.5479736328125,
+        541.5322265625,
+        668.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (30 mL × 3), the",
+      "bbox": [
+        56.6399040222168,
+        676.1879272460938,
+        541.5383911132812,
+        689.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "combined organic layers were washed with brine (50 mL), dried over Na2SO4, filtered and",
+      "bbox": [
+        56.6399040222168,
+        696.8279418945312,
+        541.536376953125,
+        710.190673828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to give a residue, which was purified by column chromatography",
+      "bbox": [
+        56.6399040222168,
+        717.4679565429688,
+        541.5361328125,
+        730.751953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "on silica gel, eluting with ethyl acetate (from 0% to 100%) in petroleum ether, to afford Compound",
+      "bbox": [
+        56.6399040222168,
+        738.3479614257812,
+        541.5425415039062,
+        751.6319580078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "15-4 (400 mg, 66.0% yield) as a yellow solid. LCMS (ESI+): 455.0 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        758.5432739257812,
+        426.395751953125,
+        772.2719116210938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 22
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          542,
+          92
+        ],
+        "pos": [
+          0,
+          149
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          111,
+          259,
+          122
+        ],
+        "pos": [
+          149,
+          194
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          141,
+          542,
+          318
+        ],
+        "pos": [
+          194,
+          1002
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          338,
+          259,
+          349
+        ],
+        "pos": [
+          1002,
+          1047
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          368,
+          542,
+          546
+        ],
+        "pos": [
+          1047,
+          1919
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          565,
+          259,
+          576
+        ],
+        "pos": [
+          1919,
+          1964
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          595,
+          542,
+          773
+        ],
+        "pos": [
+          1964,
+          2820
+        ]
+      }
+    ],
+    "text": "0% to 50%) in petroleum ether to afford **Compound 15-1** (4 g, 63.9 % yield) as a white solid. LCMS (ESI<sup>+</sup> ): 192.3 [M+H]<sup>+</sup> . \n\n# **Step 2: Preparation of Compound 15-2** \n\nTo a solution of 1,8-dichloroisoquinoline (1000 mg, 5.05 mmol) in DMF (8 mL) were added TEA (2044 mg, 20.202 mmol), CuI (192 mg, 1.01 mmol), Pd(pph3)2Cl2 (709 mg, 1.01 mmol) and ethynyltrimethylsilane (2480 mg, 25.25 mmol) at N2 atmosphere. Then the mixture was heated and stirred at 60 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (60 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (50 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel, eluting with ethyl acetate (from 0% to 30%) in petroleum ether, to afford **Compound 15-2** (1050 mg, 80 % yield) as a yellow oil. LCMS (ESI<sup>+</sup> ): 260.3 [M+H]<sup>+</sup> . \n\n# **Step 3: Preparation of Compound 15-3** \n\nTo a solution of 2-chloro-5-iodopyrimidine (500 mg,2.08 mmol) in DMF (8 mL) were added TEA (1050 mg, 10.40 mmol), CuI (119 mg, 0.62 mmol), Pd(pph3)2Cl2 (292 mg, 0.42 mmol) , Cesium fluoride (632 mg, 4.16 mmol) and 8-chloro-1-((trimethylsilyl)ethynyl)isoquinoline (476 mg, 1.83 mmol) at N2 atmosphere. Then the mixture was heated and stirred at 60 ℃ for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (30 mL × 3), the combined organic layers were washed with brine (30 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel, eluting with ethyl acetate (from 0% to 100%) in petroleum ether, to afford **Compound 15-3** (400 mg, 64.1% yield) as a yellow solid. LCMS (ESI<sup>+</sup> ): 300.1 [M+H]<sup>+</sup> . \n\n# **Step 4: Preparation of Compound 15-4** \n\nTo a solution of 8-chloro-1-((2-chloropyrimidin-5-yl)ethynyl)isoquinoline (400 mg, 1.33 mmol) in dioxane (5 mL) were added Cs2CO3 (869 mg, 2.66 mmol), BINAP (166 mg, 0.27 mmol), Pd(dba)3 (108 mg, 0.13 mmol) and 2-(2-hydroxyethyl)isoindoline-1,3-dione (306 mg, 1.60 mmol) at N2 atmosphere. Then the mixture was heated and stirred at 100 ℃ for 2 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (30 mL × 3), the combined organic layers were washed with brine (50 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel, eluting with ethyl acetate (from 0% to 100%) in petroleum ether, to afford **Compound 15-4** (400 mg, 66.0% yield) as a yellow solid. LCMS (ESI<sup>+</sup> ): 455.0 [M+H]<sup>+</sup> . \n\n"
+  }
+}

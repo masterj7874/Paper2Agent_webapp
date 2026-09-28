@@ -1,0 +1,101 @@
+{
+  "page": 6,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0006.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. CROSS-PAGE JOIN: p0006-b000 'The residue was purified by prep-TLC ...' continues the same paragraph that page 5 ends with ('...to give a residue.'); new sentence, same block, so join_previous = 'space'. FIXED A BADLY CROPPED FIGURE: p0006-b003 (1H NMR spectrum of ISM061-3-2) had bbox [51, 390, 450, 592], which cut off the peak-shift annotation row at the top, the right-hand intensity axis (6.0x10^11 .. -5.0x10^10) and the f1 (ppm) axis at the bottom. Measured ink on the render at 56.2-472.2 x 334.9-624.1 pt and set the bbox to [51, 330, 477, 629]; asset si-nmr-ism061-3-2. p0006-b005 named Scheme S3 (asset scheme-s3), bbox verified to cover the single reaction row 6-1 -> 6-2 -> ISM061-6 (ink 57.6-472.2 x 694.1-730.1 pt). Changed '**Scheme S3** Preparation of ISM061-6' from kind text to caption; it already sat directly after its figure. 'S1.3. Preparation of ISM061-6' set to h3, Step 5 to h4. Text repairs: 'Chloroform- _d_ )' -> 'Chloroform-*d*)', 'C<sup>18</sup> ,' -> 'C<sup>18</sup>,', and the ESI/[M+H]/1H NMR superscript spacing. Kept the source's 'NH3HCO3' and 'pre-HPLC' as printed.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0006-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        92.0
+      ],
+      "markdown": "The residue was purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 1: 3) to afford **Compound 3-4** (40.0 mg, 7% yield) as yellow oil. LCMS (ESI<sup>+</sup>): 497.2 [M+H]<sup>+</sup>.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0006-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        111.0,
+        237.0,
+        122.0
+      ],
+      "markdown": "#### Step 5: Preparation of ISM061-3-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0006-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        141.0,
+        542.0,
+        319.0
+      ],
+      "markdown": "To a solution of **Compound 3-4** (35.0 mg, 0.07 mmol) in DCM (2 mL) was added TFA (0.1 mL, 1.30 mmol) dropwise at 0 ℃. After addition, the mixture was stirred at 25 ℃ for 30 min. The reaction mixture was concentrated under reduced pressure to give a residue, which was purified by pre-HPLC (SHIMADZU, LC-20AP, Column: YMC Triart C<sup>18</sup>, 20 × 250 mm, 5 μm; Mobile phase: from 25 % to 55 % ACN [0.1% NH3HCO3]; Flow rate: 15 mL/min; Retention Time: 25 min of 35 min) to afford **ISM061-3-2** (4.0 mg, 14% yield) as a white solid. LCMS(ESI<sup>+</sup>): 397.3 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, Chloroform-*d*) δ 8.22 (s, 1H), 7.17 (d, _J_ = 8.1 Hz, 1H), 7.02 (d, _J_ = 8.0 Hz, 1H), 6.90 (t, _J_ = 8.0 Hz, 1H), 6.03 – 5.77 (m, 1H), 4.49 (s, 2H), 4.40 – 4.33 (m, 2H), 3.90 (s, 3H), 3.53 – 3.43 (m, 1H), 2.56 – 2.44 (m, 3H), 2.15 (s, 3H), 1.84 – 1.80 (m, 2H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0006-b003",
+      "kind": "figure",
+      "bbox": [
+        51.0,
+        330.0,
+        477.0,
+        629.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-3-2",
+      "asset_name": "si-nmr-ism061-3-2"
+    },
+    {
+      "id": "p0006-b004",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        675.0,
+        216.0,
+        687.0
+      ],
+      "markdown": "### S1.3. Preparation of ISM061-6",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0006-b005",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        689.0,
+        478.0,
+        736.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S3",
+      "asset_name": "scheme-s3"
+    },
+    {
+      "id": "p0006-b006",
+      "kind": "caption",
+      "bbox": [
+        208.0,
+        751.0,
+        390.0,
+        763.0
+      ],
+      "markdown": "**Scheme S3** Preparation of ISM061-6",
+      "source_class": "text"
+    }
+  ]
+}

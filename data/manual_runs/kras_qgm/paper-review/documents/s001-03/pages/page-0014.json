@@ -1,0 +1,83 @@
+{
+  "page": 14,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0014.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0014.png and a 200-dpi re-render of the merged crop, and interrogated the page geometry directly with PyMuPDF rather than trusting the extractor's regions. FIGURE MERGE: the extractor had split one plate into two disconnected regions - p0014-b002 (35,43-217,72), which is only the embedded raster banner 'Clasical vs. Quantum Modelling', and p0014-b003 (70,64-565,412). The page holds exactly ONE raster image, at 40.3,49.0-212.0,66.1 (the banner); everything else on the plate - the panel frames, the bars, the error bars, the fit line, the panel letters (A), (B), (C), the axis numbers and every axis label - is VECTOR artwork, with the figure-band drawings spanning 52.1,53.0-559.2,406.5 (367 paths, excluding the page-header rule at y=38.0). Merged the two into a single figure item p0014-b002 with bbox 37,45-562,408.5, which contains both the raster banner and the full vector extent with margin on all four sides, and dropped p0014-b003. Re-rendered that exact bbox from source.pdf and checked all four edges: the banner is complete at the top, the (A) and (C) panel letters are inside the left edge, panel B's frame ends at 559.2 well inside the right edge, and the 'Number of Qubits' axis label at the bottom of panel C is fully inside above the caption, which starts at y=410.4. Named it 'Extended Data Fig. 1' / asset_name 'extended-data-figure-1' with asset_category 'supp_figs', replacing the placeholders 'Figure on PDF page 14 (3)'/'figure-p0014-002' and 'Figure on PDF page 14 (4)'/'figure-p0014-003'. CAPTION MERGE: the printed caption runs across both columns and the extractor had kinded both halves as plain 'text' (p0014-b004 left, p0014-b005 right). Merged them into ONE item, p0014-b004, kind 'caption', label 'Extended Data Fig. 1', bbox 39,405-562,590 spanning the full two-column caption band, and dropped p0014-b005. The caption is kept outside the image crop so it stays searchable. Joined at the column break where the left column ends '...(A, B) Comparative analysis of our hybrid' and the right column resumes 'approaches with varied priors.'. IMPORTANT, DELIBERATELY NOT 'FIXED': the published caption genuinely duplicates itself. Verified by pulling the raw text of both caption columns straight out of the PDF: the left column runs '...modeling priors for the QCBM. We Comparative Benchmarking of Quantum and Classical Ligand Design Methods. (A, B) Comparative analysis of our hybrid' and the right column then repeats the whole description before ending '...with error bars indicating the standard deviation across the repetitions.'. That restart mid-sentence after 'We' is a defect in the published article, not an extraction artifact, so the duplicated text is transcribed as printed rather than deduplicated. Other source-side oddities preserved as printed: the banner reads 'Clasical' (one s), panel C's y-axis reads 'Succcess Rate (SR)%' (three c's) and the legend reads 'avrage of SR% with QCBM prior' - all inside the image crop; and the caption's 'more detailed is reported in Supplementary Information Table S3.2.' is ungrammatical in the original. TEXT REPAIRS in the caption: removed the extractor's spaces inside the bold panel-letter runs, '( **A** , **B** )' -> '(**A**, **B**)', '( **C** )' -> '(**C**)', and 'Figure **A** ,' -> 'Figure **A**,'. Checked the citation superscript 26 on 'Local Filters)', the 'Mean +/- Std.' plus-minus sign, the 'n=1,000' and 'n=5,000' sample sizes and the 'Tartarus's' apostrophe against the render; all correct. Set the three margin items to omit (b000, b001 running headers; b006 running footer). The PDF's only link annotation on this page is on the omitted footer. Page 14/15 boundary: the caption ends a complete sentence and page 15 opens a new Extended Data figure, so no join is needed - this matches what the pages 15-21 reviewer reported.",
+  "warnings": [
+    "Review possible header/footer: p0014-b000",
+    "Review possible header/footer: p0014-b001",
+    "Review possible header/footer: p0014-b006"
+  ],
+  "items": [
+    {
+      "id": "p0014-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0014-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0014-b002",
+      "kind": "figure",
+      "bbox": [
+        37.0,
+        45.0,
+        562.0,
+        408.5
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Extended Data Fig. 1",
+      "asset_name": "extended-data-figure-1",
+      "asset_category": "supp_figs"
+    },
+    {
+      "id": "p0014-b004",
+      "kind": "caption",
+      "bbox": [
+        39.0,
+        405.0,
+        562.0,
+        590.0
+      ],
+      "markdown": "**Extended Data Fig. 1 | Comparative Benchmarking of Quantum and Classical Ligand Design Methods.** (**A**, **B**) Comparative analysis of our hybrid approaches with varied priors. The performance of the Quantum Circuit Born Machine (QCBM) was assessed using both a quantum simulator (Sim) and a hardware backend (HW), and contrasted with a Multi-bases QCBM (MQCBM) operating solely on a quantum simulator (Sim), as well as an LSTM model devoid of quantum priors (representing a fully classical architecture). We calculated the number of generated molecules that met a series of synthesizability and stability criteria as stipulated by the Tartarus benchmarking platform (referred to as Local Filters)<sup>26</sup> and by Chemistry42 (referred to as Chemistry42 Filters). To generate Figure **A**, we repeated the experiments five times, sampling n=1,000 compounds in each repetition and applying the filter. The reported values represent the mean for each data point, with error bars indicating the standard deviation across the repetitions (Mean ± Std.). more detailed is reported in Supplementary Information Table S3.2. (**C**) Success rate of generating molecules that meet Tartarus’s filter criteria as a function of the number of qubits used in modeling priors for the QCBM. We Comparative Benchmarking of Quantum and Classical Ligand Design Methods. (**A**, **B**) Comparative analysis of our hybrid approaches with varied priors. The performance of the Quantum Circuit Born Machine (QCBM) was assessed using both a quantum simulator (Sim) and a hardware backend (HW), and contrasted with a Multi-bases QCBM (MQCBM) operating solely on a quantum simulator (Sim), as well as an LSTM model devoid of quantum priors (representing a fully classical architecture). We calculated the number of generated molecules that met a series of synthesizability and stability criteria as stipulated by the Tartarus benchmarking platform (referred to as Local Filters)<sup>26</sup> and by Chemistry42 (referred to as Chemistry42 Filters). To generate Figure **A**, we repeated the experiments five times, sampling n=1,000 compounds in each repetition and applying the filter. The reported values represent the mean for each data point, with error bars indicating the standard deviation across the repetitions (Mean ± Std.). more detailed is reported in Supplementary Information Table S3.2. (**C**) Success rate of generating molecules that meet Tartarus’s filter criteria as a function of the number of qubits used in modeling priors for the QCBM. We repeated the experiments five times, sampling n=5,000 compounds in each repetition and applying the filter. The reported values represent the mean for each data point, with error bars indicating the standard deviation across the repetitions.",
+      "source_class": "text",
+      "label": "Extended Data Fig. 1"
+    },
+    {
+      "id": "p0014-b006",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+    }
+  ]
+}

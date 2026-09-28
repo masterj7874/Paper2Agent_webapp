@@ -1,0 +1,535 @@
+{
+  "page": 12,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0012.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0012.png plus 400-dpi crops of references 54, 58, 63 and 73, and compared every entry with evidence/page-0012.json. READING ORDER was already correct - left column refs 37-56 (b003-b022) top to bottom, then right column refs 57-73 (b023-b039), then the Acknowledgements heading and paragraph. I verified this by checking that the leading reference numbers run 37, 38, 39 ... 73 with no gap or repeat after ordering, which they do (37 entries, strictly sequential). TEXT REPAIRS: the extractor left a spurious space between the bold volume number and the following comma in every journal citation on the page - 30 occurrences of '** ,' - all corrected to '**,' (the page prints e.g. '_Biomol. NMR Assign._ **14**, 1-7 (2020).'). In ref 54 (b020) the isotope superscripts had been bound to the wrong side of their spaces, 'Perczel, A.<sup>1</sup> H,<sup>15</sup> N backbone assignment' -> 'Perczel, A. <sup>1</sup>H, <sup>15</sup>N backbone assignment', confirmed against the crop. In ref 73 (b039) the Zenodo DOI had been broken by the line wrap into 'https://doi.org/10.5281/ zenodo.11137638'; rejoined and restored as a Markdown link, which matches the two link annotations the PDF carries over those runs. DELIBERATELY NOT CHANGED, all verified as printed in the source at 400 dpi: ref 58 'Fedorchenko, S A.' (no period after the initial) and 'Zavoronkovs, A.'; ref 63 'KRas G12C Game of Yhrones' (the published reference really does print 'Yhrones' for 'Thrones'); ref 60 and 62 'KRas<sup>G12C</sup>' superscripts; ref 47 'beta-2-adrenoceptor' set as plain 'β2'; ref 46 'alpha-ketoamide'. These are source-side typos and are preserved rather than silently repaired. Confirmed the en dashes in all page ranges (1-16, 268-276, 617-626, 2214-2216, 1929-1958, ...), in 'Proc. of the IEEE-INNS-ENNS' (ref 69) and in 'de-novo'/'state-of-art'. Set the three margin items to omit (b000, b001 running headers; b042 running footer). Heading b002 'References' stays at '#': it is the Methods reference list and sits at the same level as the earlier '# References' on page 5. b041 (Acknowledgements) ends mid-sentence with '...Genome Canada, Ontario Research Fund, Ontario' and continues on page 13, which is handled by a join on page 13's first item. SUBSCRIPTS (third pass): ref 47 (b013) 'β2-adrenoceptor' -> 'β<sub>2</sub>-adrenoceptor', confirmed as a true subscript at 400 dpi. Also re-swept the whole page for split DOIs/URLs: ref 73 was the only one and is fixed; no other reference entry on this page carries a URL or DOI. The superscripts in refs 60 and 62 ('KRas<sup>G12C</sup>') are genuine superscripts, not flattened subscripts.",
+  "warnings": [
+    "Review possible header/footer: p0012-b000",
+    "Review possible header/footer: p0012-b001",
+    "Review possible header/footer: p0012-b042"
+  ],
+  "items": [
+    {
+      "id": "p0012-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0012-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0012-b002",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        47.0,
+        97.0,
+        56.0
+      ],
+      "markdown": "# References",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0012-b003",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        60.0,
+        283.0,
+        89.0
+      ],
+      "markdown": "37. Olivecrona, M., Blaschke, T., Engkvist, O. & Chen, H. Molecular de-novo design through deep reinforcement learning. _J. Cheminform._ **9**, 48 (2017).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        92.0,
+        263.0,
+        122.0
+      ],
+      "markdown": "38. Bombarelli, R. G. et al. Automatic chemical design using a data-driven continuous representation of molecules. _ACS Cent. Sci._ **4**, 268–276 (2018).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b005",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        124.0,
+        267.0,
+        143.0
+      ],
+      "markdown": "39. Krenn, M. et al. SELFIES and the future of molecular string representations. _Patterns_ **3**, 100588 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b006",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        146.0,
+        294.0,
+        186.0
+      ],
+      "markdown": "40. Zang, C. & Wang, F. Moflow: an invertible flow model for generating molecular graphs. In _Proc. of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_ (eds Gupta, R. & Liu, Y.) 617–626 (ACM, 2020).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b007",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        189.0,
+        277.0,
+        218.0
+      ],
+      "markdown": "41. Segler, M., Kogej, T., Tyrchan, C. & Waller, M. P. Generating focused molecule libraries for drug discovery with recurrent neural networks. _ACS Cent. Sci._ **4**, 120–131 (2018).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b008",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        221.0,
+        296.0,
+        251.0
+      ],
+      "markdown": "42. Brown, N., Fiscato, M., Segler, M. & Vaucher, A. C. Guacamol: benchmarking models for de novo molecular design. _J. Chem. Inf. Model._ **59**, 1096–1108 (2019).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b009",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        253.0,
+        286.0,
+        283.0
+      ],
+      "markdown": "43. Jensen, J. H. A graph-based genetic algorithm and generative model/Monte Carlo tree search for the exploration of chemical space. _Chem. Sci._ **10**, 3567–3572 (2019).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b010",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        285.0,
+        292.0,
+        316.0
+      ],
+      "markdown": "44. Nigam, A. K., Pollice, R. & Guzik, A. A. Parallel tempered genetic algorithm guided by deep neural networks for inverse molecular design. _Digit. Discov._ **1**, 390–404 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b011",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        318.0,
+        295.0,
+        348.0
+      ],
+      "markdown": "45. Frandsen, A. et al. Tyr702 is an important determinant of agonist binding and domain closure of the ligand-binding core of GLUR2. _Mol. Pharmacol._ **67**, 703–713 (2005).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b012",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        350.0,
+        286.0,
+        380.0
+      ],
+      "markdown": "46. Zhang, L. et al. Crystal structure of SARS-CoV-2 main protease provides a basis for design of improved α-ketoamide inhibitors. _Science_ **368**, 409–412 (2020).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b013",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        382.0,
+        284.0,
+        412.0
+      ],
+      "markdown": "47. Ring, A. M. et al. Adrenaline-activated structure of β<sub>2</sub>-adrenoceptor stabilized by an engineered nanobody. _Nature_ **502**, 575–579 (2013).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b014",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        414.0,
+        291.0,
+        444.0
+      ],
+      "markdown": "48. Alhossary, A., Handoko, S. D., Mu, Y. & Kwoh, C. K. Fast, accurate, and reliable molecular docking with QuickVina 2. _Bioinformatics_ **31**, 2214–2216 (2015).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b015",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        447.0,
+        274.0,
+        487.0
+      ],
+      "markdown": "49. Koes, D. R., Baumgartner, M. P. & Camacho, C. J. Lessons learned in empirical scoring with smina from the CSAR 2011 benchmarking exercise. _J. Chem. Inf. Model._ **53**, 1893–1904 (2013).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b016",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        490.0,
+        284.0,
+        520.0
+      ],
+      "markdown": "50. Voigt, J. H., Bienfait, B., Wang, S. & Nicklaus, M. C. Comparison of the NCI open database with seven large chemical structural databases. _J. Chem. Inf. Comput. Sci._ **41**, 702–712 (2001).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b017",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        522.0,
+        297.0,
+        552.0
+      ],
+      "markdown": "51. Ihlenfeldt, W. D., Voigt, J. H., Bienfait, B., Oellien, F. & Nicklaus, M. C. Enhanced CACTVS browser of the open NCI database. _J. Chem. Inf. Comput. Sci._ **42**, 46–57 (2002).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b018",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        554.0,
+        297.0,
+        605.0
+      ],
+      "markdown": "52. Akiba, T., Sano, S., Yanase, T., Ohta, T. & Koyama, M. Optuna: a next-generation hyperparameter optimization framework. In _Proc. of the 25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_ (eds Teredesai, A. & Kumar, V.) 2623– 2631 (ACM, 2019).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b019",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        608.0,
+        285.0,
+        638.0
+      ],
+      "markdown": "53. Lim, S. M. et al. Therapeutic targeting of oncogenic K-Ras by a covalent catalytic site inhibitor. _Angew. Chem. Int. Ed. Engl._ **53**, 199–204 (2014).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b020",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        639.0,
+        294.0,
+        681.0
+      ],
+      "markdown": "54. Pálfy, G., Vida, I. & Perczel, A. <sup>1</sup>H, <sup>15</sup>N backbone assignment and comparative analysis of the wild type and G12C, G12D, G12V mutants of K-Ras bound to GDP at physiological pH. _Biomol. NMR Assign._ **14**, 1–7 (2020).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b021",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        683.0,
+        267.0,
+        713.0
+      ],
+      "markdown": "55. Delaglio, F. et al. NMRPipe: a multidimensional spectral processing system based on unix pipes. _J. Biomol. NMR_ **6**, 277–293 (1995).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b022",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        715.0,
+        287.0,
+        745.0
+      ],
+      "markdown": "56. Vranken, W. et al. The CCPN data model for NMR spectroscopy: development of a software pipeline. _Proteins_ **59**, 687–696 (2005).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b023",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        556.0,
+        79.0
+      ],
+      "markdown": "57. Williamson, M. P. Using chemical shift perturbation to characterise ligand binding. _Prog. Nucl. Magn. Reson. Spectrosc._ **73**, 1–16 (2013).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b024",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        81.0,
+        557.0,
+        111.0
+      ],
+      "markdown": "58. Zagribelnyy, B., Putin, E. O., Fedorchenko, S A., Ivanenkov, Y. A. & Zavoronkovs, A. Retrosynthesis-related synthetic accessibility. WO patent 2021/229454 A1 (2021).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b025",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        113.0,
+        556.0,
+        132.0
+      ],
+      "markdown": "59. Welsch, M. et al. Multivalent small-molecule pan-RAS inhibitors. _Cell_ **168**, 878–889 (2017).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b026",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        135.0,
+        561.0,
+        165.0
+      ],
+      "markdown": "60. Kwan, A. K., Piazza, G. A., Keeton, A. B. & Leite, C. A. The path to the clinic: a comprehensive review on direct KRas<sup>G12C</sup> inhibitors. _J. Exp. Clin. Cancer Res._ **41**, 27 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b027",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        167.0,
+        528.0,
+        186.0
+      ],
+      "markdown": "61. Parikh, K. et al. Drugging KRas: current perspectives and state-of-art review. _J. Hematol. Oncol._ **15**, 152 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b028",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        189.0,
+        555.0,
+        229.0
+      ],
+      "markdown": "62. Srisongkram, T., Khamtang, P. & Weerapreeyakul, N. Prediction of KRas<sup>G12C</sup> inhibitors using conjoint fingerprint and machine learning-based QSAR models. _J. Mol. Graph. Model._ **120**, 108197 (2023).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b029",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        232.0,
+        550.0,
+        261.0
+      ],
+      "markdown": "63. Nagasaka, M. et al. KRas G12C Game of Yhrones, which direct KRas inhibitor will claim the iron throne? _Cancer Treat. Rev._ **84**, 101974 (2020).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b030",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        264.0,
+        557.0,
+        294.0
+      ],
+      "markdown": "64. Grygorenko, O. O. et al. Generating multibillion chemical space of readily accessible screening compounds. _iScience_ **23**, 101681 (2020).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b031",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        296.0,
+        555.0,
+        326.0
+      ],
+      "markdown": "65. Krenn, M., Häse, F., Nigam, A. K. & Friederich, P. Self-referencing embedded strings (SELFIES): a 100% robust molecular string representation. _Mach. Learn. Sci. Technol._ **1**, 045024 (2020).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b032",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        328.0,
+        552.0,
+        348.0
+      ],
+      "markdown": "66. Lo, A. et al. Recent advances in the self-referencing embedded strings (SELFIES) library. _Digit. Discov._ **2**, 897–908 (2023).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b033",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        350.0,
+        562.0,
+        369.0
+      ],
+      "markdown": "67. Hochreiter, S. & Schmidhuber, J. Long short-term memory. _Neural Comput._ **9**, 1735–1780 (1997).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b034",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        371.0,
+        554.0,
+        412.0
+      ],
+      "markdown": "68. Gers, F. A., Schmidhuber, J. & Cummins, F. Learning to forget: continual prediction with LSTM. In _Proc. of the 9th International Conference on Artificial Neural Networks_ (eds Sandoval, F. et al.) 850–855 (Springer, 1999).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b035",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        414.0,
+        558.0,
+        444.0
+      ],
+      "markdown": "69. Gers, F. A. & Schmidhuber, J. Recurrent nets that time and count. In _Proc. of the IEEE–INNS–ENNS International Joint Conference on Neural Networks_ (eds Amari, S.-I. et al.) 189–194 (IEEE, 2000).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b036",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        447.0,
+        561.0,
+        477.0
+      ],
+      "markdown": "70. Kingma, D. P. & Ba, J. Adam: a method for stochastic optimization. In _Proc. of the 3rd International Conference on Learning Representations_ (ed. Yue, X.-G.) 1–13 (ACM, 2015).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b037",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        479.0,
+        564.0,
+        498.0
+      ],
+      "markdown": "71. Werbos, P. J. Backpropagation through time: what it does and how to do it. _Proc. IEEE_ **78**, 1550–1560 (1990).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b038",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        500.0,
+        542.0,
+        541.0
+      ],
+      "markdown": "72. Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. & Salakhutdinov, R. Dropout: a simple way to prevent neural networks from overfitting. _J. Mach. Learn. Res._ **15**, 1929–1958 (2014).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b039",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        543.0,
+        549.0,
+        573.0
+      ],
+      "markdown": "73. Vakili, M. G. Quantum computing-enhanced algorithm unveils novel inhibitors for KRas. _Zenodo_ [https://doi.org/10.5281/zenodo.11137638](https://doi.org/10.5281/zenodo.11137638) (2024).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0012-b040",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        584.0,
+        408.0,
+        596.0
+      ],
+      "markdown": "# Acknowledgements",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0012-b041",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        597.0,
+        563.0,
+        745.0
+      ],
+      "markdown": "We want to thank A. Perdomo-Ortiz, M. Mauri, B. Dellabetta, V. Vargas-Calderón, A. Cheng, J. Miller, M. Bagherimehrab and K. Nakaji for their valuable discussion and support in this research. We thank H. Arthanari for providing us with his NMR resources. Additionally, we are thankful to the Defense Advanced Research Projects Agency for their funding (grant number HR0011-23-3-0017), which greatly supports our scientific endeavors. A.K.N. acknowledges funding from the Bio-X Stanford Interdisciplinary Graduate Fellowship. A.A.-G. thanks A. G. Frøseth for his generous support. A.A.-G. also acknowledges the generous support of Natural Resources Canada and the Canada 150 Research Chairs program. C.G. was funded through the Blue Sky Kinase Project at St. Jude Children’s Research Hospital. The research in the I.S. lab is supported by the grants from the Canadian Institute for Health Research, Genome Canada, Ontario Research Fund, Ontario",
+      "source_class": "text"
+    },
+    {
+      "id": "p0012-b042",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+    }
+  ]
+}

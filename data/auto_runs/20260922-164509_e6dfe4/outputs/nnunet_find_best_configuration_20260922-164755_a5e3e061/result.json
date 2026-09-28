@@ -1,0 +1,102 @@
+{
+ "ok": true,
+ "result": {
+  "dataset_name": "Dataset004_Hippocampus",
+  "folds": [
+   0
+  ],
+  "considered_models": [
+   {
+    "plans": "nnUNetPlans",
+    "configuration": "2d",
+    "trainer": "nnUNetTrainer_5epochs"
+   }
+  ],
+  "skipped_models": [],
+  "ensembling_allowed": false,
+  "all_results": {
+   "nnUNetTrainer_5epochs__nnUNetPlans__2d": 0.8608356357016642
+  },
+  "ranking": [
+   [
+    "nnUNetTrainer_5epochs__nnUNetPlans__2d",
+    0.8608356357016642
+   ]
+  ],
+  "best_key": "nnUNetTrainer_5epochs__nnUNetPlans__2d",
+  "best_is_ensemble": false,
+  "selected_model_or_models": [
+   {
+    "configuration": "2d",
+    "trainer": "nnUNetTrainer_5epochs",
+    "plans_identifier": "nnUNetPlans"
+   }
+  ],
+  "result_on_crossval_pre_pp": 0.8608356357016642,
+  "result_on_crossval_post_pp": 0.8610115149169687,
+  "postprocessing_functions": [
+   "remove_all_but_largest_component_from_segmentation",
+   "remove_all_but_largest_component_from_segmentation"
+  ],
+  "postprocessing_kwargs": [
+   {
+    "labels_or_regions": [
+     1,
+     2
+    ]
+   },
+   {
+    "labels_or_regions": 2
+   }
+  ],
+  "postprocessing_per_label_dice_before": {
+   "1": 0.8688778525489318,
+   "2": 0.8527934188543966
+  },
+  "postprocessing_per_label_dice_after": {
+   "1": 0.8692082975400548,
+   "2": 0.8528147322938826
+  },
+  "postprocessing_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.pkl",
+  "postprocessing_json": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.json",
+  "some_plans_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/plans.json",
+  "best_source_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0",
+  "crossval_folders": {
+   "nnUNetTrainer_5epochs__nnUNetPlans__2d": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0"
+  },
+  "ensemble_folders": {},
+  "inference_information_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_information.json",
+  "inference_instructions_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_instructions.txt",
+  "inference_instructions": "***Run inference like this:***\n\nnnUNetv2_predict -d Dataset004_Hippocampus -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 -tr nnUNetTrainer_5epochs -c 2d -p nnUNetPlans\n\n***Once inference is completed, run postprocessing like this:***\n\nnnUNetv2_apply_postprocessing -i OUTPUT_FOLDER -o OUTPUT_FOLDER_PP -pp_pkl_file /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.pkl -np 8 -plans_json /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/plans.json\n",
+  "return_dict": {
+   "folds": [
+    0
+   ],
+   "dataset_name_or_id": "Dataset004_Hippocampus",
+   "considered_models": [
+    {
+     "plans": "nnUNetPlans",
+     "configuration": "2d",
+     "trainer": "nnUNetTrainer_5epochs"
+    }
+   ],
+   "ensembling_allowed": false,
+   "all_results": {
+    "nnUNetTrainer_5epochs__nnUNetPlans__2d": 0.8608356357016642
+   },
+   "best_model_or_ensemble": {
+    "result_on_crossval_pre_pp": 0.8608356357016642,
+    "result_on_crossval_post_pp": 0.8610115149169687,
+    "postprocessing_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.pkl",
+    "some_plans_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/plans.json",
+    "selected_model_or_models": [
+     {
+      "configuration": "2d",
+      "trainer": "nnUNetTrainer_5epochs",
+      "plans_identifier": "nnUNetPlans"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,201 @@
+{
+  "page": 13,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0013.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0013.png and checked every item against evidence/page-0013.json and the PDF link annotations. This is the end-matter page and only the top third of it carries content; the rest of the page is blank, so there is nothing missed below the fold. READING ORDER was already correct: left column b002 (tail of the Acknowledgements), Author contributions, Competing interests; then right column b007 onward. Two cross-boundary joins were needed and are now set. b002 continues the Acknowledgements paragraph that page 12 ends with '...Genome Canada, Ontario Research Fund, Ontario' and this page opens 'Genomics Institute, Cystic Fibrosis Canada...' - the funder is 'Ontario Genomics Institute', so join_previous='space'. b007 continues the Competing interests paragraph across the column break: left-column b006 ends '...are affiliated with Zapata AI. C.G.' and right-column b007 opens 'is a cofounder and consultant of Virtual Discovery...', so join_previous='space' there too. LINKS: the PDF carries three content link annotations on this page and the extractor had dropped all three; restored as Markdown links - b009 'Extended data ... at https://doi.org/10.1038/s41587-024-02526-3', b010 'Supplementary information ... available at https://doi.org/10.1038/s41587-024-02526-3', and b013 'Reprints and permissions information is available at www.nature.com/reprints' (annotation target http://www.nature.com/reprints). HEADINGS: b003 'Author contributions', b005 'Competing interests' and b008 'Additional information' are set in the same large face as 'Data availability' on page 11 and correctly stay at '#'; the bold run-in leads inside Additional information ('Extended data', 'Supplementary information', 'Correspondence and requests for materials', 'Peer review information', 'Reprints and permissions information') are paragraph leads, not headings, and remain bold text. Checked the author initials and names against the render and left them exactly as printed, including 'A.A.G.' here versus 'A.A.-G.' in the page 12 Acknowledgements, 'AkshatKumar Nigam' as one word, and the accents in 'Alan Aspuru-Guzik' (a-acute) and 'Su-Yang Xu'. Set the three margin items to omit (b000, b001 running headers; b014 running footer).",
+  "warnings": [
+    "Review possible header/footer: p0013-b000",
+    "Review possible header/footer: p0013-b001",
+    "Review possible header/footer: p0013-b014"
+  ],
+  "items": [
+    {
+      "id": "p0013-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0013-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0013-b002",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        49.0,
+        290.0,
+        88.0
+      ],
+      "markdown": "Genomics Institute, Cystic Fibrosis Canada and Toronto Innovation Acceleration Partners. This research was undertaken thanks partly to funding provided to the Acceleration Consortium of the University of Toronto from the Canada First Research Excellence Fund.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0013-b003",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        100.0,
+        150.0,
+        110.0
+      ],
+      "markdown": "# Author contributions",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0013-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        113.0,
+        289.0,
+        208.0
+      ],
+      "markdown": "M.G.V. led the project, developed the quantum machine learning algorithm, benchmarked the model and contributed substantially to writing the manuscript. C.G. led the virtual screening and NMR experiments. A.K.N. worked on the genetic algorithm and generated the initial data. The Insilico team focused on synthesizing the compounds and performing the SPR assays. J.S. led the cell-based assays conducted in the I.S. lab. The remaining authors worked in parallel to validate the findings, discuss the results and contribute to the preparation and analysis of the final results.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0013-b005",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        219.0,
+        145.0,
+        230.0
+      ],
+      "markdown": "# Competing interests",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0013-b006",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        229.0,
+        288.0,
+        262.0
+      ],
+      "markdown": "A.A.G. serves as the chief visionary officer and is a board member of Kebotix. A.Z., A.A., D.B., D.P., X.D., J.L., E.R., F.R. and F.M. are affiliated with Insilico Medicine. Y.C. and D.V. are affiliated with Zapata AI. C.G.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0013-b007",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        556.0,
+        68.0
+      ],
+      "markdown": "is a cofounder and consultant of Virtual Discovery and Quantum Therapeutics. The remaining authors declare no competing interests.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0013-b008",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        79.0,
+        426.0,
+        88.0
+      ],
+      "markdown": "# Additional information",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0013-b009",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        92.0,
+        468.0,
+        111.0
+      ],
+      "markdown": "**Extended data** is available for this paper at [https://doi.org/10.1038/s41587-024-02526-3](https://doi.org/10.1038/s41587-024-02526-3).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0013-b010",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        124.0,
+        562.0,
+        144.0
+      ],
+      "markdown": "**Supplementary information** The online version contains supplementary material available at [https://doi.org/10.1038/s41587-024-02526-3](https://doi.org/10.1038/s41587-024-02526-3).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0013-b011",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        156.0,
+        549.0,
+        186.0
+      ],
+      "markdown": "**Correspondence and requests for materials** should be addressed to Christoph Gorgulla, AkshatKumar Nigam, Igor Stagljar, Alán Aspuru-Guzik or Alex Zhavoronkov.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0013-b012",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        199.0,
+        561.0,
+        228.0
+      ],
+      "markdown": "**Peer review information** _Nature Biotechnology_ thanks Su-Yang Xu and the other, anonymous, reviewer(s) for their contribution to the peer review of this work.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0013-b013",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        242.0,
+        499.0,
+        262.0
+      ],
+      "markdown": "**Reprints and permissions information** is available at [www.nature.com/reprints](http://www.nature.com/reprints).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0013-b014",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+    }
+  ]
+}

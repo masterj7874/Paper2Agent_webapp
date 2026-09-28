@@ -1,0 +1,235 @@
+{
+ "id": "dc17c919ce7b",
+ "agent": "nnUNet",
+ "tool": "nnunet_inspect_training_results",
+ "arguments": {
+  "dataset": 4,
+  "configuration": "3d_fullres",
+  "trainer": "nnUNetTrainer_5epochs",
+  "plans_identifier": "nnUNetPlans",
+  "fold": 0,
+  "checkpoint_details": true
+ },
+ "status": "done",
+ "created_at": 1790053063.766984,
+ "started_at": 1790053063.7677379,
+ "finished_at": 1790053066.0490656,
+ "result": {
+  "message": "Dataset004_Hippocampus 3d_fullres fold 0 (nnUNetTrainer_5epochs, nnUNetPlans): training complete, 5/5 epochs, checkpoints ['checkpoint_best.pth', 'checkpoint_final.pth'], validation foreground mean Dice 0.8756 over 52 cases (per label {'1': 0.884042647269944, '2': 0.8671855058756466})",
+  "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/468cf803df9b267150ae2b6c0c59b8ac84f16227/nnunetv2/utilities/file_path_utilities.py",
+  "artifacts": [
+   {
+    "description": "inspection summary (JSON)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_outputs/nnunet_inspect_training_results_20260922-135743_37f3af8d/nnunet_inspect_training_results.json"
+   },
+   {
+    "description": "copy of progress.png (training curves)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_outputs/nnunet_inspect_training_results_20260922-135743_37f3af8d/progress.png"
+   },
+   {
+    "description": "native validation/summary.json",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0/validation/summary.json"
+   }
+  ],
+  "dataset_name": "Dataset004_Hippocampus",
+  "configuration": "3d_fullres",
+  "fold": 0,
+  "trainer": "nnUNetTrainer_5epochs",
+  "plans_identifier": "nnUNetPlans",
+  "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results",
+  "model_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres",
+  "fold_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0",
+  "model_folder_entries": [
+   "crossval_results_folds_0",
+   "dataset.json",
+   "dataset_fingerprint.json",
+   "fold_0",
+   "plans.json"
+  ],
+  "fold_folder_entries": [
+   "checkpoint_best.pth",
+   "checkpoint_final.pth",
+   "debug.json",
+   "progress.png",
+   "training_log_2026_9_22_10_33_03.txt",
+   "training_log_2026_9_22_10_33_52.txt",
+   "training_log_2026_9_22_10_34_08.txt",
+   "training_log_2026_9_22_10_34_21.txt",
+   "training_log_2026_9_22_10_34_33.txt",
+   "validation"
+  ],
+  "available_fold_folders": {
+   "fold_0": [
+    "checkpoint_best.pth",
+    "checkpoint_final.pth"
+   ]
+  },
+  "checkpoints": {
+   "checkpoint_final.pth": {
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0/checkpoint_final.pth",
+    "bytes": 44906541,
+    "sha256": "03ec46c14fe8c9d420a4db1be58c72125ee25d6a80c4d25fe41b20f08960d772"
+   },
+   "checkpoint_best.pth": {
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0/checkpoint_best.pth",
+    "bytes": 44906399,
+    "sha256": "9f4dd2ee897150b33a5e9e1b0b46c21c85c46991e2db1318d45057d27a50cc90"
+   }
+  },
+  "training_complete": true,
+  "num_epochs": 5,
+  "epochs_completed": 5,
+  "batch_size": 9,
+  "patch_size": [
+   40,
+   56,
+   40
+  ],
+  "debug": {
+   "num_epochs": 5,
+   "current_epoch": 0,
+   "num_iterations_per_epoch": 250,
+   "num_val_iterations_per_epoch": 50,
+   "batch_size": 9,
+   "configuration_name": "3d_fullres",
+   "fold": 0,
+   "device": "cuda:0",
+   "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+   "torch_version": "2.11.0+cu128",
+   "cudnn_version": 91900,
+   "network": "OptimizedModule",
+   "initial_lr": 0.01,
+   "weight_decay": 3e-05,
+   "oversample_foreground_percent": 0.33,
+   "enable_deep_supervision": "True",
+   "inference_allowed_mirroring_axes": "(0, 1, 2)",
+   "hostname": "jerisuh-System-Product-Name",
+   "is_ddp": "False",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0/debug.json"
+  },
+  "configuration_settings": {
+   "patch_size": [
+    40,
+    56,
+    40
+   ],
+   "batch_size": 9,
+   "spacing": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "data_identifier": "nnUNetPlans_3d_fullres",
+   "preprocessor_name": "DefaultPreprocessor"
+  },
+  "plans_name": "nnUNetPlans",
+  "checkpoint_final_info": {
+   "trainer_name": "nnUNetTrainer_5epochs",
+   "current_epoch": 5,
+   "best_ema_fg_dice": 0.8366305828094482,
+   "inference_allowed_mirroring_axes": [
+    0,
+    1,
+    2
+   ],
+   "init_args": {
+    "configuration": "3d_fullres",
+    "fold": 0,
+    "plans_name": "nnUNetPlans",
+    "dataset_name": "Dataset004_Hippocampus"
+   },
+   "n_parameters": 17891465,
+   "n_weight_tensors": 188,
+   "epochs_logged": 5,
+   "final_train_loss": -0.8179171085357666,
+   "final_val_loss": -0.8247451782226562,
+   "final_mean_fg_pseudo_dice": 0.868552029132843,
+   "final_ema_fg_pseudo_dice": 0.8366305828094482,
+   "final_pseudo_dice_per_class": [
+    0.8767186403274536,
+    0.8603854179382324
+   ],
+   "final_lr": 0.0023492378861760376,
+   "epoch_time_s_first": 13.464,
+   "epoch_time_s_mean": 5.951
+  },
+  "checkpoint_final_info_error": null,
+  "validation": {
+   "folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0/validation",
+   "exists": true,
+   "summary_json": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0/validation/summary.json",
+   "n_segmentations": 52,
+   "n_npz": 52,
+   "n_pkl": 52,
+   "summary_sha256": "4f35acbefb71e79db01e3b757db059226c933c88695ffcc6d28ea9877b2e5b94",
+   "n_cases": 52,
+   "foreground_mean": {
+    "Dice": 0.8756140765727953,
+    "FN": 199.77884615384613,
+    "FP": 215.40384615384616,
+    "IoU": 0.7807565387563244,
+    "TN": 61638.403846153844,
+    "TP": 1476.6634615384614,
+    "n_pred": 1692.0673076923076,
+    "n_ref": 1676.4423076923076
+   },
+   "foreground_mean_dice": 0.8756140765727953,
+   "mean_per_label": {
+    "1": {
+     "Dice": 0.884042647269944,
+     "IoU": 0.7943120687338401,
+     "n_pred": 1789.6153846153845,
+     "n_ref": 1763.6538461538462
+    },
+    "2": {
+     "Dice": 0.8671855058756466,
+     "IoU": 0.7672010087788087,
+     "n_pred": 1594.5192307692307,
+     "n_ref": 1589.2307692307693
+    }
+   },
+   "mean_dice_per_label": {
+    "1": 0.884042647269944,
+    "2": 0.8671855058756466
+   }
+  },
+  "labels": {
+   "background": 0,
+   "Anterior": 1,
+   "Posterior": 2
+  },
+  "training_logs": [
+   "training_log_2026_9_22_10_33_03.txt",
+   "training_log_2026_9_22_10_33_52.txt",
+   "training_log_2026_9_22_10_34_08.txt",
+   "training_log_2026_9_22_10_34_21.txt",
+   "training_log_2026_9_22_10_34_33.txt"
+  ],
+  "latest_training_log": {
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0/training_log_2026_9_22_10_34_33.txt",
+   "torch_compile_used": true,
+   "n_epoch_time_lines": 0,
+   "validation_complete": true,
+   "tail": [
+    "2026-09-22 10:34:41.041462: hippocampus_394, shape torch.Size([1, 32, 52, 36]), rank 0 ",
+    "2026-09-22 10:34:43.667195: Validation complete ",
+    "2026-09-22 10:34:43.667275: Mean Validation Dice:  0.8756140765727953"
+   ]
+  },
+  "progress_png": {
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__3d_fullres/fold_0/progress.png",
+   "bytes": 429757,
+   "sha256": "27e44d57e7f0b84d62a8b06dcc54d182e6889bc57fd061f209e44ea6874bbe2c"
+  },
+  "timing": {
+   "wall_seconds": 2.187
+  },
+  "logs": {
+   "stdout": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_outputs/nnunet_inspect_training_results_20260922-135743_37f3af8d/inspect.stdout.log",
+   "stderr": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_outputs/nnunet_inspect_training_results_20260922-135743_37f3af8d/inspect.stderr.log"
+  },
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_outputs/nnunet_inspect_training_results_20260922-135743_37f3af8d"
+ },
+ "error": null,
+ "duration_s": 2.28
+}

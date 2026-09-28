@@ -1,0 +1,555 @@
+{
+  "page": 12,
+  "lines": [
+    {
+      "text": "Step 2: Preparation of Compound 12-2",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        258.6417236328125,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 12-1 (5.1 g, 20.2 mmol) in dichloromethane (50 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        87.94796752929688,
+        541.5328979492188,
+        101.23197174072266
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "anhydrous sodium sulfate (2.9 g, 20.2 mmol), m-CPBA (8.7 g, 40.4 mmol) and",
+      "bbox": [
+        56.6399040222168,
+        108.58796691894531,
+        541.5390625,
+        121.8719711303711
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "trifluoromethanesulfonic acid (150.1 mg, 1.0 mmol). The resulting mixture was stirred at 25 °C for",
+      "bbox": [
+        56.6399040222168,
+        129.4679718017578,
+        541.5202026367188,
+        142.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "48 hours. After the reaction is complete, quench the reaction solution with saturated sodium sulfite",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        541.5261840820312,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solution (10 mL). The mixture was then extracted with dichloromethane (50 mL × 3). The combined",
+      "bbox": [
+        56.6399040222168,
+        170.7479705810547,
+        541.526123046875,
+        184.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "organic phases was washed with saturated brine water (20 mL), dried over anhydrous sodium sulfate,",
+      "bbox": [
+        56.6399040222168,
+        191.38796997070312,
+        541.5385131835938,
+        204.67196655273438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "filtered and concentrated under reduced pressure to obtain the title compound as a yellow solid (1.2",
+      "bbox": [
+        56.6399040222168,
+        212.26795959472656,
+        541.5142822265625,
+        225.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "g,Y: 22.2%).",
+      "bbox": [
+        56.6399040222168,
+        232.907958984375,
+        124.63209533691406,
+        246.19195556640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3: Preparation of Compound 12-3",
+      "bbox": [
+        56.6399040222168,
+        253.54795837402344,
+        258.6417236328125,
+        266.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 12-2 (500 mg, 1.9 mmol) in THF (6 mL) was added water (1 mL) and",
+      "bbox": [
+        56.6399040222168,
+        284.2679748535156,
+        541.5286254882812,
+        297.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sodium hydroxide (152 mg, 3.8 mmol). The resulting mixture was stirred at20°C for 4 hours. After",
+      "bbox": [
+        56.6399040222168,
+        304.9079895019531,
+        541.5250854492188,
+        318.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the reaction was completed, dilute the reaction solution with water (10 mL). The mixture was then",
+      "bbox": [
+        56.6399040222168,
+        325.5479736328125,
+        541.5250244140625,
+        338.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "extracted with ethyl acetate (200 mL × 3). The combined organic phases was washed with saturated",
+      "bbox": [
+        56.6399040222168,
+        346.427978515625,
+        541.5187377929688,
+        359.71197509765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "brine water (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced",
+      "bbox": [
+        56.6399040222168,
+        367.0679626464844,
+        541.5213623046875,
+        380.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "pressure to give a residue, which was further purified by silica gel column chromatography",
+      "bbox": [
+        56.6399040222168,
+        387.7079772949219,
+        541.535400390625,
+        400.9919738769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(EA:PE=1:10) to afford the title compound as a yellow solid (310 mg, Y: 73.5%). LCMS (ESI): 227.1",
+      "bbox": [
+        56.6399040222168,
+        408.3479919433594,
+        541.5238037109375,
+        421.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "[M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        428.7832336425781,
+        101.24730682373047,
+        442.5119934082031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 4: Preparation of Compound 12-4",
+      "bbox": [
+        56.6399040222168,
+        449.86798095703125,
+        258.6417236328125,
+        463.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 12-3 (280 mg, 1.2 mmol) in acetone (18 mL) was added cesium carbonate",
+      "bbox": [
+        56.6399040222168,
+        480.5879821777344,
+        541.5233154296875,
+        493.8719787597656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(782 mg,2.4 mmol) and BnBr (205.2 mg, 1.2 mmol). The resulting mixture was stirred at 70°C for",
+      "bbox": [
+        56.6399040222168,
+        501.22796630859375,
+        541.5250854492188,
+        514.511962890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "14 hours. Upon completion, the mixture was concentrated under reduced pressure to give a residue,",
+      "bbox": [
+        56.6399040222168,
+        521.867919921875,
+        541.5393676757812,
+        535.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which was purified by silica gel column chromatography (EA:PE=1:10) to afford the title compound",
+      "bbox": [
+        56.6399040222168,
+        542.7479248046875,
+        541.5286254882812,
+        556.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "as a yellow oil (200 mg, Y: 51%).",
+      "bbox": [
+        56.6399040222168,
+        563.387939453125,
+        225.612548828125,
+        576.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 5: Preparation of Compound 12-5",
+      "bbox": [
+        56.6399040222168,
+        584.0279541015625,
+        258.6417236328125,
+        597.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 5-bromo-4-methylpyrimidine (2 g,11.6 mmol) in tetrahydrofuran (40 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        614.7479248046875,
+        541.5267944335938,
+        628.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LiHMDS (17 mL,17 mmol, 1M in THF) dropwise at -70°C under nitrogen. The resulting mixture",
+      "bbox": [
+        56.6399040222168,
+        635.387939453125,
+        541.533447265625,
+        648.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was stirred at -70°C for 1 hour. Then diethyl carbonate (1 g, 7 mmol) was added. The mixture was",
+      "bbox": [
+        56.6399040222168,
+        656.0279541015625,
+        541.5370483398438,
+        669.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "stirred at room temperature for 16 hours. Upon completion, pour the reaction solution into ice water",
+      "bbox": [
+        56.6399040222168,
+        676.907958984375,
+        541.52734375,
+        690.1919555664062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(10 mL), the resulting mixture was extracted with ethyl acetate (50 mL × 3). The combined organic",
+      "bbox": [
+        56.6399040222168,
+        697.5479736328125,
+        541.523681640625,
+        710.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and",
+      "bbox": [
+        56.6399040222168,
+        718.1879272460938,
+        541.5313110351562,
+        731.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to afford a residue, which was purified by silica gel column",
+      "bbox": [
+        56.6399040222168,
+        738.8279418945312,
+        541.5214233398438,
+        752.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 12
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          56,
+          59,
+          259,
+          71
+        ],
+        "pos": [
+          0,
+          45
+        ]
+      },
+      {
+        "index": 1,
+        "class": "text",
+        "bbox": [
+          56,
+          90,
+          542,
+          247
+        ],
+        "pos": [
+          45,
+          722
+        ]
+      },
+      {
+        "index": 2,
+        "class": "section-header",
+        "bbox": [
+          56,
+          256,
+          259,
+          267
+        ],
+        "pos": [
+          722,
+          767
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          56,
+          286,
+          542,
+          443
+        ],
+        "pos": [
+          767,
+          1464
+        ]
+      },
+      {
+        "index": 4,
+        "class": "section-header",
+        "bbox": [
+          56,
+          452,
+          259,
+          464
+        ],
+        "pos": [
+          1464,
+          1509
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          56,
+          482,
+          542,
+          577
+        ],
+        "pos": [
+          1509,
+          1935
+        ]
+      },
+      {
+        "index": 6,
+        "class": "section-header",
+        "bbox": [
+          56,
+          586,
+          259,
+          598
+        ],
+        "pos": [
+          1935,
+          1980
+        ]
+      },
+      {
+        "index": 7,
+        "class": "text",
+        "bbox": [
+          56,
+          617,
+          542,
+          753
+        ],
+        "pos": [
+          1980,
+          2651
+        ]
+      }
+    ],
+    "text": "# **Step 2: Preparation of Compound 12-2** \n\nTo a solution of **compound 12-1** (5.1 g, 20.2 mmol) in dichloromethane (50 mL) was added anhydrous sodium sulfate (2.9 g, 20.2 mmol), m-CPBA (8.7 g, 40.4 mmol) and trifluoromethanesulfonic acid (150.1 mg, 1.0 mmol). The resulting mixture was stirred at 25 °C for 48 hours. After the reaction is complete, quench the reaction solution with saturated sodium sulfite solution (10 mL). The mixture was then extracted with dichloromethane (50 mL × 3). The combined organic phases was washed with saturated brine water (20 mL), dried over anhydrous sodium sulfate, filtered and concentrated under reduced pressure to obtain the title compound as a yellow solid (1.2 g,Y: 22.2%). \n\n# **Step 3: Preparation of Compound 12-3** \n\nTo a solution of **compound 12-2** (500 mg, 1.9 mmol) in THF (6 mL) was added water (1 mL) and sodium hydroxide (152 mg, 3.8 mmol). The resulting mixture was stirred at20°C for 4 hours. After the reaction was completed, dilute the reaction solution with water (10 mL). The mixture was then extracted with ethyl acetate (200 mL × 3). The combined organic phases was washed with saturated brine water (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography (EA:PE=1:10) to afford the title compound as a yellow solid (310 mg, Y: 73.5%). LCMS (ESI): 227.1 [M+H]<sup>+</sup> . \n\n# **Step 4: Preparation of Compound 12-4** \n\nTo a solution of **compound 12-3** (280 mg, 1.2 mmol) in acetone (18 mL) was added cesium carbonate (782 mg,2.4 mmol) and BnBr (205.2 mg, 1.2 mmol). The resulting mixture was stirred at 70°C for 14 hours. Upon completion, the mixture was concentrated under reduced pressure to give a residue, which was purified by silica gel column chromatography (EA:PE=1:10) to afford the title compound as a yellow oil (200 mg, Y: 51%). \n\n# **Step 5: Preparation of Compound 12-5** \n\nTo a solution of 5-bromo-4-methylpyrimidine (2 g,11.6 mmol) in tetrahydrofuran (40 mL) was added LiHMDS (17 mL,17 mmol, 1M in THF) dropwise at -70°C under nitrogen. The resulting mixture was stirred at -70°C for 1 hour. Then diethyl carbonate (1 g, 7 mmol) was added. The mixture was stirred at room temperature for 16 hours. Upon completion, pour the reaction solution into ice water (10 mL), the resulting mixture was extracted with ethyl acetate (50 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to afford a residue, which was purified by silica gel column \n\n"
+  }
+}

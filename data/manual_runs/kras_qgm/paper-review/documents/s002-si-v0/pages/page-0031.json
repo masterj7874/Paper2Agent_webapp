@@ -1,0 +1,60 @@
+{
+  "page": 31,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0031.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0031.png and compared both procedures with evidence/page-0031.json. PyMuPDF confirms the page has zero drawings and zero images, so the absence of figure/table items is correct. Reading order already correct; no cross-page join needed at the 30/31 boundary because page 30 ends with the Scheme S8 caption and this page opens on a Step heading. Step headings demoted to level 4 under the S1.9 (ISM061-22) section heading that starts on page 30. Text repairs: '(ESI<sup>+</sup> )' and '[M+H]<sup>+</sup> .' spacing, '.<sup>1</sup> H NMR' -> '. <sup>1</sup>H NMR', 'DMSO- _d_ 6)' -> 'DMSO-*d*6)'. Verified against the PDF spans that the HPLC column string really is superscript 18 ('C<sup>18</sup>', kept as extracted), that '5um' uses GREEK SMALL LETTER MU (U+03BC) as '5μm', and that '[water (0.1%NH4HCO3)- ACN]; B%: 30ACN%-60ACN%, 17 min of 25 min' is transcribed exactly, including the space after the hyphen. NOTE for the coordinator: the 1H NMR spectrum belonging to this ISM061-22 procedure is printed at the TOP of page 32, i.e. it floats past the S1.12 heading; I named it there accordingly but the plan.json reading_order may want it pulled back next to this text. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*. Re-checked for missed artwork as the coordinator asked: PyMuPDF reports 0 drawings and 0 images on this page, and the render shows nothing but text, so the absence of a figure item is correct, not an extractor miss. Italic isotope marker set as 'DMSO-*d*6' to match the form the pages 1-13 reviewer established (pages 6, 7, 10); '_d_6' was rejected because CommonMark underscore emphasis does not close before an alphanumeric, so it would have leaked literal underscores into the output. '_J_' and '_o_' keep their underscore form, which does render, exactly as pages 6/7/10/14/17/20/23 have them. THREE-WAY ARTWORK PROOF (coordinator method): content stream checked for drawing ops, embedded images, form XObjects and inline images -> images=0, xobjects=0, forms=0, inline BI=0, and every vector op present is a white-fill (1,1,1) rectangle one text line tall on a text baseline (the invisible highlight boxes behind the spans the extractor had wrapped in <mark>). Then the page was rendered at 200 dpi with every native text line masked: ZERO non-white pixels remain. This page is genuinely text-only; no figure item was added.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0031-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        259.0,
+        71.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 22-1",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0031-b001",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        90.0,
+        542.0,
+        267.0
+      ],
+      "markdown": "To a solution of 2-chloropyrimidin-4-amine (130 mg, 1.00 mmol) in dioxane (3 mL) were added H2O (0.2 mL), (2-methoxy-3-methylphenyl)boronic acid (183 mg, 1.10 mmol), Pd(dppf)Cl2 (73 mg, 0.10 mmol) and K2CO3 (347 mg, 2.50 mmol) under N2 atmosphere. Then the mixture was heated and stirred at 100 ℃ for 1 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (30 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 50%) in petroleum ether to give the title compound (200 mg, 64.8% yield, purity: 70%) as a yellow oil. LCMS (ESI<sup>+</sup>): 216.1 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0031-b002",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        286.0,
+        233.0,
+        298.0
+      ],
+      "markdown": "#### Step 2: Preparation of ISM061-22",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0031-b003",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        317.0,
+        542.0,
+        577.0
+      ],
+      "markdown": "To a solution of 2-(2-methoxy-3-methylphenyl)pyrimidin-4-amine (161 mg, 0.52 mmol, purity: 70%) in dioxane (4 mL) were added 4-bromo-1-methyl-1H-indole (100 mg, 0.47 mmol), XantphosPdG4 (77 mg, 0.05 mmol) and Cs2CO3 (310 mg, 0.95 mmol) under N2 atmosphere. Then the mixture was heated and stirred at 110 ℃ for 3 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (40 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (30 mL × 3), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 60%) in petroleum ether and Prep-HPLC (column: YMC, C<sup>18</sup> (250 × 20mm, 5μm); mobile phase: [water (0.1%NH4HCO3)- ACN]; B%: 30ACN%-60ACN%, 17 min of 25 min) to afford the title compound (70 mg, 42.7% yield) as a white solid. LCMS (ESI<sup>+</sup>): 345.1 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, DMSO-*d*6) δ 9.36 (s, 1H), 8.34 (d, _J_ = 5.9 Hz, 1H), 7.65 (d, _J_ = 7.6 Hz, 1H), 7.44 (d, _J_ = 5.9 Hz, 1H), 7.35 – 7.25 (m, 2H), 7.19 (d, _J_ = 8.1 Hz, 1H), 7.09 (dt, _J_ = 11.3, 7.7 Hz, 2H), 6.81 (d, _J_ = 5.9 Hz, 1H), 6.61 (d, _J_ = 3.1 Hz, 1H), 3.79 (s, 3H), 3.60 (s, 3H), 2.28 (s, 3H).",
+      "source_class": "text"
+    }
+  ]
+}

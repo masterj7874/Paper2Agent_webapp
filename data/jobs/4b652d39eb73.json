@@ -1,0 +1,133 @@
+{
+ "id": "4b652d39eb73",
+ "agent": "HDBET",
+ "tool": "hdbet_evaluate_brain_mask",
+ "arguments": {
+  "prediction_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_extract_brain_20260922T074841Z_7e5855d1/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+  "reference_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063347.9015296,
+ "started_at": 1790063347.9023228,
+ "finished_at": 1790063350.3878055,
+ "result": {
+  "message": "Evaluated 1 prediction/reference mask pair (file mode, threshold 0.5) with nnunetv2 compute_metrics (Dice/IoU/TP/FP/FN/TN, label 1, SimpleITKIO) and SimpleITK HausdorffDistanceImageFilter (maximum + average Hausdorff distance, mm). Mean Dice 0.97835, median Dice 0.97835, mean maximum Hausdorff 8.000 mm. NOTE: the paper's HD95 is NOT computed (no implementation in HD-BET/nnunetv2/SimpleITK).",
+  "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/v2.8.1/nnunetv2/evaluation/evaluate_predictions.py",
+  "artifacts": [
+   {
+    "description": "per-case metrics CSV (Dice, IoU, TP/FP/FN/TN, n_pred, n_ref, Hausdorff max/avg mm, volumes)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590/metrics_per_case.csv"
+   },
+   {
+    "description": "summary JSON (settings, per-case metrics, mean metrics, notes, warnings, case details)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590/summary.json"
+   },
+   {
+    "description": "native nnunetv2 output (compute_metrics result)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590/nnunet_metrics.json"
+   },
+   {
+    "description": "binarised uint8 reference masks used for evaluation",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590/binarised/reference"
+   },
+   {
+    "description": "binarised uint8 prediction masks used for evaluation",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590/binarised/prediction"
+   },
+   {
+    "description": "captured stdout of the nnunetv2/SimpleITK child process",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590/logs/child_stdout.log"
+   }
+  ],
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164839_1beff9/outputs/hdbet_evaluate_brain_mask_20260922T074907Z_e73d2590",
+  "mode": "file",
+  "n_cases": 1,
+  "settings": {
+   "mode": "file",
+   "threshold": 0.5,
+   "prediction_suffix": "",
+   "labels": [
+    1
+   ],
+   "reader": "SimpleITKIO",
+   "file_ending": ".nii.gz",
+   "upstream_binding": "nnunetv2.evaluation.evaluate_predictions.compute_metrics",
+   "num_processes": 1,
+   "child_python": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/dist/hdbet-agent/mcp/HD-BET-mcp/.venv/bin/python",
+   "shared_common_helper": true,
+   "child_process": {
+    "returncode": 0,
+    "wall_seconds": 2.467,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+   }
+  },
+  "hd95_computed": false,
+  "hd95_note": "HD95 (the 95th-percentile Hausdorff distance reported in the HD-BET paper) is NOT computed: no implementation exists in HD-BET, nnunetv2 2.8.1 or SimpleITK 2.5.6. The maximum Hausdorff distance reported here is by construction >= HD95 and must not be compared with the paper's HD95 values.",
+  "hausdorff_note": "SimpleITK.HausdorffDistanceImageFilter: maximum symmetric surface distance (hausdorff_max_mm) and average Hausdorff distance (hausdorff_avg_mm) in mm, physical space, computed on the binarised masks.",
+  "binarisation_note": "I/O adaptation: both masks are binarised as uint8(value > threshold) into fresh copies before evaluation, because compute_metrics compares labels by exact equality (== 1) and the Hausdorff filter needs a common integer pixel type; binary {0,1} masks are unchanged by the default threshold 0.5.",
+  "mean_metrics": {
+   "Dice": 0.978350696315835,
+   "IoU": 0.9576189136407269,
+   "TP": 231445,
+   "FP": 5848,
+   "FN": 4395,
+   "TN": 840347,
+   "n_pred": 237293,
+   "n_ref": 235840
+  },
+  "summary_stats": {
+   "n_cases": 1,
+   "dice": {
+    "mean": 0.978350696315835,
+    "median": 0.978350696315835,
+    "min": 0.978350696315835,
+    "max": 0.978350696315835
+   },
+   "hausdorff_max_mm": {
+    "mean": 8.0,
+    "median": 8.0,
+    "max": 8.0
+   },
+   "hausdorff_avg_mm": {
+    "mean": 0.04524625018621277
+   }
+  },
+  "per_case": [
+   {
+    "case_id": "tpl-MNI152NLin2009cAsym_res-02_T1w_bet",
+    "Dice": 0.978350696315835,
+    "IoU": 0.9576189136407269,
+    "TP": 231445,
+    "FP": 5848,
+    "FN": 4395,
+    "TN": 840347,
+    "n_pred": 237293,
+    "n_ref": 235840,
+    "hausdorff_max_mm": 8.0,
+    "hausdorff_avg_mm": 0.04524625018621277,
+    "pred_volume_mL": 1898.344,
+    "ref_volume_mL": 1886.72,
+    "n_non_binary_voxels_pred": 0,
+    "n_non_binary_voxels_ref": 0,
+    "axcodes_pred": "RAS",
+    "axcodes_ref": "RAS"
+   }
+  ],
+  "unmatched_reference_files": [],
+  "warnings": [],
+  "versions": {
+   "nnunetv2": "2.8.1",
+   "SimpleITK": "2.5.6",
+   "python": "3.10.18"
+  },
+  "timings_s": {
+   "nnunetv2_compute_metrics_s": 0.009,
+   "simpleitk_hausdorff_s": 0.082,
+   "total_s": 2.481
+  }
+ },
+ "error": null,
+ "duration_s": 2.49
+}

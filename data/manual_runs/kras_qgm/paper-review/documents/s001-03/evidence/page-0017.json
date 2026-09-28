@@ -1,0 +1,280 @@
+{
+  "page": 17,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended Data Fig. 4 | Pharmacophore Model Depiction. Pharmacophore",
+      "bbox": [
+        39.68510055541992,
+        319.1959228515625,
+        276.80450439453125,
+        327.9459228515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Model Depiction for KRAS Inhibitor TH-Z816 Based on the Co-crystallized Ligand",
+      "bbox": [
+        39.68510055541992,
+        329.3109130859375,
+        294.2449645996094,
+        337.94891357421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Structure Analyzed with Chemistry42 (PDB: 7EW9). This figure illustrates the",
+      "bbox": [
+        39.68510055541992,
+        339.31390380859375,
+        281.4371032714844,
+        347.951904296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "key pharmacophoric features identified from the ligand structure of TH-Z816",
+      "bbox": [
+        39.68510437011719,
+        349.31689453125,
+        282.551513671875,
+        357.95489501953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "bound to KRAS G12D. A blue sphere represents a critical ring system that",
+      "bbox": [
+        39.68510437011719,
+        359.31988525390625,
+        266.6363525390625,
+        367.9578857421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "supports structural integrity, a green sphere highlights a hydrophobic moiety",
+      "bbox": [
+        306.4691162109375,
+        319.3218688964844,
+        551.0341796875,
+        327.9598693847656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "essential for binding affinity, and a cyan sphere indicates a hydrogen bond donor",
+      "bbox": [
+        306.4691162109375,
+        329.3248596191406,
+        560.162353515625,
+        337.9628601074219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "that contributes to interaction specificity with the KRAS protein. The protein",
+      "bbox": [
+        306.4691162109375,
+        339.3278503417969,
+        548.1300048828125,
+        347.9658508300781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "structure is shown on the right, while the pharmacophore interactions within the",
+      "bbox": [
+        306.4691162109375,
+        349.3308410644531,
+        560.5625,
+        357.9688415527344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "KRAS Switch-II binding pocket are detailed on the left.",
+      "bbox": [
+        306.4691162109375,
+        359.3338317871094,
+        475.22149658203125,
+        367.9718322753906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 17
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          94,
+          48,
+          506,
+          316
+        ],
+        "pos": [
+          71,
+          73
+        ]
+      },
+      {
+        "index": 3,
+        "class": "caption",
+        "bbox": [
+          39,
+          320,
+          295,
+          368
+        ],
+        "pos": [
+          73,
+          452
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          306,
+          320,
+          561,
+          368
+        ],
+        "pos": [
+          452,
+          830
+        ]
+      },
+      {
+        "index": 5,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          830,
+          853
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n\n\n**Extended Data Fig. 4 | Pharmacophore Model Depiction.** Pharmacophore Model Depiction for KRAS Inhibitor TH-Z816 Based on the Co-crystallized Ligand Structure Analyzed with Chemistry42 (PDB: 7EW9). This figure illustrates the key pharmacophoric features identified from the ligand structure of TH-Z816 bound to KRAS G12D. A blue sphere represents a critical ring system that \n\nsupports structural integrity, a green sphere highlights a hydrophobic moiety essential for binding affinity, and a cyan sphere indicates a hydrogen bond donor that contributes to interaction specificity with the KRAS protein. The protein structure is shown on the right, while the pharmacophore interactions within the KRAS Switch-II binding pocket are detailed on the left. \n\nNature Biotechnology \n\n"
+  }
+}

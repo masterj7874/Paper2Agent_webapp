@@ -1,0 +1,443 @@
+{
+  "output": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/renders/c26636325def42fcbd3cfac105dbac2d/s001-03",
+  "paper": "references/s001-03.md",
+  "dpi": 180,
+  "images": [
+    {
+      "page": 2,
+      "id": "p0002-b002",
+      "file": "assets/s001-03/figure-1.png",
+      "bbox": [
+        96.0,
+        45.0,
+        504.0,
+        550.0
+      ]
+    },
+    {
+      "page": 4,
+      "id": "p0004-b002",
+      "file": "assets/s001-03/figure-2.png",
+      "bbox": [
+        33.0,
+        43.0,
+        565.0,
+        646.0
+      ]
+    },
+    {
+      "page": 10,
+      "id": "p0010-b015a",
+      "file": "assets/s001-03/formula-1.png",
+      "bbox": [
+        350.0,
+        405.5,
+        565.0,
+        424.5
+      ]
+    },
+    {
+      "page": 10,
+      "id": "p0010-b015b",
+      "file": "assets/s001-03/formula-2.png",
+      "bbox": [
+        350.0,
+        431.5,
+        565.0,
+        450.5
+      ]
+    },
+    {
+      "page": 10,
+      "id": "p0010-b015c",
+      "file": "assets/s001-03/formula-3.png",
+      "bbox": [
+        350.0,
+        457.5,
+        565.0,
+        477.0
+      ]
+    },
+    {
+      "page": 10,
+      "id": "p0010-b015d",
+      "file": "assets/s001-03/formula-4.png",
+      "bbox": [
+        350.0,
+        484.0,
+        565.0,
+        503.5
+      ]
+    },
+    {
+      "page": 10,
+      "id": "p0010-b015e",
+      "file": "assets/s001-03/formula-5.png",
+      "bbox": [
+        350.0,
+        509.5,
+        565.0,
+        529.0
+      ]
+    },
+    {
+      "page": 10,
+      "id": "p0010-b015f",
+      "file": "assets/s001-03/formula-6.png",
+      "bbox": [
+        350.0,
+        535.0,
+        565.0,
+        554.5
+      ]
+    },
+    {
+      "page": 10,
+      "id": "p0010-b029",
+      "file": "assets/s001-03/formula-7.png",
+      "bbox": [
+        399.0,
+        696.0,
+        565.0,
+        716.0
+      ]
+    },
+    {
+      "page": 11,
+      "id": "p0011-b003",
+      "file": "assets/s001-03/formula-8.png",
+      "bbox": [
+        130.0,
+        72.0,
+        299.0,
+        104.0
+      ]
+    },
+    {
+      "page": 11,
+      "id": "p0011-b006a",
+      "file": "assets/s001-03/formula-9.png",
+      "bbox": [
+        82.0,
+        276.5,
+        299.0,
+        297.0
+      ]
+    },
+    {
+      "page": 11,
+      "id": "p0011-b006b",
+      "file": "assets/s001-03/formula-10.png",
+      "bbox": [
+        82.0,
+        303.0,
+        299.0,
+        323.0
+      ]
+    },
+    {
+      "page": 11,
+      "id": "p0011-b006c",
+      "file": "assets/s001-03/formula-11.png",
+      "bbox": [
+        82.0,
+        329.5,
+        299.0,
+        349.5
+      ]
+    },
+    {
+      "page": 11,
+      "id": "p0011-b006d",
+      "file": "assets/s001-03/formula-12.png",
+      "bbox": [
+        82.0,
+        356.5,
+        299.0,
+        376.5
+      ]
+    },
+    {
+      "page": 11,
+      "id": "p0011-b006e",
+      "file": "assets/s001-03/formula-13.png",
+      "bbox": [
+        82.0,
+        384.0,
+        299.0,
+        404.0
+      ]
+    },
+    {
+      "page": 11,
+      "id": "p0011-b006f",
+      "file": "assets/s001-03/formula-14.png",
+      "bbox": [
+        82.0,
+        409.5,
+        299.0,
+        429.5
+      ]
+    },
+    {
+      "page": 11,
+      "id": "p0011-b006g",
+      "file": "assets/s001-03/formula-15.png",
+      "bbox": [
+        82.0,
+        435.5,
+        299.0,
+        455.5
+      ]
+    },
+    {
+      "page": 14,
+      "id": "p0014-b002",
+      "file": "assets/s001-03/extended-data-figure-1.png",
+      "bbox": [
+        37.0,
+        45.0,
+        562.0,
+        408.5
+      ]
+    },
+    {
+      "page": 15,
+      "id": "p0015-b002",
+      "file": "assets/s001-03/extended-data-figure-2.png",
+      "bbox": [
+        37.0,
+        46.0,
+        562.0,
+        320.0
+      ]
+    },
+    {
+      "page": 16,
+      "id": "p0016-b002",
+      "file": "assets/s001-03/extended-data-figure-3.png",
+      "bbox": [
+        38.0,
+        47.0,
+        566.0,
+        372.0
+      ]
+    },
+    {
+      "page": 17,
+      "id": "p0017-b002",
+      "file": "assets/s001-03/extended-data-figure-4.png",
+      "bbox": [
+        88.0,
+        42.0,
+        512.0,
+        318.0
+      ]
+    },
+    {
+      "page": 18,
+      "id": "p0018-b002",
+      "file": "assets/s001-03/extended-data-figure-5.png",
+      "bbox": [
+        90.0,
+        45.0,
+        511.0,
+        294.0
+      ]
+    },
+    {
+      "page": 19,
+      "id": "p0019-image",
+      "file": "assets/s001-03/reporting-summary-page-1.png",
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ]
+    },
+    {
+      "page": 20,
+      "id": "p0020-image",
+      "file": "assets/s001-03/reporting-summary-page-2.png",
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ]
+    },
+    {
+      "page": 21,
+      "id": "p0021-image",
+      "file": "assets/s001-03/reporting-summary-page-3.png",
+      "bbox": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ]
+    }
+  ],
+  "tables": [],
+  "pages": [
+    {
+      "page": 1,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 2,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 3,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 4,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 5,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 6,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 7,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 8,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 9,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 10,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 11,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 12,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 13,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 14,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 15,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 16,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 17,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 18,
+      "reviewed": true,
+      "mode": "native"
+    },
+    {
+      "page": 19,
+      "reviewed": true,
+      "mode": "image"
+    },
+    {
+      "page": 20,
+      "reviewed": true,
+      "mode": "image"
+    },
+    {
+      "page": 21,
+      "reviewed": true,
+      "mode": "image"
+    }
+  ],
+  "files": {
+    "SKILL.md": "a491f0577755370b77686c855c6599f31b60ab9527a4c2858b77f7cb601c0cfe",
+    "references/s001-03.md": "cb2ce8c3142b0da56c7e0d512e2cf3a14c0c731bcc3aee09f4e997d5937c8267",
+    "assets/s001-03/formula-9.png": "b390bd3a119c213090f4d4b76d7a57a930195f03aa01d4b592b82e9bbf3eb803",
+    "assets/s001-03/formula-13.png": "dbb797b697532604591b8b1a26f57820384b301b8b3738e6ca96484ab4eeca72",
+    "assets/s001-03/formula-10.png": "19f13f2712a0207e36ac0ff8c182bd9760a6bdd2a5c7d54399a48424b343324a",
+    "assets/s001-03/formula-7.png": "2896e2eb13852711dc734ab707d026c44e8b13e26bdbb66b1941d67de8824098",
+    "assets/s001-03/figure-2.png": "dd39a6526bc0d15fd0cfd642bc046e6cb5c177560983db445ef27e3524a284f6",
+    "assets/s001-03/formula-8.png": "c76b6244ef90b828e502db680d360a0bb0ae30e4c83d7cab9240eaffe71c7b9f",
+    "assets/s001-03/formula-3.png": "f6cd04fb4184593403feff5784c3469521481b6583b7e54472ec5afabf3f005c",
+    "assets/s001-03/extended-data-figure-1.png": "06ed8cb448a64639bdf9fa3f7b9062a71f9add09af754c3dca3ba59d61cc650d",
+    "assets/s001-03/reporting-summary-page-2.png": "2a7283326c9d2e51d47fff7bbaa079d262066178e6d9306bfce6bf82b6ca6869",
+    "assets/s001-03/figure-1.png": "d86f928d2780ae6e90f20edf79fcc75891833a3892db20e59bc318347630eef3",
+    "assets/s001-03/formula-11.png": "938cb0c727098543feb59377b351c74bf4688ea5c0d5c9d2965e2d1669aab067",
+    "assets/s001-03/formula-1.png": "8cebf864372ccec7b2448a4c90bc6d160b99244660b70c5880114f712f182ce7",
+    "assets/s001-03/formula-6.png": "8028beb101f9afc3c1367992e8d8cdd8516f3e8f304166b1d62ce2c33f99fcfd",
+    "assets/s001-03/extended-data-figure-2.png": "7cd8bbcfc8795e1dea3cdc61e0e761042774e0ab39aeccdeff37c873f3b2aa2a",
+    "assets/s001-03/formula-15.png": "a35967bac81ee4fc5a0e78dea531744809b944d16b918a9d400da57eb7af3580",
+    "assets/s001-03/formula-5.png": "e02a9642c883f9c612928a852d856cd30cea39b96113db082c7bd29ca472a4d8",
+    "assets/s001-03/formula-4.png": "25f390eedede969fbe18eaf663d81ce04250dc12cb59afbeffdf02e9f744b3aa",
+    "assets/s001-03/formula-2.png": "086fbe29426e01647913d5c16e686474709454f937e54eebc2581d8c21ab6f1e",
+    "assets/s001-03/formula-12.png": "9999dea9d57247adda30b8241c0c05d19c69f82d1d30591e6a818f71c986fd8f",
+    "assets/s001-03/extended-data-figure-5.png": "09f118ef91ab810aeb24dcdf8daed1aeeb798bba5f3f78c4246348e08a92b4f5",
+    "assets/s001-03/extended-data-figure-4.png": "8970d20de4d8daec796ef8cc40298f1a066188e7d143e503d28396868a476bab",
+    "assets/s001-03/reporting-summary-page-3.png": "6c94a8095aa44486199db8e9b52df126156d383a31d92eb653d6c272f5a3f40a",
+    "assets/s001-03/reporting-summary-page-1.png": "e678c80af45b30079c9e3fb5344fd43cb0abfcbe2f2ffcc8a31331d221237249",
+    "assets/s001-03/formula-14.png": "4ce1701c1b7469c396248cbaaa3e102a4b39f3979b5333894576965f083bce6a",
+    "assets/s001-03/extended-data-figure-3.png": "54c4e533ae1d9870a47ab325f3473168cc6cc51b3cea8ab26fec17c5b36dabc5"
+  },
+  "review_inputs": {
+    "plan.json": "fd5192f411d12a0c47c391e5a9a1400abb4c212e4e31efc936a4b0851ab8d178",
+    "pages/page-0001.json": "3d22a797e10c13b711908d03074820608b96aeffacc4dbef738d5fe4930d8917",
+    "pages/page-0002.json": "31ec7a390d1c7705f27480d0105cb4552090647da70c540bc7890ebd8910c9ee",
+    "pages/page-0003.json": "8c0116ef59782a311bdf7a8c69a2ea52d4951e983e314b19fc31c904301f0233",
+    "pages/page-0004.json": "3a2e13480e688b4300f5d6cc06df8dce03a3a772b80b95f918d30b92f97bf793",
+    "pages/page-0005.json": "adc2dfe26f9d0a5fc644a373faf2839becdf86cdf768ddfcb94bf7f43ff8dc72",
+    "pages/page-0006.json": "2151de8d904c7a42da439f8927559cf6dee792831a5682320fa00e34e9acecc2",
+    "pages/page-0007.json": "8fc3d202e0a6d79b7fb6eeed0172714f9da0f4a84cb1d53fce84748f22468ec9",
+    "pages/page-0008.json": "296655db74ec35df485379dff3c75f44b67c5d80db3dfc49a211f37120bf2901",
+    "pages/page-0009.json": "a09efa1e677553a97f667dc22755e19200a3b20df8f144fcdde13bf6d95442a8",
+    "pages/page-0010.json": "cb1a8d547c29bf9fbe1909383665714ba93672b2183818ac365e1d3fb6055ef9",
+    "pages/page-0011.json": "a0ac0b8b3120983a6a9890d7b01f8a002f52e15ed3472a628cd180441252186c",
+    "pages/page-0012.json": "93f2618eca190dcee60718012712753398dffd97598d22d16b49f8e123639342",
+    "pages/page-0013.json": "53e6f81d01fe29798d64a46e83d4757faad8f02d20e5d2c8785d4dbc75545fde",
+    "pages/page-0014.json": "9814aaea08837690e8fae6444abab8381f0feedbe04d7f0d5df205d12d1d25a3",
+    "pages/page-0015.json": "4826cc80b413c00f996c922f62749efcbd6e97a06bfb34fb83cf672c11e5b31b",
+    "pages/page-0016.json": "8aed49125c5aefddd6c09ba44826e6ea2ffe0a09898e1a0f8192735c17b95d0e",
+    "pages/page-0017.json": "8eb94e8089fefebe40291435987f086375a051f5eee3204838faecf07d7f587e",
+    "pages/page-0018.json": "b12379b3057d390e2049ef2a65d5e0e95fbc4f6a6c596a34f4de08694c0ae0b2",
+    "pages/page-0019.json": "e92001b478318a2fdc254639f46f27c5a89d6411e107af1be5fc6bfd1b23af80",
+    "pages/page-0020.json": "3f974190c9ce7441eae3d0e7d26103de3a35ae7c5e14385e75f200427d12d87c",
+    "pages/page-0021.json": "08b8dca904265deb627a8ddfc26fc67849b9637d05bcf2c066802a389e4d38e6"
+  }
+}

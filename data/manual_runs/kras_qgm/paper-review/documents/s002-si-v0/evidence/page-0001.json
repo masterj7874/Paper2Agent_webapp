@@ -1,0 +1,408 @@
+{
+  "page": 1,
+  "lines": [
+    {
+      "text": "Quantum Computing-Enhanced Algorithm Unveils Novel Inhibitors for KRAS",
+      "bbox": [
+        62.21483612060547,
+        57.19725799560547,
+        536.44482421875,
+        72.60669708251953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Supplementary Materials",
+      "bbox": [
+        226.63890075683594,
+        85.89260864257812,
+        371.7808837890625,
+        100.23933410644531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "S1. Chemistry",
+      "bbox": [
+        56.6399040222168,
+        112.90796661376953,
+        132.30201721191406,
+        126.19197082519531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "S1.1. General Synthetic Procedures",
+      "bbox": [
+        56.6399040222168,
+        138.8279571533203,
+        240.612548828125,
+        152.11195373535156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Unless otherwise noted, solvents and reagents were obtained from commercial suppliers and were",
+      "bbox": [
+        56.6399040222168,
+        159.4679718017578,
+        541.526123046875,
+        172.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "used without further purification. Structures of the target compounds in this work were assigned by",
+      "bbox": [
+        56.6399040222168,
+        180.34796142578125,
+        541.5327758789062,
+        193.6319580078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "use of NMR and MS spectroscopy. Proton nuclear magnetic resonance (1H NMR) spectra were",
+      "bbox": [
+        56.6399040222168,
+        200.54324340820312,
+        541.538330078125,
+        214.27195739746094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "recorded on a Bruker AVANCE III HD 400 MHz spectrometer and were referenced in parts per",
+      "bbox": [
+        56.6399040222168,
+        221.62796020507812,
+        541.5320434570312,
+        234.91195678710938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "million (ppm, δ) relative to the residual solvent peak in the indicated solvent. In the spectral data",
+      "bbox": [
+        56.6399040222168,
+        242.26795959472656,
+        541.5116577148438,
+        255.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reported, the format (δ) chemical shift (multiplicity, coupling constants (J) values in Hz, integration)",
+      "bbox": [
+        56.6399040222168,
+        263.1479797363281,
+        541.533203125,
+        276.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was used with the following abbreviations of splitting patterns: s= singlet, brs= broad singlet, d=",
+      "bbox": [
+        56.6399040222168,
+        283.7879943847656,
+        541.5370483398438,
+        297.0719909667969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "doublet, t= triplet, q= quartet, and m= multiplet. The LC separation was done on a SunFire-C18, 5",
+      "bbox": [
+        56.6399040222168,
+        304.427978515625,
+        541.5393676757812,
+        317.71197509765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "µm, 50 × 4.6 mm column at a flow rate of 2 ml /minute. Mobile phase A was water with 0.1% FA",
+      "bbox": [
+        56.6399040222168,
+        325.0679626464844,
+        541.5403442382812,
+        338.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and mobile phase B was acetonitrile with 0.1% FA. The gradient started at 10% mobile phase B",
+      "bbox": [
+        56.6399040222168,
+        345.9479675292969,
+        541.52880859375,
+        359.2319641113281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "increase to 30% B for 0.40 min, increase to 95% B within 1.60 min, 95% B for 0.90 min, back to",
+      "bbox": [
+        56.6399040222168,
+        366.5879821777344,
+        541.533447265625,
+        379.8719787597656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "10% B within 0.01 min. LC column temperature was 40 °C. Mass spectrometric (MS) analyses were",
+      "bbox": [
+        56.6399040222168,
+        387.2279968261719,
+        541.5349731445312,
+        400.5119934082031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "performed on a Shimadzu LCMS2020 mass spectrometer using electrospray ionization (ESI), a Sun",
+      "bbox": [
+        56.6399040222168,
+        407.86798095703125,
+        541.540283203125,
+        421.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Fire C18 4.6× 50 mm column, eluting with a gradient (2.5 min) of acetonitrile (10% to 95%) in water",
+      "bbox": [
+        56.6399040222168,
+        428.30322265625,
+        541.52099609375,
+        442.0319519042969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(both containing 0.1% formic acid). High resolution mass spectrometry was performed on Thermo",
+      "bbox": [
+        56.6399040222168,
+        449.3879699707031,
+        541.5261840820312,
+        462.6719665527344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scientific Q Exactive HF Orbitrap-FTMS. Prep-HPLC was carried out on a C18 reversed-phase",
+      "bbox": [
+        56.6399040222168,
+        469.5832214355469,
+        541.5390625,
+        483.3119812011719
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "preparative high-performance liquid chromatography column using a Waters system with a LC-20AP",
+      "bbox": [
+        56.6399040222168,
+        490.66796875,
+        541.5408325195312,
+        503.95196533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "solvent pump, SPD-20A detector and a X bridge C18 250 × 19 mm I.D. 10 µm column using",
+      "bbox": [
+        56.6399040222168,
+        511.1032409667969,
+        541.5402221679688,
+        524.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "MeCN/H2O gradients). Preparative SFC separation was carried out on chiral SFC (column: DAICEL",
+      "bbox": [
+        56.6399040222168,
+        532.1879272460938,
+        541.5331420898438,
+        545.5506591796875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "CHIRALPAK OJ (3.0 mm × 100 mm, 3 μm); mobile phase: [MeOH-DEA]; B%: 5%-40%, 2.7;",
+      "bbox": [
+        56.6399040222168,
+        552.8279418945312,
+        541.53955078125,
+        566.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "4.8min). The purity of all the final compounds was greater than 95% by Agilent 1260 HPLC analysis.",
+      "bbox": [
+        56.6399040222168,
+        573.4678955078125,
+        541.5398559570312,
+        586.7518920898438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 1
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          62,
+          60,
+          537,
+          101
+        ],
+        "pos": [
+          0,
+          103
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          115,
+          133,
+          127
+        ],
+        "pos": [
+          103,
+          126
+        ]
+      },
+      {
+        "index": 2,
+        "class": "section-header",
+        "bbox": [
+          56,
+          141,
+          241,
+          153
+        ],
+        "pos": [
+          126,
+          170
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          56,
+          161,
+          542,
+          587
+        ],
+        "pos": [
+          170,
+          2202
+        ]
+      }
+    ],
+    "text": "# **Quantum Computing-Enhanced Algorithm Unveils Novel Inhibitors for KRAS Supplementary Materials** \n\n## **S1. Chemistry** \n\n## **S1.1. General Synthetic Procedures** \n\nUnless otherwise noted, solvents and reagents were obtained from commercial suppliers and were used without further purification. Structures of the target compounds in this work were assigned by use of NMR and MS spectroscopy. Proton nuclear magnetic resonance (<sup>1</sup> H NMR) spectra were recorded on a Bruker AVANCE III HD 400 MHz spectrometer and were referenced in parts per million (ppm, δ) relative to the residual solvent peak in the indicated solvent. In the spectral data reported, the format (δ) chemical shift (multiplicity, coupling constants (J) values in Hz, integration) was used with the following abbreviations of splitting patterns: s= singlet, brs= broad singlet, d= doublet, t= triplet, q= quartet, and m= multiplet. The LC separation was done on a SunFire-C18, 5 µm, 50 × 4.6 mm column at a flow rate of 2 ml /minute. Mobile phase A was water with 0.1% FA and mobile phase B was acetonitrile with 0.1% FA. The gradient started at 10% mobile phase B increase to 30% B for 0.40 min, increase to 95% B within 1.60 min, 95% B for 0.90 min, back to 10% B within 0.01 min. LC column temperature was 40 °C. Mass spectrometric (MS) analyses were performed on a Shimadzu LCMS2020 mass spectrometer using electrospray ionization (ESI), a Sun Fire C<sup>18</sup> 4.6× 50 mm column, eluting with a gradient (2.5 min) of acetonitrile (10% to 95%) in water (both containing 0.1% formic acid). High resolution mass spectrometry was performed on Thermo Scientific Q Exactive HF Orbitrap-FTMS. Prep-HPLC was carried out on a C<sup>18</sup> reversed-phase preparative high-performance liquid chromatography column using a Waters system with a LC-20AP solvent pump, SPD-20A detector and a X bridge C<sup>18</sup> 250 × 19 mm I.D. 10 µm column using MeCN/H2O gradients). Preparative SFC separation was carried out on chiral SFC (column: DAICEL CHIRALPAK OJ (3.0 mm × 100 mm, 3 μm); mobile phase: [MeOH-DEA]; B%: 5%-40%, 2.7; 4.8min). The purity of all the final compounds was greater than 95% by Agilent 1260 HPLC analysis. \n\n"
+  }
+}

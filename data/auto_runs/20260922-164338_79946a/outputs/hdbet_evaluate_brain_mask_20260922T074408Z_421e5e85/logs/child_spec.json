@@ -1,0 +1,13 @@
+{
+  "mode": "file",
+  "cases": [
+    {
+      "case_id": "tpl-MNI152NLin2009cAsym_res-02_T1w_bet",
+      "reference": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/reference/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+      "prediction": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/prediction/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz"
+    }
+  ],
+  "reference_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/reference",
+  "prediction_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/prediction",
+  "nnunet_summary_json": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/nnunet_metrics.json"
+}

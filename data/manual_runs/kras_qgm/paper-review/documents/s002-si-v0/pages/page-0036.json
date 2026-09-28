@@ -1,0 +1,39 @@
+{
+  "page": 36,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0036.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0036.png and checked both items against evidence/page-0036.json and a 200-dpi render. Set join_previous='space' on p0036-b000: page 35 ends '...as a yellow soild. LCMS (ESI<sup>+</sup>):' and this page opens '333.3 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, ...)', completing that sentence across a word boundary. Bbox defect fixed: the 1H NMR spectrum was cropped at [51,113,450,376] while the measured vector band is [56.7,118.8,475.2,407.8]; the old crop clipped the right-hand intensity axis and the whole f1 (ppm) axis with its integral row. New bbox [52,114,480,412], border verified ink-free at 300 dpi. Placeholder asset name 'figure-p0036-001' replaced with 'si-nmr-ism061-24-2' - the spectrum has no printed caption but directly follows and matches the ISM061-24-2 shift list that starts on page 35 and is completed in p0036-b000. Text repairs: '[M+H]<sup>+</sup> .' -> '[M+H]<sup>+</sup>.', '.<sup>1</sup> H NMR' -> '. <sup>1</sup>H NMR', 'DMSO- _d_ 6)' -> 'DMSO-*d*6)'. The lower two thirds of the page are blank; there is no page number or other furniture to omit. No tables on this page. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*. Italic isotope marker set as 'DMSO-*d*6' to match the form the pages 1-13 reviewer established (pages 6, 7, 10); '_d_6' was rejected because CommonMark underscore emphasis does not close before an alphanumeric, so it would have leaked literal underscores into the output. '_J_' and '_o_' keep their underscore form, which does render, exactly as pages 6/7/10/14/17/20/23 have them. DETACHED-BAND PROOF: after re-measuring, the page was rendered at 200 dpi with every native text line AND every declared figure/omit region masked out; ZERO non-white pixels remain. So no separate vector band was left outside the crop - in particular the right-hand intensity axis and the bottom f1 (ppm) axis with its integration row are inside the figure bbox, not stranded below or beside it.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0036-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        58.0,
+        542.0,
+        113.0
+      ],
+      "markdown": "333.3 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, DMSO-*d*6) δ 8.77 (s, 1H), 8.32 (d, _J_ = 4.8 Hz, 1H), 7.62 – 7.52 (m, 3H), 7.45 (ddd, _J_ = 8.0, 5.8, 2.3 Hz, 1H), 7.36 – 7.24 (m, 4H), 7.20 – 7.16 (m, 1H), 5.04 (t, _J_ = 5.5 Hz, 1H), 3.26 (d, _J_ = 5.5 Hz, 2H), 1.95 (s, 3H).",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0036-b001",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        114.0,
+        480.0,
+        412.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-24-2",
+      "asset_name": "si-nmr-ism061-24-2"
+    }
+  ]
+}

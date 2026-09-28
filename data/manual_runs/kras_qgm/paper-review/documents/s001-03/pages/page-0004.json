@@ -1,0 +1,107 @@
+{
+  "page": 4,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0004.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0004.png and a 110 dpi render of the proposed crop, and compared every item with evidence/page-0004.json. This page is a full-page float: Fig. 2 occupies everything above the caption, and there is no body prose on it. Changes: (1) p0004-b002 is Fig. 2; replaced the placeholder label 'Figure on PDF page 4 (3)' with 'Fig. 2' and the placeholder asset_name 'figure-p0004-002' with 'figure-2'. (2) Adjusted the bbox from [33,43,565,648] to [33,43,565,646] so the bottom edge no longer sits on the first caption line (its top is 648.1 pt). Rendered the new crop and verified it contains both blue section banners (ISM061-018-2 and ISM061-022), all seven panel letters a-g, the rotated y-axis titles '% Activity' and 'Cell viability (% of control)' at the far left (x=38.2 pt), every 'log [uM]' x-axis label including the bottom row at y=643 pt, and the right-most axis tick at x=559.6 pt. (3) The Fig. 2 caption is split across the two columns (p0004-b003 left, p0004-b004 right); both were already kind 'caption'. p0004-b004 now carries join_previous 'space' because the left half ends mid-sentence at 'error bars showing the'. (4) Caption text repairs: removed the spurious spaces the extractor put around every bold panel letter ('**a** , **e** ,' -> '**a**,**e**,'; '( **a** )' -> '(**a**)') for a, b, c, d, e, f and g; and restored the real compound hyphen in the compound name that was broken across a line in the source ('ISM061-' / '018-2' had been merged as 'ISM061018-2' and is now 'ISM061-018-2'). (5) Verified 'dose–response' is an en dash, mu in '30 μM' is U+03BC, and the italic n in 'n = 3' / 'n = 4' is preserved. Concentration values 4 nM, 30 μM and 123 nM check out against the printed caption. (6) Header items p0004-b000/b001 and footer p0004-b005 confirmed as running furniture (left as text); bare page number 1957 kept as 'omit'. (7) Cross-page note for the coordinator: page 3 ends mid-sentence ('...did not show binding to KRAS-G12D') and page 5 resumes it, but this whole float page sits between them. No join_previous can be set here without gluing body prose onto the Fig. 2 caption, so this join needs plan.json reading_order. Coordinator: running header/footer furniture set to explicit omit, matching the treatment reviewers applied on pages 8-18, so both verification parsers exclude the same regions.",
+  "warnings": [
+    "Review possible header/footer: p0004-b000",
+    "Review possible header/footer: p0004-b001",
+    "Review possible header/footer: p0004-b005"
+  ],
+  "items": [
+    {
+      "id": "p0004-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0004-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0004-b002",
+      "kind": "figure",
+      "bbox": [
+        33.0,
+        43.0,
+        565.0,
+        646.0
+      ],
+      "markdown": "<!-- Start of picture text -->\nISM061-018-2<br>a b SPR: ISM061-018-2 c KRAS WT KRAS G12D KRAS G12C<br>150 150 150<br>4<br>100 100 100<br>3<br>2 50 50 50<br>1<br>0 0 0<br>0 –2 0 2 –2 0 2 –2 0 2<br>log [uM] log [uM] log [uM]<br>–1<br>–50 0 50 100 150 200 250 300 KRAS G12V KRAS G12R KRAS Q61H<br>Times(s)<br>150 150 150<br>d 100 100 100<br>KRAS WT KRAS G12V<br>150 150 50 50 50<br>100 100 0 0 0<br>–2 0 2 –2 0 2 –2 0 2<br>log [uM] log [uM] log [uM]<br>50 50<br>HRAS WT NRAS WT Artificial bait<br>0 0 150 150<br>–1 0 1 2 –1 0 1 2 150<br>log [uM] log [uM] 100 100 100<br>50 50 50<br>0 0 0<br>–2 0 2 –2 0 2 –2 0 2<br>log [uM] log [uM] log [uM]<br>ISM061-022<br>e f KRAS WT KRAS G12D KRAS G12C<br>150<br>150 150<br>100<br>100 100<br>50 50 50<br>0 0 0<br>–2 0 2 –2 0 2 –2 0 2<br>log [uM] log [uM] log [uM]<br>KRAS G12V KRAS G12R KRAS Q61H<br>150 150 150<br>100 100 100<br>g KRAS WT KRAS G12V<br>50 50 50<br>150 150<br>0 0 0<br>100 100 –2 0 2 –2 0 2 –2 0 2<br>log [uM] log [uM] log [uM]<br>50 50<br>HRAS WT NRAS WT Artificial bait<br>200 200<br>0 0 150<br>–1 0 1 2 –1 0 1 2 150 150<br>log [uM] log [uM] 100<br>100 100<br>50<br>50 50<br>0 0 0<br>–2 0 2 –2 0 2 –2 0 2<br>log [uM] log [uM] log [uM]<br>% Activity % Activity % Activity<br>RU<br>% Activity % Activity % Activity<br>Cell viability (% of control) Cell viability (% of control)<br>% Activity % Activity % Activity<br>% Activity % Activity % Activity<br>% Activity % Activity % Activity<br>Cell viability (% of control) Cell viability (% of control)<br>% Activity % Activity % Activity<br><!-- End of picture text -->",
+      "source_class": "picture",
+      "label": "Fig. 2",
+      "asset_name": "figure-2"
+    },
+    {
+      "id": "p0004-b003",
+      "kind": "caption",
+      "bbox": [
+        39.0,
+        649.0,
+        293.0,
+        727.0
+      ],
+      "markdown": "**Fig. 2 | Pharmacological characterization of compounds ISM061-018-2 and ISM061-022 through SPR and cellular activity assays. a**,**e**, Chemical structures of ISM061-018-2 (**a**) and ISM061-022 (**e**). **b**, SPR sensorgrams illustrating binding effects of ISM061-018-2 on KRAS protein. **c**,**f**, MaMTH-DS dose–response curves illustrate the binding kinetics and effects of ISM061-018-2 (**c**) and ISM061-022 (**f**) on various KRAS proteins, as well as NRAS, HRAS and artificial bait, with activities measured across concentrations from 4 nM to 30 μM. Data points are presented as averages from _n_ = 4 technical replicates with error bars showing the",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0004-b004",
+      "kind": "caption",
+      "bbox": [
+        306.0,
+        649.0,
+        556.0,
+        727.0
+      ],
+      "markdown": "s.d. Each graph is representative of _n_ = 3 biological replicates, performed under the same conditions. Analyses were carried out using GraphPad Prism. **d**,**g**, Results from CellTiter-Glo viability assays measuring the impact of ISM061-018-2 (**d**) and ISM061-022 (**g**) on cellular proliferation over a concentration range from 123 nM to 30 μM, demonstrating that they do not display general, nonspecific toxicity. Data points are presented as averages from _n_ = 3 technical replicates with error bars showing the s.d. Each graph is representative of _n_ = 3 biological replicates performed under the same conditions.",
+      "source_class": "caption",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0004-b005",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        762.0,
+        278.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0004-b006",
+      "kind": "omit",
+      "bbox": [
+        544.0,
+        763.0,
+        563.0,
+        770.0
+      ],
+      "markdown": "**1957**",
+      "source_class": "page-footer",
+      "reason": "Bare page number 1957 in the running foot; verified against previews/page-0004.png."
+    }
+  ]
+}

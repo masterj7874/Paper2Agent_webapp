@@ -1,0 +1,97 @@
+{
+  "page": 3,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0003.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. CROSS-PAGE JOIN: p0003-b000 opens with 'ethyl acetate: petroleum ether = 0% - 7%)' which continues page 2's sentence ending '...flash silica gel chromatography (SiO2,'; the break falls between whole words, so join_previous = 'space'. Restored a real chemical hyphen the extractor dropped at a line wrap in p0003-b004: '5-ethylpyrim idin-2yl)oxy' -> '5-ethylpyrim idin-2-yl)oxy' (evidence line ends 'pyrim idin-2-' and the next begins 'yl)oxy'); the stray space inside 'pyrim idin' is a justification artefact that is genuinely printed in the source and was left alone. Set Step 4/5/6 headings to h4. Confirmed the source's own typo 'the tittle compound' in p0003-b004 and left it as printed. No figures or furniture on this page; the page ends mid-NMR list at '4.63 - 4.58 (m,'.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0003-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        92.0
+      ],
+      "markdown": "ethyl acetate: petroleum ether = 0% - 7%) to afford the title compound (1.00 g, 25% yield) as yellow oil. LCMS (ESI): m/z 298.1 [M+H]+.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0003-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        111.0,
+        253.0,
+        122.0
+      ],
+      "markdown": "#### Step 4: Preparation of Compound 1-4",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0003-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        141.0,
+        542.0,
+        339.0
+      ],
+      "markdown": "To a solution of N-(1-(2-chloro-5-ethylpyrimidin-4-yl)ethyl)-2,6-difluoroaniline (300.0 mg, 1.01 mmol) in 1,4-dioxane (4 mL) were added tert-butyl 3-(hydroxymethyl)azetidine-1-carboxylate (226.0 mg, 1.21 mmol), Cs2CO3 (985.0 mg, 3.02 mmol), CyPF-tBu (84.0 mg, 0.15 mmol) and Pd2(dba)3 (92.0 mg, 0.10 mmol). After addition, the mixture was degassed and purged with N2 for 2 mins and then stirred at 105 ℃ for 5 hrs under N2. After cooling to 20 ℃, the reaction solution was poured into water (50 mL) and extracted with EtOAc (40 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 22%) to afford the title compound (400 mg, 89.0% yield) as yellow oil. LCMS(ESI): m/z 449.3 [M+H]+.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0003-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        358.0,
+        253.0,
+        370.0
+      ],
+      "markdown": "#### Step 5: Preparation of Compound 1-5",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0003-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        389.0,
+        542.0,
+        504.0
+      ],
+      "markdown": "To a solution of tert-butyl 3-(((4-(1-((2,6-difluorophenyl)amino)ethyl)-5-ethylpyrim idin-2-yl)oxy)methyl)azetidine-1-carboxylate (250.0 mg, 0.56 mmol) in DCM (2 mL) was added TFA (0.5 mL, 6.49 mmol) at 0 ℃. After addition, the mixture was stirred at 25 ℃ for 2 hrs. The reaction solution was concentrated under reduced pressure to afford the tittle compound (180.0 mg, 0.52 mmol), which was used in next step directly without further purification. LCMS(ESI): m/z 349.2 [M+H]+.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0003-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        523.0,
+        227.0,
+        535.0
+      ],
+      "markdown": "#### Step 6: Preparation of ISM061-1",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0003-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        554.0,
+        542.0,
+        752.0
+      ],
+      "markdown": "To a solution of N-(1-(2-(azetidin-3-ylmethoxy)-5-ethylpyrimidin-4-yl)ethyl)-2,6-difluoroaniline (130.0 mg, 0.37 mmol) in MeOH (2 mL) were added formaldehyde (0.01 mL, 0.45 mmol) and sodium cyanoborohydride (46.9 mg, 0.75 mmol). After addition, the mixture was stirred at 25 ℃ for 1 hr. The reaction solution was poured into water (20 mL) and extracted with DCM (25 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by pre-HPLC (SHIMADZU, LC-20AP, Column: YMC Triart C18, 20 × 250 mm, 5 μm; Mobile phase: from 20 % to 31 % ACN [0.1% FA]; Flow rate: 15 mL/min; Retention Time: 15 min of 20 min) to afford the title compound (35.0 mg, 26% yield) as yellow oil. LCMS (ESI): m/z 363.3 [M+H]+; 1H NMR (400 MHz, DMSO-d6) δ 8.44 – 8.41 (m, 2H), 7.18 – 7.12 (m, 1H), 7.05 –7.01 (m, 2H), 4.63 – 4.58 (m,",
+      "source_class": "text"
+    }
+  ]
+}

@@ -1,0 +1,4328 @@
+{
+ "MedKG": {
+  "medkg_search": {
+   "description": "Hybrid search (dense + lexical + rerank) over 236k Q1 medical-AI papers or their full-text chunks.\nReturns ranked hits with work_id, title, year, journal, Q1 flag, DOI and snippet; filters narrow by year/Q1/journal/entities.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "query": {
+      "description": "Natural-language or keyword query over the corpus",
+      "type": "string"
+     },
+     "k": {
+      "default": 20,
+      "description": "Number of hits to return (1-200)",
+      "type": "integer"
+     },
+     "mode": {
+      "default": "hybrid",
+      "description": "hybrid = dense (Qdrant) + lexical (FTS5) fused by RRF, then reranked",
+      "enum": [
+       "hybrid",
+       "dense",
+       "lexical"
+      ],
+      "type": "string"
+     },
+     "scope": {
+      "default": "abstracts",
+      "description": "Search paper abstracts or full-text chunks",
+      "enum": [
+       "abstracts",
+       "chunks"
+      ],
+      "type": "string"
+     },
+     "rerank": {
+      "default": true,
+      "description": "Apply the bge-reranker to the fused candidates",
+      "type": "boolean"
+     },
+     "year_min": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Earliest publication year (inclusive)"
+     },
+     "year_max": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Latest publication year (inclusive)"
+     },
+     "is_q1": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Restrict to Q1-journal papers (true) or non-Q1 (false)"
+     },
+     "journal": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Journal name substring filter, e.g. 'Scientific Reports'"
+     },
+     "modality": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Modality entity filter, e.g. MRI, CT, histopathology"
+     },
+     "task": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Task entity filter, e.g. segmentation, prognosis"
+     },
+     "method": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "AI-method entity filter, e.g. transformer, U-Net"
+     },
+     "mesh": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "MeSH descriptor filter, e.g. 'Brain Neoplasms'"
+     }
+    },
+    "required": [
+     "query"
+    ]
+   }
+  },
+  "medkg_get_paper": {
+   "description": "Fetch one paper: metadata, MeSH/topics/entities, graph neighbours (cites, cited-by, similar) and chunk count.\nOptionally returns the full-text chunks (section filter available) for grounding a claim in the paper's body.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "work_id": {
+      "description": "Corpus work_id, e.g. PMC10686892 or DOI:10.1038/s41598-026-58823-1 (a bare DOI/PMCID also resolves)",
+      "type": "string"
+     },
+     "include_chunks": {
+      "default": false,
+      "description": "Also fetch the full-text chunks of the paper",
+      "type": "boolean"
+     },
+     "section": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "When include_chunks, keep only chunks whose section matches (substring)"
+     }
+    },
+    "required": [
+     "work_id"
+    ]
+   }
+  },
+  "medkg_graph_neighbors": {
+   "description": "Return the Neo4j neighbourhood (nodes + edges) of one node for graph exploration or a UI graph view.\nWorks for papers (work_id) and ontology entities (Method/Task/Modality/Dataset/MeSH/Journal by name or id).",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "label": {
+      "description": "Node label: Paper, Journal, Author, MeSH, Topic, Keyword, Method, Task, Modality, Dataset, Metric, Organ, Disease",
+      "type": "string"
+     },
+     "key": {
+      "description": "Node key: work_id for Paper, name for entities, ui for MeSH, issn/name for Journal",
+      "type": "string"
+     },
+     "hops": {
+      "default": 1,
+      "description": "Neighbourhood radius (1-3)",
+      "type": "integer"
+     },
+     "limit": {
+      "default": 50,
+      "description": "Maximum number of paths expanded (1-500)",
+      "type": "integer"
+     },
+     "rel_types": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "string"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Restrict to relationship types, e.g. ['CITES','SIMILAR_TO','USES_METHOD']"
+     }
+    },
+    "required": [
+     "label",
+     "key"
+    ]
+   }
+  },
+  "medkg_cypher": {
+   "description": "Run a read-only Cypher query against the MedKG Neo4j graph (30 s timeout, READ access mode enforced server-side).\nUse it for ad-hoc counts, joins across Paper/Method/Task/Modality/MeSH/Journal nodes and citation paths.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "query": {
+      "description": "Read-only Cypher (MATCH/RETURN/WITH/CALL db.* ...). CREATE/MERGE/SET/DELETE/REMOVE/DROP, CALL {} IN TRANSACTIONS and apoc write procedures are rejected",
+      "type": "string"
+     },
+     "params": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Query parameters, e.g. {'id': 'PMC10686892'}"
+     },
+     "limit": {
+      "default": 200,
+      "description": "Maximum rows returned (1-5000)",
+      "type": "integer"
+     }
+    },
+    "required": [
+     "query"
+    ]
+   }
+  },
+  "medkg_answer": {
+   "description": "Evidence-grounded answer: hybrid retrieval + rerank, Neo4j graph expansion, then LLM synthesis citing only retrieved items [n].\nReturns the markdown answer, the [n] -> work_id citation map, the evidence passages and an insufficient_evidence flag.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "question": {
+      "description": "Research question to answer from the corpus with numbered citations",
+      "type": "string"
+     },
+     "k": {
+      "default": 12,
+      "description": "Evidence items retrieved before graph expansion (1-60)",
+      "type": "integer"
+     },
+     "scope": {
+      "default": "chunks",
+      "description": "Retrieve full-text chunks (default, falls back to abstracts while the chunk index builds) or abstracts",
+      "enum": [
+       "chunks",
+       "abstracts"
+      ],
+      "type": "string"
+     },
+     "style": {
+      "default": "evidence",
+      "description": "Answer style: direct evidence answer, related-work prose, or gap statements",
+      "enum": [
+       "evidence",
+       "related_work",
+       "gap"
+      ],
+      "type": "string"
+     },
+     "year_min": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Earliest publication year (inclusive)"
+     },
+     "year_max": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Latest publication year (inclusive)"
+     },
+     "is_q1": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Restrict evidence to Q1-journal papers"
+     },
+     "journal": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Journal name substring filter"
+     },
+     "modality": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Modality entity filter"
+     },
+     "task": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Task entity filter"
+     },
+     "method": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "AI-method entity filter"
+     },
+     "mesh": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "MeSH descriptor filter"
+     }
+    },
+    "required": [
+     "question"
+    ]
+   }
+  },
+  "medkg_related_work": {
+   "description": "Build a related-work table (work_id, title, year, journal, Q1, method, modality, dataset, metric values, summary).\nRows come from hybrid retrieval; entities come from the graph/lexicon and the LLM reads only each abstract.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "topic": {
+      "description": "Topic of the related-work section, e.g. 'transformer-based brain tumour MRI segmentation'",
+      "type": "string"
+     },
+     "k": {
+      "default": 30,
+      "description": "Number of papers in the table (1-100)",
+      "type": "integer"
+     },
+     "summarise": {
+      "default": true,
+      "description": "Let the LLM extract method/modality/dataset/metrics and a one-sentence summary per row",
+      "type": "boolean"
+     },
+     "year_min": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Earliest publication year (inclusive)"
+     },
+     "year_max": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Latest publication year (inclusive)"
+     },
+     "is_q1": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Restrict to Q1-journal papers"
+     },
+     "journal": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Journal name substring filter"
+     },
+     "modality": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Modality entity filter"
+     },
+     "task": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Task entity filter"
+     },
+     "method": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "AI-method entity filter"
+     }
+    },
+    "required": [
+     "topic"
+    ]
+   }
+  },
+  "medkg_gaps": {
+   "description": "Graph-grounded research-gap analysis: Method x Task x Modality cell counts, sparse/empty cells, yearly trend, Q1 journals.\nReturns the statistics plus a cited markdown analysis (LLM) so a gap can be turned into a paper idea.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "topic": {
+      "description": "Research topic to analyse for gaps, e.g. 'federated learning for histopathology'",
+      "type": "string"
+     },
+     "k": {
+      "default": 200,
+      "description": "Papers sampled around the topic (20-1000)",
+      "type": "integer"
+     },
+     "synthesise": {
+      "default": true,
+      "description": "Let the LLM write the gap narrative from the graph statistics",
+      "type": "boolean"
+     },
+     "year_min": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Earliest publication year (inclusive)"
+     },
+     "year_max": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Latest publication year (inclusive)"
+     },
+     "is_q1": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Restrict to Q1-journal papers"
+     },
+     "modality": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Modality entity filter"
+     },
+     "task": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Task entity filter"
+     },
+     "method": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "AI-method entity filter"
+     }
+    },
+    "required": [
+     "topic"
+    ]
+   }
+  },
+  "medkg_q1_guideline": {
+   "description": "Return the Q1 acceptance guideline v7 (14 hard gates, 14 strong signals, section blueprint, claim rules, per-journal deltas).\nOptionally narrow to one section or one journal profile; graph_items reports how many guideline nodes exist in Neo4j.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "section": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Return only one section: hard_gates, strong_signals, section_blueprint, abstract_template, claim_rules, rejection_reasons, per_journal, checklist, summary"
+     },
+     "journal_key": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "With section=per_journal (or alone): one journal profile, e.g. scientific_reports"
+     }
+    }
+   }
+  },
+  "medkg_q1_evidence": {
+   "description": "Find supporting and contradicting passages for a claim (Q1 claim-discipline check).\nEach passage carries work_id, section, score, stance and rationale; insufficient_evidence flags weak retrieval.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "claim": {
+      "description": "A manuscript claim to audit, e.g. 'External validation improves generalisation of CT-based lung nodule classifiers'",
+      "type": "string"
+     },
+     "k": {
+      "default": 12,
+      "description": "Passages retrieved (1-50)",
+      "type": "integer"
+     },
+     "classify": {
+      "default": true,
+      "description": "Let the LLM label each passage supports/contradicts/neutral with a rationale",
+      "type": "boolean"
+     },
+     "is_q1": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Restrict to Q1-journal papers"
+     },
+     "year_min": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Earliest publication year (inclusive)"
+     }
+    },
+    "required": [
+     "claim"
+    ]
+   }
+  },
+  "medkg_q1_journal_fit": {
+   "description": "Rank Q1 target journals for an abstract using accepted-paper similarity, topic/MeSH overlap and per-journal deltas.\nEach row lists similar accepted work_ids, SJR, submission profile (abstract/word limits) and what that journal rewards.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "abstract": {
+      "description": "Manuscript abstract (>= 20 characters)",
+      "type": "string"
+     },
+     "title": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Manuscript title (improves the match)"
+     },
+     "k": {
+      "default": 10,
+      "description": "Number of journals to rank (1-57)",
+      "type": "integer"
+     }
+    },
+    "required": [
+     "abstract"
+    ]
+   }
+  },
+  "medkg_stats": {
+   "description": "Report MedKG health and build status: Neo4j node/edge counts, Qdrant/FTS index sizes, LLM provider, index progress.\nUse it first to see whether the graph and indexes are fully loaded before relying on graph-heavy tools.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+   }
+  }
+ },
+ "MedSAM": {
+  "medsam_segment_with_box": {
+   "description": "Segment one or more targets in a 2D medical image from bounding-box prompts with MedSAM ViT-B.\nInput is an image (or test_demo-style npz) plus xyxy boxes; output is a uint8 label map (label i+1 for box i), per-box masks and an overlay figure.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "Path to a 2D medical image (png/jpg/jpeg/tif/tiff/bmp; grey or RGB, an alpha channel is dropped, >8-bit intensities are min-max scaled to 0-255) or to an .npz with key 'imgs' (H,W,3) uint8 and optionally 'boxes' (N,4).",
+      "type": "string"
+     },
+     "boxes": {
+      "anyOf": [
+       {
+        "items": {
+         "items": {
+          "type": "integer"
+         },
+         "type": "array"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Bounding boxes [[x_min, y_min, x_max, y_max], ...] in original pixel coordinates (0 <= x_min < x_max <= width, 0 <= y_min < y_max <= height); None uses the 'boxes' key of an .npz input."
+     },
+     "checkpoint_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "MedSAM ViT-B checkpoint (.pth); None resolves medsam_vit_b.pth under MEDSAM_CHECKPOINT_DIR (default <package>/data/MedSAM_checkpoints)."
+     },
+     "device": {
+      "default": "auto",
+      "description": "'auto' picks the CUDA device with the most free memory if at least 4 GiB is free, else CPU.",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory (default MEDSAM_OUTPUT_DIR or <package>/tmp/outputs); a fresh subdirectory is created per call."
+     }
+    },
+    "required": [
+     "image_path"
+    ]
+   }
+  },
+  "medsam_segment_3d_with_box": {
+   "description": "Segment 3D targets in a CT/MR volume from 3D bounding boxes by running MedSAM slice by slice with the script's box propagation.\nInput is a volume (npz 'imgs' or nii/nii.gz/mha/nrrd) plus boxes [x_min,y_min,z_min,x_max,y_max,z_max] (z_max exclusive); output is a label volume npz (+ nii.gz for image i",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "volume_path": {
+      "description": "3D volume: a MedSAM npz with 'imgs' (D,H,W) uint8 (optional 'spacing' (x,y,z) and 'boxes' (N,6)), or a SimpleITK-readable CT/MR image (nii, nii.gz, mha, nrrd) that gets the script's whole-volume min-max scaling to uint8 (optionally clipped); no MR percentile normalisation is applied, so run medsam_preprocess_ct_mr first for MR images.",
+      "type": "string"
+     },
+     "boxes_3d": {
+      "default": [],
+      "description": "3D boxes [[x_min, y_min, z_min, x_max, y_max, z_max], ...] in voxel indices of the (D,H,W) array (x = column, y = row, z = slice), z_max exclusive; box i becomes label i+1 (later labels overwrite overlaps); empty uses the npz 'boxes' array.",
+      "items": {
+       "items": {
+        "type": "integer"
+       },
+       "type": "array"
+      },
+      "type": "array"
+     },
+     "propagate_boxes": {
+      "default": true,
+      "description": "True: give the box only to the seed slice z_min + (z_max-1 - z_min)//2 and propagate it with the script's loops (bounding box of the previous slice's mask, or the given box if that mask is empty); False: apply the given box on every slice of the z-range without propagation.",
+      "type": "boolean"
+     },
+     "bbox_shift": {
+      "default": 5,
+      "description": "Margin in 1024-grid pixels added around the previous slice's mask when propagating (script get_bbox default 5); unused when propagate_boxes is False.",
+      "type": "integer"
+     },
+     "clip_intensities": {
+      "default": false,
+      "description": "Clip intensities to [clip_lower, clip_upper] before the min-max scaling (the script's commented-out CT window line); False = no clipping, as the script runs (for uint8 MedSAM npz volumes leave False).",
+      "type": "boolean"
+     },
+     "clip_lower": {
+      "default": -160.0,
+      "description": "Lower intensity bound used when clip_intensities is True (script's commented-out CT soft-tissue window: -160 HU, i.e. WL 40 / WW 400 as in pre_CT_MR.py).",
+      "type": "number"
+     },
+     "clip_upper": {
+      "default": 240.0,
+      "description": "Upper intensity bound used when clip_intensities is True (script's commented-out CT soft-tissue window: 240 HU).",
+      "type": "number"
+     },
+     "checkpoint_path": {
+      "default": "",
+      "description": "MedSAM ViT-B checkpoint (medsam_vit_b.pth); empty resolves it from MEDSAM_CHECKPOINT_DIR (fallback <package>/data/MedSAM_checkpoints).",
+      "type": "string"
+     },
+     "device": {
+      "default": "auto",
+      "description": "Compute device; 'auto' picks the CUDA device with the most free memory if at least 4 GiB are free, else CPU.",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "default": "",
+      "description": "Base output directory (empty = MEDSAM_OUTPUT_DIR or <package>/tmp/outputs); a fresh subdirectory is created per call.",
+      "type": "string"
+     }
+    },
+    "required": [
+     "volume_path"
+    ]
+   }
+  },
+  "medsam_segment_with_point": {
+   "description": "Segment an abdominal organ in a 2-D CT slice from single positive clicks with MedSAM's EXPERIMENTAL FLARE22 point-prompt model (decoder fine-tuned only for 13 organs: liver, kidneys, spleen, pancreas, aorta, IVC, adrenal glands, gallbladder, esophagus, stomach, duodenum).\nInput is a png/jpg, MedSAM ",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "2-D image (.png/.jpg, grey or RGB), a MedSAM .npz with 'imgs' ((H,W), (H,W,3) or (D,H,W) uint8), or a CT .nii/.nii.gz volume (HU; windowed as in the notebook)",
+      "type": "string"
+     },
+     "points": {
+      "description": "Positive clicks [[x, y], ...] in pixel coordinates of the image as passed to the model (x = column, y = row; for nii inputs with apply_notebook_rotation the 180-degree-rotated frame); one mask per click, label 1 (foreground)",
+      "items": {
+       "items": {
+        "type": "integer"
+       },
+       "type": "array"
+      },
+      "type": "array"
+     },
+     "slice_index": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Slice (0-based, first axis) for .nii/.npz volumes; default the notebook's middle slice int(D/2); must be omitted for 2-D inputs"
+     },
+     "window_min": {
+      "default": -240.0,
+      "description": "Lower CT window bound in HU applied to nii volumes before volume-wise min-max scaling to uint8 (notebook: -240)",
+      "type": "number"
+     },
+     "window_max": {
+      "default": 160.0,
+      "description": "Upper CT window bound in HU for nii volumes (notebook: 160)",
+      "type": "number"
+     },
+     "apply_notebook_rotation": {
+      "default": true,
+      "description": "nii inputs only: rotate the slice by 180 degrees (np.rot90(slice, 2)) as the notebook does before set_image; clicks and masks are then in that rotated frame. Ignored for png/npz",
+      "type": "boolean"
+     },
+     "checkpoint_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Path or file name of the point-prompt checkpoint (default medsam_point_prompt_flare22.pth, resolved in MEDSAM_CHECKPOINT_DIR or <package>/data/MedSAM_checkpoints)"
+     },
+     "device": {
+      "default": "auto",
+      "description": "auto = CUDA device with the most free memory if >= 4 GiB free, else CPU",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call (default MEDSAM_OUTPUT_DIR or <package>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "image_path",
+     "points"
+    ]
+   }
+  },
+  "medsam_segment_with_text": {
+   "description": "Segment FLARE22 abdominal organs in a 2D CT slice from organ-name text prompts with MedSAM's experimental CLIP text-prompt model (fixed 13-organ vocabulary, FLARE22-trained decoder).\nInput is a 2D image or a CT volume plus a slice index and a list of organ names; output is one binary mask per prompt",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "2D image (PNG/JPG/BMP/TIF; .npy or .npz key 'imgs' shaped (H,W) or (H,W,3)) or a CT volume (.nii/.nii.gz/.mha/.mhd/.nrrd read with SimpleITK and HU-windowed; .npy/.npz 'imgs' shaped (D,H,W) uint8) whose slice is chosen with slice_index",
+      "type": "string"
+     },
+     "prompts": {
+      "description": "Organ names from the checkpoint's FLARE22 vocabulary, matched after lower().strip(): liver, right kidney, spleen, pancreas, aorta, inferior vena cava (ivc), right adrenal gland (rag), left adrenal gland (lag), gallbladder, esophagus, stomach, duodenum, left kidney",
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "slice_index": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "0-based index along the first array axis for 3D inputs; None selects the notebook's middle slice int(D/2); must be None for 2D inputs"
+     },
+     "window_min": {
+      "default": -240.0,
+      "description": "Lower bound of the notebook's CT window for SimpleITK volumes (HU; clip, then min-max to uint8 over the whole volume)",
+      "type": "number"
+     },
+     "window_max": {
+      "default": 160.0,
+      "description": "Upper bound of the notebook's CT window for SimpleITK volumes (HU)",
+      "type": "number"
+     },
+     "apply_notebook_rotation": {
+      "default": true,
+      "description": "For SimpleITK volumes, draw the overlay PNG rotated by 180 degrees (np.rot90(., 2)) as the notebook displays these slices; masks are always saved in array orientation",
+      "type": "boolean"
+     },
+     "checkpoint_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Text-prompt checkpoint (default medsam_text_prompt_flare22.pth); a bare file name is resolved inside MEDSAM_CHECKPOINT_DIR"
+     },
+     "medsam_checkpoint_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base MedSAM ViT-B checkpoint (default medsam_vit_b.pth) that the notebook uses to instantiate the architecture before every weight is overwritten from checkpoint_path"
+     },
+     "device": {
+      "default": "auto",
+      "description": "auto = CUDA device with the most free memory if at least 4 GiB is free, else CPU",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory (default MEDSAM_OUTPUT_DIR or <package>/tmp/outputs); a fresh subdirectory is created per call"
+     }
+    },
+    "required": [
+     "image_path",
+     "prompts"
+    ]
+   }
+  },
+  "medsam_evaluate_dsc_nsd": {
+   "description": "Score a predicted label map against a reference label map with the MedSAM paper's metrics (per-label DSC and NSD at a surface tolerance, default 2 mm) using utils/SurfaceDice.py.\nInputs: two label-map files (npz/npy/png/nii; 2D maps are scored as one slice with unit spacing, 3D maps with spacing_mm ",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "prediction_path": {
+      "description": "Predicted label map: .npz (array 'segs' by default), .npy, .png/.bmp/.tif label image, or .nii/.nii.gz/.mha/.nrrd",
+      "type": "string"
+     },
+     "ground_truth_path": {
+      "description": "Reference label map in the same shape and format family (.npz array 'gts' by default, .npy, image, or nii)",
+      "type": "string"
+     },
+     "prediction_key": {
+      "default": "segs",
+      "description": "Array name holding the prediction inside an .npz file",
+      "type": "string"
+     },
+     "ground_truth_key": {
+      "default": "gts",
+      "description": "Array name holding the reference inside an .npz file",
+      "type": "string"
+     },
+     "labels": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "integer"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Label ids to score (each must occur in the reference); default = every non-zero reference label"
+     },
+     "spacing_mm": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "number"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Voxel spacing in ARRAY-AXIS order (z,y,x for a (D,H,W) map; 2 or 3 values for 2D); default: nii header or npz 'spacing' converted to array order, else [1,1,1]"
+     },
+     "npz_spacing_order": {
+      "default": "xyz",
+      "description": "Axis order of an npz 'spacing' triple: MedSAM npz files store (x,y,z) for (z,y,x) arrays, so 'xyz' reverses it to array order; 'zyx' uses it as stored",
+      "enum": [
+       "xyz",
+       "zyx"
+      ],
+      "type": "string"
+     },
+     "tolerance_mm": {
+      "default": 2.0,
+      "description": "Surface tolerance tau for NSD in mm (pixels for 2D); the paper uses 2",
+      "type": "number"
+     },
+     "include_asd_hd95": {
+      "default": false,
+      "description": "Also report average surface distance (gt->pred, pred->gt) and the 95th-percentile Hausdorff distance",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call (default: MEDSAM_OUTPUT_DIR or <package>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "prediction_path",
+     "ground_truth_path"
+    ]
+   }
+  },
+  "medsam_preprocess_ct_mr": {
+   "description": "Convert a CT or MR volume into MedSAM's uint8 (D,H,W) npz input format with the paper's CT window (level/width) or MR 0.5-99.5 percentile normalisation (pre_CT_MR.py); an optional label_path enables the script's label branch (remove_label_ids, default [12]; tumor_id instances; cc3d.dust voxel thresh",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "3D CT or MR volume file (nii/nii.gz or any SimpleITK-readable format); a scalar (D,H,W) image, e.g. FLARE22 *_0000.nii.gz",
+      "type": "string"
+     },
+     "modality": {
+      "description": "CT: clip to window_level +/- window_width/2 then min-max to [0,255]; MR: clip to the 0.5/99.5 percentiles of voxels > 0, min-max, background (== 0) kept at 0 (utils/README applies this branch to MR, ultrasound, mammography and OCT)",
+      "enum": [
+       "CT",
+       "MR"
+      ],
+      "type": "string"
+     },
+     "window_level": {
+      "default": 40,
+      "description": "CT only: window level in HU (README/paper soft-tissue default 40; utils/README alternatives: chest -600, brain 40; the extension notebooks use -40 for FLARE22)",
+      "type": "number"
+     },
+     "window_width": {
+      "default": 400,
+      "description": "CT only: window width in HU (soft tissue 400; chest 1500; brain 80)",
+      "type": "number"
+     },
+     "label_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional ground-truth label volume with the same (D,H,W) shape (integer labels, 0 = background). When given, the script's label branch runs (label-id removal, tumour instances, cc3d.dust thresholds, crop to non-empty slices, 'gts' saved). This branch is extracted verbatim but NOT verified against reference data (no FLARE22 label was available)."
+     },
+     "remove_label_ids": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "integer"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Label ids set to 0 before cleaning (only with label_path). None = the script default [12] (FLARE22 duodenum); pass [] to keep every label."
+     },
+     "tumor_id": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Only with label_path: semantic label to convert into 26-connected instance labels (ids max_label+1...), as the script does for multiple tumours"
+     },
+     "voxel_num_thre2d": {
+      "default": 100,
+      "description": "Only with label_path: per-slice objects with fewer pixels than this are removed (cc3d.dust, 8-connectivity); script default 100",
+      "type": "integer"
+     },
+     "voxel_num_thre3d": {
+      "default": 1000,
+      "description": "Only with label_path: 3D objects with fewer voxels than this are removed (cc3d.dust, 26-connectivity); script default 1000",
+      "type": "integer"
+     },
+     "save_slices_1024": {
+      "default": false,
+      "description": "Also write the script's per-slice training files: imgs/<stem>-NNN.npy float64 (1024,1024,3) in [0,1] (order-3 resize) and, with label_path, gts/<stem>-NNN.npy uint8 (1024,1024) (order-0). About 25 MB and 1 s per slice (2.3 GB for 93 slices), hence off by default.",
+      "type": "boolean"
+     },
+     "save_sanity_nii": {
+      "default": true,
+      "description": "Write the script's sanity nii.gz copies (<stem>_img.nii.gz[, _gt]; no geometry, as in the script) plus geometry-preserving copies (<stem>_img_with_geometry.nii.gz[, _gt])",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call (default: env MEDSAM_OUTPUT_DIR or <package>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "image_path",
+     "modality"
+    ]
+   }
+  }
+ },
+ "Cellpose": {
+  "cellpose_segment_image": {
+   "description": "Segment cells or nuclei in a 2D image with a pretrained Cellpose model (notebooks/run_cellpose.ipynb).\nInput is an image file; outputs are label masks (png/tif/npy), a GUI-loadable _seg.npy, ImageJ outlines, raw flows (npz) and the 4-panel segmentation figure.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "Path of a 2D image (png/jpg/tif; grayscale, RGB or a small channel-first tif)",
+      "type": "string"
+     },
+     "model_type": {
+      "default": "cyto2",
+      "description": "Built-in Cellpose model; cyto/cyto2/nuclei also ship a size model for diameter estimation",
+      "enum": [
+       "cyto",
+       "nuclei",
+       "tissuenet",
+       "livecell",
+       "cyto2",
+       "general",
+       "CP",
+       "CPx",
+       "TN1",
+       "TN2",
+       "TN3",
+       "LC1",
+       "LC2",
+       "LC3",
+       "LC4"
+      ],
+      "type": "string"
+     },
+     "pretrained_model_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Path of a custom/user-trained Cellpose model file; overrides model_type when given"
+     },
+     "channels": {
+      "default": [
+       0,
+       0
+      ],
+      "description": "[cytoplasm, nucleus] channels: 0=grayscale/none, 1=red, 2=green, 3=blue (e.g. [0,0] grayscale, [2,3] green cells + blue nuclei)",
+      "items": {
+       "type": "integer"
+      },
+      "type": "array"
+     },
+     "diameter": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Mean object diameter in pixels; None estimates it with the size model (cyto/cyto2/nuclei) or uses the model's training diameter for other models"
+     },
+     "flow_threshold": {
+      "default": 0.4,
+      "description": "Maximum allowed flow error per mask (higher keeps more masks); not used in 3D",
+      "type": "number"
+     },
+     "cellprob_threshold": {
+      "default": 0.0,
+      "description": "Cell probability threshold in (-6, 6); decrease to find more and larger masks",
+      "type": "number"
+     },
+     "net_avg": {
+      "default": false,
+      "description": "Average the 4 built-in networks (cyto/cyto2/nuclei; the CLI default) instead of running one network",
+      "type": "boolean"
+     },
+     "resample": {
+      "default": true,
+      "description": "Run the flow dynamics at the original image size (slower, more accurate boundaries)",
+      "type": "boolean"
+     },
+     "device": {
+      "default": "auto",
+      "description": "Compute device; auto picks the CUDA device with the most free memory (>= 4 GiB) else CPU",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh per-call subdirectory is created (default: CELLPOSE_OUTPUT_DIR or <package>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "image_path"
+    ]
+   }
+  },
+  "cellpose_estimate_diameter": {
+   "description": "Estimate the mean object diameter of a 2D image with the Cellpose size model (models.SizeModel.eval).\nInput is an image file; output is the two-step diameter estimate (style regression, then median mask size) in pixels.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "Path of a 2D image (png/jpg/tif)",
+      "type": "string"
+     },
+     "model_type": {
+      "default": "cyto2",
+      "description": "Built-in model whose size model is used (cyto/cyto2: 30 px mean, nuclei: 17 px)",
+      "enum": [
+       "cyto",
+       "cyto2",
+       "nuclei"
+      ],
+      "type": "string"
+     },
+     "channels": {
+      "default": [
+       0,
+       0
+      ],
+      "description": "[cytoplasm, nucleus] channels: 0=grayscale/none, 1=red, 2=green, 3=blue",
+      "items": {
+       "type": "integer"
+      },
+      "type": "array"
+     },
+     "device": {
+      "default": "auto",
+      "description": "Compute device; auto picks the CUDA device with the most free memory (>= 4 GiB) else CPU",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional base output directory; when given a fresh subdirectory with a JSON record is written, otherwise no files are produced"
+     }
+    },
+    "required": [
+     "image_path"
+    ]
+   }
+  },
+  "cellpose_segment_3d": {
+   "description": "Segment a 3D image stack with Cellpose, either with true 3D flows (do_3D) or by stitching 2D masks (notebooks/run_cellpose_GPU.ipynb).\nInput is a tif/npy volume; outputs are the (Z,Y,X) label volume (npy/tif), _seg.npy, raw flows, per-plane and per-label count CSVs and plane overlay figures.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "Path of a 3D tif/tiff stack (Z x Y x X, Z x C x Y x X or Z x Y x X x C) or an .npy volume",
+      "type": "string"
+     },
+     "model_type": {
+      "default": "cyto",
+      "description": "Built-in Cellpose model (cyto/cyto2/nuclei may use the 4-net ensemble via net_avg)",
+      "enum": [
+       "cyto",
+       "nuclei",
+       "tissuenet",
+       "livecell",
+       "cyto2",
+       "general",
+       "CP",
+       "CPx",
+       "TN1",
+       "TN2",
+       "TN3",
+       "LC1",
+       "LC2",
+       "LC3",
+       "LC4"
+      ],
+      "type": "string"
+     },
+     "pretrained_model_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Path of a custom/user-trained Cellpose model file; overrides model_type when given"
+     },
+     "channels": {
+      "default": [
+       0,
+       0
+      ],
+      "description": "[cytoplasm, nucleus] channels: 0=grayscale/none, 1=red, 2=green, 3=blue (e.g. [2,1] green cells + red nuclei)",
+      "items": {
+       "type": "integer"
+      },
+      "type": "array"
+     },
+     "diameter": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Object diameter in pixels (set it: no size estimation in 3D); None uses the model's built-in mean diameter (30 px cyto-type, 17 px nuclei)"
+     },
+     "mode": {
+      "default": "do_3D",
+      "description": "do_3D: 2D flows from XY/XZ/YZ slices combined into 3D masks; stitch: 2D masks per plane stitched by IoU >= stitch_threshold",
+      "enum": [
+       "do_3D",
+       "stitch"
+      ],
+      "type": "string"
+     },
+     "stitch_threshold": {
+      "default": 0.5,
+      "description": "IoU threshold for stitching masks across planes (stitch mode only, must be > 0)",
+      "type": "number"
+     },
+     "anisotropy": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Z sampling factor relative to XY for do_3D (e.g. 2.0 if Z is sampled half as densely); None = isotropic"
+     },
+     "channel_axis": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Axis of the channel dimension in the stack; None lets Cellpose infer it (smallest axis)"
+     },
+     "z_axis": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Axis of the Z dimension in the stack; None lets Cellpose infer it"
+     },
+     "flow_threshold": {
+      "default": 0.4,
+      "description": "Maximum allowed flow error per mask (stitch mode only; ignored by do_3D)",
+      "type": "number"
+     },
+     "cellprob_threshold": {
+      "default": 0.0,
+      "description": "Cell probability threshold in (-6, 6); decrease to find more and larger masks",
+      "type": "number"
+     },
+     "net_avg": {
+      "default": false,
+      "description": "Average the 4 built-in networks (cyto/cyto2/nuclei only) instead of one network",
+      "type": "boolean"
+     },
+     "device": {
+      "default": "auto",
+      "description": "Compute device; auto picks the CUDA device with the most free memory (>= 4 GiB) else CPU",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh per-call subdirectory is created (default: CELLPOSE_OUTPUT_DIR or <package>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "image_path"
+    ]
+   }
+  },
+  "cellpose_suggest_model": {
+   "description": "Suggest the best model-zoo Cellpose model for an image from its style vector, as the GUI 'suggest model' button does (gui.py L1917-1938).\nInput is an image file; output is the suggested model name with its 5 nearest training-style neighbours (Leiden cluster labels and distances).",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "Path of an image (png/jpg/tif); for stacks the middle plane is used as in the GUI",
+      "type": "string"
+     },
+     "channels": {
+      "default": [
+       0,
+       0
+      ],
+      "description": "[cytoplasm, nucleus] channels: 0=grayscale/none, 1=red, 2=green, 3=blue",
+      "items": {
+       "type": "integer"
+      },
+      "type": "array"
+     },
+     "diameter": {
+      "default": 30.0,
+      "description": "Object diameter in pixels used to rescale the image before computing its style (GUI default 30)",
+      "type": "number"
+     },
+     "device": {
+      "default": "auto",
+      "description": "Compute device; auto picks the CUDA device with the most free memory (>= 4 GiB) else CPU",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional base output directory; when given a fresh subdirectory with a JSON record and the style vector is written"
+     }
+    },
+    "required": [
+     "image_path"
+    ]
+   }
+  },
+  "cellpose_train_model": {
+   "description": "Fine-tune a pretrained Cellpose model (or train from scratch) on a folder of images with label masks, the Cellpose 2.0 human-in-the-loop recipe.\nInput is a training folder (+ optional test folder) of image/label pairs; output is the trained model file, diam_labels, per-epoch losses, the upstream log",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "train_dir": {
+      "description": "Folder of training images (.tif/.tiff/.png/.jpg) with a label file per image: <stem>_seg.npy (Cellpose GUI) or <stem>_masks.tif/.png (label image, 0=background)",
+      "type": "string"
+     },
+     "test_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Optional folder of test images with labels in the same format; used for the test loss during training and for the notebook's average-precision check after training"
+     },
+     "mask_filter": {
+      "default": "_seg.npy",
+      "description": "Label file convention: '_seg.npy' (GUI files, notebook default) or '_masks' (<stem>_masks.tif/.tiff/.png)",
+      "enum": [
+       "_seg.npy",
+       "_masks"
+      ],
+      "type": "string"
+     },
+     "initial_model": {
+      "default": "cyto",
+      "description": "Pretrained model-zoo network to fine-tune (downloaded on first use) or 'scratch' for random initialisation; ignored when pretrained_model_path is given",
+      "enum": [
+       "cyto",
+       "cyto2",
+       "nuclei",
+       "tissuenet",
+       "livecell",
+       "general",
+       "CP",
+       "CPx",
+       "TN1",
+       "TN2",
+       "TN3",
+       "LC1",
+       "LC2",
+       "LC3",
+       "LC4",
+       "scratch"
+      ],
+      "type": "string"
+     },
+     "pretrained_model_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Path of a custom Cellpose model file to continue training from (e.g. a model produced by this tool); overrides initial_model"
+     },
+     "channels": {
+      "default": [
+       2,
+       1
+      ],
+      "description": "[channel to segment, nuclear channel]: 0=grayscale/none, 1=red, 2=green, 3=blue; notebook uses [2, 1] (green cytoplasm, red nuclei)",
+      "items": {
+       "type": "integer"
+      },
+      "type": "array"
+     },
+     "n_epochs": {
+      "default": 100,
+      "description": "Number of training epochs (notebook/paper: 100)",
+      "type": "integer"
+     },
+     "learning_rate": {
+      "default": 0.1,
+      "description": "Peak SGD learning rate, ramped up linearly over the first 10 epochs (notebook: 0.1); scalar only",
+      "type": "number"
+     },
+     "weight_decay": {
+      "default": 0.0001,
+      "description": "SGD weight decay (notebook: 0.0001)",
+      "type": "number"
+     },
+     "nimg_per_epoch": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": 8,
+      "description": "Minimum number of images sampled per epoch (notebook: 8, useful for small training sets); null = upstream default (each image once per epoch)"
+     },
+     "model_name": {
+      "default": "CP_custom",
+      "description": "File name of the trained model, written to <output>/train/models/<model_name>",
+      "type": "string"
+     },
+     "seed": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": 0,
+      "description": "Seed for python/numpy/torch RNGs with deterministic cuDNN/cuBLAS for the call (bit-identical replays on the same GPU); the value only changes the random initialisation of 'scratch' (upstream training reseeds numpy itself, so fine-tuning a pretrained model gives the same result for every seed); null = upstream behaviour (numpy seeded by cellpose, torch unseeded, non-deterministic cuDNN)"
+     },
+     "device": {
+      "default": "auto",
+      "description": "'auto' = CUDA device with the most free memory (>= 4 GiB) else CPU; note CPU and GPU compute different flow targets, so results differ between device classes",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call"
+     }
+    },
+    "required": [
+     "train_dir"
+    ]
+   }
+  },
+  "cellpose_evaluate_masks": {
+   "description": "Score predicted label masks against ground truth with Cellpose's average precision AP = TP/(TP+FP+FN) at IoU thresholds and the aggregated Jaccard index.\nInput is a predicted and a ground-truth mask file (or matched folders); output is per-image AP/TP/FP/FN per threshold, AJI, their means and CSV/JS",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "pred_masks_path": {
+      "description": "Predicted label masks: one file (_seg.npy, .npy, .tif/.tiff/.png label image) or a folder of '<stem><pred_mask_filter>[.ext]' files",
+      "type": "string"
+     },
+     "true_masks_path": {
+      "description": "Ground-truth label masks in the same formats: one file, or a folder of '<stem><true_mask_filter>[.ext]' files matched to the predictions by stem",
+      "type": "string"
+     },
+     "pred_mask_filter": {
+      "default": "_cp_masks",
+      "description": "Suffix selecting prediction files inside a folder, e.g. '_cp_masks' (Cellpose outputs; one file per stem, tif preferred over png), '_cp_masks.png', '_seg.npy', '_masks'; '' = every .npy/.tif/.tiff/.png file",
+      "type": "string"
+     },
+     "true_mask_filter": {
+      "default": "_seg.npy",
+      "description": "Suffix selecting ground-truth files inside a folder, e.g. '_seg.npy' (GUI labels), '_masks'; '' = every .npy/.tif/.tiff/.png file",
+      "type": "string"
+     },
+     "thresholds": {
+      "default": [
+       0.5,
+       0.75,
+       0.9
+      ],
+      "description": "IoU thresholds for the matching (paper/notebook default [0.5, 0.75, 0.9])",
+      "items": {
+       "type": "number"
+      },
+      "type": "array"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call"
+     }
+    },
+    "required": [
+     "pred_masks_path",
+     "true_masks_path"
+    ]
+   }
+  },
+  "cellpose_masks_to_rois": {
+   "description": "Export a Cellpose (or any) 2D label mask to ImageJ/Fiji ROIs, outline text, label PNG/TIF and per-object sizes.\nInput is a mask file path (_seg.npy / .npy / .png / .tif); output is a fresh directory with the selected files plus object counts and the median diameter.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "masks_path": {
+      "description": "Path to a 2D label mask: a Cellpose `_seg.npy` (key 'masks'), a `.npy` integer label array, or a `.png`/`.tif` label image (0 = background, 1..N = object ids).",
+      "type": "string"
+     },
+     "imagej_rois": {
+      "default": true,
+      "description": "Write `<base>_rois.zip`, a native ImageJ/Fiji ROI-manager archive with one FREEHAND .roi per object (cellpose.io.save_rois semantics).",
+      "type": "boolean"
+     },
+     "outlines_txt": {
+      "default": true,
+      "description": "Write `<base>_cp_outlines.txt`, the legacy ImageJ outline list (one line per object: x0,y0,x1,y1,... for imagej_roi_converter.py) via cellpose.io.outlines_to_text.",
+      "type": "boolean"
+     },
+     "masks_png": {
+      "default": true,
+      "description": "Write `<base>_cp_masks.png` (16-bit label PNG) via cellpose.io.save_masks(png=True); skipped by Cellpose when the mask has no objects or more than 65535 labels.",
+      "type": "boolean"
+     },
+     "masks_tif": {
+      "default": false,
+      "description": "Write `<base>_cp_masks.tif` (label TIFF) via cellpose.io.save_masks(tif=True).",
+      "type": "boolean"
+     },
+     "per_object_csv": {
+      "default": true,
+      "description": "Write `<base>_object_stats.csv` with, per label: area_px (pixel count), sqrt_area and equivalent_diameter_px from cellpose.utils.diameters, n_outline_vertices, centroid_y_px/centroid_x_px (mean pixel coordinates) and the ROI name assigned in the zip.",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh `cellpose_masks_to_rois_<timestamp>_<id>/` subdirectory is created per call (default: $CELLPOSE_OUTPUT_DIR or <package>/tmp/outputs)."
+     }
+    },
+    "required": [
+     "masks_path"
+    ]
+   }
+  }
+ },
+ "MedMNIST": {
+  "medmnist_describe_dataset": {
+   "description": "Describe the MedMNIST v2 dataset registry: list all 18 datasets or return the full record of one dataset flag.\nInput is an optional flag; output is registry metadata (task, label map, channels, split sizes, image sizes, licence, download URL/MD5, local npz files) plus an optional JSON artifact.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "flag": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "MedMNIST dataset flag such as 'pathmnist' or 'organmnist3d' (case-insensitive; the class name 'PathMNIST' is accepted); omit or leave empty to list all 18 datasets"
+     },
+     "data_root": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Directory holding MedMNIST npz files, used only to report which sizes are already present locally; default env MEDMNIST_DATA_ROOT or <package>/data/medmnist"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; when given, a fresh subdirectory is created and the result is also written as JSON (no file is written otherwise)"
+     }
+    }
+   }
+  },
+  "medmnist_download_dataset": {
+   "description": "Download (or MD5-verify an existing) MedMNIST dataset npz at a chosen resolution and summarize its splits.\nInput is a dataset flag + size; output is the verified npz path, MD5 status and per-split image/label shapes and class counts.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "flag": {
+      "description": "MedMNIST dataset flag, e.g. 'pathmnist', 'breastmnist', 'organmnist3d' (one of the 18 INFO keys)",
+      "type": "string"
+     },
+     "size": {
+      "default": 28,
+      "description": "Image resolution of the npz file: 28/64/128/224 for 2D datasets, 28/64 for 3D datasets",
+      "enum": [
+       28,
+       64,
+       128,
+       224
+      ],
+      "type": "integer"
+     },
+     "splits": {
+      "default": [
+       "train",
+       "val",
+       "test"
+      ],
+      "description": "Splits to load and summarize after the file is verified",
+      "items": {
+       "enum": [
+        "train",
+        "val",
+        "test"
+       ],
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "data_root": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Directory holding the npz files, passed as the library's root=; default env MEDMNIST_DATA_ROOT or <package>/data/medmnist"
+     },
+     "download": {
+      "default": true,
+      "description": "Let the library fetch a missing npz from Zenodo (network required; 28-size files are 0.5 MB-1 GB, 224-size files are multi-GB); an existing file is MD5-verified and never re-downloaded",
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "flag"
+    ]
+   }
+  },
+  "medmnist_export_dataset": {
+   "description": "Export one split of a MedMNIST dataset to standard image files plus a Google-AutoML-Vision style CSV index.\nInput is a dataset flag/split/size; output is a folder of '{split}{idx}_{label}.{png|jpg|gif}' files and a 'SPLIT,filename,label' CSV.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "flag": {
+      "description": "MedMNIST dataset flag, e.g. 'pathmnist', 'breastmnist', 'organmnist3d'",
+      "type": "string"
+     },
+     "split": {
+      "description": "Split to export",
+      "enum": [
+       "train",
+       "val",
+       "test"
+      ],
+      "type": "string"
+     },
+     "size": {
+      "default": 28,
+      "description": "Image resolution: 28/64/128/224 for 2D datasets, 28/64 for 3D datasets",
+      "enum": [
+       28,
+       64,
+       128,
+       224
+      ],
+      "type": "integer"
+     },
+     "postfix": {
+      "default": "png",
+      "description": "Image format for 2D datasets; 3D datasets are always written as multi-frame GIF (library requirement) and this value is ignored",
+      "enum": [
+       "png",
+       "jpg"
+      ],
+      "type": "string"
+     },
+     "data_root": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Directory holding the npz files (library root=); default env MEDMNIST_DATA_ROOT or <package>/data/medmnist"
+     },
+     "download": {
+      "default": false,
+      "description": "Fetch a missing npz from Zenodo first (network required); False raises the library's 'Dataset not found' error",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call (default env MEDMNIST_OUTPUT_DIR or <package>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "flag",
+     "split"
+    ]
+   }
+  },
+  "medmnist_montage": {
+   "description": "Render a random length x length montage of a MedMNIST split: one image for 2D datasets, one frame per depth slice (plus an animated GIF) for 3D datasets.\nInput is a dataset flag/split/size and grid length; output is the montage PNG (+ the library's JPEG) or the per-slice PNG frames + GIF, with the s",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "flag": {
+      "description": "MedMNIST dataset flag, e.g. 'pathmnist', 'breastmnist', 'organmnist3d'",
+      "type": "string"
+     },
+     "split": {
+      "description": "Split to sample the montage tiles from",
+      "enum": [
+       "train",
+       "val",
+       "test"
+      ],
+      "type": "string"
+     },
+     "size": {
+      "default": 28,
+      "description": "Image resolution: 28/64/128/224 for 2D datasets, 28/64 for 3D datasets",
+      "enum": [
+       28,
+       64,
+       128,
+       224
+      ],
+      "type": "integer"
+     },
+     "length": {
+      "default": 20,
+      "description": "Grid side: the montage shows length x length randomly selected samples (default 20 -> 400 tiles)",
+      "type": "integer"
+     },
+     "replace": {
+      "default": false,
+      "description": "Sample tile indices with replacement (required when length^2 exceeds the split size)",
+      "type": "boolean"
+     },
+     "seed": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": 0,
+      "description": "numpy global seed set immediately before the library call so the random tile selection is reproducible; None leaves it unseeded as upstream"
+     },
+     "data_root": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Directory holding the npz files (library root=); default env MEDMNIST_DATA_ROOT or <package>/data/medmnist"
+     },
+     "download": {
+      "default": false,
+      "description": "Fetch a missing npz from Zenodo first (network required); False raises the library's 'Dataset not found' error",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call (default env MEDMNIST_OUTPUT_DIR or <package>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "flag",
+     "split"
+    ]
+   }
+  },
+  "medmnist_evaluate_predictions": {
+   "description": "Score a prediction file with the official MedMNIST Evaluator (AUC and ACC as defined by the dataset's task type).\nInput is a .csv/.npy/.npz score array plus dataset flag and split; output is the standard-named result CSV, metrics.json and the AUC/ACC values.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "predictions_path": {
+      "description": "Prediction scores for one dataset split: .csv in the standard MedMNIST result format (rows `index,score_0,...`, header optional; the first column is the sample index), .npy array, or .npz (see array_key). Shape (N, C) for multi-class/ordinal (C = number of classes) and multi-label (C = number of labels); (N,), (N,1) or (N,2) for binary tasks (last column = probability of class 1).",
+      "type": "string"
+     },
+     "flag": {
+      "description": "MedMNIST dataset whose ground-truth labels are used (e.g. 'pathmnist', 'breastmnist', 'chestmnist', 'organmnist3d').",
+      "enum": [
+       "pathmnist",
+       "chestmnist",
+       "dermamnist",
+       "octmnist",
+       "pneumoniamnist",
+       "retinamnist",
+       "breastmnist",
+       "bloodmnist",
+       "tissuemnist",
+       "organamnist",
+       "organcmnist",
+       "organsmnist",
+       "organmnist3d",
+       "nodulemnist3d",
+       "adrenalmnist3d",
+       "fracturemnist3d",
+       "vesselmnist3d",
+       "synapsemnist3d"
+      ],
+      "type": "string"
+     },
+     "split": {
+      "description": "Dataset split the predictions were made on; N must equal that split's sample count.",
+      "enum": [
+       "train",
+       "val",
+       "test"
+      ],
+      "type": "string"
+     },
+     "size": {
+      "default": 28,
+      "description": "Image size of the dataset file the labels are read from ({flag}.npz for 28, {flag}_{size}.npz otherwise; 3D datasets offer 28 and 64 only). Labels are identical across sizes.",
+      "enum": [
+       28,
+       64,
+       128,
+       224
+      ],
+      "type": "integer"
+     },
+     "array_key": {
+      "default": "y_score",
+      "description": "Key of the score array inside an .npz predictions file (ignored for .csv/.npy).",
+      "type": "string"
+     },
+     "data_root": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": "",
+      "description": "Directory holding the MedMNIST npz files; empty/null = env MEDMNIST_DATA_ROOT or <package>/data/medmnist."
+     },
+     "download": {
+      "default": false,
+      "description": "If the dataset npz is missing, download it from Zenodo through the medmnist library (network required, MD5-checked); otherwise a missing file is an error.",
+      "type": "boolean"
+     },
+     "run_name": {
+      "default": "mcp",
+      "description": "Run label embedded in the standard result file name '{flag}{size_flag}_{split}_[AUC]x.xxx_[ACC]y.yyy@{run_name}.csv'; must not contain '/', '\\', '@' or '.'.",
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": "",
+      "description": "Base output directory; a fresh subdirectory is created per call (empty/null = env MEDMNIST_OUTPUT_DIR or <package>/tmp/outputs)."
+     }
+    },
+    "required": [
+     "predictions_path",
+     "flag",
+     "split"
+    ]
+   }
+  },
+  "medmnist_train_baseline": {
+   "description": "Train the getting_started notebook's 28x28 baseline CNN on a 2D MedMNIST dataset and evaluate it with the official Evaluator (AUC/ACC on train and test).\nInput is a dataset flag plus training settings; output is a fresh directory with model_state_dict.pt, the standard-named prediction CSVs for train",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "flag": {
+      "description": "2D MedMNIST dataset flag (28x28 npz), e.g. 'pathmnist' or 'breastmnist'; 3D datasets are not supported by the notebook's 2D CNN",
+      "enum": [
+       "pathmnist",
+       "chestmnist",
+       "dermamnist",
+       "octmnist",
+       "pneumoniamnist",
+       "retinamnist",
+       "breastmnist",
+       "bloodmnist",
+       "tissuemnist",
+       "organamnist",
+       "organcmnist",
+       "organsmnist"
+      ],
+      "type": "string"
+     },
+     "epochs": {
+      "default": 3,
+      "description": "Number of training epochs (notebook NUM_EPOCHS = 3)",
+      "type": "integer"
+     },
+     "batch_size": {
+      "default": 128,
+      "description": "Training mini-batch size (notebook BATCH_SIZE = 128); evaluation uses 2*batch_size as in the notebook",
+      "type": "integer"
+     },
+     "learning_rate": {
+      "default": 0.001,
+      "description": "SGD learning rate (notebook lr = 0.001; momentum 0.9 is fixed by the notebook)",
+      "type": "number"
+     },
+     "size": {
+      "default": 28,
+      "description": "Image size; only 28 is supported because the notebook Net's fc layer is hard-wired to 28x28 inputs (64*4*4)",
+      "type": "integer"
+     },
+     "seed": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": 0,
+      "description": "Tool addition (the notebook sets no seed): seeds random/numpy/torch, a seeded DataLoader shuffle generator and deterministic cuDNN; None = unseeded like the notebook"
+     },
+     "allow_tf32": {
+      "default": false,
+      "description": "Tool addition: False disables TF32 for cuDNN convolutions and cuBLAS matmuls on Ampere+ GPUs (GPU results then match CPU closely); True restores torch's defaults, which is what the unmodified notebook uses on a GPU (upstream leaves torch defaults). TF32 was the dominant GPU-vs-CPU metric difference in the execution evidence",
+      "type": "boolean"
+     },
+     "device": {
+      "default": "auto",
+      "description": "'auto' = CUDA device with the most free memory if >= 4 GiB free, else cpu; 'cpu' is the device the notebook's 28x28 section itself uses",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "data_root": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Directory holding <flag>.npz (default: env MEDMNIST_DATA_ROOT or <package>/data/medmnist); passed as the library's root="
+     },
+     "download": {
+      "default": false,
+      "description": "Let medmnist download a missing <flag>.npz from Zenodo into data_root (network required); when the file exists only its MD5 is verified",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh medmnist_train_baseline_<timestamp>_<id> subdirectory is created per call (default: env MEDMNIST_OUTPUT_DIR or <package>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "flag"
+    ]
+   }
+  }
+ },
+ "nnUNet": {
+  "nnunet_convert_msd_dataset": {
+   "description": "Convert an extracted MSD TaskXX_Name folder into nnU-Net v2 format (nnUNet_raw/DatasetXXX_Name with _0000 channel files and a v2 dataset.json).\nInput is the MSD folder path (+ optional target id); output is the created dataset folder, its file counts and dataset.json content.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "msd_folder": {
+      "description": "Extracted Medical Segmentation Decathlon task folder named TaskXX_Name (e.g. .../Task04_Hippocampus) containing imagesTr, labelsTr, imagesTs and dataset.json; 4D NIfTI images are split into one _XXXX channel file each",
+      "type": "string"
+     },
+     "overwrite_target_id": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnU-Net dataset id for the converted dataset (DatasetXXX_Name); None uses the MSD task number from the folder name; the id must be free in nnUNet_raw, nnUNet_preprocessed and nnUNet_results"
+     },
+     "num_processes": {
+      "default": 8,
+      "description": "Worker processes for the parallel NIfTI copy/split (upstream default 8)",
+      "type": "integer"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder that receives DatasetXXX_Name; default: nnUNet_raw environment variable, else <project>/data/nnUNet_raw"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder (only consulted for the id-is-free check); default: environment variable, else <project>/data/nnUNet_preprocessed"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder (only consulted for the id-is-free check); default: environment variable, else <project>/data/nnUNet_results"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base directory for this call's logs and dataset.json copy; a fresh subdirectory is created (default <project>/tmp/outputs or $NNUNET_OUTPUT_DIR)"
+     }
+    },
+    "required": [
+     "msd_folder"
+    ]
+   }
+  },
+  "nnunet_generate_dataset_json": {
+   "description": "Write the nnU-Net v2 dataset.json (channel_names, labels, numTraining, file_ending + metadata) for a DatasetXXX_Name folder using upstream generate_dataset_json.\nInput is the dataset folder plus channel/label dictionaries; output is the written dataset.json path and content.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset_folder": {
+      "description": "Target DatasetXXX_Name folder (absolute path, or a dataset name/id located under nnUNet_raw) that already holds imagesTr/labelsTr; dataset.json is written there",
+      "type": "string"
+     },
+     "channel_names": {
+      "additionalProperties": {
+       "type": "string"
+      },
+      "description": "Channel index -> name, e.g. {'0': 'T1', '1': 'CT'}; the name 'CT' selects CT normalization, others z-score (see documentation)",
+      "type": "object"
+     },
+     "labels": {
+      "additionalProperties": {
+       "anyOf": [
+        {
+         "type": "integer"
+        },
+        {
+         "items": {
+          "type": "integer"
+         },
+         "type": "array"
+        }
+       ]
+      },
+      "description": "Label name -> integer value, background must be 0 and values consecutive, e.g. {'background': 0, 'Anterior': 1}; a list of ints defines a region (requires regions_class_order)",
+      "type": "object"
+     },
+     "num_training_cases": {
+      "description": "Number of training cases in imagesTr/labelsTr; nnU-Net verifies this count",
+      "type": "integer"
+     },
+     "file_ending": {
+      "description": "File ending shared by images and labels, e.g. '.nii.gz', '.png', '.tif'",
+      "type": "string"
+     },
+     "dataset_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Human-readable dataset name stored as 'name' (metadata only)"
+     },
+     "description": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Free-text description (metadata only)"
+     },
+     "reference": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Data source/reference (metadata only)"
+     },
+     "release": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Release/version string (metadata only)"
+     },
+     "license": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Dataset licence stored as 'licence'; upstream default is a placeholder text"
+     },
+     "converted_by": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Who converted the dataset (metadata); upstream default is a placeholder text"
+     },
+     "regions_class_order": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "integer"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Required when labels contain regions: order in which region labels are written back (e.g. [1, 2, 3])"
+     },
+     "overwrite_image_reader_writer": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Name of a nnunetv2.imageio reader/writer class to force (e.g. 'SimpleITKIO', 'NibabelIO', 'Tiff3DIO'); None lets nnU-Net choose by file ending"
+     },
+     "extra_metadata": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Additional top-level keys copied verbatim into dataset.json (e.g. {'citation': '...'})"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder used to resolve a dataset name/id; default: environment variable, else <project>/data/nnUNet_raw"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base directory for this call's logs and dataset.json copy; a fresh subdirectory is created (default <project>/tmp/outputs or $NNUNET_OUTPUT_DIR)"
+     }
+    },
+    "required": [
+     "dataset_folder",
+     "channel_names",
+     "labels",
+     "num_training_cases",
+     "file_ending"
+    ]
+   }
+  },
+  "nnunet_verify_dataset_integrity": {
+   "description": "Run nnU-Net's verify_dataset_integrity on a raw dataset (required dataset.json keys, case counts, label files, consecutive labels, expected label values, image/label geometry) before planning.\nInput is a dataset id/name/path; output is passed=True/False with the upstream exception text and the print",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset": {
+      "description": "Dataset id or name (e.g. '4', '004', 'Dataset004_Hippocampus') resolved under nnUNet_raw, or an absolute path to a DatasetXXX_Name folder",
+      "type": "string"
+     },
+     "num_processes": {
+      "default": 8,
+      "description": "Worker processes for the per-case label/geometry checks (upstream default 8)",
+      "type": "integer"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder used to resolve the dataset; default: environment variable, else <project>/data/nnUNet_raw"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base directory for this call's logs; a fresh subdirectory is created (default <project>/tmp/outputs or $NNUNET_OUTPUT_DIR)"
+     }
+    },
+    "required": [
+     "dataset"
+    ]
+   }
+  },
+  "nnunet_plot_overlay_pngs": {
+   "description": "Render one QC PNG per training case showing the slice with the most foreground with the label map blended in colour (nnUNetv2_plot_overlay_pngs; spacing is disregarded, 3D images only).\nInput is a dataset id/name and the data source (raw or a preprocessed configuration); output is the PNG folder, th",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset": {
+      "description": "Dataset id or name (e.g. '4', '004', 'Dataset004_Hippocampus')",
+      "type": "string"
+     },
+     "source": {
+      "default": "raw",
+      "description": "'raw' reads nnUNet_raw images/labels; 'preprocessed' reads the preprocessed data of one configuration (requires prior preprocessing)",
+      "enum": [
+       "raw",
+       "preprocessed"
+      ],
+      "type": "string"
+     },
+     "configuration": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Preprocessed source only: configuration name (e.g. '2d', '3d_fullres'); None = 3d_fullres if present in the plans else 2d"
+     },
+     "plans_identifier": {
+      "default": "nnUNetPlans",
+      "description": "Preprocessed source only: plans file name without .json (e.g. 'nnUNetPlans', 'nnUNetResEncUNetMPlans')",
+      "type": "string"
+     },
+     "channel_idx": {
+      "default": 0,
+      "description": "Input channel index to draw (0 = _0000)",
+      "type": "integer"
+     },
+     "overlay_intensity": {
+      "default": 0.6,
+      "description": "Label colour blending intensity; higher = brighter/less transparent (upstream default 0.6)",
+      "type": "number"
+     },
+     "num_processes": {
+      "default": 8,
+      "description": "Worker processes for rendering (upstream default 8)",
+      "type": "integer"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder; default: environment variable, else <project>/data/nnUNet_raw"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder; default: environment variable, else <project>/data/nnUNet_preprocessed"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder (only used to resolve a dataset id); default: environment variable, else <project>/data/nnUNet_results"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base directory for the PNG folder and logs; a fresh subdirectory is created (default <project>/tmp/outputs or $NNUNET_OUTPUT_DIR)"
+     }
+    },
+    "required": [
+     "dataset"
+    ]
+   }
+  },
+  "nnunet_plan_and_preprocess": {
+   "description": "Run nnU-Net self-configuration: extract the dataset fingerprint, plan the U-Net configurations and preprocess the data (nnUNetv2_plan_and_preprocess).\nInput is a dataset in nnUNet_raw \u2192 dataset_fingerprint.json, <plans>.json and per-configuration preprocessed folders in nnUNet_preprocessed plus a Pl",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       }
+      ],
+      "description": "Dataset id or name in nnUNet_raw: 4, '4', '004' or 'Dataset004_Hippocampus'"
+     },
+     "planner": {
+      "default": "ExperimentPlanner",
+      "description": "Experiment planner class: ExperimentPlanner (nnUNetPlans, 8 GB VRAM target) or the residual encoder presets M/L/XL (nnUNetResEncUNet{M,L,XL}Plans; 8/24/40 GB targets)",
+      "enum": [
+       "ExperimentPlanner",
+       "nnUNetPlannerResEncM",
+       "nnUNetPlannerResEncL",
+       "nnUNetPlannerResEncXL"
+      ],
+      "type": "string"
+     },
+     "configurations": {
+      "default": [
+       "2d",
+       "3d_fullres",
+       "3d_lowres"
+      ],
+      "description": "Configurations to preprocess (upstream default 2d 3d_fullres 3d_lowres); configurations the planner did not create for this dataset (e.g. 3d_lowres on small images) are skipped and reported; 3d_cascade_fullres reuses the 3d_fullres data and need not be listed",
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "check_dataset_integrity": {
+      "default": true,
+      "description": "Run verify_dataset_integrity on the raw dataset first (--verify_dataset_integrity, recommended once per dataset)",
+      "type": "boolean"
+     },
+     "clean": {
+      "default": true,
+      "description": "Re-extract the fingerprint even if dataset_fingerprint.json exists (--clean); False reuses an existing fingerprint",
+      "type": "boolean"
+     },
+     "run_preprocessing": {
+      "default": true,
+      "description": "False stops after fingerprint + planning (upstream --no_pp) and only writes the plans file",
+      "type": "boolean"
+     },
+     "num_processes": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Worker processes for fingerprint extraction and every configuration; None = upstream defaults (8 fingerprint; 8/4/8/4 per configuration)"
+     },
+     "gpu_memory_target_in_gb": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Custom GPU memory target in GB for the planner (-gpu_memory_target); None = planner default (8 GB ExperimentPlanner/ResEncM, 24 ResEncL, 40 ResEncXL). Changes patch/batch size; combine with overwrite_plans_name"
+     },
+     "overwrite_target_spacing": {
+      "anyOf": [
+       {
+        "items": {
+         "type": "number"
+        },
+        "type": "array"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Custom target spacing (three numbers) for 3d_fullres/3d_cascade_fullres only (-overwrite_target_spacing); None = planner-chosen spacing. Combine with overwrite_plans_name"
+     },
+     "overwrite_plans_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Custom plans identifier (-overwrite_plans_name) so the default plans file is not overwritten when gpu_memory_target_in_gb or overwrite_target_spacing are used; None = planner default name"
+     },
+     "verbose": {
+      "default": false,
+      "description": "Verbose upstream logging in the child process log (--verbose)",
+      "type": "boolean"
+     },
+     "timeout_seconds": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Abort the child process after this many seconds; None = wait until preprocessing finishes"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder holding DatasetXXX_Name; None = env nnUNet_raw or <project>/data/nnUNet_raw"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder that receives fingerprint/plans/preprocessed data; None = env nnUNet_preprocessed or <project>/data/nnUNet_preprocessed"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder (only consulted for dataset-name resolution); None = env nnUNet_results or <project>/data/nnUNet_results"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base directory for the per-call output folder (logs, driver, summary JSON); None = env NNUNET_OUTPUT_DIR or <project>/tmp/outputs"
+     }
+    },
+    "required": [
+     "dataset"
+    ]
+   }
+  },
+  "nnunet_inspect_plans": {
+   "description": "Summarise an existing nnU-Net plans file (and its dataset fingerprint) read-only via PlansManager/ConfigurationManager.\nInput is a dataset id/name + plans identifier in nnUNet_preprocessed, or a plans.json path \u2192 per-configuration spacing, patch/batch size, architecture and normalization plus finger",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Dataset id or name whose plans live in nnUNet_preprocessed (4, '004', 'Dataset004_Hippocampus'); omit when plans_path is given"
+     },
+     "plans_identifier": {
+      "default": "nnUNetPlans",
+      "description": "Plans file name without .json inside nnUNet_preprocessed/<dataset> (nnUNetPlans, nnUNetResEncUNetMPlans, ...)",
+      "type": "string"
+     },
+     "plans_path": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Direct path to a plans JSON (e.g. a trained model folder's plans.json); overrides dataset/plans_identifier. A dataset_fingerprint.json next to it is summarised when present"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder; None = env nnUNet_raw or <project>/data/nnUNet_raw"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder searched for <dataset>/<plans_identifier>.json; None = env nnUNet_preprocessed or <project>/data/nnUNet_preprocessed"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder (reported only); None = env nnUNet_results or <project>/data/nnUNet_results"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base directory for the per-call output folder (summary JSON, logs); None = env NNUNET_OUTPUT_DIR or <project>/tmp/outputs"
+     }
+    }
+   }
+  },
+  "nnunet_train_model": {
+   "description": "Train one nnU-Net configuration/fold with nnunetv2.run.run_training (blocking until training and validation finish; the upstream default trainer nnUNetTrainer runs 1000 epochs = hours to days per fold, use nnUNetTrainer_1epoch/_5epochs/_10epochs/... for short runs).\nInput is a preprocessed dataset (",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       }
+      ],
+      "description": "Dataset id or name (4, '004' or 'Dataset004_Hippocampus'); its preprocessed folder must exist"
+     },
+     "configuration": {
+      "description": "Configuration from the plans file: 2d, 3d_fullres, 3d_lowres, 3d_cascade_fullres or a custom configuration name",
+      "type": "string"
+     },
+     "fold": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       }
+      ],
+      "default": 0,
+      "description": "Fold of the seeded 5-fold cross-validation (0-4) or 'all' to train on all cases (validation then equals the training cases)"
+     },
+     "trainer": {
+      "default": "nnUNetTrainer",
+      "description": "Trainer class name; upstream default nnUNetTrainer = 1000 epochs x 250 iterations (hours to days per fold); short debug variants: nnUNetTrainer_1epoch, nnUNetTrainer_5epochs, nnUNetTrainer_10epochs, nnUNetTrainer_20epochs, nnUNetTrainer_50epochs, nnUNetTrainer_100epochs, nnUNetTrainer_250epochs, nnUNetTrainer_500epochs, nnUNetTrainer_750epochs, nnUNetTrainer_2000epochs, nnUNetTrainer_4000epochs, nnUNetTrainer_8000epochs",
+      "type": "string"
+     },
+     "plans_identifier": {
+      "default": "nnUNetPlans",
+      "description": "Plans identifier (name of <plans>.json in the preprocessed dataset folder), e.g. nnUNetPlans or nnUNetResEncUNetMPlans",
+      "type": "string"
+     },
+     "export_validation_probabilities": {
+      "default": false,
+      "description": "Save validation softmax as .npz files (--npz); required later by ensembling / find_best_configuration",
+      "type": "boolean"
+     },
+     "continue_training": {
+      "default": false,
+      "description": "Resume from checkpoint_final/latest/best in the existing fold folder (--c); cannot be combined with only_run_validation",
+      "type": "boolean"
+     },
+     "only_run_validation": {
+      "default": false,
+      "description": "Skip training and only re-run the validation from checkpoint_final.pth (--val); writes into the same validation folder",
+      "type": "boolean"
+     },
+     "disable_checkpointing": {
+      "default": false,
+      "description": "Do not write checkpoints (--disable_checkpointing); the validation still runs on the in-memory final model",
+      "type": "boolean"
+     },
+     "device": {
+      "default": "auto",
+      "description": "auto = most-free CUDA device if it has >= 8 GiB free else cpu; cuda = most-free GPU (error if none); cpu = very slow, for tests only",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "compile": {
+      "default": true,
+      "description": "torch.compile the network (upstream default on CUDA, set through the nnUNet_compile environment variable of the training process); False = eager mode",
+      "type": "boolean"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder (default: env nnUNet_raw, else <project>/data/nnUNet_raw)"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder holding <dataset>/<plans_identifier>.json and the preprocessed data (default: env nnUNet_preprocessed, else <project>/data/nnUNet_preprocessed)"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder that receives <dataset>/<trainer>__<plans>__<configuration>/fold_<fold> (default: env nnUNet_results, else <project>/data/nnUNet_results)"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory for the per-call folder with logs, the result JSON and a progress.png copy (default: env NNUNET_OUTPUT_DIR, else <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "dataset",
+     "configuration"
+    ]
+   }
+  },
+  "nnunet_inspect_training_results": {
+   "description": "Summarise an existing nnU-Net training fold folder without training (read-only): checkpoints, debug.json settings, progress.png and the validation summary.\nInput is dataset/configuration/trainer/plans/fold identifying nnUNet_results/<dataset>/<trainer>__<plans>__<configuration>/fold_<fold> (resolved",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       }
+      ],
+      "description": "Dataset id or name (4, '004' or 'Dataset004_Hippocampus')"
+     },
+     "configuration": {
+      "description": "Trained configuration, e.g. 2d or 3d_fullres",
+      "type": "string"
+     },
+     "trainer": {
+      "default": "nnUNetTrainer",
+      "description": "Trainer class name of the model folder, e.g. nnUNetTrainer or nnUNetTrainer_5epochs",
+      "type": "string"
+     },
+     "plans_identifier": {
+      "default": "nnUNetPlans",
+      "description": "Plans identifier of the model folder, e.g. nnUNetPlans",
+      "type": "string"
+     },
+     "fold": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       }
+      ],
+      "default": 0,
+      "description": "Fold folder to inspect: 0-4 or 'all'"
+     },
+     "checkpoint_details": {
+      "default": true,
+      "description": "Also load checkpoint_final.pth on CPU to report epochs, best EMA pseudo Dice, final losses and parameter count",
+      "type": "boolean"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder, only used to resolve a dataset id to its name (default: env nnUNet_raw, else <project>/data/nnUNet_raw)"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder, only used to resolve a dataset id to its name (default: env nnUNet_preprocessed, else <project>/data/nnUNet_preprocessed)"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder containing <dataset>/<trainer>__<plans>__<configuration>/fold_<fold> (default: env nnUNet_results, else <project>/data/nnUNet_results)"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory for the per-call folder with the JSON summary and a progress.png copy (default: env NNUNET_OUTPUT_DIR, else <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "dataset",
+     "configuration"
+    ]
+   }
+  },
+  "nnunet_export_model_zip": {
+   "description": "Package trained nnU-Net models of a dataset into a zip (nnunetv2.model_sharing.model_export.export_pretrained_model, the function behind nnUNetv2_export_model_to_zip) for transfer to another machine or nnUNet_results tree.\nInput is dataset + configurations/trainer/plans/folds/checkpoint names \u2192 outp",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       }
+      ],
+      "description": "Dataset id or name whose trained models are exported (4, '004' or 'Dataset004_Hippocampus')"
+     },
+     "configurations": {
+      "description": "Configurations to export, e.g. ['3d_fullres'] or ['2d', '3d_fullres']; with strict=True every listed configuration must have a trained model folder",
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "trainer": {
+      "default": "nnUNetTrainer",
+      "description": "Trainer class name of the model folders, e.g. nnUNetTrainer or nnUNetTrainer_5epochs",
+      "type": "string"
+     },
+     "plans_identifier": {
+      "default": "nnUNetPlans",
+      "description": "Plans identifier of the model folders, e.g. nnUNetPlans",
+      "type": "string"
+     },
+     "folds": {
+      "default": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "description": "Folds to export (ints 0-4 and/or 'all'); every requested fold folder must exist in each configuration (upstream default: [0, 1, 2, 3, 4])",
+      "items": {
+       "anyOf": [
+        {
+         "type": "integer"
+        },
+        {
+         "type": "string"
+        }
+       ]
+      },
+      "type": "array"
+     },
+     "checkpoint_names": {
+      "default": [
+       "checkpoint_final.pth"
+      ],
+      "description": "Checkpoint files to include per fold, e.g. ['checkpoint_final.pth'] or ['checkpoint_final.pth', 'checkpoint_best.pth'] (upstream default: checkpoint_final.pth)",
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "strict": {
+      "default": true,
+      "description": "True = fail when a requested configuration has no model folder; False = skip missing configurations",
+      "type": "boolean"
+     },
+     "export_crossval_predictions": {
+      "default": false,
+      "description": "Also include the validation predictions (segmentations; .npz/.pkl excluded) and full cross-validation result folders instead of only summary.json",
+      "type": "boolean"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder, only used to resolve a dataset id to its name (default: env nnUNet_raw, else <project>/data/nnUNet_raw)"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder, only used to resolve a dataset id to its name (default: env nnUNet_preprocessed, else <project>/data/nnUNet_preprocessed)"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder containing the trained models; zip member paths are relative to it (default: env nnUNet_results, else <project>/data/nnUNet_results)"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; the zip is written into a fresh per-call folder (default: env NNUNET_OUTPUT_DIR, else <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "dataset",
+     "configurations"
+    ]
+   }
+  },
+  "nnunet_install_model_zip": {
+   "description": "Install a nnU-Net model zip into the resolved nnUNet_results folder (nnunetv2.model_sharing.model_import.install_model_from_zip_file = zip extractall into nnUNet_results, as nnUNetv2_install_pretrained_model_from_zip) so nnunet_predict can use it; same-named existing files are overwritten.\nInput is ",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "zip_path": {
+      "description": "Model zip produced by nnunet_export_model_zip / nnUNetv2_export_model_to_zip (members laid out as DatasetXXX_Name/<trainer>__<plans>__<configuration>/...)",
+      "type": "string"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder (accepted for a uniform interface; not used by the installation)"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder (accepted for a uniform interface; not used by the installation)"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Target nnUNet_results folder the archive is extracted into (default: env nnUNet_results, else <project>/data/nnUNet_results); existing same-named files are overwritten"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory for the per-call folder with the install manifest (default: env NNUNET_OUTPUT_DIR, else <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "zip_path"
+    ]
+   }
+  },
+  "nnunet_predict": {
+   "description": "Segment new images with a trained nnU-Net model (nnUNetPredictor: sliding window, Gaussian weighting, optional mirroring TTA, fold ensembling); blocks until all cases are written.\nInput is an image folder or one image plus a model selection (dataset+configuration or model_folder) -> {CASE}{ending} l",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "input_path": {
+      "description": "Folder of images named {CASE}_{XXXX}{ending} (all channels, training file ending) or one such image file (its sibling channel files are collected)",
+      "type": "string"
+     },
+     "dataset": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       }
+      ],
+      "default": "",
+      "description": "Dataset id or name (4, '004', 'Dataset004_Hippocampus') whose trained model in nnUNet_results is used; leave '' when model_folder is given"
+     },
+     "configuration": {
+      "default": "",
+      "description": "nnU-Net configuration of the trained model ('2d', '3d_fullres', '3d_lowres', '3d_cascade_fullres'); required with dataset",
+      "type": "string"
+     },
+     "trainer": {
+      "default": "nnUNetTrainer",
+      "description": "Trainer class the model was trained with (nnUNetTrainer, nnUNetTrainer_5epochs, ...)",
+      "type": "string"
+     },
+     "plans_identifier": {
+      "default": "nnUNetPlans",
+      "description": "Plans identifier of the trained model (nnUNetPlans, nnUNetResEncUNetMPlans, ...)",
+      "type": "string"
+     },
+     "model_folder": {
+      "default": "",
+      "description": "Explicit trained-model folder (contains dataset.json, plans.json, fold_*/), e.g. an installed or copied model; alternative to dataset + configuration",
+      "type": "string"
+     },
+     "folds": {
+      "default": [],
+      "description": "Folds to ensemble, e.g. [0] or [0,1,2,3,4] or ['all']; [] auto-detects the fold_<int> folders holding checkpoint_name (fold_all is never auto-detected)",
+      "items": {
+       "anyOf": [
+        {
+         "type": "integer"
+        },
+        {
+         "type": "string"
+        }
+       ]
+      },
+      "type": "array"
+     },
+     "checkpoint_name": {
+      "default": "checkpoint_final.pth",
+      "description": "Checkpoint file inside each fold folder (checkpoint_final.pth or checkpoint_best.pth)",
+      "type": "string"
+     },
+     "use_tta": {
+      "default": true,
+      "description": "Test-time augmentation by mirroring along the trained axes (upstream default on; off is faster, less accurate)",
+      "type": "boolean"
+     },
+     "tile_step_size": {
+      "default": 0.5,
+      "description": "Sliding-window step as a fraction of the patch size (0 < x <= 1; upstream default 0.5, recommended)",
+      "type": "number"
+     },
+     "save_probabilities": {
+      "default": false,
+      "description": "Also write {CASE}.npz softmax probabilities + {CASE}.pkl properties (required for nnunet_ensemble_predictions)",
+      "type": "boolean"
+     },
+     "device": {
+      "default": "auto",
+      "description": "auto = most-free CUDA GPU (>= 8 GiB free) else cpu; the chosen GPU is pinned via CUDA_VISIBLE_DEVICES",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "num_processes_preprocessing": {
+      "default": 3,
+      "description": "Preprocessing worker processes (upstream default 3); 0 together with num_processes_segmentation_export=0 selects the sequential single-process path",
+      "type": "integer"
+     },
+     "num_processes_segmentation_export": {
+      "default": 3,
+      "description": "Segmentation-export worker processes (upstream default 3); 0 together with num_processes_preprocessing=0 selects the sequential path",
+      "type": "integer"
+     },
+     "prev_stage_predictions": {
+      "default": "",
+      "description": "Folder with the previous-stage segmentations; required only for 3d_cascade_fullres models",
+      "type": "string"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder (default: env nnUNet_raw or the project data folder)"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder (default: env or project data folder)"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder holding the trained models (default: env nnUNet_results or the project data folder)"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh nnunet_predict_<timestamp>_<id> subdirectory is created per call (default: env NNUNET_OUTPUT_DIR or <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "input_path"
+    ]
+   }
+  },
+  "nnunet_ensemble_predictions": {
+   "description": "Ensemble several nnU-Net prediction folders by averaging their saved softmax probabilities per case (ensemble_folders) and converting the mean to a label map.\nInput is a list of prediction folders with .npz probabilities -> {CASE}{ending} ensemble label maps (+ optional averaged .npz) and dataset.js",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "prediction_folders": {
+      "description": "Prediction folders written by nnunet_predict with save_probabilities=True (each holds {CASE}.npz + .pkl for the same cases); typically one per configuration",
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "save_probabilities": {
+      "default": false,
+      "description": "Also write the averaged probabilities as {CASE}.npz + .pkl",
+      "type": "boolean"
+     },
+     "num_processes": {
+      "default": 8,
+      "description": "Worker processes for merging (upstream default 8)",
+      "type": "integer"
+     },
+     "dataset_json_path": {
+      "default": "",
+      "description": "dataset.json to use; '' = the dataset.json inside the first folder",
+      "type": "string"
+     },
+     "plans_json_path": {
+      "default": "",
+      "description": "plans.json to use; '' = the plans.json inside the first folder",
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh nnunet_ensemble_predictions_<timestamp>_<id> subdirectory is created per call (default: env NNUNET_OUTPUT_DIR or <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "prediction_folders"
+    ]
+   }
+  },
+  "nnunet_apply_postprocessing": {
+   "description": "Apply a determined nnU-Net postprocessing (e.g. keep only the largest connected component of the foreground / of single labels) to every label map of a prediction folder (apply_postprocessing_to_folder).\nInput is a prediction folder plus a postprocessing.pkl -> postprocessed {CASE}{ending} label map",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "prediction_folder": {
+      "description": "Folder of {CASE}{ending} label maps (from nnunet_predict or nnunet_ensemble_predictions)",
+      "type": "string"
+     },
+     "postprocessing_pkl_path": {
+      "description": "postprocessing.pkl written by nnunet_determine_postprocessing / nnunet_find_best_configuration (pickled (pp_fns, pp_fn_kwargs))",
+      "type": "string"
+     },
+     "plans_json_path": {
+      "default": "",
+      "description": "plans.json of the model; '' = <prediction_folder>/plans.json (ensemble folders have none: give one member's plans.json)",
+      "type": "string"
+     },
+     "dataset_json_path": {
+      "default": "",
+      "description": "dataset.json of the model; '' = <prediction_folder>/dataset.json",
+      "type": "string"
+     },
+     "num_processes": {
+      "default": 8,
+      "description": "Worker processes (upstream default 8)",
+      "type": "integer"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh nnunet_apply_postprocessing_<timestamp>_<id> subdirectory is created per call (default: env NNUNET_OUTPUT_DIR or <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "prediction_folder",
+     "postprocessing_pkl_path"
+    ]
+   }
+  },
+  "nnunet_evaluate_predictions": {
+   "description": "Score a folder of predicted segmentations against reference segmentations with nnU-Net's evaluator (per-case and mean Dice, IoU, TP/FP/FN/TN, n_pred/n_ref per label or region, foreground mean).\nInput is a prediction folder, a reference folder and either dataset.json+plans.json (or a model folder) or",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "prediction_folder": {
+      "description": "Folder with predicted segmentations (e.g. a model's fold_X/validation folder or an nnUNetv2_predict output folder)",
+      "type": "string"
+     },
+     "reference_folder": {
+      "description": "Folder with reference segmentations sharing file names and ending with the predictions (e.g. nnUNet_raw/<dataset>/labelsTr)",
+      "type": "string"
+     },
+     "mode": {
+      "default": "auto",
+      "description": "dataset_plans = compute_metrics_on_folder2 (dataset.json + plans.json define labels/regions, ignore label and reader); simple = compute_metrics_on_folder_simple (explicit labels list, reader from the file ending); auto picks dataset_plans when dataset.json/plans.json are given or found (prediction folder, model_folder, or the model folder above a fold_X/validation folder) and simple when labels are given",
+      "enum": [
+       "auto",
+       "dataset_plans",
+       "simple"
+      ],
+      "type": "string"
+     },
+     "dataset_json": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Path to the dataset.json of the model (dataset_plans mode); give together with plans_json"
+     },
+     "plans_json": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Path to the plans.json of the model (dataset_plans mode); give together with dataset_json"
+     },
+     "model_folder": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Alternative to dataset_json/plans_json: a trained model folder (nnUNet_results/<dataset>/<trainer>__<plans>__<configuration>) whose dataset.json and plans.json are used"
+     },
+     "labels": {
+      "default": [],
+      "description": "Integer label ids to evaluate in simple mode (foreground labels, e.g. [1, 2]); ignored in dataset_plans mode",
+      "items": {
+       "type": "integer"
+      },
+      "type": "array"
+     },
+     "ignore_label": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Simple mode only: label id in the reference that is excluded from all counts (dataset_plans mode takes it from dataset.json)"
+     },
+     "chill": {
+      "default": false,
+      "description": "If True, reference cases without a prediction are tolerated and only predicted cases are evaluated (upstream --chill); if False (upstream default) every reference case must have a prediction",
+      "type": "boolean"
+     },
+     "num_processes": {
+      "default": 8,
+      "description": "Worker processes of the spawn pool that reads and scores the cases (upstream default 8)",
+      "type": "integer"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder for the child process; default: env nnUNet_raw, else <project>/data/nnUNet_raw"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder for the child process; default: env nnUNet_preprocessed, else <project>/data/nnUNet_preprocessed"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder for the child process; default: env nnUNet_results, else <project>/data/nnUNet_results"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh <tool>_<timestamp>_<id> subdirectory is created per call (default: env NNUNET_OUTPUT_DIR, else <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "prediction_folder",
+     "reference_folder"
+    ]
+   }
+  },
+  "nnunet_determine_postprocessing": {
+   "description": "Determine nnU-Net's empirical postprocessing (removal of all but the largest connected component, for all foreground jointly and then per label/region) by testing whether each step improves the Dice against reference labels.\nInput is a prediction folder with references and the model's plans.json/dat",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "prediction_folder": {
+      "description": "Folder with predicted segmentations for labelled cases (e.g. cross-validation predictions or an nnUNetv2_predict output of training cases)",
+      "type": "string"
+     },
+     "reference_folder": {
+      "description": "Folder with the reference segmentations of these cases (same file names and ending), e.g. nnUNet_raw/<dataset>/labelsTr or nnUNet_preprocessed/<dataset>/gt_segmentations",
+      "type": "string"
+     },
+     "plans_json": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "plans.json of the model that produced the predictions (may be given without dataset_json); default: the model_folder file, else <prediction_folder>/plans.json (written by nnUNetv2_predict)"
+     },
+     "dataset_json": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "dataset.json of the model (may be given without plans_json); default: the model_folder file, else <prediction_folder>/dataset.json"
+     },
+     "model_folder": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Alternative to plans_json/dataset_json: a trained model folder (nnUNet_results/<dataset>/<trainer>__<plans>__<configuration>) whose plans.json and dataset.json are used"
+     },
+     "num_processes": {
+      "default": 8,
+      "description": "Worker processes for applying candidate postprocessing steps and scoring (upstream default 8)",
+      "type": "integer"
+     },
+     "keep_postprocessed_files": {
+      "default": true,
+      "description": "Keep the postprocessed/ folder (postprocessed label maps + summary.json) next to the predictions; False deletes it after the decision",
+      "type": "boolean"
+     },
+     "work_on_copy": {
+      "default": false,
+      "description": "If True, the segmentation files (+ dataset.json/plans.json) are copied into the fresh output directory and postprocessing is determined there, leaving the input folder untouched; if False (upstream behaviour) postprocessing.pkl, postprocessing.json, summary.json and postprocessed/ are written into prediction_folder itself",
+      "type": "boolean"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder for the child process; default: env nnUNet_raw, else <project>/data/nnUNet_raw"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder for the child process; default: env nnUNet_preprocessed, else <project>/data/nnUNet_preprocessed"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder for the child process; default: env nnUNet_results, else <project>/data/nnUNet_results"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh <tool>_<timestamp>_<id> subdirectory is created per call (default: env NNUNET_OUTPUT_DIR, else <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "prediction_folder",
+     "reference_folder"
+    ]
+   }
+  },
+  "nnunet_find_best_configuration": {
+   "description": "Select nnU-Net's best configuration or pairwise ensemble by cross-validation foreground Dice (paper: empirical parameters) and determine its postprocessing, writing inference_information.json and inference_instructions.txt into nnUNet_results/<dataset>.\nInput is a dataset with trained models (traine",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "dataset": {
+      "description": "Dataset id or name, e.g. '4', '004' or 'Dataset004_Hippocampus'",
+      "type": "string"
+     },
+     "trainers": {
+      "default": [
+       "nnUNetTrainer"
+      ],
+      "description": "Trainer class names whose models are considered (upstream default nnUNetTrainer; short variants such as nnUNetTrainer_5epochs exist)",
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "configurations": {
+      "default": [
+       "2d",
+       "3d_fullres",
+       "3d_lowres",
+       "3d_cascade_fullres"
+      ],
+      "description": "Configurations to consider; configurations absent from the plans file are skipped, configurations present in the plans must be trained for all requested folds (nnUNetv2_find_best_configuration default: 2d 3d_fullres 3d_lowres 3d_cascade_fullres)",
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "plans_identifiers": {
+      "default": [
+       "nnUNetPlans"
+      ],
+      "description": "Plans identifiers to consider (e.g. nnUNetPlans, nnUNetResEncUNetMPlans)",
+      "items": {
+       "type": "string"
+      },
+      "type": "array"
+     },
+     "folds": {
+      "default": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "description": "Folds whose validation predictions are accumulated (upstream default 0 1 2 3 4); every requested fold must be trained for every considered model",
+      "items": {
+       "type": "integer"
+      },
+      "type": "array"
+     },
+     "allow_ensembling": {
+      "default": true,
+      "description": "Also evaluate every pairwise ensemble of the considered models (needs .npz validation probabilities: train/validate with export_validation_probabilities)",
+      "type": "boolean"
+     },
+     "num_processes": {
+      "default": 8,
+      "description": "Worker processes for accumulating, ensembling, scoring and postprocessing (upstream default 8)",
+      "type": "integer"
+     },
+     "overwrite": {
+      "default": true,
+      "description": "Recreate existing crossval_results_folds_* and ensemble folders (upstream default True); False reuses them, which may keep outdated results",
+      "type": "boolean"
+     },
+     "strict": {
+      "default": false,
+      "description": "Upstream strict flag: raise if a considered model's output folder is missing instead of continuing (upstream API default False; the tool's own checks already require the folders)",
+      "type": "boolean"
+     },
+     "nnunet_raw": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_raw folder (labelsTr is the reference for the accumulated cross-validation predictions); default: env nnUNet_raw, else <project>/data/nnUNet_raw"
+     },
+     "nnunet_preprocessed": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_preprocessed folder (plans files, gt_segmentations); default: env nnUNet_preprocessed, else <project>/data/nnUNet_preprocessed"
+     },
+     "nnunet_results": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "nnUNet_results folder holding the trained models; the tool WRITES into it (crossval_results_folds_*, ensembles/, inference_information.json, inference_instructions.txt); default: env nnUNet_results, else <project>/data/nnUNet_results"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh <tool>_<timestamp>_<id> subdirectory is created per call (default: env NNUNET_OUTPUT_DIR, else <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "dataset"
+    ]
+   }
+  }
+ },
+ "HDBET": {
+  "hdbet_extract_brain": {
+   "description": "Skull-strip 3D MRI volumes with the HD-BET v2 nnU-Net model (brain mask and/or brain-extracted image).\nInput is one .nii.gz file or a folder of .nii.gz files; output is per-case masks, skull-stripped images, QC overlay PNGs and a summary JSON in a fresh output directory.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "input_path": {
+      "description": "3D MRI NIfTI file (.nii.gz; T1w, contrast-enhanced T1w, T2w or FLAIR) or a folder whose *.nii.gz files are all brain-extracted",
+      "type": "string"
+     },
+     "device": {
+      "default": "auto",
+      "description": "auto = CUDA device with the most free memory if >= 8 GiB free, else CPU with TTA disabled; cuda = most-free GPU; cpu = CPU only (about 1-2 min per volume without TTA)",
+      "enum": [
+       "auto",
+       "cuda",
+       "cpu"
+      ],
+      "type": "string"
+     },
+     "use_tta": {
+      "default": true,
+      "description": "Test-time augmentation (mirroring along all axes, upstream default; inverse of the CLI --disable_tta); slightly better masks, ~8x slower, ignored on the auto->CPU fallback",
+      "type": "boolean"
+     },
+     "save_mask": {
+      "default": true,
+      "description": "Keep the binary brain mask <case>_bet.nii.gz (uint8 {0,1}, input grid); CLI --save_bet_mask",
+      "type": "boolean"
+     },
+     "save_brain_image": {
+      "default": true,
+      "description": "Write the skull-stripped image <case>.nii.gz (input voxels inside the mask, 0 outside); inverse of CLI --no_bet_image",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh hdbet_extract_brain_<timestamp>_<id> subdirectory is created (default: HDBET_OUTPUT_DIR or <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "input_path"
+    ]
+   }
+  },
+  "hdbet_apply_brain_mask": {
+   "description": "Apply an existing brain mask to a co-registered image with HD-BET's apply_bet (voxels with mask == 0 are set to 0, header copied from the image).\nInput is an image + mask NIfTI pair on one grid; output is the masked image .nii.gz plus a JSON summary (foreground voxels, volume, grid check).",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "image_path": {
+      "description": "3D NIfTI (.nii/.nii.gz) image on the same voxel grid as the mask, e.g. a co-registered T2w/FLAIR/cT1w scan to skull-strip with the HD-BET mask of its T1w",
+      "type": "string"
+     },
+     "mask_path": {
+      "description": "3D NIfTI brain mask on the same grid (HD-BET *_bet.nii.gz or any mask); upstream keeps every voxel where the mask is non-zero",
+      "type": "string"
+     },
+     "allow_geometry_mismatch": {
+      "default": false,
+      "description": "If true, a spacing/origin/direction difference beyond tolerance (1e-3 mm, 1e-2 mm, 1e-3) is only warned about and the mask is applied voxel-wise as upstream does; if false it is an error. Shape mismatch is always an error",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call (default: $HDBET_OUTPUT_DIR or <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "image_path",
+     "mask_path"
+    ]
+   }
+  },
+  "hdbet_inspect_brain_mask": {
+   "description": "Quality-control a brain mask: foreground voxel count, volume (mm^3 and mL from spacing), bounding box, value set, connected components, and an overlay PNG of the slice with the most brain foreground (nnunetv2 plot_overlay).\nInput is a mask NIfTI (optionally with its co-registered image); output is a",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "mask_path": {
+      "description": "3D NIfTI brain mask (.nii/.nii.gz): HD-BET *_bet.nii.gz output, a reference mask, or a probability map",
+      "type": "string"
+     },
+     "image_path": {
+      "default": "",
+      "description": "3D NIfTI image on the same grid used for the overlay PNG (the slice with the most brain foreground, nnunetv2 plot_overlay); empty string = statistics only, no PNG",
+      "type": "string"
+     },
+     "threshold": {
+      "default": 0.5,
+      "description": "Foreground rule for masks whose values are not exactly {0,1}: voxels with value > threshold are brain; such masks are binarised to a uint8 copy before overlay and statistics. Ignored for {0,1} masks (foreground = mask != 0)",
+      "type": "number"
+     },
+     "overlay_intensity": {
+      "default": 0.6,
+      "description": "Upstream plot_overlay overlay_intensity: strength of the colour blend of the mask on the image slice (0.6 = upstream default)",
+      "type": "number"
+     },
+     "three_views": {
+      "default": true,
+      "description": "Also render the same upstream slice selection/overlay along array axes 1 and 2 (adaptation composing upstream functions); the axis-0 PNG is always the exact plot_overlay output",
+      "type": "boolean"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call (default: $HDBET_OUTPUT_DIR or <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "mask_path"
+    ]
+   }
+  },
+  "hdbet_evaluate_brain_mask": {
+   "description": "Evaluate predicted brain mask(s) against reference mask(s): Dice, IoU, TP/FP/FN/TN and the maximum/average Hausdorff distance (mm); the paper's HD95 is not computed.\nInput is a mask file+file or folder+folder pair on the same voxel grid; output is a per-case CSV, a summary JSON and per-case metrics.",
+   "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "prediction_path": {
+      "description": "Predicted brain mask: one .nii/.nii.gz file, or a folder of masks (e.g. an hdbet_extract_brain output folder)",
+      "type": "string"
+     },
+     "reference_path": {
+      "description": "Reference (ground-truth) brain mask file, or a folder whose masks are paired with the predictions by basename",
+      "type": "string"
+     },
+     "threshold": {
+      "default": 0.5,
+      "description": "Voxels with value > threshold count as brain (label 1) in both masks; binary {0,1} masks are unchanged by the default 0.5",
+      "type": "number"
+     },
+     "prediction_suffix": {
+      "default": "",
+      "description": "Suffix removed from prediction basenames before pairing, e.g. '_bet' for hd-bet folder outputs (<case>_bet.nii.gz vs <case>.nii.gz); '' pairs identical basenames",
+      "type": "string"
+     },
+     "output_dir": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "default": null,
+      "description": "Base output directory; a fresh subdirectory is created per call (default: HDBET_OUTPUT_DIR or <project>/tmp/outputs)"
+     }
+    },
+    "required": [
+     "prediction_path",
+     "reference_path"
+    ]
+   }
+  }
+ }
+}

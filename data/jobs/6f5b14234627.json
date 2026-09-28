@@ -1,0 +1,61 @@
+{
+ "id": "6f5b14234627",
+ "agent": "Cellpose",
+ "tool": "cellpose_estimate_diameter",
+ "arguments": {
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+  "model_type": "cyto2",
+  "channels": [
+   0,
+   0
+  ],
+  "device": "auto",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063055.8860936,
+ "started_at": 1790063055.8867064,
+ "finished_at": 1790063063.517747,
+ "result": {
+  "message": "Size model cyto2 on img02.png: estimated diameter 27.8003 px (style-regression estimate 26.3194 px, model mean 30 px), device cuda:0.",
+  "reference": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/notebooks/run_cellpose.ipynb",
+  "artifacts": [
+   {
+    "description": "diameter estimate (JSON)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_estimate_diameter_20260922-164423_d44f2d89/img02_diameter.json"
+   }
+  ],
+  "image": {
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+   "shape": [
+    349,
+    467,
+    3
+   ],
+   "dtype": "uint8"
+  },
+  "estimated_diameter": 27.80029502818709,
+  "diameter_from_style": 26.31943035282652,
+  "diam_mean": 30.0,
+  "rescale": 1.0791252384042183,
+  "settings": {
+   "model_type": "cyto2",
+   "channels": [
+    0,
+    0
+   ],
+   "size_model": "size_cyto2torch_0.npy",
+   "pretrained_model_files": [
+    "cyto2torch_0"
+   ]
+  },
+  "device": "cuda:0",
+  "timings_s": {
+   "model_init": 0.122,
+   "eval": 0.979
+  },
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_estimate_diameter_20260922-164423_d44f2d89"
+ },
+ "error": null,
+ "duration_s": 7.63
+}

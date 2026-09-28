@@ -1,0 +1,2265 @@
+{
+  "page": 5,
+  "lines": [
+    {
+      "text": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        277.029052734375,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1958",
+      "bbox": [
+        543.0689697265625,
+        760.4367065429688,
+        562.0529174804688,
+        771.5487060546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "according to SPR. The compound also demonstrated activity against",
+      "bbox": [
+        39.685001373291016,
+        47.59562683105469,
+        296.2575378417969,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "WT HRAS and NRAS, although it was less potent against HRAS. Notably,",
+      "bbox": [
+        39.685001373291016,
+        58.34562683105469,
+        296.3204345703125,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the compound had an unusual effect on our artificial control inter-",
+      "bbox": [
+        39.685001373291016,
+        69.09562683105469,
+        294.8031311035156,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "action pair, leading to a distinct dip to approximately 50% residual",
+      "bbox": [
+        39.685001373291016,
+        79.84562683105469,
+        296.27471923828125,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "activity at concentrations of ~250–500 nM, before climbing again and",
+      "bbox": [
+        39.685001373291016,
+        90.59562683105469,
+        296.3132019042969,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ultimately leading to mild enhancement of the interaction at higher",
+      "bbox": [
+        39.685001373291016,
+        101.34562683105469,
+        296.41845703125,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "micromolar concentrations (Fig. 2f). This distinct pattern suggests",
+      "bbox": [
+        39.685001373291016,
+        112.09562683105469,
+        296.2118225097656,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "an alternative mode of action for ISM061-022, revealing at least some",
+      "bbox": [
+        39.685001373291016,
+        122.84562683105469,
+        296.251708984375,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "degree of nonspecific activity, although partial specificity for mutant",
+      "bbox": [
+        39.685001373291016,
+        133.5956268310547,
+        296.37298583984375,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "KRAS protein does still appear to be in evidence. Further investiga-",
+      "bbox": [
+        39.685001373291016,
+        144.3456268310547,
+        294.8031311035156,
+        154.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion into the mechanism of action of this molecule will be the focus",
+      "bbox": [
+        39.685001373291016,
+        155.0956268310547,
+        296.1750793457031,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of future study.",
+      "bbox": [
+        39.685001373291016,
+        165.8456268310547,
+        96.90618896484375,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Overall, these live-cell experimental observations underscore the",
+      "bbox": [
+        56.692901611328125,
+        176.5957489013672,
+        296.2861022949219,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "robustness of our approach, effectively identifying small-molecule",
+      "bbox": [
+        39.685001373291016,
+        187.3457489013672,
+        296.130126953125,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "candidates with biological activity. While these molecules are certainly",
+      "bbox": [
+        39.685001373291016,
+        198.0957489013672,
+        296.09649658203125,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "at an early stage and in need of further refinement, our results under-",
+      "bbox": [
+        39.685001373291016,
+        208.8457489013672,
+        294.77496337890625,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "line the potential of our methodology to address and surmount the",
+      "bbox": [
+        39.685001373291016,
+        219.5957489013672,
+        296.2359313964844,
+        229.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "complexities inherent in targeting clinically challenging biomolecules.",
+      "bbox": [
+        39.685001373291016,
+        230.3457489013672,
+        296.2375183105469,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To further characterize ISM061-018-2’s interaction with KRAS-G12D,",
+      "bbox": [
+        39.685001373291016,
+        241.0957489013672,
+        296.1549377441406,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "we used protein-detected nuclear magnetic resonance (NMR) spec-",
+      "bbox": [
+        39.685001373291016,
+        251.8457489013672,
+        294.8031005859375,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "troscopy. 15N-labeled KRAS-G12D (residues 1–169) protein was used to",
+      "bbox": [
+        39.685001373291016,
+        262.25738525390625,
+        296.3362121582031,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "record 1H–15N transverse relaxation optimized spectroscopy (TROSY)",
+      "bbox": [
+        39.685001373291016,
+        273.00738525390625,
+        296.22589111328125,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "heteronuclear single quantum coherence (HSQC) spectra in the pres-",
+      "bbox": [
+        39.685001373291016,
+        284.0956115722656,
+        294.80316162109375,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ence and absence of ISM061-018-2 under guanosine diphosphate",
+      "bbox": [
+        39.685001373291016,
+        294.8456115722656,
+        296.2811279296875,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(GDP)-loaded conditions (Extended Data Fig. 2a). Substantial chemical",
+      "bbox": [
+        39.685001373291016,
+        305.5956115722656,
+        296.2218017578125,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "shift perturbations (CSPs) were observed, indicating fast exchange",
+      "bbox": [
+        39.685001373291016,
+        316.3456115722656,
+        296.1274108886719,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "between free and bound states, with some residues showing intensity",
+      "bbox": [
+        39.685001373291016,
+        327.0956115722656,
+        296.19879150390625,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "loss because of exchange broadening. Mapping the weighted CSP",
+      "bbox": [
+        39.685001373291016,
+        337.8456115722656,
+        296.2676696777344,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "values onto the Protein Data Bank (PDB) structure of GDP-bound",
+      "bbox": [
+        39.685001373291016,
+        348.5956115722656,
+        296.1943664550781,
+        358.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "KRAS-G12D (Extended Data Fig. 2b) revealed notable perturbations",
+      "bbox": [
+        39.685001373291016,
+        359.3456115722656,
+        296.1926574707031,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in the P-loop, α2 helix, switch II region and nearby β4 sheet residues,",
+      "bbox": [
+        39.685001373291016,
+        370.0956115722656,
+        296.2352600097656,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "suggesting a binding mode within the switch II pocket. Additional CSPs",
+      "bbox": [
+        39.685001373291016,
+        380.8456115722656,
+        296.2126159667969,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in the α1 helix, switch I and α4 regions suggest conformational changes",
+      "bbox": [
+        39.685001373291016,
+        391.5956115722656,
+        296.0730285644531,
+        401.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "upon ligand binding. Although direct interaction with D12 (ref. 21), a",
+      "bbox": [
+        39.685001373291016,
+        402.3456115722656,
+        296.2517395019531,
+        412.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "residue critical for selectivity in inhibitors such as MRTX1133, was not",
+      "bbox": [
+        39.685001373291016,
+        413.0956115722656,
+        296.4230651855469,
+        423.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "confirmed, CSPs in the P-loop residues (G10 and A11) imply possible spe-",
+      "bbox": [
+        39.685001373291016,
+        423.8456115722656,
+        294.8030700683594,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cific interactions. These NMR results strongly support ISM061-018-2’s",
+      "bbox": [
+        39.685001373291016,
+        434.5956115722656,
+        296.28369140625,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "binding to the switch II pocket of KRAS-G12D, further corroborat-",
+      "bbox": [
+        39.685001373291016,
+        445.3456115722656,
+        294.80316162109375,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ing its proposed mechanism of action. However, cocrystallization",
+      "bbox": [
+        39.685001373291016,
+        456.0956115722656,
+        296.42169189453125,
+        466.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "studies are necessary to fully elucidate the binding residues. In sum-",
+      "bbox": [
+        39.685001373291016,
+        466.8456115722656,
+        294.7998046875,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mary, current quantum hardware is proving crucial for practical drug",
+      "bbox": [
+        39.685001373291016,
+        477.5956115722656,
+        296.25286865234375,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "discovery applications, preempting the need for fully fault-tolerant",
+      "bbox": [
+        39.685001373291016,
+        488.3456115722656,
+        296.2654113769531,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum systems in the future. Quantum algorithms have the potential",
+      "bbox": [
+        39.685001373291016,
+        499.0956115722656,
+        296.2317810058594,
+        509.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to design small molecules that better align with the distribution of the",
+      "bbox": [
+        39.685001373291016,
+        509.8456115722656,
+        296.2680358886719,
+        520.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "provided training set, achieving outcomes that are challenging for",
+      "bbox": [
+        39.685001373291016,
+        520.5956420898438,
+        296.24884033203125,
+        530.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "classical methods because of their ability to more effectively explore",
+      "bbox": [
+        39.685001373291016,
+        531.3456420898438,
+        296.26007080078125,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and represent complex, high-dimensional probability distributions.",
+      "bbox": [
+        39.685001373291016,
+        542.0953979492188,
+        296.2682800292969,
+        552.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Using just 16 qubits, our algorithm demonstrates how quantum com-",
+      "bbox": [
+        39.685001373291016,
+        552.8451538085938,
+        294.8244934082031,
+        563.025634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "puting can enhance classical computation, leading to more efficient",
+      "bbox": [
+        39.685001373291016,
+        563.5949096679688,
+        296.2591857910156,
+        573.775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "algorithms. Our hybrid quantum–classical model surpasses classical",
+      "bbox": [
+        39.685001373291016,
+        574.3446655273438,
+        296.2765197753906,
+        584.525146484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "models in performance and matches up well against the state of the",
+      "bbox": [
+        39.685001373291016,
+        585.0956420898438,
+        296.25445556640625,
+        595.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "art according to the Tartarus benchmark. We applied this model to",
+      "bbox": [
+        39.685001373291016,
+        595.8456420898438,
+        296.3309631347656,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "design inhibitors targeting the complex KRAS protein, synthesizing",
+      "bbox": [
+        39.685001373291016,
+        606.5956420898438,
+        296.34466552734375,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and evaluating 15 promising ligands. Among these, ISM061-018-2 and",
+      "bbox": [
+        39.685001373291016,
+        617.3456420898438,
+        296.0849914550781,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ISM061-022 stood out, showing inhibitory effects on KRAS variants",
+      "bbox": [
+        39.685001373291016,
+        628.0956420898438,
+        296.21771240234375,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with ISM061-018-2 displaying a high binding affinity of 1.4 μM and",
+      "bbox": [
+        39.685001373291016,
+        638.8456420898438,
+        296.3178405761719,
+        649.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "broad activity across KRAS mutants. These results, derived from our",
+      "bbox": [
+        39.685001373291016,
+        649.5956420898438,
+        296.2848205566406,
+        659.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "hybrid approach, indicate superior efficacy to fully classical models",
+      "bbox": [
+        39.685001373291016,
+        660.3456420898438,
+        296.15313720703125,
+        670.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and introduce potential chemotypes that expand the chemical space",
+      "bbox": [
+        39.685001373291016,
+        671.0956420898438,
+        296.268310546875,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "explored in KRAS inhibitor design. While these findings are encour-",
+      "bbox": [
+        39.685001373291016,
+        681.8456420898438,
+        294.80316162109375,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "aging, they stop short of definitively proving a ‘quantum advantage’,",
+      "bbox": [
+        39.685001373291016,
+        692.5956420898438,
+        296.2501220703125,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "achieving results unattainable by classical methods within a reasonable",
+      "bbox": [
+        39.685001373291016,
+        703.3456420898438,
+        296.201904296875,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "time frame. Future work will focus on exploring transformer-based",
+      "bbox": [
+        39.685001373291016,
+        714.0956420898438,
+        296.1813049316406,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generative models, coupled with increasing the number of qubits,",
+      "bbox": [
+        39.685001373291016,
+        724.8456420898438,
+        296.1379699707031,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to further enhance the quality and diversity of generated molecules.",
+      "bbox": [
+        39.685001373291016,
+        735.5956420898438,
+        296.24432373046875,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "This synergistic approach could potentially lead to the discovery of",
+      "bbox": [
+        306.1416931152344,
+        47.59562683105469,
+        562.8197631835938,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "therapeutics that might be overlooked by other methods, while also",
+      "bbox": [
+        306.1416931152344,
+        58.34562683105469,
+        562.732421875,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reducing the preclinical drug discovery phase from several years to",
+      "bbox": [
+        306.1416931152344,
+        69.09562683105469,
+        562.5875244140625,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "just a few months.",
+      "bbox": [
+        306.1416931152344,
+        79.84562683105469,
+        373.41217041015625,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Online content",
+      "bbox": [
+        306.1416931152344,
+        98.77362060546875,
+        382.4667663574219,
+        111.97462463378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Any methods, additional references, Nature Portfolio reporting sum-",
+      "bbox": [
+        306.1416931152344,
+        112.09562683105469,
+        561.2466430664062,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "maries, source data, extended data, supplementary information,",
+      "bbox": [
+        306.1416931152344,
+        122.84562683105469,
+        562.8076171875,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "acknowledgements, peer review information; details of author contri-",
+      "bbox": [
+        306.1416931152344,
+        133.5956268310547,
+        561.2598876953125,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "butions and competing interests; and statements of data and code avail-",
+      "bbox": [
+        306.1416931152344,
+        144.3456268310547,
+        561.2598876953125,
+        154.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ability are available at https://doi.org/10.1038/s41587-024-02526-3.",
+      "bbox": [
+        306.1416931152344,
+        155.0956268310547,
+        555.5391845703125,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "References",
+      "bbox": [
+        306.1416931152344,
+        174.02374267578125,
+        362.81573486328125,
+        187.22474670410156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1.",
+      "bbox": [
+        306.1416931152344,
+        186.3617401123047,
+        313.34490966796875,
+        197.28175354003906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Petrova, E. Innovation in the pharmaceutical industry: the process",
+      "bbox": [
+        323.1496887207031,
+        186.3617401123047,
+        561.9486694335938,
+        197.28175354003906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of drug discovery and development. In Innovation and Marketing",
+      "bbox": [
+        323.1496887207031,
+        197.11375427246094,
+        557.1405639648438,
+        208.0337677001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in the Pharmaceutical Industry: Emerging Practices, Research, and",
+      "bbox": [
+        323.1496887207031,
+        207.8657684326172,
+        560.0264282226562,
+        218.78578186035156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Policies (eds Ding, M. et al.) 19–82 (Springer, 2014).",
+      "bbox": [
+        323.1496887207031,
+        218.61778259277344,
+        504.6918029785156,
+        229.5377960205078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2.",
+      "bbox": [
+        306.1416931152344,
+        229.3697967529297,
+        314.6640930175781,
+        240.28981018066406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "DiMasi, J. A., Grabowski, H. G. & Hansen, R. W. Innovation in the",
+      "bbox": [
+        323.1496887207031,
+        229.3697967529297,
+        551.1358032226562,
+        240.28981018066406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "pharmaceutical industry: new estimates of R&D costs. J. Health",
+      "bbox": [
+        323.1496887207031,
+        240.12181091308594,
+        551.7996826171875,
+        251.0418243408203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Econ. 47, 20–33 (2016).",
+      "bbox": [
+        323.1496887207031,
+        250.7538299560547,
+        407.4680480957031,
+        261.7938232421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3.",
+      "bbox": [
+        306.1416931152344,
+        261.6258544921875,
+        314.9848937988281,
+        272.54583740234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Sun, D., Gao, W., Hu, H. & Zhou, S. Why 90% of clinical drug",
+      "bbox": [
+        323.1496887207031,
+        261.6258544921875,
+        537.8917846679688,
+        272.54583740234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "development fails and how to improve it? Acta Pharm. Sin. B 12,",
+      "bbox": [
+        323.1496887207031,
+        272.25787353515625,
+        552.4376831054688,
+        283.2978515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3049–3062 (2022).",
+      "bbox": [
+        323.14971923828125,
+        283.1298828125,
+        393.1848449707031,
+        294.04986572265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "4.",
+      "bbox": [
+        306.1417236328125,
+        293.88189697265625,
+        315.1689147949219,
+        304.8018798828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Zhavoronkov, A. et al. Deep learning enables rapid identification",
+      "bbox": [
+        323.14971923828125,
+        293.88189697265625,
+        555.6909790039062,
+        304.8018798828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of potent ddr1 kinase inhibitors. Nat. Biotechnol. 37, 1038–1040",
+      "bbox": [
+        323.14971923828125,
+        304.513916015625,
+        552.3265380859375,
+        315.55389404296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2019).",
+      "bbox": [
+        323.14971923828125,
+        315.38592529296875,
+        347.9344787597656,
+        326.305908203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "5.",
+      "bbox": [
+        306.1417236328125,
+        326.137939453125,
+        314.6889343261719,
+        337.05792236328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Stokes, J. et al. A deep learning approach to antibiotic discovery.",
+      "bbox": [
+        323.14971923828125,
+        326.137939453125,
+        557.4749145507812,
+        337.05792236328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Cell 180, 688–702 (2020).",
+      "bbox": [
+        323.14971923828125,
+        336.76995849609375,
+        416.4017028808594,
+        347.8099365234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "6.",
+      "bbox": [
+        306.1417541503906,
+        347.6419677734375,
+        315.06414794921875,
+        358.56195068359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Ren, F. et al. AlphaFold accelerates artificial intelligence powered",
+      "bbox": [
+        323.1497497558594,
+        347.6419677734375,
+        560.7023315429688,
+        358.56195068359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "drug discovery: efficient discovery of a novel CDK20 small",
+      "bbox": [
+        323.1497497558594,
+        358.39398193359375,
+        535.2525634765625,
+        369.31396484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecule inhibitor. Chem. Sci. 14, 1443–1452 (2023).",
+      "bbox": [
+        323.1497497558594,
+        369.0260009765625,
+        511.2521667480469,
+        380.06597900390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "7.",
+      "bbox": [
+        306.1497497558594,
+        379.89801025390625,
+        313.72015380859375,
+        390.8179931640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Nigam, A. K., Pollice, R., Friederich, P. & Aspuru-Guzik, A. Artificial",
+      "bbox": [
+        323.1577453613281,
+        379.89801025390625,
+        559.9598999023438,
+        390.8179931640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "design of organic emitters via a genetic algorithm enhanced by",
+      "bbox": [
+        323.1577453613281,
+        390.6500244140625,
+        555.3817138671875,
+        401.57000732421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a deep neural network. Chem. Sci. 15, 2618–2639 (2024).",
+      "bbox": [
+        323.15771484375,
+        401.28204345703125,
+        527.2448120117188,
+        412.322021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "8.",
+      "bbox": [
+        306.14971923828125,
+        412.154052734375,
+        314.9769287109375,
+        423.07403564453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Sánchez-Lengeling, B. & Aspuru Guzik, A. Inverse molecular",
+      "bbox": [
+        323.15771484375,
+        412.154052734375,
+        541.3518676757812,
+        423.07403564453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "design using machine learning: generative models for matter",
+      "bbox": [
+        323.15771484375,
+        422.90606689453125,
+        546.0046997070312,
+        433.8260498046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "engineering. Science 361, 360–365 (2018).",
+      "bbox": [
+        323.15771484375,
+        433.5380859375,
+        477.7624816894531,
+        444.57806396484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "9.",
+      "bbox": [
+        306.1496887207031,
+        444.41009521484375,
+        314.84088134765625,
+        455.330078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Pollice, R. et al. Data-driven strategies for accelerated materials",
+      "bbox": [
+        323.1576843261719,
+        444.41009521484375,
+        553.4486083984375,
+        455.330078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "design. Acc. Chem. Res. 54, 849–860 (2021).",
+      "bbox": [
+        323.1576843261719,
+        455.0421142578125,
+        484.1960754394531,
+        466.08209228515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "10.\t Nigam, A. K. et al. Assigning confidence to molecular property",
+      "bbox": [
+        306.1496887207031,
+        465.91412353515625,
+        550.2694091796875,
+        476.8341064453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "prediction. Exp. Opin. Drug Discov. 16, 935–949 (2021).",
+      "bbox": [
+        323.1576843261719,
+        476.546142578125,
+        520.2680053710938,
+        487.58612060546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "11.",
+      "bbox": [
+        306.1416931152344,
+        487.41815185546875,
+        316.43292236328125,
+        498.338134765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Bohacek, R. S., McMartin, C. & Guida, W. C. The art and practice of",
+      "bbox": [
+        323.1496887207031,
+        487.41815185546875,
+        561.7141723632812,
+        498.338134765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "structure-based drug design: a molecular modeling perspective.",
+      "bbox": [
+        323.1496887207031,
+        498.170166015625,
+        559.0669555664062,
+        509.09014892578125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Med. Res. Rev. 16, 3–50 (1996).",
+      "bbox": [
+        323.1496887207031,
+        508.80218505859375,
+        433.0536804199219,
+        519.8421630859375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "12.\t Santagati, R. et al. Drug design on quantum computers. Nat. Phys.",
+      "bbox": [
+        306.1416931152344,
+        519.6741943359375,
+        562.0776977539062,
+        530.5941772460938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "20, 549–557 (2024).",
+      "bbox": [
+        323.14971923828125,
+        530.3062133789062,
+        395.8377380371094,
+        541.34619140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "13.\t Li, J., Topaloglu, R. O. & Ghosh, S. Quantum generative models",
+      "bbox": [
+        306.1416931152344,
+        541.1781616210938,
+        551.9656982421875,
+        552.09814453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "for small molecule drug discovery. IEEE Trans. Quantum Eng. 2,",
+      "bbox": [
+        323.14971923828125,
+        551.8101806640625,
+        553.9896850585938,
+        562.8501586914062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1–8 (2021).",
+      "bbox": [
+        323.1496887207031,
+        562.6821899414062,
+        361.1313171386719,
+        573.6021728515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "14.\t Batra, K. et al. Quantum machine learning algorithms for drug",
+      "bbox": [
+        306.1416931152344,
+        573.4342041015625,
+        552.1897583007812,
+        584.3541870117188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "discovery applications. J. Chem. Inf. Model. 61, 2641–2647",
+      "bbox": [
+        323.1496887207031,
+        584.0662231445312,
+        538.3768920898438,
+        595.106201171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2021).",
+      "bbox": [
+        323.1496887207031,
+        594.9381713867188,
+        347.9632873535156,
+        605.858154296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "15.\t Benedetti, M., Lloyd, E., Sack, S. & Fiorentini, M. Parameterized",
+      "bbox": [
+        306.1416931152344,
+        605.690185546875,
+        549.7102661132812,
+        616.6101684570312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum circuits as machine learning models. Quantum Sci.",
+      "bbox": [
+        323.1496887207031,
+        616.4421997070312,
+        542.990234375,
+        627.3621826171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Technol. 4, 043001 (2019).",
+      "bbox": [
+        323.1496887207031,
+        627.0741577148438,
+        419.2568054199219,
+        638.1141357421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "16.\t Hibat-Allah, M., Mauri, M., Carrasquilla, J. & Perdomo-Ortiz, A.",
+      "bbox": [
+        306.1416931152344,
+        637.9461669921875,
+        546.24462890625,
+        648.8661499023438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A framework for demonstrating practical quantum advantage:",
+      "bbox": [
+        323.1496887207031,
+        648.6981811523438,
+        549.6758422851562,
+        659.6181640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "racing quantum against classical generative models. Commun.",
+      "bbox": [
+        323.1496887207031,
+        659.4501953125,
+        553.1868896484375,
+        670.3701782226562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Phys. 7, 68 (2024).",
+      "bbox": [
+        323.1496887207031,
+        670.0822143554688,
+        388.8008728027344,
+        681.1221923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "17.\t McClean, J. R., Boixo, S., Smelyanskiy, V., Babbush, R. & Neven, H.",
+      "bbox": [
+        306.1496887207031,
+        680.9541625976562,
+        559.7613525390625,
+        691.8741455078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Barren plateaus in quantum neural network training landscapes.",
+      "bbox": [
+        323.1576843261719,
+        691.7061767578125,
+        556.502197265625,
+        702.6261596679688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Nat. Commun. 9, 4812 (2018).",
+      "bbox": [
+        323.1576843261719,
+        702.3381958007812,
+        429.0296936035156,
+        713.378173828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "18.\t Gili, K., Hibat-Allah, M., Mauri, M., Ballance, C. J. & Perdomo-Ortiz, A.",
+      "bbox": [
+        306.149658203125,
+        713.2101440429688,
+        562.88916015625,
+        724.130126953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Do quantum circuit born machines generalize? Quantum Sci.",
+      "bbox": [
+        323.15765380859375,
+        723.962158203125,
+        544.6997680664062,
+        734.8821411132812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Technol. 8, 015021 (2023).",
+      "bbox": [
+        323.15765380859375,
+        734.5941772460938,
+        417.5824890136719,
+        745.6341552734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 5
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          39,
+          49,
+          297,
+          176
+        ],
+        "pos": [
+          71,
+          843
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          39,
+          178,
+          297,
+          746
+        ],
+        "pos": [
+          843,
+          4473
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          306,
+          49,
+          563,
+          90
+        ],
+        "pos": [
+          4473,
+          4698
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          306,
+          100,
+          383,
+          110
+        ],
+        "pos": [
+          4698,
+          4721
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          306,
+          113,
+          563,
+          165
+        ],
+        "pos": [
+          4721,
+          5058
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          306,
+          176,
+          363,
+          185
+        ],
+        "pos": [
+          5058,
+          5077
+        ]
+      },
+      {
+        "index": 8,
+        "class": "list-item",
+        "bbox": [
+          306,
+          189,
+          562,
+          230
+        ],
+        "pos": [
+          5077,
+          5335
+        ]
+      },
+      {
+        "index": 9,
+        "class": "list-item",
+        "bbox": [
+          306,
+          232,
+          552,
+          261
+        ],
+        "pos": [
+          5335,
+          5500
+        ]
+      },
+      {
+        "index": 10,
+        "class": "list-item",
+        "bbox": [
+          306,
+          264,
+          553,
+          294
+        ],
+        "pos": [
+          5500,
+          5655
+        ]
+      },
+      {
+        "index": 11,
+        "class": "list-item",
+        "bbox": [
+          306,
+          296,
+          556,
+          326
+        ],
+        "pos": [
+          5655,
+          5806
+        ]
+      },
+      {
+        "index": 12,
+        "class": "list-item",
+        "bbox": [
+          306,
+          328,
+          558,
+          347
+        ],
+        "pos": [
+          5806,
+          5912
+        ]
+      },
+      {
+        "index": 13,
+        "class": "list-item",
+        "bbox": [
+          306,
+          350,
+          561,
+          380
+        ],
+        "pos": [
+          5912,
+          6105
+        ]
+      },
+      {
+        "index": 14,
+        "class": "list-item",
+        "bbox": [
+          306,
+          382,
+          560,
+          412
+        ],
+        "pos": [
+          6105,
+          6308
+        ]
+      },
+      {
+        "index": 15,
+        "class": "list-item",
+        "bbox": [
+          306,
+          414,
+          547,
+          445
+        ],
+        "pos": [
+          6308,
+          6481
+        ]
+      },
+      {
+        "index": 16,
+        "class": "list-item",
+        "bbox": [
+          306,
+          447,
+          554,
+          466
+        ],
+        "pos": [
+          6481,
+          6605
+        ]
+      },
+      {
+        "index": 17,
+        "class": "list-item",
+        "bbox": [
+          306,
+          468,
+          551,
+          488
+        ],
+        "pos": [
+          6605,
+          6737
+        ]
+      },
+      {
+        "index": 18,
+        "class": "list-item",
+        "bbox": [
+          306,
+          490,
+          562,
+          520
+        ],
+        "pos": [
+          6737,
+          6913
+        ]
+      },
+      {
+        "index": 19,
+        "class": "list-item",
+        "bbox": [
+          306,
+          522,
+          560,
+          541
+        ],
+        "pos": [
+          6913,
+          7012
+        ]
+      },
+      {
+        "index": 20,
+        "class": "list-item",
+        "bbox": [
+          306,
+          543,
+          554,
+          573
+        ],
+        "pos": [
+          7012,
+          7163
+        ]
+      },
+      {
+        "index": 21,
+        "class": "list-item",
+        "bbox": [
+          306,
+          576,
+          553,
+          606
+        ],
+        "pos": [
+          7163,
+          7305
+        ]
+      },
+      {
+        "index": 22,
+        "class": "list-item",
+        "bbox": [
+          306,
+          608,
+          550,
+          638
+        ],
+        "pos": [
+          7305,
+          7469
+        ]
+      },
+      {
+        "index": 23,
+        "class": "list-item",
+        "bbox": [
+          306,
+          640,
+          554,
+          681
+        ],
+        "pos": [
+          7469,
+          7686
+        ]
+      },
+      {
+        "index": 24,
+        "class": "list-item",
+        "bbox": [
+          306,
+          683,
+          560,
+          713
+        ],
+        "pos": [
+          7686,
+          7859
+        ]
+      },
+      {
+        "index": 25,
+        "class": "list-item",
+        "bbox": [
+          306,
+          715,
+          563,
+          745
+        ],
+        "pos": [
+          7859,
+          8031
+        ]
+      },
+      {
+        "index": 26,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          762,
+          278,
+          771
+        ],
+        "pos": [
+          8031,
+          8094
+        ]
+      },
+      {
+        "index": 27,
+        "class": "page-footer",
+        "bbox": [
+          543,
+          763,
+          563,
+          770
+        ],
+        "pos": [
+          8094,
+          8105
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\naccording to SPR. The compound also demonstrated activity against WT HRAS and NRAS, although it was less potent against HRAS. Notably, the compound had an unusual effect on our artificial control interaction pair, leading to a distinct dip to approximately 50% residual activity at concentrations of ~250–500 nM, before climbing again and ultimately leading to mild enhancement of the interaction at higher micromolar concentrations (Fig. 2f). This distinct pattern suggests an alternative mode of action for ISM061-022, revealing at least some degree of nonspecific activity, although partial specificity for mutant KRAS protein does still appear to be in evidence. Further investigation into the mechanism of action of this molecule will be the focus of future study. \n\nOverall, these live-cell experimental observations underscore the robustness of our approach, effectively identifying small-molecule candidates with biological activity. While these molecules are certainly at an early stage and in need of further refinement, our results underline the potential of our methodology to address and surmount the complexities inherent in targeting clinically challenging biomolecules. To further characterize ISM061-018-2’s interaction with KRAS-G12D, we used protein-detected nuclear magnetic resonance (NMR) spectroscopy.<sup>15</sup> N-labeled KRAS-G12D (residues 1–169) protein was used to record<sup>1</sup> H–<sup>15</sup> N transverse relaxation optimized spectroscopy (TROSY) heteronuclear single quantum coherence (HSQC) spectra in the presence and absence of ISM061-018-2 under guanosine diphosphate (GDP)-loaded conditions (Extended Data Fig. 2a). Substantial chemical shift perturbations (CSPs) were observed, indicating fast exchange between free and bound states, with some residues showing intensity loss because of exchange broadening. Mapping the weighted CSP values onto the Protein Data Bank (PDB) structure of GDP-bound KRAS-G12D (Extended Data Fig. 2b) revealed notable perturbations in the P-loop, α2 helix, switch II region and nearby β4 sheet residues, suggesting a binding mode within the switch II pocket. Additional CSPs in the α1 helix, switch I and α4 regions suggest conformational changes upon ligand binding. Although direct interaction with D12 (ref. 21), a residue critical for selectivity in inhibitors such as MRTX1133, was not confirmed, CSPs in the P-loop residues (G10 and A11) imply possible specific interactions. These NMR results strongly support ISM061-018-2’s binding to the switch II pocket of KRAS-G12D, further corroborating its proposed mechanism of action. However, cocrystallization studies are necessary to fully elucidate the binding residues. In summary, current quantum hardware is proving crucial for practical drug discovery applications, preempting the need for fully fault-tolerant quantum systems in the future. Quantum algorithms have the potential to design small molecules that better align with the distribution of the provided training set, achieving outcomes that are challenging for classical methods because of their ability to more effectively explore and represent complex, high-dimensional probability distributions. Using just 16 qubits, our algorithm demonstrates how quantum computing can enhance classical computation, leading to more efficient algorithms. Our hybrid quantum–classical model surpasses classical models in performance and matches up well against the state of the art according to the Tartarus benchmark. We applied this model to design inhibitors targeting the complex KRAS protein, synthesizing and evaluating 15 promising ligands. Among these, ISM061-018-2 and ISM061-022 stood out, showing inhibitory effects on KRAS variants with ISM061-018-2 displaying a high binding affinity of 1.4 μM and broad activity across KRAS mutants. These results, derived from our hybrid approach, indicate superior efficacy to fully classical models and introduce potential chemotypes that expand the chemical space explored in KRAS inhibitor design. While these findings are encouraging, they stop short of definitively proving a ‘quantum advantage’, achieving results unattainable by classical methods within a reasonable time frame. Future work will focus on exploring transformer-based generative models, coupled with increasing the number of qubits, to further enhance the quality and diversity of generated molecules. \n\nThis synergistic approach could potentially lead to the discovery of therapeutics that might be overlooked by other methods, while also reducing the preclinical drug discovery phase from several years to just a few months. \n\n# **Online content** \n\nAny methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at https://doi.org/10.1038/s41587-024-02526-3. \n\n# **References** \n\n1. Petrova, E. Innovation in the pharmaceutical industry: the process of drug discovery and development. In _Innovation and Marketing in the Pharmaceutical Industry: Emerging Practices, Research, and Policies_ (eds Ding, M. et al.) 19–82 (Springer, 2014). \n\n2. DiMasi, J. A., Grabowski, H. G. & Hansen, R. W. Innovation in the pharmaceutical industry: new estimates of R&D costs. _J. Health Econ._ **47** , 20–33 (2016). \n\n3. Sun, D., Gao, W., Hu, H. & Zhou, S. Why 90% of clinical drug development fails and how to improve it? _Acta Pharm. Sin. B_ **12** , 3049–3062 (2022). \n\n4. Zhavoronkov, A. et al. Deep learning enables rapid identification of potent ddr1 kinase inhibitors. _Nat. Biotechnol._ **37** , 1038–1040 (2019). \n\n5. Stokes, J. et al. A deep learning approach to antibiotic discovery. _Cell_ **180** , 688–702 (2020). \n\n6. Ren, F. et al. AlphaFold accelerates artificial intelligence powered drug discovery: efficient discovery of a novel CDK20 small molecule inhibitor. _Chem. Sci._ **14** , 1443–1452 (2023). \n\n7. Nigam, A. K., Pollice, R., Friederich, P. & Aspuru-Guzik, A. Artificial design of organic emitters via a genetic algorithm enhanced by a deep neural network. _Chem. Sci._ **15** , 2618–2639 (2024). \n\n8. Sánchez-Lengeling, B. & Aspuru Guzik, A. Inverse molecular design using machine learning: generative models for matter engineering. _Science_ **361** , 360–365 (2018). \n\n9. Pollice, R. et al. Data-driven strategies for accelerated materials design. _Acc. Chem. Res._ **54** , 849–860 (2021). \n\n10. Nigam, A. K. et al. Assigning confidence to molecular property prediction. _Exp. Opin. Drug Discov._ **16** , 935–949 (2021). \n\n11. Bohacek, R. S., McMartin, C. & Guida, W. C. The art and practice of structure-based drug design: a molecular modeling perspective. _Med. Res. Rev._ **16** , 3–50 (1996). \n\n12. Santagati, R. et al. Drug design on quantum computers. _Nat. Phys._ **20** , 549–557 (2024). \n\n13. Li, J., Topaloglu, R. O. & Ghosh, S. Quantum generative models for small molecule drug discovery. _IEEE Trans. Quantum Eng._ **2** , 1–8 (2021). \n\n14. Batra, K. et al. Quantum machine learning algorithms for drug discovery applications. _J. Chem. Inf. Model._ **61** , 2641–2647 (2021). \n\n15. Benedetti, M., Lloyd, E., Sack, S. & Fiorentini, M. Parameterized quantum circuits as machine learning models. _Quantum Sci. Technol._ **4** , 043001 (2019). \n\n16. Hibat-Allah, M., Mauri, M., Carrasquilla, J. & Perdomo-Ortiz, A. A framework for demonstrating practical quantum advantage: racing quantum against classical generative models. _Commun. Phys._ **7** , 68 (2024). \n\n17. McClean, J. R., Boixo, S., Smelyanskiy, V., Babbush, R. & Neven, H. Barren plateaus in quantum neural network training landscapes. _Nat. Commun._ **9** , 4812 (2018). \n\n18. Gili, K., Hibat-Allah, M., Mauri, M., Ballance, C. J. & Perdomo-Ortiz, A. Do quantum circuit born machines generalize? _Quantum Sci. Technol._ **8** , 015021 (2023). \n\nNature Biotechnology | Volume 43 | December 2025 | 1954–1959 \n\n**1958** \n\n"
+  }
+}

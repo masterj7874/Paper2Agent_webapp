@@ -1,0 +1,380 @@
+{
+  "page": 8,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0008.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0008.png plus 300-dpi crops of the right column (Protein purification, NMR experiments, Experimental validation methods) and compared every item with evidence/page-0008.json. Reading order was already correct (left column b002-b008 top-to-bottom, then right column b009-b028); no reordering needed. Confirmed the three flagged margin items are furniture and set them to omit: b000 'Brief Communication' running header, b001 running DOI header, b029 'Nature Biotechnology' running footer. Demoted the five Methods subsection headings (b003 MaMTH-DS dose-response assays, b005 Cell viability assay, b007 Protein purification and NMR: sample preparation, b010 NMR experiments and analysis, b012 Experimental validation methods) from '#' to '##' so they sit under '# Methods' (p0007-b002), matching the '##' level already used for Benchmark setup/SPR conditions on page 7. Text repairs against the rendered page: b008 '[<sup>15</sup> N]H4Cl' -> '[<sup>15</sup>N]H4Cl' (spurious space after the superscript); b009 '2% DMSO- _d_ 6' -> '2% DMSO-*d*6' (the italic d and its subscript 6 had been split by spaces and the underscore emphasis would not render intraword); b011 '1H-15N TROSY HSQC' -> '<sup>1</sup>H-<sup>15</sup>N TROSY HSQC' and 'on both<sup>1</sup> H and<sup>15</sup> N dimensions' -> 'on both <sup>1</sup>H and <sup>15</sup>N dimensions' (isotope superscripts were attached to the wrong side of the space); b017 'ReRSA model<sup>58</sup> .' and b024 'kcal mol<sup>−1</sup> ).' lost the space before the following punctuation. Verified against the 300-dpi crop that the chemical subscripts are transcribed as plain digits (Na2HPO4, KH2PO4, MgCl2, CO2, H4Cl) consistent with the rest of this document, which uses no <sub> markup; the digits themselves are correct. Checked that all citation superscripts (28, 53, 54, 55, 56, 57, 58) and the U+2212 minus signs in min<sup>−1</sup>, ml<sup>−1</sup> and '<−8 kcal mol<sup>−1</sup>' match the source, that every micro sign is U+03BC (μM, μl, μg, μCLEAR) as in the evidence lines, and that mutation names KRAS-G12D/G12V/G12C are plain text. Set join_previous='space' on b002 because page 7 ends '...prepared samples by serial twofold' and this page opens 'dilutions from 200 μM...'. No figures, tables or displayed equations on this page; the seven bulleted criteria (b014-b020) and six benchmark bullets (b022-b026) are genuine list items, correctly kept as text. LINKS (added on a second pass): the PDF carries three external link annotations on this page. The '7EW9' run in b018 links to https://doi.org/10.2210/pdb7EW9/pdb and the extractor had dropped it entirely; restored as a Markdown link. The footer 'Nature Biotechnology' link is on the omitted running footer. The third annotation is a publisher-side DEFECT that I deliberately did NOT propagate: in b011 the accession '27719' (Biological Magnetic Resonance Bank) carries a link to http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-1975/, an unrelated ArrayExpress record. Turning that into a Markdown link would actively mislead a reader, and inventing the correct BMRB URL would not be transcription, so '27719' is left as plain text. Flagged for the coordinator to adjudicate. SUBSCRIPTS (third pass, after the coordinator confirmed <sub> is this document's convention for flattened subscripts): restored the chemical subscripts the native text layer had flattened, each verified against a 300-400 dpi render rather than the text layer alone - '5% CO2' -> '5% CO<sub>2</sub>' (twice in b004, twice in b006), '[<sup>15</sup>N]H4Cl' -> '[<sup>15</sup>N]H<sub>4</sub>Cl' in b008, and in b009 'Na2HPO4' -> 'Na<sub>2</sub>HPO<sub>4</sub>', 'KH2PO4' -> 'KH<sub>2</sub>PO<sub>4</sub>', 'MgCl2' -> 'MgCl<sub>2</sub>' and 'DMSO-*d*6' -> 'DMSO-*d*<sub>6</sub>'. The mutation names (G12D, G12V, G12C) are printed on the baseline and correctly stay plain.",
+  "warnings": [
+    "Review possible header/footer: p0008-b000",
+    "Review possible header/footer: p0008-b001",
+    "Review possible header/footer: p0008-b029"
+  ],
+  "items": [
+    {
+      "id": "p0008-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0008-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0008-b002",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        49.0,
+        297.0,
+        90.0
+      ],
+      "markdown": "dilutions from 200 μM to 0.39 μM in 1× HBS-EP+, 2 mM TCEP and 2% DMSO. Samples were injected for 60 s at a flow rate of 30 μl min<sup>−1</sup> and dissociation time of 180 s. A Biacore 8K machine was used to carry out the SPR experiments and subsequent data analysis.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0008-b003",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        102.0,
+        179.0,
+        112.0
+      ],
+      "markdown": "## MaMTH-DS dose–response assays",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0008-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        112.0,
+        297.0,
+        391.0
+      ],
+      "markdown": "MaMTH-DS FLP HEK293 reporter cell lines<sup>28</sup> stably expressing KRAS (WT or mutant), HRAS, NRAS or artificial membrane-anchored ALFA tag bait alongside Raf1 (for Ras baits) or nanobody ALFA (for artificial bait) preys were seeded into 384-well white-walled, flat-bottomed, tissue-culture-treated microplates (Greiner, 781098) at a concentration of 100,000 cells per ml (50 μl total volume per well) in DMEM, 10% FBS and 1% penicillin–streptomycin. Seeding was performed using a MultiFlo-FX multimode liquid dispenser (BioTek). Plates were left at room temperature for 30–60 min following seeding before transfer to a Heracell 150i incubator (Thermo Fisher Scientific) and growth at 37 °C in 5% CO<sub>2</sub> for 3 h. After growth, 10 μl of DMEM, 10% FBS and 1% penicillin–streptomycin supplemented with 3 μg ml<sup>−1</sup> tetracycline (to induce bait and prey expression; BioShop, TET701) and 60 ng ml<sup>−1</sup> epidermal growth factor (to stimulate Ras signaling; Sigma, E9644) was added to each well using a multichannel pipette. As appropriate, a 6× concentration of drug (or DMSO only) was also included in the medium, with all lower concentrations produced by serial dilution starting from the highest concentration solution. Plates were then grown overnight (18–20 h) at 37 °C in 5% CO<sub>2</sub>. A luciferase assay was performed the next day using 10 μl of 20 μM native coelenterazine substrate (Nanolight, 303) per well. Luminescence was measured using a Clariostar plate reader (BMG Labtech) with a gain of 3,200–3,800 and a 1-s integration time. All data analysis was performed using Microsoft Excel and GraphPad Prism. Curve fits were performed in Prism (nonlinear regression) using log(inhibitor) versus response curves, with a variable slope (four parameters) bottom-constrained to zero.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b005",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        403.0,
+        115.0,
+        413.0
+      ],
+      "markdown": "## Cell viability assay",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0008-b006",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        413.0,
+        297.0,
+        671.0
+      ],
+      "markdown": "MaMTH-DS FLP HEK293 reporter cell lines<sup>28</sup> stably expressing KRAS (WT or G12V mutant) bait alongside Raf1 prey were seeded into 96-well white-walled, μCLEAR flat-bottomed, tissue-culture-treated plates (Greiner, 655098) at 40,000 cells per well in DMEM, 10% FBS and 1% penicillin–streptomycin (60 μl total volume per well). Seeding was performed using a MultiFlo-FX multimode liquid dispenser (BioTek). Plates were left at room temperature for 30–60 min following seeding before transfer to a Heracell 150i incubator (Thermo Fisher Scientific) and growth at 37 °C in 5% CO<sub>2</sub> for 3 h. After growth, 30 μl of a 3× concentration of the drug (or DMSO only) in DMEM, 10% FBS and 1% penicillin–streptomycin was added to wells, with all lower concentrations produced by serial dilution starting from the highest concentration solution (final drug concentration: 30 μM to 123 nM). Plates were then grown overnight (18–20 h) at 37 °C in 5% CO<sub>2</sub>. The effect of the drug on cell viability was assessed by the CellTiter-Glo luminescent cell viability assay from Promega (G7570). Briefly, 90 μl of the CellTiter-Glo reagent was added directly into each well following 30-min equilibration of the plate at room temperature. Contents of the wells were mixed on an orbital shaker for 2 min and plates were then incubated at room temperature for 10 min to stabilize the luminescence signal. Luminescence was measured using a Clariostar plate reader (BMG Labtech) with a gain of 3,600 and a 1-s integration time. Values represent the mean ± s.d. of three replicates for each tested drug concentration. All data analysis was performed using Microsoft Excel and GraphPad Prism.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b007",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        682.0,
+        245.0,
+        692.0
+      ],
+      "markdown": "## Protein purification and NMR: sample preparation",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0008-b008",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        694.0,
+        297.0,
+        746.0
+      ],
+      "markdown": "A construct encoding N-His–TEV (tobacco etch virus)–KRAS-G12D was transformed into BL21(DE3) cells. The cells were grown in minimal medium containing 1 g l<sup>−1</sup> [<sup>15</sup>N]H<sub>4</sub>Cl and 4 g l<sup>−1</sup> glucose to an optical density at 600 nm of ~0.7–1.0 and induced with 1 mM IPTG for 16 h at 16 °C. Cells were pelleted and resuspended in lysis buffer (20 mM",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b009",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        563.0,
+        186.0
+      ],
+      "markdown": "sodium phosphate pH 8.0, 500 mM NaCl, 10 mM imidazole, 1 mM 2-mercaptoethanol and 5% (v/v) glycerol) containing PMSF and benzamidine. Protein was purified over a His trap column (Cytiva) following standard Ni-affinity protocols (wash with 10 mM and 20 mM imidazole and then elute with 300 mM imidazole) and the His-tag was removed by TEV cleavage. KRAS-G12D was further purified by size-exclusion chromatography using a Superdex 75 Increase column (10/300 GL) with PBS buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na<sub>2</sub>HPO<sub>4</sub> and 2 mM KH<sub>2</sub>PO<sub>4</sub>, pH 7.4) containing 10 mM EDTA. The samples were prepared by mixing 30 μM of protein with 200 μM ISM018-2 in the presence of 2% DMSO-*d*<sub>6</sub>, 5 mM GDP and 15 mM MgCl<sub>2</sub> in the buffer. The purification protocols were adapted from previously published protocols for KRAS-G12C (ref. 53) and KRAS-G12D (ref. 54).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b010",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        199.0,
+        432.0,
+        208.0
+      ],
+      "markdown": "## NMR experiments and analysis",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0008-b011",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        209.0,
+        563.0,
+        316.0
+      ],
+      "markdown": "<sup>1</sup>H–<sup>15</sup>N TROSY HSQC experiments were recorded at 298 K on an 800-MHz Bruker spectrometer equipped with an AVANCE III console and a cryogenically cooled probe. The acquired spectra were processed using NMRPipe<sup>55</sup> and were analyzed using ccpnmr 2.0 (ref. 56). The chemical shifts were transferred from Biological Magnetic Resonance Bank 27719 (ref. 54). The CSPs on both <sup>1</sup>H and <sup>15</sup>N dimensions were used to calculate the weighted CSP<sup>57</sup> and these values were then plotted onto the PDB structure using PyMol to map the regions that took part in ligand binding or underwent conformational changes upon ligand binding.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b012",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        328.0,
+        443.0,
+        337.0
+      ],
+      "markdown": "## Experimental validation methods",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0008-b013",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        339.0,
+        564.0,
+        370.0
+      ],
+      "markdown": "**Chemistry42 methods: after screening and selection of promising candidate structures for synthesis.** Our selection process relied on a tiered system of the following criteria:",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b014",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        376.0,
+        561.0,
+        397.0
+      ],
+      "markdown": "- Structural and compositional parameter filters, such as hydrogen bond donor count and aromatic atom fraction.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b015",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        399.0,
+        550.0,
+        419.0
+      ],
+      "markdown": "- Property evaluation for molecular weight, lipophilicity and other physicochemical traits.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b016",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        419.0,
+        558.0,
+        438.0
+      ],
+      "markdown": "- Medicinal chemistry filters to exclude problematic structural motifs.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b017",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        442.0,
+        540.0,
+        460.0
+      ],
+      "markdown": "- A synthetic accessibility assessment based on the ReRSA model<sup>58</sup>.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b018",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        463.0,
+        557.0,
+        483.0
+      ],
+      "markdown": "- Three-dimensional pharmacophoric analysis in reference to an X-ray cocrystal structure (PDB [7EW9](https://doi.org/10.2210/pdb7EW9/pdb)) (Extended Data Fig. 4).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b019",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        483.0,
+        485.0,
+        494.0
+      ],
+      "markdown": "- PLI scoring to estimate binding efficiency.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b020",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        495.0,
+        545.0,
+        505.0
+      ],
+      "markdown": "- An overall reward calculation integrating the above scores",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b021",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        511.0,
+        563.0,
+        531.0
+      ],
+      "markdown": "For synthesis candidacy, we applied more demanding conditions, ensuring compounds met the following enhanced benchmarks:",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b022",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        534.0,
+        462.0,
+        545.0
+      ],
+      "markdown": "- Clearance of all Chemistry42 filters.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b023",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        546.0,
+        483.0,
+        555.0
+      ],
+      "markdown": "- An aggregate reward value exceeding 0.7.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b024",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        556.0,
+        556.0,
+        566.0
+      ],
+      "markdown": "- A PLI score indicative of strong KRAS binding (<−8 kcal mol<sup>−1</sup>).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b025",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        567.0,
+        483.0,
+        577.0
+      ],
+      "markdown": "- A pharmacophore match score above 0.7.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b026",
+      "kind": "text",
+      "bbox": [
+        320.0,
+        578.0,
+        554.0,
+        587.0
+      ],
+      "markdown": "- Favorable synthetic accessibility with a ReRSA score under 5.",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0008-b027",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        597.0,
+        563.0,
+        647.0
+      ],
+      "markdown": "After screening, molecules were clustered and ranked within clusters by chemical similarity, allowing for expert analysis to further prioritize on the basis of novelty and structural intricacy, culminating in a selection of 100–150 molecules for potential synthesis and subsequent examination.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b028",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        661.0,
+        563.0,
+        746.0
+      ],
+      "markdown": "**Experimental evaluation methods of generated compounds.** From the pool of identified structures, we synthesized and characterized 15 compounds. Detailed methodologies of this process are elaborated in the Supplementary Information. The molecular structures of the two most promising compounds (ISM061-018-2 and ISM061-022) are showcased in Fig. 2a,e. Each synthesized compound underwent a rigorous two-phase evaluation; their binding affinities were determined using SPR and their biological efficacies were gauged through cell-based",
+      "source_class": "text"
+    },
+    {
+      "id": "p0008-b029",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology') repeated on every page of the article; not body content."
+    }
+  ]
+}

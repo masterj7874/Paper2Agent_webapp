@@ -1,0 +1,97 @@
+{
+  "page": 19,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0019.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0019.png; all-text page, Steps 2-5 of the ISM061-14 route. CROSS-PAGE JOIN: set join_previous='space' on p0019-b000. Page 18 ends '...flash silica gel chromatography (SiO2, ethyl acetate: petroleum' and this page opens 'ether = 0% - 10%) to afford Compound 14-1'. Checked the rendered pages: 'petroleum ether' is two words with a normal space, not a hyphenated word split, so 'space' is correct and 'none' would have produced 'petroleumether'. Text repairs: restored the real compound hyphen in '1,4-dioxane' in p0019-b004 (the PDF wraps after '1,4-' and the hyphen is part of the solvent name); closed up '_tert_ -butyl' to '_tert_-butyl' in p0019-b006 so it renders as the printed 'tert-butyl' instead of 'tert -butyl'; removed the spurious spaces around superscripts in '(ESI<sup>+</sup> ):' and '[M+H]<sup>+</sup> .' in b000 and b004, and normalised the two '.<sup>1</sup> H NMR' run-ins in b002 and b004. Checked and left unchanged: the heading 'Step 3 & 4: Preparation of Compound 14-4' really does combine two steps and skips compound 14-3; '7.03 - 6.75 (t, J = 56 Hz, 1H)' really prints 56 Hz with no decimal. Page ends on 'washed with brine (20 mL x 2), dried' - continues on page 20. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. ARTWORK AUDIT (re-checked, do not re-flag): this page has NO figure item because it genuinely contains no artwork. Verified three ways rather than trusting the extractor - the page content stream has 0 vector drawing operations, 0 embedded images, 0 form XObjects and 0 inline-image (BI) operators, and a 100 dpi render with every native text block masked out leaves zero non-white pixels. The page is text-only, so no figure item was added. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0019-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        91.0
+      ],
+      "markdown": "ether = 0% - 10%) to afford **Compound 14-1** (1.20 g, 83% yield) as a white solid. LCMS (ESI<sup>+</sup>): 291.2 [M+H]<sup>+</sup>.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0019-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        111.0,
+        259.0,
+        122.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 14-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0019-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        141.0,
+        542.0,
+        298.0
+      ],
+      "markdown": "To a solution of 4-(benzyloxy)-2-bromobenzaldehyde (100.0 mg, 0.34 mmol) in DCM (5 mL) was added DAST (0.2 mL, 1.72 mmol) dropwise at 0 ℃ and then the mixture was stirred at 25 ℃ for 4 hrs. After cooling to 0 ℃, the reaction mixture was quenched by ice-water (20 mL) and extracted with EtOAc (25 mL × 3). The combined organic layers were washed with brine (25 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 5: 1) to afford **Compound 14-2** (90.0 mg, 84% yield) as colorless oil. <sup>1</sup>H NMR (400 MHz, Methanol-d4) δ 7.55 - 7.53 (d, J = 8.0 Hz, 1H), 7.43 - 7.29 (m, 5H), 7.27 (s, 1H), 7.09 - 7.06 (m, 1H), 7.03 - 6.75 (t, J = 56 Hz, 1H), 5.09 (s, 2H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0019-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        317.0,
+        281.0,
+        329.0
+      ],
+      "markdown": "#### Step 3 & 4: Preparation of Compound 14-4",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0019-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        348.0,
+        542.0,
+        608.0
+      ],
+      "markdown": "To a solution of 4-(benzyloxy)-2-bromo-1-(difluoromethyl)benzene (200.0 mg, 0.64 mmol) in 1,4-dioxane (5 mL) were added bis(pinacolato)diboron (194.6 mg, 0.77 mmol), potassium acetate (188.0 mg, 1.92 mmol) and Pd(dppf)Cl2 (46.7 mg, 0.06 mmol). After addition, the mixture was purged with N2 for 2 mins and then stirred at 100 ℃ for 12 hrs under N2. After cooling to 25 ℃, water (1 mL) was added followed by K2CO3 (230.2 mg, 1.67 mmol), 2,4-dichloropyrimidine (95.3 mg, 0.64 mmol) and Pd(dppf)Cl2 (40.6 mg, 0.06 mmol). The mixture was stirred at 100 ℃ under N2 for 2 hrs. After cooling to 20 ℃, the reaction solution was poured into water (40 mL) and extracted with EtOAc (20 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by flash silica gel chromatography (SiO2, ethyl acetate: petroleum ether = 0% - 10%) to afford **Compound 14-4** (150.0 mg, 78% yield) as colorless oil. LCMS (ESI<sup>+</sup>): 347.2 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, Methanol-d4) δ 8.77 - 8.76 (d, J = 4.0 Hz, 1H), 7.76 - 7.73 (m, 1H), 7.69 - 7.67 (d, J = 4.0 Hz, 1H), 7.48 - 7.45 (m, 2H), 7.40 - 7.29 (m, 6H), 5.20 (s, 2H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0019-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        627.0,
+        259.0,
+        639.0
+      ],
+      "markdown": "#### Step 5: Preparation of Compound 14-5",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0019-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        657.0,
+        542.0,
+        773.0
+      ],
+      "markdown": "To a solution of 4-(5-(benzyloxy)-2-(difluoromethyl)phenyl)-2-chloropyrimidine (150.0 mg, 0.43 mmol) in MeCN (3 ml) were added _tert_-butyl pent-4-yn-1-ylcarbamate (95.0 mg, 0.52 mmol), copper(I) iodide (16.48 mg, 0.09 mmol), TEA (0.18 ml, 1.30 mmol) and Pd(PPh)3Cl2 (30.4 mg, 0.043 mmol). After addition, the mixture was purged with N2 for 2 mins and then stirred at 85 ℃ for 12 hrs under N2. After cooling to 20 ℃, the reaction solution was poured into water (20 mL) and extracted with EtOAc (20 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried",
+      "source_class": "text"
+    }
+  ]
+}

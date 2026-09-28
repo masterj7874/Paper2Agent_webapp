@@ -1,0 +1,88 @@
+{
+  "page": 11,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0011.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. No cross-page join: page 11 opens with a figure. MERGED A SPLIT FIGURE: the Scheme S5 artwork had been cut into two picture items, p0011-b002 [52, 402, 432, 497] and p0011-b003 [60, 507, 477, 574], which would have produced two half-schemes. Removed p0011-b003 and widened p0011-b002 to [50, 398, 477, 573], covering all three reaction rows (measured ink 57.6-470.9 x 402.3-567.8 pt) with labels 12-1 .. 12-10 and ISM061-12; asset scheme-s5. FIXED A CROPPED FIGURE: p0011-b000 (1H NMR spectrum of ISM061-11) had bbox [51, 51, 450, 314], losing the right-hand intensity axis (0.22 .. -0.02) and the integral row and f1 (ppm) axis; measured ink 56.2-460.5 x 56.3-345.4 pt and set [51, 51, 466, 351]; asset si-nmr-ism061-11. Changed 'S1.5. Preparation of ISM061-12' and 'Step 1: Preparation of Compound 12-1' from kind caption to heading (h3, h4); 'Scheme S5 Preparation of ISM061-12' stays a caption and now follows the single merged figure. Normalised '[M+H]<sup>+</sup> .' spacing in p0011-b006.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0011-b000",
+      "kind": "figure",
+      "bbox": [
+        51.0,
+        51.0,
+        466.0,
+        351.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-11",
+      "asset_name": "si-nmr-ism061-11"
+    },
+    {
+      "id": "p0011-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        382.0,
+        221.0,
+        394.0
+      ],
+      "markdown": "### S1.5. Preparation of ISM061-12",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0011-b002",
+      "kind": "figure",
+      "bbox": [
+        50.0,
+        398.0,
+        477.0,
+        573.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S5",
+      "asset_name": "scheme-s5"
+    },
+    {
+      "id": "p0011-b004",
+      "kind": "caption",
+      "bbox": [
+        205.0,
+        585.0,
+        393.0,
+        597.0
+      ],
+      "markdown": "**Scheme S5** Preparation of ISM061-12",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0011-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        611.0,
+        259.0,
+        623.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 12-1",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0011-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        642.0,
+        542.0,
+        778.0
+      ],
+      "markdown": "To a solution of 1-(5,6,7,8-tetrahydronaphthalen-2-yl)ethan-1-one (10.0 g, 57.5 mmol) in ethyl acetate (100 mL) was added aluminum chloride (19.1 g, 143.8 mmol) and bromine (11.0 g, 69.0 mmol). The resulting mixture was stirred at 85 °C for 16 hours. The reaction was quenched with ice water (100 mL). The resulting mixture was extracted with ethyl acetate (100 mL × 3). The combined organic phases was washed with saturated brine (50 mL × 3), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give the title compound as a yellow oil (5.1 g, Y: 35.2%). LCMS (ESI): 253.0 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    }
+  ]
+}

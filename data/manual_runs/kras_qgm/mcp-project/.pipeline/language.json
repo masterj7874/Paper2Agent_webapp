@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language": "python",
+  "language_reason": "The repository is a Python research codebase with no packaging metadata (no pyproject.toml, setup.py, or requirements.txt). The convertible operations are importable Python modules called directly: stoned_algorithm/stoned.py, stoned_algorithm/stoned_sim.py, stoned_algorithm/filter_.py, stoned_algorithm/PAINS_TEST.py, stoned_algorithm/MCF_TEST.py, stoned_algorithm/SYBA_TEST.py, utils/lipinski_utils.py, utils/mol_methods.py, utils/stoned_utils.py, and models/priors/qcbm_qiskit.py. The top-level benchmark_models_v0.py driver is a SLURM batch training entry point, not a reusable CLI interface, so the CLI route is not selected.",
+  "cli_backend": "python",
+  "requires_gpu": false,
+  "gpu_requirement": "optional",
+  "gpu_reason": "The orquestra-free subset selected for conversion is CPU-bound and the environment manager confirmed nothing in it touches a GPU: zero cuda/gpu/device references, qcbm_qiskit's device=\"cpu\" parameter is stored but never read, and the pinned qiskit-aer 0.11.2 reports available_devices ('CPU',). requires_gpu false is correct. Host has 2x NVIDIA RTX PRO 6000 Blackwell (97887 MiB each), driver 575.57.08, CUDA 12.8; official torch 2.7.0+cu128 wheels already ship sm_120 so no source rebuild is needed, but torch is required only by models/vqvae/, which is recommended for exclusion as unreferenced, image-domain and provably broken.",
+  "repository": {
+    "url": "https://github.com/aspuru-guzik-group/quantum-generative-models",
+    "tag": "1.0.0-beta.1",
+    "commit": "20cb407b228735dc479737cf765448e9c7d5a9cc",
+    "archive_doi": "10.5281/zenodo.11137638",
+    "license": "MIT",
+    "local_path": "repo/quantum-generative-models",
+    "dirty_files": []
+  },
+  "requested_filter": null,
+  "route_override": null,
+  "evidence": {
+    "import_census": "171 orquestra, 157 rdkit, 86 torch, 46 qiskit, 17 selfies, 12 syba, 12 optuna across 71 .py files",
+    "blocking_dependency": "orquestra-qml and orquestra-qml-core both return HTTP 404 from PyPI; a GitHub code search returns total_count 0 and zapatacomputing/orquestra-qml{,-core} are 404. The surviving orquestra-quantum/-opt/-sdk packages do not help because the repository's usage is overwhelmingly orquestra.qml.*. Independently re-verified by the environment manager, which counted 32 of 71 files dead rather than the 31 first recorded.",
+    "available_dependencies": "CORRECTED. The coordinator's initial probe recorded 'syba 0.0.5' as available on PyPI. That was wrong evidence: the PyPI project named 'syba' is an unrelated bacterial gene-name standardisation tool with no SybaClassifier. The real SYnthetic BAyesian classifier used by this paper is lich-uct/syba and has never been published to PyPI; installing the PyPI package would have silently broken the environment. It was vendored from the pinned checkout (commit 30929eb) to vendor/syba with git-LFS data materialised and sha256 recorded, and verified: syba.predict(aspirin) = 30.45. selfies, rdkit, numpy, pandas and scipy resolve normally from PyPI under the pins above.",
+    "orquestra_free_modules": "40 of 71 files, including all of stoned_algorithm/, most of utils/, models/priors/qcbm_qiskit.py, models/vqvae/, models/error/, models/layers/, models/generators.py",
+    "qiskit_note": "CORRECTED. An earlier note recorded qiskit 2.5.2 as the resolvable version. True on PyPI but unusable here: the repository's Qiskit code targets the 0.x API. The environment pins qiskit-terra 0.22.4 / qiskit-aer 0.11.2 / qiskit-ignis 0.7.1 / qiskit-ibmq-provider 0.19.2.",
+    "unparseable_source": "stoned_algorithm/stoned_sim.py raises IndentationError at line 448: the pinned source does not parse in any environment and cannot be imported or extracted from as-is.",
+    "import_technique": "Six modules import cleanly only via synthetic namespace packages for utils, models, models.priors and models.error, so that the real __init__.py files (which import orquestra) never execute. stoned_algorithm/filter_.py imports natively. Seven further script-shaped modules resolve their imports but abort at module scope on CSVs the authors never published, plus one hard-coded /home/mghazi/ path; their functions are reachable only by AST extraction.",
+    "runtime_hazards": "Three hazards any wrapper must handle: (1) utils/filter.py loads ./database/* at module scope inside a try/except FileNotFoundError that only logs, so from the wrong cwd it imports fine and then raises NameError on _filters at first call - it must be imported with cwd at the repo root; (2) QCBMGenerator.generate() infinite-loops on default arguments because with sampeling_backend=None the constructor never sets self.sampeling_error_mitigation, generate() swallows the resulting AttributeError in a bare except and never decrements num_samples (observed 10 minutes at 100% CPU and 5.7 GB before being killed), so an explicit backend must always be passed; (3) SybaClassifier.fitDefaultScore() costs about 28 s and 5.5 GB RSS and must be run once at module scope."
+  },
+  "python_version": "3.10.18",
+  "python_version_reason": "Forced, not preferred. models/priors/qcbm_qiskit.py and models/{priors,error}/error*.py use Qiskit 0.x APIs (Aer, IBMQ, execute, assemble, qiskit.providers.aer, qiskit.ignis) that were removed in Qiskit 1.0, pinning the stack to qiskit-terra 0.22.4 / qiskit-aer 0.11.2 / qiskit-ignis 0.7.1. With pandas<2 (three modules call the removed DataFrame.append) and numpy<2 (aer 0.11 ABI), Python 3.10 is the only version with wheels for everything.",
+  "lockfile": "requirements.lock"
+}

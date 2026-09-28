@@ -1,0 +1,84 @@
+{
+  "page": 10,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0010.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. NO cross-page join despite the queue flag for this boundary: page 10 opens with the bold section head 'Step 6: Preparation of Compound 11-6' and page 9 ends with a completed sentence ('...LCMS (ESI): 389.2 [M+H]+.'), so join_previous is left unset. Set Step 6/7/8 headings to h4. Fixed 'DMSO- _d_ 6)' -> 'DMSO-*d*6)' and the ESI/[M+H]/1H NMR superscript spacing, including the source's run-together 'LCMS (ESI):439.2[M+H]+.' which is genuinely printed without spaces and was kept that way. Checked the micro sign: the native text uses U+00B5 in '566.5 µmol' and '56.7 µmol' (page 3 and 6 use Greek μ in '5 μm'); both kept as in the source rather than unified. Verified '[1,1’-bis(diphenylphosphino)ferrocene]dichloro palladium(II)' including the typographic apostrophe, and the missing full stop in 'for 16 hours After the removal', which is a source error and was left. No figures on this page.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0010-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        259.0,
+        71.0
+      ],
+      "markdown": "#### Step 6: Preparation of Compound 11-6",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0010-b001",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        90.0,
+        542.0,
+        226.0
+      ],
+      "markdown": "To a solution of **compound 11-5** (361.0 mg, 0.9 mmol) in phosphorus oxychloride (4 mL) was added N,N-dimethylbenzylamine (254.0 mg, 2.1 mmol) at 0 °C. The mixture was stirred at 100 °C for 16 hours After the removal of phosphorus oxychloride under reduced pressure, the residue was dissolved in ethyl acetate (20 mL) and saturated sodium bicarbonate aqueous solution (10 mL). The mixture was extracted with ethyl acetate (20 mL × 3), the combined organic phases was dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give the title compound as a white solid (240.0 mg, Y: 63.5%). LCMS (ESI): 407.3 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b002",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        235.0,
+        259.0,
+        247.0
+      ],
+      "markdown": "#### Step 7: Preparation of Compound 11-7",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0010-b003",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        265.0,
+        542.0,
+        443.0
+      ],
+      "markdown": "To a solution of **compound 11-6** (230.0 mg, 566.5 µmol) in dioxane (20 mL) and water (4 mL) was added 4-pyrazoleboronic acid pinacol ester (220.0 mg, 1.1 mmol), cesium carbonate (359.0 mg, 1.1 mmol), [1,1’-bis(diphenylphosphino)ferrocene]dichloro palladium(II) dichloromethane complex (46.0 mg, 56.7 µmol). The mixture was stirred under nitrogen protection at 100 °C for 2 hours. After the addition of water (20 mL), the mixture was extracted with ethyl acetate (30 mL × 3). The combined organic phases was dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to afford a residue, which was further purified by silica gel column chromatography (EA:PE=1:2) to afford the title compound as a yellow solid (160 mg,Y: 64.5%). LCMS (ESI):439.2[M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0010-b004",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        452.0,
+        233.0,
+        464.0
+      ],
+      "markdown": "#### Step 8: Preparation of ISM061-11",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0010-b005",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        482.0,
+        542.0,
+        598.0
+      ],
+      "markdown": "A mixture of **compound 11-7** (100 mg) and Pd/C (50 mg, 10%) in methanol (10 mL) was stirred under H2 atmosphere at 25°C for 16 hours. Upon completion, the mixture was filtered, the filtrate was concentrated under reduced pressure to afford a residue, which was further purified by pre-HPLC to afford the title compound as a yellow solid (8 mg, Y: 10%). LCMS (ESI): 349.1 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, DMSO-*d*6) δ 13.09 (s, 1H), 10.02 (s, 1H), 8.29 – 7.93 (m, 2H), 7.54 (d, _J_ = 8.6 Hz, 1H), 6.69 (dd, _J_ = 8.6, 2.4 Hz, 1H), 6.13 (d, _J_ = 2.4 Hz, 1H), 4.05 (s, 2H), 2.29 (s, 6H).",
+      "source_class": "text"
+    }
+  ]
+}

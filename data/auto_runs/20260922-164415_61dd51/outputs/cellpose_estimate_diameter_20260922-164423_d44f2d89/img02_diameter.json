@@ -1,0 +1,31 @@
+{
+ "image": {
+  "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+  "shape": [
+   349,
+   467,
+   3
+  ],
+  "dtype": "uint8"
+ },
+ "estimated_diameter": 27.80029502818709,
+ "diameter_from_style": 26.31943035282652,
+ "diam_mean": 30.0,
+ "rescale": 1.0791252384042183,
+ "settings": {
+  "model_type": "cyto2",
+  "channels": [
+   0,
+   0
+  ],
+  "size_model": "size_cyto2torch_0.npy",
+  "pretrained_model_files": [
+   "cyto2torch_0"
+  ]
+ },
+ "device": "cuda:0",
+ "timings_s": {
+  "model_init": 0.122,
+  "eval": 0.979
+ }
+}

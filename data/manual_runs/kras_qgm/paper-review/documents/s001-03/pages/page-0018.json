@@ -1,0 +1,82 @@
+{
+  "page": 18,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0018.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0018.png and re-rendered the crop from source.pdf. Single-figure page: Extended Data Fig. 5 (QCBM circuit) plus a two-column caption. Crop set to [90, 45, 511, 294] pt; render confirms it contains the yellow 'Classical Optimizer' box and both feedback arrows above the circuit, all four sides of the green dashed border, the q0-q3 wire labels, every Rx/Rz/Rxx gate with its theta_0..theta_18 subscripts, the barrier, all four measurement meters with their 0/1/2/3 classical-bit arrows, the 'meas' register line with its width marker 4, and the |0> --U(theta)--> |psi(theta)> --measure--> outcome annotation. The embedded raster is only x 101.9-258.9 pt tall, so the vector optimizer box and dashed frame lie outside it and needed the wider crop. Renamed placeholder figure-p0018-002 -> extended-data-figure-5 with asset_category=supp_figs. Merged the two caption column fragments (b003 ends 'The depicted quantum', b004 begins 'gates, including') into one caption item and re-kinded b004 from text to caption. TEXT REPAIR: the PDF native text layer emits a doubled ket bar, '||Ψ(0)⟩'; a 400 dpi render of the caption shows a single bar, so it is corrected to '|Ψ(0)⟩'. The character inside that ket is a printed digit zero, not theta - confirmed visually at 400 dpi and left as printed (the paper's own inconsistency with U(theta) in the figure) rather than silently 'fixed'. Also confirmed 16 qubits, (Rx, Rz), CNOT and the italic theta in 'the parameters theta'. Header/DOI/footer set to omit.",
+  "warnings": [
+    "Review possible header/footer: p0018-b000",
+    "Review possible header/footer: p0018-b001",
+    "Review possible header/footer: p0018-b005"
+  ],
+  "items": [
+    {
+      "id": "p0018-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Repeated running header of the journal article ('Brief Communication'); not substantive content."
+    },
+    {
+      "id": "p0018-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Repeated running header DOI link (https://doi.org/10.1038/s41587-024-02526-3); already recorded on the title page."
+    },
+    {
+      "id": "p0018-b002",
+      "kind": "figure",
+      "bbox": [
+        90.0,
+        45.0,
+        511.0,
+        294.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Extended Data Fig. 5",
+      "asset_name": "extended-data-figure-5",
+      "asset_category": "supp_figs"
+    },
+    {
+      "id": "p0018-b003",
+      "kind": "caption",
+      "bbox": [
+        39.0,
+        296.0,
+        563.0,
+        345.0
+      ],
+      "markdown": "**Extended Data Fig. 5 | Quantum Circuit Born Machine (QCBM) Model.** Schematic representation of the Quantum Circuit Born Machine (QCBM) implemented in our numerical experiments, illustrating a variational quantum circuit with a configuration of three layers and four qubits. In practice, our numerical experiments utilized a system with 16 qubits. The depicted quantum gates, including parameterized rotations (Rx, Rz) and entangling CNOT gates, are orchestrated to evolve the initial state |0⟩ into a complex quantum state |Ψ(0)⟩. The outcome is measured, and the resulting data are used by the classical optimizer to iteratively refine the parameters _θ_, thus leading the circuit towards an optimal solution for ligand generation.",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0018-b005",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Repeated page footer / journal branding link ('Nature Biotechnology'); not substantive content."
+    }
+  ]
+}

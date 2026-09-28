@@ -1,0 +1,582 @@
+{
+  "page": 9,
+  "lines": [
+    {
+      "text": "product), which could be used to the next step without further purification. LCMS (ESI): 295.0 [M-",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        538.53955078125,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "H]-.",
+      "bbox": [
+        56.6399040222168,
+        77.42324829101562,
+        77.966064453125,
+        91.15196990966797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 11-2",
+      "bbox": [
+        56.6399040222168,
+        98.74796295166016,
+        258.6417236328125,
+        112.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 11-1 (13.8 g, 46.6 mmol) in THF (140 mL) was added borane-",
+      "bbox": [
+        56.6399040222168,
+        129.4679718017578,
+        538.53955078125,
+        142.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tetrahydrofuran solution (14 mL, 139.8 mmol) under nitrogen protection dropwise at 0 °C. The",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        541.527587890625,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mixture was stirred at 25 °C for 16 hours. The reaction was quenched by the addition of methanol (20",
+      "bbox": [
+        56.6399040222168,
+        170.7479705810547,
+        541.52734375,
+        184.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL). After the addition of brine (80 mL), the mixture was extracted with ethyl acetate (100 mL × 3),",
+      "bbox": [
+        56.6399040222168,
+        191.38796997070312,
+        541.5269165039062,
+        204.67196655273438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the combined organic phases was washed with saturated brine (50 mL), dried over anhydrous sodium",
+      "bbox": [
+        56.6399040222168,
+        212.26795959472656,
+        541.5286254882812,
+        225.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sulfate, filtered, and concentrated under reduced pressure to obtain the title compound (12.1 g, crude",
+      "bbox": [
+        56.6399040222168,
+        232.907958984375,
+        541.5314331054688,
+        246.19195556640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "product) as a yellow solid, which could be used to the next step without further purification.",
+      "bbox": [
+        56.6399040222168,
+        253.54795837402344,
+        501.2023010253906,
+        266.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3: Preparation of Compound 11-3",
+      "bbox": [
+        56.6399040222168,
+        274.18798828125,
+        258.6417236328125,
+        287.47198486328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 11-2 (12.0 g, 42.6 mmol) in dichloromethane (120 mL) was added thionyl",
+      "bbox": [
+        56.6399040222168,
+        304.9079895019531,
+        541.5335083007812,
+        318.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chloride (7.6 g, 63.9 mmol) dropwise at 0 °C. The resulting mixture was stirred at 25 °C for 16 hours.",
+      "bbox": [
+        56.6399040222168,
+        325.5479736328125,
+        541.5394287109375,
+        338.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The mixture was concentrated under reduced pressure and further purified by silica gel column",
+      "bbox": [
+        56.6399040222168,
+        346.427978515625,
+        541.538330078125,
+        359.71197509765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chromatography (EA:PE=1:10) to obtain the title compound as a yellow oil (9.9 g, total yield of the",
+      "bbox": [
+        56.6399040222168,
+        367.0679626464844,
+        541.5237426757812,
+        380.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "first three steps: 68.7%).",
+      "bbox": [
+        56.6399040222168,
+        387.7079772949219,
+        177.278564453125,
+        400.9919738769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 4: Preparation of Compound 11-4",
+      "bbox": [
+        56.6399040222168,
+        408.3479919433594,
+        258.6417236328125,
+        421.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 11-3 (4.0 g, 13.3 mmol) in N,N-dimethylformamide (40 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        439.0679626464844,
+        541.5321655273438,
+        452.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "acetylacetone (4.0 g, 39.9 mmol), potassium carbonate (5.5 g, 39.9 mmol) and potassium iodide (1.1",
+      "bbox": [
+        56.6399040222168,
+        459.9479675292969,
+        541.5310668945312,
+        473.2319641113281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "g, 6.7 mmol). The mixture was stirred at 80 °C for 2 hours. After the addition of ice water (100 mL)",
+      "bbox": [
+        56.6399040222168,
+        480.5879821777344,
+        541.5390625,
+        493.8719787597656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to quench the reaction, the mixture was extracted with ethyl acetate (50 mL × 3), the combined",
+      "bbox": [
+        56.6399040222168,
+        501.22796630859375,
+        541.51416015625,
+        514.511962890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "organic phases was washed with saturated brine water (40 mL × 3), dried over anhydrous sodium",
+      "bbox": [
+        56.6399040222168,
+        521.867919921875,
+        541.5399780273438,
+        535.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sulfate, filtered and concentrated under reduced pressure to obtain the title compound (1.3 g, crude",
+      "bbox": [
+        56.6399040222168,
+        542.7479248046875,
+        541.5264892578125,
+        556.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "product) as a yellow oil, which could be used to the next step without further purification. LCMS",
+      "bbox": [
+        56.6399040222168,
+        563.387939453125,
+        541.5262451171875,
+        576.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(ESI): 365.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        583.583251953125,
+        163.573486328125,
+        597.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 5: Preparation of Compound 11-5",
+      "bbox": [
+        56.6399040222168,
+        604.66796875,
+        258.6417236328125,
+        617.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A mixture of compound 11-4 (1.2 g,3.3 mmol), sulfuric acid (0.1 mL) and urea(594 mg,9.9 mmol) in",
+      "bbox": [
+        56.6399040222168,
+        635.387939453125,
+        541.5344848632812,
+        648.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a ethanol (10 mL) was stirred at100°C for 16 hours. After the removal of ethanol, saturated sodium",
+      "bbox": [
+        56.6399040222168,
+        656.0279541015625,
+        541.5250244140625,
+        669.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "bicarbonate aqueous solution (50 mL) was added to the residue. The resulting mixture was extracted",
+      "bbox": [
+        56.6399040222168,
+        676.907958984375,
+        541.5365600585938,
+        690.1919555664062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with ethyl acetate (30mL × 3). The combined organic phases was washed with saturated brine water",
+      "bbox": [
+        56.6399040222168,
+        697.5479736328125,
+        541.5236206054688,
+        710.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(20mL × 2), dried over anhydrous sodium sulfate, filtered and concentrated under reduced pressure",
+      "bbox": [
+        56.6399040222168,
+        718.1879272460938,
+        541.5249633789062,
+        731.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to afford a residue, which was purified by silica gel column chromatography (EA:PE=3:1) to give the",
+      "bbox": [
+        56.6399040222168,
+        738.8279418945312,
+        541.528564453125,
+        752.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "title compound as a yellow solid (74 mg). LCMS (ESI): 389.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        759.2632446289062,
+        402.2200622558594,
+        772.991943359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 9
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          539,
+          91
+        ],
+        "pos": [
+          0,
+          116
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          101,
+          259,
+          113
+        ],
+        "pos": [
+          116,
+          161
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          131,
+          542,
+          267
+        ],
+        "pos": [
+          161,
+          840
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          276,
+          259,
+          288
+        ],
+        "pos": [
+          840,
+          885
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          307,
+          542,
+          401
+        ],
+        "pos": [
+          885,
+          1312
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          410,
+          259,
+          422
+        ],
+        "pos": [
+          1312,
+          1357
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          441,
+          542,
+          598
+        ],
+        "pos": [
+          1357,
+          2077
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          56,
+          607,
+          259,
+          618
+        ],
+        "pos": [
+          2077,
+          2122
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          56,
+          637,
+          542,
+          773
+        ],
+        "pos": [
+          2122,
+          2798
+        ]
+      }
+    ],
+    "text": "product), which could be used to the next step without further purification. LCMS (ESI): 295.0 [MH]<sup>-</sup> . \n\n# **Step 2: Preparation of Compound 11-2** \n\nTo a solution of **compound 11-1** (13.8 g, 46.6 mmol) in THF (140 mL) was added boranetetrahydrofuran solution (14 mL, 139.8 mmol) under nitrogen protection dropwise at 0 °C. The mixture was stirred at 25 °C for 16 hours. The reaction was quenched by the addition of methanol (20 mL). After the addition of brine (80 mL), the mixture was extracted with ethyl acetate (100 mL × 3), the combined organic phases was washed with saturated brine (50 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to obtain the title compound (12.1 g, crude product) as a yellow solid, which could be used to the next step without further purification. \n\n# **Step 3: Preparation of Compound 11-3** \n\nTo a solution of **compound 11-2** (12.0 g, 42.6 mmol) in dichloromethane (120 mL) was added thionyl chloride (7.6 g, 63.9 mmol) dropwise at 0 °C. The resulting mixture was stirred at 25 °C for 16 hours. The mixture was concentrated under reduced pressure and further purified by silica gel column chromatography (EA:PE=1:10) to obtain the title compound as a yellow oil (9.9 g, total yield of the first three steps: 68.7%). \n\n# **Step 4: Preparation of Compound 11-4** \n\nTo a solution of **compound 11-3** (4.0 g, 13.3 mmol) in N,N-dimethylformamide (40 mL) was added acetylacetone (4.0 g, 39.9 mmol), potassium carbonate (5.5 g, 39.9 mmol) and potassium iodide (1.1 g, 6.7 mmol). The mixture was stirred at 80 °C for 2 hours. After the addition of ice water (100 mL) to quench the reaction, the mixture was extracted with ethyl acetate (50 mL × 3), the combined organic phases was washed with saturated brine water (40 mL × 3), dried over anhydrous sodium sulfate, filtered and concentrated under reduced pressure to obtain the title compound (1.3 g, crude product) as a yellow oil, which could be used to the next step without further purification. LCMS (ESI): 365.2 [M+H]<sup>+</sup> . \n\n# **Step 5: Preparation of Compound 11-5** \n\nA mixture of compound **11-4** (1.2 g,3.3 mmol), sulfuric acid (0.1 mL) and urea(594 mg,9.9 mmol) in a ethanol (10 mL) was stirred at100°C for 16 hours. After the removal of ethanol, saturated sodium bicarbonate aqueous solution (50 mL) was added to the residue. The resulting mixture was extracted with ethyl acetate (30mL × 3). The combined organic phases was washed with saturated brine water (20mL × 2), dried over anhydrous sodium sulfate, filtered and concentrated under reduced pressure to afford a residue, which was purified by silica gel column chromatography (EA:PE=3:1) to give the title compound as a yellow solid (74 mg). LCMS (ESI): 389.2 [M+H]<sup>+</sup> . \n\n"
+  }
+}

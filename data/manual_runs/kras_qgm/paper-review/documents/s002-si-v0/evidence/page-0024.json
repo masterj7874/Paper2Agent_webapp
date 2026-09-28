@@ -1,0 +1,452 @@
+{
+  "page": 24,
+  "lines": [
+    {
+      "text": "S1.9. Preparation of ISM061-16",
+      "bbox": [
+        56.6399040222168,
+        87.94796752929688,
+        221.96214294433594,
+        101.23197174072266
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S9 Preparation of ISM061-16",
+      "bbox": [
+        205.26951599121094,
+        257.6279602050781,
+        392.91021728515625,
+        270.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 16-1",
+      "bbox": [
+        56.6399040222168,
+        288.3479919433594,
+        258.6417236328125,
+        301.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2,4-dichloro-3-methylpyridine (958 mg, 5.91 mmol) in DMF (10 mL) were added",
+      "bbox": [
+        56.6399040222168,
+        319.0679626464844,
+        541.5357666015625,
+        332.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Cs2CO3 (3210 mg, 9.85 mmol) and 2-fluoro-5-methoxyphenol (700 mg, 4.93 mmol). The resulting",
+      "bbox": [
+        56.6399040222168,
+        339.7079772949219,
+        541.5335693359375,
+        353.0707092285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mixture was stirred at 100 ℃ under N2 atmosphere for 2 hrs. After the addition of water (50 mL), the",
+      "bbox": [
+        56.6399040222168,
+        360.3479919433594,
+        541.5281982421875,
+        373.710693359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mixture was extracted with EtOAc (30 mL × 3), the combined organic layers was washed with brine",
+      "bbox": [
+        56.6399040222168,
+        380.98797607421875,
+        541.5309448242188,
+        394.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(50 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which",
+      "bbox": [
+        56.6399040222168,
+        401.86798095703125,
+        541.5238647460938,
+        415.2306823730469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was purified by column chromatography on silica gel to afford the title compound (680 mg, 51.9%",
+      "bbox": [
+        56.6399040222168,
+        422.5079650878906,
+        541.5238647460938,
+        435.7919616699219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "yield) as a yellow oil. LCMS (ESI+): 267.9 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        442.7032165527344,
+        310.40350341796875,
+        456.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 16-2",
+      "bbox": [
+        56.6399040222168,
+        473.86798095703125,
+        258.6417236328125,
+        487.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloro-4-[(2-fluoro-5-methoxyphenyl)oxy]-3-methylpyridine (300 mg, 1.12",
+      "bbox": [
+        56.6399040222168,
+        504.5879821777344,
+        541.5364990234375,
+        517.8719482421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol) in DCM (3 mL) were added BBr3 (280 mg, 1.12 mmol) at 0 ℃ in N2 atmosphere. The reaction",
+      "bbox": [
+        56.6399040222168,
+        525.2279052734375,
+        541.533935546875,
+        538.5906372070312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was stirred at 25 ℃ for 1 h. The reaction was quenched with ice water. The aqueous layer was",
+      "bbox": [
+        56.6399040222168,
+        545.867919921875,
+        541.5320434570312,
+        559.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "extracted with DCM (30 mL × 3). The combined organic layers was washed with brine (30 mL),",
+      "bbox": [
+        56.6399040222168,
+        566.7479248046875,
+        541.5333251953125,
+        580.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was",
+      "bbox": [
+        56.6399040222168,
+        587.387939453125,
+        541.525390625,
+        600.7506103515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "purified by column chromatography on silica gel to afford the title compound (100 mg, 35.2%) as a",
+      "bbox": [
+        56.6399040222168,
+        608.0279541015625,
+        541.5238647460938,
+        621.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "yellow oil. LCMS (ESI+): 254.1 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        628.2232666015625,
+        258.0909423828125,
+        641.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3: Preparation of Compound 15-3",
+      "bbox": [
+        56.6399040222168,
+        659.387939453125,
+        258.6417236328125,
+        672.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 3-[(2-chloro-3-methylpyridin-4-yl)oxy]-4-fluorophenol (90 mg, 0.35 mmol) in 1,4-",
+      "bbox": [
+        56.6399040222168,
+        690.10791015625,
+        538.53955078125,
+        703.3919067382812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dioxane (1 mL) were added 1-(3,4,5,6-tetrahydro-2H-pyran-2-yl)indazol-4-amine (115.6 mg, 0.53",
+      "bbox": [
+        56.6399040222168,
+        710.7479248046875,
+        541.536865234375,
+        724.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol), Cs2CO3 (231 mg, 0.71 mmol), and XantPhosPdG4 (34 mg, 0.04 mmol). The reaction was",
+      "bbox": [
+        56.6399040222168,
+        731.6279296875,
+        541.5355224609375,
+        744.9906616210938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "stirred at 120 ℃ for 10 h in sealed tube. The reaction mixture was poured into ice-water (30 mL) and",
+      "bbox": [
+        56.6399040222168,
+        752.2679443359375,
+        541.5377807617188,
+        765.5519409179688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 24
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "caption",
+        "bbox": [
+          56,
+          90,
+          222,
+          102
+        ],
+        "pos": [
+          0,
+          37
+        ]
+      },
+      {
+        "index": 1,
+        "class": "picture",
+        "bbox": [
+          60,
+          111,
+          471,
+          239
+        ],
+        "pos": [
+          37,
+          39
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          205,
+          259,
+          393,
+          271
+        ],
+        "pos": [
+          39,
+          80
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          290,
+          259,
+          302
+        ],
+        "pos": [
+          80,
+          125
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          321,
+          542,
+          457
+        ],
+        "pos": [
+          125,
+          782
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          476,
+          259,
+          488
+        ],
+        "pos": [
+          782,
+          827
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          506,
+          542,
+          642
+        ],
+        "pos": [
+          827,
+          1456
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          56,
+          661,
+          259,
+          673
+        ],
+        "pos": [
+          1456,
+          1501
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          56,
+          692,
+          542,
+          766
+        ],
+        "pos": [
+          1501,
+          1883
+        ]
+      }
+    ],
+    "text": "**S1.9. Preparation of ISM061-16** \n\n\n\n**Scheme S9** Preparation of ISM061-16 \n\n# **Step 1: Preparation of Compound 16-1** \n\nTo a solution of 2,4-dichloro-3-methylpyridine (958 mg, 5.91 mmol) in DMF (10 mL) were added Cs2CO3 (3210 mg, 9.85 mmol) and 2-fluoro-5-methoxyphenol (700 mg, 4.93 mmol). The resulting mixture was stirred at 100 ℃ under N2 atmosphere for 2 hrs. After the addition of water (50 mL), the mixture was extracted with EtOAc (30 mL × 3), the combined organic layers was washed with brine (50 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel to afford the title compound (680 mg, 51.9% yield) as a yellow oil. LCMS (ESI<sup>+</sup> ): 267.9 [M+H]<sup>+</sup> . \n\n# **Step 2: Preparation of Compound 16-2** \n\nTo a solution of 2-chloro-4-[(2-fluoro-5-methoxyphenyl)oxy]-3-methylpyridine (300 mg, 1.12 mmol) in DCM (3 mL) were added BBr3 (280 mg, 1.12 mmol) at 0 ℃ in N2 atmosphere. The reaction was stirred at 25 ℃ for 1 h. The reaction was quenched with ice water. The aqueous layer was extracted with DCM (30 mL × 3). The combined organic layers was washed with brine (30 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel to afford the title compound (100 mg, 35.2%) as a yellow oil. LCMS (ESI<sup>+</sup> ): 254.1 [M+H]<sup>+</sup> . \n\n# **Step 3: Preparation of Compound 15-3** \n\nTo a solution of 3-[(2-chloro-3-methylpyridin-4-yl)oxy]-4-fluorophenol (90 mg, 0.35 mmol) in 1,4dioxane (1 mL) were added 1-(3,4,5,6-tetrahydro-2H-pyran-2-yl)indazol-4-amine (115.6 mg, 0.53 mmol), Cs2CO3 (231 mg, 0.71 mmol), and XantPhosPdG4 (34 mg, 0.04 mmol). The reaction was stirred at 120 ℃ for 10 h in sealed tube. The reaction mixture was poured into ice-water (30 mL) and \n\n"
+  }
+}

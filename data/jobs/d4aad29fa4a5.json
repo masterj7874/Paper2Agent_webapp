@@ -1,0 +1,470 @@
+{
+ "id": "d4aad29fa4a5",
+ "agent": "MedMNIST",
+ "tool": "medmnist_describe_dataset",
+ "arguments": {},
+ "status": "done",
+ "created_at": 1790117299.3090467,
+ "started_at": 1790117299.309467,
+ "finished_at": 1790117301.1923864,
+ "result": {
+  "message": "MedMNIST v3.0.2 @ https://github.com/MedMNIST/MedMNIST/: 18 datasets (12 2D, 6 3D) read from medmnist.info.INFO; 5 npz file(s) present under /media/jerisuh/4,0TBDisk1/Paper2Agent_out/MedMNIST_Agent/data/medmnist. Call again with a flag for the full record (description, label map, download URL/MD5).",
+  "reference": "https://github.com/MedMNIST/MedMNIST/blob/805b74237fb5bd2db376fd94e50646b6a8905d9d/medmnist/info.py",
+  "mode": "list",
+  "medmnist_version": "3.0.2",
+  "homepage": "https://github.com/MedMNIST/MedMNIST/",
+  "data_root": "/media/jerisuh/4,0TBDisk1/Paper2Agent_out/MedMNIST_Agent/data/medmnist",
+  "n_datasets": 18,
+  "n_2d": 12,
+  "n_3d": 6,
+  "flags_2d": [
+   "pathmnist",
+   "chestmnist",
+   "dermamnist",
+   "octmnist",
+   "pneumoniamnist",
+   "retinamnist",
+   "breastmnist",
+   "bloodmnist",
+   "tissuemnist",
+   "organamnist",
+   "organcmnist",
+   "organsmnist"
+  ],
+  "flags_3d": [
+   "organmnist3d",
+   "nodulemnist3d",
+   "adrenalmnist3d",
+   "fracturemnist3d",
+   "vesselmnist3d",
+   "synapsemnist3d"
+  ],
+  "task_types": [
+   "binary-class",
+   "multi-class",
+   "multi-label, binary-class",
+   "ordinal-regression"
+  ],
+  "licenses": [
+   "CC BY 4.0",
+   "CC BY-NC 4.0"
+  ],
+  "datasets": [
+   {
+    "flag": "pathmnist",
+    "python_class": "PathMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-class",
+    "n_labels": 9,
+    "n_channels": 3,
+    "n_samples": {
+     "train": 89996,
+     "val": 10004,
+     "test": 7180
+    },
+    "n_samples_total": 107180,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": [
+     28
+    ]
+   },
+   {
+    "flag": "chestmnist",
+    "python_class": "ChestMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-label, binary-class",
+    "n_labels": 14,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 78468,
+     "val": 11219,
+     "test": 22433
+    },
+    "n_samples_total": 112120,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": [
+     28
+    ]
+   },
+   {
+    "flag": "dermamnist",
+    "python_class": "DermaMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-class",
+    "n_labels": 7,
+    "n_channels": 3,
+    "n_samples": {
+     "train": 7007,
+     "val": 1003,
+     "test": 2005
+    },
+    "n_samples_total": 10015,
+    "license": "CC BY-NC 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "octmnist",
+    "python_class": "OCTMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-class",
+    "n_labels": 4,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 97477,
+     "val": 10832,
+     "test": 1000
+    },
+    "n_samples_total": 109309,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "pneumoniamnist",
+    "python_class": "PneumoniaMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "binary-class",
+    "n_labels": 2,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 4708,
+     "val": 524,
+     "test": 624
+    },
+    "n_samples_total": 5856,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "retinamnist",
+    "python_class": "RetinaMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "ordinal-regression",
+    "n_labels": 5,
+    "n_channels": 3,
+    "n_samples": {
+     "train": 1080,
+     "val": 120,
+     "test": 400
+    },
+    "n_samples_total": 1600,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": [
+     28
+    ]
+   },
+   {
+    "flag": "breastmnist",
+    "python_class": "BreastMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "binary-class",
+    "n_labels": 2,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 546,
+     "val": 78,
+     "test": 156
+    },
+    "n_samples_total": 780,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": [
+     28
+    ]
+   },
+   {
+    "flag": "bloodmnist",
+    "python_class": "BloodMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-class",
+    "n_labels": 8,
+    "n_channels": 3,
+    "n_samples": {
+     "train": 11959,
+     "val": 1712,
+     "test": 3421
+    },
+    "n_samples_total": 17092,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "tissuemnist",
+    "python_class": "TissueMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-class",
+    "n_labels": 8,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 165466,
+     "val": 23640,
+     "test": 47280
+    },
+    "n_samples_total": 236386,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "organamnist",
+    "python_class": "OrganAMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-class",
+    "n_labels": 11,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 34561,
+     "val": 6491,
+     "test": 17778
+    },
+    "n_samples_total": 58830,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "organcmnist",
+    "python_class": "OrganCMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-class",
+    "n_labels": 11,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 12975,
+     "val": 2392,
+     "test": 8216
+    },
+    "n_samples_total": 23583,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "organsmnist",
+    "python_class": "OrganSMNIST",
+    "dimensionality": "2D",
+    "is_3d": false,
+    "task": "multi-class",
+    "n_labels": 11,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 13932,
+     "val": 2452,
+     "test": 8827
+    },
+    "n_samples_total": 25211,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64,
+     128,
+     224
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "organmnist3d",
+    "python_class": "OrganMNIST3D",
+    "dimensionality": "3D",
+    "is_3d": true,
+    "task": "multi-class",
+    "n_labels": 11,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 971,
+     "val": 161,
+     "test": 610
+    },
+    "n_samples_total": 1742,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64
+    ],
+    "local_sizes_present": [
+     28
+    ]
+   },
+   {
+    "flag": "nodulemnist3d",
+    "python_class": "NoduleMNIST3D",
+    "dimensionality": "3D",
+    "is_3d": true,
+    "task": "binary-class",
+    "n_labels": 2,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 1158,
+     "val": 165,
+     "test": 310
+    },
+    "n_samples_total": 1633,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "adrenalmnist3d",
+    "python_class": "AdrenalMNIST3D",
+    "dimensionality": "3D",
+    "is_3d": true,
+    "task": "binary-class",
+    "n_labels": 2,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 1188,
+     "val": 98,
+     "test": 298
+    },
+    "n_samples_total": 1584,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "fracturemnist3d",
+    "python_class": "FractureMNIST3D",
+    "dimensionality": "3D",
+    "is_3d": true,
+    "task": "multi-class",
+    "n_labels": 3,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 1027,
+     "val": 103,
+     "test": 240
+    },
+    "n_samples_total": 1370,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "vesselmnist3d",
+    "python_class": "VesselMNIST3D",
+    "dimensionality": "3D",
+    "is_3d": true,
+    "task": "binary-class",
+    "n_labels": 2,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 1335,
+     "val": 191,
+     "test": 382
+    },
+    "n_samples_total": 1908,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64
+    ],
+    "local_sizes_present": []
+   },
+   {
+    "flag": "synapsemnist3d",
+    "python_class": "SynapseMNIST3D",
+    "dimensionality": "3D",
+    "is_3d": true,
+    "task": "binary-class",
+    "n_labels": 2,
+    "n_channels": 1,
+    "n_samples": {
+     "train": 1230,
+     "val": 177,
+     "test": 352
+    },
+    "n_samples_total": 1759,
+    "license": "CC BY 4.0",
+    "available_sizes": [
+     28,
+     64
+    ],
+    "local_sizes_present": []
+   }
+  ],
+  "artifacts": []
+ },
+ "error": null,
+ "duration_s": 1.88
+}

@@ -1,0 +1,10 @@
+There are 1 cases in the source folder
+I am process 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+
+Predicting tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz:
+perform_everything_on_device: True
+sending off prediction to background worker for resampling and export
+done with tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz
+GPU prediction completed. Waiting for remaining segmentation exports to finish...
+Segmentation export complete.

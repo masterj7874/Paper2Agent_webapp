@@ -1,0 +1,1209 @@
+{
+ "id": "20260922-165229_141376",
+ "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames",
+ "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames",
+ "project": null,
+ "kind": "frames_folder",
+ "modality_guess": "video frame",
+ "detection": {
+  "details": {
+   "n_images": 588,
+   "example": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00001.png",
+   "votes": [
+    "medical_2d",
+    "medical_2d",
+    "medical_2d",
+    "medical_2d",
+    "medical_2d"
+   ],
+   "per_image_kind": "medical_2d",
+   "per_image_confidence": 1.0,
+   "n_frames": 588
+  },
+  "notes": [
+   "588 video frames: 5 evenly spaced frames are analysed (MedSAM box)"
+  ]
+ },
+ "recipe": {
+  "id": "video_frames_medsam",
+  "title": "video -> 5 evenly spaced frames -> MedSAM box -> per-frame CSV + overlays",
+  "notes": [
+   "MedSAM with a centred 80 % box on each selected frame"
+  ]
+ },
+ "status": "done",
+ "created_at": 1790063549.321355,
+ "started_at": 1790063549.3224885,
+ "finished_at": 1790063605.8760767,
+ "duration_s": 56.55,
+ "run_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376",
+ "steps": [
+  {
+   "index": 0,
+   "label": "MedSAM box frame_00001.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00001.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "c67a8804325d",
+   "started_at": 1790063549.3230085,
+   "finished_at": 1790063551.32779,
+   "duration_s": 2.0,
+   "error": null,
+   "hint": null,
+   "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 179198 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5",
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/overlay.png"
+    }
+   ],
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 179198,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.614,
+    "timing_seconds.image_embedding": 0.963,
+    "timing_seconds.box_decoding": 0.007,
+    "timing_seconds.total": 1.94
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00001.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs"
+   },
+   "result": {
+    "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 179198 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5",
+    "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+    "artifacts": [
+     {
+      "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/segs.npz"
+     },
+     {
+      "description": "Label map PNG (uint8 label values 0..N)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/segs.png"
+     },
+     {
+      "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/seg_box_01.png"
+     },
+     {
+      "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/overlay.png"
+     }
+    ],
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00001.png",
+    "input_kind": "image",
+    "image_shape_hwc": [
+     576,
+     720,
+     3
+    ],
+    "boxes_source": "argument",
+    "n_boxes": 1,
+    "boxes_xyxy": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "labels": [
+     1
+    ],
+    "per_box": [
+     {
+      "box_index": 0,
+      "label": 1,
+      "box_xyxy": [
+       72,
+       58,
+       648,
+       518
+      ],
+      "foreground_pixels": 179198,
+      "labelmap_pixels": 179198,
+      "mask_bbox_xyxy": [
+       97,
+       63,
+       619,
+       513
+      ],
+      "mask_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5/seg_box_01.png"
+     }
+    ],
+    "total_foreground_pixels": 179198,
+    "device": "cuda:0",
+    "checkpoint": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_vit_b.pth",
+    "timing_seconds": {
+     "model_load": 0.614,
+     "image_embedding": 0.963,
+     "box_decoding": 0.007,
+     "total": 1.94
+    },
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165229_ee158ac5",
+    "sources": {
+     "inference_and_preprocessing": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+     "embed_once_decode_each_box": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/demo.py",
+     "image_channel_and_intensity_rules": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/pre_grey_rgb.py"
+    }
+   }
+  },
+  {
+   "index": 1,
+   "label": "MedSAM box frame_00148.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00148.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "66d78d0f8014",
+   "started_at": 1790063551.328634,
+   "finished_at": 1790063553.3296797,
+   "duration_s": 2.0,
+   "error": null,
+   "hint": null,
+   "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 94143 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0",
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/overlay.png"
+    }
+   ],
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 94143,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.346,
+    "timing_seconds.image_embedding": 0.931,
+    "timing_seconds.box_decoding": 0.01,
+    "timing_seconds.total": 1.603
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00148.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs"
+   },
+   "result": {
+    "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 94143 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0",
+    "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+    "artifacts": [
+     {
+      "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/segs.npz"
+     },
+     {
+      "description": "Label map PNG (uint8 label values 0..N)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/segs.png"
+     },
+     {
+      "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/seg_box_01.png"
+     },
+     {
+      "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/overlay.png"
+     }
+    ],
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00148.png",
+    "input_kind": "image",
+    "image_shape_hwc": [
+     576,
+     720,
+     3
+    ],
+    "boxes_source": "argument",
+    "n_boxes": 1,
+    "boxes_xyxy": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "labels": [
+     1
+    ],
+    "per_box": [
+     {
+      "box_index": 0,
+      "label": 1,
+      "box_xyxy": [
+       72,
+       58,
+       648,
+       518
+      ],
+      "foreground_pixels": 94143,
+      "labelmap_pixels": 94143,
+      "mask_bbox_xyxy": [
+       90,
+       68,
+       615,
+       501
+      ],
+      "mask_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0/seg_box_01.png"
+     }
+    ],
+    "total_foreground_pixels": 94143,
+    "device": "cuda:0",
+    "checkpoint": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_vit_b.pth",
+    "timing_seconds": {
+     "model_load": 0.346,
+     "image_embedding": 0.931,
+     "box_decoding": 0.01,
+     "total": 1.603
+    },
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165231_2c081ea0",
+    "sources": {
+     "inference_and_preprocessing": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+     "embed_once_decode_each_box": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/demo.py",
+     "image_channel_and_intensity_rules": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/pre_grey_rgb.py"
+    }
+   }
+  },
+  {
+   "index": 2,
+   "label": "MedSAM box frame_00295.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00295.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "e3f653990d5a",
+   "started_at": 1790063553.3308566,
+   "finished_at": 1790063555.3349764,
+   "duration_s": 2.0,
+   "error": null,
+   "hint": null,
+   "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 130629 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9",
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/overlay.png"
+    }
+   ],
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 130629,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.343,
+    "timing_seconds.image_embedding": 0.947,
+    "timing_seconds.box_decoding": 0.009,
+    "timing_seconds.total": 1.596
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00295.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs"
+   },
+   "result": {
+    "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 130629 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9",
+    "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+    "artifacts": [
+     {
+      "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/segs.npz"
+     },
+     {
+      "description": "Label map PNG (uint8 label values 0..N)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/segs.png"
+     },
+     {
+      "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/seg_box_01.png"
+     },
+     {
+      "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/overlay.png"
+     }
+    ],
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00295.png",
+    "input_kind": "image",
+    "image_shape_hwc": [
+     576,
+     720,
+     3
+    ],
+    "boxes_source": "argument",
+    "n_boxes": 1,
+    "boxes_xyxy": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "labels": [
+     1
+    ],
+    "per_box": [
+     {
+      "box_index": 0,
+      "label": 1,
+      "box_xyxy": [
+       72,
+       58,
+       648,
+       518
+      ],
+      "foreground_pixels": 130629,
+      "labelmap_pixels": 130629,
+      "mask_bbox_xyxy": [
+       84,
+       65,
+       626,
+       505
+      ],
+      "mask_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9/seg_box_01.png"
+     }
+    ],
+    "total_foreground_pixels": 130629,
+    "device": "cuda:0",
+    "checkpoint": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_vit_b.pth",
+    "timing_seconds": {
+     "model_load": 0.343,
+     "image_embedding": 0.947,
+     "box_decoding": 0.009,
+     "total": 1.596
+    },
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165233_3e0315c9",
+    "sources": {
+     "inference_and_preprocessing": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+     "embed_once_decode_each_box": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/demo.py",
+     "image_channel_and_intensity_rules": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/pre_grey_rgb.py"
+    }
+   }
+  },
+  {
+   "index": 3,
+   "label": "MedSAM box frame_00441.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00441.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "fba0bb49767c",
+   "started_at": 1790063555.3362353,
+   "finished_at": 1790063557.3388042,
+   "duration_s": 2.0,
+   "error": null,
+   "hint": null,
+   "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 165463 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7",
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/overlay.png"
+    }
+   ],
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 165463,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.348,
+    "timing_seconds.image_embedding": 0.923,
+    "timing_seconds.box_decoding": 0.009,
+    "timing_seconds.total": 1.575
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00441.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs"
+   },
+   "result": {
+    "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 165463 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7",
+    "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+    "artifacts": [
+     {
+      "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/segs.npz"
+     },
+     {
+      "description": "Label map PNG (uint8 label values 0..N)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/segs.png"
+     },
+     {
+      "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/seg_box_01.png"
+     },
+     {
+      "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/overlay.png"
+     }
+    ],
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00441.png",
+    "input_kind": "image",
+    "image_shape_hwc": [
+     576,
+     720,
+     3
+    ],
+    "boxes_source": "argument",
+    "n_boxes": 1,
+    "boxes_xyxy": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "labels": [
+     1
+    ],
+    "per_box": [
+     {
+      "box_index": 0,
+      "label": 1,
+      "box_xyxy": [
+       72,
+       58,
+       648,
+       518
+      ],
+      "foreground_pixels": 165463,
+      "labelmap_pixels": 165463,
+      "mask_bbox_xyxy": [
+       91,
+       62,
+       637,
+       506
+      ],
+      "mask_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7/seg_box_01.png"
+     }
+    ],
+    "total_foreground_pixels": 165463,
+    "device": "cuda:0",
+    "checkpoint": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_vit_b.pth",
+    "timing_seconds": {
+     "model_load": 0.348,
+     "image_embedding": 0.923,
+     "box_decoding": 0.009,
+     "total": 1.575
+    },
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165235_cc767ce7",
+    "sources": {
+     "inference_and_preprocessing": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+     "embed_once_decode_each_box": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/demo.py",
+     "image_channel_and_intensity_rules": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/pre_grey_rgb.py"
+    }
+   }
+  },
+  {
+   "index": 4,
+   "label": "MedSAM box frame_00588.png",
+   "agent": "MedSAM",
+   "tool": "medsam_segment_with_box",
+   "arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00588.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "663da091b686",
+   "started_at": 1790063557.3401024,
+   "finished_at": 1790063559.3420084,
+   "duration_s": 2.0,
+   "error": null,
+   "hint": null,
+   "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 129299 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c",
+   "artifacts": [
+    {
+     "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/segs.npz"
+    },
+    {
+     "description": "Label map PNG (uint8 label values 0..N)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/segs.png"
+    },
+    {
+     "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/seg_box_01.png"
+    },
+    {
+     "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/overlay.png"
+    }
+   ],
+   "key_numbers": {
+    "n_boxes": 1,
+    "total_foreground_pixels": 129299,
+    "device": "cuda:0",
+    "input_kind": "image",
+    "boxes_source": "argument",
+    "timing_seconds.model_load": 0.352,
+    "timing_seconds.image_embedding": 0.935,
+    "timing_seconds.box_decoding": 0.008,
+    "timing_seconds.total": 1.6
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00588.png",
+    "boxes": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs"
+   },
+   "result": {
+    "message": "MedSAM ViT-B segmented 1 box(es) on a 720x576 image on cuda:0: labels 1..1, 129299 foreground pixels in the label map; outputs in /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c",
+    "reference": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+    "artifacts": [
+     {
+      "description": "Label map npz: 'segs' uint8 (H,W) with label i+1 for box i (later boxes overwrite), 'boxes' int64 (N,4)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/segs.npz"
+     },
+     {
+      "description": "Label map PNG (uint8 label values 0..N)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/segs.png"
+     },
+     {
+      "description": "Binary mask (values 0/1) for box 1 [72, 58, 648, 518]",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/seg_box_01.png"
+     },
+     {
+      "description": "Overlay figure: input image with boxes (left), MedSAM masks with boxes (right)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/overlay.png"
+     }
+    ],
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00588.png",
+    "input_kind": "image",
+    "image_shape_hwc": [
+     576,
+     720,
+     3
+    ],
+    "boxes_source": "argument",
+    "n_boxes": 1,
+    "boxes_xyxy": [
+     [
+      72,
+      58,
+      648,
+      518
+     ]
+    ],
+    "labels": [
+     1
+    ],
+    "per_box": [
+     {
+      "box_index": 0,
+      "label": 1,
+      "box_xyxy": [
+       72,
+       58,
+       648,
+       518
+      ],
+      "foreground_pixels": 129299,
+      "labelmap_pixels": 129299,
+      "mask_bbox_xyxy": [
+       74,
+       61,
+       656,
+       509
+      ],
+      "mask_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c/seg_box_01.png"
+     }
+    ],
+    "total_foreground_pixels": 129299,
+    "device": "cuda:0",
+    "checkpoint": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/MedSAM_Agent/data/MedSAM_checkpoints/medsam_vit_b.pth",
+    "timing_seconds": {
+     "model_load": 0.352,
+     "image_embedding": 0.935,
+     "box_decoding": 0.008,
+     "total": 1.6
+    },
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/outputs/medsam_segment_with_box_20260922-165237_0495888c",
+    "sources": {
+     "inference_and_preprocessing": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/MedSAM_Inference.py",
+     "embed_once_decode_each_box": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/demo.py",
+     "image_channel_and_intensity_rules": "https://github.com/bowang-lab/MedSAM/blob/d71e8a1a99ad751840a22a7fa3ecfb4166fb1488/utils/pre_grey_rgb.py"
+    }
+   }
+  },
+  {
+   "index": 5,
+   "label": "per-frame CSV + overlay gallery",
+   "agent": "auto",
+   "tool": "auto_frames_table",
+   "arguments": {
+    "steps": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "tool": "medsam",
+    "run_dir": "${run_dir}"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": null,
+   "started_at": 1790063559.3432696,
+   "finished_at": 1790063559.3467197,
+   "duration_s": 0.0,
+   "error": null,
+   "hint": null,
+   "message": "5/5 frames segmented; per-frame table written",
+   "artifacts": [
+    {
+     "description": "per-frame results (CSV)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/frames.csv"
+    },
+    {
+     "description": "overlay for frame_00001.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/00_frame_00001_overlay.png"
+    },
+    {
+     "description": "overlay for frame_00148.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/01_frame_00148_overlay.png"
+    },
+    {
+     "description": "overlay for frame_00295.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/02_frame_00295_overlay.png"
+    },
+    {
+     "description": "overlay for frame_00441.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/03_frame_00441_overlay.png"
+    },
+    {
+     "description": "overlay for frame_00588.png",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/04_frame_00588_overlay.png"
+    }
+   ],
+   "key_numbers": {
+    "n_frames": 5,
+    "n_done": 5,
+    "mean_per_frame": 139746.4,
+    "metric": "foreground_pixels"
+   },
+   "resolved_arguments": {
+    "steps": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "tool": "medsam",
+    "run_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376"
+   },
+   "result": {
+    "message": "5/5 frames segmented; per-frame table written",
+    "n_frames": 5,
+    "n_done": 5,
+    "mean_per_frame": 139746.4,
+    "metric": "foreground_pixels",
+    "rows": [
+     {
+      "index": 0,
+      "frame": "frame_00001.png",
+      "frame_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00001.png",
+      "tool": "MedSAM.medsam_segment_with_box",
+      "status": "done",
+      "duration_s": 2.0,
+      "n_objects": null,
+      "foreground_pixels": 179198,
+      "diameter_px": null,
+      "error": "",
+      "overlay": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/00_frame_00001_overlay.png"
+     },
+     {
+      "index": 1,
+      "frame": "frame_00148.png",
+      "frame_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00148.png",
+      "tool": "MedSAM.medsam_segment_with_box",
+      "status": "done",
+      "duration_s": 2.0,
+      "n_objects": null,
+      "foreground_pixels": 94143,
+      "diameter_px": null,
+      "error": "",
+      "overlay": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/01_frame_00148_overlay.png"
+     },
+     {
+      "index": 2,
+      "frame": "frame_00295.png",
+      "frame_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00295.png",
+      "tool": "MedSAM.medsam_segment_with_box",
+      "status": "done",
+      "duration_s": 2.0,
+      "n_objects": null,
+      "foreground_pixels": 130629,
+      "diameter_px": null,
+      "error": "",
+      "overlay": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/02_frame_00295_overlay.png"
+     },
+     {
+      "index": 3,
+      "frame": "frame_00441.png",
+      "frame_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00441.png",
+      "tool": "MedSAM.medsam_segment_with_box",
+      "status": "done",
+      "duration_s": 2.0,
+      "n_objects": null,
+      "foreground_pixels": 165463,
+      "diameter_px": null,
+      "error": "",
+      "overlay": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/03_frame_00441_overlay.png"
+     },
+     {
+      "index": 4,
+      "frame": "frame_00588.png",
+      "frame_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/uploads/20260922-161902_913709_clip_frames/frame_00588.png",
+      "tool": "MedSAM.medsam_segment_with_box",
+      "status": "done",
+      "duration_s": 2.0,
+      "n_objects": null,
+      "foreground_pixels": 129299,
+      "diameter_px": null,
+      "error": "",
+      "overlay": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/04_frame_00588_overlay.png"
+     }
+    ],
+    "artifacts": [
+     {
+      "description": "per-frame results (CSV)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/frames.csv"
+     },
+     {
+      "description": "overlay for frame_00001.png",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/00_frame_00001_overlay.png"
+     },
+     {
+      "description": "overlay for frame_00148.png",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/01_frame_00148_overlay.png"
+     },
+     {
+      "description": "overlay for frame_00295.png",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/02_frame_00295_overlay.png"
+     },
+     {
+      "description": "overlay for frame_00441.png",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/03_frame_00441_overlay.png"
+     },
+     {
+      "description": "overlay for frame_00588.png",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/overlays/04_frame_00588_overlay.png"
+     }
+    ]
+   }
+  },
+  {
+   "index": 6,
+   "label": "literature context (MedKG related work)",
+   "agent": "MedKG",
+   "tool": "medkg_related_work",
+   "arguments": {
+    "topic": "video frame segmentation endoscopy deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "endoscopy",
+    "task": "segmentation"
+   },
+   "optional": true,
+   "status": "done",
+   "job_id": "2b48cab67a13",
+   "started_at": 1790063559.3478036,
+   "finished_at": 1790063605.8743825,
+   "duration_s": 46.53,
+   "error": null,
+   "hint": null,
+   "message": "10 related-work rows; LLM=codex; status=ok.",
+   "artifacts": [
+    {
+     "description": "related_work — full JSON response",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165325-3b52af.json"
+    },
+    {
+     "description": "related_work — markdown",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165325-3b52af.md"
+    }
+   ],
+   "key_numbers": {
+    "summary.n_rows": 10,
+    "summary.n_q1": 10,
+    "summary.status": "ok",
+    "summary.llm.provider": "codex",
+    "summary.llm.model": "gpt-6-astra",
+    "summary.llm.elapsed_s": 45.67,
+    "summary.llm.fallback_used": false,
+    "summary.timing.total_ms": 46158.0,
+    "summary.timing.retrieval_ms": 387.9,
+    "summary.timing.dense_ms": 80.9,
+    "summary.timing.lexical_ms": 90.3,
+    "summary.timing.rerank_ms": 157.2,
+    "summary.timing.graph_ms": 95.6,
+    "summary.timing.llm_ms": 45671.9
+   },
+   "resolved_arguments": {
+    "topic": "video frame segmentation endoscopy deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "endoscopy",
+    "task": "segmentation"
+   },
+   "result": {
+    "message": "10 related-work rows; LLM=codex; status=ok.",
+    "summary": {
+     "n_rows": 10,
+     "n_q1": 10,
+     "llm": {
+      "provider": "codex",
+      "model": "gpt-6-astra",
+      "elapsed_s": 45.67,
+      "fallback_used": false,
+      "error": null
+     },
+     "timing": {
+      "total_ms": 46158.0,
+      "retrieval_ms": 387.9,
+      "embed_ms": null,
+      "dense_ms": 80.9,
+      "lexical_ms": 90.3,
+      "rerank_ms": 157.2,
+      "graph_ms": 95.6,
+      "llm_ms": 45671.9
+     },
+     "status": "ok"
+    },
+    "artifacts": [
+     {
+      "description": "related_work — full JSON response",
+      "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165325-3b52af.json"
+     },
+     {
+      "description": "related_work — markdown",
+      "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165325-3b52af.md"
+     }
+    ],
+    "reference": "http://127.0.0.1:8790/docs",
+    "rows": [
+     {
+      "work_id": "DOI:10.1109/lra.2021.3096156",
+      "title": "Multi-Frame Feature Aggregation for Real-Time Instrument Segmentation in Endoscopic Video",
+      "year": 2020,
+      "journal": "IEEE Robotics and Automation Letters",
+      "is_q1": true,
+      "doi": "10.1109/lra.2021.3096156",
+      "method": "Recurrent Multi-frame Feature Aggregation (MFFA) with a lightweight encoder and synthetic frame-sequence training",
+      "modality": "Endoscopic surgical video",
+      "dataset": "not stated (two public surgery datasets)",
+      "metric_values": "not stated",
+      "summary": "Aggregates temporal and spatial frame features to reduce computation and improve surgical instrument segmentation over corresponding deeper models.",
+      "score": 0.9879926443099976
+     },
+     {
+      "work_id": "PMC7026422",
+      "title": "An objective comparison of detection and segmentation algorithms for artefacts in clinical endoscopy.",
+      "year": 2020,
+      "journal": "Scientific reports",
+      "is_q1": true,
+      "doi": "10.1038/s41598-020-59413-5",
+      "method": "Benchmark comparison of 23 artefact detection and segmentation algorithms, including deep learning strategies",
+      "modality": "Multi-modality, multi-organ endoscopy video frames",
+      "dataset": "Endoscopy Artefact Detection (EAD) challenge dataset",
+      "metric_values": "not stated",
+      "summary": "Benchmarks artefact detection, segmentation, and generalization, finding that deep learning methods rank highest but no method leads across all tasks.",
+      "score": 0.9758085012435913
+     },
+     {
+      "work_id": "PMC6471286",
+      "title": "Application of Convolutional Neural Networks for Automated Ulcer Detection in Wireless Capsule Endoscopy Images.",
+      "year": 2019,
+      "journal": "Sensors (Basel, Switzerland)",
+      "is_q1": true,
+      "doi": "10.3390/s19061265",
+      "method": "AlexNet and GoogLeNet convolutional neural networks",
+      "modality": "Wireless capsule endoscopy video frames",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "Evaluates CNNs for ulcer versus non-ulcer classification and reports superior performance over traditional machine learning methods.",
+      "score": 0.8652240633964539
+     },
+     {
+      "work_id": "PMC10502364",
+      "title": "Deep learning for real-time detection of nasopharyngeal carcinoma during nasopharyngeal endoscopy.",
+      "year": 2023,
+      "journal": "iScience",
+      "is_q1": true,
+      "doi": "10.1016/j.isci.2023.107463",
+      "method": "YOLO object detection network",
+      "modality": "Nasopharyngeal endoscopy video frames",
+      "dataset": "private cohort (2,429 frames from 690 patients across three medical centers)",
+      "metric_values": "Internal: precision 0.977; recall 0.943; mAP 0.977; F1 0.960. External: precision 0.825; recall 0.743; mAP 0.814; F1 0.780. Evaluation at IoU 0.5; inference speed 52.9 FPS",
+      "summary": "Develops a real-time nasopharyngeal carcinoma detector to support early identification and biopsy site selection.",
+      "score": 0.8497219681739807
+     },
+     {
+      "work_id": "DOI:10.1007/s40747-021-00328-7",
+      "title": "3D-semantic segmentation and classification of stomach infections using uncertainty aware deep neural networks",
+      "year": 2021,
+      "journal": "Complex & Intelligent Systems",
+      "is_q1": true,
+      "doi": "10.1007/s40747-021-00328-7",
+      "method": "DeepLabv3 and ResNet-50 semantic segmentation with pretrained ResNet-50 feature extraction and uncertainty-aware classification",
+      "modality": "Wireless capsule endoscopy images/video frames",
+      "dataset": "not stated",
+      "metric_values": "Prediction scores up to 90%",
+      "summary": "Proposes stomach infection segmentation and classification with uncertainty estimation and model interpretability.",
+      "score": 0.6240644454956055
+     },
+     {
+      "work_id": "DOI:10.1007/s11042-022-11936-x",
+      "title": "A novel solution of deep learning for endoscopic ultrasound image segmentation: enhanced computer aided diagnosis of gastrointestinal stromal tumor",
+      "year": 2022,
+      "journal": "Multimedia tools and applications",
+      "is_q1": true,
+      "doi": "10.1007/s11042-022-11936-x",
+      "method": "Multi-scale Gaussian kernel fuzzy clustering and vector field convolution for segmentation; CNN with Class Activation Mapping for diagnosis",
+      "modality": "Ultrasound images, including endoscopic ultrasound",
+      "dataset": "USS1; SH Hospital; SNUH; BUSI",
+      "metric_values": "Accuracy increased from 84.275% to 88.4%; processing time reduced from 28.525% to 24.575% (percentages as reported)",
+      "summary": "Combines automatic region-of-interest segmentation with CNN diagnosis to improve tumor image clarity and accuracy while reducing processing time.",
+      "score": 0.4695506691932678
+     },
+     {
+      "work_id": "PMC6698770",
+      "title": "Bleeding detection in wireless capsule endoscopy videos - Color versus texture features.",
+      "year": 2019,
+      "journal": "Journal of applied clinical medical physics",
+      "is_q1": true,
+      "doi": "10.1002/acm2.12662",
+      "method": "Color and texture feature extraction with machine-learning classifiers",
+      "modality": "Wireless capsule endoscopy video frames",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "Combines color and texture features to classify bleeding frames and segment bleeding areas at the pixel level.",
+      "score": 0.4297882914543152
+     },
+     {
+      "work_id": "DOI:10.1016/j.bspc.2019.101565",
+      "title": "Segmentation of Bleeding Regions in Wireless Capsule Endoscopy for Detection of Informative Frames",
+      "year": 2018,
+      "journal": "Biomedical Signal Processing and Control",
+      "is_q1": true,
+      "doi": "10.1016/j.bspc.2019.101565",
+      "method": "Simplified multilayer perceptron and convolutional neural network using selected color channels",
+      "modality": "Wireless capsule endoscopy images",
+      "dataset": "not stated (WCE bleeding image dataset)",
+      "metric_values": "AUC-ROC > 0.97",
+      "summary": "Simplifies neural networks for bleeding-region segmentation inside capsule devices, trading CNN accuracy against lower MLP computation.",
+      "score": 0.3985234498977661
+     },
+     {
+      "work_id": "PMC12427401",
+      "title": "Inter- and Intraobserver Variability in Bowel Preparation Scoring for Colon Capsule Endoscopy: Impact of AI-Assisted Assessment Feasibility Study.",
+      "year": 2025,
+      "journal": "Cancers",
+      "is_q1": true,
+      "doi": "10.3390/cancers17172840",
+      "method": "TransUNet segmentation model with a custom Patch Loss function for AI-assisted CC-CLEAR scoring",
+      "modality": "Colon capsule endoscopy videos",
+      "dataset": "CESCAIL study cohort (25 videos selected from 673 participants)",
+      "metric_values": "Manual Leighton-Rex: Fleiss' kappa 0.14; ICC 0.55. Manual CC-CLEAR: Fleiss' kappa 0.27; ICC 0.90. AI-assisted CC-CLEAR: Fleiss' kappa 0.27; ICC 0.69; less experienced readers: Fleiss' kappa 0.15; ICC 0.56. Intraobserver ICC > 0.75 for experienced readers and 0.03–0.80 for others. AI-assisted scores lower by 1.46 points (p < 0.001)",
+      "summary": "Evaluates AI-assisted bowel cleanliness scoring, finding moderate overall interobserver agreement and lower scores than manual assessment.",
+      "score": 0.28726768493652344
+     },
+     {
+      "work_id": "PMC12225846",
+      "title": "Predicting semantic segmentation quality in laryngeal endoscopy images.",
+      "year": 2025,
+      "journal": "PloS one",
+      "is_q1": true,
+      "doi": "10.1371/journal.pone.0314573",
+      "method": "Automatic segmentation-quality prediction with traffic-light quality flagging; architecture not stated",
+      "modality": "Laryngeal endoscopy images",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "Predicts glottal segmentation quality using IoU with performance comparable to human raters and flags problematic frames for human review.",
+      "score": 0.2828890383243561
+     }
+    ]
+   }
+  }
+ ],
+ "jobs": [
+  "c67a8804325d",
+  "66d78d0f8014",
+  "e3f653990d5a",
+  "fba0bb49767c",
+  "663da091b686",
+  "2b48cab67a13"
+ ],
+ "artifacts": [
+  {
+   "description": "run summary (JSON)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/summary.json"
+  },
+  {
+   "description": "run report (markdown)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/report.md"
+  },
+  {
+   "description": "per-frame results (CSV)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/frames.csv"
+  }
+ ],
+ "warnings": [],
+ "summary_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/summary.json",
+ "report_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-165229_141376/report.md"
+}

@@ -1,0 +1,140 @@
+{
+ "id": "d3240f0ef63c",
+ "agent": "HDBET",
+ "tool": "hdbet_inspect_brain_mask",
+ "arguments": {
+  "mask_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+  "three_views": true,
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063046.41585,
+ "started_at": 1790063046.416593,
+ "finished_at": 1790063048.8977723,
+ "result": {
+  "message": "tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz: 237292 foreground voxels (mask != 0) = 1898336.0 mm^3 = 1898.336 mL at 8 mm^3/voxel; bounding box [73, 91, 78] voxels; overlay PNG of axis-0 slice 40: /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+  "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/v2.8.1/nnunetv2/utilities/overlay_plots.py",
+  "artifacts": [
+   {
+    "description": "mask statistics JSON (voxel count, volume, bounding box, value set, components, grid/orientation checks)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/mask_statistics.json"
+   },
+   {
+    "description": "overlay PNG of the slice with the most foreground along array axis 0 (exact nnunetv2 plot_overlay output)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png"
+   },
+   {
+    "description": "overlay PNG along array axis 1 (adaptation: upstream select_slice_to_plot2 + generate_overlay on the moved axis)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis1.png"
+   },
+   {
+    "description": "overlay PNG along array axis 2 (adaptation: upstream select_slice_to_plot2 + generate_overlay on the moved axis)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis2.png"
+   },
+   {
+    "description": "child-process stdout log of the upstream call (captured fd 1; expected 0 bytes)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/plot_overlay_child.stdout.log"
+   }
+  ],
+  "mask_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+  "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+  "shape_xyz": [
+   97,
+   115,
+   97
+  ],
+  "spacing_mm": [
+   2.0,
+   2.0,
+   2.0
+  ],
+  "foreground_rule": "mask != 0",
+  "threshold": 0.5,
+  "mask_is_binary_01": true,
+  "mask_values_if_few": [
+   0,
+   1
+  ],
+  "mask_n_unique": 2,
+  "foreground_voxels": 237292,
+  "voxel_volume_mm3": 8.0,
+  "volume_mm3": 1898336.0,
+  "volume_mL": 1898.336,
+  "foreground_fraction": 0.21930159375620936,
+  "bounding_box_voxel_xyz": {
+   "min": [
+    12,
+    13,
+    3
+   ],
+   "max": [
+    84,
+    103,
+    80
+   ],
+   "size_voxels": [
+    73,
+    91,
+    78
+   ],
+   "size_mm": [
+    146.0,
+    182.0,
+    156.0
+   ]
+  },
+  "centroid_voxel_xyz": [
+   48.26428198169344,
+   55.36557490349443,
+   44.020413667548844
+  ],
+  "centroid_world_ras_mm": [
+   0.028563963386886826,
+   -21.768850193011147,
+   9.540827335097688
+  ],
+  "connected_components": {
+   "n_components": 1,
+   "largest_component_voxels": 237292,
+   "largest_component_fraction": 1.0,
+   "connectivity": 26
+  },
+  "grid_check": {
+   "same_shape": true,
+   "same_spacing": true,
+   "same_origin": true,
+   "same_direction": true,
+   "max_abs_diff": {
+    "spacing_mm": 0.0,
+    "origin_mm": 0.0,
+    "direction": 0.0
+   }
+  },
+  "orientation": {
+   "mask": "RAS",
+   "image": "RAS"
+  },
+  "overlay_png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+  "overlay_selected_slice_axis0": 40,
+  "overlay_views": {
+   "axis0": {
+    "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+    "selected_slice": 40
+   },
+   "axis1": {
+    "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis1.png",
+    "selected_slice": 44
+   },
+   "axis2": {
+    "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis2.png",
+    "selected_slice": 43
+   }
+  },
+  "warnings": [],
+  "child_stdout_bytes": 0,
+  "wall_time_s": 2.475
+ },
+ "error": null,
+ "duration_s": 2.48
+}

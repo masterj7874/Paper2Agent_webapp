@@ -1,0 +1,413 @@
+{
+  "page": 26,
+  "lines": [
+    {
+      "text": "S1.10. Preparation of ISM061-18 and ISM061-18-2",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        319.9718322753906,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S10 Preparation of ISM061-18 and ISM061-18-2",
+      "bbox": [
+        157.94041442871094,
+        346.9079895019531,
+        440.2391662597656,
+        360.1919860839844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 18-1",
+      "bbox": [
+        56.6399040222168,
+        377.6279602050781,
+        258.6417236328125,
+        390.9119567871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloro-5-iodopyrimidine (1.5 g, 6.24 mmol) in 1,4-dioxane (15 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        408.3479919433594,
+        541.5364379882812,
+        421.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "C2H3BF3K (1.3 g, 9.36 mmol), CsF (1.9 g, 12.48 mmol) and Pd(dppf)Cl2 (0.9 g, 1.25 mmol) at 25 ℃",
+      "bbox": [
+        56.6399040222168,
+        428.98797607421875,
+        541.5398559570312,
+        442.3506774902344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "under N2 atmosphere. After addition, the reaction mixture was heated and stirred at 80 ℃ under a",
+      "bbox": [
+        56.6399040222168,
+        449.6279602050781,
+        541.517822265625,
+        462.9906921386719
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "nitrogen atmosphere for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water",
+      "bbox": [
+        56.6399040222168,
+        470.2679748535156,
+        541.521484375,
+        483.5519714355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(150 mL) and extracted with EtOAc (70 mL × 3), the combined organic layers were washed with",
+      "bbox": [
+        56.6399040222168,
+        491.1479797363281,
+        541.5289916992188,
+        504.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "brine (100 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue,",
+      "bbox": [
+        56.6399040222168,
+        511.7879943847656,
+        541.5326538085938,
+        525.150634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to",
+      "bbox": [
+        56.6399040222168,
+        532.427978515625,
+        541.5387573242188,
+        545.7119750976562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "6.4%) in petroleum ether to give the title compound (560 mg, 63.8% yield) as a yellow liquid. LCMS",
+      "bbox": [
+        56.6399040222168,
+        553.0679321289062,
+        541.5405883789062,
+        566.3519287109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(ESI+): 141.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        573.5032348632812,
+        167.065185546875,
+        587.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 18-2 and Compound 18-3",
+      "bbox": [
+        56.6399040222168,
+        604.66796875,
+        366.3429260253906,
+        617.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloro-5-vinylpyrimidine (540 mg, 3.84 mmol) in 1,4-dioxane-H2O (6 mL, 5:1)",
+      "bbox": [
+        56.6399040222168,
+        635.14794921875,
+        541.5383911132812,
+        648.5106201171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was added K2CO3 (1592 mg, 11.52 mmol), (2-fluoro-6-hydroxyphenyl)boronic acid (1198 mg, 7.68",
+      "bbox": [
+        56.6399040222168,
+        656.0279541015625,
+        541.538330078125,
+        669.390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mmol) and Pd(dppf)Cl2 (562 mg, 0.77 mmol) at 25 ℃ under N2 atmosphere. After addition, the",
+      "bbox": [
+        56.6399040222168,
+        676.66796875,
+        541.5341186523438,
+        690.0306396484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reaction mixture was heated and stirred at 80 ℃ under a nitrogen atmosphere for 12 h. After cooling",
+      "bbox": [
+        56.6399040222168,
+        697.3079833984375,
+        541.5272827148438,
+        710.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to 25 ℃, the reaction mixture was poured into ice water (80 mL) and extracted with EtOAc (40 mL",
+      "bbox": [
+        56.6399040222168,
+        717.9479370117188,
+        541.538818359375,
+        731.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "× 3), the combined organic layers were washed with brine (60 mL), dried over Na2SO4, filtered and",
+      "bbox": [
+        56.6399040222168,
+        738.8279418945312,
+        541.53564453125,
+        752.190673828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrated under reduced pressure to give a residue, which was purified by column chromatography",
+      "bbox": [
+        56.6399040222168,
+        759.4679565429688,
+        541.52978515625,
+        772.751953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 26
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          56,
+          59,
+          320,
+          71
+        ],
+        "pos": [
+          0,
+          54
+        ]
+      },
+      {
+        "index": 1,
+        "class": "picture",
+        "bbox": [
+          60,
+          79,
+          433,
+          146
+        ],
+        "pos": [
+          54,
+          56
+        ]
+      },
+      {
+        "index": 2,
+        "class": "picture",
+        "bbox": [
+          58,
+          183,
+          471,
+          256
+        ],
+        "pos": [
+          56,
+          58
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          59,
+          276,
+          300,
+          327
+        ],
+        "pos": [
+          58,
+          60
+        ]
+      },
+      {
+        "index": 4,
+        "class": "caption",
+        "bbox": [
+          157,
+          349,
+          441,
+          361
+        ],
+        "pos": [
+          60,
+          118
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          380,
+          259,
+          391
+        ],
+        "pos": [
+          118,
+          163
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          410,
+          542,
+          588
+        ],
+        "pos": [
+          163,
+          1048
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          56,
+          607,
+          367,
+          618
+        ],
+        "pos": [
+          1048,
+          1111
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          56,
+          637,
+          542,
+          773
+        ],
+        "pos": [
+          1111,
+          1814
+        ]
+      }
+    ],
+    "text": "**S1.10. Preparation of ISM061-18 and ISM061-18-2** \n\n\n\n\n\n\n\n**Scheme S10** Preparation of ISM061-18 and ISM061-18-2 \n\n# **Step 1: Preparation of Compound 18-1** \n\nTo a solution of 2-chloro-5-iodopyrimidine (1.5 g, 6.24 mmol) in 1,4-dioxane (15 mL) was added <mark>C</mark> 2 <mark>H</mark> 3 <mark>BF</mark> 3 <mark>K</mark> (1.3 g, 9.36 mmol), CsF (1.9 g, 12.48 mmol) and Pd(dppf)Cl2 (0.9 g, 1.25 mmol) at 25 ℃ under N2 atmosphere. After addition, the reaction mixture was heated and stirred at 80 ℃ under a nitrogen atmosphere for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (150 mL) and extracted with EtOAc (70 mL × 3), the combined organic layers were washed with brine (100 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography on silica gel eluting with ethyl acetate (from 0% to 6.4%) in petroleum ether to give the title compound (560 mg, 63.8% yield) as a yellow liquid. LCMS (ESI<sup>+</sup> ): 141.3 [M+H]<sup>+</sup> . \n\n# **Step 2: Preparation of Compound 18-2 and Compound 18-3** \n\nTo a solution of 2-chloro-5-vinylpyrimidine (540 mg, 3.84 mmol) in 1,4-dioxane-H2O (6 mL, 5:1) was added <mark>K</mark> 2 <mark>CO</mark> 3 (1592 mg, 11.52 mmol), (2-fluoro-6-hydroxyphenyl)boronic acid (1198 mg, 7.68 mmol) and Pd(dppf)Cl2 (562 mg, 0.77 mmol) at 25 ℃ under N2 atmosphere. After addition, the reaction mixture was heated and stirred at 80 ℃ under a nitrogen atmosphere for 12 h. After cooling to 25 ℃, the reaction mixture was poured into ice water (80 mL) and extracted with EtOAc (40 mL × 3), the combined organic layers were washed with brine (60 mL), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue, which was purified by column chromatography \n\n"
+  }
+}

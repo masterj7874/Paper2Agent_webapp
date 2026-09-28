@@ -1,0 +1,1957 @@
+{
+  "page": 9,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "assays. Notably, compound ISM061-018-2, engineered through our",
+      "bbox": [
+        39.685001373291016,
+        47.59562683105469,
+        296.34442138671875,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "hybrid quantum model (Supplementary Table 3), demonstrated a",
+      "bbox": [
+        39.685001373291016,
+        58.34562683105469,
+        296.2280578613281,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "substantial binding affinity to KRAS-G12D, registered at 1.4 μM. To",
+      "bbox": [
+        39.685001373291016,
+        69.09562683105469,
+        296.2656555175781,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "delve deeper into this molecule’s effectiveness across a spectrum",
+      "bbox": [
+        39.685001373291016,
+        79.84562683105469,
+        296.23651123046875,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of KRAS mutants, we commenced an extensive series of tests using",
+      "bbox": [
+        39.685001373291016,
+        90.59562683105469,
+        296.4010009765625,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a cell-based assay. Specifically, we evaluated the molecule’s perfor-",
+      "bbox": [
+        39.685001373291016,
+        101.34562683105469,
+        294.8031311035156,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mance in a biological context using a commercial cell viability assay",
+      "bbox": [
+        39.685001373291016,
+        112.09562683105469,
+        296.1761169433594,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(CellTiter-Glo, Promega) in conjunction with MaMTH-DS, an advanced",
+      "bbox": [
+        39.685001373291016,
+        122.84562683105469,
+        296.321533203125,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "split-ubiquitin-based platform for the real-time detection of small",
+      "bbox": [
+        39.685001373291016,
+        133.5956268310547,
+        296.1434631347656,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules targeting specific cellular interactions28–34.",
+      "bbox": [
+        39.685001373291016,
+        144.0074005126953,
+        238.32699584960938,
+        154.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Furthermore, the biological activity of ISM061-018-2 was rigor-",
+      "bbox": [
+        56.692901611328125,
+        155.0956268310547,
+        294.8031005859375,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ously tested. Importantly, it demonstrated no detrimental impact on",
+      "bbox": [
+        39.685001373291016,
+        165.8456268310547,
+        296.2352600097656,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the viability of HEK293 cells, even when expressing either KRAS WT",
+      "bbox": [
+        39.685001373291016,
+        176.5957489013672,
+        296.29425048828125,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "or KRAS-G12V bait in MaMTH-DS format and being subjected to con-",
+      "bbox": [
+        39.685001373291016,
+        187.3457489013672,
+        294.7906494140625,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "centrations as high as 30 μM for 18–20 h, showing that the compound",
+      "bbox": [
+        39.685001373291016,
+        198.0957489013672,
+        296.4298400878906,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "did not possess any general, nonspecific toxicity (Fig. 2d). Subsequent",
+      "bbox": [
+        39.685001373291016,
+        208.8457489013672,
+        296.3594665527344,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "testing using MaMTH-DS across a spectrum of cell lines expressing vari-",
+      "bbox": [
+        39.685001373291016,
+        219.5957489013672,
+        294.80322265625,
+        229.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ous KRAS baits (WT and five clinically important oncogenic mutants)",
+      "bbox": [
+        39.685001373291016,
+        230.3457489013672,
+        296.2757568359375,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in combination with Raf1 prey (a recognized KRAS effector) revealed a",
+      "bbox": [
+        39.685001373291016,
+        241.0957489013672,
+        296.3413391113281,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dose-responsive inhibition of interactions, with IC50 values in the micro-",
+      "bbox": [
+        39.685001373291016,
+        251.8457489013672,
+        294.8030700683594,
+        262.7720031738281
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molar range (Supplementary Table 3). The compound’s activity was not",
+      "bbox": [
+        39.685001373291016,
+        262.5957336425781,
+        296.2996826171875,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "specific to mutants, as it targeted both WT and mutant interactions with",
+      "bbox": [
+        39.685001373291016,
+        273.3456115722656,
+        296.3255310058594,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "similar efficacy. It also showed comparable effectiveness in disrupting",
+      "bbox": [
+        39.685001373291016,
+        284.0956115722656,
+        296.3659973144531,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the interactions of WT NRAS and HRAS baits with Raf1 prey (Fig. 2c).",
+      "bbox": [
+        39.685001373291016,
+        294.8456115722656,
+        296.2496032714844,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "However, it had no effect on the interaction of a completely unrelated",
+      "bbox": [
+        39.685001373291016,
+        305.5956115722656,
+        296.27569580078125,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "artificial bait–prey control pair (consisting of membrane-anchored",
+      "bbox": [
+        39.685001373291016,
+        316.3456115722656,
+        296.3674621582031,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ALFA tag bait and nanobody ALFA prey)36, supporting the biological",
+      "bbox": [
+        39.685001373291016,
+        326.7574157714844,
+        296.18511962890625,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "specificity of the interaction (Fig. 2c). Collectively, these results sup-",
+      "bbox": [
+        39.685001373291016,
+        337.8456115722656,
+        294.79974365234375,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "port a potential pan-Ras activity of ISM061-018-2.",
+      "bbox": [
+        39.68501281738281,
+        348.5953674316406,
+        222.4390411376953,
+        358.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ISM061-022 (Fig. 2e) also stood out as a compound of promise,",
+      "bbox": [
+        56.692901611328125,
+        359.3456115722656,
+        296.13116455078125,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "particularly because of its selectivity toward certain KRAS mutants.",
+      "bbox": [
+        39.685001373291016,
+        370.0956115722656,
+        296.3236083984375,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Within our in vitro examination, ISM061-022 demonstrated a",
+      "bbox": [
+        39.685001373291016,
+        380.8456115722656,
+        296.3189392089844,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentration-dependent inhibition of KRAS interactions (Fig. 2f),",
+      "bbox": [
+        39.685001373291016,
+        391.5956115722656,
+        296.2696838378906,
+        401.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "while manifesting only a mild, general impact on cell viability at higher",
+      "bbox": [
+        39.685001373291016,
+        402.3456115722656,
+        296.3954162597656,
+        412.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "concentrations over an 18–20-h exposure (Fig. 2g). The observed inhibi-",
+      "bbox": [
+        39.685001373291016,
+        413.0956115722656,
+        294.8030700683594,
+        423.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion mirrored that of ISM061-018-2 yet displayed enhanced selectivity",
+      "bbox": [
+        39.685001373291016,
+        423.8456115722656,
+        296.4017028808594,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "toward certain KRAS mutants, particularly KRAS-G12R and KRAS-Q61H,",
+      "bbox": [
+        39.685001373291016,
+        434.5956115722656,
+        296.1517333984375,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which were most receptive to the compound’s action (Fig. 2f and Sup-",
+      "bbox": [
+        39.685001373291016,
+        445.3456115722656,
+        294.79974365234375,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "plementary Table 4). Diverging from ISM061-018-2, ISM061-022 did",
+      "bbox": [
+        39.685001373291016,
+        456.0956115722656,
+        296.21044921875,
+        466.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "not show binding to KRAS-G12D. The compound also demonstrated",
+      "bbox": [
+        39.685001373291016,
+        466.8456115722656,
+        296.1438903808594,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "activity against WT HRAS and NRAS, although it was less potent against",
+      "bbox": [
+        39.685001373291016,
+        477.5956115722656,
+        296.3051452636719,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "HRAS. Notably, the compound had an unusual effect on our artificial",
+      "bbox": [
+        39.685001373291016,
+        488.3456115722656,
+        296.2839050292969,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "control interaction pair, leading to a distinct dip to approximately 50%",
+      "bbox": [
+        39.685001373291016,
+        499.0956115722656,
+        296.38861083984375,
+        509.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "residual activity at concentrations of 250–500 nM, before climbing",
+      "bbox": [
+        39.685001373291016,
+        509.8456115722656,
+        296.1549987792969,
+        520.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "again and ultimately leading to mild enhancement of the interaction",
+      "bbox": [
+        39.685001373291016,
+        520.5956420898438,
+        296.22705078125,
+        530.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "at higher micromolar concentrations (Fig. 2f). This distinct pattern",
+      "bbox": [
+        39.685001373291016,
+        531.3456420898438,
+        296.3204650878906,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "suggests an alternative mode of action for ISM061-022, revealing at",
+      "bbox": [
+        39.685001373291016,
+        542.0956420898438,
+        296.1129150390625,
+        552.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "least some degree of nonspecific activity, although partial specificity",
+      "bbox": [
+        39.685001373291016,
+        552.8456420898438,
+        296.2666015625,
+        563.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "for mutant KRAS protein does still appear to be in evidence. Further",
+      "bbox": [
+        39.685001373291016,
+        563.5956420898438,
+        296.33074951171875,
+        573.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "investigation into the mechanism of action of this molecule will be the",
+      "bbox": [
+        39.685001373291016,
+        574.3456420898438,
+        296.3566589355469,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "focus of future study.",
+      "bbox": [
+        39.685001373291016,
+        585.0956420898438,
+        119.01700592041016,
+        595.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "In essence, these live-cell experimental observations underscore",
+      "bbox": [
+        56.692901611328125,
+        595.8456420898438,
+        296.28857421875,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the robustness of our approach, effectively identifying small-molecule",
+      "bbox": [
+        39.685001373291016,
+        606.5956420898438,
+        296.10614013671875,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "candidates with biological activity. This underlines the potential of our",
+      "bbox": [
+        39.685001373291016,
+        617.3456420898438,
+        296.0755615234375,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "methodology to address and surmount the complexities inherent in",
+      "bbox": [
+        39.685001373291016,
+        628.0956420898438,
+        296.1687316894531,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "targeting clinically challenging biomolecules.",
+      "bbox": [
+        39.685001373291016,
+        638.8456420898438,
+        209.96498107910156,
+        649.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "This section explains the methods and workflow incorporated in",
+      "bbox": [
+        56.696502685546875,
+        649.5953979492188,
+        296.2674255371094,
+        659.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "our proposed approach, offering a comprehensive understanding of",
+      "bbox": [
+        39.68500518798828,
+        660.3451538085938,
+        296.2600402832031,
+        670.525634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the mechanisms used in our study. Figure 1 illustrates the workflow",
+      "bbox": [
+        39.685001373291016,
+        671.0956420898438,
+        296.29217529296875,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "we used in our study.",
+      "bbox": [
+        39.685001373291016,
+        681.8456420898438,
+        116.95038604736328,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Data acquisition and preprocessing",
+      "bbox": [
+        39.685001373291016,
+        702.8306274414062,
+        184.17376708984375,
+        713.4793701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Our preliminary dataset, sourced from Insilico Medicine, included",
+      "bbox": [
+        39.685001373291016,
+        714.0956420898438,
+        296.1037292480469,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "approximately 650 data points. These were selectively collated from",
+      "bbox": [
+        39.685001373291016,
+        724.8456420898438,
+        296.25836181640625,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "existing literature, specifically targeting the KRAS-G12D mutant (Fig. 1).",
+      "bbox": [
+        39.685001373291016,
+        735.5956420898438,
+        296.22613525390625,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Given the dataset’s limited size, we opted to expand it to improve the",
+      "bbox": [
+        306.1416931152344,
+        47.59562683105469,
+        562.7259521484375,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "robustness of our model during training.",
+      "bbox": [
+        306.1416931152344,
+        58.34538269042969,
+        457.5868835449219,
+        68.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "STONED–SELFIES. We used the STONED–SELFIES24 algorithm (https://",
+      "bbox": [
+        306.1416931152344,
+        78.45962524414062,
+        561.2282104492188,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "github.com/aspuru-guzik-group/stoned-selfies) to mine our initial",
+      "bbox": [
+        306.1416931152344,
+        90.59562683105469,
+        562.6608276367188,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "set of 650 molecules. For a given molecule in SMILES format, we first",
+      "bbox": [
+        306.1416931152344,
+        101.34562683105469,
+        562.7133178710938,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "randomized the string using RDKit. These randomized strings were",
+      "bbox": [
+        306.1416931152344,
+        112.09562683105469,
+        562.7728271484375,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "then converted into SELFIES. Each SELFIES string underwent mutations",
+      "bbox": [
+        306.1416931152344,
+        122.84562683105469,
+        562.69873046875,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(in the form of character deletions, replacements and additions) up",
+      "bbox": [
+        306.1416931152344,
+        133.5956268310547,
+        562.8717041015625,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to 500 times. Subsequently, the synthesizability and stability of the",
+      "bbox": [
+        306.1416931152344,
+        144.3453826904297,
+        562.7391967773438,
+        154.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mutated strings were assessed using Chemistry42. We generated 850,000",
+      "bbox": [
+        306.1416931152344,
+        155.0956268310547,
+        562.5703735351562,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules, which served as the training set for our generative models.",
+      "bbox": [
+        306.1416931152344,
+        165.8456268310547,
+        555.9559326171875,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Virtual screening process. VirtualFlow 2.0 (ref. 23) was used to iden-",
+      "bbox": [
+        306.1416931152344,
+        185.95974731445312,
+        561.259765625,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tify additional molecules predicted to bind to KRAS-G12D. The adaptive",
+      "bbox": [
+        306.1416931152344,
+        198.0957489013672,
+        562.713134765625,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "target-guided (ATG) method performed the virtual screening in two",
+      "bbox": [
+        306.1416931152344,
+        208.8457489013672,
+        562.5715942382812,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "stages. In the first stage, the ATG prescreen was performed, in which",
+      "bbox": [
+        306.1416931152344,
+        219.5957489013672,
+        562.7258911132812,
+        229.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a spare version of the 69 billion REAL space from Enamine (version",
+      "bbox": [
+        306.1416931152344,
+        230.3457489013672,
+        562.902099609375,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2022q12) was screened. In the second stage, the most potent tranches",
+      "bbox": [
+        306.1416931152344,
+        241.0957489013672,
+        562.6119384765625,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of ligands were screened in full, amounting to 100 million ligands. The",
+      "bbox": [
+        306.1416931152344,
+        251.8457489013672,
+        562.88427734375,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "docking program used was QuickVina 2 (ref. 48), with exhaustiveness",
+      "bbox": [
+        306.1416931152344,
+        262.5957336425781,
+        562.709228515625,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "set to 1 in both stages of the screen. The screen was carried out in the",
+      "bbox": [
+        306.1417236328125,
+        273.3454895019531,
+        562.7332763671875,
+        283.5260009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Amazon Web Services cloud computing platform. The protein struc-",
+      "bbox": [
+        306.1417236328125,
+        284.0952453613281,
+        561.2639770507812,
+        294.2757568359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ture used in the screen was PDB 5US4 (ref. 59), which was prepared",
+      "bbox": [
+        306.1416931152344,
+        294.8456115722656,
+        562.7774047851562,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "before the virtual screen with Schrödinger’s protein preparation wizard",
+      "bbox": [
+        306.1416931152344,
+        305.5956115722656,
+        562.7511596679688,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(addition of hydrogens and protonation state prediction). The size of",
+      "bbox": [
+        306.1416931152344,
+        316.3456115722656,
+        562.72998046875,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the docking box was 14 × 14 × 20 Å3.",
+      "bbox": [
+        306.1416931152344,
+        326.7574157714844,
+        436.61090087890625,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Quantum-assisted algorithm",
+      "bbox": [
+        306.1416931152344,
+        348.08062744140625,
+        424.00872802734375,
+        358.7293701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "As shown in Fig. 1, our quantum-assisted model was a hybrid algorithm",
+      "bbox": [
+        306.1416931152344,
+        359.3456115722656,
+        562.5458374023438,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "composed of both quantum and classical generative components. The",
+      "bbox": [
+        306.1416931152344,
+        370.0956115722656,
+        562.725830078125,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum generative model used a QCBM model while the classical",
+      "bbox": [
+        306.1416931152344,
+        380.8456115722656,
+        562.8038330078125,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "component used an LSTM model. Extended Data Fig. 3 illustrates the",
+      "bbox": [
+        306.1416931152344,
+        391.5956115722656,
+        562.69189453125,
+        401.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "flowchart of our proposed generative model.",
+      "bbox": [
+        306.1416931152344,
+        402.3453674316406,
+        472.9525146484375,
+        412.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Within this model, we used Chemistry42 and a local filter to vali-",
+      "bbox": [
+        323.1531982421875,
+        413.0951232910156,
+        561.2740478515625,
+        423.275634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "date sample generation at each step, which was then used to train",
+      "bbox": [
+        306.1416931152344,
+        423.8456115722656,
+        562.68115234375,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the QCBM model. The QCBM model, a quantum circuit model, was",
+      "bbox": [
+        306.1416931152344,
+        434.5956115722656,
+        562.5494384765625,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "executed on a quantum processing unit. Subsequently, samples from",
+      "bbox": [
+        306.1416931152344,
+        445.3456115722656,
+        562.7333374023438,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the trained QCBM were fed into the LSTM model, which generated",
+      "bbox": [
+        306.1416931152344,
+        456.0956115722656,
+        562.8177490234375,
+        466.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sequences on the basis of these samples. The reward value for each",
+      "bbox": [
+        306.1416931152344,
+        466.8456115722656,
+        562.7667846679688,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sample was computed at every step using the local filter until epoch",
+      "bbox": [
+        306.1416931152344,
+        477.5956115722656,
+        562.79296875,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "20, after which we selected Chemistry42. This reward value was then",
+      "bbox": [
+        306.1416931152344,
+        488.3456115722656,
+        562.7002563476562,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "used to train our quantum generative model. During the first epoch,",
+      "bbox": [
+        306.1416931152344,
+        499.0953674316406,
+        562.7332763671875,
+        509.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "no rewards were available; hence, the algorithm sampled from the",
+      "bbox": [
+        306.1416931152344,
+        509.8456115722656,
+        562.6802978515625,
+        520.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "untrained QCBM model, designated as Xi. From the second epoch",
+      "bbox": [
+        306.1416931152344,
+        520.5626220703125,
+        562.7782592773438,
+        531.52197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "onward, rewards were computed, allowing us to calculate the softmax",
+      "bbox": [
+        306.1416931152344,
+        531.3456420898438,
+        562.8248291015625,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of the rewards for each Xi, where i ∈ [1, N]. The corresponding pseu-",
+      "bbox": [
+        306.1416931152344,
+        541.3118896484375,
+        561.2598266601562,
+        553.7693481445312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "docode can be found in Algorithm 1.",
+      "bbox": [
+        306.1416931152344,
+        552.8456420898438,
+        439.7050476074219,
+        563.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Quantum-computing-enhanced workflow",
+      "bbox": [
+        306.1416931152344,
+        573.8306274414062,
+        477.2875061035156,
+        584.4793701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Our methodology encompassed a comprehensive workflow, extend-",
+      "bbox": [
+        306.1416931152344,
+        585.0956420898438,
+        561.2614135742188,
+        595.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ing from data preparation to experimental validation, as delineated in",
+      "bbox": [
+        306.1416931152344,
+        595.8456420898438,
+        562.8798217773438,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Fig. 1. This workflow was structured into three pivotal stages:",
+      "bbox": [
+        306.1416931152344,
+        606.5956420898438,
+        530.8831176757812,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(1) Generation of training data. We initiated the process by con-",
+      "bbox": [
+        323.14959716796875,
+        617.3456420898438,
+        561.2598266601562,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "structing a robust dataset for training our generative model to target",
+      "bbox": [
+        306.1416931152344,
+        628.0956420898438,
+        562.7002563476562,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the KRAS protein. The foundation of this dataset was approximately",
+      "bbox": [
+        306.1416931152344,
+        638.8456420898438,
+        562.6329956054688,
+        649.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "650 experimentally confirmed KRAS inhibitors, compiled through an",
+      "bbox": [
+        306.1416931152344,
+        649.5956420898438,
+        562.7222290039062,
+        659.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "extensive literature review60–63. Acknowledging the necessity of a more",
+      "bbox": [
+        306.1416931152344,
+        660.00732421875,
+        562.5947265625,
+        670.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "expansive dataset to develop a model for ligand design effectively, we",
+      "bbox": [
+        306.1416931152344,
+        671.0956420898438,
+        562.5391235351562,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "adopted a two-pronged approach: virtual screening and local chemical",
+      "bbox": [
+        306.1416931152344,
+        681.8456420898438,
+        562.7166137695312,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "space exploration. In the virtual screening phase, we used VirtualFlow",
+      "bbox": [
+        306.1416931152344,
+        692.5956420898438,
+        562.7247314453125,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2.0 (ref. 23) to screen 100 million molecules, applying Enamine’s REAL",
+      "bbox": [
+        306.1416931152344,
+        703.3456420898438,
+        562.846435546875,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "library64 in conjunction with molecular docking techniques. The top",
+      "bbox": [
+        306.1416931152344,
+        713.75732421875,
+        562.700439453125,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "250,000 compounds from this screen, exhibiting the lowest docking",
+      "bbox": [
+        306.1426086425781,
+        724.8453979492188,
+        562.7422485351562,
+        735.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "scores, were subsequently integrated into our dataset. Complementing",
+      "bbox": [
+        306.1416931152344,
+        735.5956420898438,
+        562.6884155273438,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 9
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          39,
+          49,
+          297,
+          155
+        ],
+        "pos": [
+          71,
+          738
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          39,
+          156,
+          297,
+          359
+        ],
+        "pos": [
+          738,
+          2045
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          39,
+          360,
+          297,
+          595
+        ],
+        "pos": [
+          2045,
+          3499
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          39,
+          597,
+          297,
+          649
+        ],
+        "pos": [
+          3499,
+          3823
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          39,
+          651,
+          297,
+          692
+        ],
+        "pos": [
+          3823,
+          4043
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          39,
+          704,
+          185,
+          714
+        ],
+        "pos": [
+          4043,
+          4086
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          39,
+          715,
+          297,
+          746
+        ],
+        "pos": [
+          4086,
+          4297
+        ]
+      },
+      {
+        "index": 9,
+        "class": "text",
+        "bbox": [
+          306,
+          49,
+          563,
+          69
+        ],
+        "pos": [
+          4297,
+          4411
+        ]
+      },
+      {
+        "index": 10,
+        "class": "text",
+        "bbox": [
+          306,
+          80,
+          563,
+          176
+        ],
+        "pos": [
+          4411,
+          5042
+        ]
+      },
+      {
+        "index": 11,
+        "class": "text",
+        "bbox": [
+          306,
+          188,
+          563,
+          337
+        ],
+        "pos": [
+          5042,
+          5994
+        ]
+      },
+      {
+        "index": 12,
+        "class": "section-header",
+        "bbox": [
+          306,
+          349,
+          425,
+          359
+        ],
+        "pos": [
+          5994,
+          6029
+        ]
+      },
+      {
+        "index": 13,
+        "class": "text",
+        "bbox": [
+          306,
+          360,
+          563,
+          413
+        ],
+        "pos": [
+          6029,
+          6341
+        ]
+      },
+      {
+        "index": 14,
+        "class": "text",
+        "bbox": [
+          306,
+          414,
+          563,
+          563
+        ],
+        "pos": [
+          6341,
+          7246
+        ]
+      },
+      {
+        "index": 15,
+        "class": "section-header",
+        "bbox": [
+          306,
+          575,
+          478,
+          585
+        ],
+        "pos": [
+          7246,
+          7290
+        ]
+      },
+      {
+        "index": 16,
+        "class": "text",
+        "bbox": [
+          306,
+          586,
+          563,
+          617
+        ],
+        "pos": [
+          7290,
+          7487
+        ]
+      },
+      {
+        "index": 17,
+        "class": "text",
+        "bbox": [
+          306,
+          618,
+          563,
+          746
+        ],
+        "pos": [
+          7487,
+          8337
+        ]
+      },
+      {
+        "index": 18,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          8337,
+          8360
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\nassays. Notably, compound ISM061-018-2, engineered through our hybrid quantum model (Supplementary Table 3), demonstrated a substantial binding affinity to KRAS-G12D, registered at 1.4 μM. To delve deeper into this molecule’s effectiveness across a spectrum of KRAS mutants, we commenced an extensive series of tests using a cell-based assay. Specifically, we evaluated the molecule’s performance in a biological context using a commercial cell viability assay (CellTiter-Glo, Promega) in conjunction with MaMTH-DS, an advanced split-ubiquitin-based platform for the real-time detection of small molecules targeting specific cellular interactions<sup>28–34</sup> . \n\nFurthermore, the biological activity of ISM061-018-2 was rigorously tested. Importantly, it demonstrated no detrimental impact on the viability of HEK293 cells, even when expressing either KRAS WT or KRAS-G12V bait in MaMTH-DS format and being subjected to concentrations as high as 30 μM for 18–20 h, showing that the compound did not possess any general, nonspecific toxicity (Fig. 2d). Subsequent testing using MaMTH-DS across a spectrum of cell lines expressing various KRAS baits (WT and five clinically important oncogenic mutants) in combination with Raf1 prey (a recognized KRAS effector) revealed a dose-responsive inhibition of interactions, with IC50 values in the micromolar range (Supplementary Table 3). The compound’s activity was not specific to mutants, as it targeted both WT and mutant interactions with similar efficacy. It also showed comparable effectiveness in disrupting the interactions of WT NRAS and HRAS baits with Raf1 prey (Fig. 2c). However, it had no effect on the interaction of a completely unrelated artificial bait–prey control pair (consisting of membrane-anchored ALFA tag bait and nanobody ALFA prey)<sup>36</sup> , supporting the biological specificity of the interaction (Fig. 2c). Collectively, these results support a potential pan-Ras activity of ISM061-018-2. \n\nISM061-022 (Fig. 2e) also stood out as a compound of promise, particularly because of its selectivity toward certain KRAS mutants. Within our in vitro examination, ISM061-022 demonstrated a concentration-dependent inhibition of KRAS interactions (Fig. 2f), while manifesting only a mild, general impact on cell viability at higher concentrations over an 18–20-h exposure (Fig. 2g). The observed inhibition mirrored that of ISM061-018-2 yet displayed enhanced selectivity toward certain KRAS mutants, particularly KRAS-G12R and KRAS-Q61H, which were most receptive to the compound’s action (Fig. 2f and Supplementary Table 4). Diverging from ISM061-018-2, ISM061-022 did not show binding to KRAS-G12D. The compound also demonstrated activity against WT HRAS and NRAS, although it was less potent against HRAS. Notably, the compound had an unusual effect on our artificial control interaction pair, leading to a distinct dip to approximately 50% residual activity at concentrations of 250–500 nM, before climbing again and ultimately leading to mild enhancement of the interaction at higher micromolar concentrations (Fig. 2f). This distinct pattern suggests an alternative mode of action for ISM061-022, revealing at least some degree of nonspecific activity, although partial specificity for mutant KRAS protein does still appear to be in evidence. Further investigation into the mechanism of action of this molecule will be the focus of future study. \n\nIn essence, these live-cell experimental observations underscore the robustness of our approach, effectively identifying small-molecule candidates with biological activity. This underlines the potential of our methodology to address and surmount the complexities inherent in targeting clinically challenging biomolecules. \n\nThis section explains the methods and workflow incorporated in our proposed approach, offering a comprehensive understanding of the mechanisms used in our study. Figure 1 illustrates the workflow we used in our study. \n\n# **Data acquisition and preprocessing** \n\nOur preliminary dataset, sourced from Insilico Medicine, included approximately 650 data points. These were selectively collated from existing literature, specifically targeting the KRAS-G12D mutant (Fig. 1). \n\nGiven the dataset’s limited size, we opted to expand it to improve the robustness of our model during training. \n\n**STONED–SELFIES.** We used the STONED–SELFIES<sup>24</sup> algorithm (https:// github.com/aspuru-guzik-group/stoned-selfies) to mine our initial set of 650 molecules. For a given molecule in SMILES format, we first randomized the string using RDKit. These randomized strings were then converted into SELFIES. Each SELFIES string underwent mutations (in the form of character deletions, replacements and additions) up to 500 times. Subsequently, the synthesizability and stability of the mutated strings were assessed using Chemistry42. We generated 850,000 molecules, which served as the training set for our generative models. \n\n**Virtual screening process.** VirtualFlow 2.0 (ref. 23) was used to identify additional molecules predicted to bind to KRAS-G12D. The adaptive target-guided (ATG) method performed the virtual screening in two stages. In the first stage, the ATG prescreen was performed, in which a spare version of the 69 billion REAL space from Enamine (version 2022q12) was screened. In the second stage, the most potent tranches of ligands were screened in full, amounting to 100 million ligands. The docking program used was QuickVina 2 (ref. 48), with exhaustiveness set to 1 in both stages of the screen. The screen was carried out in the Amazon Web Services cloud computing platform. The protein structure used in the screen was PDB 5US4 (ref. 59), which was prepared before the virtual screen with Schrödinger’s protein preparation wizard (addition of hydrogens and protonation state prediction). The size of the docking box was 14 × 14 × 20 Å<sup>3</sup> . \n\n# **Quantum-assisted algorithm** \n\nAs shown in Fig. 1, our quantum-assisted model was a hybrid algorithm composed of both quantum and classical generative components. The quantum generative model used a QCBM model while the classical component used an LSTM model. Extended Data Fig. 3 illustrates the flowchart of our proposed generative model. \n\nWithin this model, we used Chemistry42 and a local filter to validate sample generation at each step, which was then used to train the QCBM model. The QCBM model, a quantum circuit model, was executed on a quantum processing unit. Subsequently, samples from the trained QCBM were fed into the LSTM model, which generated sequences on the basis of these samples. The reward value for each sample was computed at every step using the local filter until epoch 20, after which we selected Chemistry42. This reward value was then used to train our quantum generative model. During the first epoch, no rewards were available; hence, the algorithm sampled from the untrained QCBM model, designated as _Xi_ . From the second epoch onward, rewards were computed, allowing us to calculate the softmax of the rewards for each _Xi_ , where _i_ ∈ [1, _N_ ]. The corresponding pseudocode can be found in Algorithm 1. \n\n# **Quantum-computing-enhanced workflow** \n\nOur methodology encompassed a comprehensive workflow, extending from data preparation to experimental validation, as delineated in Fig. 1. This workflow was structured into three pivotal stages: \n\n(1) Generation of training data. We initiated the process by constructing a robust dataset for training our generative model to target the KRAS protein. The foundation of this dataset was approximately 650 experimentally confirmed KRAS inhibitors, compiled through an extensive literature review<sup>60–63</sup> . Acknowledging the necessity of a more expansive dataset to develop a model for ligand design effectively, we adopted a two-pronged approach: virtual screening and local chemical space exploration. In the virtual screening phase, we used VirtualFlow 2.0 (ref. 23) to screen 100 million molecules, applying Enamine’s REAL library<sup>64</sup> in conjunction with molecular docking techniques. The top 250,000 compounds from this screen, exhibiting the lowest docking scores, were subsequently integrated into our dataset. Complementing \n\nNature Biotechnology \n\n"
+  }
+}

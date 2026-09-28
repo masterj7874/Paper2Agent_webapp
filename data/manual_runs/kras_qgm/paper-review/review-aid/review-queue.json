@@ -1,0 +1,533 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "s001-03",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "pages": 21,
+      "contact_sheets": [
+        "review-aid/s001-03/pages-0001-0004.jpg",
+        "review-aid/s001-03/pages-0005-0008.jpg",
+        "review-aid/s001-03/pages-0009-0012.jpg",
+        "review-aid/s001-03/pages-0013-0016.jpg",
+        "review-aid/s001-03/pages-0017-0020.jpg",
+        "review-aid/s001-03/pages-0021-0021.jpg"
+      ],
+      "items": [
+        {
+          "page": 1,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0001-b009"
+        },
+        {
+          "page": 2,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0002-b000"
+        },
+        {
+          "page": 2,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0002-b001"
+        },
+        {
+          "page": 2,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0002-b008"
+        },
+        {
+          "page": 3,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0003-b000"
+        },
+        {
+          "page": 3,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0003-b001"
+        },
+        {
+          "page": 3,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0003-b009"
+        },
+        {
+          "page": 4,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0004-b000"
+        },
+        {
+          "page": 4,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0004-b001"
+        },
+        {
+          "page": 4,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0004-b005"
+        },
+        {
+          "page": 5,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0005-b000"
+        },
+        {
+          "page": 5,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0005-b001"
+        },
+        {
+          "page": 5,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0005-b026"
+        },
+        {
+          "page": 6,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0006-b000"
+        },
+        {
+          "page": 6,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0006-b001"
+        },
+        {
+          "page": 6,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0006-b023"
+        },
+        {
+          "page": 7,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0007-b000"
+        },
+        {
+          "page": 7,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0007-b001"
+        },
+        {
+          "page": 7,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0007-b015"
+        },
+        {
+          "page": 8,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0008-b000"
+        },
+        {
+          "page": 8,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0008-b001"
+        },
+        {
+          "page": 8,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0008-b029"
+        },
+        {
+          "page": 9,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0009-b000"
+        },
+        {
+          "page": 9,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0009-b001"
+        },
+        {
+          "page": 9,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0009-b018"
+        },
+        {
+          "page": 10,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0010-b000"
+        },
+        {
+          "page": 10,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0010-b001"
+        },
+        {
+          "page": 10,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0010-b031"
+        },
+        {
+          "page": 11,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0011-b000"
+        },
+        {
+          "page": 11,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0011-b001"
+        },
+        {
+          "page": 11,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0011-b033"
+        },
+        {
+          "page": 12,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0012-b000"
+        },
+        {
+          "page": 12,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0012-b001"
+        },
+        {
+          "page": 12,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0012-b042"
+        },
+        {
+          "page": 13,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0013-b000"
+        },
+        {
+          "page": 13,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0013-b001"
+        },
+        {
+          "page": 13,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0013-b014"
+        },
+        {
+          "page": 14,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0014-b000"
+        },
+        {
+          "page": 14,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0014-b001"
+        },
+        {
+          "page": 14,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0014-b006"
+        },
+        {
+          "page": 15,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0015-b000"
+        },
+        {
+          "page": 15,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0015-b001"
+        },
+        {
+          "page": 15,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0015-b007"
+        },
+        {
+          "page": 16,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0016-b000"
+        },
+        {
+          "page": 16,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0016-b001"
+        },
+        {
+          "page": 16,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0016-b006"
+        },
+        {
+          "page": 17,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0017-b000"
+        },
+        {
+          "page": 17,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0017-b001"
+        },
+        {
+          "page": 17,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0017-b005"
+        },
+        {
+          "page": 18,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0018-b000"
+        },
+        {
+          "page": 18,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0018-b001"
+        },
+        {
+          "page": 18,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0018-b005"
+        },
+        {
+          "page": 19,
+          "kind": "extractor_warning",
+          "detail": "OCR unavailable or failed: FzErrorLibrary. Page image retained for review."
+        },
+        {
+          "page": 20,
+          "kind": "extractor_warning",
+          "detail": "OCR unavailable or failed: FzErrorLibrary. Page image retained for review."
+        },
+        {
+          "page": 21,
+          "kind": "extractor_warning",
+          "detail": "OCR unavailable or failed: FzErrorLibrary. Page image retained for review."
+        },
+        {
+          "page": 2,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0001-b009",
+          "item": "p0002-b005"
+        },
+        {
+          "page": 3,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0002-b007",
+          "item": "p0003-b002"
+        },
+        {
+          "page": 8,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0007-b014",
+          "item": "p0008-b002"
+        },
+        {
+          "page": 9,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0008-b028",
+          "item": "p0009-b002"
+        },
+        {
+          "page": 10,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0009-b017",
+          "item": "p0010-b002"
+        },
+        {
+          "page": 1,
+          "kind": "unresolved_diagnostic",
+          "check": "number_differences",
+          "fingerprint": "a73f2cf328c84d5dd3fc46e2d99511abb06e758d7fc08c629798b7c3389cd0fa",
+          "adjudication_entry": {
+            "page": 1,
+            "check": "number_differences",
+            "fingerprint": "a73f2cf328c84d5dd3fc46e2d99511abb06e758d7fc08c629798b7c3389cd0fa",
+            "reason": "Describe the visible source check."
+          }
+        },
+        {
+          "page": 4,
+          "kind": "unresolved_diagnostic",
+          "check": "number_differences",
+          "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+          "adjudication_entry": {
+            "page": 4,
+            "check": "number_differences",
+            "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+            "reason": "Describe the visible source check."
+          }
+        },
+        {
+          "page": 4,
+          "kind": "unresolved_diagnostic",
+          "check": "independent_parser_number_differences",
+          "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+          "adjudication_entry": {
+            "page": 4,
+            "check": "independent_parser_number_differences",
+            "fingerprint": "797f8c5018f8f2d9219eb178d3e19a387eb8e01b7f868525e5e1fb7f2bece71b",
+            "reason": "Describe the visible source check."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s002-si-v0",
+      "title": "Supplementary Information",
+      "pages": 37,
+      "contact_sheets": [
+        "review-aid/s002-si-v0/pages-0001-0004.jpg",
+        "review-aid/s002-si-v0/pages-0005-0008.jpg",
+        "review-aid/s002-si-v0/pages-0009-0012.jpg",
+        "review-aid/s002-si-v0/pages-0013-0016.jpg",
+        "review-aid/s002-si-v0/pages-0017-0020.jpg",
+        "review-aid/s002-si-v0/pages-0021-0024.jpg",
+        "review-aid/s002-si-v0/pages-0025-0028.jpg",
+        "review-aid/s002-si-v0/pages-0029-0032.jpg",
+        "review-aid/s002-si-v0/pages-0033-0036.jpg",
+        "review-aid/s002-si-v0/pages-0037-0037.jpg"
+      ],
+      "items": [
+        {
+          "page": 15,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0015-b000"
+        },
+        {
+          "page": 26,
+          "kind": "extractor_warning",
+          "detail": "Review possible header/footer: p0026-b000"
+        },
+        {
+          "page": 28,
+          "kind": "extractor_warning",
+          "detail": "OCR unavailable or failed: FzErrorLibrary. Page image retained for review."
+        },
+        {
+          "page": 3,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0002-b007",
+          "item": "p0003-b000"
+        },
+        {
+          "page": 5,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0004-b006",
+          "item": "p0005-b000"
+        },
+        {
+          "page": 9,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0008-b005",
+          "item": "p0009-b000"
+        },
+        {
+          "page": 13,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0012-b007",
+          "item": "p0013-b000"
+        },
+        {
+          "page": 19,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0018-b006",
+          "item": "p0019-b000"
+        },
+        {
+          "page": 20,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0019-b006",
+          "item": "p0020-b000"
+        },
+        {
+          "page": 25,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0024-b008",
+          "item": "p0025-b000"
+        },
+        {
+          "page": 27,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0026-b008",
+          "item": "p0027-b000"
+        },
+        {
+          "page": 33,
+          "kind": "possible_cross_page_join",
+          "previous_item": "p0032-b006",
+          "item": "p0033-b000"
+        },
+        {
+          "page": 13,
+          "kind": "unresolved_diagnostic",
+          "check": "number_differences",
+          "fingerprint": "6439ca2d98bdc9f0331c2425cf688e9bc582356e1734afc3008e9cb617f6583f",
+          "adjudication_entry": {
+            "page": 13,
+            "check": "number_differences",
+            "fingerprint": "6439ca2d98bdc9f0331c2425cf688e9bc582356e1734afc3008e9cb617f6583f",
+            "reason": "Describe the visible source check."
+          }
+        },
+        {
+          "page": 13,
+          "kind": "unresolved_diagnostic",
+          "check": "independent_parser_number_differences",
+          "fingerprint": "6439ca2d98bdc9f0331c2425cf688e9bc582356e1734afc3008e9cb617f6583f",
+          "adjudication_entry": {
+            "page": 13,
+            "check": "independent_parser_number_differences",
+            "fingerprint": "6439ca2d98bdc9f0331c2425cf688e9bc582356e1734afc3008e9cb617f6583f",
+            "reason": "Describe the visible source check."
+          }
+        },
+        {
+          "page": 20,
+          "kind": "unresolved_diagnostic",
+          "check": "number_differences",
+          "fingerprint": "9965a1903d4801dc7d15e62f5508d6415a2e4aa81647d28c15e7eb79c50a2eea",
+          "adjudication_entry": {
+            "page": 20,
+            "check": "number_differences",
+            "fingerprint": "9965a1903d4801dc7d15e62f5508d6415a2e4aa81647d28c15e7eb79c50a2eea",
+            "reason": "Describe the visible source check."
+          }
+        },
+        {
+          "page": 20,
+          "kind": "unresolved_diagnostic",
+          "check": "independent_parser_number_differences",
+          "fingerprint": "9965a1903d4801dc7d15e62f5508d6415a2e4aa81647d28c15e7eb79c50a2eea",
+          "adjudication_entry": {
+            "page": 20,
+            "check": "independent_parser_number_differences",
+            "fingerprint": "9965a1903d4801dc7d15e62f5508d6415a2e4aa81647d28c15e7eb79c50a2eea",
+            "reason": "Describe the visible source check."
+          }
+        },
+        {
+          "page": 23,
+          "kind": "unresolved_diagnostic",
+          "check": "number_differences",
+          "fingerprint": "9965a1903d4801dc7d15e62f5508d6415a2e4aa81647d28c15e7eb79c50a2eea",
+          "adjudication_entry": {
+            "page": 23,
+            "check": "number_differences",
+            "fingerprint": "9965a1903d4801dc7d15e62f5508d6415a2e4aa81647d28c15e7eb79c50a2eea",
+            "reason": "Describe the visible source check."
+          }
+        },
+        {
+          "page": 23,
+          "kind": "unresolved_diagnostic",
+          "check": "independent_parser_number_differences",
+          "fingerprint": "9965a1903d4801dc7d15e62f5508d6415a2e4aa81647d28c15e7eb79c50a2eea",
+          "adjudication_entry": {
+            "page": 23,
+            "check": "independent_parser_number_differences",
+            "fingerprint": "9965a1903d4801dc7d15e62f5508d6415a2e4aa81647d28c15e7eb79c50a2eea",
+            "reason": "Describe the visible source check."
+          }
+        },
+        {
+          "page": 32,
+          "kind": "unresolved_diagnostic",
+          "check": "independent_parser_number_differences",
+          "fingerprint": "3c86d0e80d6414772ed9be3c95141439fc59b15c3b5cbeb727bf2f95e94f3c9d",
+          "adjudication_entry": {
+            "page": 32,
+            "check": "independent_parser_number_differences",
+            "fingerprint": "3c86d0e80d6414772ed9be3c95141439fc59b15c3b5cbeb727bf2f95e94f3c9d",
+            "reason": "Describe the visible source check."
+          }
+        }
+      ]
+    }
+  ]
+}

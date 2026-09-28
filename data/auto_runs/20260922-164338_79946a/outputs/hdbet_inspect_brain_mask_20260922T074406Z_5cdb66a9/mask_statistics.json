@@ -1,0 +1,146 @@
+{
+ "tool": "hdbet_inspect_brain_mask",
+ "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/v2.8.1/nnunetv2/utilities/overlay_plots.py",
+ "hdbet_reference": "https://github.com/MIC-DKFZ/HD-BET/blob/678e44d546a84de0f2a7fc245f176b82b7d912fd/HD_BET/hd_bet_prediction.py",
+ "mask_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+ "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+ "shape_xyz": [
+  97,
+  115,
+  97
+ ],
+ "spacing_mm": [
+  2.0,
+  2.0,
+  2.0
+ ],
+ "mask_pixel_type": "8-bit unsigned integer",
+ "mask_value_summary": {
+  "dtype_as_read": "uint8",
+  "n_unique": 2,
+  "values_if_few": [
+   0,
+   1
+  ],
+  "min": 0.0,
+  "max": 1.0,
+  "n_nan": 0,
+  "all_integer": true,
+  "is_binary_01": true
+ },
+ "foreground_rule": "mask != 0",
+ "threshold": 0.5,
+ "binarised_copy": null,
+ "foreground_voxels": 237292,
+ "voxel_volume_mm3": 8.0,
+ "volume_mm3": 1898336.0,
+ "volume_mL": 1898.336,
+ "foreground_fraction": 0.21930159375620936,
+ "bounding_box_voxel_xyz": {
+  "min": [
+   12,
+   13,
+   3
+  ],
+  "max": [
+   84,
+   103,
+   80
+  ],
+  "size_voxels": [
+   73,
+   91,
+   78
+  ],
+  "size_mm": [
+   146.0,
+   182.0,
+   156.0
+  ]
+ },
+ "centroid_voxel_xyz": [
+  48.26428198169344,
+  55.36557490349443,
+  44.020413667548844
+ ],
+ "centroid_world_ras_mm": [
+  0.028563963386886826,
+  -21.768850193011147,
+  9.540827335097688
+ ],
+ "connected_components": {
+  "n_components": 1,
+  "largest_component_voxels": 237292,
+  "largest_component_fraction": 1.0,
+  "connectivity": 26
+ },
+ "grid_check": {
+  "same_shape": true,
+  "same_spacing": true,
+  "same_origin": true,
+  "same_direction": true,
+  "max_abs_diff": {
+   "spacing_mm": 0.0,
+   "origin_mm": 0.0,
+   "direction": 0.0
+  },
+  "tolerances": {
+   "spacing_mm": 0.001,
+   "origin_mm": 0.01,
+   "direction": 0.001
+  },
+  "image_size_xyz": [
+   97,
+   115,
+   97
+  ],
+  "mask_size_xyz": [
+   97,
+   115,
+   97
+  ]
+ },
+ "orientation": {
+  "mask": {
+   "axcodes": "RAS",
+   "accepted": true,
+   "warning": null
+  },
+  "image": {
+   "axcodes": "RAS",
+   "accepted": true,
+   "warning": null
+  }
+ },
+ "overlay": {
+  "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+  "mask_used": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+  "overlay_intensity": 0.6,
+  "selected_slice_axis0": 40,
+  "axis_note": "array axis 0 = SimpleITK z (NIfTI k; superior-inferior for RAS/LAS volumes); rows = y, columns = x voxel index; no spacing/orientation handling, as upstream.",
+  "views": {
+   "axis0": {
+    "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png",
+    "selected_slice": 40
+   },
+   "axis1": {
+    "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis1.png",
+    "selected_slice": 44
+   },
+   "axis2": {
+    "png": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis2.png",
+    "selected_slice": 43
+   }
+  },
+  "child_process": {
+   "runner": "tools._common.run_in_subprocess",
+   "wall_time_s": 2.319,
+   "child_stdout_bytes": 0,
+   "child_stderr_bytes": 0,
+   "stdout_log": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/plot_overlay_child.stdout.log",
+   "stderr_log": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/plot_overlay_child.stderr.log"
+  }
+ },
+ "warnings": [],
+ "wall_time_s": 2.474632594967261
+}

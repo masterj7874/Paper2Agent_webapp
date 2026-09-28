@@ -1,0 +1,62 @@
+{
+  "page": 14,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0014.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0014.png at full size and compared every item with evidence/page-0014.json and the native text layer. Page carries the tail of Step 10 (compound 12-10, continuing the heading that ends page 13), the Step 11 heading, the ISM061-12 final-step paragraph, and an unlabelled 1H NMR spectrum. No join_previous set on p0014-b000: page 13 ends with the bold heading 'Step 10: Preparation of Compound 12-10', so this paragraph starts a new block rather than continuing a sentence. PRESERVED two source defects verbatim after checking the rendered page: 'p-toluenesulfonyl chloride (664 mg,3 µmol)' really prints µmol (micro sign U+00B5) although the parallel step on page 13 says 3 mmol, and the missing spaces in '(410 mg,1.4 mmol)', '(486 mg,4.8 mmol)', '(120 mg,0.2 mmol)', 'Y:14.5%' are in the PDF. Repaired the NMR run-in: extractor emitted '[M+H]<sup>+</sup> .<sup>1</sup> H NMR ... Methanol- _d_ 4)', which renders with spurious spaces; rewritten as '[M+H]<sup>+</sup>. <sup>1</sup>H NMR ... Methanol-d4)' to match the printed characters (the italic/subscript deuteration label is dropped in favour of the plain searchable form already used elsewhere in this range). Figure p0014-b003 bbox widened from [51,413,450,676] to [50,412.5,466,712]: the extractor crop cut off the right-hand intensity axis (0.23 ... -0.02) and the whole bottom f1 (ppm) axis with its integration labels; the new box encloses the vector-drawing union [53.2,413.4,460.6,707.5] with a small margin. Named it si-nmr-ism061-12 (it is the 1H NMR of the ISM061-12 title compound described immediately above); replaced placeholder figure-p0014-003. No tables, formulas or code on this page. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0014-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        195.0
+      ],
+      "markdown": "To a solution of **compound 12-9** (410 mg,1.4 mmol) in dichloromethane (10 mL) was added triethylamine (486 mg,4.8 mmol), 4-dimethylaminopyridine (37 mg,0.3 mmol) and p-toluenesulfonyl chloride (664 mg,3 µmol). The mixture was stirred at 20 °C under N2 for 2 hours. After the addition of ice water (10 mL), the mixture was extracted with dichloromethane (20 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound (120 mg, Y:14.5%).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0014-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        204.0,
+        239.0,
+        216.0
+      ],
+      "markdown": "#### Step 11: Preparation of ISM061-12",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0014-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        235.0,
+        542.0,
+        412.0
+      ],
+      "markdown": "A solution of **compound 12-10** (120 mg,0.2 mmol) in ethylamine (5 mL, 1M in THF) was stirred at 25 °C for 16 hours. The mixture was concentrated to give crude produce, which was dissolved in ethanol (2 mL) and water (0.3 mL), and then NaOH (12 mg, 0.3 mmol) was added. The reaction was stirred at 25 °C for 4 hours. The pH is adjusted to 6-7 with 1N hydrochloric acid. The solution is directly purified by HPLC to afford the title compound as a white solid (5.7 mg, Y: 8.9%). LCMS (ESI): 326.2 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, Methanol-d4) δ 7.93 (s, 1H), 6.49 (s, 1H), 5.74 (s, 1H), 3.21 – 3.07 (m, 4H), 2.93 – 2.84 (m, 2H), 2.75 (td, _J_ = 14.5, 7.0 Hz, 2H), 2.66 (t, _J_ = 6.0 Hz, 2H), 2.59 – 2.38 (m, 3H), 2.19 – 2.08 (m, 1H), 1.93 – 1.84 (m, 1H), 1.83 – 1.71 (m, 1H), 1.69 – 1.60 (m, 2H), 1.34 (t, _J_ = 7.3 Hz, 3H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0014-b003",
+      "kind": "figure",
+      "bbox": [
+        50.0,
+        412.5,
+        466.0,
+        712.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-12",
+      "asset_name": "si-nmr-ism061-12"
+    }
+  ]
+}

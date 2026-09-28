@@ -1,0 +1,196 @@
+{
+ "id": "638279ab35a1",
+ "agent": "MedKG",
+ "tool": "medkg_related_work",
+ "arguments": {
+  "topic": "generalist cell segmentation microscopy deep learning",
+  "k": 10,
+  "summarise": true,
+  "modality": "microscopy",
+  "task": "segmentation"
+ },
+ "status": "done",
+ "created_at": 1790063337.4848583,
+ "started_at": 1790063337.4859724,
+ "finished_at": 1790063413.6740587,
+ "result": {
+  "message": "10 related-work rows; LLM=codex; status=ok.",
+  "summary": {
+   "n_rows": 10,
+   "n_q1": 10,
+   "llm": {
+    "provider": "codex",
+    "model": "gpt-6-astra",
+    "elapsed_s": 46.94,
+    "fallback_used": false,
+    "error": null
+   },
+   "timing": {
+    "total_ms": 47672.1,
+    "retrieval_ms": 623.6,
+    "embed_ms": null,
+    "dense_ms": 116.5,
+    "lexical_ms": 152.7,
+    "rerank_ms": 233.4,
+    "graph_ms": 102.0,
+    "llm_ms": 46943.4
+   },
+   "status": "ok"
+  },
+  "artifacts": [
+   {
+    "description": "related_work — full JSON response",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165013-db3f45.json"
+   },
+   {
+    "description": "related_work — markdown",
+    "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-165013-db3f45.md"
+   }
+  ],
+  "reference": "http://127.0.0.1:8790/docs",
+  "rows": [
+   {
+    "work_id": "DOI:10.1038/s41592-020-01018-x",
+    "title": "Cellpose: a generalist algorithm for cellular segmentation",
+    "year": 2020,
+    "journal": "Nature Methods",
+    "is_q1": true,
+    "doi": "10.1038/s41592-020-01018-x",
+    "method": "Cellpose: generalist deep learning segmentation with a 3D extension that reuses the 2D model",
+    "modality": "2D and 3D cellular microscopy images",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Introduces a generalist model trained on over 70,000 segmented objects that segments diverse cellular images without retraining or parameter adjustment and extends to 3D without 3D-labeled data.",
+    "score": 0.9945730566978455
+   },
+   {
+    "work_id": "PMC6171227",
+    "title": "A deep learning-based algorithm for 2-D cell segmentation in microscopy images.",
+    "year": 2018,
+    "journal": "BMC bioinformatics",
+    "is_q1": true,
+    "doi": "10.1186/s12859-018-2375-z",
+    "method": "Deep learning prediction of cell and nuclear locations combined with thresholding and watershed segmentation",
+    "modality": "Single-channel 2D light microscopy images with whole-cell staining",
+    "dataset": "not stated",
+    "metric_values": "Similarity to ground truth segmentation 86%",
+    "summary": "Segments whole cells across varied markers and magnifications using a single staining channel without a separate nuclear stain.",
+    "score": 0.967777669429779
+   },
+   {
+    "work_id": "PMC9678729",
+    "title": "Scellseg: A style-aware deep learning tool for adaptive cell instance segmentation by contrastive fine-tuning.",
+    "year": 2022,
+    "journal": "iScience",
+    "is_q1": true,
+    "doi": "10.1016/j.isci.2022.105506",
+    "method": "Scellseg: style-aware pretrained model with contrastive fine-tuning using unlabeled data",
+    "modality": "Microscopy images of organelles, cells, and organisms",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Introduces an adaptive instance segmentation pipeline with strong transferability whose fine-tuning performance plateaus after approximately eight images.",
+    "score": 0.9489172697067261
+   },
+   {
+    "work_id": "PMC9444243",
+    "title": "DetecDiv, a generalist deep-learning platform for automated cell division tracking and survival analysis.",
+    "year": 2022,
+    "journal": "eLife",
+    "is_q1": true,
+    "doi": "10.7554/elife.79519",
+    "method": "DetecDiv: deep learning-based division tracking, time-series classification, and semantic segmentation",
+    "modality": "Time-lapse microscopy of yeast in microfluidic traps",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Combines microfluidic imaging and deep learning to automate single-cell division tracking, replicative lifespan reconstruction, and stress-response survival analysis.",
+    "score": 0.948441743850708
+   },
+   {
+    "work_id": "PMC12400132",
+    "title": "DeepSCEM: A User-Friendly Solution for Deep Learning-Based Image Segmentation in Cellular Electron Microscopy.",
+    "year": 2025,
+    "journal": "Biology of the cell",
+    "is_q1": true,
+    "doi": "10.1111/boc.70032",
+    "method": "DeepSCEM: convolutional neural network-based image segmentation",
+    "modality": "Cellular electron microscopy images",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Provides a user-friendly tool for generating and training deep learning models for organelle segmentation in cellular electron microscopy.",
+    "score": 0.9319595694541931
+   },
+   {
+    "work_id": "PMC12705939",
+    "title": "Artificial Intelligence for Organelle Segmentation in Live-Cell Imaging.",
+    "year": 2025,
+    "journal": "Research (Washington, D.C.)",
+    "is_q1": true,
+    "doi": "10.34133/research.1035",
+    "method": "Review of segmentation approaches, including deep learning, label-efficient strategies, synthetic data, and physics-guided modeling",
+    "modality": "Live-cell organelle microscopy, including 3D imaging",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Reviews organelle segmentation methods and strategies to improve generalization, reduce annotation requirements, and address 3D and multi-organelle imaging.",
+    "score": 0.9270997643470764
+   },
+   {
+    "work_id": "PMC7785326",
+    "title": "Leveraging multimodal microscopy to optimize deep learning models for cell segmentation.",
+    "year": 2021,
+    "journal": "APL bioengineering",
+    "is_q1": true,
+    "doi": "10.1063/5.0027993",
+    "method": "Deep learning segmentation trained on channel-sampled subimage stacks from hyper-labeled images",
+    "modality": "Multimodal microscopy combining fluorescence and label-free brightfield images",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Uses identical cells imaged across multiple channels to compare labeling strategies and train segmentation models that accommodate varied labeling conditions.",
+    "score": 0.9227612018585205
+   },
+   {
+    "work_id": "PMC11828867",
+    "title": "Cellpose as a reliable method for single-cell segmentation of autofluorescence microscopy images.",
+    "year": 2025,
+    "journal": "Scientific reports",
+    "is_q1": true,
+    "doi": "10.1038/s41598-024-82639-6",
+    "method": "Cellpose autofluorescence-trained model (ATM) trained with manually segmented nuclear masks",
+    "modality": "Multiphoton NAD(P)H autofluorescence intensity imaging with co-registered NAD(P)H and FAD FLIM in 2D and 3D cultures",
+    "dataset": "Private cohort: PANC-1 cells and patient-derived cancer organoids from 9 patients",
+    "metric_values": "R² > 0.9 for ATM versus manual mask-derived ORR, mean NAD(P)H lifetime, and mean FAD lifetime; repeated-mask Dice reproducibility comparison p < 0.0001 (Dice values not stated)",
+    "summary": "Validates an autofluorescence-trained Cellpose model that improves segmentation reproducibility while preserving functional measurements and treatment effects in cells and cancer organoids.",
+    "score": 0.9181873202323914
+   },
+   {
+    "work_id": "PMC8665766",
+    "title": "Automatic improvement of deep learning-based cell segmentation in time-lapse microscopy by neural architecture search.",
+    "year": 2021,
+    "journal": "Bioinformatics (Oxford, England)",
+    "is_q1": true,
+    "doi": "10.1093/bioinformatics/btab556",
+    "method": "Neural architecture search over non-repeatable microarchitectures with a task-specific search space incorporating convolutional LSTM",
+    "modality": "2D time-lapse live-cell microscopy",
+    "dataset": "Cell Tracking Challenge: ten 2D datasets",
+    "metric_values": "not stated",
+    "summary": "Automatically searches segmentation architectures that exploit temporal information and achieve consistently competitive performance across ten Cell Tracking Challenge datasets.",
+    "score": 0.911337673664093
+   },
+   {
+    "work_id": "PMC9883049",
+    "title": "Instance segmentation of mitochondria in electron microscopy images with a generalist deep learning model trained on a diverse dataset",
+    "year": 2023,
+    "journal": "Cell Systems",
+    "is_q1": true,
+    "doi": "10.1016/j.cels.2022.12.006",
+    "method": "MitoNet: generalist deep learning model for mitochondrial instance segmentation",
+    "modality": "2D and volume cellular electron microscopy",
+    "dataset": "not stated",
+    "metric_values": "not stated",
+    "summary": "Introduces MitoNet trained using a heterogeneous resource of approximately 1.5 million EM images and 135,000 mitochondrial annotations, alongside tools for inference, visualization, and proofreading.",
+    "score": 0.9105454087257385
+   }
+  ]
+ },
+ "error": null,
+ "duration_s": 76.19
+}

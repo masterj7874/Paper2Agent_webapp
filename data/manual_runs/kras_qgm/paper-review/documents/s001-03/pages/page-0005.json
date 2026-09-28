@@ -1,0 +1,358 @@
+{
+  "page": 5,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0005.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0005.png and 400 dpi crops of the NMR isotope labels and the '(ref. 21)' citation, and compared every item with evidence/page-0005.json. Two-column page: body prose ends in the left column, the right column carries the tail of the closing paragraph, 'Online content', 'References' and refs 1-18. Reading order (left column p0005-b002/b003, then right column p0005-b004..b025) was already correct. Changes: (1) p0005-b003, NMR isotope labels were mis-parsed. 'spectroscopy.<sup>15</sup> N-labeled' attached the superscript to the preceding full stop and left N stranded; the printed text is 'spectroscopy. 15N-labeled' with a superscript 15 on N, so it is now 'spectroscopy. <sup>15</sup>N-labeled'. Likewise 'record<sup>1</sup> H-<sup>15</sup> N transverse' is now 'record <sup>1</sup>H-<sup>15</sup>N transverse' (superscript 1 on H, superscript 15 on N, en dash between). Both confirmed on a 400 dpi crop of lines at y=262 and y=273 pt. (2) Removed the space the extractor inserted before the comma after every bold volume number in refs 1-18 ('**47** , 20-33' -> '**47**, 20-33'), and the same pattern after any superscript. (3) p0005-b004 gets join_previous 'space': the left column's final paragraph ends '...diversity of generated molecules.' and the right column opens at the column margin (x=306.1 pt, not the 323.1 pt paragraph indent), so 'This synergistic approach...' is the same paragraph continuing. (4) Checked and left unchanged: '(ref. 21)' - the 21 is a baseline blue cross-reference, not a superscript (verified on a 400 dpi crop), so no <sup> was added; the Greek residues 'α2 helix', 'β4 sheet', 'α1 helix' and 'α4 regions' use U+03B1/U+03B2 with baseline numerals as printed; '1.4 μM' uses U+03BC; '~250–500 nM', '1–169', '19–82' and all volume page ranges are en dashes; the quotes in 'a ‘quantum advantage’' are a correct left/right pair; 'Sánchez-Lengeling, B. & Aspuru Guzik, A.' is printed without a hyphen in 'Aspuru Guzik' and was left as printed. (5) Heading levels/bold left as the extractor produced them ('# **Online content**', '# **References**') so they stay consistent with pages 8-13, which use the same '# top-level / ## subsection' convention; a bundle-wide pass to strip the bold and demote these to '##' under the document title is proposed to the coordinator rather than done unilaterally here. (6) Header items p0005-b000/b001 and footer p0005-b026 confirmed as running furniture (left as text); bare page number 1958 kept as 'omit'. (7) Could not set a join for p0005-b002: it continues page 3's sentence ('...did not show binding to KRAS-G12D' + 'according to SPR.'), but the whole Fig. 2 float page (page 4) sits between them. This needs plan.json reading_order; flagged for the coordinator. Coordinator: set join_previous=space on p0005-b002; its sentence begins on page 3 (p0003-b008 ends \"...did not show binding to KRAS-G12D\") and resumes here with \"according to SPR.\", with the full-page Fig. 2 float of page 4 relocated after it via plan.json reading_order. Coordinator: running header/footer furniture set to explicit omit, matching the treatment reviewers applied on pages 8-18, so both verification parsers exclude the same regions.",
+  "warnings": [
+    "Review possible header/footer: p0005-b000",
+    "Review possible header/footer: p0005-b001",
+    "Review possible header/footer: p0005-b026"
+  ],
+  "items": [
+    {
+      "id": "p0005-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0005-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0005-b002",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        49.0,
+        297.0,
+        176.0
+      ],
+      "markdown": "according to SPR. The compound also demonstrated activity against WT HRAS and NRAS, although it was less potent against HRAS. Notably, the compound had an unusual effect on our artificial control interaction pair, leading to a distinct dip to approximately 50% residual activity at concentrations of ~250–500 nM, before climbing again and ultimately leading to mild enhancement of the interaction at higher micromolar concentrations (Fig. 2f). This distinct pattern suggests an alternative mode of action for ISM061-022, revealing at least some degree of nonspecific activity, although partial specificity for mutant KRAS protein does still appear to be in evidence. Further investigation into the mechanism of action of this molecule will be the focus of future study.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0005-b003",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        178.0,
+        297.0,
+        746.0
+      ],
+      "markdown": "Overall, these live-cell experimental observations underscore the robustness of our approach, effectively identifying small-molecule candidates with biological activity. While these molecules are certainly at an early stage and in need of further refinement, our results underline the potential of our methodology to address and surmount the complexities inherent in targeting clinically challenging biomolecules. To further characterize ISM061-018-2’s interaction with KRAS-G12D, we used protein-detected nuclear magnetic resonance (NMR) spectroscopy. <sup>15</sup>N-labeled KRAS-G12D (residues 1–169) protein was used to record <sup>1</sup>H–<sup>15</sup>N transverse relaxation optimized spectroscopy (TROSY) heteronuclear single quantum coherence (HSQC) spectra in the presence and absence of ISM061-018-2 under guanosine diphosphate (GDP)-loaded conditions (Extended Data Fig. 2a). Substantial chemical shift perturbations (CSPs) were observed, indicating fast exchange between free and bound states, with some residues showing intensity loss because of exchange broadening. Mapping the weighted CSP values onto the Protein Data Bank (PDB) structure of GDP-bound KRAS-G12D (Extended Data Fig. 2b) revealed notable perturbations in the P-loop, α2 helix, switch II region and nearby β4 sheet residues, suggesting a binding mode within the switch II pocket. Additional CSPs in the α1 helix, switch I and α4 regions suggest conformational changes upon ligand binding. Although direct interaction with D12 (ref. 21), a residue critical for selectivity in inhibitors such as MRTX1133, was not confirmed, CSPs in the P-loop residues (G10 and A11) imply possible specific interactions. These NMR results strongly support ISM061-018-2’s binding to the switch II pocket of KRAS-G12D, further corroborating its proposed mechanism of action. However, cocrystallization studies are necessary to fully elucidate the binding residues. In summary, current quantum hardware is proving crucial for practical drug discovery applications, preempting the need for fully fault-tolerant quantum systems in the future. Quantum algorithms have the potential to design small molecules that better align with the distribution of the provided training set, achieving outcomes that are challenging for classical methods because of their ability to more effectively explore and represent complex, high-dimensional probability distributions. Using just 16 qubits, our algorithm demonstrates how quantum computing can enhance classical computation, leading to more efficient algorithms. Our hybrid quantum–classical model surpasses classical models in performance and matches up well against the state of the art according to the Tartarus benchmark. We applied this model to design inhibitors targeting the complex KRAS protein, synthesizing and evaluating 15 promising ligands. Among these, ISM061-018-2 and ISM061-022 stood out, showing inhibitory effects on KRAS variants with ISM061-018-2 displaying a high binding affinity of 1.4 μM and broad activity across KRAS mutants. These results, derived from our hybrid approach, indicate superior efficacy to fully classical models and introduce potential chemotypes that expand the chemical space explored in KRAS inhibitor design. While these findings are encouraging, they stop short of definitively proving a ‘quantum advantage’, achieving results unattainable by classical methods within a reasonable time frame. Future work will focus on exploring transformer-based generative models, coupled with increasing the number of qubits, to further enhance the quality and diversity of generated molecules.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0005-b004",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        563.0,
+        90.0
+      ],
+      "markdown": "This synergistic approach could potentially lead to the discovery of therapeutics that might be overlooked by other methods, while also reducing the preclinical drug discovery phase from several years to just a few months.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0005-b005",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        100.0,
+        383.0,
+        110.0
+      ],
+      "markdown": "# Online content",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0005-b006",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        113.0,
+        563.0,
+        165.0
+      ],
+      "markdown": "Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at https://doi.org/10.1038/s41587-024-02526-3.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0005-b007",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        176.0,
+        363.0,
+        185.0
+      ],
+      "markdown": "# References",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0005-b008",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        189.0,
+        562.0,
+        230.0
+      ],
+      "markdown": "1. Petrova, E. Innovation in the pharmaceutical industry: the process of drug discovery and development. In _Innovation and Marketing in the Pharmaceutical Industry: Emerging Practices, Research, and Policies_ (eds Ding, M. et al.) 19–82 (Springer, 2014).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b009",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        232.0,
+        552.0,
+        261.0
+      ],
+      "markdown": "2. DiMasi, J. A., Grabowski, H. G. & Hansen, R. W. Innovation in the pharmaceutical industry: new estimates of R&D costs. _J. Health Econ._ **47**, 20–33 (2016).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b010",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        264.0,
+        553.0,
+        294.0
+      ],
+      "markdown": "3. Sun, D., Gao, W., Hu, H. & Zhou, S. Why 90% of clinical drug development fails and how to improve it? _Acta Pharm. Sin. B_ **12**, 3049–3062 (2022).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b011",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        296.0,
+        556.0,
+        326.0
+      ],
+      "markdown": "4. Zhavoronkov, A. et al. Deep learning enables rapid identification of potent ddr1 kinase inhibitors. _Nat. Biotechnol._ **37**, 1038–1040 (2019).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b012",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        328.0,
+        558.0,
+        347.0
+      ],
+      "markdown": "5. Stokes, J. et al. A deep learning approach to antibiotic discovery. _Cell_ **180**, 688–702 (2020).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b013",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        350.0,
+        561.0,
+        380.0
+      ],
+      "markdown": "6. Ren, F. et al. AlphaFold accelerates artificial intelligence powered drug discovery: efficient discovery of a novel CDK20 small molecule inhibitor. _Chem. Sci._ **14**, 1443–1452 (2023).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b014",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        382.0,
+        560.0,
+        412.0
+      ],
+      "markdown": "7. Nigam, A. K., Pollice, R., Friederich, P. & Aspuru-Guzik, A. Artificial design of organic emitters via a genetic algorithm enhanced by a deep neural network. _Chem. Sci._ **15**, 2618–2639 (2024).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b015",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        414.0,
+        547.0,
+        445.0
+      ],
+      "markdown": "8. Sánchez-Lengeling, B. & Aspuru Guzik, A. Inverse molecular design using machine learning: generative models for matter engineering. _Science_ **361**, 360–365 (2018).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b016",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        447.0,
+        554.0,
+        466.0
+      ],
+      "markdown": "9. Pollice, R. et al. Data-driven strategies for accelerated materials design. _Acc. Chem. Res._ **54**, 849–860 (2021).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b017",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        468.0,
+        551.0,
+        488.0
+      ],
+      "markdown": "10. Nigam, A. K. et al. Assigning confidence to molecular property prediction. _Exp. Opin. Drug Discov._ **16**, 935–949 (2021).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b018",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        490.0,
+        562.0,
+        520.0
+      ],
+      "markdown": "11. Bohacek, R. S., McMartin, C. & Guida, W. C. The art and practice of structure-based drug design: a molecular modeling perspective. _Med. Res. Rev._ **16**, 3–50 (1996).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b019",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        522.0,
+        560.0,
+        541.0
+      ],
+      "markdown": "12. Santagati, R. et al. Drug design on quantum computers. _Nat. Phys._ **20**, 549–557 (2024).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b020",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        543.0,
+        554.0,
+        573.0
+      ],
+      "markdown": "13. Li, J., Topaloglu, R. O. & Ghosh, S. Quantum generative models for small molecule drug discovery. _IEEE Trans. Quantum Eng._ **2**, 1–8 (2021).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b021",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        576.0,
+        553.0,
+        606.0
+      ],
+      "markdown": "14. Batra, K. et al. Quantum machine learning algorithms for drug discovery applications. _J. Chem. Inf. Model._ **61**, 2641–2647 (2021).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b022",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        608.0,
+        550.0,
+        638.0
+      ],
+      "markdown": "15. Benedetti, M., Lloyd, E., Sack, S. & Fiorentini, M. Parameterized quantum circuits as machine learning models. _Quantum Sci. Technol._ **4**, 043001 (2019).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b023",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        640.0,
+        554.0,
+        681.0
+      ],
+      "markdown": "16. Hibat-Allah, M., Mauri, M., Carrasquilla, J. & Perdomo-Ortiz, A. A framework for demonstrating practical quantum advantage: racing quantum against classical generative models. _Commun. Phys._ **7**, 68 (2024).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b024",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        683.0,
+        560.0,
+        713.0
+      ],
+      "markdown": "17. McClean, J. R., Boixo, S., Smelyanskiy, V., Babbush, R. & Neven, H. Barren plateaus in quantum neural network training landscapes. _Nat. Commun._ **9**, 4812 (2018).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b025",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        715.0,
+        563.0,
+        745.0
+      ],
+      "markdown": "18. Gili, K., Hibat-Allah, M., Mauri, M., Ballance, C. J. & Perdomo-Ortiz, A. Do quantum circuit born machines generalize? _Quantum Sci. Technol._ **8**, 015021 (2023).",
+      "source_class": "list-item"
+    },
+    {
+      "id": "p0005-b026",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        762.0,
+        278.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0005-b027",
+      "kind": "omit",
+      "bbox": [
+        543.0,
+        763.0,
+        563.0,
+        770.0
+      ],
+      "markdown": "**1958**",
+      "source_class": "page-footer",
+      "reason": "Bare page number 1958 in the running foot; verified against previews/page-0005.png."
+    }
+  ]
+}

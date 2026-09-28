@@ -1,0 +1,760 @@
+{
+  "schema_version": 1,
+  "scan_metadata": {
+    "repository_name": "quantum-generative-models",
+    "paper_name": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors (Nature Biotechnology, doi:10.1038/s41587-024-02526-3)",
+    "repository_url": "https://github.com/aspuru-guzik-group/quantum-generative-models",
+    "pinned_tag": "1.0.0-beta.1",
+    "pinned_commit": "20cb407b228735dc479737cf765448e9c7d5a9cc",
+    "license": "MIT",
+    "local_source_path": "repo/quantum-generative-models",
+    "scan_date": "2026-09-23",
+    "route": "python",
+    "requested_filter": null,
+    "n_source_files_evaluated": 71,
+    "n_source_files_included": 4,
+    "n_tools_proposed": 8,
+    "success": true,
+    "explanation": "The repository has no tutorials/ directory, no notebooks, no test suite, and no pretrained checkpoints. Scanning therefore started from README.md, then read module implementations directly, then the stoned_algorithm/*_TEST.py scripts (the repository's own usage examples) and the benchmark/setting JSON files. The dominant constraint is that orquestra-qml-core is unavailable on PyPI (HTTP 404; Zapata AI discontinued Orquestra), which makes 31 of 71 Python files un-importable, including every training driver and the entire LSTM+QCBM training pipeline. Selection was confined to the 40-file orquestra-free subset. Eight tools were selected across four owning source modules, covering the paper's STONED-SELFIES chemical-space expansion, its fingerprint-similarity scoring, its medicinal-chemistry and structural-alert filter cascade, its generation-acceptance filter, its reward function, library diversity, and per-molecule property profiling. The QCBM was inspected closely and deferred: qcbm_qiskit.QCBMGenerator requires a pre-built parameterised circuit as a mandatory constructor argument and cannot construct one, and the only circuit source in the repository is orquestra's EntanglingLayerAnsatz exported via orquestra.integrations.qiskit.conversions.export_to_qiskit.",
+    "n_candidates_reviewed": 21,
+    "n_candidates_deferred": 5,
+    "n_candidates_omitted": 4,
+    "n_candidates_internal_or_merged": 4,
+    "candidate_accounting": "21 candidates reviewed = 8 exposed + 5 deferred (blocked by a missing dependency or external requirement) + 4 omitted (out of scope or defective) + 4 kept internal or merged into a selected tool."
+  },
+  "critical_findings": [
+    {
+      "id": "blocker_orquestra",
+      "severity": "blocking",
+      "finding": "orquestra-qml-core and orquestra-qml both return HTTP 404 from PyPI. 31 of 71 Python files import orquestra. This removes the whole quantum-classical training pipeline (LSTM prior training, QCBM training, sampling from pretrained models) from scope.",
+      "affected": [
+        "benchmark_models_v0.py",
+        "benchmark_models_priors.py",
+        "qDrug_generator_benchmark_parallel_v10.py",
+        "qDrug_generator_benchmark_parallel_v11_latest.py",
+        "qDrug_generator_benchmark_parallel_v13.py",
+        "vanilla_lstm_v0.py",
+        "sample_generation_from_pretrained_models_v0.py",
+        "models/recurrent/*",
+        "models/gan/*",
+        "models/aan/*",
+        "models/transformer*",
+        "models/priors/qcbm.py",
+        "models/priors/rbm.py",
+        "models/priors/loss.py",
+        "models/priors/multi.py",
+        "models/priors/zeros.py",
+        "utils/chem.py",
+        "utils/data.py",
+        "utils/selfies_encoding_class.py",
+        "utils/callbacks.py",
+        "utils/experiment.py"
+      ]
+    },
+    {
+      "id": "blocker_qcbm_circuit_not_constructible",
+      "severity": "blocking",
+      "finding": "models/priors/qcbm_qiskit.py is orquestra-free at import level, but QCBMGenerator.__init__ takes `qcbm_circuit` as a REQUIRED positional argument and never builds a circuit. The only place a circuit is produced is qDrug_generator_benchmark_parallel_v10.py:735-742, which builds it from orquestra.qml.models.qcbm.ansatze.alternating_entangling_layers.EntanglingLayerAnsatz + orquestra.qml.models.qcbm.layer_builders.LineEntanglingLayerBuilder and converts it with orquestra.integrations.qiskit.conversions.export_to_qiskit. Without orquestra there is no ansatz. Building a replacement ansatz would be paper-to-code reimplementation of the paper's central scientific claim, which is explicitly out of scope.",
+      "affected": [
+        "models/priors/qcbm_qiskit.py"
+      ]
+    },
+    {
+      "id": "blocker_qiskit_v0_api",
+      "severity": "blocking",
+      "finding": "models/priors/qcbm_qiskit.py, models/priors/error.py and models/error/error_mitigation.py are written against Qiskit 0.x. They use `from qiskit import Aer, execute, assemble, IBMQ`, `from qiskit.providers.aer import noise`, `qiskit.ignis.mitigation.measurement`, and `QuantumCircuit.bind_parameters` - ALL of which were removed in Qiskit 1.0. qiskit-ignis reached end of life in 2021 and the IBMQ provider was retired in 2024. The environment report records qiskit 2.5.2 as the available PyPI version, which cannot run this code. Running it would require pinning qiskit<1.0 plus qiskit-ignis, which conflicts with the rest of the environment and still leaves the missing-ansatz blocker.",
+      "affected": [
+        "models/priors/qcbm_qiskit.py",
+        "models/priors/error.py",
+        "models/error/error_mitigation.py"
+      ]
+    },
+    {
+      "id": "defect_stale_qcbm_call_site",
+      "severity": "informational",
+      "finding": "The single in-repo instantiation of QCBMGenerator (qDrug_generator_benchmark_parallel_v10.py:747-755) passes `backend=` and `noise_model=` keyword arguments. The current qcbm_qiskit.py signature accepts neither (it has `train_backend` and `sampeling_backend`). That call would raise TypeError. The only usage example for the QCBM class is therefore itself broken against the pinned source, so no in-repo call establishes a working interface.",
+      "affected": [
+        "qDrug_generator_benchmark_parallel_v10.py",
+        "models/priors/qcbm_qiskit.py"
+      ]
+    },
+    {
+      "id": "constraint_utils_package_init",
+      "severity": "implementation_constraint",
+      "finding": "utils/__init__.py imports .callbacks, .chem, .data and .experiment, all of which import orquestra. `import utils.filter` therefore fails even though utils/filter.py itself is orquestra-free. Meanwhile utils/lipinski_utils.py uses relative imports (`from .mol_methods import verify_sequence`, `from .filter import apply_filters`) and so needs package context. The implementer must register a synthetic `utils` package module whose __path__ points at the utils directory WITHOUT executing the real __init__.py (e.g. importlib.util.module_from_spec with submodule_search_locations), then import utils.filter / utils.lipinski_utils / utils.stoned_utils through it. Loading utils/filter.py as a bare top-level module by file path also works, but breaks lipinski_utils' relative imports.",
+      "affected": [
+        "utils/__init__.py",
+        "utils/filter.py",
+        "utils/lipinski_utils.py"
+      ]
+    },
+    {
+      "id": "constraint_filter_data_cwd_silent_failure",
+      "severity": "implementation_constraint",
+      "finding": "utils/filter.py loads its alert catalogues at module level from the CWD-relative paths ./database/mcf.csv, ./database/wehi_pains.csv and ./database/pains.txt (lines 38-55), wrapped in `except FileNotFoundError` that only logs a warning. If the process CWD is not the repository root, the module still imports successfully but the globals `dic` and `_filters` are never bound, and pains_filt / passes_wehi_mcf then raise NameError at call time. In the paper's own combine_filter that NameError is swallowed by a bare `except Exception`, so the cascade would silently return an EMPTY result set instead of failing. The wrapper MUST assert that `dic` and `_filters` are populated before use. This is a required precondition check, not defensive padding.",
+      "affected": [
+        "utils/filter.py",
+        "qDrug_generator_benchmark_parallel_v10.py"
+      ]
+    },
+    {
+      "id": "defect_pains_bom",
+      "severity": "informational",
+      "finding": "database/pains.txt and stoned_algorithm/DATA/pains.txt are byte-identical and both begin with a UTF-8 BOM (ef bb bf). Read with a plain open(), the first SMARTS of line 1 is prefixed with U+FEFF, so Chem.MolFromSmarts returns None for it and pains_filt silently skips that one pattern (ene_six_het_A(483)) via its `if subs != None` guard. 480 of the 481 PAINS patterns are active. This is upstream behaviour and must be PRESERVED, not silently fixed, or results will diverge from the paper's. Record it in the tool documentation. data/KRAS_G12D/KRAS_G12D_inhibitors_update202209_updated.csv also carries a BOM, so its first column parses as '\\ufeffid' unless read with encoding='utf-8-sig'.",
+      "affected": [
+        "database/pains.txt",
+        "utils/filter.py",
+        "data/KRAS_G12D/KRAS_G12D_inhibitors_update202209_updated.csv"
+      ]
+    },
+    {
+      "id": "defect_name_collision_lipinski_filter",
+      "severity": "informational",
+      "finding": "Two different functions are named lipinski_filter. utils/filter.py:58 takes an RDKit Mol plus max_mol_weight=800 and returns a bool. utils/lipinski_utils.py:79 takes a LIST of SMILES plus five keyword thresholds (max_mol_weight=500.0) and returns a filtered list. utils/__init__.py imports both (line 13 then line 22), so the later import from .filter shadows the lipinski_utils one. Tools must bind to a fully qualified module path, never the bare name.",
+      "affected": [
+        "utils/filter.py",
+        "utils/lipinski_utils.py",
+        "utils/__init__.py"
+      ]
+    },
+    {
+      "id": "defect_compute_array_value_elif_chain",
+      "severity": "informational",
+      "finding": "utils/docking.py:144 compute_array_value builds a 6-element indicator vector but uses an if/elif chain, so evaluation stops at the FIRST violated criterion and every later slot stays 1 regardless of whether it is actually satisfied. The vector therefore reports 'first violation found', not 'all violations'. This makes it unsuitable to promote as a standalone scientific tool; it is recorded as omitted rather than repaired, since repairing it would change upstream behaviour used by the paper's driver.",
+      "affected": [
+        "utils/docking.py"
+      ]
+    },
+    {
+      "id": "si_pdf_has_no_computational_methods",
+      "severity": "verification_impact",
+      "finding": "docs/si/SI_v0.pdf (37 pages) was read in full. It contains ONLY wet-lab synthetic chemistry (S1.1-S1.13, Schemes S1-S13, NMR/LCMS characterisation of the ISM061 series) and one page of SPR affinity measurements (S3). Section S2 is entirely missing - the numbering jumps S1 to S3 - and the document ends mid-topic on p.37 citing Tables 2 and 3 that are not present. Full-text search gives zero occurrences of STONED, SELFIES, SMILES, QCBM, ansatz, qubit, dock, Tanimoto, fingerprint, diversity, Lipinski, PAINS, SYBA, rotatable, seed, or reproduc. The word 'quantum' appears once, in the title. Consequence: the SI cannot supply documented behaviour, parameter values, or expected results for ANY selected tool. It also contains no reproducibility or seed statement. The published Nature Biotechnology supplementary (a later revision than this v0 draft) may contain the missing S2, but it is not in the pinned repository and must not be assumed.",
+      "affected": [
+        "docs/si/SI_v0.pdf"
+      ]
+    },
+    {
+      "id": "no_test_suite_no_checkpoints",
+      "severity": "verification_impact",
+      "finding": "The repository has no test suite, no CI configuration, and no pretrained weights (no .pt, .pth, .ckpt or .pkl anywhere). The settings JSON files reference absolute cluster paths that do not exist locally (e.g. /project/mghazi/good_latest_results/.../mode_prior_150.pkl, experiment_root /project/mghazi/experiment_results). Exactly two repository-authored expected results exist anywhere in the tree, both listed under verification_sources below. Every other tool must be verified by direct upstream execution on traceable bundled inputs, which establishes wrapper fidelity but NOT agreement with any published number."
+    },
+    {
+      "id": "secret_in_source",
+      "severity": "informational",
+      "finding": "qDrug_generator_benchmark_parallel_v10.py:791-794 (and the same block in v11/v13, benchmark_models_v0.py and vanilla_lstm_v0.py) contains a hardcoded plaintext username and password for https://rip.chemistry42.com. The credentials are committed at the pinned revision. No tool must surface, transmit or embed them; utils/api.py is deferred partly for this reason.",
+      "affected": [
+        "qDrug_generator_benchmark_parallel_v10.py",
+        "utils/api.py"
+      ]
+    }
+  ],
+  "stochasticity_and_seeding": {
+    "summary": "No function in the orquestra-free subset accepts a seed argument, and no seed is set anywhere in the repository. Reproducibility must be handled entirely in the wrapper, and only two of the three random sources can actually be controlled.",
+    "sources": [
+      {
+        "operation": "utils/stoned_utils.py:mutate_selfie / get_mutated_SELFIES",
+        "rng": "numpy global (np.random.choice, np.random.randint)",
+        "seedable": true,
+        "mechanism": "np.random.seed(s) before the call makes the mutation sequence deterministic. The upstream functions take no seed parameter, so the wrapper must expose an optional seed and set the global numpy state itself. Per the wrapping contract, expose the seed ONLY with this documented caveat about it being a process-global effect."
+      },
+      {
+        "operation": "utils/stoned_utils.py:randomize_smiles",
+        "rng": "RDKit internal RNG via Chem.MolToSmiles(..., doRandom=True)",
+        "seedable": false,
+        "mechanism": "RDKit's doRandom path does not consume numpy's RNG and exposes no seed through this call, so np.random.seed does NOT make randomize_smiles reproducible. Any tool that calls it is irreducibly stochastic. Verification for such a tool must use invariants (e.g. Chem.CanonSmiles(randomize_smiles(mol)) == Chem.CanonSmiles(input)) and distributional properties, never a fixed expected output list."
+      },
+      {
+        "operation": "models/priors/qcbm_qiskit.py:QCBMGenerator.generate / param_initializer",
+        "rng": "numpy global plus quantum shot sampling",
+        "seedable": false,
+        "mechanism": "Deferred anyway. Shot-based sampling on a simulator would need a transpile/backend seed that the code never sets, and the default param_initializer draws from np.random.uniform with no seed."
+      },
+      {
+        "operation": "models/priors/qcbm_qiskit.py:RandomCardinalityGenerator.generate",
+        "rng": "numpy global (np.random.permutation)",
+        "seedable": true,
+        "mechanism": "Seedable via np.random.seed, but omitted as a tool for low scientific value (see tool_review)."
+      }
+    ],
+    "fully_deterministic_operations": [
+      "utils/filter.py: apply_filters, legacy_apply_filters, pains_filt, passes_wehi_mcf, get_diversity, substructure_violations, filter_phosphorus, maximum_ring_size, FindAromaticRings",
+      "utils/lipinski_utils.py: compute_lipinski, compute_qed, compute_logp",
+      "utils/stoned_utils.py: get_fp_scores, get_fingerprint, sanitize_smiles, get_selfie_chars",
+      "syba.SybaClassifier.predict (deterministic after fitDefaultScore)"
+    ]
+  },
+  "verification_sources": {
+    "repository_authored_expected_results": [
+      {
+        "id": "vs_pains_doctest",
+        "source_path": "stoned_algorithm/PAINS_TEST.py",
+        "source_lines": "13-19",
+        "kind": "doctest",
+        "input": "Chem.MolFromSmiles(\"c1ccccc1N=Nc1ccccc1\")  (azobenzene)",
+        "expected": "props[0] == 'azo_A(324)'",
+        "corroboration": "Confirmed by inspection: database/pains.txt line 6 is `[#7;!R]=[#7] azo_A(324)`, and azobenzene's N=N is acyclic, so the SMARTS matches. This is a real, checkable expected value authored by the repository.",
+        "applies_to_tools": [
+          "kras_qgm_screen_structural_alerts"
+        ],
+        "caveat": "The doctest is written against PAINS_TEST.py:pains_filt, which returns the mutated Mol. The OWNING implementation utils/filter.py:pains_filt returns the list of property names directly. The equivalent assertion on the owning module is `'azo_A(324)' in utils.filter.pains_filt(mol)`. PAINS_TEST.py cannot be imported as-is: its module level reads ./DATA/sim_uniq_2023_res_short.csv, which is not in the repository."
+      },
+      {
+        "id": "vs_stoned_experiment_b",
+        "source_path": "utils/stoned_utils.py",
+        "source_lines": "283-363",
+        "kind": "__main__ usage example (STONED 'EXPERIMENT B')",
+        "input": "smi = 'C1CC(=O)NC2=C1C=CC(=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl' (Aripiprazole); fp_type='ECFP4'; num_random_samples=1000; num_mutation_ls=[1,2,3,4,5]",
+        "expected": "Prints counts and percentages of mutated molecules with ECFP4 Tanimoto similarity to the seed above 0.75, 0.6 and 0.4. The block is __name__-guarded, so `python utils/stoned_utils.py` from the repository root executes it directly with no edits.",
+        "corroboration": "This is the only executable end-to-end example of the STONED procedure in the repository. Its counts are stochastic (see stochasticity_and_seeding), so it provides a real reference RUN and real distributional bounds, not fixed numbers.",
+        "applies_to_tools": [
+          "kras_qgm_expand_chemical_space_stoned",
+          "kras_qgm_score_fingerprint_similarity"
+        ]
+      }
+    ],
+    "traceable_bundled_inputs": [
+      {
+        "id": "vi_kras_inhibitors",
+        "path": "data/KRAS_G12D/KRAS_G12D_inhibitors_update202209_updated.csv",
+        "rows": 644,
+        "columns": "id, smiles, KRAS G12D SPR KD (nM), KRAS G12D binding IC50 (nM), pERK IC50 (nM)",
+        "provenance": "Bundled in the repository at the pinned commit; published KRAS G12D inhibitors with measured affinities. This is the seed set the paper's STONED expansion starts from.",
+        "note": "UTF-8 BOM on the header; read with encoding='utf-8-sig'. Use column 'smiles'.",
+        "usable_for": [
+          "kras_qgm_filter_molecules_medchem",
+          "kras_qgm_screen_structural_alerts",
+          "kras_qgm_compute_library_diversity",
+          "kras_qgm_profile_molecule_properties",
+          "kras_qgm_expand_chemical_space_stoned",
+          "kras_qgm_score_fingerprint_similarity",
+          "kras_qgm_apply_generation_acceptance_filter",
+          "kras_qgm_score_molecules_reward"
+        ]
+      },
+      {
+        "id": "vi_stoned_corpus",
+        "path": "data/KRAS_G12D/1Mstoned_vsc_initial_dataset_insilico_chemistry42_filtered.csv",
+        "rows": 1010510,
+        "columns": "unnamed index, smiles",
+        "provenance": "Bundled at the pinned commit. This is the paper's STONED-expanded, virtual-screening + Chemistry42-filtered training corpus.",
+        "note": "IMPORTANT: this file carries NO pass/fail labels, and it was filtered by the external Chemistry42 service, not by the repository's own apply_filters. It is a legitimate traceable INPUT corpus but it is NOT a labelled ground-truth set for the filter tools. Do not treat membership in this file as an expected apply_filters==True outcome. Use a deterministic slice (e.g. the first 2000 rows) to keep executor runtime bounded.",
+        "usable_for": [
+          "kras_qgm_filter_molecules_medchem",
+          "kras_qgm_screen_structural_alerts",
+          "kras_qgm_apply_generation_acceptance_filter",
+          "kras_qgm_score_molecules_reward",
+          "kras_qgm_compute_library_diversity"
+        ]
+      },
+      {
+        "id": "vi_alert_catalogues",
+        "path": "database/pains.txt (481 patterns), database/wehi_pains.csv (479 patterns), database/mcf.csv (22 patterns)",
+        "provenance": "Bundled alert catalogues loaded by utils/filter.py at module import.",
+        "usable_for": [
+          "kras_qgm_screen_structural_alerts",
+          "kras_qgm_apply_generation_acceptance_filter"
+        ]
+      }
+    ],
+    "how_executor_should_produce_references": "For the two sources above that carry repository-authored expectations, assert those exact values. For every other tool there is NO published or repo-authored expected result, so the executor must produce the reference by importing the upstream module directly (utils/filter.py, utils/stoned_utils.py, utils/lipinski_utils.py, loaded via the synthetic-package mechanism in constraint_utils_package_init), calling the upstream symbol on a named, deterministic slice of a bundled input file, and recording the ACTUAL returned values as the reference fixture - independently of, and before, any generated wrapper exists. That satisfies the verifier contract's 'direct upstream execution on the same inputs'. It must be reported honestly as establishing wrapper fidelity to the pinned implementation, NOT as reproducing a published result. No tool in this inventory can be validated against a number printed in the paper or the SI, because the SI contains no computational methods at all."
+  },
+  "tutorials": [
+    {
+      "path": "utils/filter.py",
+      "title": "utils.filter",
+      "description": "The canonical medicinal-chemistry and structural-alert filter module. This is the module the paper's production driver actually imports (qDrug_generator_benchmark_parallel_v10.py:59-68). Contains apply_filters (hard), legacy_apply_filters (soft), pains_filt, passes_wehi_mcf, get_diversity and the supporting substructure/ring/phosphorus primitives. Orquestra-free, uses modern pandas (pd.concat), loads the bundled alert catalogues from ./database/.",
+      "type": "script",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Include. Orquestra-free, importable (subject to the utils/__init__.py workaround), and it owns three distinct user tasks. It supersedes the four near-duplicate copies of the same code elsewhere in the tree."
+    },
+    {
+      "path": "utils/stoned_utils.py",
+      "title": "utils.stoned_utils",
+      "description": "The clean, importable library form of the STONED-SELFIES algorithm: randomize_smiles, sanitize_smiles, get_selfie_chars, the _FingerprintCalculator (9 fingerprint types), get_fingerprint, mutate_selfie, get_mutated_SELFIES and get_fp_scores. Ends with a __name__-guarded STONED 'EXPERIMENT B' example on Aripiprazole.",
+      "type": "script",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Include. This is the only STONED copy in the repository that imports cleanly: it is __main__-guarded, performs no module-level file reads, has no syba import, and draws its mutation alphabet from selfies.get_semantic_robust_alphabet() rather than the cwd-relative ./alphabet.txt that stoned_algorithm/stoned.py requires. Its __main__ block is a genuine runnable verification source."
+    },
+    {
+      "path": "utils/lipinski_utils.py",
+      "title": "utils.lipinski_utils",
+      "description": "Per-molecule drug-likeness profiling: compute_lipinski (returns passed/failed reason lists, a 5-element binary rule-compliance array and a property dict), compute_qed, compute_logp, log_partition_coefficient, plus list-based lipinski_filter / lipinski_hard_filter and a draw_compounds helper.",
+      "type": "script",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Include, for compute_lipinski/compute_qed/compute_logp only. These give a diagnostic property profile with per-rule reasons, which is a genuinely different output from the boolean filters. The list-based lipinski_filter/lipinski_hard_filter are merged away as near-duplicates of the medchem filter tool, and draw_compounds is excluded as a plotting helper that writes files to disk."
+    },
+    {
+      "path": "qDrug_generator_benchmark_parallel_v10.py",
+      "title": "qDrug_generator_benchmark_parallel_v10 (combine_filter and reward_fc only)",
+      "description": "The paper's full generation driver. The file as a whole imports orquestra at module level and cannot be executed or imported. Two self-contained functions inside it - combine_filter (lines 225-253) and reward_fc (lines 255-277) - depend only on orquestra-free symbols (utils.filter.apply_filters / legacy_apply_filters / passes_wehi_mcf / pains_filt, syba.predict, rdkit, torch) and encode the paper's actual acceptance and reward logic, including the hard/soft filter_constraint switch resolved at lines 594-604.",
+      "type": "script",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Include ONLY as an extracted-code source for two tools. The file cannot be imported, so implementation order step 3 applies: extract those two functions verbatim with source attribution and have them call the upstream utils/filter.py symbols rather than reimplementing any filter. Nothing else in this file is in scope - the training loop, optuna sweep, wandb logging, Chemistry42 API calls and SLURM plumbing are all excluded."
+    },
+    {
+      "path": "README.md",
+      "title": "Repository README",
+      "description": "Abstract, package list (orquestra-qml-core, torch, syba, selfies, qiskit) and a single documented entry point: `python benchmark_models_v0.py --config benchmark_models_settings_qcbm.json <prior_size>`, submitted as a 7-day 4-GPU SLURM job.",
+      "type": "markdown",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude as a tool source. The only usage it documents is the orquestra-dependent SLURM training driver, which is un-installable. It documents no orquestra-free operation. Retained as the navigation starting point and as evidence that the repository's intended interface is a batch training job, not a reusable CLI."
+    },
+    {
+      "path": "docs/si/SI_v0.pdf",
+      "title": "Supplementary Information v0",
+      "description": "37 pages: S1.1-S1.13 synthetic procedures and NMR/LCMS characterisation for the ISM061 compound series, and S3 SPR affinity measurements. Section S2 is missing entirely and the document is truncated.",
+      "type": "documentation",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude. Read in full. Contains no computational methods whatsoever - zero occurrences of STONED, SELFIES, QCBM, qubit, docking, Tanimoto, diversity, Lipinski, PAINS, SYBA or seed. It cannot document behaviour or supply expected results for any candidate. See critical finding si_pdf_has_no_computational_methods."
+    },
+    {
+      "path": "stoned_algorithm/PAINS_TEST.py",
+      "title": "PAINS_TEST",
+      "description": "Defines pains_filt with a doctest asserting that azobenzene matches PAINS alert azo_A(324), then runs a module-level loop over ./DATA/sim_uniq_2023_res_short.csv.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude as a tool source, RETAIN as the primary verification source (vs_pains_doctest). Its pains_filt is superseded by utils/filter.py:pains_filt, which the production driver imports and which returns the property-name list directly. The file cannot be imported: ./DATA/sim_uniq_2023_res_short.csv is absent from the repository."
+    },
+    {
+      "path": "stoned_algorithm/MCF_TEST.py",
+      "title": "MCF_TEST",
+      "description": "Defines passes_wehi_mcf over the MCF and WEHI PAINS SMARTS catalogues, then loops over a missing CSV.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude. Superseded by utils/filter.py:passes_wehi_mcf. This copy is doubly unusable: it reads ./DATA/mcf.csv and ./DATA/wehi_pains.csv which do not exist (the real files are under database/), and line 25 calls DataFrame.append, which was removed in pandas 2.0. It also takes an H-added Mol whereas the owning version takes a SMILES string and adds hydrogens itself. No expected value is asserted, so it is not a verification source either."
+    },
+    {
+      "path": "stoned_algorithm/SYBA_TEST.py",
+      "title": "SYBA_TEST",
+      "description": "Instantiates SybaClassifier, calls fitDefaultScore, and scores molecules from a missing CSV, tallying agreement between syba.predict(mol) > 0 and a Chemistry42 pass column.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude. Documents the repository's SYBA convention (fitDefaultScore, then accept when predict > 0), which is preserved inside the acceptance-filter and reward tools. Not a tool itself: it is a thin call into the third-party syba package, and its input file is absent so it asserts nothing."
+    },
+    {
+      "path": "stoned_algorithm/TEST_GEN.py",
+      "title": "TEST_GEN",
+      "description": "Drops charged-aromatic SMILES and molecules with exact mass <= 300 from a missing CSV.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude. A trivial two-criterion pre-filter, fully subsumed by apply_filters (which enforces the same 300 Da lower bound via lipinski_filter and rejects charged species). Input file absent."
+    },
+    {
+      "path": "stoned_algorithm/stoned.py",
+      "title": "stoned (STONED expansion script)",
+      "description": "The STONED-SELFIES expansion as an unguarded top-level script: for each seed inhibitor that passes apply_filters, generate 700 randomized SMILES orderings, mutate 1-5 times, canonicalise, then keep molecules that pass the filters and have ECFP4 similarity below 0.3 to the seed.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude as a tool source; its ALGORITHM is merged into kras_qgm_expand_chemical_space_stoned, which is owned by utils/stoned_utils.py. This copy cannot run: (a) `from filter_ import apply_filters` at line 1 is a bare top-level import that only resolves if cwd is stoned_algorithm/; (b) line 332 reads KRAS_G12D_inhibitors_update2023.csv, which is not in the repository (the bundled file is KRAS_G12D_inhibitors_update202209_updated.csv); (c) its mutate_selfie reads ./alphabet.txt from cwd. Its one scientifically meaningful addition over utils/stoned_utils.py is documented instead: it extends the SELFIES alphabet with the 7439 fragment strings in stoned_algorithm/alphabet.txt, and it applies a similarity cutoff of 0.3."
+    },
+    {
+      "path": "stoned_algorithm/stoned_sim.py",
+      "title": "stoned_sim",
+      "description": "Near-identical copy of stoned.py with SYBA, WEHI/MCF and PAINS added to the acceptance test at line 445.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, merged. Same acceptance logic as combine_filter, which is the version selected. Unrunnable: missing ./DATA/mcf.csv, ./DATA/wehi_pains.csv, ./DATA/KRAS_G12D_inhibitors_update2023.csv and ./DATA/PASS_*.csv; broken `from filter_ import`; uses pandas DataFrame.append (removed in pandas 2.0)."
+    },
+    {
+      "path": "stoned_algorithm/stoned_hill_climming.py",
+      "title": "stoned_hill_climming",
+      "description": "Third near-identical STONED copy, writing output_stoned_sim_0.8.txt.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, merged. Same blockers as stoned_sim.py. Despite the filename it contains no distinct hill-climbing optimiser - the module-level body is the same randomize/mutate/filter sweep, so there is no separate optimisation operation to expose."
+    },
+    {
+      "path": "stoned_algorithm/filter_.py",
+      "title": "stoned_algorithm.filter_",
+      "description": "Standalone copy of the medchem filter cascade: apply_filters, lipinski_filter, substructure_violations, filter_phosphorus, maximum_ring_size, FindAromaticRings.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, merged into utils/filter.py. It is importable (module-level code is commented out) but it is the OLDER variant: its substructure_violations list lacks the NNN, [R3R] and [R4R] patterns present in utils/filter.py, its lipinski_filter hardcodes an 800 Da cap with no max_mol_weight parameter, and it has no legacy_apply_filters, pains_filt, passes_wehi_mcf or get_diversity. It also imports SybaClassifier at line 21 without ever using it, adding a needless heavy import. utils/filter.py is the version the paper's driver imports and is therefore the owning module."
+    },
+    {
+      "path": "utils/filter_comp.py",
+      "title": "utils.filter_comp",
+      "description": "Fourth copy of the STONED + filter script, writing OUTPUT_SIM.txt.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, merged. Byte-level near-duplicate of stoned_algorithm/stoned_sim.py. Same missing-data and pandas DataFrame.append blockers; also instantiates SybaClassifier at module import."
+    },
+    {
+      "path": "utils/mol_methods.py",
+      "title": "utils.mol_methods",
+      "description": "ORGAN-legacy helpers: SMILES/CSV readers, vocabulary construction, padding/encoding/decoding, and a family of reward-shaping remap functions (gauss_remap, constant_range, constant_bump, smooth_plateau, rectification).",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude. Orquestra-free but out of scope: the vocabulary and encode/decode helpers exist only to feed the un-installable LSTM, and the remap functions are generic reward-shaping utilities not used by any selected task. verify_sequence and canon_smile are kept internal as supporting code for utils/lipinski_utils.py. compute_results returns None and only prints, so it is not a usable tool."
+    },
+    {
+      "path": "utils/docking.py",
+      "title": "utils.docking",
+      "description": "Contains a live compute_array_value plus an older apply_filters variant. All actual docking code - get_score, get_1syh_score, get_4lde_score, get_6y2f_score, get_kras_score - is commented out (lines 172-262).",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude. The docking operations are deferred: the code is commented out AND it shells out to a smina binary and obabel, and reads receptor/ligand PDBs from a docking_structures/ directory that is not in the repository. compute_array_value is omitted separately for the if/elif defect recorded above. See tool_review entries cand_docking_score and cand_compute_array_value."
+    },
+    {
+      "path": "utils/api.py",
+      "title": "utils.api (RewardAPI)",
+      "description": "HTTP client for the Chemistry42 scoring service at https://rip.chemistry42.com, with a local sqlite workflow cache: post_smiles, get_workflow_results, parse_results, get_workflow_status.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred. Requires network access to a commercial third-party service plus valid credentials, which the conversion cannot supply and must not embed. No offline verification is possible. See also the secret_in_source finding."
+    },
+    {
+      "path": "models/priors/qcbm_qiskit.py",
+      "title": "models.priors.qcbm_qiskit (QCBMGenerator, RandomCardinalityGenerator, ExactNLL)",
+      "description": "The QCBM training and sampling driver expressed directly in Qiskit: objective_function (exact NLL between the target bitstring distribution and shot counts), train (scipy.optimize.minimize, default Powell, COBYLA in the paper's settings), and generate (shot sampling in max_shots batches).",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, DEFERRED - this was the most promising candidate and was inspected closely. Three independent blockers: (1) QCBMGenerator takes qcbm_circuit as a required argument and cannot build a circuit; the only circuit source in the repository is orquestra's EntanglingLayerAnsatz exported via export_to_qiskit. (2) The module targets Qiskit 0.x - Aer, execute, assemble, IBMQ, qiskit.providers.aer and bind_parameters were all removed in Qiskit 1.0. (3) The single in-repo call site passes backend=/noise_model= kwargs the signature does not accept. Supplying a substitute ansatz would be reimplementing the paper's central quantum contribution, which is out of scope."
+    },
+    {
+      "path": "models/priors/error.py",
+      "title": "models.priors.error (ErrorMitigation)",
+      "description": "Zero-noise extrapolation, dynamical decoupling, randomized compiling and measurement-error calibration for hardware runs.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred. Byte-identical to models/error/error_mitigation.py (confirmed by diff). Depends on qiskit.ignis, which reached end of life in 2021 and is absent from current Qiskit, plus the removed execute/Aer/IBMQ API. calibrate_measurement_error also needs a real backend's qubit topology. Blocked by the same Qiskit 0.x wall as the QCBM."
+    },
+    {
+      "path": "models/error/error_mitigation.py",
+      "title": "models.error.error_mitigation",
+      "description": "Exact duplicate of models/priors/error.py.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, duplicate of models/priors/error.py. Same blockers."
+    },
+    {
+      "path": "models/vqvae/",
+      "title": "models.vqvae (VQVAE, VQVAETrainer, Encoder, Decoder, VectorQuantizer)",
+      "description": "A complete image VQ-VAE: the model takes img_channels and the trainer imports torchvision.utils.make_grid.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, out of scope. Confirmed dead code - nothing outside models/vqvae/ imports it. It is an IMAGE autoencoder with no connection to the molecular pipeline described in the paper, and the repository ships neither image data nor checkpoints for it. Selecting it would pad the inventory with an irrelevant capability."
+    },
+    {
+      "path": "models/generators.py",
+      "title": "models.generators (GRUGANGenerator)",
+      "description": "A GRU-based GAN generator module.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude. Confirmed dead code - imported nowhere. An untrained nn.Module with no checkpoint and no training driver (the GAN drivers in models/gan/ and models/discrete_rgan.py all require orquestra) produces only random output, so there is no meaningful operation to expose."
+    },
+    {
+      "path": "models/layers/",
+      "title": "models.layers (add, concatenate)",
+      "description": "Two trivial tensor-combining nn.Modules.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude. 27 lines total, imported nowhere, no standalone scientific meaning."
+    },
+    {
+      "path": "benchmark_models_v0.py",
+      "title": "benchmark_models_v0 (documented entry point)",
+      "description": "The README's documented entry point: builds the dataset, trains the prior (QCBM / RBM / classical), trains the NoisyLSTM, generates and filters compounds. Designed for a 7-day 4-GPU SLURM job.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred. Imports orquestra.qml at lines 20-37 and models.recurrent (also orquestra). This is the paper's headline pipeline and it is the single most significant thing this conversion cannot deliver."
+    },
+    {
+      "path": "benchmark_models_priors.py",
+      "title": "benchmark_models_priors",
+      "description": "Prior-only benchmarking driver comparing QCBM, RBM and classical priors across qubit counts.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - orquestra."
+    },
+    {
+      "path": "vanilla_lstm_v0.py",
+      "title": "vanilla_lstm_v0",
+      "description": "Classical LSTM baseline without a quantum prior.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - orquestra."
+    },
+    {
+      "path": "sample_generation_from_pretrained_models_v0.py",
+      "title": "sample_generation_from_pretrained_models_v0",
+      "description": "Loads a pickled trained model and samples compounds from it.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, doubly blocked - imports orquestra, AND the checkpoints it loads do not exist. The settings files point at absolute cluster paths such as /project/mghazi/good_latest_results/.../mode_prior_150.pkl. No .pt, .pth, .ckpt or .pkl file exists anywhere in the repository."
+    },
+    {
+      "path": "qDrug_generator_benchmark_parallel_v11_latest.py",
+      "title": "qDrug_generator_benchmark_parallel_v11_latest",
+      "description": "Later revision of the v10 generation driver.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - orquestra. Its combine_filter and reward_fc are equivalent to v10's; v10 is the assigned extraction source because it is the only revision whose QCBM wiring is fully visible (v11 and v13 comment out the QCBMGenerator import). Duplicate basename family resolved explicitly: only v10 is used, and only for those two functions."
+    },
+    {
+      "path": "qDrug_generator_benchmark_parallel_v13.py",
+      "title": "qDrug_generator_benchmark_parallel_v13",
+      "description": "Latest revision of the generation driver.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - orquestra. Same duplicate-family resolution as v11."
+    },
+    {
+      "path": "models/recurrent/",
+      "title": "models.recurrent (LSTM, NoisyLSTM v1-v4, PAL)",
+      "description": "The LSTM generator family, including NoisyLSTMv3, which consumes the QCBM prior's bitstrings as its noise input. This is the classical half of the paper's hybrid model.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - every file imports orquestra, and no trained weights exist. Reimplementing the LSTM+QCBM training loop is explicitly out of scope."
+    },
+    {
+      "path": "models/priors/qcbm.py",
+      "title": "models.priors.qcbm (QCBMSamplingFunction_v2)",
+      "description": "The orquestra-native QCBM prior wrapper.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - orquestra."
+    },
+    {
+      "path": "models/priors/rbm.py",
+      "title": "models.priors.rbm (RBMSamplingFunction_v2)",
+      "description": "The RBM classical-prior baseline the paper benchmarks the QCBM against.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - orquestra."
+    },
+    {
+      "path": "utils/chem.py",
+      "title": "utils.chem (SmilesEncoding, SelfiesEncoding, compute_compound_stats)",
+      "description": "SMILES/SELFIES vocabulary encoders and the compound statistics used for reporting validity, uniqueness and diversity of generated batches.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - imports orquestra. This is a genuine loss: compute_compound_stats is the paper's own batch-level reporting function. Its diversity component is partially recovered through utils/filter.py:get_diversity, which is orquestra-free and IS selected."
+    },
+    {
+      "path": "utils/data.py",
+      "title": "utils.data (generate_bulk_samples, truncate_smiles, compund_to_csv)",
+      "description": "Bulk sampling and dataset assembly helpers.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - orquestra. generate_bulk_samples operates on a trained model that cannot be constructed."
+    },
+    {
+      "path": "utils/selfies_encoding_class.py",
+      "title": "utils.selfies_encoding_class",
+      "description": "SELFIES alphabet and encoding management for the generator.",
+      "type": "script",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude, deferred - orquestra."
+    },
+    {
+      "path": "benchmark_models_settings_qcbm.json",
+      "title": "QCBM benchmark settings (and the setting_*.json family)",
+      "description": "The paper's real hyperparameters: prior_size 16, n_qcbm_layers 4, prior_n_epochs 30-40, lstm_n_epochs 40-150, n_lstm_layers 5, embedding_dim 224, hidden_dim 128, optimizer_name COBYLA, n_shots 20000, temperature 0.62-0.95, filter_constraint soft, protein 1syh/4lde/6y2f.",
+      "type": "documentation",
+      "include_in_tools": false,
+      "reason_for_include_or_exclude": "Exclude as a tool source. Read carefully as instructed and it is valuable provenance, but every parameter it records belongs to the orquestra training pipeline. It supplies NO traceable input or expected output for any orquestra-free tool, so it is not a verification source. Its one directly useful contribution is documenting that filter_constraint defaults to 'soft' in the paper's own runs - which, resolved against qDrug_generator_benchmark_parallel_v10.py:594-604, means legacy_apply_filters rather than apply_filters. That mapping is carried into the selected filter tools. The file also points at absolute cluster paths and a checkpoint that do not exist locally."
+    }
+  ],
+  "tool_review": [
+    {
+      "candidate_id": "cand_medchem_filter",
+      "task_and_io": "Decide which molecules in a SMILES list pass the paper's medicinal-chemistry admissibility filter, and report which criterion each rejected molecule violated. Input: list of SMILES, a constraint mode ('hard' or 'soft'), and max_mol_weight. Output: per-molecule boolean plus the first violated criterion, and the surviving list.",
+      "implementation": "utils/filter.py:apply_filters (line 189, hard) and utils/filter.py:legacy_apply_filters (line 146, soft), both at commit 20cb407b. Supporting internals in the same module: lipinski_filter (58), maximum_ring_size (71), substructure_violations (83), filter_phosphorus (131), FindAromaticRings (324). Hard vs soft differ substantively: apply_filters requires at least one aromatic ring, caps max ring size at 6, and requires N or O to be present; legacy_apply_filters has none of those and caps ring size at 8.",
+      "verification_source": "No repository-authored expected values exist for this function. Reference produced by direct upstream execution: import utils/filter.py from the repository root and evaluate both apply_filters and legacy_apply_filters over the 644 SMILES in data/KRAS_G12D/KRAS_G12D_inhibitors_update202209_updated.csv and over the first 2000 rows of data/KRAS_G12D/1Mstoned_vsc_initial_dataset_insilico_chemistry42_filtered.csv; record the actual boolean vectors as the fixture. Compared: exact per-molecule boolean agreement between wrapper and direct upstream call, and that hard mode is strictly more restrictive than soft on the same input.",
+      "decision_and_reason": "EXPOSE. A distinct, repeatedly useful operation on new molecules; it is the paper's own admissibility gate and the single most reused function in the repository.",
+      "ownership": {
+        "tool_name": "kras_qgm_filter_molecules_medchem",
+        "source_module": "utils_filter"
+      }
+    },
+    {
+      "candidate_id": "cand_structural_alerts",
+      "task_and_io": "Screen molecules against the bundled PAINS and WEHI/MCF structural-alert catalogues and report which named alerts fire. Input: list of SMILES. Output: per-molecule list of matched PAINS alert names (e.g. 'azo_A(324)'), the WEHI/MCF boolean, and a combined clean/flagged verdict.",
+      "implementation": "utils/filter.py:pains_filt (line 239) and utils/filter.py:passes_wehi_mcf (line 249). Catalogues loaded at module import from database/pains.txt (481 patterns, 480 active - see the BOM finding), database/wehi_pains.csv (479) and database/mcf.csv (22).",
+      "verification_source": "STRONG - repository-authored. stoned_algorithm/PAINS_TEST.py lines 13-19 assert that Chem.MolFromSmiles('c1ccccc1N=Nc1ccccc1') yields alert 'azo_A(324)'. Independently corroborated by inspection: database/pains.txt line 6 is `[#7;!R]=[#7] azo_A(324)` and azobenzene's N=N is acyclic. Compared: 'azo_A(324)' appears in the returned alert list. Supplement with direct upstream execution over the 644 KRAS inhibitors for the MCF branch, which has no authored expectation.",
+      "decision_and_reason": "EXPOSE, merging pains_filt and passes_wehi_mcf into one tool. They are two alert catalogues serving one user task (structural-alert screening), and users want both verdicts together; exposed separately each would be a thin single-call wrapper. PAINS contributes named, diagnostic output; MCF contributes a boolean.",
+      "ownership": {
+        "tool_name": "kras_qgm_screen_structural_alerts",
+        "source_module": "utils_filter"
+      }
+    },
+    {
+      "candidate_id": "cand_diversity",
+      "task_and_io": "Measure the internal chemical diversity of a compound library. Input: list of SMILES. Output: a single diversity percentage, computed as 100 * (1 - mean pairwise Tanimoto over Morgan fingerprints, radius 3, 2048 bits).",
+      "implementation": "utils/filter.py:get_diversity (line 258). Invalid SMILES are dropped before the pairwise sum.",
+      "verification_source": "No authored expected value. Reference by direct upstream execution on the 644 KRAS inhibitors and on fixed-size slices of the STONED corpus; the function is fully deterministic, so the recorded value is an exact fixture. Additional property checks available without inventing science: a library of N identical SMILES must score 0.0, and appending duplicates must not increase diversity. Precondition to enforce: n < 2 divides by zero (n_pairs = 0), so the wrapper must reject inputs with fewer than two valid molecules.",
+      "decision_and_reason": "EXPOSE. Distinct scientific metric with a single meaningful output, useful on any new library, and it is the one component of the paper's batch-reporting statistics that survives the orquestra blocker (utils/chem.py:compute_compound_stats does not).",
+      "ownership": {
+        "tool_name": "kras_qgm_compute_library_diversity",
+        "source_module": "utils_filter"
+      }
+    },
+    {
+      "candidate_id": "cand_stoned_expansion",
+      "task_and_io": "Expand a seed molecule into a diverse set of related candidates using STONED-SELFIES. Input: seed SMILES, number of randomized SMILES orderings, list of mutation counts, optional seed. Output: deduplicated canonical SMILES of the mutated molecules, with counts.",
+      "implementation": "utils/stoned_utils.py, composing randomize_smiles (18), selfies.encoder, get_mutated_SELFIES (233) -> mutate_selfie (136), selfies.decoder and sanitize_smiles (36). The composition order is documented by the module's own __main__ block at lines 283-330.",
+      "verification_source": "utils/stoned_utils.py:283-363, the __name__-guarded STONED 'EXPERIMENT B': Aripiprazole 'C1CC(=O)NC2=C1C=CC(=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl', fp_type ECFP4, num_random_samples=1000, num_mutation_ls=[1,2,3,4,5]. Runnable unmodified as `python utils/stoned_utils.py` from the repository root. Because randomize_smiles is not seedable (see stochasticity_and_seeding), compare invariants and distributional properties, not a fixed output list: every returned SMILES round-trips through RDKit canonicalisation; outputs are unique; output count grows with num_random_samples; and under a fixed np.random.seed the mutation stage alone (get_mutated_SELFIES on a FIXED SELFIES list) is exactly reproducible.",
+      "decision_and_reason": "EXPOSE. This is the paper's training-set construction step and the repository's most distinctive runnable science. utils/stoned_utils.py is assigned as owner over the three stoned_algorithm copies because it is the only one that imports cleanly - it is __main__-guarded, does no module-level file I/O, and takes its alphabet from selfies.get_semantic_robust_alphabet() instead of a cwd-relative ./alphabet.txt.",
+      "ownership": {
+        "tool_name": "kras_qgm_expand_chemical_space_stoned",
+        "source_module": "utils_stoned_utils"
+      }
+    },
+    {
+      "candidate_id": "cand_fp_similarity",
+      "task_and_io": "Score how similar each of a set of molecules is to a reference structure. Input: list of SMILES, target SMILES, fingerprint type (AP, PHCO, BPF, BTF, PATH, ECFP4, ECFP6, FCFP4, FCFP6). Output: one Tanimoto similarity per input molecule.",
+      "implementation": "utils/stoned_utils.py:get_fp_scores (line 257), dispatching through get_fingerprint (121) and _FingerprintCalculator (75).",
+      "verification_source": "Fully deterministic, so exact references are available. Authored context: the same call with fp_type ECFP4 appears in the __main__ block at line 345, and the similarity thresholds the paper's scripts apply (below 0.3 to keep a mutant as novel in stoned_algorithm/stoned.py:390; the 0.75 / 0.6 / 0.4 reporting bands in stoned_utils.py:350-353) are traceable in source. Exact checks needing no invented data: get_fp_scores([smi], smi, fp) == [1.0] for every fingerprint type (self-similarity), and recorded upstream values for pairs drawn from the 644 KRAS inhibitors. Note PATH is the real method name; the docstrings misspell it 'PAT'.",
+      "decision_and_reason": "EXPOSE. Independently useful beyond the expansion tool - it is how the paper enforced its novelty criterion - and it is the strongest deterministic verification anchor in the whole inventory.",
+      "ownership": {
+        "tool_name": "kras_qgm_score_fingerprint_similarity",
+        "source_module": "utils_stoned_utils"
+      }
+    },
+    {
+      "candidate_id": "cand_property_profile",
+      "task_and_io": "Produce a per-molecule drug-likeness profile with explicit pass/fail reasons. Input: a SMILES string. Output: lists of passed and failed rule descriptions, a 5-element binary rule-compliance array, a property dict (n_hdonors, n_hacceptors, mol_weight, mol_logp, ring_count, heavy_atom), plus QED and logP.",
+      "implementation": "utils/lipinski_utils.py:compute_lipinski (line 118), compute_qed (223), compute_logp (215).",
+      "verification_source": "No authored expected value. Reference by direct upstream execution over the 644 KRAS inhibitors; fully deterministic, so the recorded per-molecule dicts form an exact fixture. The underlying RDKit descriptors are stable, so agreement is checkable to floating-point tolerance.",
+      "decision_and_reason": "EXPOSE, merging compute_qed and compute_logp into the same tool. compute_lipinski's reason lists and binary array are a genuinely different output from the boolean filters - a user asking 'why did this molecule fail?' needs this, not cand_medchem_filter. QED and logP are one-line RDKit calls that the paper's driver computes alongside it; exposing them separately would pad the inventory. NOTE the binary array has 5 elements covering donors, acceptors, weight, logP and rotatable bonds, while the property dict has 7 keys - they are not aligned, and the wrapper must not silently 'fix' that.",
+      "ownership": {
+        "tool_name": "kras_qgm_profile_molecule_properties",
+        "source_module": "utils_lipinski_utils"
+      }
+    },
+    {
+      "candidate_id": "cand_acceptance_cascade",
+      "task_and_io": "Apply the paper's complete generation-acceptance filter to a batch of candidate molecules. Input: list of SMILES, filter_constraint ('hard' or 'soft'), max_mol_weight. Output: the accepted SMILES list plus per-stage attrition counts.",
+      "implementation": "EXTRACTED CODE. qDrug_generator_benchmark_parallel_v10.py:225-253 (combine_filter), with the constraint mapping resolved at lines 594-604: 'hard' binds filter_fc=utils.filter.apply_filters, 'soft' binds filter_fc=utils.filter.legacy_apply_filters. The cascade is: filter_fc(smi, max_mol_weight) AND not-already-accepted (deduplication) AND syba.predict(smi) > 0 AND passes_wehi_mcf(smi) AND len(pains_filt(mol)) == 0. The host file imports orquestra at module level and cannot be imported, so implementation order step 3 applies: extract these ~15 lines verbatim with source attribution; the extraction MUST call the upstream utils/filter.py symbols and syba rather than reimplement any filter.",
+      "verification_source": "No authored expected value. Reference by direct upstream execution: replicate the extracted cascade against the directly-imported upstream functions over the first 2000 rows of the STONED corpus and over the 644 KRAS inhibitors, and record the accepted sets and per-stage counts. Compared: exact set equality of accepted SMILES, and per-stage counts. Deterministic once SybaClassifier.fitDefaultScore() has been called. CRITICAL: the upstream bare `except Exception` swallows the NameError raised when utils/filter.py failed to load its catalogues, silently yielding an empty result; the wrapper must assert the catalogues are loaded before running (see constraint_filter_data_cwd_silent_failure).",
+      "decision_and_reason": "EXPOSE. It is not redundant with cand_medchem_filter plus cand_structural_alerts: it adds the SYBA synthetic-accessibility gate and batch deduplication, and it fixes the exact composition and ordering that produced the paper's compound set. 'Run the paper's acceptance filter over my generated library' is a distinct user task from 'tell me which rules this one molecule breaks'.",
+      "ownership": {
+        "tool_name": "kras_qgm_apply_generation_acceptance_filter",
+        "source_module": "qdrug_generator_v10_extracted"
+      }
+    },
+    {
+      "candidate_id": "cand_reward_fc",
+      "task_and_io": "Score candidate molecules with the paper's graded reward function, as used to steer generation. Input: list of SMILES, filter_constraint, max_mol_weight. Output: one numeric reward per molecule, with the component breakdown.",
+      "implementation": "EXTRACTED CODE. qDrug_generator_benchmark_parallel_v10.py:255-277 (reward_fc). Nested cumulative scoring: base 1; +15 if filter_fc passes; then +5 if passes_wehi_mcf; then +5 if no PAINS alerts; then +30 if syba.predict > 0. Range 1 to 56, and 0 on any exception. Default filter_fc is legacy_apply_filters, matching filter_constraint 'soft'. Returns a torch.Tensor upstream; the wrapper should serialise to a plain list while preserving the values exactly. Same extraction rules as cand_acceptance_cascade.",
+      "verification_source": "No authored expected value. Reference by direct upstream execution over the same fixed slices used for cand_acceptance_cascade, recording the exact reward vector. Deterministic. Strong structural cross-checks available without inventing science: the reward is a step function taking only the values {0, 1, 16, 21, 26, 56}, and every molecule accepted by cand_acceptance_cascade in the same mode must score exactly 56.",
+      "decision_and_reason": "EXPOSE. Distinct from the binary cascade - it gives a graded preference ordering rather than accept/reject - and it is the actual objective that shaped the paper's generated library, making it one of the few pieces of the generative pipeline that survives the orquestra blocker.",
+      "ownership": {
+        "tool_name": "kras_qgm_score_molecules_reward",
+        "source_module": "qdrug_generator_v10_extracted"
+      }
+    },
+    {
+      "candidate_id": "cand_syba_score",
+      "task_and_io": "Score synthetic accessibility of a molecule (syba.predict; the repository accepts when the score exceeds 0).",
+      "implementation": "Third-party: syba.syba.SybaClassifier.fitDefaultScore + predict. The repository contributes only the call convention, used at qDrug_generator_benchmark_parallel_v10.py:242 and 269 and demonstrated in stoned_algorithm/SYBA_TEST.py.",
+      "verification_source": "stoned_algorithm/SYBA_TEST.py demonstrates the call but asserts nothing and reads a CSV absent from the repository.",
+      "decision_and_reason": "KEEP INTERNAL. Exposing it would wrap a third-party PyPI package rather than anything the paper implemented, which the wrapping contract explicitly discourages. The repository's actual contribution - the > 0 acceptance threshold and its position in the cascade - is preserved inside cand_acceptance_cascade and cand_reward_fc. Note for the environment manager: SybaClassifier() plus fitDefaultScore() is slow to initialise, so both owning tools must build it once at module scope, not per call.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_stoned_primitives",
+      "task_and_io": "Individual STONED primitives: randomize_smiles, sanitize_smiles, get_selfie_chars, get_fingerprint, mutate_selfie, get_mutated_SELFIES.",
+      "implementation": "utils/stoned_utils.py lines 18, 36, 55, 121, 136, 233.",
+      "verification_source": "Exercised transitively by the __main__ block.",
+      "decision_and_reason": "KEEP INTERNAL, merged into kras_qgm_expand_chemical_space_stoned. Each is one step of a single user task; exposing SMILES canonicalisation or SELFIES tokenisation separately would be format-conversion plumbing, which the selection rules say to keep internal.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_lipinski_list_filters",
+      "task_and_io": "Filter a SMILES list by Lipinski thresholds (lipinski_filter), or by Lipinski thresholds plus apply_filters (lipinski_hard_filter).",
+      "implementation": "utils/lipinski_utils.py:79 and :37.",
+      "verification_source": "None authored.",
+      "decision_and_reason": "MERGE into kras_qgm_filter_molecules_medchem, which covers the same task. lipinski_hard_filter is literally a Lipinski pre-check followed by apply_filters. Retaining them separately would create a confusing second filter tool with a different default weight cap (500 Da here versus 800 Da in utils/filter.py) and would worsen the lipinski_filter name collision recorded above. Expose the differing thresholds as parameters of the selected tool instead.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_compute_array_value",
+      "task_and_io": "Return a 6-element indicator vector of which filter criteria a molecule satisfies.",
+      "implementation": "utils/docking.py:144, imported by the paper's driver at qDrug_generator_benchmark_parallel_v10.py:57.",
+      "verification_source": "None authored.",
+      "decision_and_reason": "OMIT. It overlaps cand_medchem_filter's per-criterion reporting, and it carries the if/elif defect recorded in defect_compute_array_value_elif_chain: evaluation short-circuits at the first violated criterion, so later slots read as satisfied whether or not they are. Promoting it would present a misleading vector as a scientific result, and repairing it would alter behaviour the paper's driver relied on. Documented rather than shipped.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_qcbm_generator",
+      "task_and_io": "Intended: build, train and sample a 16-qubit quantum circuit Born machine to supply the LSTM's noise prior - the paper's central scientific contribution.",
+      "implementation": "models/priors/qcbm_qiskit.py:QCBMGenerator (line 29); train (148), generate (199), objective_function (100).",
+      "verification_source": "NONE AVAILABLE. There is no test, no notebook, no saved circuit, no trained parameter file, and no distribution fixture. The sole in-repo call site (qDrug_generator_benchmark_parallel_v10.py:747) passes backend=/noise_model= kwargs the constructor does not accept and would raise TypeError, so even that does not establish a working interface.",
+      "decision_and_reason": "DEFER. Three independent blockers. (1) MISSING DEPENDENCY: the parameterised circuit is a required constructor argument and QCBMGenerator never builds one; the only source is orquestra's EntanglingLayerAnsatz + LineEntanglingLayerBuilder exported through orquestra.integrations.qiskit.conversions.export_to_qiskit, and orquestra is 404 on PyPI. (2) INCOMPATIBLE API: the module targets Qiskit 0.x - Aer, execute, assemble, IBMQ, qiskit.providers.aer and bind_parameters were all removed in Qiskit 1.0, while the environment resolves qiskit 2.5.2. (3) NO VERIFICATION BASIS. Substituting an equivalent ansatz (for example qiskit.circuit.library.TwoLocal with linear entanglement) would be inventing the scientific computation at the heart of the paper, which the conversion scope forbids. This is the single most significant deferral in the inventory and must be stated plainly in USAGE.md.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_random_cardinality_prior",
+      "task_and_io": "Generate random bitstrings of fixed length with a fixed number of set bits (the classical baseline prior).",
+      "implementation": "models/priors/qcbm_qiskit.py:RandomCardinalityGenerator (line 240). Pure numpy, genuinely orquestra-free and runnable, and seedable via np.random.seed.",
+      "verification_source": "None authored; trivially checkable by construction (row sums equal the cardinality).",
+      "decision_and_reason": "OMIT. Although it is one of the very few pieces of models/ that actually runs, standalone it is 'sample random binary vectors with fixed row sum' - about eight lines of numpy with no chemistry and no quantum content. Its only scientific meaning is as the baseline noise input to the LSTM, which is un-installable. Selecting it would pad the inventory with an easy but irrelevant operation.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_error_mitigation",
+      "task_and_io": "Apply zero-noise extrapolation, dynamical decoupling, randomized compiling and measurement-error mitigation to results from quantum hardware.",
+      "implementation": "models/priors/error.py:ErrorMitigation (line 42), byte-identical to models/error/error_mitigation.py.",
+      "verification_source": "None. No circuit, no backend, no recorded counts.",
+      "decision_and_reason": "DEFER. Depends on qiskit.ignis.mitigation.measurement - qiskit-ignis reached end of life in 2021 and is not part of modern Qiskit - plus the removed execute/Aer/IBMQ API. calibrate_measurement_error additionally requires a real backend's qubit topology. Blocked by the same Qiskit 0.x wall as the QCBM, and meaningless without the circuit the QCBM cannot build.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_docking_score",
+      "task_and_io": "Dock a molecule against a protein target (1syh, 4lde, 6y2f or KRAS) and return a Vina score.",
+      "implementation": "utils/docking.py lines 172-262, entirely commented out at the pinned commit.",
+      "verification_source": "None.",
+      "decision_and_reason": "DEFER, with the specific external requirement recorded as instructed. The code is inactive AND it shells out to a smina binary (the command string names smina.osx.12, a macOS build) and to obabel for 3D coordinate generation, and reads prot.pdb / lig_.pdb from a docking_structures/ directory that does not exist in the repository. Three separate missing prerequisites: external docking software, external format-conversion software, and missing receptor structures. Not selectable.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_chemistry42_api",
+      "task_and_io": "Submit molecules to the Chemistry42 scoring service and retrieve MPO scores.",
+      "implementation": "utils/api.py:RewardAPI (line 6); used via rew_chemistry in the drivers.",
+      "verification_source": "None possible offline.",
+      "decision_and_reason": "DEFER, external network API. Requires reachability of https://rip.chemistry42.com and valid credentials for a commercial service that the conversion cannot provide. Additionally, the drivers embed plaintext credentials (see secret_in_source); no generated tool may carry or surface them. The paper's reported Chemistry42 filtering is therefore not reproducible here, which also means the bundled '...chemistry42_filtered.csv' corpus cannot be regenerated or independently checked.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_tartarus_process_molecule",
+      "task_and_io": "Alternative benchmark filter via reward_fc_benchmark.",
+      "implementation": "qDrug_generator_benchmark_parallel_v10.py:280-296, calling tartarus.filter_.process_molecule.",
+      "verification_source": "None.",
+      "decision_and_reason": "OMIT. Depends on an unvendored external package reached through a hardcoded developer path, sys.path.insert(0, '/home/mghazi/workspace/Tartarus') at line 91. Not declared in the README's install list and not present in the repository.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_lstm_qcbm_training",
+      "task_and_io": "Intended: train the hybrid quantum-classical generative model end to end, and sample KRAS inhibitor candidates from it.",
+      "implementation": "benchmark_models_v0.py (the README's documented entry point), benchmark_models_priors.py, qDrug_generator_benchmark_parallel_v1x.py, vanilla_lstm_v0.py, sample_generation_from_pretrained_models_v0.py, models/recurrent/*.",
+      "verification_source": "NONE. No test suite, and no checkpoints anywhere in the repository (no .pt, .pth, .ckpt or .pkl). The settings files reference absolute cluster paths that do not exist.",
+      "decision_and_reason": "DEFER. Every driver imports orquestra-qml-core, which is permanently unavailable from PyPI. Even with the dependency, the documented run is a 7-day 4-GPU SLURM job, far outside a tool invocation. Reimplementing the LSTM+QCBM training loop is explicitly excluded from this conversion. This is the paper's headline capability and the conversion cannot deliver it.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_vqvae",
+      "task_and_io": "Train or run a vector-quantised variational autoencoder.",
+      "implementation": "models/vqvae/ (model.py, trainer.py, encoder.py, decoder.py, codebook.py, residual.py, loss.py, distance.py).",
+      "verification_source": "None.",
+      "decision_and_reason": "OMIT, out of scope. It is an IMAGE VQ-VAE (VQVAE takes img_channels; the trainer imports torchvision.utils.make_grid), it is imported nowhere outside its own package, and the repository ships neither image data nor checkpoints. Unrelated to the paper's molecular pipeline. Selecting it would broaden scope to an unrelated capability.",
+      "ownership": null
+    },
+    {
+      "candidate_id": "cand_mol_methods",
+      "task_and_io": "SMILES vocabulary construction, padding/encoding/decoding, and reward-shaping remap functions.",
+      "implementation": "utils/mol_methods.py.",
+      "verification_source": "None.",
+      "decision_and_reason": "KEEP INTERNAL / OMIT. verify_sequence and canon_smile are retained as supporting code for utils/lipinski_utils.py. The vocabulary and encode/decode helpers exist solely to feed the un-installable LSTM, the remap family is generic reward shaping used by no selected task, and compute_results only prints and returns None.",
+      "ownership": null
+    }
+  ],
+  "assessment": {
+    "can_this_repository_yield_a_scientifically_meaningful_mcp_server": "Partially, and only for the cheminformatics half of the paper. The honest summary is: the quantum contribution is unrecoverable, the classical molecule-design contribution is recoverable and real.",
+    "what_is_delivered": "Eight tools covering a coherent, genuinely useful workflow that is the paper's own: take known KRAS inhibitors, expand them into novel chemical space with STONED-SELFIES, measure similarity to the seed to enforce novelty, then run the paper's exact medicinal-chemistry and structural-alert cascade, its graded reward function, its diversity metric, and per-molecule property profiling. Every one of these is bound to code that the paper's production driver actually called, on data bundled at the pinned commit. This is a usable molecule-design filtering and expansion server.",
+    "what_is_permanently_lost": "The paper's title claim. The QCBM prior, the noisy LSTM, their joint training, and sampling from trained models are all unavailable, because orquestra-qml-core is 404 on PyPI and the QCBM's circuit can only be built by orquestra. The Qiskit-native QCBM class survives the orquestra scan but cannot be used, since it takes the circuit as an input it cannot produce and targets a Qiskit API removed in version 1.0. Docking and Chemistry42 scoring are also out, for missing external software and a paywalled network service respectively.",
+    "verification_honesty": "This is the inventory's weakest point and must not be overstated downstream. The repository has no test suite, no CI, and no checkpoints, and the bundled SI turns out to contain no computational methods at all - it is 37 pages of synthetic chemistry with the methods section (S2) missing entirely. Exactly TWO repository-authored expected results exist in the whole tree: the PAINS azobenzene doctest, and the STONED Experiment-B __main__ block on Aripiprazole. Every other selected tool can only be verified by running the upstream function directly on a traceable bundled input and recording what it returns. That is a legitimate and sufficient basis for proving wrapper fidelity to the pinned implementation, and it is what the verifier contract asks for - but it is NOT reproduction of any published number, and no tool in this inventory can be validated against a figure or table in the paper. Nothing in this inventory invents a tutorial, an expected result, or a data provenance to close that gap.",
+    "recommendation": "Proceed, but scope the server honestly as 'the KRAS generative pipeline's molecule expansion, filtering and scoring stages' rather than as the paper's quantum-enhanced generative model. USAGE.md must state plainly that the quantum-classical training pipeline is not installable and why, so that no user infers the quantum capability is present. The environment manager should be told three things immediately: syba and selfies are required and SybaClassifier must be initialised once at module scope because fitDefaultScore is slow; qiskit is NOT needed for any selected tool, so no qiskit version pin should be forced on the environment for their sake; and torch is needed only by the reward tool, which returns a torch.Tensor upstream."
+  }
+}

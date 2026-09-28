@@ -1,0 +1,212 @@
+{
+  "page": 7,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0007.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0007.png and 450 dpi crops of the beta-2 adrenoceptor and DATASET lines, and compared every item with evidence/page-0007.json. Start of the Methods section; two-column text only, no figures or tables. Reading order (left column p0007-b002..b009, then right column p0007-b010..b014) was already correct. Changes: (1) removed the space the extractor left between a superscript citation marker and the following period, comma or semicolon throughout: REINVENT37, SMILES-VAE38, SELFIES-VAE39, MoFlow40, SMILES-LSTM-HC41,42, GB-GA43, JANUS44, epilepsy45; translation46; bronchodilation47. SMINA49, collection50,51, Optuna52. Tartarus26, score25. and the two min-1 / ml-1 units. (2) p0007-b008: the model name 'SELFIES-VAE' was broken across a line after its en dash and the extractor left a space ('SELFIES- VAE39'); rejoined to 'SELFIES–VAE<sup>39</sup>' - this en dash is a real compound dash, matching SMILES–VAE, SMILES–LSTM–HC, SELFIES–LSTM–HC and GB–GA in the same sentence. (3) p0007-b008: 'the β2-adrenoceptor' is printed with a SUBSCRIPT 2 (verified on a 450 dpi crop of the line at y=509 pt); marked as 'β<sub>2</sub>-adrenoceptor'. (4) p0007-b010 gets join_previous 'space': the left column ends '...generative models adept' and the right column opens 'at capturing the distribution of the provided molecule set'. (5) Checked and left as printed: '(ref. 48)' is a baseline cross-reference, not a superscript; the PDB codes 1SYH, 6Y2F and 4LDE are blue hyperlinks in the source and are kept as plain text; 'DATASET' is set in a typewriter face in the source and is kept as plain searchable text rather than being re-marked as inline code; 'purity ≥ 95%' keeps U+2265, '1× HBS-EP+' keeps U+00D7, and the exponents in '5 μl min<sup>−1</sup>' and '5 μg ml<sup>−1</sup>' keep a real MINUS SIGN (U+2212), not a hyphen. Thin spaces (U+2009) between numbers and units in the source appear as ordinary spaces. (6) Heading levels and bold left as extracted ('# **Methods**', '## **Benchmark setup**', '## **Computational benchmarks: classical versus quantum models**', '## **SPR conditions**') to stay consistent with the same convention on pages 8-13; the bold-inside-heading cleanup is proposed to the coordinator as a bundle-wide change. The run-in bold labels 'Tartarus benchmark.' and 'Benchmarking of prior distributions.' are paragraph lead-ins in the source, not standalone headings, and were correctly left inside their text items. (7) p0007-b015 is the short running foot 'Nature Biotechnology' (this page carries no printed page number); confirmed as furniture and left as text for the compact builder to omit. Headers p0007-b000/b001 likewise. (8) Boundary note for the page 8 reviewer: this page ends mid-sentence at '...prepared samples by serial twofold', so page 8's first text item should take join_previous 'space'. Coordinator: running header/footer furniture set to explicit omit, matching the treatment reviewers applied on pages 8-18, so both verification parsers exclude the same regions. Coordinator: restored 4 PDB link annotations (1SYH, 6Y2F, 4LDE x2) that the extractor had dropped; each target was read back from the source PDF link annotations on this page.",
+  "warnings": [
+    "Review possible header/footer: p0007-b000",
+    "Review possible header/footer: p0007-b001",
+    "Review possible header/footer: p0007-b015"
+  ],
+  "items": [
+    {
+      "id": "p0007-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0007-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0007-b002",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        47.0,
+        86.0,
+        56.0
+      ],
+      "markdown": "# Methods",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0007-b003",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        59.0,
+        113.0,
+        69.0
+      ],
+      "markdown": "## Benchmark setup",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0007-b004",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        70.0,
+        297.0,
+        219.0
+      ],
+      "markdown": "Our benchmark used both classical and quantum hardware. Our classical computational setup was based on a cluster equipped with graphics processing unit (GPU) nodes. This cluster consisted of two GPU nodes, each with specific features. These features included two AMD EPYC 7V13 64-core processors, resulting in a total of 128 central processing unit cores per node. In addition, each node was equipped with 512 GB of random-access memory (RAM). The nodes also contain eight AMD Instinct MI100 GPUs, each with a GPU RAM of 32 GB. For the classical training, we used four of these GPUs in parallel (that is, one GPU node). Furthermore, we used an Nvidia GPU (RTX3090Ti) to facilitate our classical–quantum simulations. For the quantum hardware setup, we used the Guadalupe quantum system, equipped with 16 qubits and a Falcon r4P processor type. Our QCBM model, accompanied by an error correction circuit, was executed on this quantum processor.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0007-b005",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        221.0,
+        297.0,
+        316.0
+      ],
+      "markdown": "Regarding software, we used several packages provided by Zapata AI under the Qml core agreements. We implemented our variational quantum circuit and classical LSTM model using the Qml Core Python package. We used the STONED–SELFIES and VirtualFlow 2.0 packages to prepare a diverse dataset. Additionally, we used RDkit and Insilico APIs to compute the reward value and conduct some postprocessing analyses. The QCBM model underwent a training regimen spanning 30 epochs. In contrast, the LSTM model was trained over a total of 40 epochs.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0007-b006",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        317.0,
+        297.0,
+        391.0
+      ],
+      "markdown": "We used the Optuna platform to optimize the hyperparameters in the benchmarking. We ran Optuna tuning for 100 trials for each model to determine the optimal number of QCBM layers, number of LSTM layers and embedding dimensions. Additionally, we tuned the sampling temperature, which defines the balance between determinism and stochasticity in the model, particularly between the prior input and the LSTM output.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0007-b007",
+      "kind": "heading",
+      "bbox": [
+        39.0,
+        403.0,
+        293.0,
+        413.0
+      ],
+      "markdown": "## Computational benchmarks: classical versus quantum models",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0007-b008",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        413.0,
+        297.0,
+        647.0
+      ],
+      "markdown": "**Tartarus benchmark.** We used the Tartarus platform<sup>26</sup> to benchmark our proposed QCBM–LSTM methodology against an array of classical state-of-the-art models, including REINVENT<sup>37</sup>, SMILES–VAE<sup>38</sup>, SELFIES–VAE<sup>39</sup>, MoFlow<sup>40</sup>, SMILES–LSTM–HC<sup>41,42</sup>, SELFIES–LSTM–HC, GB–GA<sup>43</sup> and JANUS<sup>44</sup>. The study focused on three protein targets selected from the Tartarus dataset: (1) PDB [1SYH](https://doi.org/10.2210/pdb1SYH/pdb), an ionotropic glutamate receptor associated with neurological and psychiatric disorders such as Alzheimer disease, Parkinson disease and epilepsy<sup>45</sup>; (2) PDB [6Y2F](https://doi.org/10.2210/pdb6Y2F/pdb), the main protease of severe acute respiratory syndrome coronavirus 2, crucial for its RNA translation<sup>46</sup>; and (3) PDB [4LDE](https://doi.org/10.2210/pdb4LDE/pdb), the β<sub>2</sub>-adrenoceptor G-protein-coupled receptor, a cell-membrane-spanning receptor that binds to adrenaline, a hormone implicated in muscle relaxation and bronchodilation<sup>47</sup>. For each target, we had a dual objective: to generate novel molecules that exhibit strong binding affinity to the specified proteins, as determined by active sites assigned by Tartarus, and to minimize the docking score using QuickVina 2 (ref. 48). Additionally, these molecules were required to pass a comprehensive set of filters designed to eliminate reactive, unsynthesizable or unstable groups, thereby streamlining the drug discovery process. The top-performing molecules, after filtering, were subjected to a refined rescoring using a more precise scoring function provided by SMINA<sup>49</sup>, at an increased level of exhaustiveness.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0007-b009",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        651.0,
+        297.0,
+        746.0
+      ],
+      "markdown": "We conducted experiments using the QCBM with 16 qubits as a quantum prior and the LSTM as a classical model. The local filter from the Tartarus paper served as the reward function to train the QCBM. As recommended by Tartarus, our models were trained on a subset of 150,000 molecules from the Developmental Therapeutics Program open compound collection<sup>50,51</sup>, referred to as DATASET in Supplementary Table 1. Notably, all 150,000 structures underwent a rigorous screening process using structural filters to eliminate reactive, unsynthesizable or unstable groups. As such, generative models adept",
+      "source_class": "text"
+    },
+    {
+      "id": "p0007-b010",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        49.0,
+        563.0,
+        219.0
+      ],
+      "markdown": "at capturing the distribution of the provided molecule set would exhibit a correspondingly high success rate in generating novel molecules without structural violations. Our observations indicated that only a few generative models demonstrated a high success rate. However, the QCBM–LSTM model was very strong in producing a substantial number of high-quality samples that successfully meet the filter criteria, as evidenced by the elevated success rate depicted in Supplementary Table 1. Consequently, we believe that the incorporation of a quantum prior leads to improved distribution matching. We further benchmark the influence of a classical–quantum prior in the subsequent section. Moreover, our analysis revealed that, for the PDB [4LDE](https://doi.org/10.2210/pdb4LDE/pdb) target, our model generated the highest-scoring molecules relative to other generative models. While the docking scores for the remaining two targets were not as high as those produced by classical algorithms, we speculate that incorporating a docking-score-based reward, in conjunction with the filter success rate, could potentially improve our results.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0007-b011",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        231.0,
+        563.0,
+        509.0
+      ],
+      "markdown": "**Benchmarking of prior distributions.** To evaluate the impact of prior selection on the quality of the molecules generated by our model, we trained four distinct model variants, each incorporating different priors (Extended Data Fig. 1b). Specifically, we examined a QCBM prior and implemented it on both a quantum simulator and a hardware backend, in contrast with an MQCBM operating exclusively on a quantum simulator and a classical LSTM model devoid of quantum priors. These models were tasked with designing KRAS inhibitors, using a meticulously curated dataset of over 1 million molecules (Fig. 1). Extended Data Figure 1b showcases the optimal results obtained following a comprehensive optimization of the corresponding architectures using Optuna<sup>52</sup>. We assessed the quality of the generated molecules using two distinct sets of criteria: one derived from Tartarus<sup>26</sup>, termed the ‘local filter’, and a more stringent set provided by Chemistry42, termed the ‘Chemistry42 filter’. In both assessments, we observed that incorporating a quantum prior enhanced the success rate, as gauged by the proportion of molecules satisfying the criteria set by the two filters. Furthermore, using the top model from each prior category, we sampled 5,000 molecules that successfully met the filter criteria and examined their respective docking scores (Supplementary Table 2). Intriguingly, these molecules displayed comparably high docking scores as determined by QuickVina 2 and the PLI score, as evaluated by Chemistry42. Additionally, the synthesized molecules demonstrated consistent metrics across various parameters, including the diversity fraction, uniqueness fraction, Chemistry42 reward and Chemistry42 synthetic accessibility score<sup>25</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0007-b012",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        511.0,
+        563.0,
+        638.0
+      ],
+      "markdown": "Encouraged by our observation that quantum priors enhance molecule quality, we further investigated the influence of the number of qubits used in modeling priors on the quality of generated molecules (Extended Data Fig. 1d). Specifically, we analyzed the percentage of 5,000 uniquely generated random molecules that satisfied a series of local filters. Interestingly, our findings revealed that the success rate correlated roughly linearly with the number of qubits used in modeling the prior, indicating a direct relationship between the complexity of the quantum model and the effectiveness in generating high-quality molecules. This trend underscores the potential of increasing qubit numbers in quantum models to improve molecular design outcomes systematically.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0007-b013",
+      "kind": "heading",
+      "bbox": [
+        306.0,
+        650.0,
+        369.0,
+        658.0
+      ],
+      "markdown": "## SPR conditions",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0007-b014",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        661.0,
+        563.0,
+        746.0
+      ],
+      "markdown": "A Biacore 8K system was used for all experiments. For preliminary compound screening, N-terminal biotinylated KRAS-G12D protein (synthesized by VIVA Biotech; purity ≥ 95%) was captured on a sensor chip SA (GE Healthcare) at a density of about 2,000 RU. Protein immobilization was conducted using 1× HBS-EP+, 2 mM TCEP and 2% DMSO as a running buffer. Protein was injected for 70 s at a flow rate of 5 μl min<sup>−1</sup>. The protein concentration was 5 μg ml<sup>−1</sup>. We performed an initial screening of compounds prepared samples by serial twofold",
+      "source_class": "text"
+    },
+    {
+      "id": "p0007-b015",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "page": 28,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "image",
+  "preview": "previews/page-0028.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0028.png. This page is image-only: mode 'image' with the warning 'OCR unavailable or failed: FzErrorLibrary'. PyMuPDF confirms the page carries no text layer at all - all content is vector paths (713 drawing ops) plus two 16x16 px stray bitmaps, so there is nothing to transcribe and no searchable-text claim is made. The page holds two stacked 1H NMR spectra. I rendered the peak-label strips at 900 dpi to identify them: the top spectrum is labelled 9.30, 9.13, 8.47, 7.93, 7.89, 7.47... which matches the ISM061-18 shift list on page 27 (delta 9.30 (s, 2H), 8.47 (s, 1H), 7.91 ...), and the bottom spectrum is labelled 9.01, 8.41, 7.74, 7.70, 7.53... which matches the ISM061-18-2 list (delta 9.01 (s, 2H), 8.41 (s, 1H), 7.72 ...). Per the review plan I kept the whole page as one image and its original mode rather than splitting it; all ink lies in two bands ([54.7,56.7,463.1,345.7] and [56.7,363.7,463.1,652.7]), both inside the retained full-page crop. Renamed the placeholder asset from 'page-0028' to 'si-nmr-ism061-18-and-ism061-18-2' and gave it a descriptive label so the spectra are findable by text search. LIMITATION TO REPORT: the numeric peak labels and axis values on this page exist only inside the image and are not machine-readable. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*.",
+  "warnings": [
+    "OCR unavailable or failed: FzErrorLibrary. Page image retained for review."
+  ],
+  "items": [
+    {
+      "id": "p0028-image",
+      "kind": "figure",
+      "bbox": [
+        0.0,
+        0.0,
+        595.2000122070312,
+        841.9199829101562
+      ],
+      "markdown": "",
+      "label": "1H NMR spectra of ISM061-18 (top) and ISM061-18-2 (bottom)",
+      "asset_name": "si-nmr-ism061-18-and-ism061-18-2"
+    }
+  ]
+}

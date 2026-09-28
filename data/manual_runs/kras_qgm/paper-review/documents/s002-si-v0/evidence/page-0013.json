@@ -1,0 +1,596 @@
+{
+  "page": 13,
+  "lines": [
+    {
+      "text": "chromatography (EA:PE=5:1) to give the title compound as a yellow oil (1 g, Y: 57%). LCMS (ESI):",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        541.5333862304688,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "245.1 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        77.42324829101562,
+        131.24729919433594,
+        91.15196990966797
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 6: Preparation of Compound 12-6",
+      "bbox": [
+        56.6399040222168,
+        98.74796295166016,
+        258.6417236328125,
+        112.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 12-5 (320 mg, 1.3 mmol) in THF (16 mL) was added triethylamine (486",
+      "bbox": [
+        56.6399040222168,
+        129.4679718017578,
+        541.533203125,
+        142.75196838378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mg, 4.8 mmol), 4-dimethylaminopyridine (37 mg, 0.3 mmol) and p-toluenesulfonyl chloride (664",
+      "bbox": [
+        56.6399040222168,
+        150.1079559326172,
+        541.5349731445312,
+        163.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mg, 3 mmol). The resulting mixture was stirred under nitrogen protection at 20°C for 2 hours. After",
+      "bbox": [
+        56.6399040222168,
+        170.7479705810547,
+        541.5398559570312,
+        184.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the addition of ice water (10 mL), the mixture was extracted with dichloromethane (20 mL × 3). The",
+      "bbox": [
+        56.6399040222168,
+        191.38796997070312,
+        541.5226440429688,
+        204.67196655273438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate,",
+      "bbox": [
+        56.6399040222168,
+        212.26795959472656,
+        541.5297241210938,
+        225.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "filtered, and concentrated under reduced pressure to give a residue, which was further purified by",
+      "bbox": [
+        56.6399040222168,
+        232.907958984375,
+        541.52783203125,
+        246.19195556640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "silica gel column chromatography (EA:PE=1:5) to afford the title compound as a yellow oil (203 mg,",
+      "bbox": [
+        56.6399040222168,
+        253.54795837402344,
+        541.5286254882812,
+        266.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Y: 80%). LCMS (ESI): 193.1 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        273.74322509765625,
+        246.24334716796875,
+        287.47198486328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 7: Preparation of Compound 12-7",
+      "bbox": [
+        56.6399040222168,
+        295.0679626464844,
+        258.6417236328125,
+        308.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 12-6 (183 mg, 1 mmol) in 1,4-dioxane (8 mL) was added compound 12-",
+      "bbox": [
+        56.6399040222168,
+        325.5479736328125,
+        538.53955078125,
+        338.83197021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "4 (474 mg, 1.5 mmol), Pd2(dba)3 (91.5 mg,0.1 mmol), N-methyldicyclohexylamine (585 mg, 3 mmol)",
+      "bbox": [
+        56.6399040222168,
+        346.427978515625,
+        541.533447265625,
+        359.7906799316406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and trifluoroborane tri-tert-butylphosphine (58 mg, 0.2 mmol). The mixture was stirred at 120°C",
+      "bbox": [
+        56.6399040222168,
+        367.0679626464844,
+        541.530517578125,
+        380.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "under N2 for 3 hours. After the addition of ice water (10 mL), the mixture was extracted with ethyl",
+      "bbox": [
+        56.6399040222168,
+        387.7079772949219,
+        541.5242919921875,
+        401.0706787109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "acetate (20 mL × 3). The combined organic phases was washed with brine (10 mL), dried over",
+      "bbox": [
+        56.6399040222168,
+        408.3479919433594,
+        541.531005859375,
+        421.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which",
+      "bbox": [
+        56.6399040222168,
+        429.2279968261719,
+        541.53564453125,
+        442.5119934082031
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was further purified by silica gel column chromatography (EA:PE=1:2) to afford the title compound",
+      "bbox": [
+        56.6399040222168,
+        449.86798095703125,
+        541.5203857421875,
+        463.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "as a yellow solid (254 mg, Y: 62%). LCMS (ESI): 429.3 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        470.063232421875,
+        375.89373779296875,
+        483.7919616699219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 8: Preparation of Compound 12-8",
+      "bbox": [
+        56.6399040222168,
+        491.1479797363281,
+        258.6417236328125,
+        504.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A mixture of compound 12-7 (1.3 g,3 mmol) and Pd/C (120 mg) in ethanol(10 mL) was stirred under",
+      "bbox": [
+        56.6399040222168,
+        521.867919921875,
+        541.5316162109375,
+        535.1519165039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "hydrogen at 20°C for 16 hours. Upon completion, the mixture was filtered, and concentrated under",
+      "bbox": [
+        56.6399040222168,
+        542.7479248046875,
+        541.5201416015625,
+        556.0319213867188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reduced pressure to give a residue, which was further purified by silica gel column chromatography",
+      "bbox": [
+        56.6399040222168,
+        563.387939453125,
+        541.5385131835938,
+        576.6719360351562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(EA:PE=2:1) to afford the title compound (920 mg, Y: 90%). LCMS (ESI): 341.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        583.583251953125,
+        496.6319885253906,
+        597.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 9: Preparation of Compound 12-9",
+      "bbox": [
+        56.6399040222168,
+        604.66796875,
+        258.6417236328125,
+        617.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A mixture of compound 12-8 (920 mg,2.7 mmol) and NaBH4 (1 g, 27 mmol) in ethanol (10 mL) was",
+      "bbox": [
+        56.6399040222168,
+        635.387939453125,
+        541.5345458984375,
+        648.7506103515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "stirred at 20°C for 14 hours. After the addition of ice water (10 mL), the mixture was extracted with",
+      "bbox": [
+        56.6399040222168,
+        656.0279541015625,
+        541.5152587890625,
+        669.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ethyl acetate (30 mL × 3). The combined organic phases was washed with brine (10 mL), dried over",
+      "bbox": [
+        56.6399040222168,
+        676.907958984375,
+        541.5272216796875,
+        690.1919555664062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which",
+      "bbox": [
+        56.6399040222168,
+        697.5479736328125,
+        541.52490234375,
+        710.8319702148438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was further purified by silica gel column chromatography (EA:PE=2:1) to afford the title compound",
+      "bbox": [
+        56.6399040222168,
+        718.1879272460938,
+        541.5203857421875,
+        731.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(410 mg, Y: 50%). LCMS (ESI): 299.2 [M+H]+.",
+      "bbox": [
+        56.6399040222168,
+        738.3832397460938,
+        292.5734558105469,
+        752.1119384765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 10: Preparation of Compound 12-10",
+      "bbox": [
+        56.6399040222168,
+        759.7079467773438,
+        270.6417541503906,
+        772.991943359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 13
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "text",
+        "bbox": [
+          56,
+          59,
+          542,
+          91
+        ],
+        "pos": [
+          0,
+          125
+        ]
+      },
+      {
+        "index": 1,
+        "class": "section-header",
+        "bbox": [
+          56,
+          101,
+          259,
+          113
+        ],
+        "pos": [
+          125,
+          170
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          131,
+          542,
+          288
+        ],
+        "pos": [
+          170,
+          899
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          56,
+          297,
+          259,
+          309
+        ],
+        "pos": [
+          899,
+          944
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          327,
+          542,
+          484
+        ],
+        "pos": [
+          944,
+          1704
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          493,
+          259,
+          505
+        ],
+        "pos": [
+          1704,
+          1749
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          524,
+          542,
+          598
+        ],
+        "pos": [
+          1749,
+          2144
+        ]
+      },
+      {
+        "index": 7,
+        "class": "text",
+        "bbox": [
+          56,
+          607,
+          259,
+          618
+        ],
+        "pos": [
+          2144,
+          2187
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          56,
+          637,
+          542,
+          753
+        ],
+        "pos": [
+          2187,
+          2740
+        ]
+      },
+      {
+        "index": 9,
+        "class": "section-header",
+        "bbox": [
+          56,
+          762,
+          271,
+          773
+        ],
+        "pos": [
+          2740,
+          2787
+        ]
+      }
+    ],
+    "text": "chromatography (EA:PE=5:1) to give the title compound as a yellow oil (1 g, Y: 57%). LCMS (ESI): 245.1 [M+H]<sup>+</sup> . \n\n# **Step 6: Preparation of Compound 12-6** \n\nTo a solution of **compound 12-5** (320 mg, 1.3 mmol) in THF (16 mL) was added triethylamine (486 mg, 4.8 mmol), 4-dimethylaminopyridine (37 mg, 0.3 mmol) and p-toluenesulfonyl chloride (664 mg, 3 mmol). The resulting mixture was stirred under nitrogen protection at 20°C for 2 hours. After the addition of ice water (10 mL), the mixture was extracted with dichloromethane (20 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography (EA:PE=1:5) to afford the title compound as a yellow oil (203 mg, Y: 80%). LCMS (ESI): 193.1 [M+H]<sup>+</sup> . \n\n# **Step 7: Preparation of Compound 12-7** \n\nTo a solution of compound **12-6** (183 mg, 1 mmol) in 1,4-dioxane (8 mL) was added **compound 124** (474 mg, 1.5 mmol), Pd2(dba)3 (91.5 mg,0.1 mmol), N-methyldicyclohexylamine (585 mg, 3 mmol) and trifluoroborane tri- _tert_ -butylphosphine (58 mg, 0.2 mmol). The mixture was stirred at 120°C under N2 for 3 hours. After the addition of ice water (10 mL), the mixture was extracted with ethyl acetate (20 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography (EA:PE=1:2) to afford the title compound as a yellow solid (254 mg, Y: 62%). LCMS (ESI): 429.3 [M+H]<sup>+</sup> . \n\n# **Step 8: Preparation of Compound 12-8** \n\nA mixture of **compound 12-7** (1.3 g,3 mmol) and Pd/C (120 mg) in ethanol(10 mL) was stirred under hydrogen at 20°C for 16 hours. Upon completion, the mixture was filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography (EA:PE=2:1) to afford the title compound (920 mg, Y: 90%). LCMS (ESI): 341.2 [M+H]<sup>+</sup> . \n\n**Step 9: Preparation of Compound 12-9** \n\nA mixture of **compound 12-8** (920 mg,2.7 mmol) and NaBH4 (1 g, 27 mmol) in ethanol (10 mL) was stirred at 20°C for 14 hours. After the addition of ice water (10 mL), the mixture was extracted with ethyl acetate (30 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography (EA:PE=2:1) to afford the title compound (410 mg, Y: 50%). LCMS (ESI): 299.2 [M+H]<sup>+</sup> . \n\n# **Step 10: Preparation of Compound 12-10** \n\n"
+  }
+}

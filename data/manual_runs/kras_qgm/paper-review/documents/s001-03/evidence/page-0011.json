@@ -1,0 +1,2349 @@
+{
+  "page": 11,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The loss for a batch of data is the mean of the individual losses for",
+      "bbox": [
+        56.692901611328125,
+        47.59562683105469,
+        296.38592529296875,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "each data point in the batch:",
+      "bbox": [
+        39.685001373291016,
+        58.34562683105469,
+        144.43524169921875,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ℒ= −1",
+      "bbox": [
+        135.62710571289062,
+        78.38859558105469,
+        162.62344360351562,
+        94.37870025634766
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "N",
+      "bbox": [
+        158.48109436035156,
+        88.41563415527344,
+        163.63677978515625,
+        99.6236343383789
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "N",
+      "bbox": [
+        168.4272003173828,
+        76.29309844970703,
+        172.0361785888672,
+        84.13870239257812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "∑",
+      "bbox": [
+        166.0771942138672,
+        83.15934753417969,
+        174.3860626220703,
+        94.36734771728516
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "i=1",
+      "bbox": [
+        166.34829711914062,
+        93.44001007080078,
+        174.11544799804688,
+        101.28561401367188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "log(̂ yyi)",
+      "bbox": [
+        175.63229370117188,
+        83.17070007324219,
+        201.54661560058594,
+        96.05244445800781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(8)",
+      "bbox": [
+        283.4971008300781,
+        83.17070007324219,
+        293.3974914550781,
+        94.37870025634766
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "where N is the number of data points in the batch, yi is the true class",
+      "bbox": [
+        39.685001373291016,
+        112.0626220703125,
+        296.26849365234375,
+        123.0219497680664
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "label for the ith data point and ̂ yyi is the predicted probability for the",
+      "bbox": [
+        39.685001373291016,
+        122.8126220703125,
+        296.2593688964844,
+        136.2010040283203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "true class label of the ith data point.",
+      "bbox": [
+        39.6844482421875,
+        133.5623779296875,
+        171.33380126953125,
+        143.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "In the hyperparameter tuning process, we used Optuna, an opti-",
+      "bbox": [
+        56.695945739746094,
+        144.3451385498047,
+        294.82391357421875,
+        154.525634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mization framework, to adjust parameters such as the number of hid-",
+      "bbox": [
+        39.6844482421875,
+        155.0948944091797,
+        294.8205871582031,
+        165.275390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "den dimensions, embedding dimensions and layers within the model.",
+      "bbox": [
+        39.685001373291016,
+        165.8456268310547,
+        296.1440124511719,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The model presented in this research integrated a deep learning archi-",
+      "bbox": [
+        39.685001373291016,
+        176.5957489013672,
+        294.8031311035156,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tecture. This architecture was designed to incorporate prior informa-",
+      "bbox": [
+        39.685001373291016,
+        187.3457489013672,
+        294.8031005859375,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion (samples) into the generative process. Additionally, the model",
+      "bbox": [
+        39.685001373291016,
+        198.0957489013672,
+        296.11248779296875,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "used Chemistry42 feedback in conjunction with QCBMs, aimed at",
+      "bbox": [
+        39.685001373291016,
+        208.8457489013672,
+        296.3045349121094,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "enhancing its generative accuracy. Supplementary Figure 4 illustrates",
+      "bbox": [
+        39.685001373291016,
+        219.5957489013672,
+        296.18511962890625,
+        229.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the proposed architecture at a cell level. The prior samples were com-",
+      "bbox": [
+        39.685001373291016,
+        230.3457489013672,
+        294.798095703125,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "bined with input samples x′",
+      "bbox": [
+        39.685001373291016,
+        240.93603515625,
+        141.6194305419922,
+        252.77230834960938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "t = X(i) ++xt in the LSTM cell. This combina-",
+      "bbox": [
+        139.26051330566406,
+        241.0957489013672,
+        294.80389404296875,
+        255.37869262695312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion constituted two methods: adding and concatenating samples. The",
+      "bbox": [
+        39.685001373291016,
+        251.8457489013672,
+        296.323486328125,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LSTM’s operations were updated with the following operations:",
+      "bbox": [
+        39.685001373291016,
+        262.5957336425781,
+        274.93792724609375,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Prior sampling x′",
+      "bbox": [
+        91.95210266113281,
+        279.78802490234375,
+        151.29812622070312,
+        291.62353515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "t = X(i) ++xt OR x′",
+      "bbox": [
+        148.939208984375,
+        279.78802490234375,
+        208.1238250732422,
+        294.2254333496094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "t = X(i) + xt",
+      "bbox": [
+        205.76490783691406,
+        280.41552734375,
+        244.72360229492188,
+        294.2254333496094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(9)",
+      "bbox": [
+        283.5871887207031,
+        280.643310546875,
+        293.4053955078125,
+        291.851318359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Forget gate: ft = σ(Wf ⋅[ht−1, x′",
+      "bbox": [
+        105.82710266113281,
+        306.2134094238281,
+        211.05392456054688,
+        319.6189270019531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "t] + bf)",
+      "bbox": [
+        209.19189453125,
+        306.84173583984375,
+        232.5915069580078,
+        319.5352478027344
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(10)",
+      "bbox": [
+        279.896728515625,
+        306.84173583984375,
+        293.3986511230469,
+        318.0497131347656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Input gate: it = σ(Wi ⋅[ht−1, x′",
+      "bbox": [
+        108.06109619140625,
+        332.6593322753906,
+        209.02903747558594,
+        346.0648193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "t] + bi)",
+      "bbox": [
+        207.16700744628906,
+        333.28759765625,
+        230.35760498046875,
+        345.9811706542969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(11)",
+      "bbox": [
+        281.65289306640625,
+        333.28759765625,
+        293.39886474609375,
+        344.49560546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Candidate values:̃ Ct = tanh(WC ⋅[ht−1, x′",
+      "bbox": [
+        87.56819915771484,
+        359.9193115234375,
+        227.7802276611328,
+        373.3248291015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "t] + bC)",
+      "bbox": [
+        225.91819763183594,
+        360.5477294921875,
+        250.8505096435547,
+        373.24114990234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(12)",
+      "bbox": [
+        280.72357177734375,
+        360.5477294921875,
+        293.3960876464844,
+        371.7557067871094
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Update cell state: Ct = ft ⋅Ct−1 + it ⋅̃ Ct",
+      "bbox": [
+        104.6510009765625,
+        387.80340576171875,
+        233.2694091796875,
+        400.5809326171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(13)",
+      "bbox": [
+        280.6881103515625,
+        387.80340576171875,
+        293.3979797363281,
+        399.01141357421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Output gate: ot = σ(Wo ⋅[ht−1, x′",
+      "bbox": [
+        102.54199981689453,
+        412.559326171875,
+        213.17193603515625,
+        425.9648132324219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "t] + bo)",
+      "bbox": [
+        211.30990600585938,
+        413.187744140625,
+        235.87661743164062,
+        425.88116455078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(14)",
+      "bbox": [
+        280.43963623046875,
+        413.187744140625,
+        293.4035339355469,
+        424.3957214355469
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Update hidden state: ht = ot ⋅tanh(Ct)",
+      "bbox": [
+        103.40630340576172,
+        439.60345458984375,
+        235.0316162109375,
+        452.38092041015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(15)",
+      "bbox": [
+        280.88726806640625,
+        439.60345458984375,
+        293.4028625488281,
+        450.8114318847656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To generate samples, the process began with sampling from the",
+      "bbox": [
+        56.692901611328125,
+        466.8456115722656,
+        296.2563171386719,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "prior, followed by the LSTM network processing these prior samples to",
+      "bbox": [
+        39.685001373291016,
+        477.5956115722656,
+        296.25860595703125,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generate compounds representations. The compounds were validated",
+      "bbox": [
+        39.685001373291016,
+        488.3456115722656,
+        296.1982116699219,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "through the Chemistry42 platform, specifically tailored to assess ligand",
+      "bbox": [
+        39.685001373291016,
+        499.0956115722656,
+        296.20513916015625,
+        509.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quality for the KRAS-G12D mutant. This methodology allows designing",
+      "bbox": [
+        39.685001373291016,
+        509.8456115722656,
+        296.2803039550781,
+        520.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ligands targeted at specific proteins. Moreover, the LSTM model is a",
+      "bbox": [
+        39.685001373291016,
+        520.5956420898438,
+        296.3297424316406,
+        530.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "classical approach for learning ligand structures and constructing a",
+      "bbox": [
+        39.685001373291016,
+        531.3456420898438,
+        296.41925048828125,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "latent ligand space. The QCBM functions as a prior, guiding the LSTM",
+      "bbox": [
+        39.685001373291016,
+        542.0956420898438,
+        296.29217529296875,
+        552.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in the generation of novel ligand samples. The procedure was subjected",
+      "bbox": [
+        39.685001373291016,
+        552.8456420898438,
+        296.28131103515625,
+        563.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to an iterative process to enhance the quality of ligands, which was",
+      "bbox": [
+        39.685001373291016,
+        563.5956420898438,
+        296.2005920410156,
+        573.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "evaluated using the Chemistry42 platform.",
+      "bbox": [
+        39.685001373291016,
+        574.3456420898438,
+        199.52874755859375,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Quantum generative model: QCBM model. The QCBM is a variational",
+      "bbox": [
+        39.685001373291016,
+        594.4595947265625,
+        296.2265930175781,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum algorithm that uses the foundational principles of quantum",
+      "bbox": [
+        39.685001373291016,
+        606.5956420898438,
+        296.4337463378906,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mechanics, particularly the Born rule, to generate complex and diverse",
+      "bbox": [
+        39.685001373291016,
+        617.3456420898438,
+        296.3140563964844,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "data samples. The core of our QCBM model is a parameterized quantum",
+      "bbox": [
+        39.685001373291016,
+        628.0956420898438,
+        296.33612060546875,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "state ||ψ(θ)⟩, where θ denotes the parameters or ansatz of our quantum",
+      "bbox": [
+        39.685001373291016,
+        638.7290649414062,
+        296.3708801269531,
+        650.8785400390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "circuit. As per the Born rule, given a measurement basis, which is com-",
+      "bbox": [
+        39.685001373291016,
+        649.5956420898438,
+        294.80322265625,
+        659.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "monly the computational basis in our case, the probability of observing",
+      "bbox": [
+        39.685001373291016,
+        660.3456420898438,
+        296.23193359375,
+        670.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a specific outcome |x⟩ is expressed as ∣〈x∣ψ(θ)〉∣2.",
+      "bbox": [
+        39.685001373291016,
+        670.3118896484375,
+        215.7390899658203,
+        682.8421020507812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Training a QCBM involves optimizing the parameters of the",
+      "bbox": [
+        56.692901611328125,
+        681.8456420898438,
+        296.4102783203125,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum circuit to produce a probability distribution that closely",
+      "bbox": [
+        39.685001373291016,
+        692.5956420898438,
+        296.14044189453125,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "approximates the target distribution (probability computed by Chem-",
+      "bbox": [
+        39.685001373291016,
+        703.3456420898438,
+        294.8031311035156,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "istry42 reward values). This process is fundamentally iterative, where",
+      "bbox": [
+        39.685001373291016,
+        714.0956420898438,
+        296.275634765625,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the quantum circuit parameters, denoted as θ, are adjusted in each",
+      "bbox": [
+        39.685001373291016,
+        724.8126220703125,
+        296.2340087890625,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "step to reduce the discrepancy between the generated and target",
+      "bbox": [
+        39.685001373291016,
+        735.5956420898438,
+        296.370361328125,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "distributions. A classical optimization algorithm recommends adjust-",
+      "bbox": [
+        306.1416931152344,
+        47.59562683105469,
+        561.2598876953125,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ing parameters, which operates on the basis of the feedback received",
+      "bbox": [
+        306.1416931152344,
+        58.34562683105469,
+        562.7184448242188,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "from the evaluation of the circuit’s output. At each iteration, the quan-",
+      "bbox": [
+        306.1416931152344,
+        69.09562683105469,
+        561.2598876953125,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tum circuit is sampled to produce a set of states. These states are then",
+      "bbox": [
+        306.1416931152344,
+        79.84562683105469,
+        562.7496948242188,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compared against the target distribution and the difference between",
+      "bbox": [
+        306.1416931152344,
+        90.59538269042969,
+        562.6911010742188,
+        100.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "them informs the direction and magnitude of parameter adjustments in",
+      "bbox": [
+        306.1416931152344,
+        101.34562683105469,
+        562.6852416992188,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the quantum circuit. This iterative process continues until the distribu-",
+      "bbox": [
+        306.1416931152344,
+        112.09562683105469,
+        561.2598266601562,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion generated by the QCBM closely aligns with the target distribution",
+      "bbox": [
+        306.1416931152344,
+        122.84562683105469,
+        562.7067260742188,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "or until a predefined convergence criterion is met.",
+      "bbox": [
+        306.1416931152344,
+        133.5956268310547,
+        492.24432373046875,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "In the context of QCBM training, the exact NLL functions as the",
+      "bbox": [
+        323.1531982421875,
+        144.3453826904297,
+        562.6826782226562,
+        154.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "primary loss function, providing a quantitative measure of the differ-",
+      "bbox": [
+        306.1416931152344,
+        155.0956268310547,
+        561.2598876953125,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ence between the distributions. The exact NLL for a QCBM is the nega-",
+      "bbox": [
+        306.1416931152344,
+        165.8456268310547,
+        561.2598266601562,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tive sum of the logarithms of the probabilities that the quantum circuit",
+      "bbox": [
+        306.1416931152344,
+        176.5957489013672,
+        562.746826171875,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "assigns to the states in the training dataset. Mathematically, this is",
+      "bbox": [
+        306.1416931152344,
+        187.3457489013672,
+        562.71484375,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "represented as NLL (θ) = −∑x∈D log pθ(x), where D is the set of data points",
+      "bbox": [
+        306.1416931152344,
+        198.062744140625,
+        562.6701049804688,
+        212.52011108398438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and pθ(x) is the probability of observing state x under the current",
+      "bbox": [
+        306.1416931152344,
+        208.812744140625,
+        562.7053833007812,
+        219.77200317382812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "parameters θ of the quantum circuit. Minimizing the NLL involves",
+      "bbox": [
+        306.1416931152344,
+        219.562744140625,
+        562.7713623046875,
+        229.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "adjusting θ such that the quantum circuit’s output distribution increas-",
+      "bbox": [
+        306.1416931152344,
+        230.312744140625,
+        561.2598876953125,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ingly resembles the empirical distribution of the data. This optimiza-",
+      "bbox": [
+        306.1416931152344,
+        241.0957489013672,
+        561.2598266601562,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion is typically carried out using gradient-based methods or other",
+      "bbox": [
+        306.1416931152344,
+        251.8457489013672,
+        562.5404663085938,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "heuristic techniques suited to the quantum computing context. In our",
+      "bbox": [
+        306.1416931152344,
+        262.5957336425781,
+        562.6355590820312,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "project, we used COBYLA for our optimizer. As the NLL decreases, the",
+      "bbox": [
+        306.1416931152344,
+        273.3456115722656,
+        562.6743774414062,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "fidelity of the QCBM in modeling the target distribution correspond-",
+      "bbox": [
+        306.1416931152344,
+        284.0956115722656,
+        561.2598876953125,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ingly increases, indicating successful training of the quantum model.",
+      "bbox": [
+        306.1416931152344,
+        294.8456115722656,
+        561.420654296875,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended Data Fig. 5 shows the QCBM architecture and illustrates",
+      "bbox": [
+        323.14959716796875,
+        305.5956115722656,
+        562.590087890625,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "its associated ansatz. We used linear topology for our project. Our",
+      "bbox": [
+        306.1416931152344,
+        316.3456115722656,
+        562.8369750976562,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "QCBM model was built with 16 qubits and four layers and we had 96",
+      "bbox": [
+        306.1416931152344,
+        327.0956115722656,
+        562.5899047851562,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "parameters to optimize in total. The initial probability of the sam-",
+      "bbox": [
+        306.1416931152344,
+        337.8456115722656,
+        561.2598266601562,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ples, P(X(i)), was computed on the basis of the rewards returned by",
+      "bbox": [
+        306.1416931152344,
+        348.5626220703125,
+        562.6119384765625,
+        358.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the Chemistry42 model. These reward-based probabilities were then",
+      "bbox": [
+        306.1416931152344,
+        359.3456115722656,
+        562.7083129882812,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "passed through a softmax function to ensure that they were normal-",
+      "bbox": [
+        306.1416931152344,
+        370.0953674316406,
+        561.2921142578125,
+        380.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ized and fell within the range of 0–1. The resulting values served as the",
+      "bbox": [
+        306.1416931152344,
+        380.8456115722656,
+        562.5751953125,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "‘true’ probabilities of the samples and were used as the target values",
+      "bbox": [
+        306.1416931152344,
+        391.5956115722656,
+        562.7272338867188,
+        401.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "during the model’s training process.",
+      "bbox": [
+        306.1416931152344,
+        402.3456115722656,
+        440.3651123046875,
+        412.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Algorithm 2. Algorithm 2 provides the pseudocode outlining the train-",
+      "bbox": [
+        306.1416931152344,
+        423.713623046875,
+        561.2598876953125,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ing regimen for the QCBM model. This process delineates the iterative",
+      "bbox": [
+        306.1416931152344,
+        434.5956115722656,
+        562.6889038085938,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "optimization of the QCBM parameters.",
+      "bbox": [
+        306.1416931152344,
+        445.3456115722656,
+        450.9992980957031,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1: Initialize: QCBM model with a certain number of qubits and layers",
+      "bbox": [
+        306.1416931152344,
+        466.713134765625,
+        558.4678344726562,
+        477.025634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2: Set: Parameterized quantum state ||ψ(θ)⟩",
+      "bbox": [
+        306.1416931152344,
+        477.462890625,
+        462.1127014160156,
+        489.62847900390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3: while not converged do",
+      "bbox": [
+        306.1416931152344,
+        488.213623046875,
+        402.57177734375,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "4:",
+      "bbox": [
+        306.1416931152344,
+        499.0953674316406,
+        314.6886901855469,
+        509.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Compute exact NLL loss function",
+      "bbox": [
+        329.7366943359375,
+        498.96337890625,
+        454.05999755859375,
+        509.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "5:",
+      "bbox": [
+        306.1416931152344,
+        509.8451232910156,
+        314.0451965332031,
+        520.025634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Compute gradient of exact NLL with respect to θ",
+      "bbox": [
+        329.09320068359375,
+        509.713134765625,
+        509.14111328125,
+        520.025634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "6:",
+      "bbox": [
+        306.1416931152344,
+        520.5949096679688,
+        314.7464599609375,
+        530.775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Adjust parameters using an optimizer",
+      "bbox": [
+        329.7944641113281,
+        520.462890625,
+        471.2984619140625,
+        530.775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "7:",
+      "bbox": [
+        306.1416931152344,
+        531.3446655273438,
+        314.0616760253906,
+        541.525146484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Validate the sample and compute its reward value",
+      "bbox": [
+        329.10968017578125,
+        531.212646484375,
+        514.5861206054688,
+        541.525146484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "8:",
+      "bbox": [
+        306.1416931152344,
+        542.0944213867188,
+        314.6804504394531,
+        552.27490234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "if sample is valid then",
+      "bbox": [
+        329.72845458984375,
+        541.96240234375,
+        410.3473815917969,
+        552.27490234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "9:",
+      "bbox": [
+        306.1416931152344,
+        552.8441772460938,
+        314.7464599609375,
+        563.024658203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Compute rewards for the sample",
+      "bbox": [
+        346.2944641113281,
+        552.712158203125,
+        469.33074951171875,
+        563.024658203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "10:",
+      "bbox": [
+        306.1416931152344,
+        563.5939331054688,
+        318.6569519042969,
+        573.7744140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Adjust probabilities P(Xi) on the basis of the rewards",
+      "bbox": [
+        341.9549560546875,
+        563.4619140625,
+        539.4345703125,
+        574.52197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "11:",
+      "bbox": [
+        306.14202880859375,
+        574.3453979492188,
+        316.718505859375,
+        584.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Train QCBM model with adjusted probabilities",
+      "bbox": [
+        340.0165100097656,
+        574.21337890625,
+        517.9194946289062,
+        584.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "12:",
+      "bbox": [
+        306.14202880859375,
+        585.0951538085938,
+        317.74151611328125,
+        595.275634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "end If",
+      "bbox": [
+        332.7895202636719,
+        584.963134765625,
+        354.8582763671875,
+        595.275634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "13: end while",
+      "bbox": [
+        306.14202880859375,
+        595.712890625,
+        354.9654846191406,
+        606.025390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Reporting summary",
+      "bbox": [
+        306.1416931152344,
+        616.8306274414062,
+        388.66302490234375,
+        627.4793701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Further information on research design is available in the Nature",
+      "bbox": [
+        306.1416931152344,
+        628.0956420898438,
+        562.8714599609375,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Portfolio Reporting Summary linked to this article.",
+      "bbox": [
+        306.1416931152344,
+        638.8456420898438,
+        494.7159729003906,
+        649.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Data availability",
+      "bbox": [
+        306.1416931152344,
+        657.7736206054688,
+        389.8735046386719,
+        670.974609375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The datasets generated and analyzed during the current study, along",
+      "bbox": [
+        306.1416931152344,
+        671.0956420898438,
+        562.7128295898438,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "with the generative model, are available via Zenodo at https://doi.org/",
+      "bbox": [
+        306.1416931152344,
+        681.8456420898438,
+        562.70361328125,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "10.5281/zenodo.11137638 (ref. 73).",
+      "bbox": [
+        306.1416931152344,
+        692.5956420898438,
+        432.5069580078125,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Code availability",
+      "bbox": [
+        306.1416931152344,
+        711.5236206054688,
+        391.7547302246094,
+        724.724609375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The full code for running our generative model is available via Zenodo",
+      "bbox": [
+        306.1416931152344,
+        724.8456420898438,
+        562.8434448242188,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "at https://doi.org/10.5281/zenodo.11137638 (ref. 73).",
+      "bbox": [
+        306.1416931152344,
+        735.5956420898438,
+        499.7939758300781,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 11
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          39,
+          49,
+          297,
+          68
+        ],
+        "pos": [
+          71,
+          173
+        ]
+      },
+      {
+        "index": 3,
+        "class": "formula",
+        "bbox": [
+          135,
+          77,
+          294,
+          99
+        ],
+        "pos": [
+          173,
+          175
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          39,
+          113,
+          297,
+          144
+        ],
+        "pos": [
+          175,
+          377
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          39,
+          145,
+          297,
+          273
+        ],
+        "pos": [
+          377,
+          1230
+        ]
+      },
+      {
+        "index": 6,
+        "class": "formula",
+        "bbox": [
+          87,
+          282,
+          294,
+          449
+        ],
+        "pos": [
+          1230,
+          1232
+        ]
+      },
+      {
+        "index": 7,
+        "class": "text",
+        "bbox": [
+          39,
+          468,
+          297,
+          585
+        ],
+        "pos": [
+          1232,
+          1961
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          306,
+          49,
+          563,
+          144
+        ],
+        "pos": [
+          1961,
+          2576
+        ]
+      },
+      {
+        "index": 9,
+        "class": "text",
+        "bbox": [
+          306,
+          145,
+          563,
+          305
+        ],
+        "pos": [
+          2576,
+          3648
+        ]
+      },
+      {
+        "index": 10,
+        "class": "text",
+        "bbox": [
+          306,
+          307,
+          563,
+          413
+        ],
+        "pos": [
+          3648,
+          4308
+        ]
+      },
+      {
+        "index": 11,
+        "class": "text",
+        "bbox": [
+          306,
+          425,
+          563,
+          455
+        ],
+        "pos": [
+          4308,
+          4490
+        ]
+      },
+      {
+        "index": 12,
+        "class": "text",
+        "bbox": [
+          306,
+          468,
+          559,
+          477
+        ],
+        "pos": [
+          4490,
+          4565
+        ]
+      },
+      {
+        "index": 13,
+        "class": "text",
+        "bbox": [
+          306,
+          479,
+          463,
+          489
+        ],
+        "pos": [
+          4565,
+          4623
+        ]
+      },
+      {
+        "index": 14,
+        "class": "list-item",
+        "bbox": [
+          306,
+          489,
+          403,
+          499
+        ],
+        "pos": [
+          4623,
+          4661
+        ]
+      },
+      {
+        "index": 15,
+        "class": "list-item",
+        "bbox": [
+          306,
+          500,
+          455,
+          509
+        ],
+        "pos": [
+          4661,
+          4704
+        ]
+      },
+      {
+        "index": 16,
+        "class": "list-item",
+        "bbox": [
+          306,
+          511,
+          510,
+          520
+        ],
+        "pos": [
+          4704,
+          4765
+        ]
+      },
+      {
+        "index": 17,
+        "class": "list-item",
+        "bbox": [
+          306,
+          522,
+          472,
+          531
+        ],
+        "pos": [
+          4765,
+          4813
+        ]
+      },
+      {
+        "index": 18,
+        "class": "list-item",
+        "bbox": [
+          306,
+          532,
+          515,
+          541
+        ],
+        "pos": [
+          4813,
+          4873
+        ]
+      },
+      {
+        "index": 19,
+        "class": "list-item",
+        "bbox": [
+          306,
+          543,
+          411,
+          552
+        ],
+        "pos": [
+          4873,
+          4912
+        ]
+      },
+      {
+        "index": 20,
+        "class": "list-item",
+        "bbox": [
+          306,
+          554,
+          470,
+          563
+        ],
+        "pos": [
+          4912,
+          4954
+        ]
+      },
+      {
+        "index": 21,
+        "class": "list-item",
+        "bbox": [
+          306,
+          565,
+          540,
+          574
+        ],
+        "pos": [
+          4954,
+          5028
+        ]
+      },
+      {
+        "index": 22,
+        "class": "list-item",
+        "bbox": [
+          306,
+          575,
+          518,
+          585
+        ],
+        "pos": [
+          5028,
+          5085
+        ]
+      },
+      {
+        "index": 23,
+        "class": "list-item",
+        "bbox": [
+          306,
+          586,
+          355,
+          594
+        ],
+        "pos": [
+          5085,
+          5104
+        ]
+      },
+      {
+        "index": 24,
+        "class": "text",
+        "bbox": [
+          39,
+          597,
+          297,
+          681
+        ],
+        "pos": [
+          5104,
+          5683
+        ]
+      },
+      {
+        "index": 25,
+        "class": "text",
+        "bbox": [
+          39,
+          683,
+          297,
+          746
+        ],
+        "pos": [
+          5683,
+          6081
+        ]
+      },
+      {
+        "index": 26,
+        "class": "list-item",
+        "bbox": [
+          306,
+          597,
+          355,
+          604
+        ],
+        "pos": [
+          6081,
+          6103
+        ]
+      },
+      {
+        "index": 27,
+        "class": "section-header",
+        "bbox": [
+          306,
+          618,
+          389,
+          628
+        ],
+        "pos": [
+          6103,
+          6130
+        ]
+      },
+      {
+        "index": 28,
+        "class": "text",
+        "bbox": [
+          306,
+          629,
+          563,
+          649
+        ],
+        "pos": [
+          6130,
+          6250
+        ]
+      },
+      {
+        "index": 29,
+        "class": "section-header",
+        "bbox": [
+          306,
+          659,
+          390,
+          671
+        ],
+        "pos": [
+          6250,
+          6276
+        ]
+      },
+      {
+        "index": 30,
+        "class": "text",
+        "bbox": [
+          306,
+          672,
+          563,
+          702
+        ],
+        "pos": [
+          6276,
+          6453
+        ]
+      },
+      {
+        "index": 31,
+        "class": "section-header",
+        "bbox": [
+          306,
+          713,
+          392,
+          725
+        ],
+        "pos": [
+          6453,
+          6479
+        ]
+      },
+      {
+        "index": 32,
+        "class": "text",
+        "bbox": [
+          306,
+          726,
+          563,
+          746
+        ],
+        "pos": [
+          6479,
+          6606
+        ]
+      },
+      {
+        "index": 33,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          6606,
+          6629
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\nThe loss for a batch of data is the mean of the individual losses for each data point in the batch: \n\n\n\nwhere _N_ is the number of data points in the batch, _yi_ is the true class label for the _i_ th data point and ̂ _yyi_ is the predicted probability for the true class label of the _i_ th data point. \n\nIn the hyperparameter tuning process, we used Optuna, an optimization framework, to adjust parameters such as the number of hidden dimensions, embedding dimensions and layers within the model. The model presented in this research integrated a deep learning architecture. This architecture was designed to incorporate prior information (samples) into the generative process. Additionally, the model used Chemistry42 feedback in conjunction with QCBMs, aimed at enhancing its generative accuracy. Supplementary Figure 4 illustrates the proposed architecture at a cell level. The prior samples were combined with input samples _xt_<sup>′=</sup><sup>_X_(</sup><sup>_i_) ++</sup><sup>_xt_in the LSTM cell. This combina-</sup> tion constituted two methods: adding and concatenating samples. The LSTM’s operations were updated with the following operations: \n\n\n\nTo generate samples, the process began with sampling from the prior, followed by the LSTM network processing these prior samples to generate compounds representations. The compounds were validated through the Chemistry42 platform, specifically tailored to assess ligand quality for the KRAS-G12D mutant. This methodology allows designing ligands targeted at specific proteins. Moreover, the LSTM model is a classical approach for learning ligand structures and constructing a latent ligand space. The QCBM functions as a prior, guiding the LSTM in the generation of novel ligand samples. The procedure was subjected to an iterative process to enhance the quality of ligands, which was evaluated using the Chemistry42 platform. \n\ndistributions. A classical optimization algorithm recommends adjusting parameters, which operates on the basis of the feedback received from the evaluation of the circuit’s output. At each iteration, the quantum circuit is sampled to produce a set of states. These states are then compared against the target distribution and the difference between them informs the direction and magnitude of parameter adjustments in the quantum circuit. This iterative process continues until the distribution generated by the QCBM closely aligns with the target distribution or until a predefined convergence criterion is met. \n\nIn the context of QCBM training, the exact NLL functions as the primary loss function, providing a quantitative measure of the difference between the distributions. The exact NLL for a QCBM is the negative sum of the logarithms of the probabilities that the quantum circuit assigns to the states in the training dataset. Mathematically, this is represented as NLL ( _θ_ ) = −∑ _x_ ∈ _D_ log _pθ_ ( _x_ ), where _D_ is the set of data points and _pθ_ ( _x_ ) is the probability of observing state _x_ under the current parameters _θ_ of the quantum circuit. Minimizing the NLL involves adjusting _θ_ such that the quantum circuit’s output distribution increasingly resembles the empirical distribution of the data. This optimization is typically carried out using gradient-based methods or other heuristic techniques suited to the quantum computing context. In our project, we used COBYLA for our optimizer. As the NLL decreases, the fidelity of the QCBM in modeling the target distribution correspondingly increases, indicating successful training of the quantum model. \n\nExtended Data Fig. 5 shows the QCBM architecture and illustrates its associated ansatz. We used linear topology for our project. Our QCBM model was built with 16 qubits and four layers and we had 96 parameters to optimize in total. The initial probability of the samples, _P_ ( _X_ ( _i_ )), was computed on the basis of the rewards returned by the Chemistry42 model. These reward-based probabilities were then passed through a softmax function to ensure that they were normalized and fell within the range of 0–1. The resulting values served as the ‘true’ probabilities of the samples and were used as the target values during the model’s training process. \n\n**Algorithm 2** . Algorithm 2 provides the pseudocode outlining the training regimen for the QCBM model. This process delineates the iterative optimization of the QCBM parameters. \n\n1: **Initialize:** QCBM model with a certain number of qubits and layers \n\n2: **Set:** Parameterized quantum state || _ψ_ ( _θ_ )⟩ \n\n- 3: **while** not converged **do** \n\n- 4: **Compute** exact NLL loss function \n\n- 5: **Compute** gradient of exact NLL with respect to _θ_ \n\n- 6: **Adjust** parameters using an optimizer \n\n- 7: **Validate** the sample and compute its reward value \n\n- 8: **if** sample is valid **then** \n\n- 9: **Compute** rewards for the sample \n\n- 10: **Adjust** probabilities _P_ ( _Xi_ ) on the basis of the rewards \n\n- 11: **Train** QCBM model with adjusted probabilities \n\n- 12: **end If** \n\n**Quantum generative model: QCBM model.** The QCBM is a variational quantum algorithm that uses the foundational principles of quantum mechanics, particularly the Born rule, to generate complex and diverse data samples. The core of our QCBM model is a parameterized quantum state || _ψ_ ( _θ_ )⟩, where _θ_ denotes the parameters or ansatz of our quantum circuit. As per the Born rule, given a measurement basis, which is commonly the computational basis in our case, the probability of observing a specific outcome | _x_ ⟩ is expressed as ∣〈 _x_ ∣ _ψ_ ( _θ_ )〉∣<sup>2</sup> . \n\nTraining a QCBM involves optimizing the parameters of the quantum circuit to produce a probability distribution that closely approximates the target distribution (probability computed by Chemistry42 reward values). This process is fundamentally iterative, where the quantum circuit parameters, denoted as _θ_ , are adjusted in each step to reduce the discrepancy between the generated and target \n\n- 13: **end while** \n\n## **Reporting summary** \n\nFurther information on research design is available in the Nature Portfolio Reporting Summary linked to this article. \n\n# **Data availability** \n\nThe datasets generated and analyzed during the current study, along with the generative model, are available via Zenodo at https://doi.org/ 10.5281/zenodo.11137638 (ref. 73). \n\n# **Code availability** \n\nThe full code for running our generative model is available via Zenodo at https://doi.org/10.5281/zenodo.11137638 (ref. 73). \n\nNature Biotechnology \n\n"
+  }
+}

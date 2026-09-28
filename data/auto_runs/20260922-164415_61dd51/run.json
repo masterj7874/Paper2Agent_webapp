@@ -1,0 +1,666 @@
+{
+ "id": "20260922-164415_61dd51",
+ "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+ "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+ "project": null,
+ "kind": "microscopy_2d",
+ "modality_guess": "microscopy",
+ "detection": {
+  "details": {
+   "width": 467,
+   "height": 349,
+   "mode": "RGB",
+   "n_frames": 1,
+   "channels": 3,
+   "is_colour": true,
+   "channel_spread": 39.61,
+   "bit_depth": 8,
+   "mean_intensity": 14.35,
+   "dark_background": true,
+   "polarity": "bright",
+   "n_components": 211,
+   "n_blobs": 92,
+   "largest_component_frac": 0.072,
+   "foreground_frac": 0.243,
+   "confidence": 0.8
+  },
+  "notes": [
+   "2-D image 467x349 (RGB), 92 bright objects, largest component 7% of the foreground",
+   "many small bright objects -> microscopy (Cellpose)"
+  ]
+ },
+ "recipe": {
+  "id": "microscopy_cellpose",
+  "title": "2-D microscopy -> Cellpose diameter -> segmentation -> ROIs",
+  "notes": [
+   "cyto2 model, grayscale channels [0,0]"
+  ]
+ },
+ "status": "done",
+ "created_at": 1790063055.8838112,
+ "started_at": 1790063055.885145,
+ "finished_at": 1790063153.4633057,
+ "duration_s": 97.58,
+ "run_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51",
+ "steps": [
+  {
+   "index": 0,
+   "label": "diameter estimate (size model)",
+   "agent": "Cellpose",
+   "tool": "cellpose_estimate_diameter",
+   "arguments": {
+    "image_path": "${input}",
+    "model_type": "cyto2",
+    "channels": [
+     0,
+     0
+    ],
+    "device": "auto",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "6f5b14234627",
+   "started_at": 1790063055.885634,
+   "finished_at": 1790063063.890168,
+   "duration_s": 8.0,
+   "error": null,
+   "hint": null,
+   "message": "Size model cyto2 on img02.png: estimated diameter 27.8003 px (style-regression estimate 26.3194 px, model mean 30 px), device cuda:0.",
+   "artifacts": [
+    {
+     "description": "diameter estimate (JSON)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_estimate_diameter_20260922-164423_d44f2d89/img02_diameter.json"
+    }
+   ],
+   "key_numbers": {
+    "estimated_diameter": 27.8003,
+    "device": "cuda:0",
+    "diameter_from_style": 26.31943,
+    "diam_mean": 30.0,
+    "rescale": 1.07913,
+    "timings_s.model_init": 0.122,
+    "timings_s.eval": 0.979
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+    "model_type": "cyto2",
+    "channels": [
+     0,
+     0
+    ],
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs"
+   },
+   "result": {
+    "message": "Size model cyto2 on img02.png: estimated diameter 27.8003 px (style-regression estimate 26.3194 px, model mean 30 px), device cuda:0.",
+    "reference": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/notebooks/run_cellpose.ipynb",
+    "artifacts": [
+     {
+      "description": "diameter estimate (JSON)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_estimate_diameter_20260922-164423_d44f2d89/img02_diameter.json"
+     }
+    ],
+    "image": {
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+     "shape": [
+      349,
+      467,
+      3
+     ],
+     "dtype": "uint8"
+    },
+    "estimated_diameter": 27.80029502818709,
+    "diameter_from_style": 26.31943035282652,
+    "diam_mean": 30.0,
+    "rescale": 1.0791252384042183,
+    "settings": {
+     "model_type": "cyto2",
+     "channels": [
+      0,
+      0
+     ],
+     "size_model": "size_cyto2torch_0.npy",
+     "pretrained_model_files": [
+      "cyto2torch_0"
+     ]
+    },
+    "device": "cuda:0",
+    "timings_s": {
+     "model_init": 0.122,
+     "eval": 0.979
+    },
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_estimate_diameter_20260922-164423_d44f2d89"
+   }
+  },
+  {
+   "index": 1,
+   "label": "Cellpose cyto2 segmentation",
+   "agent": "Cellpose",
+   "tool": "cellpose_segment_image",
+   "arguments": {
+    "image_path": "${input}",
+    "model_type": "cyto2",
+    "channels": [
+     0,
+     0
+    ],
+    "diameter": "${step[0].result.estimated_diameter}",
+    "device": "auto",
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "36915fb4b5a5",
+   "started_at": 1790063063.8910334,
+   "finished_at": 1790063064.8946157,
+   "duration_s": 1.0,
+   "error": null,
+   "hint": null,
+   "message": "Cellpose cyto2 segmented img02.png (349x467x3): 99 masks, diameter 27.80 px (user), device cuda:0, eval 0.17s.",
+   "artifacts": [
+    {
+     "description": "label masks (uint16 PNG, 0=background)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_masks.png"
+    },
+    {
+     "description": "label masks (TIF)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_masks.tif"
+    },
+    {
+     "description": "label masks as returned by model.eval (npy)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_masks.npy"
+    },
+    {
+     "description": "GUI-loadable segmentation (masks, outlines, flows, est_diam, chan_choose)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_seg.npy"
+    },
+    {
+     "description": "ImageJ outline coordinates (one mask per line)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_outlines.txt"
+    },
+    {
+     "description": "image with red mask outlines",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_outlines.png"
+    },
+    {
+     "description": "raw flows: flow_rgb, dP (dy,dx), cellprob, p (final pixel positions)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_flows.npz"
+    },
+    {
+     "description": "256-d style vector",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_styles.npy"
+    },
+    {
+     "description": "4-panel figure: image | outlines | masks | flows (plot.show_segmentation)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_segmentation.png"
+    }
+   ],
+   "key_numbers": {
+    "n_masks": 99,
+    "diameter_used": 27.8003,
+    "device": "cuda:0",
+    "diameter_source": "user",
+    "timings_s.model_init": 0.078,
+    "timings_s.eval": 0.174,
+    "timings_s.save": 0.5
+   },
+   "resolved_arguments": {
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+    "model_type": "cyto2",
+    "channels": [
+     0,
+     0
+    ],
+    "diameter": 27.80029502818709,
+    "device": "auto",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs"
+   },
+   "result": {
+    "message": "Cellpose cyto2 segmented img02.png (349x467x3): 99 masks, diameter 27.80 px (user), device cuda:0, eval 0.17s.",
+    "reference": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/notebooks/run_cellpose.ipynb",
+    "artifacts": [
+     {
+      "description": "label masks (uint16 PNG, 0=background)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_masks.png"
+     },
+     {
+      "description": "label masks (TIF)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_masks.tif"
+     },
+     {
+      "description": "label masks as returned by model.eval (npy)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_masks.npy"
+     },
+     {
+      "description": "GUI-loadable segmentation (masks, outlines, flows, est_diam, chan_choose)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_seg.npy"
+     },
+     {
+      "description": "ImageJ outline coordinates (one mask per line)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_cp_outlines.txt"
+     },
+     {
+      "description": "image with red mask outlines",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_outlines.png"
+     },
+     {
+      "description": "raw flows: flow_rgb, dP (dy,dx), cellprob, p (final pixel positions)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_flows.npz"
+     },
+     {
+      "description": "256-d style vector",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_styles.npy"
+     },
+     {
+      "description": "4-panel figure: image | outlines | masks | flows (plot.show_segmentation)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_segmentation.png"
+     }
+    ],
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23",
+    "image": {
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/Cellpose_Agent/data/samples/img02.png",
+     "shape": [
+      349,
+      467,
+      3
+     ],
+     "dtype": "uint8"
+    },
+    "n_masks": 99,
+    "diameter_used": 27.80029502818709,
+    "diameter_source": "user",
+    "masks": {
+     "n_masks": 99,
+     "n_unique_labels": 99,
+     "masks_shape": [
+      349,
+      467
+     ],
+     "masks_dtype": "uint16",
+     "foreground_pixels": 72159,
+     "mask_area_px_min": 105,
+     "mask_area_px_max": 5021,
+     "mask_area_px_mean": 728.8787878787879,
+     "median_mask_diameter_px": 27.63953195770684
+    },
+    "settings": {
+     "model_type": "cyto2",
+     "pretrained_model_path": null,
+     "pretrained_model_files": [
+      "cyto2torch_0"
+     ],
+     "size_model": "size_cyto2torch_0.npy",
+     "diam_mean": 30.0,
+     "channels": [
+      0,
+      0
+     ],
+     "diameter": 27.80029502818709,
+     "flow_threshold": 0.4,
+     "cellprob_threshold": 0.0,
+     "net_avg": false,
+     "net_avg_used": false,
+     "resample": true,
+     "rescale": 1.0791252384042183
+    },
+    "device": "cuda:0",
+    "timings_s": {
+     "model_init": 0.078,
+     "eval": 0.174,
+     "save": 0.5
+    }
+   }
+  },
+  {
+   "index": 2,
+   "label": "ImageJ ROIs + per-object stats",
+   "agent": "Cellpose",
+   "tool": "cellpose_masks_to_rois",
+   "arguments": {
+    "masks_path": "${step[1].artifacts[_seg\\.npy$]}",
+    "imagej_rois": true,
+    "per_object_csv": true,
+    "output_dir": "${run_dir}/outputs"
+   },
+   "optional": false,
+   "status": "done",
+   "job_id": "f910d1e28383",
+   "started_at": 1790063064.8955667,
+   "finished_at": 1790063065.4012933,
+   "duration_s": 0.51,
+   "error": null,
+   "hint": null,
+   "message": "99 labelled object(s) in img02_seg.npy (349x467 uint16); 99 outline polygon(s), 99 ImageJ .roi file(s) in img02_rois.zip; median diameter 27.640 px (utils.diameters). Wrote 4 file(s) to /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc: img02_rois.zip, img02_cp_outlines.txt, img02_cp_masks.png, img02_object_stats.csv.",
+   "artifacts": [
+    {
+     "description": "ImageJ/Fiji ROI archive (99 FREEHAND .roi members; open with File > Open in ImageJ)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_rois.zip"
+    },
+    {
+     "description": "legacy ImageJ outline list (99 lines; load with imagej_roi_converter.py)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_cp_outlines.txt"
+    },
+    {
+     "description": "label image PNG written by cellpose.io.save_masks (re-read gives the input labels)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_cp_masks.png"
+    },
+    {
+     "description": "per-object table: area (pixel count), sqrt(area) and equivalent diameter (cellpose.utils.diameters), outline vertex count, centroid, ROI name",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_object_stats.csv"
+    }
+   ],
+   "key_numbers": {
+    "n_masks": 99,
+    "median_diameter_px": 27.63953,
+    "masks_dtype": "uint16",
+    "max_label": 99,
+    "labels_contiguous_1_to_n": true,
+    "n_outlines": 99,
+    "n_empty_outlines": 0,
+    "n_roi_files": 99,
+    "foreground_pixels": 72159,
+    "outlines_multiprocessing": false
+   },
+   "resolved_arguments": {
+    "masks_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_seg.npy",
+    "imagej_rois": true,
+    "per_object_csv": true,
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs"
+   },
+   "result": {
+    "message": "99 labelled object(s) in img02_seg.npy (349x467 uint16); 99 outline polygon(s), 99 ImageJ .roi file(s) in img02_rois.zip; median diameter 27.640 px (utils.diameters). Wrote 4 file(s) to /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc: img02_rois.zip, img02_cp_outlines.txt, img02_cp_masks.png, img02_object_stats.csv.",
+    "reference": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/docs/outputs.rst",
+    "artifacts": [
+     {
+      "description": "ImageJ/Fiji ROI archive (99 FREEHAND .roi members; open with File > Open in ImageJ)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_rois.zip"
+     },
+     {
+      "description": "legacy ImageJ outline list (99 lines; load with imagej_roi_converter.py)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_cp_outlines.txt"
+     },
+     {
+      "description": "label image PNG written by cellpose.io.save_masks (re-read gives the input labels)",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_cp_masks.png"
+     },
+     {
+      "description": "per-object table: area (pixel count), sqrt(area) and equivalent diameter (cellpose.utils.diameters), outline vertex count, centroid, ROI name",
+      "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc/img02_object_stats.csv"
+     }
+    ],
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_masks_to_rois_20260922-164424_5a6c60dc",
+    "masks_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/outputs/cellpose_segment_image_20260922-164423_df0f0c23/img02_seg.npy",
+    "masks_shape": [
+     349,
+     467
+    ],
+    "masks_dtype": "uint16",
+    "n_masks": 99,
+    "max_label": 99,
+    "labels_contiguous_1_to_n": true,
+    "n_outlines": 99,
+    "n_empty_outlines": 0,
+    "n_roi_files": 99,
+    "median_diameter_px": 27.63953195770684,
+    "foreground_pixels": 72159,
+    "outlines_multiprocessing": false,
+    "references": {
+     "io": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/cellpose/io.py",
+     "utils": "https://github.com/MouseLand/cellpose/blob/28ddc24fa36f57b20932b842f4210e0caa3ea4e5/cellpose/utils.py"
+    }
+   }
+  },
+  {
+   "index": 3,
+   "label": "literature context (MedKG related work)",
+   "agent": "MedKG",
+   "tool": "medkg_related_work",
+   "arguments": {
+    "topic": "generalist cell segmentation microscopy deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "microscopy",
+    "task": "segmentation"
+   },
+   "optional": true,
+   "status": "done",
+   "job_id": "2c7fc6c6c3bd",
+   "started_at": 1790063065.4026706,
+   "finished_at": 1790063153.4623141,
+   "duration_s": 88.06,
+   "error": null,
+   "hint": null,
+   "message": "10 related-work rows; LLM=claude-code; status=degraded.",
+   "artifacts": [
+    {
+     "description": "related_work — full JSON response",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164553-e972ee.json"
+    },
+    {
+     "description": "related_work — markdown",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164553-e972ee.md"
+    }
+   ],
+   "key_numbers": {
+    "summary.n_rows": 10,
+    "summary.n_q1": 10,
+    "summary.status": "degraded",
+    "summary.llm.provider": "claude-code",
+    "summary.llm.elapsed_s": 55.38,
+    "summary.llm.fallback_used": true,
+    "summary.timing.total_ms": 56055.0,
+    "summary.timing.retrieval_ms": 556.5,
+    "summary.timing.dense_ms": 42.2,
+    "summary.timing.lexical_ms": 147.4,
+    "summary.timing.rerank_ms": 228.1,
+    "summary.timing.graph_ms": 120.9,
+    "summary.timing.llm_ms": 55375.3
+   },
+   "resolved_arguments": {
+    "topic": "generalist cell segmentation microscopy deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "microscopy",
+    "task": "segmentation"
+   },
+   "result": {
+    "message": "10 related-work rows; LLM=claude-code; status=degraded.",
+    "summary": {
+     "n_rows": 10,
+     "n_q1": 10,
+     "llm": {
+      "provider": "claude-code",
+      "model": "",
+      "elapsed_s": 55.38,
+      "fallback_used": true,
+      "error": "primary codex failed: Codex request failed (exit -15)."
+     },
+     "timing": {
+      "total_ms": 56055.0,
+      "retrieval_ms": 556.5,
+      "embed_ms": null,
+      "dense_ms": 42.2,
+      "lexical_ms": 147.4,
+      "rerank_ms": 228.1,
+      "graph_ms": 120.9,
+      "llm_ms": 55375.3
+     },
+     "status": "degraded"
+    },
+    "artifacts": [
+     {
+      "description": "related_work — full JSON response",
+      "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164553-e972ee.json"
+     },
+     {
+      "description": "related_work — markdown",
+      "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164553-e972ee.md"
+     }
+    ],
+    "reference": "http://127.0.0.1:8790/docs",
+    "rows": [
+     {
+      "work_id": "DOI:10.1038/s41592-020-01018-x",
+      "title": "Cellpose: a generalist algorithm for cellular segmentation",
+      "year": 2020,
+      "journal": "Nature Methods",
+      "is_q1": true,
+      "doi": "10.1038/s41592-020-01018-x",
+      "method": "Cellpose, a generalist deep learning segmentation model (2D model reused for 3D extension without 3D-labeled data)",
+      "modality": "Light microscopy (cells, membranes, nuclei; 2D and 3D image types)",
+      "dataset": "New Cellpose training dataset of highly varied cell images (>70,000 segmented objects)",
+      "metric_values": "not stated",
+      "summary": "Introduces Cellpose, a generalist deep learning segmentation method trained on a diverse dataset of >70,000 objects that segments cells across many image types without retraining or parameter adjustment and outperforms established methods on 2D and 3D datasets.",
+      "score": 0.9945730566978455
+     },
+     {
+      "work_id": "PMC6171227",
+      "title": "A deep learning-based algorithm for 2-D cell segmentation in microscopy images.",
+      "year": 2018,
+      "journal": "BMC bioinformatics",
+      "is_q1": true,
+      "doi": "10.1186/s12859-018-2375-z",
+      "method": "Deep learning prediction of cell and nucleus locations combined with thresholding and watershed segmentation",
+      "modality": "Single-channel fluorescence light microscopy of cell cultures (whole-cell markers, various magnifications)",
+      "dataset": "private cohort (different sets of cell-culture images stained with various markers at different magnifications)",
+      "metric_values": "86% similarity to ground truth segmentation",
+      "summary": "Presents a single-channel whole-cell segmentation algorithm that uses deep learning to locate cells and nuclei followed by thresholding and watershed, achieving 86% similarity to ground truth across varied markers and magnifications.",
+      "score": 0.967777669429779
+     },
+     {
+      "work_id": "PMC9678729",
+      "title": "Scellseg: A style-aware deep learning tool for adaptive cell instance segmentation by contrastive fine-tuning.",
+      "year": 2022,
+      "journal": "iScience",
+      "is_q1": true,
+      "doi": "10.1016/j.isci.2022.105506",
+      "method": "Scellseg: style-aware pre-trained deep learning model with contrastive fine-tuning (also uses unlabeled data) for cell instance segmentation",
+      "modality": "Microscopy images at organelle, cell and organism levels",
+      "dataset": "not stated (disparate microscopy datasets at three biological levels)",
+      "metric_values": "not stated (state-of-the-art transferability in average precision and Aggregated Jaccard Index; performance plateaus after ~8 fine-tuning images)",
+      "summary": "Proposes Scellseg, an adaptive pipeline combining a style-aware pre-trained model with contrastive fine-tuning that achieves state-of-the-art transferability across organelle-, cell- and organism-level datasets with only ~8 annotated images, delivered with a GUI.",
+      "score": 0.9489172697067261
+     },
+     {
+      "work_id": "PMC9444243",
+      "title": "DetecDiv, a generalist deep-learning platform for automated cell division tracking and survival analysis.",
+      "year": 2022,
+      "journal": "eLife",
+      "is_q1": true,
+      "doi": "10.7554/elife.79519",
+      "method": "DetecDiv: deep learning platform combining time-series classification and image semantic segmentation for cell division tracking",
+      "modality": "Time-lapse microscopy of yeast in microfluidic traps",
+      "dataset": "private cohort (microfluidic time-lapse yeast imaging across various imaging platforms and trap geometries)",
+      "metric_values": "not stated",
+      "summary": "Develops DetecDiv, a microfluidic image acquisition and deep learning platform that automatically reconstructs single-cell replicative lifespans in yeast with high accuracy and quantifies cell cycle, stress-response and survival dynamics.",
+      "score": 0.948441743850708
+     },
+     {
+      "work_id": "PMC12400132",
+      "title": "DeepSCEM: A User-Friendly Solution for Deep Learning-Based Image Segmentation in Cellular Electron Microscopy.",
+      "year": 2025,
+      "journal": "Biology of the cell",
+      "is_q1": true,
+      "doi": "10.1111/boc.70032",
+      "method": "DeepSCEM: user-friendly convolutional neural network tool for organelle segmentation",
+      "modality": "Cellular electron microscopy",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "Presents DeepSCEM, an easy-to-use tool for fast and efficient deep learning segmentation of cellular electron micrographs with a focus on user-friendly generation and training of organelle segmentation models.",
+      "score": 0.9319595694541931
+     },
+     {
+      "work_id": "PMC12705939",
+      "title": "Artificial Intelligence for Organelle Segmentation in Live-Cell Imaging.",
+      "year": 2025,
+      "journal": "Research (Washington, D.C.)",
+      "is_q1": true,
+      "doi": "10.34133/research.1035",
+      "method": "Review of segmentation algorithms from thresholding to deep learning (including label-efficient, synthetic-data and physics-guided strategies)",
+      "modality": "Live-cell imaging of organelles",
+      "dataset": "not stated",
+      "metric_values": "not stated",
+      "summary": "Reviews recent advances in live-cell organelle segmentation algorithms, discusses challenges in 3D, multi-organelle and cross-modality generalization, and highlights label-efficient strategies toward generalist models.",
+      "score": 0.9270997643470764
+     },
+     {
+      "work_id": "PMC7785326",
+      "title": "Leveraging multimodal microscopy to optimize deep learning models for cell segmentation.",
+      "year": 2021,
+      "journal": "APL bioengineering",
+      "is_q1": true,
+      "doi": "10.1063/5.0027993",
+      "method": "Deep learning cell segmentation models trained on subimage stacks sampled from hyper-labeled multichannel image stacks to compare labeling strategies",
+      "modality": "Multimodal high-throughput microscopy (fluorescence markers and label-free/brightfield, including out-of-focus brightfield)",
+      "dataset": "not stated (hyper-labeled image stacks of identical cells)",
+      "metric_values": "not stated",
+      "summary": "Uses subimage stacks drawn from hyper-labeled microscopy stacks to directly compare fluorescence and label-free training strategies on identical cells, finding fluorescence generally more accurate but label-free more robust to inconsistent labeling, and that combining channels improves generality.",
+      "score": 0.9227612018585205
+     },
+     {
+      "work_id": "PMC11828867",
+      "title": "Cellpose as a reliable method for single-cell segmentation of autofluorescence microscopy images.",
+      "year": 2025,
+      "journal": "Scientific reports",
+      "is_q1": true,
+      "doi": "10.1038/s41598-024-82639-6",
+      "method": "Cellpose deep learning network with a newly trained autofluorescence-trained model (ATM) for nuclear segmentation",
+      "modality": "Autofluorescence multiphoton intensity microscopy of NAD(P)H with co-registered FLIM of NAD(P)H and FAD",
+      "dataset": "private cohort (PANC-1 cells treated with metabolic inhibitors and patient-derived cancer organoids from 9 patients)",
+      "metric_values": "Dice between repeated ATM masks significantly higher than repeated manual masks (p < 0.0001); R² > 0.9 between ATM and manual masks for ORR, mean NAD(P)H lifetime and mean FAD lifetime",
+      "summary": "Validates a Cellpose autofluorescence-trained model for single-cell nuclear segmentation of NAD(P)H images, showing higher reproducibility than manual segmentation and high correlation of FLIM and redox metrics in 2D and 3D cultures.",
+      "score": 0.9181873202323914
+     },
+     {
+      "work_id": "PMC8665766",
+      "title": "Automatic improvement of deep learning-based cell segmentation in time-lapse microscopy by neural architecture search.",
+      "year": 2021,
+      "journal": "Bioinformatics (Oxford, England)",
+      "is_q1": true,
+      "doi": "10.1093/bioinformatics/btab556",
+      "method": "Neural architecture search (NAS) jointly searching non-repeatable micro architectures with a live-cell-specific search space including convolutional LSTM",
+      "modality": "Time-lapse microscopy (2D)",
+      "dataset": "2D datasets from the Cell Tracking Challenge (ten datasets)",
+      "metric_values": "not stated (more consistent top performance across all ten datasets than other challenge methods)",
+      "summary": "Proposes a NAS-based method that automatically designs cell segmentation networks for time-lapse microscopy, incorporating ConvLSTM for temporal information, and achieves consistently top performance across all ten 2D Cell Tracking Challenge datasets.",
+      "score": 0.911337673664093
+     },
+     {
+      "work_id": "PMC9883049",
+      "title": "Instance segmentation of mitochondria in electron microscopy images with a generalist deep learning model trained on a diverse dataset",
+      "year": 2023,
+      "journal": "Cell Systems",
+      "is_q1": true,
+      "doi": "10.1016/j.cels.2022.12.006",
+      "method": "MitoNet, a generalist deep learning instance segmentation model trained on a diverse dataset; released via the empanada Python package and napari plugin",
+      "modality": "2D and volume electron microscopy",
+      "dataset": "Newly amassed heterogeneous ~1.5 × 10^6 image 2D unlabeled cellular EM dataset with ~135,000 segmented mitochondrial instances",
+      "metric_values": "not stated",
+      "summary": "Builds a highly heterogeneous cellular EM dataset with ~135,000 segmented mitochondria and trains MitoNet, a generalist model that performs well on challenging benchmarks and unseen volume EM datasets, released with the empanada inference and proofreading tools.",
+      "score": 0.9105454087257385
+     }
+    ]
+   }
+  }
+ ],
+ "jobs": [
+  "6f5b14234627",
+  "36915fb4b5a5",
+  "f910d1e28383",
+  "2c7fc6c6c3bd"
+ ],
+ "artifacts": [
+  {
+   "description": "run summary (JSON)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/summary.json"
+  },
+  {
+   "description": "run report (markdown)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/report.md"
+  }
+ ],
+ "warnings": [],
+ "summary_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/summary.json",
+ "report_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164415_61dd51/report.md"
+}

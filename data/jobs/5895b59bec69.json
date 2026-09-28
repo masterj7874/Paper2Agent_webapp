@@ -1,0 +1,76 @@
+{
+ "id": "5895b59bec69",
+ "agent": "nnUNet",
+ "tool": "nnunet_convert_msd_dataset",
+ "arguments": {
+  "msd_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/msd/Task04_Hippocampus",
+  "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+  "nnunet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+  "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063109.399605,
+ "started_at": 1790063109.4001744,
+ "finished_at": 1790063109.9717746,
+ "result": {
+  "message": "Converted Task04_Hippocampus -> /media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus (260 imagesTr, 260 labelsTr, 130 imagesTs; channels ['_0000']) in 0.561 s.",
+  "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/468cf803df9b267150ae2b6c0c59b8ac84f16227/nnunetv2/dataset_conversion/convert_MSD_dataset.py",
+  "artifacts": [
+   {
+    "description": "converted nnU-Net dataset folder (native, inside nnUNet_raw)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus"
+   },
+   {
+    "description": "nnU-Net v2 dataset.json written by convert_msd_dataset",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus/dataset.json"
+   },
+   {
+    "description": "copy of the written dataset.json",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_convert_msd_dataset_20260922-164509_96fb996f/dataset.json"
+   },
+   {
+    "description": "upstream stdout log",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_convert_msd_dataset_20260922-164509_96fb996f/upstream.stdout.log"
+   },
+   {
+    "description": "child driver + args/result JSON",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_convert_msd_dataset_20260922-164509_96fb996f"
+   }
+  ],
+  "dataset_name": "Dataset004_Hippocampus",
+  "dataset_id": 4,
+  "dataset_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus",
+  "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+  "file_counts": {
+   "imagesTr": 260,
+   "labelsTr": 260,
+   "imagesTs": 130
+  },
+  "channel_suffixes": [
+   "_0000"
+  ],
+  "dataset_json": {
+   "name": "Hippocampus",
+   "description": "Left and right hippocampus segmentation",
+   "reference": " Vanderbilt University Medical Center",
+   "licence": "CC-BY-SA 4.0",
+   "relase": "1.0 04/05/2018",
+   "tensorImageSize": "3D",
+   "labels": {
+    "background": 0,
+    "Anterior": 1,
+    "Posterior": 2
+   },
+   "numTraining": 260,
+   "numTest": 130,
+   "file_ending": ".nii.gz",
+   "channel_names": {
+    "0": "MRI"
+   }
+  },
+  "wall_seconds": 0.561
+ },
+ "error": null,
+ "duration_s": 0.57
+}

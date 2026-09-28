@@ -1,0 +1,145 @@
+{
+  "page": 2,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0002.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0002.png plus a 140 dpi crop of the figure region and compared every item with evidence/page-0002.json. Changes: (1) p0002-b002 is Fig. 1; replaced the placeholder label 'Figure on PDF page 2 (3)' with 'Fig. 1' and the placeholder asset_name 'figure-p0002-002' with 'figure-1'. (2) Tightened the figure bbox from [96,46,504,552] to [96,45,504,550]: the old bottom edge touched the first caption line (top 552.6 pt) and the old top left the panel-a grey bar's leading edge tight against the header rule. The new crop was rendered and checked: it contains all four panels with their bold letters a, b, c and d, the 'Increasing structural diversity' rotated label, the VirtualFlow/Chemistry42 logos, the 'Selected 3/8/4 compounds' labels at the right edge (text ends at x=490.4 pt) and the Classical / Quantum (HW) / Quantum (SIM) legend at the bottom (y=540-547.5 pt). (3) p0002-b003 and p0002-b004 are the two column halves of the Fig. 1 caption; both are now kind 'caption' and p0002-b004 carries join_previous 'space' because the left half ends mid-sentence at 'processed sequential data of'. (4) Caption text: removed the spurious space before each panel-letter comma (**a** , -> **a**,) for a, b, c and d; kept the en dashes in 'quantum-classical' and 'STONED-SELFIES' as they appear in the native text. (5) Removed the space before the sentence period after the superscript citation markers in p0002-b005 (effectiveness17,18) and confirmed the line-wrap hyphens in 'show-/cased' and 'high-/lighting' were correctly rejoined without leaving a hyphen. (6) Reading order: the Fig. 1 float was moved from the top of the page to the paragraph boundary between p0002-b006 ('...extra qubits.') and p0002-b007 ('Here, we propose...'). That is the nearest true paragraph break, and it lets the prose run unbroken from page 1 into p0002-b005 and out of p0002-b007 into page 3. (7) Cross-page joins: p0002-b005 gets join_previous 'space' (page 1 ends '...and overcome'; this page opens 'learning challenges such as barren plateaus.'), and p0002-b006 gets join_previous 'space' (left column ends 'overcoming limitations of', right column opens 'classical systems and quantum prior size.'). p0002-b007 starts a new indented paragraph, so it takes no join. (8) Header items p0002-b000/b001 and footer p0002-b008 confirmed against the preview as running furniture (left as text; the compact builder auto-omits them); bare page number 1955 kept as 'omit'. Note: the figure's <!-- picture text --> blob keeps the extractor's typo 'Qunatum samples', which is what the printed panel d actually says; it is inside the image crop and the builder ignores the markdown field. Coordinator: running header/footer furniture set to explicit omit, matching the treatment reviewers applied on pages 8-18, so both verification parsers exclude the same regions.",
+  "warnings": [
+    "Review possible header/footer: p0002-b000",
+    "Review possible header/footer: p0002-b001",
+    "Review possible header/footer: p0002-b008"
+  ],
+  "items": [
+    {
+      "id": "p0002-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Running header ('Brief Communication') repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0002-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Running header DOI link repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0002-b005",
+      "kind": "text",
+      "bbox": [
+        39.0,
+        672.0,
+        297.0,
+        746.0
+      ],
+      "markdown": "learning challenges such as barren plateaus. The integration of tensor networks furthers their effectiveness<sup>17,18</sup>. However, the challenges in quantum data processing and circuit trainability have led to the development of hybrid algorithms that harness the strengths of both quantum and classical machine learning. Manuel et al.<sup>19</sup> showcased how a hybrid quantum circuit generative adversarial network can enhance target space exploration, overcoming limitations of",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0002-b006",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        671.0,
+        563.0,
+        713.0
+      ],
+      "markdown": "classical systems and quantum prior size. Additionally, Zeng et al.<sup>20</sup> presented a quantum–classical hybrid for image generation, highlighting the ability to encode conditions into quantum circuits with extra qubits.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0002-b002",
+      "kind": "figure",
+      "bbox": [
+        96.0,
+        45.0,
+        504.0,
+        550.0
+      ],
+      "markdown": "<!-- Start of picture text -->\na     Training data generation<br>Data  Hit expansion Virtual screening with<br>mining<br>100 M<br>molecules<br>screened<br>KRAS structure Ligand library<br>Mutation sites Similarity > 0.6 Similarity > 0.4<br>Experimental ligands STONED SELFIES Virtual screening hits<br>650 molecules 850K molecules Top 250K molecules<br>Training set<br>b     Generation of new molecules<br>Generative model<br>QCBM LSTM Filter<br>generator generator discriminator<br>Quantum computer (IBM) Classical computer/cloud Remote API<br>c     KRAS inhibitor design campaign<br>Compound selection Synthesis of hits Experimental validation<br>d     Identification of inhibitor candidates<br>Classical samples<br>1M compounds<br>Selected 3 compounds<br>Qunatum samples Selected 8 compounds<br>1M compounds Selected 4 compounds<br>Simulated samples Molecular docking Filtering based on Sorting based Structural Synthetic<br>1M compounds via Chemistry42  pharmacophores on PLI score novelty complexity<br>Classical Quantum (HW) Quantum (SIM)<br>Increasing structural diversity<br><!-- End of picture text -->",
+      "source_class": "picture",
+      "label": "Fig. 1",
+      "asset_name": "figure-1"
+    },
+    {
+      "id": "p0002-b003",
+      "kind": "caption",
+      "bbox": [
+        39.0,
+        553.0,
+        292.0,
+        651.0
+      ],
+      "markdown": "**Fig. 1 | Schematic representation of the hybrid quantum–classical framework for KRAS ligand development. a**, The initial phase involved assembling a training dataset, starting with 650 experimentally verified KRAS inhibitors sourced from the literature. Using the STONED–SELFIES algorithm, analogs of these inhibitors were generated, expanding the dataset to approximately 850,000 compounds. This was further augmented by adding 250,000 top candidates from a virtual screening of the REAL ligand library against KRAS, creating a total dataset of over 1 million molecules. **b**, In the generation phase, the dataset was used to train our generative model, consisting of both a classical LSTM network and a QCBM. The LSTM network processed sequential data of",
+      "source_class": "text"
+    },
+    {
+      "id": "p0002-b004",
+      "kind": "caption",
+      "bbox": [
+        306.0,
+        553.0,
+        561.0,
+        651.0
+      ],
+      "markdown": "chemical structures, while the QCBM, trained on the output from the LSTM, generated complex, high-dimensional probability distributions. This workflow incorporated Chemistry42 as a reward function to encourage the production of structurally diverse and synthesizable molecules. **c**, Workflow for KRAS inhibitor design, detailing the process from computational compound selection to laboratory synthesis and experimental validation. **d**, A total of 1 million compounds (classical samples from the LSTM, quantum samples from QCBM on quantum hardware and simulated quantum samples on classical hardware) were evaluated by Chemistry42 to filter out unsuitable candidates and rank the rest by their PLI scores. Finally, 15 promising compounds were selected for synthesis.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0002-b007",
+      "kind": "text",
+      "bbox": [
+        306.0,
+        715.0,
+        563.0,
+        746.0
+      ],
+      "markdown": "Here, we propose a hybrid quantum–classical model that addresses qubit limitations and combines quantum and classical approaches to generate compounds targeting the KRAS protein,",
+      "source_class": "text"
+    },
+    {
+      "id": "p0002-b008",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        762.0,
+        278.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology | Volume 43 | December 2025 | 1954–1959",
+      "source_class": "page-footer",
+      "reason": "Running footer ('Nature Biotechnology' with volume/issue/page range) repeated on every page of the article; not body content."
+    },
+    {
+      "id": "p0002-b009",
+      "kind": "omit",
+      "bbox": [
+        543.0,
+        763.0,
+        563.0,
+        770.0
+      ],
+      "markdown": "**1955**",
+      "source_class": "page-footer",
+      "reason": "Bare page number 1955 in the running foot; verified against previews/page-0002.png."
+    }
+  ]
+}

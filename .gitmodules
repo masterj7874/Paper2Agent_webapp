@@ -1,0 +1,3 @@
+[submodule "data/manual_runs/kras_qgm/repo"]
+	path = data/manual_runs/kras_qgm/repo
+	url = https://github.com/aspuru-guzik-group/quantum-generative-models.git

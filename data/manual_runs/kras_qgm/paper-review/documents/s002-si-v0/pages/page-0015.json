@@ -1,0 +1,124 @@
+{
+  "page": 15,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0015.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0015.png. VERDICT ON THE FLAGGED HEADER/FOOTER (p0015-b000): NOT running furniture. 'S1.6. Preparation of ISM061-13' is a genuine SI section heading - it is set in the same bold body face and left margin (x=56.6) as every other S1.x heading in this supplement, its text is unique to this page, and it is the parent of the Scheme S6 / Step 1-3 content that follows. It only tripped the detector because it is a short line sitting at the top text band (y 56.8-70.5) on a page whose body starts with a figure. Changed kind text->heading, source_class page-header->section-header, and added the '# ' marker so it matches the extractor's own treatment of the identical S1.8 heading on page 21 (p0021-b001). Left the raw extractor warning string in 'warnings' as provenance. Scheme S6 figure (p0015-b001): confirmed against the preview that the crop holds all four reaction rows and every compound label 13-1..13-10 plus ISM061-13; bbox nudged [52,73,475,298] -> [52,72,476,300] to clear the vector union [57.9,78.6,469.3,292.4]; labelled 'Scheme S6' / scheme-s6 (printed number), replacing placeholder figure-p0015-001. Scheme label text is kept as the separate caption item p0015-b002 immediately after the figure. p0015-b003 'Step 1: Preparation of Compound 13-1' was kind=caption although it is a step heading identical in form to Steps 2-3 on this page; changed to heading. Text repair in p0015-b006: restored the real compound hyphen in '[1,1'-bis(diphenylphosphino)ferrocene]' that the extractor swallowed at the line wrap (the PDF prints \"[1,1'-\" at the end of the line, and the hyphen belongs to the ligand name, it is not a wrap artifact), and normalised '.<sup>1</sup> H NMR ... DMSO- _d6_ )' to '. <sup>1</sup>H NMR ... DMSO-d6)'. Left '–70°C' in p0015-b008 alone: the source really uses an en dash as the minus sign there. Page ends mid-paragraph; the continuation is p0016-b000. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [
+    "Review possible header/footer: p0015-b000"
+  ],
+  "items": [
+    {
+      "id": "p0015-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        221.0,
+        71.0
+      ],
+      "markdown": "### S1.6. Preparation of ISM061-13",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0015-b001",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        72.0,
+        476.0,
+        300.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S6",
+      "asset_name": "scheme-s6"
+    },
+    {
+      "id": "p0015-b002",
+      "kind": "caption",
+      "bbox": [
+        205.0,
+        309.0,
+        393.0,
+        321.0
+      ],
+      "markdown": "**Scheme S6** Preparation of ISM061-13",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0015-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        335.0,
+        259.0,
+        347.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 13-1",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0015-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        366.0,
+        542.0,
+        502.0
+      ],
+      "markdown": "To a solution of 3-bromo-4-ethylphenol (1.0 g, 4.4 mmol) in dichloromethane (10 mL) was added boron trifluoride etherate (6.6 ml, 6.6 mmol) and triethylsilane (0.8 g, 6.6 mmol) under nitrogen protection at 0 °C. The mixture was stirred at 25 °C for 16 hours. After the addition of ice water (50 mL), the mixture was extracted with dichloromethane (50 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound as a yellow oil (900 mg, Y: 95.9%).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0015-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        511.0,
+        259.0,
+        522.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 13-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0015-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        541.0,
+        539.0,
+        677.0
+      ],
+      "markdown": "To a solution of **compound 13-1** (900 mg, 4.2 mmol) in dioxane (9 mL) was added [1,1’-bis(diphenylphosphino)ferrocene]dichloro palladium (II) (160 mg, 0.29 mmol), potassium acetate (1.2 g, 12.6 mmol) and B2(pin)2 (1.6 mg, 6.3 mmol). The mixture was stirred at 100 °C for 16 hours. The mixture was then concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography (PE:EA=50:1) to afford the title compound as a yellow oil (810 mg, Y: 73.6%). <sup>1</sup>H NMR (400 MHz, DMSO-d6) δ 7.10 - 7.06 (m, 2H), 6.91 - 6.87 (m, 1H), 3.67 (s, 1H), 2.74 - 2.68 (m, 2H), 1.25 (s, 12H), 1.06 - 1.02 (m, 3H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0015-b007",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        696.0,
+        259.0,
+        708.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 13-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0015-b008",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        727.0,
+        542.0,
+        780.0
+      ],
+      "markdown": "To a solution of 2-chloro-3-fluoro-4-iodopyridine (3.5 g, 13.6 mmol) in THF (35 mL) was added LiHMDS (6.8 ml,13.6 mmol) under nitrogen at –70°C. The mixture was stirred at this temperature for another 4 hours. The reaction solution was poured into saturated ammonium chloride (50 mL).",
+      "source_class": "text"
+    }
+  ]
+}

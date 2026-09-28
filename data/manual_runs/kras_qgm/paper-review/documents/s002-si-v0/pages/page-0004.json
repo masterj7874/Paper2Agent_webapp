@@ -1,0 +1,101 @@
+{
+  "page": 4,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0004.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. CROSS-PAGE JOIN: p0004-b000 starts '1H), 4.46 - 4.36 (m, 2H)...' and completes page 3's dangling '4.63 - 4.58 (m,'; the break is between words, so join_previous = 'space'. Named the two unlabelled picture regions: p0004-b001 is the 1H NMR spectrum of ISM061-1 (asset si-nmr-ism061-1) - verified the crop [51, 103, 477, 407] against measured ink 56.2-472.2 x 107.9-395.1 pt, so it keeps the top rule, the acquisition-parameter inset, the structure inset (Chemical Formula C19H24F2N4O, Exact Mass 362.19, MW 362.42), the integral/shift annotations and the full f1 (ppm) axis. p0004-b003 is the Scheme S2 artwork (asset scheme-s2); widened the bbox slightly to [52, 477, 477, 581] so the whole two-row scheme (ink 57.6-470.3 x 481.5-575.7 pt) and labels 3-1..3-4 / ISM061-3-2 are inside. Changed 'S1.2. Preparation of ISM061-3-2' from kind caption to heading (h3); 'Scheme S2 Preparation of ISM061-3-2' correctly stays a caption and directly follows its figure. Step 1 heading set to h4. Reading order (continuation text, NMR figure, S1.2 heading, scheme, scheme caption, Step 1, prose) matches the page.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0004-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        92.0
+      ],
+      "markdown": "1H), 4.46 – 4.36 (m, 2H), 3.99 – 3.94 (m, 2H), 3.77 – 3.67 (m, 2H), 3.22 – 3.15 (m, 1H), 2.79 (s, 3H), 2.50 – 2.47 (m, 2H), 1.44 – 1.42 (d, J = 8.0 Hz, 3H), 1.07 – 1.03 (t, J = 8.0 Hz, 3H).",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0004-b001",
+      "kind": "figure",
+      "bbox": [
+        51.0,
+        103.0,
+        477.0,
+        407.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "1H NMR spectrum of ISM061-1",
+      "asset_name": "si-nmr-ism061-1"
+    },
+    {
+      "id": "p0004-b002",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        463.0,
+        226.0,
+        475.0
+      ],
+      "markdown": "### S1.2. Preparation of ISM061-3-2",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0004-b003",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        477.0,
+        477.0,
+        581.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Scheme S2",
+      "asset_name": "scheme-s2"
+    },
+    {
+      "id": "p0004-b004",
+      "kind": "caption",
+      "bbox": [
+        203.0,
+        597.0,
+        395.0,
+        609.0
+      ],
+      "markdown": "**Scheme S2** Preparation of ISM061-3-2",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0004-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        628.0,
+        253.0,
+        640.0
+      ],
+      "markdown": "#### Step 1: Preparation of Compound 3-1",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0004-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        659.0,
+        542.0,
+        774.0
+      ],
+      "markdown": "To a solution of 2,4-dichloro-5-methylpyrimidine (10.00 g, 61.30 mmol) in isopropyl alcohol (200 mL) were added potassium trifluoro(vinyl)borate (9.04 g, 67.50 mmol), TEA (8.55 mL, 61.3 mmol) and Pd(dppf)Cl2 (2.24 g, 3.07 mmol). The resulting mixture was stirred at 75 ℃ for 12 hrs under N2. After cooling to 20 ℃, the reaction solution was poured into water (40 mL) and extracted with EtOAc (50 mL × 3). The combined organic layers were washed with brine (50 mL × 2), dried over anhydrous Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified",
+      "source_class": "text"
+    }
+  ]
+}

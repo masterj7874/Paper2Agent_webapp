@@ -1,0 +1,38 @@
+{
+ "id": "add14390a195",
+ "agent": "nnUNet",
+ "tool": "nnunet_verify_dataset_integrity",
+ "arguments": {
+  "dataset": "Dataset004_Hippocampus",
+  "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+  "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+ },
+ "status": "done",
+ "created_at": 1790063110.4046364,
+ "started_at": 1790063110.4054923,
+ "finished_at": 1790063114.6072357,
+ "result": {
+  "message": "verify_dataset_integrity passed for Dataset004_Hippocampus (/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus): no errors reported.",
+  "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/468cf803df9b267150ae2b6c0c59b8ac84f16227/nnunetv2/experiment_planning/verify_dataset_integrity.py",
+  "artifacts": [
+   {
+    "description": "upstream stdout (per-file findings and the Done banner)",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_verify_dataset_integrity_20260922-164510_e5fe0165/upstream.stdout.log"
+   },
+   {
+    "description": "child driver + args/result JSON",
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_verify_dataset_integrity_20260922-164510_e5fe0165"
+   }
+  ],
+  "passed": true,
+  "dataset_name": "Dataset004_Hippocampus",
+  "dataset_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus",
+  "findings": [],
+  "num_findings": 0,
+  "done_banner_present": true,
+  "failure": null,
+  "wall_seconds": 4.195
+ },
+ "error": null,
+ "duration_s": 4.2
+}

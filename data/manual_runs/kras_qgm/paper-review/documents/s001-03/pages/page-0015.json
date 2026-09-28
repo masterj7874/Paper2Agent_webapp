@@ -1,0 +1,82 @@
+{
+  "page": 15,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0015.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0015.png and re-rendered the crop from source.pdf at 130-400 dpi. This page is the full-page Extended Data Fig. 2 plate plus its two-column caption. The extractor had split the plate into three unrelated picture regions (figure-p0015-002 = panel B inset, figure-p0015-003 = panel A HSQC spectrum, figure-p0015-004 = panel C ribbon/colour bar); merged them into ONE crop [37, 46, 562, 320] pt that verifiably contains panel letters A), B), C), all five residue insets (10Gly, 77Gly, 89Ser, 92Asp, 78Phe), the KRAS G12D / KRASG12D + Compound 18-2 legend, both axis labels (1H (ppm), 15N (ppm)) and the 0.01-0.2 CSP colour bar with both end labels; all four edges checked against the preview and against the PDF image bboxes (x 47.3-553.9, y 49.0-316.1 pt) plus the vector panel letters. Renamed placeholder asset figure-p0015-002 -> extended-data-figure-2 and set asset_category=supp_figs so the printed Extended Data number routes to the supplementary figure directory. Caption kept as searchable text OUTSIDE the crop; the two column fragments (b005 ends '(B) The CSP values', b006 begins 'are mapped onto') were merged into one caption item and re-kinded from text to caption. Text verified character-by-character against the PDF native text layer: Compound 18-2, Gly10, Phe78, Gly77, Ser89, Asp92, Switch-I / Switch-II, and the Greek letters alpha-1 / alpha-2 / alpha-4 / beta-4 all confirmed. Repaired the extractor's stray spaces inside emphasis markers ('( **A** )' -> '(**A**)', '_a_ -2' -> '_a_-2' etc.); no wording changed. Running header, DOI header and the 'Nature Biotechnology' footer set to omit with reasons. No sentence continues from page 14 (page 14 ends the Extended Data Fig. 1 caption), so no join_previous was set.",
+  "warnings": [
+    "Review possible header/footer: p0015-b000",
+    "Review possible header/footer: p0015-b001",
+    "Review possible header/footer: p0015-b007"
+  ],
+  "items": [
+    {
+      "id": "p0015-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Repeated running header of the journal article ('Brief Communication'); not substantive content."
+    },
+    {
+      "id": "p0015-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Repeated running header DOI link (https://doi.org/10.1038/s41587-024-02526-3); already recorded on the title page."
+    },
+    {
+      "id": "p0015-b002",
+      "kind": "figure",
+      "bbox": [
+        37.0,
+        46.0,
+        562.0,
+        320.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Extended Data Fig. 2",
+      "asset_name": "extended-data-figure-2",
+      "asset_category": "supp_figs"
+    },
+    {
+      "id": "p0015-b005",
+      "kind": "caption",
+      "bbox": [
+        39.0,
+        322.0,
+        560.0,
+        392.0
+      ],
+      "markdown": "**Extended Data Fig. 2 | Protein-detected NMR experiments.** Protein-detected NMR experiments elucidate the binding mode of Compound 18-2 to KRAS-G12D. (**A**) Significant chemical shift perturbations (CSPs) and intensity changes due to chemical exchange are observed upon binding to the compound. Residues lining the Switch-II pocket that show significant CSPs are highlighted in the inset, including Gly10 (from the P-loop), Phe78 and Gly77 (from the _α_-2 helix adjacent to the Switch-II region), Ser89, and Asp92 (from the _β_-4 sheet). (**B**) The CSP values are mapped onto the G12D structure and displayed in a color gradient. Residues that could not be assigned are shown in grey. The majority of significant CSPs are observed near the Switch-II pocket; however, CSPs are also noted in the _α_-1 helix, Switch-I, and _α_-4 regions, possibly indicating conformational changes upon binding to the compound. (**C**) Zoomed-in region of the protein, highlighting residues from the Switch-II pocket that exhibit CSPs.",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0015-b007",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Repeated page footer / journal branding link ('Nature Biotechnology'); not substantive content."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "page": 16,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0016.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0016.png; all-text page (no figures, tables, formulas or code), six Step headings 4-9 for the ISM061-13 route plus the tail of Step 3. CROSS-PAGE JOIN: set join_previous='space' on p0016-b000. Page 15 ends '...poured into saturated ammonium chloride (50 mL).' and this item opens 'The resulting mixture was extracted with ethyl acetate (20 mL x 3).' - checked the rendered pages: the Step 3 paragraph simply runs over the page break with no heading, blank line or indent between them, so the two belong to one paragraph ('space', not 'none' - no word is split). Text repairs: p0016-b004 had 'stirred at 100<sup>°C</sup> for 16 hrs'; the PDF prints a normal '100 °C' whose degree sign merely sits high in the font, so the bogus superscript wrapper was removed rather than kept as an exponent. Removed the spurious space the extractor inserted before terminal punctuation after superscripts ('[M+H]<sup>+</sup> .' -> '[M+H]<sup>+</sup>.') in b004, b006 and b010, and before the commas after the bold runs in b008 ('**step 4** ,') and b010 ('**ISM061-12** ,'). Normalised the NMR run-in in b000. Verified and left alone: 'under reduce pressure' (b004) and 'p0016-b002 ... stirred at 80°C' are printed that way; Steps 7 and 8 really are one-line cross-references ('According to a similar procedure of step 4 / with step 8 in compound ISM061-12'), not truncated text. Page ends on the bold heading 'Step 9: Preparation of Compound 13-9', so page 17 must NOT carry a join. HEADING LEVELS (added after checking the pages already reviewed either side of my range): the extractor had emitted every section-header as '# ', which flattened S1.x sections and their Step sub-sections onto the same level as the document title. Normalised to the hierarchy anchored on page 1 ('## S1. Chemistry' > '### S1.1. General Synthetic Procedures'): S1.x section headings are now '### ' and Step headings '#### '. This matches pages 1-13 exactly; pages 26-37 currently sit one level higher ('##'/'###') and are flagged in my report for the coordinator to reconcile. ARTWORK AUDIT (re-checked, do not re-flag): this page has NO figure item because it genuinely contains no artwork. Verified three ways rather than trusting the extractor - the page content stream has 0 vector drawing operations, 0 embedded images, 0 form XObjects and 0 inline-image (BI) operators, and a 100 dpi render with every native text block masked out leaves zero non-white pixels. The page is text-only, so no figure item was added. HYPHEN/BRACKET AUDIT: every line in this page that ends in a hyphen was re-joined and checked against the markdown, and every [M...] mass-spec bracket was compared token-for-token with the native text - all wrap hyphens are retained and all brackets match the source (no [MH]-style fabrication, no unhyphenated compound numbers).",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0016-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        542.0,
+        154.0
+      ],
+      "markdown": "The resulting mixture was extracted with ethyl acetate (20 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound (820 mg, Y: 23%). <sup>1</sup>H NMR (400 MHz, DMSO-d6) δ 8.42 (s, 1H), 7.79 (s, 1H).",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0016-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        163.0,
+        259.0,
+        174.0
+      ],
+      "markdown": "#### Step 4: Preparation of Compound 13-4",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0016-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        193.0,
+        542.0,
+        309.0
+      ],
+      "markdown": "To a solution of **compound 13-3** (800 mg, 3.1 mmol) in DMF (3 mL) was added triethylamine (327 mg, 3.2 mmol), copper iodide (20 mg, 0.1 mmol), 2-iodobenzoic acid methyl ester (254 mg, 1 mmol) and bis(triphenylphosphine)dichloro palladium (II) (70 mg, 0.1 mmol) under nitrogen. The mixture was stirred at 80°C for 16 hours. The reaction mixture was concentrated under reduced pressure to give a residue, which was purified by silica gel column chromatography (PE:EA=50:1) to afford the title compound as a yellow oil (900 mg, Y: 47%).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0016-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        318.0,
+        259.0,
+        329.0
+      ],
+      "markdown": "#### Step 5: Preparation of Compound 13-5",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0016-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        348.0,
+        542.0,
+        443.0
+      ],
+      "markdown": "To a solution of **compound 13-4** in dioxane (5 mL) was added Cs2CO3 (2.73 g, 8.9 mmol), **compound 13-2** (1.12 g, 4.3 mmol) and Pd(PPh3)Cl2 (211 mg, 0.3 mmol). The mixture was stirred at 100 °C for 16 hrs. The mixture was then concentrated under reduce pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound as a yellow oil (500 mg, Y: 42%). LCMS (ESI): 412.2 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0016-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        452.0,
+        259.0,
+        464.0
+      ],
+      "markdown": "#### Step 6: Preparation of Compound 13-6",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0016-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        482.0,
+        542.0,
+        618.0
+      ],
+      "markdown": "To a solution of **compound 13-5** (500 mg, 1.2 mmol) in N,N-dimethylformamide (5 mL), CsF (1.8 g, 12.0 mmol) was added under nitrogen. The resulting mixture was stirred at room temperature for 12 hrs. After the addition of ice water (50 mL), the mixture was extracted with EA (20 mL × 3). The combined organic phases was washed with brine (20 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound as a yellow oil (165 mg, Y: 51%). LCMS (ESI): 256.1 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0016-b007",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        628.0,
+        259.0,
+        639.0
+      ],
+      "markdown": "#### Step 7: Preparation of Compound 13-7",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0016-b008",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        648.0,
+        542.0,
+        681.0
+      ],
+      "markdown": "According to a similar procedure of **step 4**, the title compound was obtained as a yellow oil (51.8 mg, Y: 21.8%).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0016-b009",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        690.0,
+        259.0,
+        701.0
+      ],
+      "markdown": "#### Step 8: Preparation of Compound 13-8",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0016-b010",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        710.0,
+        542.0,
+        743.0
+      ],
+      "markdown": "According to a similar procedure with **step 8** in compound **ISM061-12**, the title compound was obtained as a yellow oil (50 mg, Y: 96.4%). LCMS (ESI): 394.2 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0016-b011",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        752.0,
+        259.0,
+        763.0
+      ],
+      "markdown": "#### Step 9: Preparation of Compound 13-9",
+      "source_class": "section-header"
+    }
+  ]
+}

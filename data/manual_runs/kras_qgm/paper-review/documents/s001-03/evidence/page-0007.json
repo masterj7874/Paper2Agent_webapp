@@ -1,0 +1,1941 @@
+{
+  "page": 7,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Methods",
+      "bbox": [
+        39.685001373291016,
+        45.023624420166016,
+        85.07150268554688,
+        58.22462463378906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Benchmark setup",
+      "bbox": [
+        39.685001373291016,
+        57.83062744140625,
+        112.06499481201172,
+        68.47937774658203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Our benchmark used both classical and quantum hardware. Our classi-",
+      "bbox": [
+        39.685001373291016,
+        69.09562683105469,
+        294.8031311035156,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cal computational setup was based on a cluster equipped with graphics",
+      "bbox": [
+        39.685001373291016,
+        79.84562683105469,
+        296.3460998535156,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "processing unit (GPU) nodes. This cluster consisted of two GPU nodes,",
+      "bbox": [
+        39.685001373291016,
+        90.59562683105469,
+        296.37042236328125,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "each with specific features. These features included two AMD EPYC",
+      "bbox": [
+        39.685001373291016,
+        101.34562683105469,
+        296.3957824707031,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "7V13 64-core processors, resulting in a total of 128 central processing",
+      "bbox": [
+        39.685001373291016,
+        112.09562683105469,
+        296.26910400390625,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "unit cores per node. In addition, each node was equipped with 512 GB",
+      "bbox": [
+        39.685001373291016,
+        122.84538269042969,
+        296.2591857910156,
+        133.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of random-access memory (RAM). The nodes also contain eight AMD",
+      "bbox": [
+        39.685001373291016,
+        133.5951385498047,
+        296.2591552734375,
+        143.775634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Instinct MI100 GPUs, each with a GPU RAM of 32 GB. For the classical",
+      "bbox": [
+        39.685001373291016,
+        144.3448944091797,
+        296.26824951171875,
+        154.525390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "training, we used four of these GPUs in parallel (that is, one GPU node).",
+      "bbox": [
+        39.685001373291016,
+        155.0956268310547,
+        296.2848205566406,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Furthermore, we used an Nvidia GPU (RTX3090Ti) to facilitate our",
+      "bbox": [
+        39.685001373291016,
+        165.8456268310547,
+        296.4218444824219,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "classical–quantum simulations. For the quantum hardware setup, we",
+      "bbox": [
+        39.685001373291016,
+        176.5956268310547,
+        296.2682189941406,
+        186.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "used the Guadalupe quantum system, equipped with 16 qubits and a",
+      "bbox": [
+        39.685001373291016,
+        187.3453826904297,
+        296.2599792480469,
+        197.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Falcon r4P processor type. Our QCBM model, accompanied by an error",
+      "bbox": [
+        39.685001373291016,
+        198.0956268310547,
+        296.18890380859375,
+        208.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "correction circuit, was executed on this quantum processor.",
+      "bbox": [
+        39.685001373291016,
+        208.8456268310547,
+        262.5636901855469,
+        219.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Regarding software, we used several packages provided by Zapata",
+      "bbox": [
+        56.692901611328125,
+        219.5956268310547,
+        296.3245544433594,
+        229.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "AI under the Qml core agreements. We implemented our variational",
+      "bbox": [
+        39.685001373291016,
+        230.3456268310547,
+        296.38934326171875,
+        240.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum circuit and classical LSTM model using the Qml Core Python",
+      "bbox": [
+        39.685001373291016,
+        241.0956268310547,
+        296.2689208984375,
+        251.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "package. We used the STONED–SELFIES and VirtualFlow 2.0 packages",
+      "bbox": [
+        39.685001373291016,
+        251.8456268310547,
+        296.0975646972656,
+        262.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to prepare a diverse dataset. Additionally, we used RDkit and Insilico",
+      "bbox": [
+        39.685001373291016,
+        262.5956115722656,
+        296.2879943847656,
+        272.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "APIs to compute the reward value and conduct some postprocessing",
+      "bbox": [
+        39.685001373291016,
+        273.3453674316406,
+        296.2847595214844,
+        283.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "analyses. The QCBM model underwent a training regimen spanning",
+      "bbox": [
+        39.685001373291016,
+        284.0956115722656,
+        296.2087097167969,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "30 epochs. In contrast, the LSTM model was trained over a total of",
+      "bbox": [
+        39.685001373291016,
+        294.8456115722656,
+        296.1593017578125,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "40 epochs.",
+      "bbox": [
+        39.685001373291016,
+        305.5956115722656,
+        80.77825164794922,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "We used the Optuna platform to optimize the hyperparameters",
+      "bbox": [
+        56.692901611328125,
+        316.3456115722656,
+        296.361083984375,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in the benchmarking. We ran Optuna tuning for 100 trials for each",
+      "bbox": [
+        39.685001373291016,
+        327.0956115722656,
+        296.1299133300781,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "model to determine the optimal number of QCBM layers, number of",
+      "bbox": [
+        39.685001373291016,
+        337.8456115722656,
+        296.2682189941406,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LSTM layers and embedding dimensions. Additionally, we tuned the",
+      "bbox": [
+        39.685001373291016,
+        348.5956115722656,
+        296.2897033691406,
+        358.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sampling temperature, which defines the balance between determin-",
+      "bbox": [
+        39.685001373291016,
+        359.3456115722656,
+        294.8031311035156,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ism and stochasticity in the model, particularly between the prior input",
+      "bbox": [
+        39.685001373291016,
+        370.0956115722656,
+        296.1148681640625,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and the LSTM output.",
+      "bbox": [
+        39.685001373291016,
+        380.8456115722656,
+        120.1390151977539,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Computational benchmarks: classical versus quantum models",
+      "bbox": [
+        39.685001373291016,
+        401.83062744140625,
+        292.1007080078125,
+        412.4793701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Tartarus benchmark. We used the Tartarus platform26 to benchmark",
+      "bbox": [
+        39.685001373291016,
+        411.7096252441406,
+        296.2540588378906,
+        423.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "our proposed QCBM–LSTM methodology against an array of classical",
+      "bbox": [
+        39.685001373291016,
+        423.8456115722656,
+        296.2450866699219,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "state-of-the-art models, including REINVENT37, SMILES–VAE38, SELFIES–",
+      "bbox": [
+        39.685001373291016,
+        434.25732421875,
+        294.79071044921875,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "VAE39, MoFlow40, SMILES–LSTM–HC41,42, SELFIES–LSTM–HC, GB–GA43",
+      "bbox": [
+        39.685001373291016,
+        445.00732421875,
+        296.2454528808594,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and JANUS44. The study focused on three protein targets selected from",
+      "bbox": [
+        39.685001373291016,
+        455.75732421875,
+        296.3509521484375,
+        466.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the Tartarus dataset: (1) PDB 1SYH, an ionotropic glutamate receptor",
+      "bbox": [
+        39.685001373291016,
+        466.8456115722656,
+        296.2847900390625,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "associated with neurological and psychiatric disorders such as",
+      "bbox": [
+        39.685001373291016,
+        477.5956115722656,
+        296.408935546875,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Alzheimer disease, Parkinson disease and epilepsy45; (2) PDB 6Y2F, the",
+      "bbox": [
+        39.685001373291016,
+        488.00732421875,
+        296.23187255859375,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "main protease of severe acute respiratory syndrome coronavirus 2,",
+      "bbox": [
+        39.685001373291016,
+        499.0956115722656,
+        296.337890625,
+        509.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "crucial for its RNA translation46; and (3) PDB 4LDE, the β2-adrenoceptor",
+      "bbox": [
+        39.685001373291016,
+        509.50732421875,
+        296.23956298828125,
+        520.77197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "G-protein-coupled receptor, a cell-membrane-spanning receptor that",
+      "bbox": [
+        39.685001373291016,
+        520.5956420898438,
+        296.1497802734375,
+        530.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "binds to adrenaline, a hormone implicated in muscle relaxation and",
+      "bbox": [
+        39.685001373291016,
+        531.3456420898438,
+        296.3836975097656,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "bronchodilation47. For each target, we had a dual objective: to generate",
+      "bbox": [
+        39.685001373291016,
+        541.75732421875,
+        296.2991027832031,
+        552.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "novel molecules that exhibit strong binding affinity to the specified",
+      "bbox": [
+        39.685001373291016,
+        552.8456420898438,
+        296.34014892578125,
+        563.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "proteins, as determined by active sites assigned by Tartarus, and to",
+      "bbox": [
+        39.685001373291016,
+        563.5956420898438,
+        296.4190368652344,
+        573.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "minimize the docking score using QuickVina 2 (ref. 48). Additionally,",
+      "bbox": [
+        39.685001373291016,
+        574.3456420898438,
+        296.2600402832031,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "these molecules were required to pass a comprehensive set of filters",
+      "bbox": [
+        39.68499755859375,
+        585.0953979492188,
+        296.22607421875,
+        595.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "designed to eliminate reactive, unsynthesizable or unstable groups,",
+      "bbox": [
+        39.685001373291016,
+        595.8456420898438,
+        296.2882080078125,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "thereby streamlining the drug discovery process. The top-performing",
+      "bbox": [
+        39.685001373291016,
+        606.5956420898438,
+        296.24871826171875,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules, after filtering, were subjected to a refined rescoring using",
+      "bbox": [
+        39.685001373291016,
+        617.3456420898438,
+        296.2764892578125,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a more precise scoring function provided by SMINA49, at an increased",
+      "bbox": [
+        39.685001373291016,
+        627.75732421875,
+        296.2594909667969,
+        638.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "level of exhaustiveness.",
+      "bbox": [
+        39.68449401855469,
+        638.8453979492188,
+        127.41500091552734,
+        649.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "We conducted experiments using the QCBM with 16 qubits as",
+      "bbox": [
+        56.692901611328125,
+        649.5956420898438,
+        296.1353759765625,
+        659.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a quantum prior and the LSTM as a classical model. The local filter",
+      "bbox": [
+        39.685001373291016,
+        660.3456420898438,
+        296.2723083496094,
+        670.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "from the Tartarus paper served as the reward function to train the",
+      "bbox": [
+        39.685001373291016,
+        671.0956420898438,
+        296.3827209472656,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "QCBM. As recommended by Tartarus, our models were trained on a",
+      "bbox": [
+        39.685001373291016,
+        681.8456420898438,
+        296.2843017578125,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "subset of 150,000 molecules from the Developmental Therapeutics",
+      "bbox": [
+        39.685001373291016,
+        692.5956420898438,
+        296.34954833984375,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Program open compound collection50,51, referred to as DATASET in",
+      "bbox": [
+        39.685001373291016,
+        703.00732421875,
+        296.30902099609375,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Supplementary Table 1. Notably, all 150,000 structures underwent a",
+      "bbox": [
+        39.685001373291016,
+        714.0956420898438,
+        296.2720031738281,
+        724.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "rigorous screening process using structural filters to eliminate reactive,",
+      "bbox": [
+        39.685001373291016,
+        724.8456420898438,
+        296.37896728515625,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "unsynthesizable or unstable groups. As such, generative models adept",
+      "bbox": [
+        39.685001373291016,
+        735.5956420898438,
+        296.3269958496094,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "at capturing the distribution of the provided molecule set would exhibit",
+      "bbox": [
+        306.1416931152344,
+        47.59562683105469,
+        562.6138305664062,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a correspondingly high success rate in generating novel molecules",
+      "bbox": [
+        306.1416931152344,
+        58.34562683105469,
+        562.8723754882812,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "without structural violations. Our observations indicated that only a",
+      "bbox": [
+        306.1416931152344,
+        69.09562683105469,
+        562.6920166015625,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "few generative models demonstrated a high success rate. However, the",
+      "bbox": [
+        306.1416931152344,
+        79.84562683105469,
+        562.6776123046875,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "QCBM–LSTM model was very strong in producing a substantial num-",
+      "bbox": [
+        306.1416931152344,
+        90.59562683105469,
+        561.2794189453125,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ber of high-quality samples that successfully meet the filter criteria,",
+      "bbox": [
+        306.1416931152344,
+        101.34562683105469,
+        562.6995239257812,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "as evidenced by the elevated success rate depicted in Supplementary",
+      "bbox": [
+        306.1416931152344,
+        112.09562683105469,
+        562.6829833984375,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Table 1. Consequently, we believe that the incorporation of a quantum",
+      "bbox": [
+        306.1416931152344,
+        122.84562683105469,
+        562.6994018554688,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "prior leads to improved distribution matching. We further benchmark",
+      "bbox": [
+        306.1416931152344,
+        133.5956268310547,
+        562.8396606445312,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the influence of a classical–quantum prior in the subsequent sec-",
+      "bbox": [
+        306.1416931152344,
+        144.3456268310547,
+        561.2598266601562,
+        154.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion. Moreover, our analysis revealed that, for the PDB 4LDE target,",
+      "bbox": [
+        306.1416931152344,
+        155.0956268310547,
+        562.8309936523438,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "our model generated the highest-scoring molecules relative to other",
+      "bbox": [
+        306.1416931152344,
+        165.8456268310547,
+        562.7249755859375,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generative models. While the docking scores for the remaining two",
+      "bbox": [
+        306.1416931152344,
+        176.5957489013672,
+        562.8275756835938,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "targets were not as high as those produced by classical algorithms, we",
+      "bbox": [
+        306.1416931152344,
+        187.3457489013672,
+        562.6692504882812,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "speculate that incorporating a docking-score-based reward, in conjunc-",
+      "bbox": [
+        306.1416931152344,
+        198.0957489013672,
+        561.2598876953125,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion with the filter success rate, could potentially improve our results.",
+      "bbox": [
+        306.1416931152344,
+        208.8457489013672,
+        561.2230224609375,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Benchmarking of prior distributions. To evaluate the impact of prior",
+      "bbox": [
+        306.1416931152344,
+        228.95974731445312,
+        562.72607421875,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "selection on the quality of the molecules generated by our model, we",
+      "bbox": [
+        306.1416931152344,
+        241.0957489013672,
+        562.7003784179688,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "trained four distinct model variants, each incorporating different",
+      "bbox": [
+        306.1416931152344,
+        251.8457489013672,
+        562.6339111328125,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "priors (Extended Data Fig. 1b). Specifically, we examined a QCBM",
+      "bbox": [
+        306.1416931152344,
+        262.5954895019531,
+        562.8134155273438,
+        272.7760009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "prior and implemented it on both a quantum simulator and a hard-",
+      "bbox": [
+        306.1416931152344,
+        273.3456115722656,
+        561.2598876953125,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ware backend, in contrast with an MQCBM operating exclusively on",
+      "bbox": [
+        306.1416931152344,
+        284.0956115722656,
+        562.5863647460938,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a quantum simulator and a classical LSTM model devoid of quantum",
+      "bbox": [
+        306.1416931152344,
+        294.8456115722656,
+        562.7241821289062,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "priors. These models were tasked with designing KRAS inhibitors,",
+      "bbox": [
+        306.1416931152344,
+        305.5956115722656,
+        562.6416625976562,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "using a meticulously curated dataset of over 1 million molecules (Fig. 1).",
+      "bbox": [
+        306.1416931152344,
+        316.3456115722656,
+        562.6859741210938,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Extended Data Figure 1b showcases the optimal results obtained follow-",
+      "bbox": [
+        306.1416931152344,
+        327.0956115722656,
+        561.2598876953125,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ing a comprehensive optimization of the corresponding architectures",
+      "bbox": [
+        306.1416931152344,
+        337.8456115722656,
+        562.8357543945312,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "using Optuna52. We assessed the quality of the generated molecules",
+      "bbox": [
+        306.1416931152344,
+        348.2574157714844,
+        562.7300415039062,
+        358.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "using two distinct sets of criteria: one derived from Tartarus26, termed",
+      "bbox": [
+        306.1416931152344,
+        359.0074157714844,
+        562.7192993164062,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the ‘local filter’, and a more stringent set provided by Chemistry42,",
+      "bbox": [
+        306.1418151855469,
+        370.0956115722656,
+        562.8870849609375,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "termed the ‘Chemistry42 filter’. In both assessments, we observed that",
+      "bbox": [
+        306.1418151855469,
+        380.8456115722656,
+        562.8179321289062,
+        391.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "incorporating a quantum prior enhanced the success rate, as gauged",
+      "bbox": [
+        306.1418151855469,
+        391.5956115722656,
+        562.7166748046875,
+        401.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "by the proportion of molecules satisfying the criteria set by the two",
+      "bbox": [
+        306.1418151855469,
+        402.3456115722656,
+        562.6411743164062,
+        412.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "filters. Furthermore, using the top model from each prior category, we",
+      "bbox": [
+        306.1418151855469,
+        413.0956115722656,
+        562.5201416015625,
+        423.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sampled 5,000 molecules that successfully met the filter criteria and",
+      "bbox": [
+        306.1418151855469,
+        423.8456115722656,
+        562.6930541992188,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "examined their respective docking scores (Supplementary Table 2).",
+      "bbox": [
+        306.1418151855469,
+        434.5956115722656,
+        562.8076171875,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Intriguingly, these molecules displayed comparably high docking",
+      "bbox": [
+        306.1418151855469,
+        445.3456115722656,
+        562.7260131835938,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "scores as determined by QuickVina 2 and the PLI score, as evaluated by",
+      "bbox": [
+        306.1418151855469,
+        456.0956115722656,
+        562.7737426757812,
+        466.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Chemistry42. Additionally, the synthesized molecules demonstrated",
+      "bbox": [
+        306.1418151855469,
+        466.8456115722656,
+        562.7305297851562,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "consistent metrics across various parameters, including the diversity",
+      "bbox": [
+        306.1418151855469,
+        477.5956115722656,
+        562.737548828125,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "fraction, uniqueness fraction, Chemistry42 reward and Chemistry42",
+      "bbox": [
+        306.1418151855469,
+        488.3456115722656,
+        562.715087890625,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "synthetic accessibility score25.",
+      "bbox": [
+        306.1418151855469,
+        498.7574157714844,
+        418.01519775390625,
+        509.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Encouraged by our observation that quantum priors enhance",
+      "bbox": [
+        323.14959716796875,
+        509.8456115722656,
+        562.7328491210938,
+        520.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecule quality, we further investigated the influence of the number",
+      "bbox": [
+        306.1418151855469,
+        520.5956420898438,
+        562.5093994140625,
+        530.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of qubits used in modeling priors on the quality of generated molecules",
+      "bbox": [
+        306.1418151855469,
+        531.3456420898438,
+        562.7587280273438,
+        541.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(Extended Data Fig. 1d). Specifically, we analyzed the percentage of",
+      "bbox": [
+        306.1418151855469,
+        542.0956420898438,
+        562.65380859375,
+        552.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "5,000 uniquely generated random molecules that satisfied a series of",
+      "bbox": [
+        306.1418151855469,
+        552.8456420898438,
+        562.7210693359375,
+        563.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "local filters. Interestingly, our findings revealed that the success rate",
+      "bbox": [
+        306.1418151855469,
+        563.5953979492188,
+        562.7244262695312,
+        573.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "correlated roughly linearly with the number of qubits used in modeling",
+      "bbox": [
+        306.1418151855469,
+        574.3456420898438,
+        562.7800903320312,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the prior, indicating a direct relationship between the complexity of",
+      "bbox": [
+        306.1418151855469,
+        585.0956420898438,
+        562.646728515625,
+        595.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the quantum model and the effectiveness in generating high-quality",
+      "bbox": [
+        306.1418151855469,
+        595.8456420898438,
+        562.7343139648438,
+        606.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules. This trend underscores the potential of increasing qubit",
+      "bbox": [
+        306.1418151855469,
+        606.5956420898438,
+        562.65966796875,
+        616.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "numbers in quantum models to improve molecular design outcomes",
+      "bbox": [
+        306.1418151855469,
+        617.3456420898438,
+        562.7333984375,
+        627.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "systematically.",
+      "bbox": [
+        306.1418151855469,
+        628.0953979492188,
+        361.9943542480469,
+        638.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "SPR conditions",
+      "bbox": [
+        306.1418151855469,
+        649.0806274414062,
+        368.28875732421875,
+        659.7293701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A Biacore 8K system was used for all experiments. For preliminary",
+      "bbox": [
+        306.1418151855469,
+        660.3456420898438,
+        562.8231201171875,
+        670.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compound screening, N-terminal biotinylated KRAS-G12D protein",
+      "bbox": [
+        306.1418151855469,
+        671.0956420898438,
+        562.602294921875,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(synthesized by VIVA Biotech; purity ≥ 95%) was captured on a sen-",
+      "bbox": [
+        306.1418151855469,
+        681.8456420898438,
+        561.1627197265625,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "sor chip SA (GE Healthcare) at a density of about 2,000 RU. Protein",
+      "bbox": [
+        306.1418151855469,
+        692.5956420898438,
+        562.7704467773438,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "immobilization was conducted using 1× HBS-EP+, 2 mM TCEP and 2%",
+      "bbox": [
+        306.1418151855469,
+        703.3456420898438,
+        562.6996459960938,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "DMSO as a running buffer. Protein was injected for 70 s at a flow rate",
+      "bbox": [
+        306.1418151855469,
+        714.0953979492188,
+        562.7243041992188,
+        724.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of 5 μl min−1. The protein concentration was 5 μg ml−1. We performed",
+      "bbox": [
+        306.1418151855469,
+        724.50732421875,
+        562.7106323242188,
+        735.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "an initial screening of compounds prepared samples by serial twofold",
+      "bbox": [
+        306.1418151855469,
+        735.5956420898438,
+        562.621337890625,
+        745.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 7
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "section-header",
+        "bbox": [
+          39,
+          47,
+          86,
+          56
+        ],
+        "pos": [
+          71,
+          87
+        ]
+      },
+      {
+        "index": 3,
+        "class": "section-header",
+        "bbox": [
+          39,
+          59,
+          113,
+          69
+        ],
+        "pos": [
+          87,
+          112
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          39,
+          70,
+          297,
+          219
+        ],
+        "pos": [
+          112,
+          1057
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          39,
+          221,
+          297,
+          316
+        ],
+        "pos": [
+          1057,
+          1597
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          39,
+          317,
+          297,
+          391
+        ],
+        "pos": [
+          1597,
+          2012
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          39,
+          403,
+          293,
+          413
+        ],
+        "pos": [
+          2012,
+          2079
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          39,
+          413,
+          297,
+          647
+        ],
+        "pos": [
+          2079,
+          3689
+        ]
+      },
+      {
+        "index": 9,
+        "class": "text",
+        "bbox": [
+          39,
+          651,
+          297,
+          746
+        ],
+        "pos": [
+          3689,
+          4299
+        ]
+      },
+      {
+        "index": 10,
+        "class": "text",
+        "bbox": [
+          306,
+          49,
+          563,
+          219
+        ],
+        "pos": [
+          4299,
+          5400
+        ]
+      },
+      {
+        "index": 11,
+        "class": "text",
+        "bbox": [
+          306,
+          231,
+          563,
+          509
+        ],
+        "pos": [
+          5400,
+          7177
+        ]
+      },
+      {
+        "index": 12,
+        "class": "text",
+        "bbox": [
+          306,
+          511,
+          563,
+          638
+        ],
+        "pos": [
+          7177,
+          7946
+        ]
+      },
+      {
+        "index": 13,
+        "class": "section-header",
+        "bbox": [
+          306,
+          650,
+          369,
+          658
+        ],
+        "pos": [
+          7946,
+          7970
+        ]
+      },
+      {
+        "index": 14,
+        "class": "text",
+        "bbox": [
+          306,
+          661,
+          563,
+          746
+        ],
+        "pos": [
+          7970,
+          8530
+        ]
+      },
+      {
+        "index": 15,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          8530,
+          8553
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n# **Methods** \n\n## **Benchmark setup** \n\nOur benchmark used both classical and quantum hardware. Our classical computational setup was based on a cluster equipped with graphics processing unit (GPU) nodes. This cluster consisted of two GPU nodes, each with specific features. These features included two AMD EPYC 7V13 64-core processors, resulting in a total of 128 central processing unit cores per node. In addition, each node was equipped with 512 GB of random-access memory (RAM). The nodes also contain eight AMD Instinct MI100 GPUs, each with a GPU RAM of 32 GB. For the classical training, we used four of these GPUs in parallel (that is, one GPU node). Furthermore, we used an Nvidia GPU (RTX3090Ti) to facilitate our classical–quantum simulations. For the quantum hardware setup, we used the Guadalupe quantum system, equipped with 16 qubits and a Falcon r4P processor type. Our QCBM model, accompanied by an error correction circuit, was executed on this quantum processor. \n\nRegarding software, we used several packages provided by Zapata AI under the Qml core agreements. We implemented our variational quantum circuit and classical LSTM model using the Qml Core Python package. We used the STONED–SELFIES and VirtualFlow 2.0 packages to prepare a diverse dataset. Additionally, we used RDkit and Insilico APIs to compute the reward value and conduct some postprocessing analyses. The QCBM model underwent a training regimen spanning 30 epochs. In contrast, the LSTM model was trained over a total of 40 epochs. \n\nWe used the Optuna platform to optimize the hyperparameters in the benchmarking. We ran Optuna tuning for 100 trials for each model to determine the optimal number of QCBM layers, number of LSTM layers and embedding dimensions. Additionally, we tuned the sampling temperature, which defines the balance between determinism and stochasticity in the model, particularly between the prior input and the LSTM output. \n\n## **Computational benchmarks: classical versus quantum models** \n\n**Tartarus benchmark.** We used the Tartarus platform<sup>26</sup> to benchmark our proposed QCBM–LSTM methodology against an array of classical state-of-the-art models, including REINVENT<sup>37</sup> , SMILES–VAE<sup>38</sup> , SELFIES– VAE<sup>39</sup> , MoFlow<sup>40</sup> , SMILES–LSTM–HC<sup>41,42</sup> , SELFIES–LSTM–HC, GB–GA<sup>43</sup> and JANUS<sup>44</sup> . The study focused on three protein targets selected from the Tartarus dataset: (1) PDB 1SYH, an ionotropic glutamate receptor associated with neurological and psychiatric disorders such as Alzheimer disease, Parkinson disease and epilepsy<sup>45</sup> ; (2) PDB 6Y2F, the main protease of severe acute respiratory syndrome coronavirus 2, crucial for its RNA translation<sup>46</sup> ; and (3) PDB 4LDE, the β2-adrenoceptor G-protein-coupled receptor, a cell-membrane-spanning receptor that binds to adrenaline, a hormone implicated in muscle relaxation and bronchodilation<sup>47</sup> . For each target, we had a dual objective: to generate novel molecules that exhibit strong binding affinity to the specified proteins, as determined by active sites assigned by Tartarus, and to minimize the docking score using QuickVina 2 (ref. 48). Additionally, these molecules were required to pass a comprehensive set of filters designed to eliminate reactive, unsynthesizable or unstable groups, thereby streamlining the drug discovery process. The top-performing molecules, after filtering, were subjected to a refined rescoring using a more precise scoring function provided by SMINA<sup>49</sup> , at an increased level of exhaustiveness. \n\nWe conducted experiments using the QCBM with 16 qubits as a quantum prior and the LSTM as a classical model. The local filter from the Tartarus paper served as the reward function to train the QCBM. As recommended by Tartarus, our models were trained on a subset of 150,000 molecules from the Developmental Therapeutics Program open compound collection<sup>50,51</sup> , referred to as DATASET in Supplementary Table 1. Notably, all 150,000 structures underwent a rigorous screening process using structural filters to eliminate reactive, unsynthesizable or unstable groups. As such, generative models adept \n\nat capturing the distribution of the provided molecule set would exhibit a correspondingly high success rate in generating novel molecules without structural violations. Our observations indicated that only a few generative models demonstrated a high success rate. However, the QCBM–LSTM model was very strong in producing a substantial number of high-quality samples that successfully meet the filter criteria, as evidenced by the elevated success rate depicted in Supplementary Table 1. Consequently, we believe that the incorporation of a quantum prior leads to improved distribution matching. We further benchmark the influence of a classical–quantum prior in the subsequent section. Moreover, our analysis revealed that, for the PDB 4LDE target, our model generated the highest-scoring molecules relative to other generative models. While the docking scores for the remaining two targets were not as high as those produced by classical algorithms, we speculate that incorporating a docking-score-based reward, in conjunction with the filter success rate, could potentially improve our results. \n\n**Benchmarking of prior distributions.** To evaluate the impact of prior selection on the quality of the molecules generated by our model, we trained four distinct model variants, each incorporating different priors (Extended Data Fig. 1b). Specifically, we examined a QCBM prior and implemented it on both a quantum simulator and a hardware backend, in contrast with an MQCBM operating exclusively on a quantum simulator and a classical LSTM model devoid of quantum priors. These models were tasked with designing KRAS inhibitors, using a meticulously curated dataset of over 1 million molecules (Fig. 1). Extended Data Figure 1b showcases the optimal results obtained following a comprehensive optimization of the corresponding architectures using Optuna<sup>52</sup> . We assessed the quality of the generated molecules using two distinct sets of criteria: one derived from Tartarus<sup>26</sup> , termed the ‘local filter’, and a more stringent set provided by Chemistry42, termed the ‘Chemistry42 filter’. In both assessments, we observed that incorporating a quantum prior enhanced the success rate, as gauged by the proportion of molecules satisfying the criteria set by the two filters. Furthermore, using the top model from each prior category, we sampled 5,000 molecules that successfully met the filter criteria and examined their respective docking scores (Supplementary Table 2). Intriguingly, these molecules displayed comparably high docking scores as determined by QuickVina 2 and the PLI score, as evaluated by Chemistry42. Additionally, the synthesized molecules demonstrated consistent metrics across various parameters, including the diversity fraction, uniqueness fraction, Chemistry42 reward and Chemistry42 synthetic accessibility score<sup>25</sup> . \n\nEncouraged by our observation that quantum priors enhance molecule quality, we further investigated the influence of the number of qubits used in modeling priors on the quality of generated molecules (Extended Data Fig. 1d). Specifically, we analyzed the percentage of 5,000 uniquely generated random molecules that satisfied a series of local filters. Interestingly, our findings revealed that the success rate correlated roughly linearly with the number of qubits used in modeling the prior, indicating a direct relationship between the complexity of the quantum model and the effectiveness in generating high-quality molecules. This trend underscores the potential of increasing qubit numbers in quantum models to improve molecular design outcomes systematically. \n\n## **SPR conditions** \n\nA Biacore 8K system was used for all experiments. For preliminary compound screening, N-terminal biotinylated KRAS-G12D protein (synthesized by VIVA Biotech; purity ≥ 95%) was captured on a sensor chip SA (GE Healthcare) at a density of about 2,000 RU. Protein immobilization was conducted using 1× HBS-EP+, 2 mM TCEP and 2% DMSO as a running buffer. Protein was injected for 70 s at a flow rate of 5 μl min<sup>−1</sup> . The protein concentration was 5 μg ml<sup>−1</sup> . We performed an initial screening of compounds prepared samples by serial twofold \n\nNature Biotechnology \n\n"
+  }
+}

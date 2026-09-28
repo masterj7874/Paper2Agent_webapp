@@ -1,0 +1,97 @@
+{
+  "page": 5,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0005.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. CROSS-PAGE JOIN: p0005-b000 begins 'by column chromatography (SiO2, ...' and completes page 4's '...to give a residue. The residue was purified'; word boundary, so join_previous = 'space'. Restored a real compound hyphen the extractor dropped at a line wrap in p0005-b004: 'prepTLC' -> 'prep-TLC' (evidence line ends 'purified by prep-', next begins 'TLC'); the same term is already printed 'prep-TLC' on pages 6 and 7, confirming the hyphen. Fixed the italic marker on 'tert' ('_tert_ -butyl' -> '*tert*-butyl') so the stray space disappears and the emphasis actually renders inside the word. Normalised superscript spacing throughout: 'ESI<sup>+</sup> )' -> 'ESI<sup>+</sup>)', '[M+H]<sup>+</sup> .' -> '[M+H]<sup>+</sup>.', 'solid.<sup>1</sup> H NMR' -> 'solid. <sup>1</sup>H NMR' (the source prints a space after the full stop and none between the 1 and the H). Step 2/3/4 headings set to h4. No figures; checked the trailing paragraph runs on to page 6.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0005-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        539.0,
+        92.0
+      ],
+      "markdown": "by column chromatography (SiO2, ethyl acetate: petroleum ether = 1: 100) to afford **Compound 3-1** (10.00 g, 78% yield) as yellow oil. LCMS (ESI<sup>+</sup>): 155.2 [M+H]<sup>+</sup>.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0005-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        111.0,
+        253.0,
+        122.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 3-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0005-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        141.0,
+        542.0,
+        319.0
+      ],
+      "markdown": "To a solution of 2-chloro-5-methyl-4-vinylpyrimidine (10.00 g, 64.70 mmol) in THF (200 ml) and water (200 mL) were added potassium osmate dihydrate (2.38 g, 6.47 mmol) and sodium periodate (41.50 g, 194.00 mmol). And then the mixture was stirred at 25 ℃ for 2 hrs. The reaction mixture was quenched by the addition of ice-water (200 mL) at 0 °C and extracted with EtOAc (200 mL × 3). The combined organic layers were washed with brine (250 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by column chromatography (SiO2, ethyl acetate: petroleum ether = 1: 100) to afford the **Compound 3-2** (2.50 g, 22% yield) as a gray solid. <sup>1</sup>H NMR (400 MHz, Chloroform-d) δ 10.06 (s, 1H), 8.63 (s, 1H), 2.60 (s, 3H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0005-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        338.0,
+        253.0,
+        349.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 3-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0005-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        368.0,
+        542.0,
+        587.0
+      ],
+      "markdown": "To a solution of 2-chloro-5-methylpyrimidine-4-carbaldehyde (500.0 mg, 3.19 mmol) in MeOH (10 mL) were added 2-methoxy-6-(trifluoromethyl)aniline (1.00 g, 5.23 mmol) and AcOH (0.03 mL, 0.52 mmol). After addition, the mixture was stirred at 25 ℃ for 12 hrs under N2. Then, sodium cyanoborohydride (973.0 mg, 15.69 mmol) was added at 0 ℃. The resulting mixture was stirred at 25 ℃ for 4 hrs. The reaction solution was poured into water (20 mL) and extracted with DCM (20 mL × 3). The combined organic layers were washed with brine (10 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue. The residue was purified by prep-TLC (SiO2, ethyl acetate: petroleum ether = 1: 5) to afford **Compound 3-3** (220.0 mg, 8% yield) as a white solid. LCMS (ESI<sup>+</sup>): 332.0 [M+H]<sup>+</sup>. <sup>1</sup>H NMR (400 MHz, Chloroform-d) δ 8.33 (s, 1H), 7.19 - 7.16 (m, 1H), 7.03 - 7.01 (m, 1H), 6.96 - 6.92 (m, 1H), 4.50 - 4.49 (d, J = 4.0 Hz, 2H), 3.91 (s, 3H), 2.23 (s, 3H).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0005-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        606.0,
+        253.0,
+        618.0
+      ],
+      "markdown": "#### Step 4: Preparation of Compound 3-4",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0005-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        637.0,
+        542.0,
+        752.0
+      ],
+      "markdown": "To a solution of **Compound 3-3** (220.0 mg, 0.66 mmol) in 1,4-dioxane (5 mL) were added *tert*-butyl (3-hydroxycyclobutyl)carbamate (124.0 mg, 0.66 mmol), Cs2CO3 (648.0 mg, 1.99 mmol), RuPhos (46.4 mg, 0.10 mmol) and Pd2(dba)3 (60.7 mg, 0.066 mmol). After addition, the mixture was stirred at 100 ℃ for 12 hrs under N2. After cooling to 20 ℃, the reaction solution was poured into water (20 mL) and extracted with EtOAc (20 mL × 3). The combined organic layers were washed with brine (20 mL × 2), dried over Na2SO4, filtered and concentrated under reduced pressure to give a residue.",
+      "source_class": "text"
+    }
+  ]
+}

@@ -1,0 +1,2204 @@
+{
+  "page": 10,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "this, the local chemical space exploration was conducted using the",
+      "bbox": [
+        39.685001373291016,
+        47.59562683105469,
+        296.4140625,
+        57.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "STONED–SELFIES algorithm24, which was applied to the 650 experimen-",
+      "bbox": [
+        39.685001373291016,
+        58.00740051269531,
+        294.80316162109375,
+        68.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tally derived hits. This algorithm distinctively introduces random point",
+      "bbox": [
+        39.685001373291016,
+        69.09562683105469,
+        296.1516418457031,
+        79.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "substitutions into the SELFIES representations39,65,66 of the molecules,",
+      "bbox": [
+        39.685001373291016,
+        79.50740051269531,
+        296.29193115234375,
+        90.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "thereby generating novel compounds that maintain a structural resem-",
+      "bbox": [
+        39.685001373291016,
+        90.59562683105469,
+        294.80322265625,
+        100.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "blance to the starting point. The resulting derivatives were filtered on",
+      "bbox": [
+        39.685001373291016,
+        101.34562683105469,
+        296.3620910644531,
+        111.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the basis of synthesizability, culminating in the addition of 850,000",
+      "bbox": [
+        39.685001373291016,
+        112.09562683105469,
+        296.2160949707031,
+        122.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "molecules to our training set.",
+      "bbox": [
+        39.685001373291016,
+        122.84562683105469,
+        148.51898193359375,
+        133.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2) Generation of new molecules. Our approach was structured",
+      "bbox": [
+        56.692901611328125,
+        133.5956268310547,
+        296.1748352050781,
+        143.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "around the integration of three primary components: (1) the QCBM;",
+      "bbox": [
+        39.685001373291016,
+        144.3456268310547,
+        296.24896240234375,
+        154.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2) the classical LSTM model; and (3) Chemistry42 for artificial-",
+      "bbox": [
+        39.685001373291016,
+        155.0956268310547,
+        296.28424072265625,
+        165.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "intelligence-driven validation, as shown in Extended Data Fig. 3. The",
+      "bbox": [
+        39.685001373291016,
+        165.8456268310547,
+        296.2582702636719,
+        176.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "QCBM generator16 used a 16-qubit IBM quantum processor with quan-",
+      "bbox": [
+        39.685001373291016,
+        176.2574005126953,
+        294.80322265625,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tum circuits to model complex data distributions. The integration",
+      "bbox": [
+        39.685001373291016,
+        187.3457489013672,
+        296.20703125,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "method of quantum priors into the LSTM architecture (Supplementary",
+      "bbox": [
+        39.685001373291016,
+        198.0957489013672,
+        296.0597229003906,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Fig. 4) involved merging molecular information encoded in SELFIES",
+      "bbox": [
+        39.685001373291016,
+        208.8457489013672,
+        296.289306640625,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and quantum data by addition or concatenation to form samples, X′(t),",
+      "bbox": [
+        39.685001373291016,
+        219.5957489013672,
+        296.2381286621094,
+        231.27163696289062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "which were then input into the LSTM cell. The quantum component",
+      "bbox": [
+        39.685001373291016,
+        230.3457489013672,
+        296.2177429199219,
+        240.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(Supplementary Fig. 4) was a QCBM that generated samples from",
+      "bbox": [
+        39.685001373291016,
+        241.0957489013672,
+        296.24322509765625,
+        251.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum hardware each training epoch and was trained with a reward",
+      "bbox": [
+        39.685001373291016,
+        251.8457489013672,
+        296.1705322265625,
+        262.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "value, P(x) = softmax(R(x)), calculated using Chemistry42 or a local",
+      "bbox": [
+        39.685001373291016,
+        262.562744140625,
+        296.3832092285156,
+        272.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "filter. This cyclical sampling, training and validation process formed a",
+      "bbox": [
+        39.685001373291016,
+        273.3456115722656,
+        296.2244873046875,
+        283.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "loop aimed at continually improving the generated molecular struc-",
+      "bbox": [
+        39.685001373291016,
+        284.0956115722656,
+        294.80316162109375,
+        294.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tures for targeting KRAS.",
+      "bbox": [
+        39.685001373291016,
+        294.8456115722656,
+        132.48843383789062,
+        305.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(3) Experimental validation. The process of selecting experi-",
+      "bbox": [
+        56.692901611328125,
+        305.5956115722656,
+        294.8031311035156,
+        315.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mental sample candidates is illustrated at the bottom of Fig. 1. After",
+      "bbox": [
+        39.685001373291016,
+        316.3456115722656,
+        296.2525939941406,
+        326.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "training our model, we sampled 1 million compounds from each",
+      "bbox": [
+        39.685001373291016,
+        327.0956115722656,
+        296.2508239746094,
+        337.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "prior model listed at the bottom of Fig. 1. These samples underwent",
+      "bbox": [
+        39.685001373291016,
+        337.8456115722656,
+        296.25177001953125,
+        348.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "evaluation by Chemistry42, filtering out unsuitable compounds for",
+      "bbox": [
+        39.68499755859375,
+        348.5953674316406,
+        296.27655029296875,
+        358.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "pharmacological purposes and ranking the remaining compounds by",
+      "bbox": [
+        39.685001373291016,
+        359.3456115722656,
+        296.32562255859375,
+        369.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "their docking score (PLI score). Subsequently, 15 novel compounds",
+      "bbox": [
+        39.685001373291016,
+        370.0956115722656,
+        296.2518005371094,
+        380.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "were selected for synthesis and underwent SPR and cell-based assay",
+      "bbox": [
+        39.685001373291016,
+        380.8453674316406,
+        296.268310546875,
+        391.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "experiments.",
+      "bbox": [
+        39.685001373291016,
+        391.5951232910156,
+        90.53800201416016,
+        401.775634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Algorithm 1. Algorithm 1 provides an overview of quantum-assisted",
+      "bbox": [
+        39.685001373291016,
+        412.963623046875,
+        296.31427001953125,
+        423.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "drug discovery using an LSTM framework. This pseudocode details the",
+      "bbox": [
+        39.685001373291016,
+        423.8456115722656,
+        296.06982421875,
+        434.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "iterative process, starting with the initialization of the LSTM and QCBM",
+      "bbox": [
+        39.685001373291016,
+        434.5956115722656,
+        296.3329162597656,
+        444.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "models, followed by the generation and validation of new compounds.",
+      "bbox": [
+        39.685001373291016,
+        445.3456115722656,
+        296.28564453125,
+        455.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Valid compounds are subjected to a reward calculation and probability",
+      "bbox": [
+        39.685001373291016,
+        456.0956115722656,
+        296.0880126953125,
+        466.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "assessment, which in turn inform the subsequent training of the QCBM",
+      "bbox": [
+        39.685001373291016,
+        466.8456115722656,
+        296.1097106933594,
+        477.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(Algorithm 2). This cycle continues until convergence, illustrating the",
+      "bbox": [
+        39.685001373291016,
+        477.5956115722656,
+        296.07025146484375,
+        487.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dynamic interplay between quantum predictions and LSTM-generated",
+      "bbox": [
+        39.685001373291016,
+        488.3456115722656,
+        296.22454833984375,
+        498.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "compounds underpinned by the Chemistry42 evaluation.",
+      "bbox": [
+        39.685001373291016,
+        499.0956115722656,
+        253.34677124023438,
+        509.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1: Initialize: LSTM, QCBM, filter (Chemistry42)",
+      "bbox": [
+        39.685001373291016,
+        520.463134765625,
+        213.02493286132812,
+        530.775634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2: Generate initial samples Xi from QCBM",
+      "bbox": [
+        39.68500518798828,
+        531.212890625,
+        192.551025390625,
+        542.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3: while not converged do",
+      "bbox": [
+        39.68675231933594,
+        541.96337890625,
+        136.11688232421875,
+        552.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "4:",
+      "bbox": [
+        39.68675231933594,
+        552.8451538085938,
+        48.2337532043457,
+        563.025634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Train LSTM with Xi",
+      "bbox": [
+        63.28175354003906,
+        552.713134765625,
+        132.44564819335938,
+        563.77197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "5:",
+      "bbox": [
+        39.685001373291016,
+        563.5956420898438,
+        47.5885009765625,
+        573.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LSTM generates a new compound from the current samples Xi",
+      "bbox": [
+        62.63650131225586,
+        563.5626220703125,
+        290.90625,
+        574.52197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "6:",
+      "bbox": [
+        39.685001373291016,
+        574.3456420898438,
+        48.28975296020508,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Validate the new compound with the filter",
+      "bbox": [
+        63.33775329589844,
+        574.213623046875,
+        220.81788635253906,
+        584.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "7:",
+      "bbox": [
+        39.685001373291016,
+        585.0953979492188,
+        47.60499954223633,
+        595.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "if new compound is valid then",
+      "bbox": [
+        62.65299987792969,
+        584.96337890625,
+        174.37864685058594,
+        595.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "8:",
+      "bbox": [
+        39.685001373291016,
+        595.8451538085938,
+        48.223751068115234,
+        606.025634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Compute rewards for the new compound",
+      "bbox": [
+        79.7717514038086,
+        595.713134765625,
+        233.9188995361328,
+        606.025634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "9:",
+      "bbox": [
+        39.685001373291016,
+        606.5949096679688,
+        48.28975296020508,
+        616.775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Compute probabilities P(Xi) for each new compound",
+      "bbox": [
+        79.83775329589844,
+        606.462890625,
+        275.83331298828125,
+        617.52197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "10:",
+      "bbox": [
+        39.68525695800781,
+        617.3453979492188,
+        52.20050811767578,
+        627.52587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Train QCBM with Xi and P(Xi)",
+      "bbox": [
+        75.49850463867188,
+        617.21337890625,
+        187.07479858398438,
+        628.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "11:",
+      "bbox": [
+        39.68855285644531,
+        628.0953979492188,
+        50.26505661010742,
+        638.27587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Generate new Xi from QCBM",
+      "bbox": [
+        73.56305694580078,
+        627.96337890625,
+        184.06101989746094,
+        639.02197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "12:",
+      "bbox": [
+        39.685997009277344,
+        638.8453979492188,
+        51.285499572753906,
+        649.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "end if",
+      "bbox": [
+        66.33349609375,
+        638.71337890625,
+        88.04750061035156,
+        649.02587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "13: end while",
+      "bbox": [
+        39.685997009277344,
+        649.463134765625,
+        88.50949096679688,
+        659.775634765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "QCBM model. The QCBM model represents a quantum variational",
+      "bbox": [
+        39.68510055541992,
+        669.7095947265625,
+        296.1612243652344,
+        681.276123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generative model, necessitating a classical optimizer to train its param-",
+      "bbox": [
+        39.68510055541992,
+        681.8456420898438,
+        294.8094177246094,
+        692.026123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "eters. The total count of these parameters was computed with the",
+      "bbox": [
+        39.68510055541992,
+        692.5956420898438,
+        296.212646484375,
+        702.776123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "number of qubits and layers defined in the model (Extended Data",
+      "bbox": [
+        39.68510055541992,
+        703.3456420898438,
+        296.3771057128906,
+        713.526123046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Fig. 5). Upon specifying the parameters, denoted as θn, we obtain a",
+      "bbox": [
+        39.68510055541992,
+        714.0626220703125,
+        296.2947082519531,
+        725.02197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "quantum state ||ψ(θ)⟩. Here, each θn exerts an impact on the wave func-",
+      "bbox": [
+        39.68510055541992,
+        724.7290649414062,
+        294.81988525390625,
+        736.8785400390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion, expressed as ψ(θ). To optimize these parameters θ, the model is",
+      "bbox": [
+        39.68135070800781,
+        735.5623779296875,
+        296.28106689453125,
+        745.77587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "initially configured with randomly assigned parameters ||ψ(θ)⟩. These",
+      "bbox": [
+        306.13983154296875,
+        47.47904968261719,
+        562.7099609375,
+        59.628517150878906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "parameters are subsequently calculated throughout the training pro-",
+      "bbox": [
+        306.1416931152344,
+        58.34574890136719,
+        561.2598266601562,
+        68.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "cess. The training of the QCBM model involves minimizing the exact",
+      "bbox": [
+        306.1416931152344,
+        69.09574890136719,
+        562.7083129882812,
+        79.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "negative log-likelihood (exact NLL) loss function.",
+      "bbox": [
+        306.1416931152344,
+        79.84550476074219,
+        488.3347473144531,
+        90.0260009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Classical model: LSTM model. LSTM networks (Fig. 1) were used for",
+      "bbox": [
+        306.1416931152344,
+        99.95974731445312,
+        562.69775390625,
+        111.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the classical part of this architecture. LSTM is simple and has a good",
+      "bbox": [
+        306.1416931152344,
+        112.09574890136719,
+        562.6909790039062,
+        122.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "record of learning the string pattern in natural language processing",
+      "bbox": [
+        306.1416931152344,
+        122.84550476074219,
+        562.7166748046875,
+        133.0260009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "for a long time. LSTM networks are specialized recurrent neural",
+      "bbox": [
+        306.1416931152344,
+        133.5957489013672,
+        562.8507080078125,
+        143.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "networks capable of learning long-term dependencies in sequence",
+      "bbox": [
+        306.1416931152344,
+        144.3457489013672,
+        562.73388671875,
+        154.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "data67. They are particularly useful in applications where the context",
+      "bbox": [
+        306.1416931152344,
+        154.7574005126953,
+        562.6819458007812,
+        165.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "from earlier parts of the sequence is needed to interpret later parts,",
+      "bbox": [
+        306.1416931152344,
+        165.8457489013672,
+        562.7257690429688,
+        176.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "such as in natural language processing and time-series forecasting68.",
+      "bbox": [
+        306.1416931152344,
+        176.2574005126953,
+        562.7019653320312,
+        186.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The LSTM architecture consists of a chain of repeating modules",
+      "bbox": [
+        306.1416931152344,
+        187.3457489013672,
+        562.8413696289062,
+        197.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "called cells. Each cell contains three gates that control the flow of",
+      "bbox": [
+        306.1416931152344,
+        198.0957489013672,
+        562.6556396484375,
+        208.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "information:",
+      "bbox": [
+        306.1416931152344,
+        208.8457489013672,
+        355.13018798828125,
+        219.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "1.\t \u0007Forget gate: This gate decides what information from the cell",
+      "bbox": [
+        317.1389465332031,
+        223.4647216796875,
+        558.0711059570312,
+        233.7772216796875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "state should be thrown away or kept. It takes the output of",
+      "bbox": [
+        327.137939453125,
+        234.3464813232422,
+        544.7483520507812,
+        244.5269775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the previous LSTM cell and the current input and passes them",
+      "bbox": [
+        327.137939453125,
+        245.0962371826172,
+        557.9976196289062,
+        255.2767333984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "through a sigmoid function, outputting a number between 0",
+      "bbox": [
+        327.137939453125,
+        255.8459930419922,
+        555.0020751953125,
+        266.0264892578125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and 1 for each number in the cell state, where 0 means ‘com-",
+      "bbox": [
+        327.137939453125,
+        266.5957336425781,
+        549.7633666992188,
+        276.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "pletely forget this’ and 1 means ‘completely keep this’.",
+      "bbox": [
+        327.137939453125,
+        277.3454895019531,
+        526.6634521484375,
+        287.5260009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2.\t \u0007Input gate: This gate updates the cell state with new informa-",
+      "bbox": [
+        317.1389465332031,
+        287.9632568359375,
+        553.9221801757812,
+        298.2757568359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tion. It has two parts: a sigmoid layer called the input gate layer",
+      "bbox": [
+        327.137939453125,
+        298.8450012207031,
+        560.6038818359375,
+        309.0255126953125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and a hyperbolic tangent layer. The sigmoid layer decides what",
+      "bbox": [
+        327.137939453125,
+        309.5947570800781,
+        561.7844848632812,
+        319.7752685546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "values to update and the hyperbolic tangent layer creates a vec-",
+      "bbox": [
+        327.137939453125,
+        320.3445129394531,
+        561.27197265625,
+        330.5250244140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tor of new candidate values that could be added to the state.",
+      "bbox": [
+        327.137939453125,
+        331.0942687988281,
+        549.5323486328125,
+        341.2747802734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "3.\t \u0007Output gate: This gate decides the next hidden state. The hid-",
+      "bbox": [
+        317.1389465332031,
+        341.7120361328125,
+        558.2533569335938,
+        352.0245361328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "den state contains information on previous inputs. The hidden",
+      "bbox": [
+        327.137939453125,
+        352.5937805175781,
+        562.3131713867188,
+        362.7742919921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "state is used to calculate the output of the LSTM and the next",
+      "bbox": [
+        327.137939453125,
+        363.3435363769531,
+        555.20166015625,
+        373.5240478515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "hidden state.",
+      "bbox": [
+        327.137939453125,
+        374.0932922363281,
+        376.16693115234375,
+        384.2738037109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "The following equations can describe the LSTM’s operations:",
+      "bbox": [
+        326.1396789550781,
+        391.591552734375,
+        551.5865478515625,
+        401.7720642089844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Forget gate: ft = σ(Wf ⋅[ht−1, xt] + bf)",
+      "bbox": [
+        372.2838134765625,
+        409.43182373046875,
+        499.0482177734375,
+        422.20892333984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(1)",
+      "bbox": [
+        551.232666015625,
+        409.43182373046875,
+        559.8553466796875,
+        420.63983154296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Input gate: it = σ(Wi ⋅[ht−1, xt] + bi)",
+      "bbox": [
+        374.5177917480469,
+        435.883544921875,
+        496.8143005371094,
+        448.6610107421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2)",
+      "bbox": [
+        550.3810424804688,
+        435.883544921875,
+        559.863037109375,
+        447.0915222167969
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Candidate values:̃ Ct = tanh(WC ⋅[ht−1, xt] + bC)",
+      "bbox": [
+        354.02490234375,
+        462.113525390625,
+        517.3072509765625,
+        474.8910217285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(3)",
+      "bbox": [
+        550.4157104492188,
+        462.113525390625,
+        559.8528442382812,
+        473.321533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Update cell state: Ct = ft ⋅Ct−1 + it ⋅̃ Ct",
+      "bbox": [
+        371.1076965332031,
+        488.343505859375,
+        499.7261047363281,
+        501.12103271484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(4)",
+      "bbox": [
+        550.0961303710938,
+        488.343505859375,
+        559.862060546875,
+        499.551513671875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Output gate: ot = σ(Wo ⋅[ht−1, xt] + bo)",
+      "bbox": [
+        368.9986877441406,
+        513.7334594726562,
+        502.33331298828125,
+        526.5109252929688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(5)",
+      "bbox": [
+        550.5277099609375,
+        513.7334594726562,
+        559.852783203125,
+        524.9414672851562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Update hidden state: ht = ot ⋅tanh(Ct)",
+      "bbox": [
+        369.8529968261719,
+        539.1234741210938,
+        501.4784240722656,
+        551.9010620117188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(6)",
+      "bbox": [
+        549.89697265625,
+        539.1234741210938,
+        559.8571166992188,
+        550.3314819335938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Here, σ is the sigmoid activation function, W and b are the weight",
+      "bbox": [
+        306.1416931152344,
+        563.4637451171875,
+        562.7056884765625,
+        573.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "matrices and bias vectors for each gate and xt is the input at time t69.",
+      "bbox": [
+        306.1416931152344,
+        574.0073852539062,
+        554.7682495117188,
+        585.2720336914062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Training an LSTM involves optimizing the network’s weights and",
+      "bbox": [
+        323.14959716796875,
+        585.0957641601562,
+        562.5771484375,
+        595.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "biases to minimize a specific loss function. This is typically accom-",
+      "bbox": [
+        306.1418151855469,
+        595.8457641601562,
+        561.2598876953125,
+        606.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "plished using gradient-based optimization algorithms such as sto-",
+      "bbox": [
+        306.1418151855469,
+        606.5957641601562,
+        561.2598876953125,
+        616.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "chastic gradient descent or Adam70. The backpropagation through",
+      "bbox": [
+        306.1418151855469,
+        617.0073852539062,
+        562.7603149414062,
+        627.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "time algorithm was used to compute the gradients relative to the",
+      "bbox": [
+        306.1416931152344,
+        628.0957641601562,
+        562.5717163085938,
+        638.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "loss function, considering the sequential nature of the data71. The",
+      "bbox": [
+        306.1416931152344,
+        638.5073852539062,
+        562.7398681640625,
+        649.0262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "networks were trained using the Adam optimizer with the NLL loss",
+      "bbox": [
+        306.1416931152344,
+        649.5957641601562,
+        562.6333618164062,
+        659.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "function; to mitigate overfitting, regularization techniques such as",
+      "bbox": [
+        306.1416931152344,
+        660.3457641601562,
+        562.7083129882812,
+        670.5262451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "dropout were implemented72. The NLL loss for a single data point is",
+      "bbox": [
+        306.1416931152344,
+        670.7573852539062,
+        562.7329711914062,
+        681.2762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "given by",
+      "bbox": [
+        306.1416015625,
+        681.8455200195312,
+        337.912353515625,
+        692.0260009765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "L( y,̂ y) = −log(̂ yy)",
+      "bbox": [
+        404.3345947265625,
+        699.677734375,
+        465.7521057128906,
+        712.2078247070312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(7)",
+      "bbox": [
+        550.4397583007812,
+        699.677734375,
+        559.8619384765625,
+        710.8857421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "where y is the true class label and ̂ yy is the predicted probability for the",
+      "bbox": [
+        306.1416931152344,
+        724.812744140625,
+        562.5958862304688,
+        737.8493041992188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "true class label y.",
+      "bbox": [
+        306.1416931152344,
+        735.562744140625,
+        368.6601867675781,
+        745.7762451171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 10
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          39,
+          49,
+          297,
+          133
+        ],
+        "pos": [
+          71,
+          616
+        ]
+      },
+      {
+        "index": 3,
+        "class": "text",
+        "bbox": [
+          39,
+          135,
+          297,
+          305
+        ],
+        "pos": [
+          616,
+          1682
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          39,
+          307,
+          297,
+          402
+        ],
+        "pos": [
+          1682,
+          2220
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          39,
+          414,
+          297,
+          509
+        ],
+        "pos": [
+          2220,
+          2830
+        ]
+      },
+      {
+        "index": 6,
+        "class": "list-item",
+        "bbox": [
+          39,
+          522,
+          214,
+          531
+        ],
+        "pos": [
+          2830,
+          2886
+        ]
+      },
+      {
+        "index": 7,
+        "class": "list-item",
+        "bbox": [
+          39,
+          532,
+          193,
+          541
+        ],
+        "pos": [
+          2886,
+          2937
+        ]
+      },
+      {
+        "index": 8,
+        "class": "list-item",
+        "bbox": [
+          39,
+          543,
+          137,
+          552
+        ],
+        "pos": [
+          2937,
+          2975
+        ]
+      },
+      {
+        "index": 9,
+        "class": "text",
+        "bbox": [
+          306,
+          49,
+          563,
+          90
+        ],
+        "pos": [
+          2975,
+          3239
+        ]
+      },
+      {
+        "index": 10,
+        "class": "text",
+        "bbox": [
+          306,
+          102,
+          563,
+          217
+        ],
+        "pos": [
+          3239,
+          3961
+        ]
+      },
+      {
+        "index": 11,
+        "class": "list-item",
+        "bbox": [
+          317,
+          225,
+          559,
+          288
+        ],
+        "pos": [
+          3961,
+          4328
+        ]
+      },
+      {
+        "index": 12,
+        "class": "list-item",
+        "bbox": [
+          317,
+          289,
+          562,
+          340
+        ],
+        "pos": [
+          4328,
+          4655
+        ]
+      },
+      {
+        "index": 13,
+        "class": "list-item",
+        "bbox": [
+          317,
+          343,
+          563,
+          383
+        ],
+        "pos": [
+          4655,
+          4865
+        ]
+      },
+      {
+        "index": 14,
+        "class": "text",
+        "bbox": [
+          326,
+          393,
+          552,
+          402
+        ],
+        "pos": [
+          4865,
+          4927
+        ]
+      },
+      {
+        "index": 15,
+        "class": "table",
+        "bbox": [
+          354,
+          411,
+          560,
+          549
+        ],
+        "pos": [
+          4927,
+          5285
+        ]
+      },
+      {
+        "index": 16,
+        "class": "list-item",
+        "bbox": [
+          39,
+          554,
+          133,
+          563
+        ],
+        "pos": [
+          5285,
+          5317
+        ]
+      },
+      {
+        "index": 17,
+        "class": "list-item",
+        "bbox": [
+          39,
+          565,
+          291,
+          574
+        ],
+        "pos": [
+          5317,
+          5384
+        ]
+      },
+      {
+        "index": 18,
+        "class": "list-item",
+        "bbox": [
+          39,
+          575,
+          221,
+          584
+        ],
+        "pos": [
+          5384,
+          5437
+        ]
+      },
+      {
+        "index": 19,
+        "class": "list-item",
+        "bbox": [
+          39,
+          586,
+          175,
+          595
+        ],
+        "pos": [
+          5437,
+          5482
+        ]
+      },
+      {
+        "index": 20,
+        "class": "list-item",
+        "bbox": [
+          39,
+          597,
+          234,
+          606
+        ],
+        "pos": [
+          5482,
+          5530
+        ]
+      },
+      {
+        "index": 21,
+        "class": "list-item",
+        "bbox": [
+          39,
+          608,
+          276,
+          617
+        ],
+        "pos": [
+          5530,
+          5598
+        ]
+      },
+      {
+        "index": 22,
+        "class": "list-item",
+        "bbox": [
+          39,
+          618,
+          188,
+          627
+        ],
+        "pos": [
+          5598,
+          5648
+        ]
+      },
+      {
+        "index": 23,
+        "class": "list-item",
+        "bbox": [
+          39,
+          629,
+          185,
+          638
+        ],
+        "pos": [
+          5648,
+          5688
+        ]
+      },
+      {
+        "index": 24,
+        "class": "list-item",
+        "bbox": [
+          39,
+          640,
+          89,
+          647
+        ],
+        "pos": [
+          5688,
+          5707
+        ]
+      },
+      {
+        "index": 25,
+        "class": "text",
+        "bbox": [
+          39,
+          651,
+          89,
+          658
+        ],
+        "pos": [
+          5707,
+          5727
+        ]
+      },
+      {
+        "index": 26,
+        "class": "text",
+        "bbox": [
+          39,
+          672,
+          297,
+          746
+        ],
+        "pos": [
+          5727,
+          6225
+        ]
+      },
+      {
+        "index": 27,
+        "class": "text",
+        "bbox": [
+          306,
+          565,
+          563,
+          585
+        ],
+        "pos": [
+          6225,
+          6391
+        ]
+      },
+      {
+        "index": 28,
+        "class": "text",
+        "bbox": [
+          306,
+          586,
+          563,
+          692
+        ],
+        "pos": [
+          6391,
+          7032
+        ]
+      },
+      {
+        "index": 29,
+        "class": "formula",
+        "bbox": [
+          404,
+          701,
+          560,
+          711
+        ],
+        "pos": [
+          7032,
+          7034
+        ]
+      },
+      {
+        "index": 30,
+        "class": "text",
+        "bbox": [
+          306,
+          726,
+          563,
+          746
+        ],
+        "pos": [
+          7034,
+          7141
+        ]
+      },
+      {
+        "index": 31,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          7141,
+          7164
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\nthis, the local chemical space exploration was conducted using the STONED–SELFIES algorithm<sup>24</sup> , which was applied to the 650 experimentally derived hits. This algorithm distinctively introduces random point substitutions into the SELFIES representations<sup>39,65,66</sup> of the molecules, thereby generating novel compounds that maintain a structural resemblance to the starting point. The resulting derivatives were filtered on the basis of synthesizability, culminating in the addition of 850,000 molecules to our training set. \n\n(2) Generation of new molecules. Our approach was structured around the integration of three primary components: (1) the QCBM; (2) the classical LSTM model; and (3) Chemistry42 for artificialintelligence-driven validation, as shown in Extended Data Fig. 3. The QCBM generator<sup>16</sup> used a 16-qubit IBM quantum processor with quantum circuits to model complex data distributions. The integration method of quantum priors into the LSTM architecture (Supplementary Fig. 4) involved merging molecular information encoded in SELFIES and quantum data by addition or concatenation to form samples, _X_<sup>′</sup> ( _t_ ), which were then input into the LSTM cell. The quantum component (Supplementary Fig. 4) was a QCBM that generated samples from quantum hardware each training epoch and was trained with a reward value, _P_ ( _x_ ) = softmax( _R_ ( _x_ )), calculated using Chemistry42 or a local filter. This cyclical sampling, training and validation process formed a loop aimed at continually improving the generated molecular structures for targeting KRAS. \n\n(3) Experimental validation. The process of selecting experimental sample candidates is illustrated at the bottom of Fig. 1. After training our model, we sampled 1 million compounds from each prior model listed at the bottom of Fig. 1. These samples underwent evaluation by Chemistry42, filtering out unsuitable compounds for pharmacological purposes and ranking the remaining compounds by their docking score (PLI score). Subsequently, 15 novel compounds were selected for synthesis and underwent SPR and cell-based assay experiments. \n\n**Algorithm 1.** Algorithm 1 provides an overview of quantum-assisted drug discovery using an LSTM framework. This pseudocode details the iterative process, starting with the initialization of the LSTM and QCBM models, followed by the generation and validation of new compounds. Valid compounds are subjected to a reward calculation and probability assessment, which in turn inform the subsequent training of the QCBM (Algorithm 2). This cycle continues until convergence, illustrating the dynamic interplay between quantum predictions and LSTM-generated compounds underpinned by the Chemistry42 evaluation. \n\n- 1: **Initialize:** LSTM, QCBM, filter (Chemistry42) \n\n- 2: **Generate** initial samples _Xi_ from QCBM \n\n- 3: **while** not converged **do** \n\ninitially configured with randomly assigned parameters || _ψ_ ( _θ_ )⟩. These parameters are subsequently calculated throughout the training process. The training of the QCBM model involves minimizing the exact negative log-likelihood (exact NLL) loss function. \n\n**Classical model: LSTM model.** LSTM networks (Fig. 1) were used for the classical part of this architecture. LSTM is simple and has a good record of learning the string pattern in natural language processing for a long time. LSTM networks are specialized recurrent neural networks capable of learning long-term dependencies in sequence data<sup>67</sup> . They are particularly useful in applications where the context from earlier parts of the sequence is needed to interpret later parts, such as in natural language processing and time-series forecasting<sup>68</sup> . The LSTM architecture consists of a chain of repeating modules called cells. Each cell contains three gates that control the flow of information: \n\n1. **Forget gate** : This gate decides what information from the cell state should be thrown away or kept. It takes the output of the previous LSTM cell and the current input and passes them through a sigmoid function, outputting a number between 0 and 1 for each number in the cell state, where 0 means ‘completely forget this’ and 1 means ‘completely keep this’. \n\n2. **Input gate** : This gate updates the cell state with new information. It has two parts: a sigmoid layer called the input gate layer and a hyperbolic tangent layer. The sigmoid layer decides what values to update and the hyperbolic tangent layer creates a vector of new candidate values that could be added to the state. \n\n3. **Output gate** : This gate decides the next hidden state. The hidden state contains information on previous inputs. The hidden state is used to calculate the output of the LSTM and the next hidden state. \n\nThe following equations can describe the LSTM’s operations: \n\n|Forget gate: _ft_ =_σ_(_Wf_⋅[_ht_−1,_xt_] +**b**_f_)|(1)|\n|---|---|\n|Input gate: _it_ =_σ_(_Wi_⋅[_ht_−1,_xt_] +**b**_i_)|(2)|\n|Candidate values:̃ _Ct_ =tanh(_WC_⋅[_ht_−1,_xt_] +**b**_C_)|(3)|\n|Update cell state: _Ct_ =_ft_⋅_Ct_−1+_it_⋅̃_Ct_|(4)|\n|Output gate: _ot_ =_σ_(_Wo_⋅[_ht_−1,_xt_] +**b**_o_)|(5)|\n|Update hidden state: _ht_ =_ot_⋅tanh(_Ct_)|(6)|\n\n\n\n- 4: **Train** LSTM with _Xi_ \n\n- 5: LSTM generates a new compound from the current samples _Xi_ \n\n- 6: **Validate** the new compound with the filter \n\n- 7: **if** new compound is valid **then** \n\n- 8: **Compute** rewards for the new compound \n\n- 9: **Compute** probabilities _P_ ( _Xi_ ) for each new compound \n\n- 10: **Train** QCBM with _Xi_ and _P_ ( _Xi_ ) \n\n- 11: **Generate** new _Xi_ from QCBM \n\n- 12: **end if** \n\n13: **end while** \n\n**QCBM model.** The QCBM model represents a quantum variational generative model, necessitating a classical optimizer to train its parameters. The total count of these parameters was computed with the number of qubits and layers defined in the model (Extended Data Fig. 5). Upon specifying the parameters, denoted as _θn_ , we obtain a quantum state || _ψ_ ( _θ_ )⟩. Here, each _θn_ exerts an impact on the wave function, expressed as _ψ_ ( _θ_ ). To optimize these parameters _θ_ , the model is \n\nHere, _σ_ is the sigmoid activation function, _W_ and **b** are the weight matrices and bias vectors for each gate and _xt_ is the input at time _t_<sup>69</sup> . \n\nTraining an LSTM involves optimizing the network’s weights and biases to minimize a specific loss function. This is typically accomplished using gradient-based optimization algorithms such as stochastic gradient descent or Adam<sup>70</sup> . The backpropagation through time algorithm was used to compute the gradients relative to the loss function, considering the sequential nature of the data<sup>71</sup> . The networks were trained using the Adam optimizer with the NLL loss function; to mitigate overfitting, regularization techniques such as dropout were implemented<sup>72</sup> . The NLL loss for a single data point is given by \n\n\n\nwhere _y_ is the true class label and ̂ _yy_ is the predicted probability for the true class label _y_ . \n\nNature Biotechnology \n\n"
+  }
+}

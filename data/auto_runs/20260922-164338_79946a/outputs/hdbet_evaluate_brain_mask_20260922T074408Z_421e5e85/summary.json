@@ -1,0 +1,202 @@
+{
+  "tool": "hdbet_evaluate_brain_mask",
+  "reference": "https://github.com/MIC-DKFZ/nnUNet/blob/v2.8.1/nnunetv2/evaluation/evaluate_predictions.py",
+  "hdbet_repository": "https://github.com/MIC-DKFZ/HD-BET/tree/678e44d546a84de0f2a7fc245f176b82b7d912fd",
+  "simpleitk_reference": "https://simpleitk.org/doxygen/v2_5/html/classitk_1_1simple_1_1HausdorffDistanceImageFilter.html",
+  "settings": {
+    "mode": "file",
+    "threshold": 0.5,
+    "prediction_suffix": "",
+    "labels": [
+      1
+    ],
+    "reader": "SimpleITKIO",
+    "file_ending": ".nii.gz",
+    "upstream_binding": "nnunetv2.evaluation.evaluate_predictions.compute_metrics",
+    "num_processes": 1,
+    "child_python": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/dist/hdbet-agent/mcp/HD-BET-mcp/.venv/bin/python",
+    "shared_common_helper": true,
+    "child_process": {
+      "returncode": 0,
+      "wall_seconds": 2.491,
+      "stdout_bytes": 0,
+      "stderr_bytes": 0
+    }
+  },
+  "versions": {
+    "nnunetv2": "2.8.1",
+    "SimpleITK": "2.5.6",
+    "python": "3.10.18"
+  },
+  "metrics_note": {
+    "dice_iou_counts": "nnunetv2.evaluation.evaluate_predictions (Dice = 2TP/(2TP+FP+FN), IoU = TP/(TP+FP+FN), counts in voxels for label 1)",
+    "hausdorff": "SimpleITK.HausdorffDistanceImageFilter: maximum symmetric surface distance (hausdorff_max_mm) and average Hausdorff distance (hausdorff_avg_mm) in mm, physical space, computed on the binarised masks.",
+    "hd95": "HD95 (the 95th-percentile Hausdorff distance reported in the HD-BET paper) is NOT computed: no implementation exists in HD-BET, nnunetv2 2.8.1 or SimpleITK 2.5.6. The maximum Hausdorff distance reported here is by construction >= HD95 and must not be compared with the paper's HD95 values.",
+    "binarisation": "I/O adaptation: both masks are binarised as uint8(value > threshold) into fresh copies before evaluation, because compute_metrics compares labels by exact equality (== 1) and the Hausdorff filter needs a common integer pixel type; binary {0,1} masks are unchanged by the default threshold 0.5."
+  },
+  "hd95_computed": false,
+  "mean_metrics": {
+    "Dice": 0.9783485369833366,
+    "IoU": 0.9576147760749396,
+    "TP": 231444,
+    "FP": 5848,
+    "FN": 4396,
+    "TN": 840347,
+    "n_pred": 237292,
+    "n_ref": 235840
+  },
+  "mean_metrics_source": "single case (file mode): identical to the per-case metrics",
+  "foreground_mean_upstream": null,
+  "summary_stats": {
+    "n_cases": 1,
+    "dice": {
+      "mean": 0.9783485369833366,
+      "median": 0.9783485369833366,
+      "min": 0.9783485369833366,
+      "max": 0.9783485369833366
+    },
+    "hausdorff_max_mm": {
+      "mean": 8.0,
+      "median": 8.0,
+      "max": 8.0
+    },
+    "hausdorff_avg_mm": {
+      "mean": 0.045250601805780374
+    }
+  },
+  "per_case": [
+    {
+      "case_id": "tpl-MNI152NLin2009cAsym_res-02_T1w_bet",
+      "Dice": 0.9783485369833366,
+      "IoU": 0.9576147760749396,
+      "TP": 231444,
+      "FP": 5848,
+      "FN": 4396,
+      "TN": 840347,
+      "n_pred": 237292,
+      "n_ref": 235840,
+      "hausdorff_max_mm": 8.0,
+      "hausdorff_avg_mm": 0.045250601805780374,
+      "pred_volume_mL": 1898.336,
+      "ref_volume_mL": 1886.72,
+      "n_non_binary_voxels_pred": 0,
+      "n_non_binary_voxels_ref": 0,
+      "axcodes_pred": "RAS",
+      "axcodes_ref": "RAS",
+      "prediction_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+      "reference_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz"
+    }
+  ],
+  "case_details": {
+    "tpl-MNI152NLin2009cAsym_res-02_T1w_bet": {
+      "reference": {
+        "source_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz",
+        "binarised_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/reference/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+        "geometry": {
+          "size": [
+            97,
+            115,
+            97
+          ],
+          "spacing": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "origin": [
+            96.5,
+            132.5,
+            -78.5
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pixel_type": "32-bit float"
+        },
+        "dtype": "float32",
+        "value_min": 0.0,
+        "value_max": 1.0,
+        "n_non_binary_voxels": 0,
+        "already_binary": true,
+        "n_foreground": 235840,
+        "volume_mL": 1886.72
+      },
+      "prediction": {
+        "source_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+        "binarised_file": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/prediction/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+        "geometry": {
+          "size": [
+            97,
+            115,
+            97
+          ],
+          "spacing": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "origin": [
+            96.5,
+            132.5,
+            -78.5
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "pixel_type": "8-bit unsigned integer"
+        },
+        "dtype": "uint8",
+        "value_min": 0.0,
+        "value_max": 1.0,
+        "n_non_binary_voxels": 0,
+        "already_binary": true,
+        "n_foreground": 237292,
+        "volume_mL": 1898.336
+      },
+      "same_grid": true,
+      "orientation": {
+        "reference": {
+          "axcodes": "RAS",
+          "accepted": true,
+          "warning": null
+        },
+        "prediction": {
+          "axcodes": "RAS",
+          "accepted": true,
+          "warning": null
+        }
+      }
+    }
+  },
+  "unmatched_reference_files": [],
+  "warnings": [],
+  "timings_s": {
+    "nnunetv2_compute_metrics_s": 0.009,
+    "simpleitk_hausdorff_s": 0.087,
+    "total_s": 2.507
+  },
+  "files": {
+    "metrics_csv": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/metrics_per_case.csv",
+    "nnunet_json": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/nnunet_metrics.json",
+    "binarised_reference_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/reference",
+    "binarised_prediction_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/prediction",
+    "child_stdout_log": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/logs/child_stdout.log",
+    "child_stderr_log": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/logs/child_stderr.log"
+  }
+}

@@ -1,0 +1,13 @@
+{
+ "op": "train",
+ "dataset_name": "Dataset004_Hippocampus",
+ "configuration": "2d",
+ "fold": 0,
+ "trainer": "nnUNetTrainer_5epochs",
+ "plans_identifier": "nnUNetPlans",
+ "export_validation_probabilities": true,
+ "continue_training": false,
+ "only_run_validation": false,
+ "disable_checkpointing": false,
+ "device": "cuda"
+}

@@ -1,0 +1,413 @@
+{
+  "page": 37,
+  "lines": [
+    {
+      "text": "S3. Surface Plasmon Resonance Affinity Measurements",
+      "bbox": [
+        56.6399040222168,
+        57.22796630859375,
+        343.60870361328125,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "In all experiments, the Biacore 8K system was used. For preliminary compound screening, N-",
+      "bbox": [
+        56.6399040222168,
+        83.14796447753906,
+        507.85845947265625,
+        96.43196868896484
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "terminal biotinylated KRAS G12D protein (synthesized by VIVA Biotech (Shanghai) Ltd, purity ≥",
+      "bbox": [
+        56.6399040222168,
+        98.98796844482422,
+        535.1392822265625,
+        112.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "95%) was captured on a Sensor Chip SA (GE Healthcare) at a density of about 2000RU. Protein",
+      "bbox": [
+        56.6399040222168,
+        114.82796478271484,
+        521.8602294921875,
+        128.11196899414062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "immobilization was done using 1x HBS-EP+, 2 mM TCEP, 2% DMSO as running buffer. Protein",
+      "bbox": [
+        56.6399040222168,
+        130.66796875,
+        529.3851928710938,
+        143.95196533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was injected for 70 s at a flow rate of 5 μL/min. The protein concentration was 5 μg/mL. The",
+      "bbox": [
+        56.6399040222168,
+        146.7479705810547,
+        506.3692321777344,
+        160.03196716308594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "samples for initial screening of the compounds were prepared by serial two-fold dilutions from 200",
+      "bbox": [
+        56.6399040222168,
+        162.5879669189453,
+        536.1828002929688,
+        175.87196350097656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "μM to 0.39 μM in 1x HBS-EP+, 2mM TCEP, 2% DMSO. Samples were injected for 60 s at a flow",
+      "bbox": [
+        56.6399040222168,
+        178.42796325683594,
+        534.2421264648438,
+        191.7119598388672
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "rate of 30 μL/min and the dissociation time was 180 s. Biacore 8K software was used for data",
+      "bbox": [
+        56.6399040222168,
+        194.26795959472656,
+        509.28662109375,
+        207.5519561767578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "analysis.",
+      "bbox": [
+        56.6399040222168,
+        210.1079559326172,
+        101.30005645751953,
+        223.39195251464844
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "In order to validate the setup, the reference ligands MRTX1133 and BI-2852 where synthesized and",
+      "bbox": [
+        56.6399040222168,
+        236.02796936035156,
+        539.8184814453125,
+        249.3119659423828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "tested. It was found that these two compounds exhibit a “slow off” dissociation feature (Figure S1).",
+      "bbox": [
+        56.6399040222168,
+        251.8679656982422,
+        537.1965942382812,
+        265.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Their binding parameters (including the dissociation constant Kd) are listed in Table 2.",
+      "bbox": [
+        56.6399040222168,
+        267.7079772949219,
+        474.5284729003906,
+        281.0706787109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "s",
+      "bbox": [
+        516.9599609375,
+        458.44989013671875,
+        523.7572631835938,
+        471.9297180175781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Figure S1. SPR experiments for the reference compounds. A) Response curve of MRTX1133 in",
+      "bbox": [
+        56.6399040222168,
+        484.427978515625,
+        523.2030639648438,
+        497.71197509765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "single cycle mode. B) Response curve of BI-2852 in multiple cycle mode. MRTX1133 was too",
+      "bbox": [
+        56.6399040222168,
+        500.2679748535156,
+        516.8764038085938,
+        513.5519409179688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "active to allow determination of Kd by the multiple cycling mode.",
+      "bbox": [
+        56.6399040222168,
+        516.10791015625,
+        375.2239074707031,
+        529.4706420898438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "For 5 out of 12 newly generated and synthesized compounds, reasonable (micromolar) affinity was",
+      "bbox": [
+        56.6399040222168,
+        567.9479370117188,
+        535.4960327148438,
+        581.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "found (Table 3) along with the “fast off” kinetic behavior (Figure S2).",
+      "bbox": [
+        56.6399040222168,
+        583.7879638671875,
+        396.2023010253906,
+        597.0719604492188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Figure S2. SPR response curves for multiple cycle mode experiments for ISM061-18-2.",
+      "bbox": [
+        56.6399040222168,
+        746.2679443359375,
+        483.89373779296875,
+        759.5519409179688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 37
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "section-header",
+        "bbox": [
+          56,
+          59,
+          344,
+          71
+        ],
+        "pos": [
+          0,
+          60
+        ]
+      },
+      {
+        "index": 1,
+        "class": "text",
+        "bbox": [
+          56,
+          85,
+          537,
+          224
+        ],
+        "pos": [
+          60,
+          811
+        ]
+      },
+      {
+        "index": 2,
+        "class": "text",
+        "bbox": [
+          56,
+          238,
+          540,
+          281
+        ],
+        "pos": [
+          811,
+          1103
+        ]
+      },
+      {
+        "index": 3,
+        "class": "picture",
+        "bbox": [
+          56,
+          293,
+          517,
+          469
+        ],
+        "pos": [
+          1103,
+          1105
+        ]
+      },
+      {
+        "index": 4,
+        "class": "caption",
+        "bbox": [
+          516,
+          463,
+          524,
+          470
+        ],
+        "pos": [
+          1105,
+          1109
+        ]
+      },
+      {
+        "index": 5,
+        "class": "text",
+        "bbox": [
+          56,
+          486,
+          524,
+          530
+        ],
+        "pos": [
+          1109,
+          1360
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          570,
+          536,
+          598
+        ],
+        "pos": [
+          1360,
+          1530
+        ]
+      },
+      {
+        "index": 7,
+        "class": "picture",
+        "bbox": [
+          56,
+          609,
+          281,
+          734
+        ],
+        "pos": [
+          1530,
+          1532
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          56,
+          748,
+          484,
+          760
+        ],
+        "pos": [
+          1532,
+          1622
+        ]
+      }
+    ],
+    "text": "# **S3. Surface Plasmon Resonance Affinity Measurements** \n\nIn all experiments, the Biacore 8K system was used. For preliminary compound screening, N- terminal biotinylated KRAS G12D protein (synthesized by VIVA Biotech (Shanghai) Ltd, purity ≥ 95%) was captured on a Sensor Chip SA (GE Healthcare) at a density of about 2000RU. Protein immobilization was done using 1x HBS-EP+, 2 mM TCEP, 2% DMSO as running buffer. Protein was injected for 70 s at a flow rate of 5 μL/min. The protein concentration was 5 μg/mL. The samples for initial screening of the compounds were prepared by serial two-fold dilutions from 200 μM to 0.39 μM in 1x HBS-EP+, 2mM TCEP, 2% DMSO. Samples were injected for 60 s at a flow rate of 30 μL/min and the dissociation time was 180 s. Biacore 8K software was used for data analysis. \n\nIn order to validate the setup, the reference ligands MRTX1133 and BI-2852 where synthesized and tested. It was found that these two compounds exhibit a “slow off” dissociation feature (Figure S1). Their binding parameters (including the dissociation constant _Kd_ ) are listed in Table 2. \n\n\n\ns \n\n**Figure S1** . SPR experiments for the reference compounds. A) Response curve of MRTX1133 in single cycle mode. B) Response curve of BI-2852 in multiple cycle mode. MRTX1133 was too active to allow determination of Kd by the multiple cycling mode. \n\nFor 5 out of 12 newly generated and synthesized compounds, reasonable (micromolar) affinity was found (Table 3) along with the “fast off” kinetic behavior (Figure S2). \n\n\n\n**Figure S2.** SPR response curves for multiple cycle mode experiments for ISM061-18-2. \n\n"
+  }
+}

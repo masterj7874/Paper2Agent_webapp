@@ -1,0 +1,439 @@
+{
+  "page": 15,
+  "lines": [
+    {
+      "text": "S1.6. Preparation of ISM061-13",
+      "bbox": [
+        56.6399040222168,
+        56.78324508666992,
+        220.96217346191406,
+        70.51197052001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Scheme S6 Preparation of ISM061-13",
+      "bbox": [
+        205.26951599121094,
+        307.0679626464844,
+        392.91021728515625,
+        320.3519592285156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 1: Preparation of Compound 13-1",
+      "bbox": [
+        56.6399040222168,
+        332.98797607421875,
+        258.6417236328125,
+        346.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 3-bromo-4-ethylphenol (1.0 g, 4.4 mmol) in dichloromethane (10 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        363.7079772949219,
+        541.5311279296875,
+        376.9919738769531
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "boron trifluoride etherate (6.6 ml, 6.6 mmol) and triethylsilane (0.8 g, 6.6 mmol) under nitrogen",
+      "bbox": [
+        56.6399040222168,
+        384.3479919433594,
+        541.5189819335938,
+        397.6319885253906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "protection at 0 °C. The mixture was stirred at 25 °C for 16 hours. After the addition of ice water (50",
+      "bbox": [
+        56.6399040222168,
+        404.98797607421875,
+        541.533935546875,
+        418.27197265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mL), the mixture was extracted with dichloromethane (50 mL × 3). The combined organic phases",
+      "bbox": [
+        56.6399040222168,
+        425.86798095703125,
+        541.5165405273438,
+        439.1519775390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under",
+      "bbox": [
+        56.6399040222168,
+        446.5079650878906,
+        541.5260620117188,
+        459.7919616699219
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "reduced pressure to give a residue, which was further purified by silica gel column chromatography",
+      "bbox": [
+        56.6399040222168,
+        467.1479797363281,
+        541.5286865234375,
+        480.4319763183594
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to afford the title compound as a yellow oil (900 mg, Y: 95.9%).",
+      "bbox": [
+        56.6399040222168,
+        487.7879638671875,
+        369.24334716796875,
+        501.07196044921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 2: Preparation of Compound 13-2",
+      "bbox": [
+        56.6399040222168,
+        508.6679992675781,
+        258.6417236328125,
+        521.9519653320312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of compound 13-1 (900 mg, 4.2 mmol) in dioxane (9 mL) was added [1,1’-",
+      "bbox": [
+        56.6399040222168,
+        539.14794921875,
+        487.5851745605469,
+        552.4319458007812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "bis(diphenylphosphino)ferrocene]dichloro palladium (II) (160 mg, 0.29 mmol), potassium acetate",
+      "bbox": [
+        56.6399040222168,
+        560.0279541015625,
+        529.166259765625,
+        573.3119506835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(1.2 g, 12.6 mmol) and B2(pin)2 (1.6 mg, 6.3 mmol). The mixture was stirred at 100 °C for 16",
+      "bbox": [
+        56.6399040222168,
+        580.66796875,
+        509.3658142089844,
+        594.0306396484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "hours. The mixture was then concentrated under reduced pressure to give a residue, which was",
+      "bbox": [
+        56.6399040222168,
+        601.3079833984375,
+        514.132568359375,
+        614.5919799804688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "further purified by silica gel column chromatography (PE:EA=50:1) to afford the title compound as",
+      "bbox": [
+        56.6399040222168,
+        621.9479370117188,
+        537.9310302734375,
+        635.23193359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a yellow oil (810 mg, Y: 73.6%). 1H NMR (400 MHz, DMSO-d6) δ 7.10 - 7.06 (m, 2H), 6.91 - 6.87",
+      "bbox": [
+        56.6399040222168,
+        642.3832397460938,
+        538.5870971679688,
+        656.190673828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(m, 1H), 3.67 (s, 1H), 2.74 - 2.68 (m, 2H), 1.25 (s, 12H), 1.06 - 1.02 (m, 3H).",
+      "bbox": [
+        56.6399040222168,
+        663.4678955078125,
+        431.2648620605469,
+        676.7518920898438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Step 3: Preparation of Compound 13-3",
+      "bbox": [
+        56.6399040222168,
+        694.1879272460938,
+        258.6417236328125,
+        707.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "To a solution of 2-chloro-3-fluoro-4-iodopyridine (3.5 g, 13.6 mmol) in THF (35 mL) was added",
+      "bbox": [
+        56.6399040222168,
+        724.907958984375,
+        541.5296020507812,
+        738.1919555664062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "LiHMDS (6.8 ml,13.6 mmol) under nitrogen at –70°C. The mixture was stirred at this temperature",
+      "bbox": [
+        56.6399040222168,
+        745.5479125976562,
+        541.5325317382812,
+        758.8319091796875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "for another 4 hours. The reaction solution was poured into saturated ammonium chloride (50 mL).",
+      "bbox": [
+        56.6399040222168,
+        766.1879272460938,
+        541.5213623046875,
+        779.471923828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "macOS Version 13.6.1 (Build 22G313) Quartz PDFContext",
+      "creationDate": "D:20240211055429Z00'00'",
+      "modDate": "D:20240211055429Z00'00'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-5bsvu6mw/review/source.pdf",
+      "page_count": 37,
+      "page_number": 15
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          56,
+          59,
+          221,
+          71
+        ],
+        "pos": [
+          0,
+          37
+        ]
+      },
+      {
+        "index": 1,
+        "class": "picture",
+        "bbox": [
+          57,
+          78,
+          470,
+          293
+        ],
+        "pos": [
+          37,
+          39
+        ]
+      },
+      {
+        "index": 2,
+        "class": "caption",
+        "bbox": [
+          205,
+          309,
+          393,
+          321
+        ],
+        "pos": [
+          39,
+          80
+        ]
+      },
+      {
+        "index": 3,
+        "class": "caption",
+        "bbox": [
+          56,
+          335,
+          259,
+          347
+        ],
+        "pos": [
+          80,
+          123
+        ]
+      },
+      {
+        "index": 4,
+        "class": "text",
+        "bbox": [
+          56,
+          366,
+          542,
+          502
+        ],
+        "pos": [
+          123,
+          778
+        ]
+      },
+      {
+        "index": 5,
+        "class": "section-header",
+        "bbox": [
+          56,
+          511,
+          259,
+          522
+        ],
+        "pos": [
+          778,
+          823
+        ]
+      },
+      {
+        "index": 6,
+        "class": "text",
+        "bbox": [
+          56,
+          541,
+          539,
+          677
+        ],
+        "pos": [
+          823,
+          1480
+        ]
+      },
+      {
+        "index": 7,
+        "class": "section-header",
+        "bbox": [
+          56,
+          696,
+          259,
+          708
+        ],
+        "pos": [
+          1480,
+          1525
+        ]
+      },
+      {
+        "index": 8,
+        "class": "text",
+        "bbox": [
+          56,
+          727,
+          542,
+          780
+        ],
+        "pos": [
+          1525,
+          1812
+        ]
+      }
+    ],
+    "text": "**S1.6. Preparation of ISM061-13** \n\n\n\n**Scheme S6** Preparation of ISM061-13 \n\n**Step 1: Preparation of Compound 13-1** \n\nTo a solution of 3-bromo-4-ethylphenol (1.0 g, 4.4 mmol) in dichloromethane (10 mL) was added boron trifluoride etherate (6.6 ml, 6.6 mmol) and triethylsilane (0.8 g, 6.6 mmol) under nitrogen protection at 0 °C. The mixture was stirred at 25 °C for 16 hours. After the addition of ice water (50 mL), the mixture was extracted with dichloromethane (50 mL × 3). The combined organic phases was washed with brine (10 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography to afford the title compound as a yellow oil (900 mg, Y: 95.9%). \n\n# **Step 2: Preparation of Compound 13-2** \n\nTo a solution of **compound 13-1** (900 mg, 4.2 mmol) in dioxane (9 mL) was added [1,1’bis(diphenylphosphino)ferrocene]dichloro palladium (II) (160 mg, 0.29 mmol), potassium acetate (1.2 g, 12.6 mmol) and B2(pin)2 (1.6 mg, 6.3 mmol). The mixture was stirred at 100 °C for 16 hours. The mixture was then concentrated under reduced pressure to give a residue, which was further purified by silica gel column chromatography (PE:EA=50:1) to afford the title compound as a yellow oil (810 mg, Y: 73.6%).<sup>1</sup> H NMR (400 MHz, DMSO- _d6_ ) δ 7.10 - 7.06 (m, 2H), 6.91 - 6.87 (m, 1H), 3.67 (s, 1H), 2.74 - 2.68 (m, 2H), 1.25 (s, 12H), 1.06 - 1.02 (m, 3H). \n\n# **Step 3: Preparation of Compound 13-3** \n\nTo a solution of 2-chloro-3-fluoro-4-iodopyridine (3.5 g, 13.6 mmol) in THF (35 mL) was added LiHMDS (6.8 ml,13.6 mmol) under nitrogen at –70°C. The mixture was stirred at this temperature for another 4 hours. The reaction solution was poured into saturated ammonium chloride (50 mL). \n\n"
+  }
+}

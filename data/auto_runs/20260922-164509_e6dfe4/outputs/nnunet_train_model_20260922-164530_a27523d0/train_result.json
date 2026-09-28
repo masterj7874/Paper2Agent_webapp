@@ -1,0 +1,178 @@
+{
+ "ok": true,
+ "result": {
+  "model_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d",
+  "fold_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0",
+  "fold_folder_exists": true,
+  "model_folder_entries": [
+   "dataset.json",
+   "dataset_fingerprint.json",
+   "fold_0",
+   "plans.json"
+  ],
+  "available_fold_folders": {
+   "fold_0": [
+    "checkpoint_best.pth",
+    "checkpoint_final.pth"
+   ]
+  },
+  "labels": {
+   "background": 0,
+   "Anterior": 1,
+   "Posterior": 2
+  },
+  "file_ending": ".nii.gz",
+  "fold_folder_entries": [
+   "checkpoint_best.pth",
+   "checkpoint_final.pth",
+   "debug.json",
+   "progress.png",
+   "training_log_2026_9_22_16_45_33.txt",
+   "validation"
+  ],
+  "training_logs": [
+   "training_log_2026_9_22_16_45_33.txt"
+  ],
+  "checkpoints": {
+   "checkpoint_final.pth": {
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/checkpoint_final.pth",
+    "bytes": 15508717,
+    "sha256": "4060210c20e31c2561e8774c457dec3e7162c8db5e398060596cce7e13f2cd4a"
+   },
+   "checkpoint_best.pth": {
+    "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/checkpoint_best.pth",
+    "bytes": 15508575,
+    "sha256": "f5bcb030971368224284a1dc80dc5ec69812b29b57d95fe84de03fd06d6bf581"
+   }
+  },
+  "progress_png": {
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/progress.png",
+   "bytes": 455391,
+   "sha256": "819d7efd09294a35cbcba4b46d1d2d5dbfbf60fcd79a2256a48c5f677830601d"
+  },
+  "debug": {
+   "num_epochs": 5,
+   "current_epoch": 0,
+   "num_iterations_per_epoch": 250,
+   "num_val_iterations_per_epoch": 50,
+   "batch_size": 366,
+   "configuration_name": "2d",
+   "fold": 0,
+   "device": "cuda:0",
+   "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+   "torch_version": "2.11.0+cu128",
+   "cudnn_version": 91900,
+   "network": "OptimizedModule",
+   "initial_lr": 0.01,
+   "weight_decay": 3e-05,
+   "oversample_foreground_percent": 0.33,
+   "enable_deep_supervision": "True",
+   "inference_allowed_mirroring_axes": "(0, 1)",
+   "hostname": "jerisuh-System-Product-Name",
+   "is_ddp": "False",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/debug.json"
+  },
+  "configuration": {
+   "patch_size": [
+    56,
+    40
+   ],
+   "batch_size": 366,
+   "spacing": [
+    1.0,
+    1.0
+   ],
+   "data_identifier": "nnUNetPlans_2d",
+   "preprocessor_name": "DefaultPreprocessor"
+  },
+  "plans_name": "nnUNetPlans",
+  "dataset_name": "Dataset004_Hippocampus",
+  "validation": {
+   "folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/validation",
+   "exists": true,
+   "summary_json": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/validation/summary.json",
+   "n_segmentations": 52,
+   "n_npz": 52,
+   "n_pkl": 52,
+   "summary_sha256": "7c3f3028da874a4a10f06f5480bfcce1b873e38b1fdd712289866fa8e1420e3b",
+   "n_cases": 52,
+   "foreground_mean": {
+    "Dice": 0.8608356357016642,
+    "FN": 228.53846153846155,
+    "FP": 234.06730769230768,
+    "IoU": 0.7581983563805876,
+    "TN": 61619.74038461538,
+    "TP": 1447.9038461538462,
+    "n_pred": 1681.9711538461538,
+    "n_ref": 1676.4423076923076
+   },
+   "foreground_mean_dice": 0.8608356357016642,
+   "mean_per_label": {
+    "1": {
+     "Dice": 0.8688778525489318,
+     "IoU": 0.7705637605054367,
+     "n_pred": 1762.0192307692307,
+     "n_ref": 1763.6538461538462
+    },
+    "2": {
+     "Dice": 0.8527934188543966,
+     "IoU": 0.7458329522557384,
+     "n_pred": 1601.923076923077,
+     "n_ref": 1589.2307692307693
+    }
+   },
+   "mean_dice_per_label": {
+    "1": 0.8688778525489318,
+    "2": 0.8527934188543966
+   }
+  },
+  "latest_training_log": {
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/training_log_2026_9_22_16_45_33.txt",
+   "torch_compile_used": true,
+   "n_epoch_time_lines": 5,
+   "validation_complete": true,
+   "tail": [
+    "2026-09-22 16:47:00.318259: hippocampus_394, shape torch.Size([1, 32, 52, 36]), rank 0 ",
+    "2026-09-22 16:47:02.097151: Validation complete ",
+    "2026-09-22 16:47:02.097228: Mean Validation Dice:  0.8608356357016642"
+   ]
+  },
+  "checkpoint_final_info": {
+   "trainer_name": "nnUNetTrainer_5epochs",
+   "current_epoch": 5,
+   "best_ema_fg_dice": 0.6416877508163452,
+   "inference_allowed_mirroring_axes": [
+    0,
+    1
+   ],
+   "init_args": {
+    "configuration": "2d",
+    "fold": 0,
+    "plans_name": "nnUNetPlans",
+    "dataset_name": "Dataset004_Hippocampus"
+   },
+   "n_parameters": 6031241,
+   "n_weight_tensors": 188,
+   "epochs_logged": 5,
+   "final_train_loss": -0.7832915186882019,
+   "final_val_loss": -0.7951985001564026,
+   "final_mean_fg_pseudo_dice": 0.8593547344207764,
+   "final_ema_fg_pseudo_dice": 0.6416877508163452,
+   "final_pseudo_dice_per_class": [
+    0.8680335879325867,
+    0.8506759405136108
+   ],
+   "final_lr": 0.0023492378861760376,
+   "epoch_time_s_first": 30.048,
+   "epoch_time_s_mean": 13.413
+  },
+  "upstream_wall_seconds": 88.827,
+  "device": {
+   "type": "cuda",
+   "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+   "cuda_visible_devices": "0",
+   "torch_version": "2.11.0+cu128",
+   "nnUNet_compile_env": "true"
+  }
+ }
+}

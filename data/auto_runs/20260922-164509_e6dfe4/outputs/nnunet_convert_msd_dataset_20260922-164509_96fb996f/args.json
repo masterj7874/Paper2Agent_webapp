@@ -1,0 +1,6 @@
+{
+  "op": "convert_msd",
+  "source_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/msd/Task04_Hippocampus",
+  "overwrite_target_id": null,
+  "num_processes": 8
+}

@@ -1,0 +1,236 @@
+{
+ "run_id": "20260922-164338_79946a",
+ "status": "done",
+ "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+ "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+ "project": null,
+ "kind": "mri_volume",
+ "modality_guess": "MRI",
+ "detection_notes": [
+  "3-D volume [97, 115, 97] @ [2.0, 2.0, 2.0] mm, int16, intensity [0, 9882]",
+  "no Hounsfield air (< -500) -> MRI-like volume; HD-BET brain extraction (skull-stripping) is applied",
+  "reference brain mask found next to the input (tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz): Dice/IoU/Hausdorff are computed"
+ ],
+ "recipe": {
+  "id": "mri_brain_extraction",
+  "title": "MRI volume -> HD-BET skull-stripping -> mask QC -> evaluation"
+ },
+ "created_at": 1790063018.4062054,
+ "finished_at": 1790063097.4427655,
+ "duration_s": 79.04,
+ "steps": [
+  {
+   "index": 0,
+   "label": "HD-BET brain extraction",
+   "agent": "HDBET",
+   "tool": "hdbet_extract_brain",
+   "status": "done",
+   "job_id": "2f132d1fc2b0",
+   "duration_s": 28.01,
+   "error": null,
+   "key_numbers": {
+    "n_cases": 1,
+    "input_mode": "file",
+    "save_mask": true,
+    "save_brain_image": true,
+    "timing_s.import_s": 2.469,
+    "timing_s.maybe_download_parameters_s": 0.0,
+    "timing_s.get_hdbet_predictor_s": 1.747,
+    "timing_s.hdbet_predict_s": 18.665,
+    "timing_s.summary_and_overlays_s": 0.153,
+    "timing_s.child_total_s": 23.185,
+    "timing_s.child_process_wall_s": 25.3,
+    "timing_s.tool_total_s": 27.882
+   },
+   "artifacts": [
+    {
+     "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: binary brain mask (uint8 0/1, input grid)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz"
+    },
+    {
+     "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: skull-stripped image (input voxels inside the mask)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz"
+    },
+    {
+     "description": "tpl-MNI152NLin2009cAsym_res-02_T1w: orthogonal QC overlay of the mask contour on the input (PNG)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_overlay.png"
+    },
+    {
+     "description": "summary JSON of this call (cases, device, model, timing)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/hdbet_extract_brain_result.json"
+    }
+   ],
+   "arguments": {
+    "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+    "device": "auto",
+    "use_tta": true,
+    "save_mask": true,
+    "save_brain_image": true,
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs"
+   }
+  },
+  {
+   "index": 1,
+   "label": "mask QC (volume, components, overlays)",
+   "agent": "HDBET",
+   "tool": "hdbet_inspect_brain_mask",
+   "status": "done",
+   "job_id": "d3240f0ef63c",
+   "duration_s": 2.5,
+   "error": null,
+   "key_numbers": {
+    "foreground_voxels": 237292,
+    "volume_mm3": 1898336.0,
+    "foreground_rule": "mask != 0",
+    "threshold": 0.5,
+    "mask_is_binary_01": true,
+    "mask_n_unique": 2,
+    "voxel_volume_mm3": 8.0,
+    "volume_mL": 1898.336,
+    "foreground_fraction": 0.2193,
+    "overlay_selected_slice_axis0": 40,
+    "child_stdout_bytes": 0,
+    "wall_time_s": 2.475
+   },
+   "artifacts": [
+    {
+     "description": "mask statistics JSON (voxel count, volume, bounding box, value set, components, grid/orientation checks)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/mask_statistics.json"
+    },
+    {
+     "description": "overlay PNG of the slice with the most foreground along array axis 0 (exact nnunetv2 plot_overlay output)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay.png"
+    },
+    {
+     "description": "overlay PNG along array axis 1 (adaptation: upstream select_slice_to_plot2 + generate_overlay on the moved axis)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis1.png"
+    },
+    {
+     "description": "overlay PNG along array axis 2 (adaptation: upstream select_slice_to_plot2 + generate_overlay on the moved axis)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/tpl-MNI152NLin2009cAsym_res-02_T1w_bet_overlay_axis2.png"
+    },
+    {
+     "description": "child-process stdout log of the upstream call (captured fd 1; expected 0 bytes)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_inspect_brain_mask_20260922T074406Z_5cdb66a9/plot_overlay_child.stdout.log"
+    }
+   ],
+   "arguments": {
+    "mask_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+    "image_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_T1w.nii.gz",
+    "three_views": true,
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs"
+   }
+  },
+  {
+   "index": 2,
+   "label": "Dice/IoU/Hausdorff vs reference mask",
+   "agent": "HDBET",
+   "tool": "hdbet_evaluate_brain_mask",
+   "status": "done",
+   "job_id": "3768c617b81c",
+   "duration_s": 3.0,
+   "error": null,
+   "key_numbers": {
+    "n_cases": 1,
+    "mean_metrics.Dice": 0.97835,
+    "mean_metrics.IoU": 0.95761,
+    "mode": "file",
+    "hd95_computed": false,
+    "mean_metrics.TP": 231444,
+    "mean_metrics.FP": 5848,
+    "mean_metrics.FN": 4396,
+    "mean_metrics.TN": 840347,
+    "mean_metrics.n_pred": 237292,
+    "mean_metrics.n_ref": 235840,
+    "timings_s.nnunetv2_compute_metrics_s": 0.009,
+    "timings_s.simpleitk_hausdorff_s": 0.087,
+    "timings_s.total_s": 2.507
+   },
+   "artifacts": [
+    {
+     "description": "per-case metrics CSV (Dice, IoU, TP/FP/FN/TN, n_pred, n_ref, Hausdorff max/avg mm, volumes)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/metrics_per_case.csv"
+    },
+    {
+     "description": "summary JSON (settings, per-case metrics, mean metrics, notes, warnings, case details)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/summary.json"
+    },
+    {
+     "description": "native nnunetv2 output (compute_metrics result)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/nnunet_metrics.json"
+    },
+    {
+     "description": "binarised uint8 reference masks used for evaluation",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/reference"
+    },
+    {
+     "description": "binarised uint8 prediction masks used for evaluation",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/binarised/prediction"
+    },
+    {
+     "description": "captured stdout of the nnunetv2/SimpleITK child process",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_evaluate_brain_mask_20260922T074408Z_421e5e85/logs/child_stdout.log"
+    }
+   ],
+   "arguments": {
+    "prediction_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs/hdbet_extract_brain_20260922T074340Z_da65b03a/tpl-MNI152NLin2009cAsym_res-02_T1w_bet.nii.gz",
+    "reference_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/HDBET_Agent/data/samples/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/outputs"
+   }
+  },
+  {
+   "index": 3,
+   "label": "literature context (MedKG related work)",
+   "agent": "MedKG",
+   "tool": "medkg_related_work",
+   "status": "done",
+   "job_id": "2e14d0e777c9",
+   "duration_s": 45.52,
+   "error": null,
+   "key_numbers": {
+    "summary.n_rows": 10,
+    "summary.n_q1": 10,
+    "summary.status": "ok",
+    "summary.llm.provider": "codex",
+    "summary.llm.model": "gpt-6-astra",
+    "summary.llm.elapsed_s": 44.54,
+    "summary.llm.fallback_used": false,
+    "summary.timing.total_ms": 45230.8,
+    "summary.timing.retrieval_ms": 523.5,
+    "summary.timing.dense_ms": 42.6,
+    "summary.timing.lexical_ms": 108.0,
+    "summary.timing.rerank_ms": 221.6,
+    "summary.timing.graph_ms": 161.7,
+    "summary.timing.llm_ms": 44542.6
+   },
+   "artifacts": [
+    {
+     "description": "related_work — full JSON response",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164457-4cdc20.json"
+    },
+    {
+     "description": "related_work — markdown",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164457-4cdc20.md"
+    }
+   ],
+   "arguments": {
+    "topic": "automated brain extraction skull stripping MRI deep learning",
+    "k": 10,
+    "summarise": true,
+    "modality": "MRI",
+    "task": "segmentation"
+   }
+  }
+ ],
+ "artifacts": [
+  {
+   "description": "run summary (JSON)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/summary.json"
+  },
+  {
+   "description": "run report (markdown)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164338_79946a/report.md"
+  }
+ ],
+ "warnings": []
+}

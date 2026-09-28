@@ -1,0 +1,125 @@
+{
+  "page": 37,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0037.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0037.png and checked all nine items against evidence/page-0037.json and 200-dpi renders. This is the last page of the SI. Kind fixes: p0037-b000 is the top-level section heading S3, set to level 2 to match the 'S1. Chemistry' section level; p0037-b005 and p0037-b008 were kind 'text' and are the Figure S1 / Figure S2 captions, changed to 'caption' and placed immediately after their figures; p0037-b004 was a one-character 'caption' holding the letter 's' - that is the seconds unit of the Figure S1 panel B time axis, so it became an 'omit' with a reason and its glyph is inside the figure crop. Figure bboxes: Figure S1 set to [52,289,528,473] (the embedded panel bitmap is [56.7,293.0,516.6,468.8] and the crop was widened to take in that trailing 's'); both panel letters A and B and the 'K_D (M):5.83e-12' annotation are inside the crop, verified at 300 dpi with an ink-free border. Figure S2 set to [52,605,285,737] around the bitmap at [56.7,609.0,280.8,733.1]. Placeholder asset names replaced with 'figure-s1' and 'figure-s2' using the printed numbers. Text repairs: 'N- terminal biotinylated' -> 'N-terminal biotinylated' (line-wrap split of a real compound hyphen); the dissociation constant rendered as '_Kd_' in the body (source uses italic K with an italic subscript d) and as plain 'Kd' in the Figure S1 caption (source uses an upright K there - both were read off the PDF font spans); removed the stray space in '**Figure S1** . SPR'. Verified character by character: 'purity >=' uses U+2265, every micro sign is GREEK SMALL LETTER MU U+03BC ('5 μL/min', '5 μg/mL', '200 μM to 0.39 μM', '30 μL/min'), the quotes around 'slow off' and 'fast off' are curly U+201C/U+201D, and the identifiers MRTX1133, BI-2852, KRAS G12D, ISM061-18-2, HBS-EP+ and 2000RU are exact. PRESERVED SOURCE TYPO: 'the reference ligands MRTX1133 and BI-2852 where synthesized' ('where' for 'were'). No tables are printed on this page: the 'Table 2' and 'Table 3' referred to in the text are tables of the main article, not of this supplement. COORDINATOR CORRECTION PASS: heading levels rebased to the pages 1-13 hierarchy (title #, S<n>. sections ##, S1.n subsections ###, Step n ####). Reverted the <sub> tags I had introduced so the document-wide extractor asymmetry is preserved - chemical and variable subscripts are now inline characters (DMSO-_d_6, Kd) while superscripts stay <sup>-tagged; <sub> now appears nowhere in the document. Italic markers put back to the extractor's _x_ form (_d_, _o_, _Kd_) rather than the *x* form I had used. NMR assets re-prefixed to si-nmr-*. DOCUMENT-END CONFIRMATION (coordinator request): page 37 is the last page of a 37-page file and it stops CLEANLY, not mid-sentence. The final printed line is the complete caption \"Figure S2. SPR response curves for multiple cycle mode experiments for ISM061-18-2.\" ending in a full stop at y=746.3-759.6, followed by 82.3 pt of blank bottom margin, with no page number, no running footer, no continuation marker and no reference list. So the truncation is STRUCTURAL, not typographic: section S3 simply ends after its second figure, section S2 is absent from the whole file, and the SI has no bibliography. S3 is the only top-level section heading in pages 26-37 and it begins on page 37 at bbox [56.6,57.2,343.6,70.5]. SECTION-NUMBERING CENSUS (done from this file's own text layer, all 37 pages): the complete list of bold left-margin section headings is S1, S1.1 (General Synthetic Procedures), S1.1, S1.2 ... S1.13, then S3. There is NO 'S2.' section heading anywhere in the document - the only 'S2' tokens in the whole file are 'Scheme S2' (page 4) and 'Figure S2' (page 37), neither of which is a section heading. S1.6 (page 15) and S1.7 (page 18) ARE printed, so there is no gap in the S1 numbering; the real defect is the duplicated S1.9.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0037-b000",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        59.0,
+        344.0,
+        71.0
+      ],
+      "markdown": "## S3. Surface Plasmon Resonance Affinity Measurements",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0037-b001",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        85.0,
+        537.0,
+        224.0
+      ],
+      "markdown": "In all experiments, the Biacore 8K system was used. For preliminary compound screening, N-terminal biotinylated KRAS G12D protein (synthesized by VIVA Biotech (Shanghai) Ltd, purity ≥ 95%) was captured on a Sensor Chip SA (GE Healthcare) at a density of about 2000RU. Protein immobilization was done using 1x HBS-EP+, 2 mM TCEP, 2% DMSO as running buffer. Protein was injected for 70 s at a flow rate of 5 μL/min. The protein concentration was 5 μg/mL. The samples for initial screening of the compounds were prepared by serial two-fold dilutions from 200 μM to 0.39 μM in 1x HBS-EP+, 2mM TCEP, 2% DMSO. Samples were injected for 60 s at a flow rate of 30 μL/min and the dissociation time was 180 s. Biacore 8K software was used for data analysis.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0037-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        238.0,
+        540.0,
+        281.0
+      ],
+      "markdown": "In order to validate the setup, the reference ligands MRTX1133 and BI-2852 where synthesized and tested. It was found that these two compounds exhibit a “slow off” dissociation feature (Figure S1). Their binding parameters (including the dissociation constant _Kd_) are listed in Table 2.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0037-b003",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        289.0,
+        528.0,
+        473.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Figure S1",
+      "asset_name": "figure-s1"
+    },
+    {
+      "id": "p0037-b004",
+      "kind": "omit",
+      "bbox": [
+        516.0,
+        463.0,
+        524.0,
+        470.0
+      ],
+      "markdown": "",
+      "source_class": "caption",
+      "reason": "Stray one-character fragment \"s\" at [517,458,524,470]: it is the seconds unit of the Figure S1 panel B time axis, set in Calibri outside the pasted panel bitmaps. It lies inside the figure-s1 crop and would otherwise be emitted as a bare caption."
+    },
+    {
+      "id": "p0037-b005",
+      "kind": "caption",
+      "bbox": [
+        56.0,
+        486.0,
+        524.0,
+        530.0
+      ],
+      "markdown": "**Figure S1**. SPR experiments for the reference compounds. A) Response curve of MRTX1133 in single cycle mode. B) Response curve of BI-2852 in multiple cycle mode. MRTX1133 was too active to allow determination of Kd by the multiple cycling mode.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0037-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        570.0,
+        536.0,
+        598.0
+      ],
+      "markdown": "For 5 out of 12 newly generated and synthesized compounds, reasonable (micromolar) affinity was found (Table 3) along with the “fast off” kinetic behavior (Figure S2).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0037-b007",
+      "kind": "figure",
+      "bbox": [
+        52.0,
+        605.0,
+        285.0,
+        737.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Figure S2",
+      "asset_name": "figure-s2"
+    },
+    {
+      "id": "p0037-b008",
+      "kind": "caption",
+      "bbox": [
+        56.0,
+        748.0,
+        484.0,
+        760.0
+      ],
+      "markdown": "**Figure S2.** SPR response curves for multiple cycle mode experiments for ISM061-18-2.",
+      "source_class": "text"
+    }
+  ]
+}

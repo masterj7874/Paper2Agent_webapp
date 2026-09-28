@@ -1,0 +1,1114 @@
+nature biotechnology
+
+Brief Communication                                                                                     https://doi.org/10.1038/s41587-024-02526-3
+
+
+Quantum-computing-enhanced algorithm
+unveils potential KRAS inhibitors
+
+Received: 7 May 2024                                Mohammad Ghazi Vakili1,2, Christoph Gorgulla 3,4 , Jamie Snider5,
+                                                    AkshatKumar Nigam6 , Dmitry Bezrukov7, Daniel Varoli8, Alex Aliper7,
+Accepted: 6 December 2024
+                                                    Daniil Polykovsky 9, Krishna M. Padmanabha Das10,11, Huel Cox III11,
+Published online: 22 January 2025                   Anna Lyakisheva5, Ardalan Hosseini Mansob 5,12, Zhong Yao5, Lela Bitar5,13,
+                                                    Danielle Tahoulas 5,14, Dora Čerina 14,15, Eugene Radchenko 7, Xiao Ding7,
+    Check for updates
+                                                    Jinxin Liu7, Fanye Meng7, Feng Ren 7, Yudong Cao16, Igor Stagljar 5,12,14,17 ,
+                                                    Alán Aspuru-Guzik 1,2,18,19,20,21 & Alex Zhavoronkov 7
+
+
+                                                    We introduce a quantum–classical generative model for small-molecule
+                                                    design, specifically targeting KRAS inhibitors for cancer therapy. We apply
+                                                    the method to design, select and synthesize 15 proposed molecules that
+                                                    could notably engage with KRAS for cancer therapy, with two holding
+                                                    promise for future development as inhibitors. This work showcases the
+                                                    potential of quantum computing to generate experimentally validated hits
+                                                    that compare favorably against classical models.
+
+Drug discovery is a multifaceted and resource-intensive process encom-             By merging the advancements in quantum machine learning with
+passing the discovery, development and comprehensive testing of new           traditional drug discovery, the industry is shifting toward innovative
+molecules. Typically extending over a decade and incurring substantial        computational strategies12. While purely classical algorithms have
+costs, the pharmaceutical industry faces substantial financial risks1–3.      made notable strides in drug discovery, hybrid classical–quantum
+The pressing need for efficiency and innovation in drug discovery             approaches offer unique advantages because of the ability of quan-
+has led to integrating advanced computational tools into traditional          tum circuit Born machines (QCBMs) to leverage quantum effects such
+pharmaceutical research methodologies. Concurrently, generative               as superposition and entanglement13,14. The introduction of QCBMs
+modeling has emerged as a transformative technology in molecule               illustrates this advancement, offering a generative model that can
+design4–7. Generative models use machine learning techniques to under-        outperform classical ones in certain aspects. QCBMs are quantum
+stand the underlying distribution of atoms and bonds in a specified           generative models that leverage quantum circuits to learn complex
+dataset, which are then used to construct molecules with predefined           probability distributions, enabling them to generate new samples
+properties, a process known as inverse molecular design8–10. These            that resemble the training data15. Hibat-Allah et al.16 demonstrated
+models excel at exploring the vast drug-like chemical space (~1060            the superior generalization capabilities of QCBMs, which can pro-
+molecules), identifying potential molecules efficiently11.                    duce cardinality distributions beyond the training set and overcome
+
+
+1
+ Department of Computer Science, University of Toronto, Toronto, Ontario, Canada. 2Department of Chemistry, University of Toronto, Toronto, Ontario,
+Canada. 3Department of Structural Biology, St. Jude Children’s Research Hospital, Memphis, TN, USA. 4Department of Physics, Harvard University,
+Cambridge, MA, USA. 5Donnelly Centre, Temerty Faculty of Medicine, University of Toronto, Toronto, Ontario, Canada. 6Department of Computer
+Science, Stanford University, Stanford, CA, USA. 7Insilico Medicine AI Limited, Abu Dhabi, UAE. 8Zapata AI, Boston, MA, USA. 9Insilico Medicine Canada,
+Inc., Montreal, Québec, Canada. 10Department of Cancer Biology, Dana-Farber Cancer Institute, Boston, MA, USA. 11Department of Biological Chemistry
+and Molecular Pharmacology, Harvard Medical School, Harvard University, Boston, MA, USA. 12Department of Molecular Genetics, University of Toronto,
+Toronto, Ontario, Canada. 13Department for Lung Diseases Jordanovac, Clinical Hospital Centre Zagreb, University of Zagreb, Zagreb, Croatia. 14Donnelly
+Centre, Department of Biochemistry, Temerty Faculty of Medicine, University of Toronto, Toronto, Ontario, Canada. 15Department of Oncology, University
+Hospital Center Split, School of Medicine, University of Split, Split, Croatia. 16AQI, Inc., Boston, MA, USA. 17Mediterranean Institute for Life Sciences
+(MedILS), School of Medicine, University of Split, Split, Croatia. 18Department of Chemical Engineering and Applied Chemistry, University of Toronto,
+Toronto, Ontario, Canada. 19Department of Materials Science and Engineering, University of Toronto, Toronto, Ontario, Canada. 20Vector Institute for
+Artificial Intelligence, Toronto, Ontario, Canada. 21Fellow, Canadian Institute for Advanced Research (CIFAR), Toronto, Ontario, Canada.
+   e-mail: christoph.gorgulla@stjude.org; akshat98@stanford.edu; igor.stagljar@utoronto.ca; aspuru@utoronto.ca; alex@insilicomedicine.com
+
+
+Nature Biotechnology | Volume 43 | December 2025 | 1954–1959                                                                                        1954
+Brief Communication                                                                                                                     https://doi.org/10.1038/s41587-024-02526-3
+
+
+                     a   Training data generation
+
+                           Data                                                                                  ity
+                                                               Hit expansion                             l divers                        Virtual screening with
+                                                                                                 ructura
+                           mining                                                        sing st
+                                                                                   Increa
+
+
+
+
+                                                                                                                                                 100 M
+                                                                                                                                                molecules
+                                                                                                                                                screened
+
+
+
+                                                                                                                              KRAS structure             Ligand library
+
+                                           Mutation sites       Similarity > 0.6             Similarity > 0.4
+
+                                Experimental ligands                                     STONED SELFIES                                   Virtual screening hits
+
+                                                      650 molecules                      850K molecules                    Top 250K molecules
+
+
+
+                                                                                              Training set
+                     b    Generation of new molecules
+
+
+
+                                                                                        Generative model
+
+
+                                           QCBM                                                  LSTM                                            Filter
+                                          generator                                            generator                                     discriminator
+
+
+
+
+                                Quantum computer (IBM)                             Classical computer/cloud                                   Remote API
+
+
+                     c   KRAS inhibitor design campaign
+
+
+
+                                    Compound selection                                      Synthesis of hits                           Experimental validation
+
+
+
+                     d    Identification of inhibitor candidates
+
+
+                      Classical samples
+                       1M compounds
+                                                                                                                                                        Selected 3 compounds
+                      Qunatum samples                                                                                                                   Selected 8 compounds
+                       1M compounds                                                                                                                     Selected 4 compounds
+                     Simulated samples
+                                                 Molecular docking Filtering based on   Sorting based      Structural     Synthetic
+                       1M compounds               via Chemistry42  pharmacophores        on PLI score       novelty      complexity
+
+
+                                                                    Classical                Quantum (HW)               Quantum (SIM)
+
+Fig. 1 | Schematic representation of the hybrid quantum–classical framework                             chemical structures, while the QCBM, trained on the output from the LSTM,
+for KRAS ligand development. a, The initial phase involved assembling a                                 generated complex, high-dimensional probability distributions. This workflow
+training dataset, starting with 650 experimentally verified KRAS inhibitors                             incorporated Chemistry42 as a reward function to encourage the production
+sourced from the literature. Using the STONED–SELFIES algorithm, analogs                                of structurally diverse and synthesizable molecules. c, Workflow for KRAS
+of these inhibitors were generated, expanding the dataset to approximately                              inhibitor design, detailing the process from computational compound selection
+850,000 compounds. This was further augmented by adding 250,000 top                                     to laboratory synthesis and experimental validation. d, A total of 1 million
+candidates from a virtual screening of the REAL ligand library against KRAS,                            compounds (classical samples from the LSTM, quantum samples from QCBM on
+creating a total dataset of over 1 million molecules. b, In the generation phase,                       quantum hardware and simulated quantum samples on classical hardware) were
+the dataset was used to train our generative model, consisting of both a classical                      evaluated by Chemistry42 to filter out unsuitable candidates and rank the rest by
+LSTM network and a QCBM. The LSTM network processed sequential data of                                  their PLI scores. Finally, 15 promising compounds were selected for synthesis.
+
+
+
+learning challenges such as barren plateaus. The integration of tensor                                  classical systems and quantum prior size. Additionally, Zeng et al.20
+networks furthers their effectiveness17,18. However, the challenges                                     presented a quantum–classical hybrid for image generation, high-
+in quantum data processing and circuit trainability have led to the                                     lighting the ability to encode conditions into quantum circuits with
+development of hybrid algorithms that harness the strengths of                                          extra qubits.
+both quantum and classical machine learning. Manuel et al.19 show-                                           Here, we propose a hybrid quantum–classical model that
+cased how a hybrid quantum circuit generative adversarial network                                       addresses qubit limitations and combines quantum and classical
+can enhance target space exploration, overcoming limitations of                                         approaches to generate compounds targeting the KRAS protein,
+
+
+Nature Biotechnology | Volume 43 | December 2025 | 1954–1959                                                                                                                        1955
+Brief Communication                                                                                  https://doi.org/10.1038/s41587-024-02526-3
+
+which is known for its intricate complexity and historical resistance        complex, high-dimensional probability distributions more efficiently
+to drug discovery efforts21,22. As illustrated in Fig. 1, our workflow was   than classical models27. Entanglement enables the creation of correla-
+structured into three pivotal stages. The first stage was the genera-        tions between qubits, capturing intricate dependencies within the prior
+tion of training data, beginning with creating a dataset comprising          distribution. This capability is particularly advantageous in generative
+approxi­mately 650 known KRAS inhibitors from the literature. To             models, as it allows for a more accurate representation of the underly-
+enhance this dataset, we used VirtualFlow 2.0 to screen 100 million          ing distributions in complex datasets, leading to the improved genera-
+molecules from the Enamine REAL library, selecting the top 250,000           tion of molecular structures. Additionally, these quantum properties
+with the best docking scores23. Additionally, we used the STONED             help to escape barren plateaus more effectively during optimization—a
+(superfast traversal, optimization, novelty, exploration and discovery)      common challenge in machine learning models17. Consequently, this
+algorithm on the SELFIES (self-referencing embedded strings) mole­           resulted in a more comprehensive exploration of the solution space,
+cular representation of known inhibitors, generating structurally            potentially uncovering molecular structures that our naive LSTM could
+similar compounds. After applying synthesizability filtering, this           not generate within the same time frame.
+process added 850,000 molecules to our training set24. Furthermore,                Furthermore, our KRAS inhibitor campaign validated com-
+we used Chemistry42 to validate the molecules generated in this              pounds derived from both the hybrid quantum–classical and vanilla
+workflow25. We merged data from various sources to compile a single          approaches using the Chemistry42 platform’s structure-based drug
+dataset containing 1.1 million data points, all used for training our gen-   design workflow. Within our study, 15 compounds were selected after
+erative model. The next stage was the generation of new molecules,           filtering generated compounds (Fig. 1) using Chemistry42 and synthe-
+which combined (1) the QCBM16 using a 16-qubit processor to generate         sized for experimental analysis. The two compounds demonstrating
+a prior distribution; (2) a long short-term memory (LSTM) network as         the greatest promise, ISM061-018-2 and ISM061-022, were character-
+the classical model; and (3) Chemistry42 for validation (Fig. 1). The        ized (structures in Fig. 2a,e, respectively). Their assessment involved
+quantum component, depicted in Extended Data Fig. 3c, was a QCBM             a two-stage process; the SPR determined their binding affinities and
+that generated samples from quantum hardware in every training               cell-based assays were subsequently used to gauge biological efficacy.
+epoch and was trained with a reward value, P(x) = softmax(R(x)) cal-         The compound ISM061-018-2, engineered through our hybrid quantum
+culated using Chemistry42 or a local filter. We note that, in practice,      model (Fig. 2b and Supplementary Table 6), demonstrated substantial
+the reward function can be tailored to a user’s specific criteria, includ-   binding affinity to KRAS-G12D, registered at 1.4 μM. To delve deeper
+ing accounting for off-target effects by evaluating multiple docking         into this molecule’s effectiveness across a spectrum of KRAS mutants,
+scenarios. This recurrent sampling, training and validation process          we commenced an extensive series of tests using a cell-based assay.
+formed a cycle that continuously improved the generated molecular            Specifically, we evaluated the molecule’s performance in a biological
+structures targeting the KRAS protein. The final step was experi-            context using a commercial cell viability assay (CellTiter-Glo, Promega)
+mental validation. From our trained models, we sampled 1 million             in conjunction with MaMTH-DS (mammalian membrane two-hybrid
+compounds using three different models (selection workflow in                drug screening), an advanced split-ubiquitin-based platform for the
+Fig. 1). We used Chemistry42 to screen these samples for pharmaco-           real-time detection of small molecules targeting specific cellular
+logical viability and ranked them on the basis of their docking scores       interactions28–35.
+(protein–ligand interaction (PLI) score). The top 15 candidates were               The biological activity of ISM061-018-2 was rigorously tested.
+synthesized and tested using surface plasmon resonance (SPR) and             Importantly, it demonstrated no detrimental impact on the viability of
+cell-based assays. This study highlights the promising intersection          HEK293 cells, even when expressing KRAS wild type (WT) or KRAS-G12V
+of quantum computing and drug discovery, marking a quantum                   bait in MaMTH-DS format and being subjected to concentrations
+computer’s first experimental hit.                                           as high as 30 μM for 18–20 h, showing that the compound did not
+     Before initiating our campaign to design additional KRAS inhibi-        possess any general, nonspecific toxicity (Fig. 2d). Subsequent testing
+tors, we aimed to compare our hybrid quantum–classical approach to           using MaMTH-DS across a spectrum of cell lines expressing various
+established classical algorithms. We benchmarked our model, targeting        KRAS baits (WT and five clinically important oncogenic mutants)
+three different proteins, against the state of the art using the Tartarus    in combination with Raf1 ‘prey‘ (a recognized KRAS effector) revealed
+benchmarking suite for drug discovery26. The results indicate that,          a dose-responsive inhibition of interactions, with half-maximal
+while few classical models achieved high success rates and docking           inhibitory concentration (IC50) values in the micromolar range
+scores, QCBM–LSTM excelled by generating numerous high-quality               (Fig. 2c and Supplementary Table 3). The compound’s activity was
+samples. It achieved a high success rate and a docking score comparable      not specific to mutants, as it targeted both WT and mutant inter-
+to the best, as demonstrated in Supplementary Table 1. As illustrated        actions with similar efficacy. It also showed comparable effective-
+in Extended Data Fig. 1a and Supplementary Table 2, we evaluated the         ness in disrupting the interactions of WT NRAS and HRAS baits with
+impact of incorporating a quantum prior (QCBM/multibase (M)QCBM–             Raf1 prey (Fig. 2c). However, it had no effect on the interaction of a
+LSTM) versus a fully classical model (vanilla LSTM). We observed that        completely unrelated artificial bait–prey control pair (consisting
+a quantum prior enhanced the success rate, as measured by the pro-           of membrane-anchored ALFA tag bait and nanobody ALFA prey)36,
+portion of molecules meeting the criteria set by the same filters. Our       supporting the biological specificity of the interaction (Fig. 2c).
+observations revealed that the use of QCBM–LSTM (Supplementary               Collectively, these results support a potential pan-Ras activity of
+Table 1) offered a 21.5% improvement in passing filters that assessed        ISM061-018-2.
+the synthesizability and stability of the generated molecules, indicat-            ISM061-022, as illustrated in Fig. 2e, also stood out as a compound
+ing a higher quality of generated structures. Additionally, we analyzed      of promise, particularly because of its selectivity toward certain KRAS
+how the size of the prior (number of qubits) affected sample quality.        mutants. Within our in vitro examination, ISM061-022 demonstrated
+We found that more qubits improved the success rates for molecule            a concentration-dependent inhibition of KRAS interactions with IC50
+generation, suggesting that larger quantum models could enhance              values in the micromolar range (Fig. 2f and Supplementary Table 4),
+molecular design. Our findings suggest that the success rate correlates      while manifesting only a mild, general impact on cell viability at higher
+approximately linearly with the number of qubits, as illustrated in          concentrations over an 18–20-h exposure (Fig. 2g). The observed inhibi-
+Extended Data Fig. 1c.                                                       tion mirrored that of ISM061-018-2 yet displayed enhanced selectivity
+     We believe that the improvement in our hybrid classical–quantum         toward certain KRAS mutants, particularly KRAS-G12R and KRAS-Q61H,
+approach stemmed from the quantum effects, such as superposi-                which were most receptive to the compound’s action (Fig. 2f). Diverging
+tion and entanglement, which allow QCBMs to explore and represent            from ISM061-018-2, ISM061-022 did not show binding to KRAS-G12D
+
+
+Nature Biotechnology | Volume 43 | December 2025 | 1954–1959                                                                                    1956
+     Brief Communication                                                                                                                                                                                          https://doi.org/10.1038/s41587-024-02526-3
+
+
+                                ISM061-018-2
+
+
+     a                                                        b                                              SPR: ISM061-018-2                       c                      KRAS WT                                KRAS G12D                               KRAS G12C
+                                                                                                                                                                 150                                        150                                      150
+
+                                                                                       4
+
+
+
+
+                                                                                                                                                    % Activity
+
+
+
+
+                                                                                                                                                                                               % Activity
+
+
+
+
+                                                                                                                                                                                                                                        % Activity
+                                                                                                                                                                 100                                        100                                      100
+                                                                                        3
+
+                                                                                        2                                                                         50                                        50                                       50
+
+
+
+                                                              RU
+                                                                                           1
+                                                                                                                                                                  0                                          0                                        0
+                                                                                      0                                                                                –2          0       2                       –2          0    2                      –2          0       2
+                                                                                                                                                                            log [uM]                                    log [uM]                                log [uM]
+                                                                                  –1
+                                                                                                      –50    0   50   100    150   200 250 300
+                                                                                                                                                                       KRAS G12V                                   KRAS G12R                               KRAS Q61H
+                                                                                                                      Times(s)
+                                                                                                                                                                 150                                        150                                      150
+
+
+
+     d
+
+
+
+
+                                                                                                                                                    % Activity
+
+
+
+
+                                                                                                                                                                                               % Activity
+
+
+
+
+                                                                                                                                                                                                                                        % Activity
+                                                                                                                                                                 100                                        100                                      100
+
+                                           KRAS WT                                                                    KRAS G12V
+                                                                      Cell viability (% of control)
+Cell viability (% of control)
+
+
+
+
+                                150                                                                   150                                                         50                                        50                                       50
+
+
+                                                                                                                                                                  0                                          0                                        0
+                                100                                                                   100
+                                                                                                                                                                       –2          0       2                       –2          0    2                      –2          0       2
+                                                                                                                                                                            log [uM]                                    log [uM]                                log [uM]
+                                50                                                                     50
+
+                                                                                                                                                                            HRAS WT                                     NRAS WT                            Artificial bait
+                                 0                                                                      0                                                        150                                                                                 150
+                                      –1   0          1       2                                             –1        0            1        2                                                               150
+
+                                               log [uM]                                                                    log [uM]
+                                                                                                                                                    % Activity
+
+
+
+
+                                                                                                                                                                                               % Activity
+
+
+
+
+                                                                                                                                                                                                                                        % Activity
+                                                                                                                                                                 100                                        100                                      100
+
+
+                                                                                                                                                                  50                                        50                                       50
+
+
+                                                                                                                                                                  0                                          0                                        0
+                                                                                                                                                                       –2          0       2                       –2          0    2                      –2          0       2
+                                                                                                                                                                            log [uM]                                    log [uM]                                log [uM]
+
+
+                                ISM061-022
+
+
+     e                                                                                                                                               f                      KRAS WT                                 KRAS G12D                               KRAS G12C
+                                                                                                                                                                                                            150
+                                                                                                                                                                 150                                                                                 150
+                                                                                                                                                    % Activity
+
+
+
+
+                                                                                                                                                                                               % Activity
+
+
+
+
+                                                                                                                                                                                                                                        % Activity
+                                                                                                                                                                                                            100
+                                                                                                                                                                 100                                                                                 100
+
+                                                                                                                                                                                                            50
+                                                                                                                                                                  50                                                                                 50
+
+
+                                                                                                                                                                  0                                          0                                        0
+                                                                                                                                                                       –2           0       2                      –2           0   2                      –2          0       2
+                                                                                                                                                                             log [uM]                                    log [uM]                               log [uM]
+
+                                                                                                                                                                        KRAS G12V                                   KRAS G12R                               KRAS Q61H
+                                                                                                                                                                 150                                        150                                      150
+                                                                                                                                                    % Activity
+
+
+
+
+                                                                                                                                                                                               % Activity
+
+
+
+
+                                                                                                                                                                                                                                        % Activity
+
+
+
+
+                                                                                                                                                                 100                                        100                                      100
+
+     g                                     KRAS WT                                                                    KRAS G12V
+                                                                                                                                                                  50                                        50                                       50
+Cell viability (% of control)
+
+
+
+
+                                                                      Cell viability (% of control)
+
+
+
+
+                                150                                                                   150
+
+                                                                                                                                                                  0                                          0                                        0
+                                100                                                                   100                                                              –2           0       2                      –2           0   2                      –2          0       2
+                                                                                                                                                                             log [uM]                                    log [uM]                               log [uM]
+                                50                                                                     50
+                                                                                                                                                                            HRAS WT                                     NRAS WT                            Artificial bait
+                                                                                                                                                                 200                                                                                 200
+                                 0                                                                      0                                                                                                   150
+                                      –1   0              1       2                                         –1         0               1        2
+                                                                                                                                                                 150                                                                                 150
+                                                                                                                                                    % Activity
+
+
+
+
+                                                                                                                                                                                               % Activity
+
+
+
+
+                                                                                                                                                                                                                                        % Activity
+
+
+
+
+                                               log [uM]                                                                    log [uM]                                                                         100
+                                                                                                                                                                 100                                                                                 100
+
+                                                                                                                                                                                                            50
+                                                                                                                                                                  50                                                                                  50
+
+                                                                                                                                                                  0                                          0                                        0
+                                                                                                                                                                       –2           0       2                      –2           0   2                      –2          0       2
+                                                                                                                                                                             log [uM]                                    log [uM]                               log [uM]
+
+     Fig. 2 | Pharmacological characterization of compounds ISM061-018-2 and                                                                                                 s.d. Each graph is representative of n = 3 biological replicates, performed
+     ISM061-022 through SPR and cellular activity assays. a,e, Chemical structures                                                                                           under the same conditions. Analyses were carried out using GraphPad Prism.
+     of ISM061-018-2 (a) and ISM061-022 (e). b, SPR sensorgrams illustrating binding                                                                                         d,g, Results from CellTiter-Glo viability assays measuring the impact of ISM061-
+     effects of ISM061-018-2 on KRAS protein. c,f, MaMTH-DS dose–response curves                                                                                             018-2 (d) and ISM061-022 (g) on cellular proliferation over a concentration
+     illustrate the binding kinetics and effects of ISM061-018-2 (c) and ISM061-022                                                                                          range from 123 nM to 30 μM, demonstrating that they do not display general,
+     (f) on various KRAS proteins, as well as NRAS, HRAS and artificial bait, with                                                                                           nonspecific toxicity. Data points are presented as averages from n = 3 technical
+     activities measured across concentrations from 4 nM to 30 μM. Data points are                                                                                           replicates with error bars showing the s.d. Each graph is representative of n = 3
+     presented as averages from n = 4 technical replicates with error bars showing the                                                                                       biological replicates performed under the same conditions.
+
+
+
+
+     Nature Biotechnology | Volume 43 | December 2025 | 1954–1959                                                                                                                                                                                                            1957
+Brief Communication                                                                                   https://doi.org/10.1038/s41587-024-02526-3
+
+according to SPR. The compound also demonstrated activity against          This synergistic approach could potentially lead to the discovery of
+WT HRAS and NRAS, although it was less potent against HRAS. Notably,       therapeutics that might be overlooked by other methods, while also
+the compound had an unusual effect on our artificial control inter-        reducing the preclinical drug discovery phase from several years to
+action pair, leading to a distinct dip to approximately 50% residual       just a few months.
+activity at concentrations of ~250–500 nM, before climbing again and
+ultimately leading to mild enhancement of the interaction at higher        Online content
+micromolar concentrations (Fig. 2f). This distinct pattern suggests        Any methods, additional references, Nature Portfolio reporting sum-
+an alternative mode of action for ISM061-022, revealing at least some      maries, source data, extended data, supplementary information,
+degree of nonspecific activity, although partial specificity for mutant    acknowledgements, peer review information; details of author contri-
+KRAS protein does still appear to be in evidence. Further investiga-       butions and competing interests; and statements of data and code avail-
+tion into the mechanism of action of this molecule will be the focus       ability are available at https://doi.org/10.1038/s41587-024-02526-3.
+of future study.
+      Overall, these live-cell experimental observations underscore the    References
+robustness of our approach, effectively identifying small-molecule         1.    Petrova, E. Innovation in the pharmaceutical industry: the process
+candidates with biological activity. While these molecules are certainly         of drug discovery and development. In Innovation and Marketing
+at an early stage and in need of further refinement, our results under-          in the Pharmaceutical Industry: Emerging Practices, Research, and
+line the potential of our methodology to address and surmount the                Policies (eds Ding, M. et al.) 19–82 (Springer, 2014).
+complexities inherent in targeting clinically challenging biomolecules.    2.    DiMasi, J. A., Grabowski, H. G. & Hansen, R. W. Innovation in the
+To further characterize ISM061-018-2’s interaction with KRAS-G12D,               pharmaceutical industry: new estimates of R&D costs. J. Health
+we used protein-detected nuclear magnetic resonance (NMR) spec-                  Econ. 47, 20–33 (2016).
+troscopy. 15N-labeled KRAS-G12D (residues 1–169) protein was used to       3.    Sun, D., Gao, W., Hu, H. & Zhou, S. Why 90% of clinical drug
+record 1H–15N transverse relaxation optimized spectroscopy (TROSY)               development fails and how to improve it? Acta Pharm. Sin. B 12,
+heteronuclear single quantum coherence (HSQC) spectra in the pres-               3049–3062 (2022).
+ence and absence of ISM061-018-2 under guanosine diphosphate               4.    Zhavoronkov, A. et al. Deep learning enables rapid identification
+(GDP)-loaded conditions (Extended Data Fig. 2a). Substantial chemical            of potent ddr1 kinase inhibitors. Nat. Biotechnol. 37, 1038–1040
+shift perturbations (CSPs) were observed, indicating fast exchange               (2019).
+between free and bound states, with some residues showing intensity        5.    Stokes, J. et al. A deep learning approach to antibiotic discovery.
+loss because of exchange broadening. Mapping the weighted CSP                    Cell 180, 688–702 (2020).
+values onto the Protein Data Bank (PDB) structure of GDP-bound             6.    Ren, F. et al. AlphaFold accelerates artificial intelligence powered
+KRAS-G12D (Extended Data Fig. 2b) revealed notable perturbations                 drug discovery: efficient discovery of a novel CDK20 small
+in the P-loop, α2 helix, switch II region and nearby β4 sheet residues,          molecule inhibitor. Chem. Sci. 14, 1443–1452 (2023).
+suggesting a binding mode within the switch II pocket. Additional CSPs     7.    Nigam, A. K., Pollice, R., Friederich, P. & Aspuru-Guzik, A. Artificial
+in the α1 helix, switch I and α4 regions suggest conformational changes          design of organic emitters via a genetic algorithm enhanced by
+upon ligand binding. Although direct interaction with D12 (ref. 21), a           a deep neural network. Chem. Sci. 15, 2618–2639 (2024).
+residue critical for selectivity in inhibitors such as MRTX1133, was not   8.    Sánchez-Lengeling, B. & Aspuru Guzik, A. Inverse molecular
+confirmed, CSPs in the P-loop residues (G10 and A11) imply possible spe-         design using machine learning: generative models for matter
+cific interactions. These NMR results strongly support ISM061-018-2’s            engineering. Science 361, 360–365 (2018).
+binding to the switch II pocket of KRAS-G12D, further corroborat-          9.    Pollice, R. et al. Data-driven strategies for accelerated materials
+ing its proposed mechanism of action. However, cocrystallization                 design. Acc. Chem. Res. 54, 849–860 (2021).
+studies are necessary to fully elucidate the binding residues. In sum-     10.   Nigam, A. K. et al. Assigning confidence to molecular property
+mary, current quantum hardware is proving crucial for practical drug             prediction. Exp. Opin. Drug Discov. 16, 935–949 (2021).
+discovery applications, preempting the need for fully fault-tolerant       11.   Bohacek, R. S., McMartin, C. & Guida, W. C. The art and practice of
+quantum systems in the future. Quantum algorithms have the potential             structure-based drug design: a molecular modeling perspective.
+to design small molecules that better align with the distribution of the         Med. Res. Rev. 16, 3–50 (1996).
+provided training set, achieving outcomes that are challenging for         12.   Santagati, R. et al. Drug design on quantum computers. Nat. Phys.
+classical methods because of their ability to more effectively explore           20, 549–557 (2024).
+and represent complex, high-dimensional probability distributions.         13.   Li, J., Topaloglu, R. O. & Ghosh, S. Quantum generative models
+Using just 16 qubits, our algorithm demonstrates how quantum com-                for small molecule drug discovery. IEEE Trans. Quantum Eng. 2,
+puting can enhance classical computation, leading to more efficient              1–8 (2021).
+algorithms. Our hybrid quantum–classical model surpasses classical         14.   Batra, K. et al. Quantum machine learning algorithms for drug
+models in performance and matches up well against the state of the               discovery applications. J. Chem. Inf. Model. 61, 2641–2647
+art according to the Tartarus benchmark. We applied this model to                (2021).
+design inhibitors targeting the complex KRAS protein, synthesizing         15.   Benedetti, M., Lloyd, E., Sack, S. & Fiorentini, M. Parameterized
+and evaluating 15 promising ligands. Among these, ISM061-018-2 and               quantum circuits as machine learning models. Quantum Sci.
+ISM061-022 stood out, showing inhibitory effects on KRAS variants                Technol. 4, 043001 (2019).
+with ISM061-018-2 displaying a high binding affinity of 1.4 μM and         16.   Hibat-Allah, M., Mauri, M., Carrasquilla, J. & Perdomo-Ortiz, A.
+broad activity across KRAS mutants. These results, derived from our              A framework for demonstrating practical quantum advantage:
+hybrid approach, indicate superior efficacy to fully classical models            racing quantum against classical generative models. Commun.
+and introduce potential chemotypes that expand the chemical space                Phys. 7, 68 (2024).
+explored in KRAS inhibitor design. While these findings are encour-        17.   McClean, J. R., Boixo, S., Smelyanskiy, V., Babbush, R. & Neven, H.
+aging, they stop short of definitively proving a ‘quantum advantage’,            Barren plateaus in quantum neural network training landscapes.
+achieving results unattainable by classical methods within a reasonable          Nat. Commun. 9, 4812 (2018).
+time frame. Future work will focus on exploring transformer-based          18.   Gili, K., Hibat-Allah, M., Mauri, M., Ballance, C. J. & Perdomo-Ortiz, A.
+generative models, coupled with increasing the number of qubits,                 Do quantum circuit born machines generalize? Quantum Sci.
+to further enhance the quality and diversity of generated molecules.             Technol. 8, 015021 (2023).
+
+
+Nature Biotechnology | Volume 43 | December 2025 | 1954–1959                                                                                        1958
+Brief Communication                                                                                   https://doi.org/10.1038/s41587-024-02526-3
+
+19. Rudolph, M. S. et al. Generation of high-resolution handwritten          32. Scheper, W., Thaminy, S., Kais, S., Stagljar, I. & Römisch, K.
+    digits with an ion-trap quantum computer. Phys. Rev. X 12, 031010            Coordination of N-glycosylation and protein translocation across
+    (2022).                                                                      the endoplasmic reticulum membrane by Sss1 protein.
+20. Zeng, Q., Ge, H.-Y., Chen, G. & Zhou, N. Conditional quantum                 J. Biol. Chem. 278, 37998–38003 (2003).
+    circuit born machine based on a hybrid quantum-classical                 33. Benleulmi-Chaachoua, A. et al. Protein interactome mining
+    framework. Physica A Stat. Mech. Appl. 608, 128693 (2023).                   defines melatonin MT1 receptors as integral component of
+21. Wang, X. et al. Identification of MRTX1133, a noncovalent, potent,           presynaptic protein complexes of neurons. J. Pineal Res. 60,
+    and selective KRasG12D inhibitor. J. Med. Chem. 65, 3123–3133 (2022).        95–108 (2016).
+22. Mao, Z. et al. KRas(G12D) can be targeted by potent inhibitors via       34. Lopes, J. P. et al. The role of Parkinson’s disease-associated
+    formation of salt bridge. Cell Discov. 8, 5 (2022).                          receptor GPR37 in the hippocampus: functional interplay
+23. Gorgulla, C. et al. Virtualflow 2.0—the next generation drug                 with the adenosinergic system. J. Neurochem. 134, 135–146
+    discovery platform enabling adaptive screens of 69 billion                   (2015).
+    molecules. Preprint at bioRxiv https://doi.org/10.1101/                  35. Grozavu, I. et al. D154Q mutation does not alter KRas dimerization.
+    2023.04.25.537981 (2023).                                                    J. Mol. Biol. 434, 167543 (2022).
+24. Nigam, A. K., Pollice, R., Krenn, M., Gomes, G. & Guzik, A. A.           36. Götzke, H. et al. The ALFA-tag is a highly versatile tool for
+    Beyond generative models: superfast traversal, optimization,                 nanobody-based bioscience applications. Nat. Commun. 10,
+    novelty, exploration and discovery (STONED) algorithm for                    4403 (2019).
+    molecules using SELFIES. Chem. Sci. 12, 7079–7090 (2021).
+25. Ivanenkov, Y. A. et al. Chemistry42: an AI-driven platform for           Publisher’s note Springer Nature remains neutral with regard to
+    molecular design and optimization. J. Chem. Inf. Model. 63,              jurisdictional claims in published maps and institutional affiliations.
+    695–701 (2023).
+26. Nigam, A. et al. Tartarus: A benchmarking platform for realistic         Open Access This article is licensed under a Creative Commons
+    and practical inverse molecular design. In Advances in Neural            Attribution-NonCommercial-NoDerivatives 4.0 International License,
+    Information Processing Systems 36, 3263–3306 (2023).                     which permits any non-commercial use, sharing, distribution and
+27. Schuld, M., Sinayskiy, I. & Petruccione, F. An introduction to           reproduction in any medium or format, as long as you give appropriate
+    quantum machine learning. Quantum Mach. Intell. 3, 28 (2021).            credit to the original author(s) and the source, provide a link to the
+28. Saraon, P. et al. A drug discovery platform to identify compounds        Creative Commons licence, and indicate if you modified the licensed
+    that inhibit EGFR triple mutants. Nat. Chem. Biol. 16, 577–586 (2020).   material. You do not have permission under this licence to share
+29. Stagljar, I., Korostensky, C., Johnsson, N. & te Heesen, S. A genetic    adapted material derived from this article or parts of it. The images
+    system based on split-ubiquitin for the analysis of interactions         or other third party material in this article are included in the article’s
+    between membrane proteins in vivo. Proc. Natl Acad. Sci. USA 95,         Creative Commons licence, unless indicated otherwise in a credit
+    5187–5192 (1998).                                                        line to the material. If material is not included in the article’s Creative
+30. Petschnigg, J. et al. The mammalian-membrane two-hybrid assay            Commons licence and your intended use is not permitted by statutory
+    (MAMTH) for probing membrane–protein interactions in human               regulation or exceeds the permitted use, you will need to obtain
+    cells. Nat. Methods 11, 585–592 (2014).                                  permission directly from the copyright holder. To view a copy of this
+31. Saraon, P. et al. Chemical genetics screen identifies COPB2              licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+    tool compounds that alters ER stress response and induces RTK
+    dysregulation in lung cancer cells. J. Mol. Biol. 433, 167294 (2021).    © The Author(s) 2025
+
+
+
+
+Nature Biotechnology | Volume 43 | December 2025 | 1954–1959                                                                                       1959
+Brief Communication                                                                                  https://doi.org/10.1038/s41587-024-02526-3
+
+Methods                                                                      at capturing the distribution of the provided molecule set would exhibit
+Benchmark setup                                                              a correspondingly high success rate in generating novel molecules
+Our benchmark used both classical and quantum hardware. Our classi-          without structural violations. Our observations indicated that only a
+cal computational setup was based on a cluster equipped with graphics        few generative models demonstrated a high success rate. However, the
+processing unit (GPU) nodes. This cluster consisted of two GPU nodes,        QCBM–LSTM model was very strong in producing a substantial num-
+each with specific features. These features included two AMD EPYC            ber of high-quality samples that successfully meet the filter criteria,
+7V13 64-core processors, resulting in a total of 128 central processing      as evidenced by the elevated success rate depicted in Supplementary
+unit cores per node. In addition, each node was equipped with 512 GB         Table 1. Consequently, we believe that the incorporation of a quantum
+of random-access memory (RAM). The nodes also contain eight AMD              prior leads to improved distribution matching. We further benchmark
+Instinct MI100 GPUs, each with a GPU RAM of 32 GB. For the classical         the influence of a classical–quantum prior in the subsequent sec-
+training, we used four of these GPUs in parallel (that is, one GPU node).    tion. Moreover, our analysis revealed that, for the PDB 4LDE target,
+Furthermore, we used an Nvidia GPU (RTX3090Ti) to facilitate our             our model generated the highest-scoring molecules relative to other
+classical–quantum simulations. For the quantum hardware setup, we            generative models. While the docking scores for the remaining two
+used the Guadalupe quantum system, equipped with 16 qubits and a             targets were not as high as those produced by classical algorithms, we
+Falcon r4P processor type. Our QCBM model, accompanied by an error           speculate that incorporating a docking-score-based reward, in conjunc-
+correction circuit, was executed on this quantum processor.                  tion with the filter success rate, could potentially improve our results.
+     Regarding software, we used several packages provided by Zapata
+AI under the Qml core agreements. We implemented our variational             Benchmarking of prior distributions. To evaluate the impact of prior
+quantum circuit and classical LSTM model using the Qml Core Python           selection on the quality of the molecules generated by our model, we
+package. We used the STONED–SELFIES and VirtualFlow 2.0 packages             trained four distinct model variants, each incorporating different
+to prepare a diverse dataset. Additionally, we used RDkit and Insilico       priors (Extended Data Fig. 1b). Specifically, we examined a QCBM
+APIs to compute the reward value and conduct some postprocessing             prior and implemented it on both a quantum simulator and a hard-
+analyses. The QCBM model underwent a training regimen spanning               ware backend, in contrast with an MQCBM operating exclusively on
+30 epochs. In contrast, the LSTM model was trained over a total of           a quantum simulator and a classical LSTM model devoid of quantum
+40 epochs.                                                                   priors. These models were tasked with designing KRAS inhibitors,
+     We used the Optuna platform to optimize the hyperparameters             using a meticulously curated dataset of over 1 million molecules (Fig. 1).
+in the benchmarking. We ran Optuna tuning for 100 trials for each            Extended Data Figure 1b showcases the optimal results obtained follow-
+model to determine the optimal number of QCBM layers, number of              ing a comprehensive optimization of the corresponding architectures
+LSTM layers and embedding dimensions. Additionally, we tuned the             using Optuna52. We assessed the quality of the generated molecules
+sampling temperature, which defines the balance between determin-            using two distinct sets of criteria: one derived from Tartarus26, termed
+ism and stochasticity in the model, particularly between the prior input     the ‘local filter’, and a more stringent set provided by Chemistry42,
+and the LSTM output.                                                         termed the ‘Chemistry42 filter’. In both assessments, we observed that
+                                                                             incorporating a quantum prior enhanced the success rate, as gauged
+Computational benchmarks: classical versus quantum models                    by the proportion of molecules satisfying the criteria set by the two
+Tartarus benchmark. We used the Tartarus platform26 to benchmark             filters. Furthermore, using the top model from each prior category, we
+our proposed QCBM–LSTM methodology against an array of classical             sampled 5,000 molecules that successfully met the filter criteria and
+state-of-the-art models, including REINVENT37, SMILES–VAE38, SELFIES–        examined their respective docking scores (Supplementary Table 2).
+VAE39, MoFlow40, SMILES–LSTM–HC41,42, SELFIES–LSTM–HC, GB–GA43               Intriguingly, these molecules displayed comparably high docking
+and JANUS44. The study focused on three protein targets selected from        scores as determined by QuickVina 2 and the PLI score, as evaluated by
+the Tartarus dataset: (1) PDB 1SYH, an ionotropic glutamate receptor         Chemistry42. Additionally, the synthesized molecules demonstrated
+associated with neurological and psychiatric disorders such as               consistent metrics across various parameters, including the diversity
+Alzheimer disease, Parkinson disease and epilepsy45; (2) PDB 6Y2F, the       fraction, uniqueness fraction, Chemistry42 reward and Chemistry42
+main protease of severe acute respiratory syndrome coronavirus 2,            synthetic accessibility score25.
+crucial for its RNA translation46; and (3) PDB 4LDE, the β2-adrenoceptor           Encouraged by our observation that quantum priors enhance
+G-protein-coupled receptor, a cell-membrane-spanning receptor that           molecule quality, we further investigated the influence of the number
+binds to adrenaline, a hormone implicated in muscle relaxation and           of qubits used in modeling priors on the quality of generated molecules
+bronchodilation47. For each target, we had a dual objective: to generate     (Extended Data Fig. 1d). Specifically, we analyzed the percentage of
+novel molecules that exhibit strong binding affinity to the specified        5,000 uniquely generated random molecules that satisfied a series of
+proteins, as determined by active sites assigned by Tartarus, and to         local filters. Interestingly, our findings revealed that the success rate
+minimize the docking score using QuickVina 2 (ref. 48). Additionally,        correlated roughly linearly with the number of qubits used in modeling
+these molecules were required to pass a comprehensive set of filters         the prior, indicating a direct relationship between the complexity of
+designed to eliminate reactive, unsynthesizable or unstable groups,          the quantum model and the effectiveness in generating high-quality
+thereby streamlining the drug discovery process. The top-performing          molecules. This trend underscores the potential of increasing qubit
+molecules, after filtering, were subjected to a refined rescoring using      numbers in quantum models to improve molecular design outcomes
+a more precise scoring function provided by SMINA49, at an increased         systematically.
+level of exhaustiveness.
+     We conducted experiments using the QCBM with 16 qubits as               SPR conditions
+a quantum prior and the LSTM as a classical model. The local filter          A Biacore 8K system was used for all experiments. For preliminary
+from the Tartarus paper served as the reward function to train the           compound screening, N-terminal biotinylated KRAS-G12D protein
+QCBM. As recommended by Tartarus, our models were trained on a               (synthesized by VIVA Biotech; purity ≥ 95%) was captured on a sen-
+subset of 150,000 molecules from the Developmental Therapeutics              sor chip SA (GE Healthcare) at a density of about 2,000 RU. Protein
+Program open compound collection50,51, referred to as DATASET in             immobilization was conducted using 1× HBS-EP+, 2 mM TCEP and 2%
+Supplementary Table 1. Notably, all 150,000 structures underwent a           DMSO as a running buffer. Protein was injected for 70 s at a flow rate
+rigorous screening process using structural filters to eliminate reactive,   of 5 μl min−1. The protein concentration was 5 μg ml−1. We performed
+unsynthesizable or unstable groups. As such, generative models adept         an initial screening of compounds prepared samples by serial twofold
+
+
+Nature Biotechnology
+Brief Communication                                                                                   https://doi.org/10.1038/s41587-024-02526-3
+
+dilutions from 200 μM to 0.39 μM in 1× HBS-EP+, 2 mM TCEP and 2%              sodium phosphate pH 8.0, 500 mM NaCl, 10 mM imidazole, 1 mM
+DMSO. Samples were injected for 60 s at a flow rate of 30 μl min−1 and        2-mercaptoethanol and 5% (v/v) glycerol) containing PMSF and benza-
+dissociation time of 180 s. A Biacore 8K machine was used to carry out        midine. Protein was purified over a His trap column (Cytiva) following
+the SPR experiments and subsequent data analysis.                             standard Ni-affinity protocols (wash with 10 mM and 20 mM imidazole
+                                                                              and then elute with 300 mM imidazole) and the His-tag was removed
+MaMTH-DS dose–response assays                                                 by TEV cleavage. KRAS-G12D was further purified by size-exclusion
+MaMTH-DS FLP HEK293 reporter cell lines28 stably expressing KRAS              chromatography using a Superdex 75 Increase column (10/300 GL)
+(WT or mutant), HRAS, NRAS or artificial membrane-anchored ALFA               with PBS buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4 and 2 mM
+tag bait alongside Raf1 (for Ras baits) or nanobody ALFA (for artificial      KH2PO4, pH 7.4) containing 10 mM EDTA. The samples were prepared
+bait) preys were seeded into 384-well white-walled, flat-bottomed,            by mixing 30 μM of protein with 200 μM ISM018-2 in the presence of
+tissue-culture-treated microplates (Greiner, 781098) at a concentra-          2% DMSO-d6, 5 mM GDP and 15 mM MgCl2 in the buffer. The purifica-
+tion of 100,000 cells per ml (50 μl total volume per well) in DMEM, 10%       tion protocols were adapted from previously published protocols for
+FBS and 1% penicillin–streptomycin. Seeding was performed using a             KRAS-G12C (ref. 53) and KRAS-G12D (ref. 54).
+MultiFlo-FX multimode liquid dispenser (BioTek). Plates were left at
+room temperature for 30–60 min following seeding before transfer              NMR experiments and analysis
+                                                                              1
+to a Heracell 150i incubator (Thermo Fisher Scientific) and growth at          H–15N TROSY HSQC experiments were recorded at 298 K on an
+37 °C in 5% CO2 for 3 h. After growth, 10 μl of DMEM, 10% FBS and 1%          800-MHz Bruker spectrometer equipped with an AVANCE III console
+penicillin–streptomycin supplemented with 3 μg ml−1 tetracycline              and a cryogenically cooled probe. The acquired spectra were processed
+(to induce bait and prey expression; BioShop, TET701) and 60 ng ml−1          using NMRPipe55 and were analyzed using ccpnmr 2.0 (ref. 56). The
+epidermal growth factor (to stimulate Ras signaling; Sigma, E9644) was        chemical shifts were transferred from Biological Magnetic Resonance
+added to each well using a multichannel pipette. As appropriate, a 6×         Bank 27719 (ref. 54). The CSPs on both 1H and 15N dimensions were used
+concentration of drug (or DMSO only) was also included in the medium,         to calculate the weighted CSP57 and these values were then plotted
+with all lower concentrations produced by serial dilution starting from       onto the PDB structure using PyMol to map the regions that took part
+the highest concentration solution. Plates were then grown overnight          in ligand binding or underwent conformational changes upon ligand
+(18–20 h) at 37 °C in 5% CO2. A luciferase assay was performed the next       binding.
+day using 10 μl of 20 μM native coelenterazine substrate (Nanolight,
+303) per well. Luminescence was measured using a Clariostar plate             Experimental validation methods
+reader (BMG Labtech) with a gain of 3,200–3,800 and a 1-s integration         Chemistry42 methods: after screening and selection of promising
+time. All data analysis was performed using Microsoft Excel and Graph-        candidate structures for synthesis. Our selection process relied on a
+Pad Prism. Curve fits were performed in Prism (nonlinear regression)          tiered system of the following criteria:
+using log(inhibitor) versus response curves, with a variable slope (four
+                                                                                  • Structural and compositional parameter filters, such as hydro-
+parameters) bottom-constrained to zero.
+                                                                                     gen bond donor count and aromatic atom fraction.
+                                                                                  • Property evaluation for molecular weight, lipophilicity and
+Cell viability assay
+                                                                                     other physicochemical traits.
+MaMTH-DS FLP HEK293 reporter cell lines28 stably expressing KRAS
+                                                                                  • Medicinal chemistry filters to exclude problematic structural
+(WT or G12V mutant) bait alongside Raf1 prey were seeded into 96-well
+                                                                                     motifs.
+white-walled, μCLEAR flat-bottomed, tissue-culture-treated plates
+                                                                                  • A synthetic accessibility assessment based on the ReRSA
+(Greiner, 655098) at 40,000 cells per well in DMEM, 10% FBS and 1%
+                                                                                     model58.
+penicillin–streptomycin (60 μl total volume per well). Seeding was
+                                                                                  • Three-dimensional pharmacophoric analysis in reference to an
+performed using a MultiFlo-FX multimode liquid dispenser (BioTek).
+                                                                                     X-ray cocrystal structure (PDB 7EW9) (Extended Data Fig. 4).
+Plates were left at room temperature for 30–60 min following seeding
+                                                                                  • PLI scoring to estimate binding efficiency.
+before transfer to a Heracell 150i incubator (Thermo Fisher Scientific)
+                                                                                  • An overall reward calculation integrating the above scores
+and growth at 37 °C in 5% CO2 for 3 h. After growth, 30 μl of a 3× con-
+centration of the drug (or DMSO only) in DMEM, 10% FBS and 1% peni-              For synthesis candidacy, we applied more demanding conditions,
+cillin–streptomycin was added to wells, with all lower concentrations         ensuring compounds met the following enhanced benchmarks:
+produced by serial dilution starting from the highest concentration               • Clearance of all Chemistry42 filters.
+solution (final drug concentration: 30 μM to 123 nM). Plates were then            • An aggregate reward value exceeding 0.7.
+grown overnight (18–20 h) at 37 °C in 5% CO2. The effect of the drug on           • A PLI score indicative of strong KRAS binding (<−8 kcal mol−1).
+cell viability was assessed by the CellTiter-Glo luminescent cell viability       • A pharmacophore match score above 0.7.
+assay from Promega (G7570). Briefly, 90 μl of the CellTiter-Glo reagent           • Favorable synthetic accessibility with a ReRSA score under 5.
+was added directly into each well following 30-min equilibration of the
+plate at room temperature. Contents of the wells were mixed on an             After screening, molecules were clustered and ranked within clusters
+orbital shaker for 2 min and plates were then incubated at room tem-          by chemical similarity, allowing for expert analysis to further prioritize
+perature for 10 min to stabilize the luminescence signal. Luminescence        on the basis of novelty and structural intricacy, culminating in a selec-
+was measured using a Clariostar plate reader (BMG Labtech) with a gain        tion of 100–150 molecules for potential synthesis and subsequent
+of 3,600 and a 1-s integration time. Values represent the mean ± s.d. of      examination.
+three replicates for each tested drug concentration. All data analysis
+was performed using Microsoft Excel and GraphPad Prism.                       Experimental evaluation methods of generated compounds. From
+                                                                              the pool of identified structures, we synthesized and characterized 15
+Protein purification and NMR: sample preparation                              compounds. Detailed methodologies of this process are elaborated in
+A construct encoding N-His–TEV (tobacco etch virus)–KRAS-G12D                 the Supplementary Information. The molecular structures of the two
+was transformed into BL21(DE3) cells. The cells were grown in minimal         most promising compounds (ISM061-018-2 and ISM061-022) are show-
+medium containing 1 g l−1 [15N]H4Cl and 4 g l−1 glucose to an optical         cased in Fig. 2a,e. Each synthesized compound underwent a rigorous
+density at 600 nm of ~0.7–1.0 and induced with 1 mM IPTG for 16 h             two-phase evaluation; their binding affinities were determined using
+at 16 °C. Cells were pelleted and resuspended in lysis buffer (20 mM          SPR and their biological efficacies were gauged through cell-based
+
+
+Nature Biotechnology
+Brief Communication                                                                                  https://doi.org/10.1038/s41587-024-02526-3
+
+assays. Notably, compound ISM061-018-2, engineered through our               Given the dataset’s limited size, we opted to expand it to improve the
+hybrid quantum model (Supplementary Table 3), demonstrated a                 robustness of our model during training.
+substantial binding affinity to KRAS-G12D, registered at 1.4 μM. To
+delve deeper into this molecule’s effectiveness across a spectrum            STONED–SELFIES. We used the STONED–SELFIES24 algorithm (https://
+of KRAS mutants, we commenced an extensive series of tests using             github.com/aspuru-guzik-group/stoned-selfies) to mine our initial
+a cell-based assay. Specifically, we evaluated the molecule’s perfor-        set of 650 molecules. For a given molecule in SMILES format, we first
+mance in a biological context using a commercial cell viability assay        randomized the string using RDKit. These randomized strings were
+(CellTiter-Glo, Promega) in conjunction with MaMTH-DS, an advanced           then converted into SELFIES. Each SELFIES string underwent mutations
+split-ubiquitin-based platform for the real-time detection of small          (in the form of character deletions, replacements and additions) up
+molecules targeting specific cellular interactions28–34.                     to 500 times. Subsequently, the synthesizability and stability of the
+     Furthermore, the biological activity of ISM061-018-2 was rigor-         mutated strings were assessed using Chemistry42. We generated 850,000
+ously tested. Importantly, it demonstrated no detrimental impact on          molecules, which served as the training set for our generative models.
+the viability of HEK293 cells, even when expressing either KRAS WT
+or KRAS-G12V bait in MaMTH-DS format and being subjected to con-             Virtual screening process. VirtualFlow 2.0 (ref. 23) was used to iden-
+centrations as high as 30 μM for 18–20 h, showing that the compound          tify additional molecules predicted to bind to KRAS-G12D. The adaptive
+did not possess any general, nonspecific toxicity (Fig. 2d). Subsequent      target-guided (ATG) method performed the virtual screening in two
+testing using MaMTH-DS across a spectrum of cell lines expressing vari-      stages. In the first stage, the ATG prescreen was performed, in which
+ous KRAS baits (WT and five clinically important oncogenic mutants)          a spare version of the 69 billion REAL space from Enamine (version
+in combination with Raf1 prey (a recognized KRAS effector) revealed a        2022q12) was screened. In the second stage, the most potent tranches
+dose-responsive inhibition of interactions, with IC50 values in the micro-   of ligands were screened in full, amounting to 100 million ligands. The
+molar range (Supplementary Table 3). The compound’s activity was not         docking program used was QuickVina 2 (ref. 48), with exhaustiveness
+specific to mutants, as it targeted both WT and mutant interactions with     set to 1 in both stages of the screen. The screen was carried out in the
+similar efficacy. It also showed comparable effectiveness in disrupting      Amazon Web Services cloud computing platform. The protein struc-
+the interactions of WT NRAS and HRAS baits with Raf1 prey (Fig. 2c).         ture used in the screen was PDB 5US4 (ref. 59), which was prepared
+However, it had no effect on the interaction of a completely unrelated       before the virtual screen with Schrödinger’s protein preparation wizard
+artificial bait–prey control pair (consisting of membrane-anchored           (addition of hydrogens and protonation state prediction). The size of
+ALFA tag bait and nanobody ALFA prey)36, supporting the biological           the docking box was 14 × 14 × 20 Å3.
+specificity of the interaction (Fig. 2c). Collectively, these results sup-
+port a potential pan-Ras activity of ISM061-018-2.                           Quantum-assisted algorithm
+     ISM061-022 (Fig. 2e) also stood out as a compound of promise,           As shown in Fig. 1, our quantum-assisted model was a hybrid algorithm
+particularly because of its selectivity toward certain KRAS mutants.         composed of both quantum and classical generative components. The
+Within our in vitro examination, ISM061-022 demonstrated a                   quantum generative model used a QCBM model while the classical
+concentration-dependent inhibition of KRAS interactions (Fig. 2f),           component used an LSTM model. Extended Data Fig. 3 illustrates the
+while manifesting only a mild, general impact on cell viability at higher    flowchart of our proposed generative model.
+concentrations over an 18–20-h exposure (Fig. 2g). The observed inhibi-           Within this model, we used Chemistry42 and a local filter to vali-
+tion mirrored that of ISM061-018-2 yet displayed enhanced selectivity        date sample generation at each step, which was then used to train
+toward certain KRAS mutants, particularly KRAS-G12R and KRAS-Q61H,           the QCBM model. The QCBM model, a quantum circuit model, was
+which were most receptive to the compound’s action (Fig. 2f and Sup-         executed on a quantum processing unit. Subsequently, samples from
+plementary Table 4). Diverging from ISM061-018-2, ISM061-022 did             the trained QCBM were fed into the LSTM model, which generated
+not show binding to KRAS-G12D. The compound also demonstrated                sequences on the basis of these samples. The reward value for each
+activity against WT HRAS and NRAS, although it was less potent against       sample was computed at every step using the local filter until epoch
+HRAS. Notably, the compound had an unusual effect on our artificial          20, after which we selected Chemistry42. This reward value was then
+control interaction pair, leading to a distinct dip to approximately 50%     used to train our quantum generative model. During the first epoch,
+residual activity at concentrations of 250–500 nM, before climbing           no rewards were available; hence, the algorithm sampled from the
+again and ultimately leading to mild enhancement of the interaction          untrained QCBM model, designated as Xi. From the second epoch
+at higher micromolar concentrations (Fig. 2f). This distinct pattern         onward, rewards were computed, allowing us to calculate the softmax
+suggests an alternative mode of action for ISM061-022, revealing at          of the rewards for each Xi, where i ∈ [1, N]. The corresponding pseu-
+least some degree of nonspecific activity, although partial specificity      docode can be found in Algorithm 1.
+for mutant KRAS protein does still appear to be in evidence. Further
+investigation into the mechanism of action of this molecule will be the      Quantum-computing-enhanced workflow
+focus of future study.                                                       Our methodology encompassed a comprehensive workflow, extend-
+     In essence, these live-cell experimental observations underscore        ing from data preparation to experimental validation, as delineated in
+the robustness of our approach, effectively identifying small-molecule       Fig. 1. This workflow was structured into three pivotal stages:
+candidates with biological activity. This underlines the potential of our          (1) Generation of training data. We initiated the process by con-
+methodology to address and surmount the complexities inherent in             structing a robust dataset for training our generative model to target
+targeting clinically challenging biomolecules.                               the KRAS protein. The foundation of this dataset was approximately
+     This section explains the methods and workflow incorporated in          650 experimentally confirmed KRAS inhibitors, compiled through an
+our proposed approach, offering a comprehensive understanding of             extensive literature review60–63. Acknowledging the necessity of a more
+the mechanisms used in our study. Figure 1 illustrates the workflow          expansive dataset to develop a model for ligand design effectively, we
+we used in our study.                                                        adopted a two-pronged approach: virtual screening and local chemical
+                                                                             space exploration. In the virtual screening phase, we used VirtualFlow
+Data acquisition and preprocessing                                           2.0 (ref. 23) to screen 100 million molecules, applying Enamine’s REAL
+Our preliminary dataset, sourced from Insilico Medicine, included            library64 in conjunction with molecular docking techniques. The top
+approximately 650 data points. These were selectively collated from          250,000 compounds from this screen, exhibiting the lowest docking
+existing literature, specifically targeting the KRAS-G12D mutant (Fig. 1).   scores, were subsequently integrated into our dataset. Complementing
+
+
+Nature Biotechnology
+Brief Communication                                                                                   https://doi.org/10.1038/s41587-024-02526-3
+
+this, the local chemical space exploration was conducted using the          initially configured with randomly assigned parameters |ψ(θ)⟩. These
+STONED–SELFIES algorithm24, which was applied to the 650 experimen-         parameters are subsequently calculated throughout the training pro-
+tally derived hits. This algorithm distinctively introduces random point    cess. The training of the QCBM model involves minimizing the exact
+substitutions into the SELFIES representations39,65,66 of the molecules,    negative log-likelihood (exact NLL) loss function.
+thereby generating novel compounds that maintain a structural resem-
+blance to the starting point. The resulting derivatives were filtered on    Classical model: LSTM model. LSTM networks (Fig. 1) were used for
+the basis of synthesizability, culminating in the addition of 850,000       the classical part of this architecture. LSTM is simple and has a good
+molecules to our training set.                                              record of learning the string pattern in natural language processing
+      (2) Generation of new molecules. Our approach was structured          for a long time. LSTM networks are specialized recurrent neural
+around the integration of three primary components: (1) the QCBM;           networks capable of learning long-term dependencies in sequence
+(2) the classical LSTM model; and (3) Chemistry42 for artificial-           data67. They are particularly useful in applications where the context
+intelligence-driven validation, as shown in Extended Data Fig. 3. The       from earlier parts of the sequence is needed to interpret later parts,
+QCBM generator16 used a 16-qubit IBM quantum processor with quan-           such as in natural language processing and time-series forecasting68.
+tum circuits to model complex data distributions. The integration           The LSTM architecture consists of a chain of repeating modules
+method of quantum priors into the LSTM architecture (Supplementary          called cells. Each cell contains three gates that control the flow of
+Fig. 4) involved merging molecular information encoded in SELFIES           information:
+and quantum data by addition or concatenation to form samples, X′ (t),            Forget gate: This gate decides what information from the cell
+                                                                               1.	
+which were then input into the LSTM cell. The quantum component                   state should be thrown away or kept. It takes the output of
+(Supplementary Fig. 4) was a QCBM that generated samples from                     the previous LSTM cell and the current input and passes them
+quantum hardware each training epoch and was trained with a reward                through a sigmoid function, outputting a number between 0
+value, P(x) = softmax(R(x)), calculated using Chemistry42 or a local              and 1 for each number in the cell state, where 0 means ‘com-
+filter. This cyclical sampling, training and validation process formed a          pletely forget this’ and 1 means ‘completely keep this’.
+loop aimed at continually improving the generated molecular struc-             2.	Input gate: This gate updates the cell state with new informa-
+tures for targeting KRAS.                                                         tion. It has two parts: a sigmoid layer called the input gate layer
+      (3) Experimental validation. The process of selecting experi-               and a hyperbolic tangent layer. The sigmoid layer decides what
+mental sample candidates is illustrated at the bottom of Fig. 1. After            values to update and the hyperbolic tangent layer creates a vec-
+training our model, we sampled 1 million compounds from each                      tor of new candidate values that could be added to the state.
+prior model listed at the bottom of Fig. 1. These samples underwent            3.	Output gate: This gate decides the next hidden state. The hid-
+evaluation by Chemistry42, filtering out unsuitable compounds for                 den state contains information on previous inputs. The hidden
+pharmacological purposes and ranking the remaining compounds by                   state is used to calculate the output of the LSTM and the next
+their docking score (PLI score). Subsequently, 15 novel compounds                 hidden state.
+were selected for synthesis and underwent SPR and cell-based assay
+experiments.                                                                     The following equations can describe the LSTM’s operations:
+
+                                                                                               Forget gate: ft = σ(Wf ⋅ [ht−1 , xt ] + bf )          (1)
+Algorithm 1. Algorithm 1 provides an overview of quantum-assisted
+drug discovery using an LSTM framework. This pseudocode details the
+iterative process, starting with the initialization of the LSTM and QCBM                        Input gate: it = σ(Wi ⋅ [ht−1 , xt ] + bi )         (2)
+models, followed by the generation and validation of new compounds.
+Valid compounds are subjected to a reward calculation and probability
+                                                                                          Candidate values: Ct̃ = tanh(WC ⋅ [ht−1 , xt ] + bC )     (3)
+assessment, which in turn inform the subsequent training of the QCBM
+(Algorithm 2). This cycle continues until convergence, illustrating the
+dynamic interplay between quantum predictions and LSTM-generated                               Update cell state: Ct = ft ⋅ Ct−1 + it ⋅ Ct̃         (4)
+compounds underpinned by the Chemistry42 evaluation.
+                                                                                              Output gate: ot = σ(Wo ⋅ [ht−1 , xt ] + bo )          (5)
+1: Initialize: LSTM, QCBM, filter (Chemistry42)
+2: Generate initial samples Xi from QCBM
+3: while not converged do                                                                      Update hidden state: ht = ot ⋅ tanh(Ct )             (6)
+4:  Train LSTM with Xi
+5:   LSTM generates a new compound from the current samples Xi              Here, σ is the sigmoid activation function, W and b are the weight
+6:  Validate the new compound with the filter                               matrices and bias vectors for each gate and xt is the input at time t69.
+7:  if new compound is valid then                                                Training an LSTM involves optimizing the network’s weights and
+8:    Compute rewards for the new compound                                  biases to minimize a specific loss function. This is typically accom-
+9:    Compute probabilities P(Xi) for each new compound                     plished using gradient-based optimization algorithms such as sto-
+10:    Train QCBM with Xi and P(Xi)                                         chastic gradient descent or Adam70. The backpropagation through
+11:         Generate new Xi from QCBM                                       time algorithm was used to compute the gradients relative to the
+12:  end if                                                                 loss function, considering the sequential nature of the data71. The
+13: end while                                                               networks were trained using the Adam optimizer with the NLL loss
+                                                                            function; to mitigate overfitting, regularization techniques such as
+QCBM model. The QCBM model represents a quantum variational                 dropout were implemented72. The NLL loss for a single data point is
+generative model, necessitating a classical optimizer to train its param-   given by
+eters. The total count of these parameters was computed with the
+                                                                                                          L( y, y)̂ = − log( yŷ )                  (7)
+number of qubits and layers defined in the model (Extended Data
+Fig. 5). Upon specifying the parameters, denoted as θn, we obtain a
+quantum state |ψ(θ)⟩. Here, each θn exerts an impact on the wave func-      where y is the true class label and yŷ is the predicted probability for the
+tion, expressed as ψ(θ). To optimize these parameters θ, the model is       true class label y.
+
+
+Nature Biotechnology
+Brief Communication                                                                                    https://doi.org/10.1038/s41587-024-02526-3
+
+    The loss for a batch of data is the mean of the individual losses for     distributions. A classical optimization algorithm recommends adjust-
+each data point in the batch:                                                 ing parameters, which operates on the basis of the feedback received
+                                                                              from the evaluation of the circuit’s output. At each iteration, the quan-
+                                          N
+                                      1                                       tum circuit is sampled to produce a set of states. These states are then
+                              ℒ=−       ∑ log( yŷ i )                  (8)
+                                      N i=1                                   compared against the target distribution and the difference between
+                                                                              them informs the direction and magnitude of parameter adjustments in
+where N is the number of data points in the batch, yi is the true class       the quantum circuit. This iterative process continues until the distribu-
+label for the ith data point and yŷ i is the predicted probability for the   tion generated by the QCBM closely aligns with the target distribution
+true class label of the ith data point.                                       or until a predefined convergence criterion is met.
+     In the hyperparameter tuning process, we used Optuna, an opti-                 In the context of QCBM training, the exact NLL functions as the
+mization framework, to adjust parameters such as the number of hid-           primary loss function, providing a quantitative measure of the differ-
+den dimensions, embedding dimensions and layers within the model.             ence between the distributions. The exact NLL for a QCBM is the nega-
+The model presented in this research integrated a deep learning archi-        tive sum of the logarithms of the probabilities that the quantum circuit
+tecture. This architecture was designed to incorporate prior informa-         assigns to the states in the training dataset. Mathematically, this is
+tion (samples) into the generative process. Additionally, the model           represented as NLL (θ) = −∑x∈D log pθ (x), where D is the set of data points
+used Chemistry42 feedback in conjunction with QCBMs, aimed at                 and pθ(x) is the probability of observing state x under the current
+enhancing its generative accuracy. Supplementary Figure 4 illustrates         parameters θ of the quantum circuit. Minimizing the NLL involves
+the proposed architecture at a cell level. The prior samples were com-        adjusting θ such that the quantum circuit’s output distribution increas-
+bined with input samples xt′ = X(i) ++xt in the LSTM cell. This combina-      ingly resembles the empirical distribution of the data. This optimiza-
+tion constituted two methods: adding and concatenating samples. The           tion is typically carried out using gradient-based methods or other
+LSTM’s operations were updated with the following operations:                 heuristic techniques suited to the quantum computing context. In our
+                                                                              project, we used COBYLA for our optimizer. As the NLL decreases, the
+               Prior sampling xt′ = X(i) ++xt OR xt′ = X(i) + xt        (9)
+                                                                              fidelity of the QCBM in modeling the target distribution correspond-
+                                                                              ingly increases, indicating successful training of the quantum model.
+                    Forget gate: ft = σ(Wf ⋅ [ht−1 , x′t ] + bf )      (10)         Extended Data Fig. 5 shows the QCBM architecture and illustrates
+                                                                              its associated ansatz. We used linear topology for our project. Our
+                                                                              QCBM model was built with 16 qubits and four layers and we had 96
+                    Input gate: it = σ(Wi ⋅ [ht−1 , x′t ] + bi )       (11)
+                                                                              parameters to optimize in total. The initial probability of the sam-
+                                                                              ples, P(X(i)), was computed on the basis of the rewards returned by
+              Candidate values: Ct̃ = tanh(WC ⋅ [ht−1 , x′t ] + bC )   (12)   the Chemistry42 model. These reward-based probabilities were then
+                                                                              passed through a softmax function to ensure that they were normal-
+                                                                              ized and fell within the range of 0–1. The resulting values served as the
+                   Update cell state: Ct = ft ⋅ Ct−1 + it ⋅ Ct̃        (13)
+                                                                              ‘true’ probabilities of the samples and were used as the target values
+                                                                              during the model’s training process.
+                  Output gate: ot = σ(Wo ⋅ [ht−1 , x′t ] + bo )        (14)
+                                                                              Algorithm 2. Algorithm 2 provides the pseudocode outlining the train-
+                                                                              ing regimen for the QCBM model. This process delineates the iterative
+                   Update hidden state: ht = ot ⋅ tanh(Ct )            (15)
+                                                                              optimization of the QCBM parameters.
+
+     To generate samples, the process began with sampling from the            1: Initialize: QCBM model with a certain number of qubits and layers
+prior, followed by the LSTM network processing these prior samples to         2: Set: Parameterized quantum state |ψ(θ)⟩
+generate compounds representations. The compounds were validated              3: while not converged do
+through the Chemistry42 platform, specifically tailored to assess ligand      4:  Compute exact NLL loss function
+quality for the KRAS-G12D mutant. This methodology allows designing           5:  Compute gradient of exact NLL with respect to θ
+ligands targeted at specific proteins. Moreover, the LSTM model is a          6:  Adjust parameters using an optimizer
+classical approach for learning ligand structures and constructing a          7:  Validate the sample and compute its reward value
+latent ligand space. The QCBM functions as a prior, guiding the LSTM          8:  if sample is valid then
+in the generation of novel ligand samples. The procedure was subjected        9:    Compute rewards for the sample
+to an iterative process to enhance the quality of ligands, which was          10:          Adjust probabilities P(Xi) on the basis of the rewards
+evaluated using the Chemistry42 platform.                                     11:         Train QCBM model with adjusted probabilities
+                                                                              12:  end If
+Quantum generative model: QCBM model. The QCBM is a variational               13: end while
+quantum algorithm that uses the foundational principles of quantum
+mechanics, particularly the Born rule, to generate complex and diverse        Reporting summary
+data samples. The core of our QCBM model is a parameterized quantum           Further information on research design is available in the Nature
+state |ψ(θ)⟩, where θ denotes the parameters or ansatz of our quantum         Portfolio Reporting Summary linked to this article.
+circuit. As per the Born rule, given a measurement basis, which is com-
+monly the computational basis in our case, the probability of observing       Data availability
+a specific outcome |x⟩ is expressed as ∣〈x∣ψ(θ)〉∣2.                           The datasets generated and analyzed during the current study, along
+     Training a QCBM involves optimizing the parameters of the                with the generative model, are available via Zenodo at https://doi.org/
+quantum circuit to produce a probability distribution that closely            10.5281/zenodo.11137638 (ref. 73).
+approximates the target distribution (probability computed by Chem-
+istry42 reward values). This process is fundamentally iterative, where        Code availability
+the quantum circuit parameters, denoted as θ, are adjusted in each            The full code for running our generative model is available via Zenodo
+step to reduce the discrepancy between the generated and target               at https://doi.org/10.5281/zenodo.11137638 (ref. 73).
+
+
+Nature Biotechnology
+Brief Communication                                                                                      https://doi.org/10.1038/s41587-024-02526-3
+
+References                                                                      57. Williamson, M. P. Using chemical shift perturbation to
+37. Olivecrona, M., Blaschke, T., Engkvist, O. & Chen, H. Molecular                 characterise ligand binding. Prog. Nucl. Magn. Reson. Spectrosc.
+    de-novo design through deep reinforcement learning.                             73, 1–16 (2013).
+    J. Cheminform. 9, 48 (2017).                                                58. Zagribelnyy, B., Putin, E. O., Fedorchenko, S A., Ivanenkov, Y. A.
+38. Bombarelli, R. G. et al. Automatic chemical design using                        & Zavoronkovs, A. Retrosynthesis-related synthetic accessibility.
+    a data-driven continuous representation of molecules.                           WO patent 2021/229454 A1 (2021).
+    ACS Cent. Sci. 4, 268–276 (2018).                                           59. Welsch, M. et al. Multivalent small-molecule pan-RAS inhibitors.
+39. Krenn, M. et al. SELFIES and the future of molecular string                     Cell 168, 878–889 (2017).
+    representations. Patterns 3, 100588 (2022).                                 60. Kwan, A. K., Piazza, G. A., Keeton, A. B. & Leite, C. A. The path to
+40. Zang, C. & Wang, F. Moflow: an invertible flow model for                        the clinic: a comprehensive review on direct KRasG12C inhibitors. J.
+    generating molecular graphs. In Proc. of the 26th ACM SIGKDD                    Exp. Clin. Cancer Res. 41, 27 (2022).
+    International Conference on Knowledge Discovery and Data Mining             61. Parikh, K. et al. Drugging KRas: current perspectives and
+    (eds Gupta, R. & Liu, Y.) 617–626 (ACM, 2020).                                  state-of-art review. J. Hematol. Oncol. 15, 152 (2022).
+41. Segler, M., Kogej, T., Tyrchan, C. & Waller, M. P. Generating               62. Srisongkram, T., Khamtang, P. & Weerapreeyakul, N. Prediction
+    focused molecule libraries for drug discovery with recurrent                    of KRasG12C inhibitors using conjoint fingerprint and machine
+    neural networks. ACS Cent. Sci. 4, 120–131 (2018).                              learning-based QSAR models. J. Mol. Graph. Model. 120, 108197
+42. Brown, N., Fiscato, M., Segler, M. & Vaucher, A. C. Guacamol:                   (2023).
+    benchmarking models for de novo molecular design. J. Chem. Inf.             63. Nagasaka, M. et al. KRas G12C Game of Yhrones, which direct
+    Model. 59, 1096–1108 (2019).                                                    KRas inhibitor will claim the iron throne? Cancer Treat. Rev. 84,
+43. Jensen, J. H. A graph-based genetic algorithm and generative                    101974 (2020).
+    model/Monte Carlo tree search for the exploration of chemical               64. Grygorenko, O. O. et al. Generating multibillion chemical space
+    space. Chem. Sci. 10, 3567–3572 (2019).                                         of readily accessible screening compounds. iScience 23, 101681
+44. Nigam, A. K., Pollice, R. & Guzik, A. A. Parallel tempered genetic              (2020).
+    algorithm guided by deep neural networks for inverse molecular              65. Krenn, M., Häse, F., Nigam, A. K. & Friederich, P. Self-referencing
+    design. Digit. Discov. 1, 390–404 (2022).                                       embedded strings (SELFIES): a 100% robust molecular string
+45. Frandsen, A. et al. Tyr702 is an important determinant of agonist               representation. Mach. Learn. Sci. Technol. 1, 045024 (2020).
+    binding and domain closure of the ligand-binding core of GLUR2.             66. Lo, A. et al. Recent advances in the self-referencing embedded
+    Mol. Pharmacol. 67, 703–713 (2005).                                             strings (SELFIES) library. Digit. Discov. 2, 897–908 (2023).
+46. Zhang, L. et al. Crystal structure of SARS-CoV-2 main protease              67. Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural
+    provides a basis for design of improved α-ketoamide inhibitors.                 Comput. 9, 1735–1780 (1997).
+    Science 368, 409–412 (2020).                                                68. Gers, F. A., Schmidhuber, J. & Cummins, F. Learning to forget:
+47. Ring, A. M. et al. Adrenaline-activated structure of                            continual prediction with LSTM. In Proc. of the 9th International
+    β2-adrenoceptor stabilized by an engineered nanobody. Nature                    Conference on Artificial Neural Networks (eds Sandoval, F. et al.)
+    502, 575–579 (2013).                                                            850–855 (Springer, 1999).
+48. Alhossary, A., Handoko, S. D., Mu, Y. & Kwoh, C. K. Fast, accurate,         69. Gers, F. A. & Schmidhuber, J. Recurrent nets that time and count.
+    and reliable molecular docking with QuickVina 2. Bioinformatics                 In Proc. of the IEEE–INNS–ENNS International Joint Conference on
+    31, 2214–2216 (2015).                                                           Neural Networks (eds Amari, S.-I. et al.) 189–194 (IEEE, 2000).
+49. Koes, D. R., Baumgartner, M. P. & Camacho, C. J. Lessons                    70. Kingma, D. P. & Ba, J. Adam: a method for stochastic optimization.
+    learned in empirical scoring with smina from the CSAR 2011                      In Proc. of the 3rd International Conference on Learning
+    benchmarking exercise. J. Chem. Inf. Model. 53, 1893–1904                       Representations (ed. Yue, X.-G.) 1–13 (ACM, 2015).
+    (2013).                                                                     71. Werbos, P. J. Backpropagation through time: what it does and how
+50. Voigt, J. H., Bienfait, B., Wang, S. & Nicklaus, M. C. Comparison               to do it. Proc. IEEE 78, 1550–1560 (1990).
+    of the NCI open database with seven large chemical structural               72. Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. &
+    databases. J. Chem. Inf. Comput. Sci. 41, 702–712 (2001).                       Salakhutdinov, R. Dropout: a simple way to prevent neural
+51. Ihlenfeldt, W. D., Voigt, J. H., Bienfait, B., Oellien, F. & Nicklaus, M.       networks from overfitting. J. Mach. Learn. Res. 15, 1929–1958
+    C. Enhanced CACTVS browser of the open NCI database. J. Chem.                   (2014).
+    Inf. Comput. Sci. 42, 46–57 (2002).                                         73. Vakili, M. G. Quantum computing-enhanced algorithm unveils
+52. Akiba, T., Sano, S., Yanase, T., Ohta, T. & Koyama, M. Optuna: a                novel inhibitors for KRas. Zenodo https://doi.org/10.5281/
+    next-generation hyperparameter optimization framework. In Proc.                 zenodo.11137638 (2024).
+    of the 25th ACM SIGKDD International Conference on Knowledge
+    Discovery and Data Mining (eds Teredesai, A. & Kumar, V.) 2623–             Acknowledgements
+    2631 (ACM, 2019).                                                           We want to thank A. Perdomo-Ortiz, M. Mauri, B. Dellabetta, V.
+53. Lim, S. M. et al. Therapeutic targeting of oncogenic K-Ras by a             Vargas-Calderón, A. Cheng, J. Miller, M. Bagherimehrab and K. Nakaji
+    covalent catalytic site inhibitor. Angew. Chem. Int. Ed. Engl. 53,          for their valuable discussion and support in this research. We thank H.
+    199–204 (2014).                                                             Arthanari for providing us with his NMR resources. Additionally, we are
+54. Pálfy, G., Vida, I. & Perczel, A. 1H, 15N backbone assignment and           thankful to the Defense Advanced Research Projects Agency for their
+    comparative analysis of the wild type and G12C, G12D, G12V                  funding (grant number HR0011-23-3-0017), which greatly supports
+    mutants of K-Ras bound to GDP at physiological pH. Biomol. NMR              our scientific endeavors. A.K.N. acknowledges funding from the
+    Assign. 14, 1–7 (2020).                                                     Bio-X Stanford Interdisciplinary Graduate Fellowship. A.A.-G. thanks
+55. Delaglio, F. et al. NMRPipe: a multidimensional spectral                    A. G. Frøseth for his generous support. A.A.-G. also acknowledges
+    processing system based on unix pipes. J. Biomol. NMR 6,                    the generous support of Natural Resources Canada and the Canada
+    277–293 (1995).                                                             150 Research Chairs program. C.G. was funded through the Blue Sky
+56. Vranken, W. et al. The CCPN data model for NMR spectroscopy:                Kinase Project at St. Jude Children’s Research Hospital. The research
+    development of a software pipeline. Proteins 59, 687–696                    in the I.S. lab is supported by the grants from the Canadian Institute for
+    (2005).                                                                     Health Research, Genome Canada, Ontario Research Fund, Ontario
+
+
+Nature Biotechnology
+Brief Communication                                                                                      https://doi.org/10.1038/s41587-024-02526-3
+
+Genomics Institute, Cystic Fibrosis Canada and Toronto Innovation                 is a cofounder and consultant of Virtual Discovery and Quantum
+Acceleration Partners. This research was undertaken thanks partly to              Therapeutics. The remaining authors declare no competing interests.
+funding provided to the Acceleration Consortium of the University of
+Toronto from the Canada First Research Excellence Fund.                           Additional information
+                                                                                  Extended data is available for this paper at
+Author contributions                                                              https://doi.org/10.1038/s41587-024-02526-3.
+M.G.V. led the project, developed the quantum machine learning
+algorithm, benchmarked the model and contributed substantially                    Supplementary information The online version contains supplementary
+to writing the manuscript. C.G. led the virtual screening and NMR                 material available at https://doi.org/10.1038/s41587-024-02526-3.
+experiments. A.K.N. worked on the genetic algorithm and generated
+the initial data. The Insilico team focused on synthesizing the                   Correspondence and requests for materials should be addressed
+compounds and performing the SPR assays. J.S. led the cell-based                  to Christoph Gorgulla, AkshatKumar Nigam, Igor Stagljar,
+assays conducted in the I.S. lab. The remaining authors worked in                 Alán Aspuru-Guzik or Alex Zhavoronkov.
+parallel to validate the findings, discuss the results and contribute to
+the preparation and analysis of the final results.                                Peer review information Nature Biotechnology thanks Su-Yang Xu and
+                                                                                  the other, anonymous, reviewer(s) for their contribution to the peer
+Competing interests                                                               review of this work.
+A.A.G. serves as the chief visionary officer and is a board member of
+Kebotix. A.Z., A.A., D.B., D.P., X.D., J.L., E.R., F.R. and F.M. are affiliated   Reprints and permissions information is available at
+with Insilico Medicine. Y.C. and D.V. are affiliated with Zapata AI. C.G.         www.nature.com/reprints.
+
+
+
+
+Nature Biotechnology
+Brief Communication                                                                                             https://doi.org/10.1038/s41587-024-02526-3
+
+
+
+
+Extended Data Fig. 1 | Comparative Benchmarking of Quantum and Classical             approaches with varied priors. The performance of the Quantum Circuit Born
+Ligand Design Methods. (A, B) Comparative analysis of our hybrid approaches          Machine (QCBM) was assessed using both a quantum simulator (Sim) and a
+with varied priors. The performance of the Quantum Circuit Born Machine              hardware backend (HW), and contrasted with a Multi-bases QCBM (MQCBM)
+(QCBM) was assessed using both a quantum simulator (Sim) and a hardware              operating solely on a quantum simulator (Sim), as well as an LSTM model devoid
+backend (HW), and contrasted with a Multi-bases QCBM (MQCBM) operating               of quantum priors (representing a fully classical architecture). We calculated the
+solely on a quantum simulator (Sim), as well as an LSTM model devoid of              number of generated molecules that met a series of synthesizability and stability
+quantum priors (representing a fully classical architecture). We calculated          criteria as stipulated by the Tartarus benchmarking platform (referred to as Local
+the number of generated molecules that met a series of synthesizability and          Filters)26 and by Chemistry42 (referred to as Chemistry42 Filters). To generate
+stability criteria as stipulated by the Tartarus benchmarking platform (referred     Figure A, we repeated the experiments five times, sampling n=1,000 compounds
+to as Local Filters)26 and by Chemistry42 (referred to as Chemistry42 Filters). To   in each repetition and applying the filter. The reported values represent the
+generate Figure A, we repeated the experiments five times, sampling n=1,000          mean for each data point, with error bars indicating the standard deviation
+compounds in each repetition and applying the filter. The reported values            across the repetitions (Mean ± Std.). more detailed is reported in Supplementary
+represent the mean for each data point, with error bars indicating the standard      Information Table S3.2. (C) Success rate of generating molecules that meet
+deviation across the repetitions (Mean ± Std.). more detailed is reported in         Tartarus’s filter criteria as a function of the number of qubits used in modeling
+Supplementary Information Table S3.2. (C) Success rate of generating molecules       priors for the QCBM. We repeated the experiments five times, sampling n=5,000
+that meet Tartarus’s filter criteria as a function of the number of qubits used in   compounds in each repetition and applying the filter. The reported values
+modeling priors for the QCBM. We Comparative Benchmarking of Quantum                 represent the mean for each data point, with error bars indicating the standard
+and Classical Ligand Design Methods. (A, B) Comparative analysis of our hybrid       deviation across the repetitions.
+
+
+
+
+Nature Biotechnology
+Brief Communication                                                                                               https://doi.org/10.1038/s41587-024-02526-3
+
+
+
+
+Extended Data Fig. 2 | Protein-detected NMR experiments. Protein-detected              are mapped onto the G12D structure and displayed in a color gradient. Residues
+NMR experiments elucidate the binding mode of Compound 18-2 to KRAS-G12D.              that could not be assigned are shown in grey. The majority of significant CSPs are
+(A) Significant chemical shift perturbations (CSPs) and intensity changes due          observed near the Switch-II pocket; however, CSPs are also noted in the α-1 helix,
+to chemical exchange are observed upon binding to the compound. Residues               Switch-I, and α-4 regions, possibly indicating conformational changes upon
+lining the Switch-II pocket that show significant CSPs are highlighted in the inset,   binding to the compound. (C) Zoomed-in region of the protein, highlighting
+including Gly10 (from the P-loop), Phe78 and Gly77 (from the α-2 helix adjacent        residues from the Switch-II pocket that exhibit CSPs.
+to the Switch-II region), Ser89, and Asp92 (from the β-4 sheet). (B) The CSP values
+
+
+
+
+Nature Biotechnology
+Brief Communication                                                                                     https://doi.org/10.1038/s41587-024-02526-3
+
+
+
+
+Extended Data Fig. 3 | Quantum-Enhanced Generative Model for Drug             encoding) and quantum data are merged by addition or concatenation. The
+Discovery Applications. (B) Hybrid model combining a Quantum Circuit Born     resultant samples, X’(t), are then input to the LSTM cell. (C) Quantum prior
+Machine (QCBM) with Long Short-Term Memory (LSTM). This model iteratively     component described as a QCBM, generating samples from quantum hardware
+trains using prior samples from quantum hardware. (A) Integration method of   each training epoch and trains with a reward value, P (x)=Softmax(R(x)),
+prior samples into the LSTM architecture. Molecular information (in SELFIES   calculated using Chemistry42 or a local filter.
+
+
+
+
+Nature Biotechnology
+Brief Communication                                                                                         https://doi.org/10.1038/s41587-024-02526-3
+
+
+
+
+Extended Data Fig. 4 | Pharmacophore Model Depiction. Pharmacophore              supports structural integrity, a green sphere highlights a hydrophobic moiety
+Model Depiction for KRAS Inhibitor TH-Z816 Based on the Co-crystallized Ligand   essential for binding affinity, and a cyan sphere indicates a hydrogen bond donor
+Structure Analyzed with Chemistry42 (PDB: 7EW9). This figure illustrates the     that contributes to interaction specificity with the KRAS protein. The protein
+key pharmacophoric features identified from the ligand structure of TH-Z816      structure is shown on the right, while the pharmacophore interactions within the
+bound to KRAS G12D. A blue sphere represents a critical ring system that         KRAS Switch-II binding pocket are detailed on the left.
+
+
+
+
+Nature Biotechnology
+Brief Communication                                                                                         https://doi.org/10.1038/s41587-024-02526-3
+
+
+
+
+Extended Data Fig. 5 | Quantum Circuit Born Machine (QCBM) Model.                gates, including parameterized rotations (Rx, Rz) and entangling CNOT gates, are
+Schematic representation of the Quantum Circuit Born Machine (QCBM)              orchestrated to evolve the initial state |0⟩ into a complex quantum state |Ψ(0)⟩.
+implemented in our numerical experiments, illustrating a variational quantum     The outcome is measured, and the resulting data are used by the classical
+circuit with a configuration of three layers and four qubits. In practice, our   optimizer to iteratively refine the parameters θ, thus leading the circuit towards
+numerical experiments utilized a system with 16 qubits. The depicted quantum     an optimal solution for ligand generation.
+
+
+
+
+Nature Biotechnology
+μ   μ
+₂
+

@@ -1,0 +1,82 @@
+{
+  "page": 16,
+  "width": 595.2760009765625,
+  "height": 790.8660278320312,
+  "mode": "native",
+  "preview": "previews/page-0016.png",
+  "reviewed": true,
+  "review_notes": "Viewed previews/page-0016.png and re-rendered candidate crops from source.pdf. Page is the full-page Extended Data Fig. 3 plate ('Architecture of Hybrid Quantum-Classical Model') plus its two-column caption. The extractor split the plate into the blue title banner (figure-p0016-002) and the diagram (figure-p0016-003); merged into ONE crop [38, 47, 566, 372] pt. Verified the crop contains the title banner, panel letters (A), (B), (C), the LSTM cell diagram with ADD OR CONCAT / SELFIES / x(t) / h(t) / C(t) labels, the Ligand 1.1 M / Data set / Loss / Output sequences boxes, the Decoding / Hidden Layer / Input Layer / Token Emb. / Input Samples / Input size annotations, N.N., QCBM, Softmax, P(Xi), R(Xi), Compute Rewards, the vertical 'Chemistry42' logo at the right margin, and the panel (C) circuit ending in |0> -> |psi(theta)> -> outcome. Bottom edge set to 372 pt after rendering the 355-385 pt strip: the green dashed panel-C border ends near 367 pt and the caption's first line starts at 377.2 pt, so nothing is clipped and no caption text is baked in. Renamed placeholder figure-p0016-002 -> extended-data-figure-3 with asset_category=supp_figs. Merged the two caption column fragments (b004 ends 'in SELFIES', b005 begins 'encoding)') into one caption item and re-kinded b005 from text to caption. Text checked against the PDF native layer: the printed panel order really is (B), (A), (C) and was NOT reordered; X’(t) keeps its typographic apostrophe and 'P (x)=Softmax(R(x))' keeps the printed space after P. Repaired stray spaces in emphasis markers only. Header/DOI/footer set to omit.",
+  "warnings": [
+    "Review possible header/footer: p0016-b000",
+    "Review possible header/footer: p0016-b001",
+    "Review possible header/footer: p0016-b006"
+  ],
+  "items": [
+    {
+      "id": "p0016-b000",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        23.0,
+        141.0,
+        32.0
+      ],
+      "markdown": "**Brief Communication**",
+      "source_class": "page-header",
+      "reason": "Repeated running header of the journal article ('Brief Communication'); not substantive content."
+    },
+    {
+      "id": "p0016-b001",
+      "kind": "omit",
+      "bbox": [
+        392.0,
+        25.0,
+        562.0,
+        34.0
+      ],
+      "markdown": "https://doi.org/10.1038/s41587-024-02526-3",
+      "source_class": "page-header",
+      "reason": "Repeated running header DOI link (https://doi.org/10.1038/s41587-024-02526-3); already recorded on the title page."
+    },
+    {
+      "id": "p0016-b002",
+      "kind": "figure",
+      "bbox": [
+        38.0,
+        47.0,
+        566.0,
+        372.0
+      ],
+      "markdown": "",
+      "source_class": "picture",
+      "label": "Extended Data Fig. 3",
+      "asset_name": "extended-data-figure-3",
+      "asset_category": "supp_figs"
+    },
+    {
+      "id": "p0016-b004",
+      "kind": "caption",
+      "bbox": [
+        39.0,
+        377.0,
+        557.0,
+        426.0
+      ],
+      "markdown": "**Extended Data Fig. 3 | Quantum-Enhanced Generative Model for Drug Discovery Applications.** (**B**) Hybrid model combining a Quantum Circuit Born Machine (QCBM) with Long Short-Term Memory (LSTM). This model iteratively trains using prior samples from quantum hardware. (**A**) Integration method of prior samples into the LSTM architecture. Molecular information (in SELFIES encoding) and quantum data are merged by addition or concatenation. The resultant samples, X’(t), are then input to the LSTM cell. (**C**) Quantum prior component described as a QCBM, generating samples from quantum hardware each training epoch and trains with a reward value, P (x)=Softmax(R(x)), calculated using Chemistry42 or a local filter.",
+      "source_class": "caption"
+    },
+    {
+      "id": "p0016-b006",
+      "kind": "omit",
+      "bbox": [
+        39.0,
+        763.0,
+        122.0,
+        771.0
+      ],
+      "markdown": "Nature Biotechnology",
+      "source_class": "page-footer",
+      "reason": "Repeated page footer / journal branding link ('Nature Biotechnology'); not substantive content."
+    }
+  ]
+}

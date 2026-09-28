@@ -1,0 +1,956 @@
+{
+ "run_id": "20260922-164509_e6dfe4",
+ "status": "done",
+ "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/msd/Task04_Hippocampus",
+ "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/msd/Task04_Hippocampus",
+ "project": null,
+ "kind": "msd_task",
+ "modality_guess": "MRI",
+ "detection_notes": [
+  "Medical Segmentation Decathlon task folder: converted into a private nnU-Net tree under the run folder"
+ ],
+ "recipe": {
+  "id": "nnunet_pipeline_2d_5epochs",
+  "title": "MSD task -> convert/verify -> plan & preprocess -> train 2d (5 epochs) -> predict -> best configuration"
+ },
+ "created_at": 1790063109.3949292,
+ "finished_at": 1790063366.0518312,
+ "duration_s": 256.66,
+ "steps": [
+  {
+   "index": 0,
+   "label": "private nnU-Net tree under the run folder",
+   "agent": "auto",
+   "tool": "auto_prepare_nnunet_tree",
+   "status": "done",
+   "job_id": null,
+   "duration_s": 0.0,
+   "error": null,
+   "key_numbers": {},
+   "artifacts": [
+    {
+     "description": "private nnU-Net tree (raw/preprocessed/results)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet"
+    }
+   ],
+   "arguments": {
+    "run_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4"
+   }
+  },
+  {
+   "index": 1,
+   "label": "MSD -> nnU-Net v2 dataset",
+   "agent": "nnUNet",
+   "tool": "nnunet_convert_msd_dataset",
+   "status": "done",
+   "job_id": "5895b59bec69",
+   "duration_s": 1.0,
+   "error": null,
+   "key_numbers": {
+    "dataset_name": "Dataset004_Hippocampus",
+    "dataset_id": 4,
+    "wall_seconds": 0.561
+   },
+   "artifacts": [
+    {
+     "description": "converted nnU-Net dataset folder (native, inside nnUNet_raw)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus"
+    },
+    {
+     "description": "nnU-Net v2 dataset.json written by convert_msd_dataset",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus/dataset.json"
+    },
+    {
+     "description": "copy of the written dataset.json",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_convert_msd_dataset_20260922-164509_96fb996f/dataset.json"
+    },
+    {
+     "description": "upstream stdout log",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_convert_msd_dataset_20260922-164509_96fb996f/upstream.stdout.log"
+    },
+    {
+     "description": "child driver + args/result JSON",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_convert_msd_dataset_20260922-164509_96fb996f"
+    }
+   ],
+   "arguments": {
+    "msd_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_out/nnUNet_Agent/data/msd/Task04_Hippocampus",
+    "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+    "nnunet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+    "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+   }
+  },
+  {
+   "index": 2,
+   "label": "verify dataset integrity",
+   "agent": "nnUNet",
+   "tool": "nnunet_verify_dataset_integrity",
+   "status": "done",
+   "job_id": "add14390a195",
+   "duration_s": 4.51,
+   "error": null,
+   "key_numbers": {
+    "passed": true,
+    "dataset_name": "Dataset004_Hippocampus",
+    "num_findings": 0,
+    "done_banner_present": true,
+    "wall_seconds": 4.195
+   },
+   "artifacts": [
+    {
+     "description": "upstream stdout (per-file findings and the Done banner)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_verify_dataset_integrity_20260922-164510_e5fe0165/upstream.stdout.log"
+    },
+    {
+     "description": "child driver + args/result JSON",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_verify_dataset_integrity_20260922-164510_e5fe0165"
+    }
+   ],
+   "arguments": {
+    "dataset": "Dataset004_Hippocampus",
+    "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+   }
+  },
+  {
+   "index": 3,
+   "label": "fingerprint, plans, preprocessing (2d, 3d_fullres)",
+   "agent": "nnUNet",
+   "tool": "nnunet_plan_and_preprocess",
+   "status": "done",
+   "job_id": "0dca0d4bc7d8",
+   "duration_s": 15.5,
+   "error": null,
+   "key_numbers": {
+    "dataset_id": 4,
+    "dataset_name": "Dataset004_Hippocampus",
+    "file_ending": ".nii.gz",
+    "plans_identifier": "nnUNetPlans",
+    "planner": "ExperimentPlanner",
+    "experiment_planner_name": "ExperimentPlanner",
+    "run_preprocessing": true,
+    "check_dataset_integrity": false,
+    "splits_final_json_present": false
+   },
+   "artifacts": [
+    {
+     "description": "nnU-Net plans file (nnUNetPlans.json) written by the planner",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans.json"
+    },
+    {
+     "description": "dataset fingerprint (spacings, cropped shapes, intensity statistics)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/dataset_fingerprint.json"
+    },
+    {
+     "description": "PlansManager/fingerprint summary of this run (JSON)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/plans_summary.json"
+    },
+    {
+     "description": "child process stdout log (upstream nnunetv2 output)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_plan_and_preprocess_20260922-164514_edc0b35c/child.stdout.log"
+    },
+    {
+     "description": "preprocessed data folder for configuration 2d",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans_2d"
+    },
+    {
+     "description": "preprocessed data folder for configuration 3d_fullres",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/nnUNetPlans_3d_fullres"
+    },
+    {
+     "description": "ground-truth segmentations copied for validation",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed/Dataset004_Hippocampus/gt_segmentations"
+    }
+   ],
+   "arguments": {
+    "dataset": "Dataset004_Hippocampus",
+    "configurations": [
+     "2d",
+     "3d_fullres"
+    ],
+    "check_dataset_integrity": false,
+    "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+    "nnunet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+    "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+   }
+  },
+  {
+   "index": 4,
+   "label": "train 2d fold 0 (nnUNetTrainer_5epochs)",
+   "agent": "nnUNet",
+   "tool": "nnunet_train_model",
+   "status": "done",
+   "job_id": "b1e36cd28f57",
+   "duration_s": 94.56,
+   "error": null,
+   "key_numbers": {
+    "dataset_name": "Dataset004_Hippocampus",
+    "num_epochs": 5,
+    "epochs_completed": 5,
+    "validation.n_cases": 52,
+    "validation.n_segmentations": 52,
+    "validation.foreground_mean_dice": 0.86084,
+    "validation.foreground_mean.Dice": 0.86084,
+    "validation.foreground_mean.IoU": 0.7582,
+    "configuration": "2d",
+    "fold": 0,
+    "trainer": "nnUNetTrainer_5epochs",
+    "plans_identifier": "nnUNetPlans",
+    "mode": "train",
+    "export_validation_probabilities": true,
+    "batch_size": 366,
+    "validation.n_npz": 52,
+    "validation.mean_dice_per_label.1": 0.86888,
+    "validation.mean_dice_per_label.2": 0.85279,
+    "validation.foreground_mean.FN": 228.53846,
+    "validation.foreground_mean.FP": 234.06731,
+    "validation.foreground_mean.TN": 61619.74038,
+    "validation.foreground_mean.TP": 1447.90385,
+    "validation.foreground_mean.n_pred": 1681.97115,
+    "validation.foreground_mean.n_ref": 1676.44231
+   },
+   "artifacts": [
+    {
+     "description": "training result summary (JSON)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_train_model_20260922-164530_a27523d0/nnunet_train_model_result.json"
+    },
+    {
+     "description": "copy of fold_<fold>/progress.png (loss, pseudo Dice, epoch time, learning rate curves)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_train_model_20260922-164530_a27523d0/progress.png"
+    },
+    {
+     "description": "upstream training stdout log",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_train_model_20260922-164530_a27523d0/train.stdout.log"
+    },
+    {
+     "description": "upstream training stderr log",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_train_model_20260922-164530_a27523d0/train.stderr.log"
+    },
+    {
+     "description": "native validation/summary.json (per-case and mean Dice/IoU/TP/FP/FN/TN)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/validation/summary.json"
+    },
+    {
+     "description": "native checkpoint_final.pth",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/checkpoint_final.pth"
+    },
+    {
+     "description": "native checkpoint_best.pth",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/fold_0/checkpoint_best.pth"
+    }
+   ],
+   "arguments": {
+    "dataset": "Dataset004_Hippocampus",
+    "configuration": "2d",
+    "fold": 0,
+    "trainer": "nnUNetTrainer_5epochs",
+    "export_validation_probabilities": true,
+    "device": "auto",
+    "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+    "nnunet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+    "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+   }
+  },
+  {
+   "index": 5,
+   "label": "predict imagesTs with the 2d model",
+   "agent": "nnUNet",
+   "tool": "nnunet_predict",
+   "status": "done",
+   "job_id": "6f2a63d3393c",
+   "duration_s": 50.01,
+   "error": null,
+   "key_numbers": {
+    "n_segmentations": 130,
+    "trainer_name": "nnUNetTrainer_5epochs",
+    "configuration": "2d",
+    "plans_identifier": "nnUNetPlans",
+    "plans_name": "nnUNetPlans",
+    "data_identifier": "nnUNetPlans_2d",
+    "n_parameter_sets": 1,
+    "checkpoint_name": "checkpoint_final.pth",
+    "n_probability_files": 0,
+    "timing.init_seconds": 0.865,
+    "timing.predict_seconds": 45.511,
+    "timing.wall_seconds_child": 49.869
+   },
+   "artifacts": [
+    {
+     "description": "nnU-Net prediction folder ({CASE}.nii.gz label maps, dataset.json, plans.json, predict_from_raw_data_args.json)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions"
+    },
+    {
+     "description": "segmentation of hippocampus_002",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_002.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_005",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_005.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_009",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_009.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_010",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_010.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_012",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_012.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_013",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_013.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_016",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_016.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_018",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_018.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_021",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_021.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_022",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_022.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_027",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_027.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_028",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_028.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_029",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_029.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_030",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_030.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_043",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_043.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_047",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_047.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_054",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_054.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_055",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_055.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_059",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_059.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_061",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_061.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_062",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_062.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_063",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_063.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_066",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_066.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_069",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_069.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_071",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_071.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_072",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_072.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_073",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_073.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_076",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_076.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_078",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_078.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_079",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_079.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_080",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_080.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_081",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_081.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_082",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_082.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_100",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_100.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_103",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_103.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_110",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_110.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_111",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_111.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_112",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_112.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_113",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_113.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_115",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_115.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_116",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_116.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_117",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_117.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_118",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_118.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_119",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_119.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_120",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_120.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_121",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_121.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_122",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_122.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_128",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_128.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_129",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_129.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_131",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_131.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_134",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_134.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_137",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_137.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_139",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_139.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_140",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_140.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_147",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_147.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_151",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_151.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_153",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_153.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_159",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_159.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_167",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_167.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_168",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_168.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_179",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_179.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_182",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_182.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_183",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_183.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_186",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_186.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_187",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_187.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_191",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_191.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_192",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_192.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_196",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_196.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_198",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_198.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_200",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_200.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_201",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_201.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_202",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_202.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_206",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_206.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_208",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_208.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_209",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_209.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_211",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_211.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_213",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_213.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_214",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_214.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_218",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_218.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_237",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_237.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_239",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_239.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_240",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_240.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_241",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_241.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_246",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_246.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_247",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_247.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_254",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_254.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_255",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_255.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_256",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_256.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_258",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_258.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_262",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_262.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_266",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_266.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_267",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_267.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_270",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_270.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_271",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_271.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_272",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_272.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_273",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_273.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_275",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_275.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_278",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_278.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_281",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_281.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_283",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_283.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_284",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_284.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_285",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_285.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_291",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_291.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_293",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_293.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_306",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_306.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_307",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_307.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_312",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_312.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_313",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_313.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_315",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_315.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_323",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_323.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_324",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_324.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_339",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_339.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_342",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_342.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_344",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_344.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_346",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_346.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_347",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_347.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_348",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_348.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_357",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_357.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_362",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_362.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_364",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_364.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_365",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_365.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_369",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_369.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_371",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_371.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_377",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_377.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_379",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_379.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_382",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_382.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_384",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_384.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_388",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_388.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_391",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_391.nii.gz"
+    },
+    {
+     "description": "segmentation of hippocampus_392",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_392.nii.gz"
+    },
+    {
+     "description": "predict_from_raw_data_args.json (upstream record of the call)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/predict_from_raw_data_args.json"
+    },
+    {
+     "description": "tool result JSON (per-case summary, predictor settings)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/nnunet_predict_result.json"
+    },
+    {
+     "description": "upstream stdout log",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/logs/upstream.stdout.log"
+    }
+   ],
+   "arguments": {
+    "input_path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw/Dataset004_Hippocampus/imagesTs",
+    "dataset": "Dataset004_Hippocampus",
+    "configuration": "2d",
+    "trainer": "nnUNetTrainer_5epochs",
+    "folds": [
+     0
+    ],
+    "device": "auto",
+    "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+    "nnunet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+    "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+   }
+  },
+  {
+   "index": 6,
+   "label": "find best configuration + postprocessing",
+   "agent": "nnUNet",
+   "tool": "nnunet_find_best_configuration",
+   "status": "done",
+   "job_id": "18222bdb86a6",
+   "duration_s": 9.52,
+   "error": null,
+   "key_numbers": {
+    "dataset_name": "Dataset004_Hippocampus",
+    "best_key": "nnUNetTrainer_5epochs__nnUNetPlans__2d",
+    "ensembling_allowed": false,
+    "best_is_ensemble": false,
+    "result_on_crossval_pre_pp": 0.86084,
+    "result_on_crossval_post_pp": 0.86101,
+    "num_processes": 8,
+    "overwrite": true,
+    "strict": false
+   },
+   "artifacts": [
+    {
+     "description": "inference_information.json (upstream return dict: all_results, best_model_or_ensemble, ...)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_information.json"
+    },
+    {
+     "description": "inference_instructions.txt (nnUNetv2_predict / ensemble / apply_postprocessing commands)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/inference_instructions.txt"
+    },
+    {
+     "description": "postprocessing.pkl of the winner (input of nnunet_apply_postprocessing)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.pkl"
+    },
+    {
+     "description": "plans.json to use with the postprocessing file",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/plans.json"
+    },
+    {
+     "description": "postprocessing.json of the winner (Dice before/after, kept steps)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0/postprocessing.json"
+    },
+    {
+     "description": "accumulated cross-validation predictions + summary.json of nnUNetTrainer_5epochs__nnUNetPlans__2d",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d/crossval_results_folds_0"
+    },
+    {
+     "description": "child process stdout log (upstream console output)",
+     "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_find_best_configuration_20260922-164755_a5e3e061/child_stdout.log"
+    }
+   ],
+   "arguments": {
+    "dataset": "Dataset004_Hippocampus",
+    "trainers": [
+     "nnUNetTrainer_5epochs"
+    ],
+    "configurations": [
+     "2d"
+    ],
+    "folds": [
+     0
+    ],
+    "allow_ensembling": false,
+    "nnunet_raw": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_raw",
+    "nnunet_preprocessed": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_preprocessed",
+    "nnunet_results": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results",
+    "output_dir": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs"
+   }
+  },
+  {
+   "index": 7,
+   "label": "literature context (MedKG related work)",
+   "agent": "MedKG",
+   "tool": "medkg_related_work",
+   "status": "done",
+   "job_id": "63f8ff3fddba",
+   "duration_s": 81.53,
+   "error": null,
+   "key_numbers": {
+    "summary.n_rows": 10,
+    "summary.n_q1": 10,
+    "summary.status": "ok",
+    "summary.llm.provider": "codex",
+    "summary.llm.model": "gpt-6-astra",
+    "summary.llm.elapsed_s": 70.76,
+    "summary.llm.fallback_used": false,
+    "summary.timing.total_ms": 80659.4,
+    "summary.timing.retrieval_ms": 9784.1,
+    "summary.timing.dense_ms": 6769.7,
+    "summary.timing.lexical_ms": 79.0,
+    "summary.timing.rerank_ms": 2656.1,
+    "summary.timing.graph_ms": 113.8,
+    "summary.timing.llm_ms": 70757.8
+   },
+   "artifacts": [
+    {
+     "description": "related_work — full JSON response",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164925-1c1dea.json"
+    },
+    {
+     "description": "related_work — markdown",
+     "path": "/media/jerisuh/4,0TBDisk/MedKG/data/mcp_outputs/related_work_20260922-164925-1c1dea.md"
+    }
+   ],
+   "arguments": {
+    "topic": "Hippocampus segmentation MRI nnU-Net self-configuring",
+    "k": 10,
+    "summarise": true,
+    "modality": "MRI",
+    "task": "segmentation"
+   }
+  }
+ ],
+ "artifacts": [
+  {
+   "description": "run summary (JSON)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/summary.json"
+  },
+  {
+   "description": "run report (markdown)",
+   "path": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/report.md"
+  }
+ ],
+ "warnings": []
+}

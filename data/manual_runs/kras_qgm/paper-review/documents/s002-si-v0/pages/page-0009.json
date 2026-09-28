@@ -1,0 +1,121 @@
+{
+  "page": 9,
+  "width": 595.2000122070312,
+  "height": 841.9199829101562,
+  "mode": "native",
+  "preview": "previews/page-0009.png",
+  "reviewed": true,
+  "review_notes": "Viewed preview. CROSS-PAGE JOIN: p0009-b000 begins 'product), which could be used...' and completes page 8's '...to afford the title compound (13.8 g, crude'; 'crude' and 'product)' are separate words, so join_previous = 'space' (not 'none'). Repaired a mass-spec ion label mangled by the line wrap: '295.0 [MH]<sup>-</sup>' -> '295.0 [M-H]<sup>-</sup>' - the evidence line ends '295.0 [M-' and the next line is 'H]-.', so the extractor swallowed the minus of the deprotonated ion; this is the only [M-H]- in the range and getting it wrong would change the ion. Restored 'boranetetrahydrofuran' -> 'borane-tetrahydrofuran' in p0009-b002 (line ends 'was added borane-'). Normalised '[M+H]<sup>+</sup> .' spacing in p0009-b006 and p0009-b008. Step 2-5 headings set to h4. Checked the source's compressed spacing '(1.2 g,3.3 mmol)', 'urea(594 mg,9.9 mmol)', 'stirred at100°C', '(30mL × 3)' and left it exactly as printed. No figures on this page.",
+  "warnings": [],
+  "items": [
+    {
+      "id": "p0009-b000",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        59.0,
+        539.0,
+        91.0
+      ],
+      "markdown": "product), which could be used to the next step without further purification. LCMS (ESI): 295.0 [M-H]<sup>-</sup>.",
+      "source_class": "text",
+      "join_previous": "space"
+    },
+    {
+      "id": "p0009-b001",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        101.0,
+        259.0,
+        113.0
+      ],
+      "markdown": "#### Step 2: Preparation of Compound 11-2",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0009-b002",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        131.0,
+        542.0,
+        267.0
+      ],
+      "markdown": "To a solution of **compound 11-1** (13.8 g, 46.6 mmol) in THF (140 mL) was added borane-tetrahydrofuran solution (14 mL, 139.8 mmol) under nitrogen protection dropwise at 0 °C. The mixture was stirred at 25 °C for 16 hours. The reaction was quenched by the addition of methanol (20 mL). After the addition of brine (80 mL), the mixture was extracted with ethyl acetate (100 mL × 3), the combined organic phases was washed with saturated brine (50 mL), dried over anhydrous sodium sulfate, filtered, and concentrated under reduced pressure to obtain the title compound (12.1 g, crude product) as a yellow solid, which could be used to the next step without further purification.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b003",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        276.0,
+        259.0,
+        288.0
+      ],
+      "markdown": "#### Step 3: Preparation of Compound 11-3",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0009-b004",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        307.0,
+        542.0,
+        401.0
+      ],
+      "markdown": "To a solution of **compound 11-2** (12.0 g, 42.6 mmol) in dichloromethane (120 mL) was added thionyl chloride (7.6 g, 63.9 mmol) dropwise at 0 °C. The resulting mixture was stirred at 25 °C for 16 hours. The mixture was concentrated under reduced pressure and further purified by silica gel column chromatography (EA:PE=1:10) to obtain the title compound as a yellow oil (9.9 g, total yield of the first three steps: 68.7%).",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b005",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        410.0,
+        259.0,
+        422.0
+      ],
+      "markdown": "#### Step 4: Preparation of Compound 11-4",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0009-b006",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        441.0,
+        542.0,
+        598.0
+      ],
+      "markdown": "To a solution of **compound 11-3** (4.0 g, 13.3 mmol) in N,N-dimethylformamide (40 mL) was added acetylacetone (4.0 g, 39.9 mmol), potassium carbonate (5.5 g, 39.9 mmol) and potassium iodide (1.1 g, 6.7 mmol). The mixture was stirred at 80 °C for 2 hours. After the addition of ice water (100 mL) to quench the reaction, the mixture was extracted with ethyl acetate (50 mL × 3), the combined organic phases was washed with saturated brine water (40 mL × 3), dried over anhydrous sodium sulfate, filtered and concentrated under reduced pressure to obtain the title compound (1.3 g, crude product) as a yellow oil, which could be used to the next step without further purification. LCMS (ESI): 365.2 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    },
+    {
+      "id": "p0009-b007",
+      "kind": "heading",
+      "bbox": [
+        56.0,
+        607.0,
+        259.0,
+        618.0
+      ],
+      "markdown": "#### Step 5: Preparation of Compound 11-5",
+      "source_class": "section-header"
+    },
+    {
+      "id": "p0009-b008",
+      "kind": "text",
+      "bbox": [
+        56.0,
+        637.0,
+        542.0,
+        773.0
+      ],
+      "markdown": "A mixture of compound **11-4** (1.2 g,3.3 mmol), sulfuric acid (0.1 mL) and urea(594 mg,9.9 mmol) in a ethanol (10 mL) was stirred at100°C for 16 hours. After the removal of ethanol, saturated sodium bicarbonate aqueous solution (50 mL) was added to the residue. The resulting mixture was extracted with ethyl acetate (30mL × 3). The combined organic phases was washed with saturated brine water (20mL × 2), dried over anhydrous sodium sulfate, filtered and concentrated under reduced pressure to afford a residue, which was purified by silica gel column chromatography (EA:PE=3:1) to give the title compound as a yellow solid (74 mg). LCMS (ESI): 389.2 [M+H]<sup>+</sup>.",
+      "source_class": "text"
+    }
+  ]
+}

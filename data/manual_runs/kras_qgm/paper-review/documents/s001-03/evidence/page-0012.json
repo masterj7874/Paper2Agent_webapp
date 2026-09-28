@@ -1,0 +1,2345 @@
+{
+  "page": 12,
+  "lines": [
+    {
+      "text": "Nature Biotechnology",
+      "bbox": [
+        39.685001373291016,
+        760.1967163085938,
+        121.57299041748047,
+        771.1967163085938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Brief Communication",
+      "bbox": [
+        39.685001373291016,
+        20.316312789916992,
+        140.6649932861328,
+        34.11631393432617
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "https://doi.org/10.1038/s41587-024-02526-3",
+      "bbox": [
+        392.1177062988281,
+        22.61231231689453,
+        561.2600708007812,
+        33.61231231689453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "References",
+      "bbox": [
+        39.685001373291016,
+        45.023502349853516,
+        96.35900115966797,
+        58.22450256347656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "37.\t Olivecrona, M., Blaschke, T., Engkvist, O. & Chen, H. Molecular",
+      "bbox": [
+        39.685001373291016,
+        57.36150360107422,
+        282.1217956542969,
+        68.28150177001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "de-novo design through deep reinforcement learning.",
+      "bbox": [
+        56.69300079345703,
+        68.11351776123047,
+        255.59698486328125,
+        79.03351593017578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "J. Cheminform. 9, 48 (2017).",
+      "bbox": [
+        56.6929931640625,
+        78.74552917480469,
+        156.82899475097656,
+        89.78553009033203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "38.\t Bombarelli, R. G. et al. Automatic chemical design using",
+      "bbox": [
+        39.6929931640625,
+        89.61754608154297,
+        262.4849853515625,
+        100.53754425048828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "a data-driven continuous representation of molecules.",
+      "bbox": [
+        56.70098876953125,
+        100.36956024169922,
+        256.9729919433594,
+        111.28955841064453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "ACS Cent. Sci. 4, 268–276 (2018).",
+      "bbox": [
+        56.70098876953125,
+        111.00157165527344,
+        175.7873992919922,
+        122.04157257080078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "39.\t Krenn, M. et al. SELFIES and the future of molecular string",
+      "bbox": [
+        39.69298553466797,
+        121.87358856201172,
+        266.35791015625,
+        132.79359436035156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "representations. Patterns 3, 100588 (2022).",
+      "bbox": [
+        56.700984954833984,
+        132.50559997558594,
+        212.336181640625,
+        143.5456085205078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "40.\t Zang, C. & Wang, F. Moflow: an invertible flow model for",
+      "bbox": [
+        39.69298553466797,
+        143.3776092529297,
+        260.0010986328125,
+        154.29762268066406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "generating molecular graphs. In Proc. of the 26th ACM SIGKDD",
+      "bbox": [
+        56.700984954833984,
+        154.12962341308594,
+        284.0810241699219,
+        165.0496368408203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "International Conference on Knowledge Discovery and Data Mining",
+      "bbox": [
+        56.700984954833984,
+        164.8816375732422,
+        296.2049865722656,
+        175.80165100097656
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(eds Gupta, R. & Liu, Y.) 617–626 (ACM, 2020).",
+      "bbox": [
+        56.70098876953125,
+        175.63365173339844,
+        220.03143310546875,
+        186.5536651611328
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "41.\t Segler, M., Kogej, T., Tyrchan, C. & Waller, M. P. Generating",
+      "bbox": [
+        39.692989349365234,
+        186.3856658935547,
+        267.3554992675781,
+        197.30567932128906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "focused molecule libraries for drug discovery with recurrent",
+      "bbox": [
+        56.70098876953125,
+        197.13768005371094,
+        276.00103759765625,
+        208.0576934814453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "neural networks. ACS Cent. Sci. 4, 120–131 (2018).",
+      "bbox": [
+        56.70098876953125,
+        207.7696990966797,
+        234.5001983642578,
+        218.80970764160156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "42.\t Brown, N., Fiscato, M., Segler, M. & Vaucher, A. C. Guacamol:",
+      "bbox": [
+        39.6929931640625,
+        218.64170837402344,
+        277.1346130371094,
+        229.5617218017578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "benchmarking models for de novo molecular design. J. Chem. Inf.",
+      "bbox": [
+        56.700992584228516,
+        229.3937225341797,
+        295.5755310058594,
+        240.31373596191406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Model. 59, 1096–1108 (2019).",
+      "bbox": [
+        56.700992584228516,
+        240.02574157714844,
+        161.5033721923828,
+        251.0657501220703
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "43.\t Jensen, J. H. A graph-based genetic algorithm and generative",
+      "bbox": [
+        39.700992584228516,
+        250.8977508544922,
+        280.321044921875,
+        261.8177490234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "model/Monte Carlo tree search for the exploration of chemical",
+      "bbox": [
+        56.70899200439453,
+        261.6497802734375,
+        285.6098327636719,
+        272.56976318359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "space. Chem. Sci. 10, 3567–3572 (2019).",
+      "bbox": [
+        56.70899200439453,
+        272.28179931640625,
+        200.97776794433594,
+        283.32177734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "44.\t Nigam, A. K., Pollice, R. & Guzik, A. A. Parallel tempered genetic",
+      "bbox": [
+        39.70099639892578,
+        283.15380859375,
+        287.3714294433594,
+        294.07379150390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "algorithm guided by deep neural networks for inverse molecular",
+      "bbox": [
+        56.7089958190918,
+        293.90582275390625,
+        291.1658935546875,
+        304.8258056640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "design. Digit. Discov. 1, 390–404 (2022).",
+      "bbox": [
+        56.7089958190918,
+        304.537841796875,
+        200.96258544921875,
+        315.57781982421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "45.\t Frandsen, A. et al. Tyr702 is an important determinant of agonist",
+      "bbox": [
+        39.70899200439453,
+        315.40985107421875,
+        289.4554443359375,
+        326.329833984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "binding and domain closure of the ligand-binding core of GLUR2.",
+      "bbox": [
+        56.71699142456055,
+        326.161865234375,
+        294.0563049316406,
+        337.08184814453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Mol. Pharmacol. 67, 703–713 (2005).",
+      "bbox": [
+        56.71699142456055,
+        336.79388427734375,
+        187.45535278320312,
+        347.8338623046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "46.\t Zhang, L. et al. Crystal structure of SARS-CoV-2 main protease",
+      "bbox": [
+        39.70899200439453,
+        347.6658935546875,
+        282.41461181640625,
+        358.58587646484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "provides a basis for design of improved α-ketoamide inhibitors.",
+      "bbox": [
+        56.71699142456055,
+        358.41790771484375,
+        285.9130554199219,
+        369.337890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Science 368, 409–412 (2020).",
+      "bbox": [
+        56.71699142456055,
+        369.0499267578125,
+        165.08900451660156,
+        380.08990478515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "47.\t Ring, A. M. et al. Adrenaline-activated structure of",
+      "bbox": [
+        39.70899200439453,
+        379.92193603515625,
+        238.0402374267578,
+        390.8419189453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "β2-adrenoceptor stabilized by an engineered nanobody. Nature",
+      "bbox": [
+        56.71699142456055,
+        390.61163330078125,
+        286.070068359375,
+        402.3252258300781
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "502, 575–579 (2013).",
+      "bbox": [
+        56.69407653808594,
+        401.24365234375,
+        132.2364959716797,
+        412.28363037109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "48.\t Alhossary, A., Handoko, S. D., Mu, Y. & Kwoh, C. K. Fast, accurate,",
+      "bbox": [
+        39.68608093261719,
+        412.11566162109375,
+        290.0773010253906,
+        423.03564453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "and reliable molecular docking with QuickVina 2. Bioinformatics",
+      "bbox": [
+        56.6940803527832,
+        422.86767578125,
+        289.39007568359375,
+        433.78765869140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "31, 2214–2216 (2015).",
+      "bbox": [
+        56.69407653808594,
+        433.49969482421875,
+        132.02609252929688,
+        444.5396728515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "49.\t Koes, D. R., Baumgartner, M. P. & Camacho, C. J. Lessons",
+      "bbox": [
+        39.68608093261719,
+        444.3717041015625,
+        260.7141418457031,
+        455.29168701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "learned in empirical scoring with smina from the CSAR 2011",
+      "bbox": [
+        56.6940803527832,
+        455.12371826171875,
+        273.338134765625,
+        466.043701171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "benchmarking exercise. J. Chem. Inf. Model. 53, 1893–1904",
+      "bbox": [
+        56.6940803527832,
+        465.7557373046875,
+        271.3644714355469,
+        476.79571533203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2013).",
+      "bbox": [
+        56.69407653808594,
+        476.62774658203125,
+        81.42766571044922,
+        487.5477294921875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "50.\t Voigt, J. H., Bienfait, B., Wang, S. & Nicklaus, M. C. Comparison",
+      "bbox": [
+        39.68607711791992,
+        487.3797607421875,
+        282.3661193847656,
+        498.29974365234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of the NCI open database with seven large chemical structural",
+      "bbox": [
+        56.69407653808594,
+        498.13177490234375,
+        283.5157470703125,
+        509.0517578125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "databases. J. Chem. Inf. Comput. Sci. 41, 702–712 (2001).",
+      "bbox": [
+        56.69407653808594,
+        508.7637939453125,
+        258.4596862792969,
+        519.8037719726562
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "51.\t Ihlenfeldt, W. D., Voigt, J. H., Bienfait, B., Oellien, F. & Nicklaus, M.",
+      "bbox": [
+        39.69407653808594,
+        519.6358032226562,
+        291.2428894042969,
+        530.5557861328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "C. Enhanced CACTVS browser of the open NCI database. J. Chem.",
+      "bbox": [
+        56.70207595825195,
+        530.3878173828125,
+        296.4110107421875,
+        541.3078002929688
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Inf. Comput. Sci. 42, 46–57 (2002).",
+      "bbox": [
+        56.70207595825195,
+        541.0198364257812,
+        181.36207580566406,
+        552.059814453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "52.\t Akiba, T., Sano, S., Yanase, T., Ohta, T. & Koyama, M. Optuna: a",
+      "bbox": [
+        39.69407653808594,
+        551.8917846679688,
+        279.6213073730469,
+        562.811767578125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "next-generation hyperparameter optimization framework. In Proc.",
+      "bbox": [
+        56.70207595825195,
+        562.643798828125,
+        296.42529296875,
+        573.5637817382812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of the 25th ACM SIGKDD International Conference on Knowledge",
+      "bbox": [
+        56.70207595825195,
+        573.3958129882812,
+        288.8404541015625,
+        584.3157958984375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Discovery and Data Mining (eds Teredesai, A. & Kumar, V.) 2623–",
+      "bbox": [
+        56.70207595825195,
+        584.1477661132812,
+        284.5437316894531,
+        595.0677490234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "2631 (ACM, 2019).",
+      "bbox": [
+        56.70207595825195,
+        594.8997802734375,
+        121.29088592529297,
+        605.8197631835938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "53.\t Lim, S. M. et al. Therapeutic targeting of oncogenic K-Ras by a",
+      "bbox": [
+        39.69407653808594,
+        605.6517944335938,
+        281.10205078125,
+        616.57177734375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "covalent catalytic site inhibitor. Angew. Chem. Int. Ed. Engl. 53,",
+      "bbox": [
+        56.70207595825195,
+        616.2838134765625,
+        284.8780822753906,
+        627.3237915039062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "199–204 (2014).",
+      "bbox": [
+        56.70207214355469,
+        627.1558227539062,
+        113.98848724365234,
+        638.0758056640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "54.\t Pálfy, G., Vida, I. & Perczel, A. 1H, 15N backbone assignment and",
+      "bbox": [
+        39.69407272338867,
+        637.8615112304688,
+        283.5892639160156,
+        648.8277587890625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "comparative analysis of the wild type and G12C, G12D, G12V",
+      "bbox": [
+        56.69329833984375,
+        648.613525390625,
+        273.74462890625,
+        659.5335083007812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "mutants of K-Ras bound to GDP at physiological pH. Biomol. NMR",
+      "bbox": [
+        56.69329833984375,
+        659.3655395507812,
+        293.4486083984375,
+        670.2855224609375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Assign. 14, 1–7 (2020).",
+      "bbox": [
+        56.69329833984375,
+        669.99755859375,
+        135.32850646972656,
+        681.0375366210938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "55.\t Delaglio, F. et al. NMRPipe: a multidimensional spectral",
+      "bbox": [
+        39.685298919677734,
+        680.8695678710938,
+        257.1101989746094,
+        691.78955078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "processing system based on unix pipes. J. Biomol. NMR 6,",
+      "bbox": [
+        56.69329833984375,
+        691.5015258789062,
+        266.4453125,
+        702.54150390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "277–293 (1995).",
+      "bbox": [
+        56.69329833984375,
+        702.37353515625,
+        112.78211975097656,
+        713.2935180664062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "56.\t Vranken, W. et al. The CCPN data model for NMR spectroscopy:",
+      "bbox": [
+        39.685298919677734,
+        713.1255493164062,
+        286.4389343261719,
+        724.0455322265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "development of a software pipeline. Proteins 59, 687–696",
+      "bbox": [
+        56.69329833984375,
+        723.7575073242188,
+        268.48529052734375,
+        734.7974853515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2005).",
+      "bbox": [
+        56.69329833984375,
+        734.6295166015625,
+        83.5468978881836,
+        745.5494995117188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "57.\t Williamson, M. P. Using chemical shift perturbation to",
+      "bbox": [
+        306.14129638671875,
+        46.62950897216797,
+        517.6401977539062,
+        57.54950714111328
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "characterise ligand binding. Prog. Nucl. Magn. Reson. Spectrosc.",
+      "bbox": [
+        323.1492919921875,
+        57.38152313232422,
+        557.997314453125,
+        68.30152130126953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "73, 1–16 (2013).",
+      "bbox": [
+        323.1493225097656,
+        68.01353454589844,
+        377.5253601074219,
+        79.05353546142578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "58.\t Zagribelnyy, B., Putin, E. O., Fedorchenko, S A., Ivanenkov, Y. A.",
+      "bbox": [
+        306.1413269042969,
+        78.88555145263672,
+        550.0882568359375,
+        89.80554962158203
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "& Zavoronkovs, A. Retrosynthesis-related synthetic accessibility.",
+      "bbox": [
+        323.1493225097656,
+        89.63756561279297,
+        556.61767578125,
+        100.55756378173828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "WO patent 2021/229454 A1 (2021).",
+      "bbox": [
+        323.1493225097656,
+        100.38957977294922,
+        447.2099914550781,
+        111.30957794189453
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "59.\t Welsch, M. et al. Multivalent small-molecule pan-RAS inhibitors.",
+      "bbox": [
+        306.1413269042969,
+        111.14159393310547,
+        555.6514282226562,
+        122.06159210205078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Cell 168, 878–889 (2017).",
+      "bbox": [
+        323.1493225097656,
+        121.77360534667969,
+        413.6813659667969,
+        132.81361389160156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "60.\t Kwan, A. K., Piazza, G. A., Keeton, A. B. & Leite, C. A. The path to",
+      "bbox": [
+        306.1413269042969,
+        132.64561462402344,
+        551.6635131835938,
+        143.5656280517578
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the clinic: a comprehensive review on direct KRasG12C inhibitors. J.",
+      "bbox": [
+        323.1493225097656,
+        143.3616180419922,
+        560.513671875,
+        154.31764221191406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Exp. Clin. Cancer Res. 41, 27 (2022).",
+      "bbox": [
+        323.1513671875,
+        153.99363708496094,
+        450.2080993652344,
+        165.0336456298828
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "61.\t Parikh, K. et al. Drugging KRas: current perspectives and",
+      "bbox": [
+        306.1513671875,
+        164.8656463623047,
+        527.6534423828125,
+        175.78565979003906
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "state-of-art review. J. Hematol. Oncol. 15, 152 (2022).",
+      "bbox": [
+        323.15936279296875,
+        175.49766540527344,
+        510.4369201660156,
+        186.5376739501953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "62.\t Srisongkram, T., Khamtang, P. & Weerapreeyakul, N. Prediction",
+      "bbox": [
+        306.1513366699219,
+        186.3696746826172,
+        549.8775024414062,
+        197.28968811035156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of KRasG12C inhibitors using conjoint fingerprint and machine",
+      "bbox": [
+        323.1593322753906,
+        197.1117401123047,
+        541.8298950195312,
+        208.0417022705078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "learning-based QSAR models. J. Mol. Graph. Model. 120, 108197",
+      "bbox": [
+        323.15179443359375,
+        207.74375915527344,
+        554.83984375,
+        218.7837677001953
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2023).",
+      "bbox": [
+        323.15179443359375,
+        218.6157684326172,
+        349.1253967285156,
+        229.53578186035156
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "63.\t Nagasaka, M. et al. KRas G12C Game of Yhrones, which direct",
+      "bbox": [
+        306.143798828125,
+        229.36778259277344,
+        545.7619018554688,
+        240.2877960205078
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "KRas inhibitor will claim the iron throne? Cancer Treat. Rev. 84,",
+      "bbox": [
+        323.15179443359375,
+        239.9998016357422,
+        549.8317260742188,
+        251.03981018066406
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "101974 (2020).",
+      "bbox": [
+        323.15972900390625,
+        250.87181091308594,
+        375.8085021972656,
+        261.79180908203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "64.\t Grygorenko, O. O. et al. Generating multibillion chemical space",
+      "bbox": [
+        306.1517333984375,
+        261.62384033203125,
+        553.7482299804688,
+        272.5438232421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "of readily accessible screening compounds. iScience 23, 101681",
+      "bbox": [
+        323.15972900390625,
+        272.255859375,
+        556.5309448242188,
+        283.29583740234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2020).",
+      "bbox": [
+        323.1596984863281,
+        283.12786865234375,
+        349.7124938964844,
+        294.0478515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "65.\t Krenn, M., Häse, F., Nigam, A. K. & Friederich, P. Self-referencing",
+      "bbox": [
+        306.1517028808594,
+        293.8798828125,
+        554.5066528320312,
+        304.79986572265625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "embedded strings (SELFIES): a 100% robust molecular string",
+      "bbox": [
+        323.1596984863281,
+        304.63189697265625,
+        544.1537475585938,
+        315.5518798828125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "representation. Mach. Learn. Sci. Technol. 1, 045024 (2020).",
+      "bbox": [
+        323.1596984863281,
+        315.263916015625,
+        538.833251953125,
+        326.30389404296875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "66.\t Lo, A. et al. Recent advances in the self-referencing embedded",
+      "bbox": [
+        306.1517333984375,
+        326.13592529296875,
+        551.364990234375,
+        337.055908203125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "strings (SELFIES) library. Digit. Discov. 2, 897–908 (2023).",
+      "bbox": [
+        323.15972900390625,
+        336.7679443359375,
+        527.6356811523438,
+        347.80792236328125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "67.\t Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural",
+      "bbox": [
+        306.15972900390625,
+        347.63995361328125,
+        561.1577758789062,
+        358.5599365234375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Comput. 9, 1735–1780 (1997).",
+      "bbox": [
+        323.167724609375,
+        358.27197265625,
+        428.2621154785156,
+        369.31195068359375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "68.\t Gers, F. A., Schmidhuber, J. & Cummins, F. Learning to forget:",
+      "bbox": [
+        306.15972900390625,
+        369.14398193359375,
+        545.533203125,
+        380.06396484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "continual prediction with LSTM. In Proc. of the 9th International",
+      "bbox": [
+        323.167724609375,
+        379.89599609375,
+        550.8682861328125,
+        390.81597900390625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Conference on Artificial Neural Networks (eds Sandoval, F. et al.)",
+      "bbox": [
+        323.167724609375,
+        390.64801025390625,
+        553.7586669921875,
+        401.5679931640625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "850–855 (Springer, 1999).",
+      "bbox": [
+        323.167724609375,
+        401.4000244140625,
+        417.0876159667969,
+        412.32000732421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "69.\t Gers, F. A. & Schmidhuber, J. Recurrent nets that time and count.",
+      "bbox": [
+        306.15972900390625,
+        412.15203857421875,
+        557.8193969726562,
+        423.072021484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "In Proc. of the IEEE–INNS–ENNS International Joint Conference on",
+      "bbox": [
+        323.167724609375,
+        422.904052734375,
+        557.7855224609375,
+        433.82403564453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Neural Networks (eds Amari, S.-I. et al.) 189–194 (IEEE, 2000).",
+      "bbox": [
+        323.167724609375,
+        433.65606689453125,
+        540.9699096679688,
+        444.5760498046875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "70.\t Kingma, D. P. & Ba, J. Adam: a method for stochastic optimization.",
+      "bbox": [
+        306.15972900390625,
+        444.4080810546875,
+        560.6090698242188,
+        455.32806396484375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "In Proc. of the 3rd International Conference on Learning",
+      "bbox": [
+        323.167724609375,
+        455.16009521484375,
+        522.2197265625,
+        466.080078125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Representations (ed. Yue, X.-G.) 1–13 (ACM, 2015).",
+      "bbox": [
+        323.167724609375,
+        465.912109375,
+        499.6092224121094,
+        476.83209228515625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "71.\t Werbos, P. J. Backpropagation through time: what it does and how",
+      "bbox": [
+        306.15972900390625,
+        476.66412353515625,
+        563.115478515625,
+        487.5841064453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "to do it. Proc. IEEE 78, 1550–1560 (1990).",
+      "bbox": [
+        323.167724609375,
+        487.296142578125,
+        468.4436950683594,
+        498.33612060546875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "72.\t Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. &",
+      "bbox": [
+        306.15972900390625,
+        498.16815185546875,
+        521.66748046875,
+        509.088134765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Salakhutdinov, R. Dropout: a simple way to prevent neural",
+      "bbox": [
+        323.167724609375,
+        508.920166015625,
+        533.4425659179688,
+        519.8401489257812
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "networks from overfitting. J. Mach. Learn. Res. 15, 1929–1958",
+      "bbox": [
+        323.167724609375,
+        519.5521850585938,
+        541.7293701171875,
+        530.5921630859375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "(2014).",
+      "bbox": [
+        323.167724609375,
+        530.4241943359375,
+        347.8485412597656,
+        541.3441772460938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "73.\t Vakili, M. G. Quantum computing-enhanced algorithm unveils",
+      "bbox": [
+        306.15972900390625,
+        541.1762084960938,
+        548.5795288085938,
+        552.09619140625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "novel inhibitors for KRas. Zenodo https://doi.org/10.5281/",
+      "bbox": [
+        323.167724609375,
+        551.9281616210938,
+        528.1700439453125,
+        562.84814453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "zenodo.11137638 (2024).",
+      "bbox": [
+        323.167724609375,
+        562.68017578125,
+        411.4213562011719,
+        573.6001586914062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Acknowledgements",
+      "bbox": [
+        306.1416931152344,
+        582.5236206054688,
+        407.3089294433594,
+        595.724609375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "We want to thank A. Perdomo-Ortiz, M. Mauri, B. Dellabetta, V.",
+      "bbox": [
+        306.1416931152344,
+        594.8616333007812,
+        530.3693237304688,
+        605.7816162109375
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Vargas-Calderón, A. Cheng, J. Miller, M. Bagherimehrab and K. Nakaji",
+      "bbox": [
+        306.1416931152344,
+        605.6136474609375,
+        556.3419799804688,
+        616.5336303710938
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "for their valuable discussion and support in this research. We thank H.",
+      "bbox": [
+        306.1416931152344,
+        616.3656616210938,
+        559.0269165039062,
+        627.28564453125
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Arthanari for providing us with his NMR resources. Additionally, we are",
+      "bbox": [
+        306.1416931152344,
+        627.1176147460938,
+        561.1660766601562,
+        638.03759765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "thankful to the Defense Advanced Research Projects Agency for their",
+      "bbox": [
+        306.1416931152344,
+        637.86962890625,
+        557.1221313476562,
+        648.7896118164062
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "funding (grant number HR0011-23-3-0017), which greatly supports",
+      "bbox": [
+        306.1416931152344,
+        648.6216430664062,
+        548.8343505859375,
+        659.5416259765625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "our scientific endeavors. A.K.N. acknowledges funding from the",
+      "bbox": [
+        306.1416931152344,
+        659.3735961914062,
+        538.5550537109375,
+        670.2935791015625
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Bio-X Stanford Interdisciplinary Graduate Fellowship. A.A.-G. thanks",
+      "bbox": [
+        306.1416931152344,
+        670.1256103515625,
+        552.24609375,
+        681.0455932617188
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "A. G. Frøseth for his generous support. A.A.-G. also acknowledges",
+      "bbox": [
+        306.1416931152344,
+        680.8776245117188,
+        545.2174072265625,
+        691.797607421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "the generous support of Natural Resources Canada and the Canada",
+      "bbox": [
+        306.1416931152344,
+        691.629638671875,
+        552.190185546875,
+        702.5496215820312
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "150 Research Chairs program. C.G. was funded through the Blue Sky",
+      "bbox": [
+        306.1416931152344,
+        702.3816528320312,
+        554.5829467773438,
+        713.3016357421875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Kinase Project at St. Jude Children’s Research Hospital. The research",
+      "bbox": [
+        306.1416931152344,
+        713.1336059570312,
+        554.58056640625,
+        724.0535888671875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "in the I.S. lab is supported by the grants from the Canadian Institute for",
+      "bbox": [
+        306.1416931152344,
+        723.8856201171875,
+        562.6437377929688,
+        734.8056030273438
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "text": "Health Research, Genome Canada, Ontario Research Fund, Ontario",
+      "bbox": [
+        306.1416931152344,
+        734.6376342773438,
+        551.2781982421875,
+        745.5576171875
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "layout": {
+    "metadata": {
+      "format": "PDF 1.7",
+      "title": "Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors",
+      "author": "Mohammad Ghazi Vakili",
+      "subject": "Nature Biotechnology, doi:10.1038/s41587-024-02526-3",
+      "keywords": "",
+      "creator": "Springer",
+      "producer": "",
+      "creationDate": "D:20251210114440+05'30'",
+      "modDate": "D:20251210114608+05'30'",
+      "trapped": "",
+      "encryption": null,
+      "file_path": "/media/jerisuh/4,0TBDisk1/Paper2Agent_webapp/data/manual_runs/kras_qgm/paper-review/documents/.pdf-skill-scan-zydhd1t7/review/source.pdf",
+      "page_count": 21,
+      "page_number": 12
+    },
+    "toc_items": [],
+    "page_boxes": [
+      {
+        "index": 0,
+        "class": "page-header",
+        "bbox": [
+          39,
+          23,
+          141,
+          32
+        ],
+        "pos": [
+          0,
+          26
+        ]
+      },
+      {
+        "index": 1,
+        "class": "page-header",
+        "bbox": [
+          392,
+          25,
+          562,
+          34
+        ],
+        "pos": [
+          26,
+          71
+        ]
+      },
+      {
+        "index": 2,
+        "class": "section-header",
+        "bbox": [
+          39,
+          47,
+          97,
+          56
+        ],
+        "pos": [
+          71,
+          90
+        ]
+      },
+      {
+        "index": 3,
+        "class": "list-item",
+        "bbox": [
+          39,
+          60,
+          283,
+          89
+        ],
+        "pos": [
+          90,
+          248
+        ]
+      },
+      {
+        "index": 4,
+        "class": "list-item",
+        "bbox": [
+          39,
+          92,
+          263,
+          122
+        ],
+        "pos": [
+          248,
+          406
+        ]
+      },
+      {
+        "index": 5,
+        "class": "list-item",
+        "bbox": [
+          39,
+          124,
+          267,
+          143
+        ],
+        "pos": [
+          406,
+          523
+        ]
+      },
+      {
+        "index": 6,
+        "class": "list-item",
+        "bbox": [
+          39,
+          146,
+          294,
+          186
+        ],
+        "pos": [
+          523,
+          760
+        ]
+      },
+      {
+        "index": 7,
+        "class": "list-item",
+        "bbox": [
+          39,
+          189,
+          277,
+          218
+        ],
+        "pos": [
+          760,
+          947
+        ]
+      },
+      {
+        "index": 8,
+        "class": "list-item",
+        "bbox": [
+          39,
+          221,
+          296,
+          251
+        ],
+        "pos": [
+          947,
+          1115
+        ]
+      },
+      {
+        "index": 9,
+        "class": "list-item",
+        "bbox": [
+          39,
+          253,
+          286,
+          283
+        ],
+        "pos": [
+          1115,
+          1291
+        ]
+      },
+      {
+        "index": 10,
+        "class": "list-item",
+        "bbox": [
+          39,
+          285,
+          292,
+          316
+        ],
+        "pos": [
+          1291,
+          1476
+        ]
+      },
+      {
+        "index": 11,
+        "class": "list-item",
+        "bbox": [
+          39,
+          318,
+          295,
+          348
+        ],
+        "pos": [
+          1476,
+          1655
+        ]
+      },
+      {
+        "index": 12,
+        "class": "list-item",
+        "bbox": [
+          39,
+          350,
+          286,
+          380
+        ],
+        "pos": [
+          1655,
+          1824
+        ]
+      },
+      {
+        "index": 13,
+        "class": "list-item",
+        "bbox": [
+          39,
+          382,
+          284,
+          412
+        ],
+        "pos": [
+          1824,
+          1972
+        ]
+      },
+      {
+        "index": 14,
+        "class": "list-item",
+        "bbox": [
+          39,
+          414,
+          291,
+          444
+        ],
+        "pos": [
+          1972,
+          2139
+        ]
+      },
+      {
+        "index": 15,
+        "class": "list-item",
+        "bbox": [
+          39,
+          447,
+          274,
+          487
+        ],
+        "pos": [
+          2139,
+          2334
+        ]
+      },
+      {
+        "index": 16,
+        "class": "list-item",
+        "bbox": [
+          39,
+          490,
+          284,
+          520
+        ],
+        "pos": [
+          2334,
+          2533
+        ]
+      },
+      {
+        "index": 17,
+        "class": "list-item",
+        "bbox": [
+          39,
+          522,
+          297,
+          552
+        ],
+        "pos": [
+          2533,
+          2718
+        ]
+      },
+      {
+        "index": 18,
+        "class": "list-item",
+        "bbox": [
+          39,
+          554,
+          297,
+          605
+        ],
+        "pos": [
+          2718,
+          2998
+        ]
+      },
+      {
+        "index": 19,
+        "class": "list-item",
+        "bbox": [
+          39,
+          608,
+          285,
+          638
+        ],
+        "pos": [
+          2998,
+          3158
+        ]
+      },
+      {
+        "index": 20,
+        "class": "list-item",
+        "bbox": [
+          39,
+          639,
+          294,
+          681
+        ],
+        "pos": [
+          3158,
+          3405
+        ]
+      },
+      {
+        "index": 21,
+        "class": "list-item",
+        "bbox": [
+          39,
+          683,
+          267,
+          713
+        ],
+        "pos": [
+          3405,
+          3548
+        ]
+      },
+      {
+        "index": 22,
+        "class": "list-item",
+        "bbox": [
+          39,
+          715,
+          287,
+          745
+        ],
+        "pos": [
+          3548,
+          3687
+        ]
+      },
+      {
+        "index": 23,
+        "class": "list-item",
+        "bbox": [
+          306,
+          49,
+          556,
+          79
+        ],
+        "pos": [
+          3687,
+          3837
+        ]
+      },
+      {
+        "index": 24,
+        "class": "list-item",
+        "bbox": [
+          306,
+          81,
+          557,
+          111
+        ],
+        "pos": [
+          3837,
+          4009
+        ]
+      },
+      {
+        "index": 25,
+        "class": "list-item",
+        "bbox": [
+          306,
+          113,
+          556,
+          132
+        ],
+        "pos": [
+          4009,
+          4113
+        ]
+      },
+      {
+        "index": 26,
+        "class": "list-item",
+        "bbox": [
+          306,
+          135,
+          561,
+          165
+        ],
+        "pos": [
+          4113,
+          4313
+        ]
+      },
+      {
+        "index": 27,
+        "class": "list-item",
+        "bbox": [
+          306,
+          167,
+          528,
+          186
+        ],
+        "pos": [
+          4313,
+          4440
+        ]
+      },
+      {
+        "index": 28,
+        "class": "list-item",
+        "bbox": [
+          306,
+          189,
+          555,
+          229
+        ],
+        "pos": [
+          4440,
+          4658
+        ]
+      },
+      {
+        "index": 29,
+        "class": "list-item",
+        "bbox": [
+          306,
+          232,
+          550,
+          261
+        ],
+        "pos": [
+          4658,
+          4812
+        ]
+      },
+      {
+        "index": 30,
+        "class": "list-item",
+        "bbox": [
+          306,
+          264,
+          557,
+          294
+        ],
+        "pos": [
+          4812,
+          4960
+        ]
+      },
+      {
+        "index": 31,
+        "class": "list-item",
+        "bbox": [
+          306,
+          296,
+          555,
+          326
+        ],
+        "pos": [
+          4960,
+          5161
+        ]
+      },
+      {
+        "index": 32,
+        "class": "list-item",
+        "bbox": [
+          306,
+          328,
+          552,
+          348
+        ],
+        "pos": [
+          5161,
+          5298
+        ]
+      },
+      {
+        "index": 33,
+        "class": "list-item",
+        "bbox": [
+          306,
+          350,
+          562,
+          369
+        ],
+        "pos": [
+          5298,
+          5404
+        ]
+      },
+      {
+        "index": 34,
+        "class": "list-item",
+        "bbox": [
+          306,
+          371,
+          554,
+          412
+        ],
+        "pos": [
+          5404,
+          5634
+        ]
+      },
+      {
+        "index": 35,
+        "class": "list-item",
+        "bbox": [
+          306,
+          414,
+          558,
+          444
+        ],
+        "pos": [
+          5634,
+          5837
+        ]
+      },
+      {
+        "index": 36,
+        "class": "list-item",
+        "bbox": [
+          306,
+          447,
+          561,
+          477
+        ],
+        "pos": [
+          5837,
+          6020
+        ]
+      },
+      {
+        "index": 37,
+        "class": "list-item",
+        "bbox": [
+          306,
+          479,
+          564,
+          498
+        ],
+        "pos": [
+          6020,
+          6141
+        ]
+      },
+      {
+        "index": 38,
+        "class": "list-item",
+        "bbox": [
+          306,
+          500,
+          542,
+          541
+        ],
+        "pos": [
+          6141,
+          6342
+        ]
+      },
+      {
+        "index": 39,
+        "class": "list-item",
+        "bbox": [
+          306,
+          543,
+          549,
+          573
+        ],
+        "pos": [
+          6342,
+          6492
+        ]
+      },
+      {
+        "index": 40,
+        "class": "section-header",
+        "bbox": [
+          306,
+          584,
+          408,
+          596
+        ],
+        "pos": [
+          6492,
+          6517
+        ]
+      },
+      {
+        "index": 41,
+        "class": "text",
+        "bbox": [
+          306,
+          597,
+          563,
+          745
+        ],
+        "pos": [
+          6517,
+          7463
+        ]
+      },
+      {
+        "index": 42,
+        "class": "page-footer",
+        "bbox": [
+          39,
+          763,
+          122,
+          771
+        ],
+        "pos": [
+          7463,
+          7486
+        ]
+      }
+    ],
+    "text": "**Brief Communication** \n\nhttps://doi.org/10.1038/s41587-024-02526-3 \n\n# **References** \n\n37. Olivecrona, M., Blaschke, T., Engkvist, O. & Chen, H. Molecular de-novo design through deep reinforcement learning. _J. Cheminform._ **9** , 48 (2017). \n\n38. Bombarelli, R. G. et al. Automatic chemical design using a data-driven continuous representation of molecules. _ACS Cent. Sci._ **4** , 268–276 (2018). \n\n39. Krenn, M. et al. SELFIES and the future of molecular string representations. _Patterns_ **3** , 100588 (2022). \n\n40. Zang, C. & Wang, F. Moflow: an invertible flow model for generating molecular graphs. In _Proc. of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_ (eds Gupta, R. & Liu, Y.) 617–626 (ACM, 2020). \n\n41. Segler, M., Kogej, T., Tyrchan, C. & Waller, M. P. Generating focused molecule libraries for drug discovery with recurrent neural networks. _ACS Cent. Sci._ **4** , 120–131 (2018). \n\n42. Brown, N., Fiscato, M., Segler, M. & Vaucher, A. C. Guacamol: benchmarking models for de novo molecular design. _J. Chem. Inf. Model._ **59** , 1096–1108 (2019). \n\n43. Jensen, J. H. A graph-based genetic algorithm and generative model/Monte Carlo tree search for the exploration of chemical space. _Chem. Sci._ **10** , 3567–3572 (2019). \n\n44. Nigam, A. K., Pollice, R. & Guzik, A. A. Parallel tempered genetic algorithm guided by deep neural networks for inverse molecular design. _Digit. Discov._ **1** , 390–404 (2022). \n\n45. Frandsen, A. et al. Tyr702 is an important determinant of agonist binding and domain closure of the ligand-binding core of GLUR2. _Mol. Pharmacol._ **67** , 703–713 (2005). \n\n46. Zhang, L. et al. Crystal structure of SARS-CoV-2 main protease provides a basis for design of improved α-ketoamide inhibitors. _Science_ **368** , 409–412 (2020). \n\n47. Ring, A. M. et al. Adrenaline-activated structure of β2-adrenoceptor stabilized by an engineered nanobody. _Nature_ **502** , 575–579 (2013). \n\n48. Alhossary, A., Handoko, S. D., Mu, Y. & Kwoh, C. K. Fast, accurate, and reliable molecular docking with QuickVina 2. _Bioinformatics_ **31** , 2214–2216 (2015). \n\n49. Koes, D. R., Baumgartner, M. P. & Camacho, C. J. Lessons learned in empirical scoring with smina from the CSAR 2011 benchmarking exercise. _J. Chem. Inf. Model._ **53** , 1893–1904 (2013). \n\n50. Voigt, J. H., Bienfait, B., Wang, S. & Nicklaus, M. C. Comparison of the NCI open database with seven large chemical structural databases. _J. Chem. Inf. Comput. Sci._ **41** , 702–712 (2001). \n\n51. Ihlenfeldt, W. D., Voigt, J. H., Bienfait, B., Oellien, F. & Nicklaus, M. C. Enhanced CACTVS browser of the open NCI database. _J. Chem. Inf. Comput. Sci._ **42** , 46–57 (2002). \n\n52. Akiba, T., Sano, S., Yanase, T., Ohta, T. & Koyama, M. Optuna: a next-generation hyperparameter optimization framework. In _Proc. of the 25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_ (eds Teredesai, A. & Kumar, V.) 2623– 2631 (ACM, 2019). \n\n53. Lim, S. M. et al. Therapeutic targeting of oncogenic K-Ras by a covalent catalytic site inhibitor. _Angew. Chem. Int. Ed. Engl._ **53** , 199–204 (2014). \n\n54. Pálfy, G., Vida, I. & Perczel, A.<sup>1</sup> H,<sup>15</sup> N backbone assignment and comparative analysis of the wild type and G12C, G12D, G12V mutants of K-Ras bound to GDP at physiological pH. _Biomol. NMR Assign._ **14** , 1–7 (2020). \n\n55. Delaglio, F. et al. NMRPipe: a multidimensional spectral processing system based on unix pipes. _J. Biomol. NMR_ **6** , 277–293 (1995). \n\n56. Vranken, W. et al. The CCPN data model for NMR spectroscopy: development of a software pipeline. _Proteins_ **59** , 687–696 (2005). \n\n57. Williamson, M. P. Using chemical shift perturbation to characterise ligand binding. _Prog. Nucl. Magn. Reson. Spectrosc._ **73** , 1–16 (2013). \n\n58. Zagribelnyy, B., Putin, E. O., Fedorchenko, S A., Ivanenkov, Y. A. & Zavoronkovs, A. Retrosynthesis-related synthetic accessibility. WO patent 2021/229454 A1 (2021). \n\n59. Welsch, M. et al. Multivalent small-molecule pan-RAS inhibitors. _Cell_ **168** , 878–889 (2017). \n\n60. Kwan, A. K., Piazza, G. A., Keeton, A. B. & Leite, C. A. The path to the clinic: a comprehensive review on direct KRas<sup>G12C</sup> inhibitors. _J. Exp. Clin. Cancer Res._ **41** , 27 (2022). \n\n61. Parikh, K. et al. Drugging KRas: current perspectives and state-of-art review. _J. Hematol. Oncol._ **15** , 152 (2022). \n\n62. Srisongkram, T., Khamtang, P. & Weerapreeyakul, N. Prediction of KRas<sup>G12C</sup> inhibitors using conjoint fingerprint and machine learning-based QSAR models. _J. Mol. Graph. Model._ **120** , 108197 (2023). \n\n63. Nagasaka, M. et al. KRas G12C Game of Yhrones, which direct KRas inhibitor will claim the iron throne? _Cancer Treat. Rev._ **84** , 101974 (2020). \n\n64. Grygorenko, O. O. et al. Generating multibillion chemical space of readily accessible screening compounds. _iScience_ **23** , 101681 (2020). \n\n65. Krenn, M., Häse, F., Nigam, A. K. & Friederich, P. Self-referencing embedded strings (SELFIES): a 100% robust molecular string representation. _Mach. Learn. Sci. Technol._ **1** , 045024 (2020). \n\n66. Lo, A. et al. Recent advances in the self-referencing embedded strings (SELFIES) library. _Digit. Discov._ **2** , 897–908 (2023). \n\n67. Hochreiter, S. & Schmidhuber, J. Long short-term memory. _Neural Comput._ **9** , 1735–1780 (1997). \n\n68. Gers, F. A., Schmidhuber, J. & Cummins, F. Learning to forget: continual prediction with LSTM. In _Proc. of the 9th International Conference on Artificial Neural Networks_ (eds Sandoval, F. et al.) 850–855 (Springer, 1999). \n\n69. Gers, F. A. & Schmidhuber, J. Recurrent nets that time and count. In _Proc. of the IEEE–INNS–ENNS International Joint Conference on Neural Networks_ (eds Amari, S.-I. et al.) 189–194 (IEEE, 2000). \n\n70. Kingma, D. P. & Ba, J. Adam: a method for stochastic optimization. In _Proc. of the 3rd International Conference on Learning Representations_ (ed. Yue, X.-G.) 1–13 (ACM, 2015). \n\n71. Werbos, P. J. Backpropagation through time: what it does and how to do it. _Proc. IEEE_ **78** , 1550–1560 (1990). \n\n72. Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. & Salakhutdinov, R. Dropout: a simple way to prevent neural networks from overfitting. _J. Mach. Learn. Res._ **15** , 1929–1958 (2014). \n\n73. Vakili, M. G. Quantum computing-enhanced algorithm unveils novel inhibitors for KRas. _Zenodo_ https://doi.org/10.5281/ zenodo.11137638 (2024). \n\n# **Acknowledgements** \n\nWe want to thank A. Perdomo-Ortiz, M. Mauri, B. Dellabetta, V. Vargas-Calderón, A. Cheng, J. Miller, M. Bagherimehrab and K. Nakaji for their valuable discussion and support in this research. We thank H. Arthanari for providing us with his NMR resources. Additionally, we are thankful to the Defense Advanced Research Projects Agency for their funding (grant number HR0011-23-3-0017), which greatly supports our scientific endeavors. A.K.N. acknowledges funding from the Bio-X Stanford Interdisciplinary Graduate Fellowship. A.A.-G. thanks A. G. Frøseth for his generous support. A.A.-G. also acknowledges the generous support of Natural Resources Canada and the Canada 150 Research Chairs program. C.G. was funded through the Blue Sky Kinase Project at St. Jude Children’s Research Hospital. The research in the I.S. lab is supported by the grants from the Canadian Institute for Health Research, Genome Canada, Ontario Research Fund, Ontario \n\nNature Biotechnology \n\n"
+  }
+}

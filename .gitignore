@@ -1,0 +1,12 @@
+# 재설치 가능한 환경/캐시 (backend: pip install -r requirements.txt, frontend: npm install)
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+
+# 업로드된 원고/영상 등 비공개 자료
+data/uploads/

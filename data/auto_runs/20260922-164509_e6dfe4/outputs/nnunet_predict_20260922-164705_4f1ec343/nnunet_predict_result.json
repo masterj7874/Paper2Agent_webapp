@@ -1,0 +1,2645 @@
+{
+ "model_folder": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/nnunet/nnUNet_results/Dataset004_Hippocampus/nnUNetTrainer_5epochs__nnUNetPlans__2d",
+ "trainer_name": "nnUNetTrainer_5epochs",
+ "configuration": "2d",
+ "plans_identifier": "nnUNetPlans",
+ "plans_name": "nnUNetPlans",
+ "data_identifier": "nnUNetPlans_2d",
+ "network_arch_class_name": "dynamic_network_architectures.architectures.unet.PlainConvUNet",
+ "patch_size": [
+  56,
+  40
+ ],
+ "folds_used": [
+  0
+ ],
+ "n_parameter_sets": 1,
+ "checkpoint_name": "checkpoint_final.pth",
+ "device": "cuda",
+ "device_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+ "use_mirroring": true,
+ "allowed_mirroring_axes": [
+  0,
+  1
+ ],
+ "tile_step_size": 0.5,
+ "use_gaussian": true,
+ "perform_everything_on_device": true,
+ "torch_num_threads": 1,
+ "network_is_torch_compiled": false,
+ "mode": "pooled",
+ "file_ending": ".nii.gz",
+ "labels": {
+  "background": 0,
+  "Anterior": 1,
+  "Posterior": 2
+ },
+ "n_input_cases": null,
+ "per_case": {
+  "hippocampus_002": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_002.nii.gz",
+   "shape": [
+    36,
+    47,
+    39
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 62793,
+    "1": 1679,
+    "2": 1516
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_005": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_005.nii.gz",
+   "shape": [
+    34,
+    51,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 55219,
+    "1": 2084,
+    "2": 1653
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_009": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_009.nii.gz",
+   "shape": [
+    27,
+    53,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 45550,
+    "1": 1507,
+    "2": 1597
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_010": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_010.nii.gz",
+   "shape": [
+    26,
+    50,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 43837,
+    "1": 1527,
+    "2": 1436
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_012": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_012.nii.gz",
+   "shape": [
+    32,
+    48,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 51883,
+    "1": 1884,
+    "2": 1529
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_013": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_013.nii.gz",
+   "shape": [
+    38,
+    51,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 67934,
+    "1": 2111,
+    "2": 1661
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_016": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_016.nii.gz",
+   "shape": [
+    30,
+    52,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 53070,
+    "1": 1496,
+    "2": 1594
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_018": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_018.nii.gz",
+   "shape": [
+    31,
+    49,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 54145,
+    "1": 2260,
+    "2": 1317
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_021": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_021.nii.gz",
+   "shape": [
+    37,
+    46,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57662,
+    "1": 1873,
+    "2": 1737
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_022": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_022.nii.gz",
+   "shape": [
+    39,
+    46,
+    39
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 66257,
+    "1": 1987,
+    "2": 1722
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_027": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_027.nii.gz",
+   "shape": [
+    36,
+    52,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 60066,
+    "1": 1770,
+    "2": 1812
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_028": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_028.nii.gz",
+   "shape": [
+    38,
+    51,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 64391,
+    "1": 1761,
+    "2": 1678
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_029": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_029.nii.gz",
+   "shape": [
+    40,
+    51,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 65690,
+    "1": 1939,
+    "2": 1731
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_030": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_030.nii.gz",
+   "shape": [
+    40,
+    49,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 68721,
+    "1": 2014,
+    "2": 1785
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_043": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_043.nii.gz",
+   "shape": [
+    33,
+    50,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 56075,
+    "1": 1617,
+    "2": 1708
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_047": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_047.nii.gz",
+   "shape": [
+    28,
+    56,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 50219,
+    "1": 1850,
+    "2": 1243
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_054": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_054.nii.gz",
+   "shape": [
+    36,
+    51,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 66158,
+    "1": 1841,
+    "2": 1769
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_055": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_055.nii.gz",
+   "shape": [
+    41,
+    47,
+    39
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 71746,
+    "1": 1943,
+    "2": 1464
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_059": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_059.nii.gz",
+   "shape": [
+    30,
+    52,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 56235,
+    "1": 1613,
+    "2": 1432
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_061": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_061.nii.gz",
+   "shape": [
+    25,
+    51,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 39415,
+    "1": 1122,
+    "2": 1538
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_062": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_062.nii.gz",
+   "shape": [
+    25,
+    50,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 41284,
+    "1": 1163,
+    "2": 1303
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_063": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_063.nii.gz",
+   "shape": [
+    33,
+    53,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57640,
+    "1": 1890,
+    "2": 1685
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_066": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_066.nii.gz",
+   "shape": [
+    37,
+    53,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 68666,
+    "1": 1597,
+    "2": 2294
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_069": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_069.nii.gz",
+   "shape": [
+    38,
+    51,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 62666,
+    "1": 1481,
+    "2": 1745
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_071": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_071.nii.gz",
+   "shape": [
+    29,
+    52,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 48244,
+    "1": 1678,
+    "2": 1350
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_072": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_072.nii.gz",
+   "shape": [
+    35,
+    48,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57261,
+    "1": 1869,
+    "2": 1350
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_073": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_073.nii.gz",
+   "shape": [
+    40,
+    47,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 62948,
+    "1": 1172,
+    "2": 1680
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_076": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_076.nii.gz",
+   "shape": [
+    43,
+    47,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 65491,
+    "1": 1486,
+    "2": 1737
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_078": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_078.nii.gz",
+   "shape": [
+    45,
+    47,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 76818,
+    "1": 1938,
+    "2": 1614
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_079": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_079.nii.gz",
+   "shape": [
+    34,
+    54,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57205,
+    "1": 1638,
+    "2": 1745
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_080": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_080.nii.gz",
+   "shape": [
+    34,
+    52,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 56716,
+    "1": 1732,
+    "2": 1664
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_081": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_081.nii.gz",
+   "shape": [
+    46,
+    40,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 59562,
+    "1": 1374,
+    "2": 1624
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_082": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_082.nii.gz",
+   "shape": [
+    45,
+    42,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 67240,
+    "1": 1138,
+    "2": 1552
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_100": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_100.nii.gz",
+   "shape": [
+    26,
+    56,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 49169,
+    "1": 1419,
+    "2": 1828
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_103": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_103.nii.gz",
+   "shape": [
+    37,
+    53,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 62970,
+    "1": 1770,
+    "2": 1934
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_110": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_110.nii.gz",
+   "shape": [
+    37,
+    48,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 64291,
+    "1": 1651,
+    "2": 1546
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_111": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_111.nii.gz",
+   "shape": [
+    32,
+    51,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57162,
+    "1": 1787,
+    "2": 1435
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_112": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_112.nii.gz",
+   "shape": [
+    34,
+    50,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 61315,
+    "1": 1814,
+    "2": 1471
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_113": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_113.nii.gz",
+   "shape": [
+    43,
+    48,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 66715,
+    "1": 2129,
+    "2": 1332
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_115": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_115.nii.gz",
+   "shape": [
+    33,
+    51,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57234,
+    "1": 1757,
+    "2": 1597
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_116": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_116.nii.gz",
+   "shape": [
+    34,
+    53,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 63148,
+    "1": 1850,
+    "2": 1676
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_117": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_117.nii.gz",
+   "shape": [
+    32,
+    54,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 56850,
+    "1": 1807,
+    "2": 1823
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_118": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_118.nii.gz",
+   "shape": [
+    33,
+    52,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 59606,
+    "1": 2001,
+    "2": 1885
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_119": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_119.nii.gz",
+   "shape": [
+    31,
+    47,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 46807,
+    "1": 1507,
+    "2": 1224
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_120": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_120.nii.gz",
+   "shape": [
+    35,
+    47,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 59620,
+    "1": 1361,
+    "2": 1529
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_121": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_121.nii.gz",
+   "shape": [
+    34,
+    51,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57368,
+    "1": 1613,
+    "2": 1709
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_122": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_122.nii.gz",
+   "shape": [
+    35,
+    49,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 60054,
+    "1": 1878,
+    "2": 1523
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_128": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_128.nii.gz",
+   "shape": [
+    33,
+    55,
+    40
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 68309,
+    "1": 2327,
+    "2": 1964
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_129": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_129.nii.gz",
+   "shape": [
+    40,
+    50,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 64920,
+    "1": 1510,
+    "2": 1570
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_131": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_131.nii.gz",
+   "shape": [
+    35,
+    51,
+    32
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 53850,
+    "1": 1534,
+    "2": 1736
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_134": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_134.nii.gz",
+   "shape": [
+    45,
+    42,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 68257,
+    "1": 2029,
+    "2": 1534
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_137": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_137.nii.gz",
+   "shape": [
+    39,
+    45,
+    30
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 50162,
+    "1": 1277,
+    "2": 1211
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_139": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_139.nii.gz",
+   "shape": [
+    32,
+    55,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 61501,
+    "1": 1904,
+    "2": 1715
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_140": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_140.nii.gz",
+   "shape": [
+    34,
+    53,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 59557,
+    "1": 1807,
+    "2": 1706
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_147": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_147.nii.gz",
+   "shape": [
+    28,
+    47,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 41069,
+    "1": 1301,
+    "2": 1058
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_151": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_151.nii.gz",
+   "shape": [
+    36,
+    52,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 65381,
+    "1": 1789,
+    "2": 2094
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_153": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_153.nii.gz",
+   "shape": [
+    40,
+    43,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 55604,
+    "1": 1400,
+    "2": 1476
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_159": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_159.nii.gz",
+   "shape": [
+    31,
+    51,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 55798,
+    "1": 1345,
+    "2": 1354
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_167": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_167.nii.gz",
+   "shape": [
+    29,
+    54,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 51147,
+    "1": 1738,
+    "2": 1925
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_168": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_168.nii.gz",
+   "shape": [
+    32,
+    51,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 53647,
+    "1": 1856,
+    "2": 1617
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_179": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_179.nii.gz",
+   "shape": [
+    33,
+    45,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 49288,
+    "1": 1252,
+    "2": 1435
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_182": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_182.nii.gz",
+   "shape": [
+    42,
+    47,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 67089,
+    "1": 2170,
+    "2": 1805
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_183": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_183.nii.gz",
+   "shape": [
+    34,
+    50,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57799,
+    "1": 1506,
+    "2": 1895
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_186": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_186.nii.gz",
+   "shape": [
+    34,
+    49,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 58439,
+    "1": 2015,
+    "2": 1188
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_187": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_187.nii.gz",
+   "shape": [
+    34,
+    54,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57210,
+    "1": 1699,
+    "2": 1679
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_191": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_191.nii.gz",
+   "shape": [
+    34,
+    51,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57351,
+    "1": 1779,
+    "2": 1560
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_192": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_192.nii.gz",
+   "shape": [
+    33,
+    53,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 59257,
+    "1": 2057,
+    "2": 1650
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_196": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_196.nii.gz",
+   "shape": [
+    30,
+    54,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 53266,
+    "1": 1981,
+    "2": 1453
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_198": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_198.nii.gz",
+   "shape": [
+    31,
+    51,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 54776,
+    "1": 1884,
+    "2": 1837
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_200": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_200.nii.gz",
+   "shape": [
+    28,
+    52,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 51190,
+    "1": 1249,
+    "2": 1433
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_201": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_201.nii.gz",
+   "shape": [
+    29,
+    51,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 48576,
+    "1": 1710,
+    "2": 1479
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_202": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_202.nii.gz",
+   "shape": [
+    32,
+    52,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 56633,
+    "1": 1807,
+    "2": 1464
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_206": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_206.nii.gz",
+   "shape": [
+    32,
+    47,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 46545,
+    "1": 1620,
+    "2": 1467
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_208": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_208.nii.gz",
+   "shape": [
+    35,
+    50,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 62278,
+    "1": 2096,
+    "2": 2126
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_209": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_209.nii.gz",
+   "shape": [
+    39,
+    48,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 60706,
+    "1": 1573,
+    "2": 1369
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_211": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_211.nii.gz",
+   "shape": [
+    33,
+    57,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 58581,
+    "1": 1787,
+    "2": 1705
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_213": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_213.nii.gz",
+   "shape": [
+    33,
+    50,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 52556,
+    "1": 1787,
+    "2": 1757
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_214": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_214.nii.gz",
+   "shape": [
+    34,
+    49,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57658,
+    "1": 2174,
+    "2": 1810
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_218": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_218.nii.gz",
+   "shape": [
+    28,
+    52,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 51349,
+    "1": 1484,
+    "2": 1039
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_237": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_237.nii.gz",
+   "shape": [
+    34,
+    55,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 63881,
+    "1": 1717,
+    "2": 1722
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_239": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_239.nii.gz",
+   "shape": [
+    34,
+    53,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57869,
+    "1": 1618,
+    "2": 1781
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_240": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_240.nii.gz",
+   "shape": [
+    36,
+    55,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 63902,
+    "1": 1714,
+    "2": 1704
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_241": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_241.nii.gz",
+   "shape": [
+    34,
+    53,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57263,
+    "1": 1956,
+    "2": 2049
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_246": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_246.nii.gz",
+   "shape": [
+    44,
+    47,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 66986,
+    "1": 1617,
+    "2": 1709
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_247": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_247.nii.gz",
+   "shape": [
+    36,
+    53,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 61244,
+    "1": 1793,
+    "2": 1835
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_254": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_254.nii.gz",
+   "shape": [
+    31,
+    49,
+    39
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 55596,
+    "1": 2162,
+    "2": 1483
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_255": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_255.nii.gz",
+   "shape": [
+    34,
+    52,
+    32
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 53174,
+    "1": 1789,
+    "2": 1613
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_256": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_256.nii.gz",
+   "shape": [
+    37,
+    50,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 61400,
+    "1": 1852,
+    "2": 1498
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_258": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_258.nii.gz",
+   "shape": [
+    38,
+    54,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 68435,
+    "1": 1730,
+    "2": 1655
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_262": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_262.nii.gz",
+   "shape": [
+    34,
+    58,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 65261,
+    "1": 1944,
+    "2": 1815
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_266": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_266.nii.gz",
+   "shape": [
+    35,
+    52,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 58632,
+    "1": 1664,
+    "2": 1584
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_267": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_267.nii.gz",
+   "shape": [
+    36,
+    49,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 55164,
+    "1": 1321,
+    "2": 1727
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_270": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_270.nii.gz",
+   "shape": [
+    41,
+    52,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 75166,
+    "1": 2061,
+    "2": 1657
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_271": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_271.nii.gz",
+   "shape": [
+    35,
+    48,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 55538,
+    "1": 1781,
+    "2": 1481
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_272": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_272.nii.gz",
+   "shape": [
+    38,
+    46,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 60874,
+    "1": 2190,
+    "2": 1612
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_273": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_273.nii.gz",
+   "shape": [
+    39,
+    41,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 51626,
+    "1": 1603,
+    "2": 1137
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_275": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_275.nii.gz",
+   "shape": [
+    33,
+    51,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 52267,
+    "1": 1600,
+    "2": 1672
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_278": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_278.nii.gz",
+   "shape": [
+    32,
+    54,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57042,
+    "1": 2002,
+    "2": 1436
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_281": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_281.nii.gz",
+   "shape": [
+    32,
+    53,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 54842,
+    "1": 1427,
+    "2": 1395
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_283": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_283.nii.gz",
+   "shape": [
+    39,
+    45,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 55350,
+    "1": 1297,
+    "2": 1268
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_284": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_284.nii.gz",
+   "shape": [
+    38,
+    43,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 53017,
+    "1": 1360,
+    "2": 1179
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_285": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_285.nii.gz",
+   "shape": [
+    42,
+    44,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 61710,
+    "1": 1265,
+    "2": 1705
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_291": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_291.nii.gz",
+   "shape": [
+    33,
+    52,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 54881,
+    "1": 1887,
+    "2": 1576
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_293": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_293.nii.gz",
+   "shape": [
+    44,
+    44,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 60869,
+    "1": 1474,
+    "2": 1545
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_306": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_306.nii.gz",
+   "shape": [
+    32,
+    49,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 51682,
+    "1": 1840,
+    "2": 1358
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_307": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_307.nii.gz",
+   "shape": [
+    40,
+    50,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 64219,
+    "1": 1997,
+    "2": 1784
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_312": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_312.nii.gz",
+   "shape": [
+    37,
+    49,
+    38
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 65650,
+    "1": 1690,
+    "2": 1554
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_313": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_313.nii.gz",
+   "shape": [
+    30,
+    54,
+    32
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 49003,
+    "1": 1278,
+    "2": 1559
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_315": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_315.nii.gz",
+   "shape": [
+    32,
+    52,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 54657,
+    "1": 1789,
+    "2": 1794
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_323": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_323.nii.gz",
+   "shape": [
+    29,
+    55,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 50665,
+    "1": 1672,
+    "2": 1893
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_324": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_324.nii.gz",
+   "shape": [
+    31,
+    56,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 58523,
+    "1": 2101,
+    "2": 1872
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_339": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_339.nii.gz",
+   "shape": [
+    38,
+    47,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57640,
+    "1": 1612,
+    "2": 1472
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_342": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_342.nii.gz",
+   "shape": [
+    35,
+    50,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 58250,
+    "1": 1574,
+    "2": 1426
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_344": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_344.nii.gz",
+   "shape": [
+    37,
+    48,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 56017,
+    "1": 1113,
+    "2": 1478
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_346": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_346.nii.gz",
+   "shape": [
+    30,
+    49,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 48309,
+    "1": 1741,
+    "2": 1400
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_347": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_347.nii.gz",
+   "shape": [
+    31,
+    50,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 53957,
+    "1": 1718,
+    "2": 1675
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_348": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_348.nii.gz",
+   "shape": [
+    30,
+    50,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 52126,
+    "1": 1767,
+    "2": 1607
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_357": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_357.nii.gz",
+   "shape": [
+    32,
+    49,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 50426,
+    "1": 1245,
+    "2": 1641
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_362": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_362.nii.gz",
+   "shape": [
+    34,
+    51,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 58822,
+    "1": 1946,
+    "2": 1656
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_364": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_364.nii.gz",
+   "shape": [
+    37,
+    50,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 64693,
+    "1": 1911,
+    "2": 1846
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_365": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_365.nii.gz",
+   "shape": [
+    34,
+    48,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 52024,
+    "1": 2000,
+    "2": 1464
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_369": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_369.nii.gz",
+   "shape": [
+    37,
+    49,
+    37
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 64082,
+    "1": 1234,
+    "2": 1765
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_371": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_371.nii.gz",
+   "shape": [
+    35,
+    51,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 57266,
+    "1": 1600,
+    "2": 1824
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_377": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_377.nii.gz",
+   "shape": [
+    33,
+    52,
+    32
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 51807,
+    "1": 1501,
+    "2": 1604
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_379": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_379.nii.gz",
+   "shape": [
+    41,
+    48,
+    33
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 61676,
+    "1": 1502,
+    "2": 1766
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_382": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_382.nii.gz",
+   "shape": [
+    38,
+    48,
+    36
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 62269,
+    "1": 1859,
+    "2": 1536
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_384": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_384.nii.gz",
+   "shape": [
+    29,
+    52,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 49365,
+    "1": 1783,
+    "2": 1632
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_388": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_388.nii.gz",
+   "shape": [
+    31,
+    51,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 50554,
+    "1": 1461,
+    "2": 1739
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_391": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_391.nii.gz",
+   "shape": [
+    29,
+    54,
+    34
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 50278,
+    "1": 1395,
+    "2": 1571
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  },
+  "hippocampus_392": {
+   "segmentation": "/media/jerisuh/4,0TBDisk/Paper2Agent_webapp/data/auto_runs/20260922-164509_e6dfe4/outputs/nnunet_predict_20260922-164705_4f1ec343/predictions/hippocampus_392.nii.gz",
+   "shape": [
+    29,
+    54,
+    35
+   ],
+   "labels_present": [
+    0,
+    1,
+    2
+   ],
+   "voxels_per_label": {
+    "0": 51741,
+    "1": 1414,
+    "2": 1655
+   },
+   "probabilities_npz": null,
+   "properties_pkl": null
+  }
+ },
+ "timing": {
+  "init_seconds": 0.865,
+  "predict_seconds": 45.511
+ },
+ "torch_cuda_max_memory_allocated_MiB": 28.6
+}
